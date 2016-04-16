@@ -25,16 +25,17 @@ A curated list of open source robotics simulation libraries.
 
 ## Unfiltered List
 
-* [DART](https://github.com/dartsim/dart.git) - Dynamic Animation and Robotics Toolkit. ([web](http://dartsim.github.io/))
-* [KDL](https://github.com/orocos/orocos_kinematics_dynamics) - Orocos Kinematics and Dynamics C++ library. ([web](http://www.orocos.org/kdl))
+* [DART](http://dartsim.github.io/) - Dynamic Animation and Robotics Toolkit. ([github](https://github.com/dartsim/dart.git))
+* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) - A planning, control, and analysis toolbox for nonlinear dynamical systems. ([github](https://github.com/RobotLocomotion/drake))
+* [KDL](http://www.orocos.org/kdl) - Orocos Kinematics and Dynamics C++ library. ([github](https://github.com/orocos/orocos_kinematics_dynamics))
 * [metapod](https://github.com/laas/metapod) - A template-based robot dynamics library.
-* [morse](https://github.com/morse-simulator/morse) - The Modular OpenRobots Simulation Engine. ([web](http://morse-simulator.github.io/))
-* [mrpt](https://github.com/MRPT/mrpt) - The Mobile Robot Programming Toolkit. ([web](http://www.mrpt.org/))
+* [morse](http://morse-simulator.github.io/) - The Modular OpenRobots Simulation Engine. ([github](https://github.com/morse-simulator/morse))
+* [mrpt](http://www.mrpt.org/) - The Mobile Robot Programming Toolkit. ([github](https://github.com/MRPT/mrpt))
 * [pinocchio](https://github.com/stack-of-tasks/pinocchio) - Dynamic computations using Spatial Algebra.
-* [Robotics Library](https://github.com/roboticslibrary/rl) - A self-contained C++ library for robot kinematics, motion planning and control. ([web](http://www.roboticslibrary.org/))
+* [Robotics Library](http://www.roboticslibrary.org/) - A self-contained C++ library for robot kinematics, motion planning and control. ([github](https://github.com/roboticslibrary/rl))
 * [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) - A collection of C++ libraries for simulation and control of robot systems.
-* [Simbody](https://github.com/simbody/simbody.git) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems. ([web](https://simtk.org/home/simbody/))
-* [yarp](https://github.com/robotology/yarp) - Yet Another Robot Platform. ([web](http://www.yarp.it/))
+* [Simbody](https://simtk.org/home/simbody/) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems. ([github](https://github.com/simbody/simbody.git))
+* [yarp](http://www.yarp.it/) - Yet Another Robot Platform. ([github](https://github.com/robotology/yarp))
 
 ## Contributing
 
