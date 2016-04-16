@@ -2,6 +2,16 @@
 
 A curated list of open source robotics simulation libraries.
 
+## Comparison
+
+### General Information
+
+| Library  | Developers | Latest Release  | License | Platform Supported |
+| -------- | ---------- | ------------------  | ------- | ------------------ |
+| [DART](http://dartsim.github.io/) | Georgia Tech | 5.1.1 (2015-11-06)  | BSD | Linux, MacOS, Windows |
+| [Simbody](https://simtk.org/home/simbody) | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15)  | Apache 2.0 | Linux, MacOS, Windows |
+
+
 ## Benchmark
 
 ### Problems
