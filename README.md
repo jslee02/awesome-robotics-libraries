@@ -21,9 +21,9 @@ A curated list of open source robotics simulation libraries.
 * [morse](https://github.com/morse-simulator/morse) - The Modular OpenRobots Simulation Engine. ([web](http://morse-simulator.github.io/))
 * [mrpt](https://github.com/MRPT/mrpt) - The Mobile Robot Programming Toolkit. ([web](http://www.mrpt.org/))
 * [pinocchio](https://github.com/stack-of-tasks/pinocchio) - Dynamic computations using Spatial Algebra.
-* [Robotics Library](https://github.com/roboticslibrary/rl) - The Robotics Library (RL) is a self-contained C++ library for robot kinematics, motion planning and control. ([web](http://www.roboticslibrary.org/))
+* [Robotics Library](https://github.com/roboticslibrary/rl) - A self-contained C++ library for robot kinematics, motion planning and control. ([web](http://www.roboticslibrary.org/))
 * [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) - A collection of C++ libraries for simulation and control of robot systems.
-* [Simbody](https://github.com/simbody/simbody.git) - High-performance C++ multibody dynamics/physics library for simulating articulated biomechanical and mechanical systems like vehicles, robots, and the human skeleton. ([web](https://simtk.org/home/simbody/))
+* [Simbody](https://github.com/simbody/simbody.git) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems. ([web](https://simtk.org/home/simbody/))
 * [yarp](https://github.com/robotology/yarp) - Yet Another Robot Platform. ([web](http://www.yarp.it/))
 
 ## Contributing
