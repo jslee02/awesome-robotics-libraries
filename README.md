@@ -11,6 +11,13 @@ A curated list of open source robotics simulation libraries.
 | [DART](http://dartsim.github.io/) | Georgia Tech | 5.1.1 (2015-11-06)  | BSD | Linux, MacOS, Windows |
 | [Simbody](https://simtk.org/home/simbody) | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15)  | Apache 2.0 | Linux, MacOS, Windows |
 
+### Simulation Features
+
+#### Supported joint types
+
+| Library  | Revolute Joint | Prismatic Joint  | Screw Joint | Universal Joint | Ball Joint | Euler Joint | Translational Joint | Planar Joint | Free Joint |
+| - | - | -  | - | - | - | - | - | - | - |
+
 
 ## Benchmark
 
