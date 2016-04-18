@@ -23,6 +23,10 @@
 * [Simbody](https://simtk.org/home/simbody/) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems. ([github](https://github.com/simbody/simbody.git))
 * [yarp](http://www.yarp.it/) - Yet Another Robot Platform. ([github](https://github.com/robotology/yarp))
 
+### Motion Planning
+
+* [OMPL](http://ompl.kavrakilab.org/) - The Open Motion Planning Library. ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl))
+
 ### Robot Model Description Format
 
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
