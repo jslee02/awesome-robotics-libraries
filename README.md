@@ -82,6 +82,10 @@
 
 * [OMPL](http://ompl.kavrakilab.org/) - The Open Motion Planning Library. ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl))
 
+### Collision Detection
+
+* [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library. ([github](https://github.com/flexible-collision-library/fcl))
+
 ### Robot Model Description Format
 
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
