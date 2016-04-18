@@ -1,5 +1,6 @@
 # Awesome Robotics Libraries
 
+* [CHRONO::ENGINE](http://chronoengine.info/) - C++ library for multibody dynamics simulations. ([github](https://github.com/projectchrono/chrono))
 * [DART](http://dartsim.github.io/) - Dynamic Animation and Robotics Toolkit. ([github](https://github.com/dartsim/dart.git))
 * [Drake](http://drake002.csail.mit.edu/drake/sphinx/) - A planning, control, and analysis toolbox for nonlinear dynamical systems. ([github](https://github.com/RobotLocomotion/drake))
 * [KDL](http://www.orocos.org/kdl) - Orocos Kinematics and Dynamics C++ library. ([github](https://github.com/orocos/orocos_kinematics_dynamics))
