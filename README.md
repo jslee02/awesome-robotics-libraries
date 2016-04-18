@@ -82,7 +82,7 @@
 
 ## Contributing
 
-Contributions are very welcome!
+Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/master/CONTRIBUTING.md) first.
 
 ## License
 
