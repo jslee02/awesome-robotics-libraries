@@ -85,6 +85,7 @@
 ### Collision Detection
 
 * [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library. ([github](https://github.com/flexible-collision-library/fcl))
+* [libccd](https://github.com/danfis/libccd) - Library for collision detection between two convex shapes. ([github](https://github.com/danfis/libccd))
 
 ### Robot Model Description Format
 
