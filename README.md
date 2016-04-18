@@ -70,7 +70,12 @@
 
 * T. Erez et al. [Simulation tools for model-based robotics: comparison of Bullet, Havok, MuJoCo, ODE, and PhysX](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7139807). ICRA 2015.
 
-## Other Libraries
+## Other Libraries and Software
+
+### Simulator
+
+* [Gazebo](http://www.gazebosim.org/) A dynamic multi-robot simulator. ([bitbucket](https://bitbucket.org/osrf/gazebo))
+* [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
 
 ### Motion Planning
 
