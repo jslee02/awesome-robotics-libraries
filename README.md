@@ -25,6 +25,9 @@
 
 ### Comparison
 
+Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.org/wiki/Robotics_simulator#Simulators) page. 
+> :warning: **Warning**: Most fields are missing. Any help would be appreciated.
+
 #### General Information
 
 | Library  | Developer(s) | Latest Release | Platform Supported | License | Github :star: |
@@ -36,6 +39,12 @@
 | MORSE    | [LAAS-CNRS and many](http://www.openrobots.org/morse/doc/latest/credits.html) | 1.4 (2016-02-08) | Linux | BSD 3-Clause | 153 |
 | Simbody  | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15) | Linux, MacOS, Windows | Apache 2.0 | 535 |
 :star: updated Apr 19, 2016
+
+#### Technical Information
+
+| Library  | Main Programming Language | External APIs | Formats Support |
+|:--------:|:-------------------------:|:-------------:|:---------------:|
+| DART     | C++ | C++, Python | URDF, SDF, VSK, SKEL |
 
 #### Support
 
@@ -51,6 +60,12 @@
 
 #### Simulation Features
 
+##### Families of robots
+
+| Library  | UGV (ground mobile robot) | UAV (aerial robots) | AUV (underwater robots) | Robotic Arms | Robotic Hands (grasping simulation) | Humanoid Robots | Human Avatars |
+|:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|
+| DART     | Yes | No | No | Yes | Yes | Yes | No |
+
 ##### Supported dynamics algorithms
 
 | Library  | Inverse Dynamics | Forward Dynamics | Hybrid Dynamics |
@@ -62,6 +77,18 @@
 | Library  | Revolute Joint | Prismatic Joint | Screw Joint | Universal Joint | Ball Joint | Euler Joint | Translational Joint | Planar Joint | Free Joint |
 |:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|:------------:|:----------:|
 | DART     | Yes | Yes  | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+
+##### Supported actuators
+
+| Library  | Kinematic Actuators | Force-controlled Actuators | Servos |
+|:--------:|:-------------------:|:--------------------------:|:------:|
+| DART     | Yes | Yes  | Yes |
+
+##### Supported sensors
+
+| Library  | Odometry | IMU | Collision | GPS | Monocular Cameras | Stereo Cameras | Depth Cameras | 2D Laser Scanners | 3D Laser Scanners |
+|:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|:------------:|:----------:|
+| DART     | No | No | No | No | No | No | No | No | No |
 
 ### Benchmark
 
