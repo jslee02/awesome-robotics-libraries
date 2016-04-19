@@ -13,6 +13,7 @@
 * [Moby](http://physsim.sourceforge.net/index.html) - Multi-body dynamics simulation library written in C++. ([github](https://github.com/PositronicsLab/Moby))
 * [MORSE](http://morse-simulator.github.io/) - The Modular OpenRobots Simulation Engine. ([github](https://github.com/morse-simulator/morse))
 * [mrpt](http://www.mrpt.org/) - The Mobile Robot Programming Toolkit. ([github](https://github.com/MRPT/mrpt))
+* [Newton Dynamics](http://newtondynamics.com/) - A cross-platform life-like physics simulation library. ([github](https://github.com/MADEAPPS/newton-dynamics))
 * [ODE](http://www.ode.org/) - An open source, high performance library for simulating rigid body dynamics. ([bitbucket](https://bitbucket.org/odedevs/ode))
 * [OpenRAVE](http://www.openrave.org) - An environment for testing, developing, and deploying robotics motion planning algorithms. ([github](https://github.com/rdiankov/openrave))
 * [pinocchio](https://github.com/stack-of-tasks/pinocchio) - Dynamic computations using Spatial Algebra. ([github](https://github.com/stack-of-tasks/pinocchio))
