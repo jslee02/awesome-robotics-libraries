@@ -29,9 +29,10 @@
 
 | Library  | Developer(s) | Latest Release | Platform Supported | License | Github :star: |
 |:--------:| ------------ | -------------- | ------------------ | ------- |:------------:|
+| chrono   | [University of Wisconsin-Madison](http://www.projectchrono.org/about/) | IntPoint1.2 (2016-02-27) | Linux, Windows | BSD 3-Clause | 57 |
 | Bullet   | Erwin Coumans | 2.83 (2016-01-08) | Linux, MacOS, Windows | Zlib | 1644 |
 | DART     | Georgia Tech | 5.1.1 (2015-11-06) | Linux, MacOS, Windows | BSD 2-Clause | 90 |
-| Drake     | MIT and TRI | 0.9.11 (2015-10-08) | Linux, MacOS, Windows | BSD 3-Clause | 443 |
+| Drake    | MIT and TRI | 0.9.11 (2015-10-08) | Linux, MacOS, Windows | BSD 3-Clause | 443 |
 | Simbody  | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15) | Linux, MacOS, Windows | Apache 2.0 | 535 |
 :star: updated Apr 19, 2016
 
@@ -96,7 +97,7 @@
 
 ## Contributing
 
-Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/master/CONTRIBUTING.md) first.
+Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/master/CONTRIBUTING.md) first. Also, please feel free to report any error.
 
 ## License
 
