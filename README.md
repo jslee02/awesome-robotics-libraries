@@ -83,6 +83,7 @@
 
 ### Motion Planning
 
+* [AIKIDO](https://github.com/personalrobotics/aikido) - A C++ library for solving robotic motion planning and decision making problems. ([github](https://github.com/personalrobotics/aikido))
 * [OMPL](http://ompl.kavrakilab.org/) - The Open Motion Planning Library. ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl))
 
 ### Collision Detection
