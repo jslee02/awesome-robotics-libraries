@@ -1,4 +1,4 @@
-# Awesome Robotics Libraries
+# Awesome Robotics Libraries and Software
 
 ## Multibody Dynamics
 
