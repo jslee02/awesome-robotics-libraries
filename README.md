@@ -103,6 +103,13 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 * T. Erez et al. [Simulation tools for model-based robotics: comparison of Bullet, Havok, MuJoCo, ODE, and PhysX](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7139807). ICRA 2015. ([pdf](https://homes.cs.washington.edu/~todorov/papers/ErezICRA15.pdf))
 * S. Ivaldi et al. [Tools for simulating humanoid robot dynamics: a survey based on user feedback](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7041462). Humanoids 2014. ([pdf](http://arxiv.org/pdf/1402.7050.pdf))
 
+#### Articles
+
+* [9 open source robotics projects](https://opensource.com/life/16/4/open-source-robotics-projects) by [Jason Baker](https://opensource.com/users/jason-baker)
+* [Comparison of Rigid Body Dynamic Simulators for Robotic Simulation in Gazebo](http://www.osrfoundation.org/wordpress2/wp-content/uploads/2015/04/roscon2014_scpeters.pdf) by [Steven Peters](http://www.osrfoundation.org/team/steven-peters/) and [John Hsu](http://www.osrfoundation.org/team/john-hsu/)
+* [Survey of multibody dynamics software](http://homepages.rpi.edu/~luy4/survey.html) maintained by [Ying Lu](http://homepages.rpi.edu/~luy4/)
+* [Wikipedia: Robotics simulator](https://en.wikipedia.org/wiki/Robotics_simulator#Simulators)
+
 ## Other Libraries and Software
 
 ### Simulator
@@ -125,13 +132,6 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
 * [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model. ([github](https://github.com/ros/urdfdom))
-
-## External Links
-
-* [9 open source robotics projects](https://opensource.com/life/16/4/open-source-robotics-projects) by [Jason Baker](https://opensource.com/users/jason-baker)
-* [Comparison of Rigid Body Dynamic Simulators for Robotic Simulation in Gazebo](http://www.osrfoundation.org/wordpress2/wp-content/uploads/2015/04/roscon2014_scpeters.pdf) by [Steven Peters](http://www.osrfoundation.org/team/steven-peters/) and [John Hsu](http://www.osrfoundation.org/team/john-hsu/)
-* [Survey of multibody dynamics software](http://homepages.rpi.edu/~luy4/survey.html) maintained by [Ying Lu](http://homepages.rpi.edu/~luy4/)
-* [Wikipedia: Robotics simulator](https://en.wikipedia.org/wiki/Robotics_simulator#Simulators)
 
 ## Contributing
 
