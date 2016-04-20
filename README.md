@@ -15,7 +15,7 @@
 * [Newton Dynamics](http://newtondynamics.com/) - A cross-platform life-like physics simulation library. ([github](https://github.com/MADEAPPS/newton-dynamics))
 * [ODE](http://www.ode.org/) - An open source, high performance library for simulating rigid body dynamics. ([bitbucket](https://bitbucket.org/odedevs/ode))
 * [OpenRAVE](http://www.openrave.org) - An environment for testing, developing, and deploying robotics motion planning algorithms. ([github](https://github.com/rdiankov/openrave))
-* [pinocchio](https://github.com/stack-of-tasks/pinocchio) - Dynamic computations using Spatial Algebra. ([github](https://github.com/stack-of-tasks/pinocchio))
+* [pinocchio](http://stack-of-tasks.github.io/pinocchio/) - Dynamic computations using Spatial Algebra. ([github](https://github.com/stack-of-tasks/pinocchio))
 * [PositionBasedDynamics](https://github.com/janbender/PositionBasedDynamics) - A library for the physically-based simulation of rigid bodies, deformable solids and fluids.
 * [RBDL](http://rbdl.bitbucket.org/) - Rigid Body Dynamics Library. ([bitbucket](https://bitbucket.org/rbdl/rbdl))
 * [Robotics Library](http://www.roboticslibrary.org/) - A self-contained C++ library for robot kinematics, motion planning and control. ([github](https://github.com/roboticslibrary/rl))
