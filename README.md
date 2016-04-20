@@ -67,11 +67,11 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 |:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|
 | DART     | Yes | No | No | Yes | Yes | Yes | No |
 
-##### Supported dynamics algorithms
+##### Supported kinematics/dynamics algorithms
 
-| Library  | Inverse Dynamics | Forward Dynamics | Hybrid Dynamics |
-|:--------:|:----------------:|:----------------:|:---------------:|
-| DART     | Yes | Yes  | Yes |
+| Library  | Inverse Kinematics | Inverse Dynamics | Forward Dynamics | Hybrid Dynamics |
+|:--------:|:------------------:|:----------------:|:----------------:|:---------------:|
+| DART     | Yes | Yes | Yes  | Yes |
 
 ##### Supported joint types
 
