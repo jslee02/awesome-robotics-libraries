@@ -11,7 +11,6 @@
 * [MBDyn](https://www.mbdyn.org/) - Free MultiBody Dynamics Simulation Software
 * [metapod](https://github.com/laas/metapod) - A template-based robot dynamics library. ([github](https://github.com/laas/metapod))
 * [Moby](http://physsim.sourceforge.net/index.html) - Multi-body dynamics simulation library written in C++. ([github](https://github.com/PositronicsLab/Moby))
-* [MORSE](http://morse-simulator.github.io/) - The Modular OpenRobots Simulation Engine. ([github](https://github.com/morse-simulator/morse))
 * [mrpt](http://www.mrpt.org/) - The Mobile Robot Programming Toolkit. ([github](https://github.com/MRPT/mrpt))
 * [Newton Dynamics](http://newtondynamics.com/) - A cross-platform life-like physics simulation library. ([github](https://github.com/MADEAPPS/newton-dynamics))
 * [ODE](http://www.ode.org/) - An open source, high performance library for simulating rigid body dynamics. ([bitbucket](https://bitbucket.org/odedevs/ode))
@@ -109,6 +108,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 ### Simulator
 
 * [Gazebo](http://www.gazebosim.org/) A dynamic multi-robot simulator. ([bitbucket](https://bitbucket.org/osrf/gazebo))
+* [MORSE](http://morse-simulator.github.io/) - The Modular OpenRobots Simulation Engine. ([github](https://github.com/morse-simulator/morse))
 * [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
 
 ### Motion Planning
