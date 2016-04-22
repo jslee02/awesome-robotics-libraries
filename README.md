@@ -35,7 +35,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 |:--------:| ------------ | -------------- | ------------------ | ------- |:------------:|
 | chrono   | [University of Wisconsin-Madison](http://www.projectchrono.org/about/) | IntPoint1.2 (2016-02-27) | Linux, Windows | BSD 3-Clause | 57 |
 | Bullet   | Erwin Coumans | 2.83 (2016-01-08) | Linux, MacOS, Windows | Zlib | 1644 |
-| DART     | Georgia Tech | 5.1.1 (2015-11-06) | Linux, MacOS, Windows | BSD 2-Clause | 90 |
+| DART     | Georgia Tech | 5.1.1 (2015-11-06) | Linux, MacOS, Windows | BSD 2-Clause | [90](https://github.com/dartsim/dart/stargazers) |
 | Drake    | MIT and TRI | 0.9.11 (2015-10-08) | Linux, MacOS, Windows | BSD 3-Clause | 443 |
 | MORSE    | [LAAS-CNRS and many](http://www.openrobots.org/morse/doc/latest/credits.html) | 1.4 (2016-02-08) | Linux | BSD 3-Clause | 153 |
 | Simbody  | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15) | Linux, MacOS, Windows | Apache 2.0 | 535 |
