@@ -37,7 +37,6 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 | Bullet   | Erwin Coumans | 2.83 (2016-01-08) | Linux, MacOS, Windows | Zlib | 1644 |
 | DART     | Georgia Tech | 5.1.1 (2015-11-06) | Linux, MacOS, Windows | BSD 2-Clause | [90](https://github.com/dartsim/dart/stargazers) |
 | Drake    | MIT and TRI | 0.9.11 (2015-10-08) | Linux, MacOS, Windows | BSD 3-Clause | 443 |
-| MORSE    | [LAAS-CNRS and many](http://www.openrobots.org/morse/doc/latest/credits.html) | 1.4 (2016-02-08) | Linux | BSD 3-Clause | 153 |
 | Simbody  | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15) | Linux, MacOS, Windows | Apache 2.0 | 535 |
 :star: updated Apr 19, 2016
 
@@ -61,31 +60,31 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 #### Simulation Features
 
-##### Families of robots
+##### Families of Robots
 
 | Library  | UGV (ground mobile robot) | UAV (aerial robots) | AUV (underwater robots) | Robotic Arms | Robotic Hands (grasping simulation) | Humanoid Robots | Human Avatars |
 |:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|
 | DART     | Yes | No | No | Yes | Yes | Yes | No |
 
-##### Supported kinematics/dynamics algorithms
+##### Supported Kinematics/Dynamics Algorithms
 
 | Library  | Inverse Kinematics | Inverse Dynamics | Forward Dynamics | Hybrid Dynamics |
 |:--------:|:------------------:|:----------------:|:----------------:|:---------------:|
 | DART     | Yes | Yes | Yes  | Yes |
 
-##### Supported joint types
+##### Supported Joint Types
 
 | Library  | Revolute Joint | Prismatic Joint | Screw Joint | Universal Joint | Ball Joint | Euler Joint | Translational Joint | Planar Joint | Free Joint |
 |:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|:------------:|:----------:|
 | DART     | Yes | Yes  | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 
-##### Supported actuators
+##### Supported Actuators
 
 | Library  | Kinematic Actuators | Force-controlled Actuators | Servos |
 |:--------:|:-------------------:|:--------------------------:|:------:|
 | DART     | Yes | Yes  | Yes |
 
-##### Supported sensors
+##### Supported Sensors
 
 | Library  | Odometry | IMU | Collision | GPS | Monocular Cameras | Stereo Cameras | Depth Cameras | 2D Laser Scanners | 3D Laser Scanners |
 |:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|:------------:|:----------:|
@@ -117,6 +116,15 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 * [Gazebo](http://www.gazebosim.org/) A dynamic multi-robot simulator. ([bitbucket](https://bitbucket.org/osrf/gazebo))
 * [MORSE](http://morse-simulator.github.io/) - The Modular OpenRobots Simulation Engine. ([github](https://github.com/morse-simulator/morse))
 * [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
+
+#### Comparison
+
+##### General Information
+
+| Library  | Developer(s) | Latest Release | Platform Supported | License | Github :star: |
+|:--------:| ------------ | -------------- | ------------------ | ------- |:------------:|
+| MORSE    | [LAAS-CNRS and many](http://www.openrobots.org/morse/doc/latest/credits.html) | 1.4 (2016-02-08) | Linux | BSD 3-Clause | 153 |
+:star: updated Apr 19, 2016
 
 ### Motion Planning
 
