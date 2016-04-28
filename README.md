@@ -9,7 +9,7 @@ A curated list of open source libraries and software for robotics people.
 * [Optimization](#optimization)
 * [Robot Model Description Format](#robot-model-description-format)
 
-## [Multibody Dynamics](#multibody-dynamics)
+## [Multibody Dynamics](#table-of-contents)
 
 * [Bullet](http://bulletphysics.org/wordpress/) - Real-Time Physics Simulation ([github](https://github.com/bulletphysics/bullet3))
 * [CHRONO::ENGINE](http://chronoengine.info/) - C++ library for multibody dynamics simulations. ([github](https://github.com/projectchrono/chrono))
