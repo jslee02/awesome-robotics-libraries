@@ -2,7 +2,7 @@
 
 A curated list of open source libraries and software for robotics people.
 
-#### Table of Contents
+#### [Table of Contents](#table-of-contents)
 * [Multibody Dynamics](#multibody-dynamics)
 * [Motion Planning](#motion-planning)
 * [Collision Detection](#collision-detection)
@@ -133,23 +133,23 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 | MORSE    | [LAAS-CNRS and many](http://www.openrobots.org/morse/doc/latest/credits.html) | 1.4 (2016-02-08) | Linux | BSD 3-Clause | 153 |
 :star: updated Apr 19, 2016
 
-## [Motion Planning](#motion-planning)
+## [Motion Planning](#table-of-contents)
 
 * [Aikido](https://github.com/personalrobotics/aikido) - A C++ library for solving robotic motion planning and decision making problems. ([github](https://github.com/personalrobotics/aikido))
 * [OMPL](http://ompl.kavrakilab.org/) - The Open Motion Planning Library. ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl))
 
-## [Collision Detection](#collision-detection)
+## [Collision Detection](#table-of-contents)
 
 * [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library. ([github](https://github.com/flexible-collision-library/fcl))
 * [libccd](https://github.com/danfis/libccd) - Library for collision detection between two convex shapes. ([github](https://github.com/danfis/libccd))
 
-## [Optimization](#optimization)
+## [Optimization](#table-of-contents)
 
 * [Ceres Solver](http://ceres-solver.org/) ([github](https://github.com/ceres-solver/ceres-solver)) - A large scale non-linear optimization library . Ceres Solver has been used in production at Google for more than four years now. It is clean, extensively tested and well documented code that is actively developed and supported.
 * [Ipopt](https://projects.coin-or.org/Ipopt) ([github](https://github.com/coin-or/Ipopt)) - Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software package for large-scale ​nonlinear optimization.
 * [NLopt](http://ab-initio.mit.edu/wiki/index.php/NLopt) ([github](https://github.com/stevengj/nlopt)) - NLopt is a free/open-source library for nonlinear optimization, providing a common interface for a number of different free optimization routines available online as well as original implementations of various other algorithms.
 
-## [Robot Model Description Format](#robot-model-description-format)
+## [Robot Model Description Format](#table-of-contents)
 
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
 * [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model. ([github](https://github.com/ros/urdfdom))
