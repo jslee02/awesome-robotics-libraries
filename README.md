@@ -128,13 +128,19 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 ### Motion Planning
 
-* [AIKIDO](https://github.com/personalrobotics/aikido) - A C++ library for solving robotic motion planning and decision making problems. ([github](https://github.com/personalrobotics/aikido))
+* [Aikido](https://github.com/personalrobotics/aikido) - A C++ library for solving robotic motion planning and decision making problems. ([github](https://github.com/personalrobotics/aikido))
 * [OMPL](http://ompl.kavrakilab.org/) - The Open Motion Planning Library. ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl))
 
 ### Collision Detection
 
 * [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library. ([github](https://github.com/flexible-collision-library/fcl))
 * [libccd](https://github.com/danfis/libccd) - Library for collision detection between two convex shapes. ([github](https://github.com/danfis/libccd))
+
+### Optimization
+
+* [Ceres Solver](http://ceres-solver.org/) ([github](https://github.com/ceres-solver/ceres-solver)) - A large scale non-linear optimization library . Ceres Solver has been used in production at Google for more than four years now. It is clean, extensively tested and well documented code that is actively developed and supported.
+* [Ipopt](https://projects.coin-or.org/Ipopt) ([github](https://github.com/coin-or/Ipopt)) - Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software package for large-scale ​nonlinear optimization.
+* [NLopt](http://ab-initio.mit.edu/wiki/index.php/NLopt) ([github](https://github.com/stevengj/nlopt)) - NLopt is a free/open-source library for nonlinear optimization, providing a common interface for a number of different free optimization routines available online as well as original implementations of various other algorithms.
 
 ### Robot Model Description Format
 
