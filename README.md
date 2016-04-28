@@ -2,7 +2,7 @@
 
 A curated list of open source libraries and software for robotics people.
 
-#### [Table of Contents](#table-of-contents)
+#### Table of Contents
 * [Multibody Dynamics](#multibody-dynamics)
 * [Motion Planning](#motion-planning)
 * [Collision Detection](#collision-detection)
