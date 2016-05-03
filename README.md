@@ -39,7 +39,6 @@ A curated list of open source robotics libraries and software.
 * [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) - A collection of C++ libraries for simulation and control of robot systems.
 * [siconos](http://siconos.gforge.inria.fr) - A software package for the modeling and simulation of nonsmooth dynamical systems. ([github](https://github.com/siconos/siconos))
 * [Simbody](https://simtk.org/home/simbody/) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems. ([github](https://github.com/simbody/simbody.git))
-* [yarp](http://www.yarp.it/) - Yet Another Robot Platform. ([github](https://github.com/robotology/yarp))
 
 **Closed Source**
 
@@ -150,6 +149,11 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
 * [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model. ([github](https://github.com/ros/urdfdom))
+
+### Robot Platform
+
+* [ROS](http://www.ros.org/) ([github repos](http://wiki.ros.org/Tickets)) - A set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project.
+* [YARP](http://www.yarp.it/) ([github](https://github.com/robotology/yarp)) - A library and toolkit for communication and device interfaces, used on everything from humanoids to embedded devices.
 
 ## [Software](#awesome-robotics-libraries)
 
