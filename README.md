@@ -145,9 +145,9 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
 * [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model. ([github](https://github.com/ros/urdfdom))
 
-## Software
+## [Software](#awesome-robotics-libraries)
 
-### Simulator
+### [Simulator](#awesome-robotics-libraries)
 
 * [Gazebo](http://www.gazebosim.org/) A dynamic multi-robot simulator. ([bitbucket](https://bitbucket.org/osrf/gazebo))
 * [MORSE](http://morse-simulator.github.io/) - The Modular OpenRobots Simulation Engine. ([github](https://github.com/morse-simulator/morse))
@@ -170,10 +170,10 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 * [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
 
-## Contributing
+## [Contributing](#awesome-robotics-libraries)
 
 Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/master/CONTRIBUTING.md) first. Also, please feel free to report any error.
 
-## License
+## [License](#awesome-robotics-libraries)
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
