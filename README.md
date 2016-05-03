@@ -95,9 +95,9 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 ###### Supported Joint Types
 
-| Library  | Revolute Joint | Prismatic Joint | Screw Joint | Universal Joint | Ball Joint | Euler Joint | Translational Joint | Planar Joint | Free Joint |
-|:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|:------------:|:----------:|
-| DART     | Yes | Yes  | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Library  | Revolute | Prismatic | Screw | Universal | [Cylindrical](https://en.wikipedia.org/wiki/Cylindrical_joint) | Ball | Euler | Translational | Planar | Free |
+|:--------:|:--------:|:---------:|:-----:|:---------:|:------------:|:----:|:-----:|:-------------:|:------:|:----:|
+| DART     | Yes | Yes  | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes |
 
 ###### Supported Actuators
 
