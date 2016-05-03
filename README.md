@@ -161,7 +161,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 |:--------:| ------------ | -------------- | ------------------ | ------- |:------------:|
 | Gazebo   | [OSRF](http://www.osrfoundation.org/) | [7.1.0 (2016-04-08)](http://www.gazebosim.org/download) | Linux, Mac, Windows | Apache 2.0 | N/A |
 | MORSE    | [LAAS-CNRS and many](http://www.openrobots.org/morse/doc/latest/credits.html) | 1.4 (2016-02-08) | Linux | BSD 3-Clause | 153 |
-| V-REP    | [Coppelia Robotics](http://www.coppeliarobotics.com/contact.html) | 3.3.0 (2016-02-19) | Linux, Mac, Windows | BSD 3-Clause | N/A |
+| V-REP    | [Coppelia Robotics](http://www.coppeliarobotics.com/contact.html) | [3.3.0 (2016-02-19)](http://www.coppeliarobotics.com/downloads.html) | Linux, Mac, Windows | [Commercial / Free educational](http://www.coppeliarobotics.com/licensing.html) | N/A |
 :star: updated Apr 19, 2016
 
 ## [Other Awesome Lists](#awesome-robotics-libraries)
