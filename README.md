@@ -154,6 +154,14 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
 * [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model. ([github](https://github.com/ros/urdfdom))
 
+## Other Awesome Lists
+
+* [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) - This is a list of various books, courses and other resources for robotics. It's an attempt to gather useful material in one place for everybody who wants to learn more about the field.
+* [Awesome Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence)
+* [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
+* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+* [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
+
 ## Contributing
 
 Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/master/CONTRIBUTING.md) first. Also, please feel free to report any error.
