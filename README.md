@@ -1,6 +1,6 @@
 # Awesome Robotics Libraries
 
-A curated list of open source libraries and software for robotics people.
+A curated list of open source robotics libraries and software.
 
 #### Table of Contents
 * [Multibody Dynamics](#multibody-dynamics)
