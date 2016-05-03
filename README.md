@@ -159,6 +159,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 | Library  | Developer(s) | Latest Release | Platform Supported | License | Github :star: |
 |:--------:| ------------ | -------------- | ------------------ | ------- |:------------:|
+| Gazebo   | [OSRF](http://www.osrfoundation.org/) | [7.1.0 (2016-04-08)](http://www.gazebosim.org/download) | Linux, Mac, Windows | Apache 2.0 | N/A |
 | MORSE    | [LAAS-CNRS and many](http://www.openrobots.org/morse/doc/latest/credits.html) | 1.4 (2016-02-08) | Linux | BSD 3-Clause | 153 |
 :star: updated Apr 19, 2016
 
