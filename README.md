@@ -20,26 +20,26 @@ A curated list of open source robotics libraries and software.
 
 **Open Source**
 
-* [Bullet](http://bulletphysics.org/wordpress/) - Real-Time Physics Simulation ([github](https://github.com/bulletphysics/bullet3))
-* [CHRONO::ENGINE](http://chronoengine.info/) - C++ library for multibody dynamics simulations. ([github](https://github.com/projectchrono/chrono))
-* [DART](http://dartsim.github.io/) - Dynamic Animation and Robotics Toolkit. ([github](https://github.com/dartsim/dart.git))
-* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) - A planning, control, and analysis toolbox for nonlinear dynamical systems. ([github](https://github.com/RobotLocomotion/drake))
+* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3)) - Real-Time Physics Simulation
+* [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono)) - C++ library for multibody dynamics simulations.
+* [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git)) - Dynamic Animation and Robotics Toolkit.
+* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) ([github](https://github.com/RobotLocomotion/drake)) - A planning, control, and analysis toolbox for nonlinear dynamical systems.
 * [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) - A library for dynamic simulation of multi-body systems in C++.
-* [KDL](http://www.orocos.org/kdl) - Orocos Kinematics and Dynamics C++ library. ([github](https://github.com/orocos/orocos_kinematics_dynamics))
+* [KDL](http://www.orocos.org/kdl) ([github](https://github.com/orocos/orocos_kinematics_dynamics)) - Orocos Kinematics and Dynamics C++ library.
 * [MBDyn](https://www.mbdyn.org/) - Free MultiBody Dynamics Simulation Software
-* [metapod](https://github.com/laas/metapod) - A template-based robot dynamics library. ([github](https://github.com/laas/metapod))
-* [Moby](http://physsim.sourceforge.net/index.html) - Multi-body dynamics simulation library written in C++. ([github](https://github.com/PositronicsLab/Moby))
-* [mrpt](http://www.mrpt.org/) - The Mobile Robot Programming Toolkit. ([github](https://github.com/MRPT/mrpt))
-* [Newton Dynamics](http://newtondynamics.com/) - A cross-platform life-like physics simulation library. ([github](https://github.com/MADEAPPS/newton-dynamics))
-* [ODE](http://www.ode.org/) - An open source, high performance library for simulating rigid body dynamics. ([bitbucket](https://bitbucket.org/odedevs/ode))
-* [OpenRAVE](http://www.openrave.org) - An environment for testing, developing, and deploying robotics motion planning algorithms. ([github](https://github.com/rdiankov/openrave))
-* [pinocchio](http://stack-of-tasks.github.io/pinocchio/) - Dynamic computations using Spatial Algebra. ([github](https://github.com/stack-of-tasks/pinocchio))
+* [metapod](https://github.com/laas/metapod) ([github](https://github.com/laas/metapod)) - A template-based robot dynamics library.
+* [Moby](http://physsim.sourceforge.net/index.html) ([github](https://github.com/PositronicsLab/Moby)) - Multi-body dynamics simulation library written in C++.
+* [mrpt](http://www.mrpt.org/) ([github](https://github.com/MRPT/mrpt)) - The Mobile Robot Programming Toolkit.
+* [Newton Dynamics](http://newtondynamics.com/) ([github](https://github.com/MADEAPPS/newton-dynamics)) - A cross-platform life-like physics simulation library.
+* [ODE](http://www.ode.org/) ([bitbucket](https://bitbucket.org/odedevs/ode)) - An open source, high performance library for simulating rigid body dynamics.
+* [OpenRAVE](http://www.openrave.org) ([github](https://github.com/rdiankov/openrave)) - An environment for testing, developing, and deploying robotics motion planning algorithms.
+* [pinocchio](http://stack-of-tasks.github.io/pinocchio/) ([github](https://github.com/stack-of-tasks/pinocchio)) - Dynamic computations using Spatial Algebra.
 * [PositionBasedDynamics](https://github.com/janbender/PositionBasedDynamics) - A library for the physically-based simulation of rigid bodies, deformable solids and fluids.
-* [RBDL](http://rbdl.bitbucket.org/) - Rigid Body Dynamics Library. ([bitbucket](https://bitbucket.org/rbdl/rbdl))
-* [Robotics Library](http://www.roboticslibrary.org/) - A self-contained C++ library for robot kinematics, motion planning and control. ([github](https://github.com/roboticslibrary/rl))
+* [RBDL](http://rbdl.bitbucket.org/) ([bitbucket](https://bitbucket.org/rbdl/rbdl)) - Rigid Body Dynamics Library.
+* [Robotics Library](http://www.roboticslibrary.org/) ([github](https://github.com/roboticslibrary/rl)) - A self-contained C++ library for robot kinematics, motion planning and control.
 * [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) - A collection of C++ libraries for simulation and control of robot systems.
-* [siconos](http://siconos.gforge.inria.fr) - A software package for the modeling and simulation of nonsmooth dynamical systems. ([github](https://github.com/siconos/siconos))
-* [Simbody](https://simtk.org/home/simbody/) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems. ([github](https://github.com/simbody/simbody.git))
+* [siconos](http://siconos.gforge.inria.fr) ([github](https://github.com/siconos/siconos)) - A software package for the modeling and simulation of nonsmooth dynamical systems.
+* [Simbody](https://simtk.org/home/simbody/) ([github](https://github.com/simbody/simbody.git)) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems.
 
 **Closed Source**
 
