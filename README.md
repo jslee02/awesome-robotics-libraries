@@ -21,14 +21,14 @@ A curated list of open source robotics libraries and software.
 
 ### [Multibody Dynamics](#awesome-robotics-libraries)
 
-#### Selected Libraries to Compare
+#### [Selected Libraries to Compare](#awesome-robotics-libraries)
 
 * [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3)) - Real-Time Physics Simulation
 * [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git)) - Dynamic Animation and Robotics Toolkit.
 * [ODE](http://www.ode.org/) ([bitbucket](https://bitbucket.org/odedevs/ode)) - An open source, high performance library for simulating rigid body dynamics.
 * [Simbody](https://simtk.org/home/simbody/) ([github](https://github.com/simbody/simbody.git)) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems.
 
-#### Comparison
+#### [Comparison](#awesome-robotics-libraries)
 
 Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.org/wiki/Robotics_simulator#Simulators) page. 
 > :warning: **Warning**: Most fields are missing. Any help would be appreciated.
@@ -113,7 +113,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 * [Survey of multibody dynamics software](http://homepages.rpi.edu/~luy4/survey.html) maintained by [Ying Lu](http://homepages.rpi.edu/~luy4/)
 * [Wikipedia: Robotics simulator](https://en.wikipedia.org/wiki/Robotics_simulator#Simulators)
 
-#### Full List of Libraries
+#### [Full List of Libraries](#awesome-robotics-libraries)
 
 * [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3)) - Real-Time Physics Simulation
 * [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono)) - C++ library for multibody dynamics simulations.
