@@ -25,7 +25,9 @@ A curated list of open source robotics libraries and software.
 #### [Selected Libraries to Compare](#awesome-robotics-libraries)
 
 * [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3)) - Real-Time Physics Simulation
+* [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono)) - C++ library for multibody dynamics simulations.
 * [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git)) - Dynamic Animation and Robotics Toolkit.
+* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) ([github](https://github.com/RobotLocomotion/drake)) - A planning, control, and analysis toolbox for nonlinear dynamical systems.
 * [ODE](http://www.ode.org/) ([bitbucket](https://bitbucket.org/odedevs/ode)) - An open source, high performance library for simulating rigid body dynamics.
 * [Simbody](https://simtk.org/home/simbody/) ([github](https://github.com/simbody/simbody.git)) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems.
 
@@ -42,14 +44,19 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 | Bullet   | Erwin Coumans | 2.83 (2016-01-08) | Linux, MacOS, Windows | Zlib | 1644 |
 | DART     | Georgia Tech and CMU | 5.1.1 (2015-11-06) | Linux, MacOS, Windows | BSD 2-Clause | [90](https://github.com/dartsim/dart/stargazers) |
 | Drake    | MIT and TRI | 0.9.11 (2015-10-08) | Linux, MacOS, Windows | BSD 3-Clause | 443 |
+| ODE      | [Russell Smith](http://www.q12.org/) | [0.14 (2015-12-18)](https://bitbucket.org/odedevs/ode/commits/tag/0.14) | Linux, MacOS, Windows | LGPL 2.1 or BSD 3-Clause | N/A |
 | Simbody  | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15) | Linux, MacOS, Windows | Apache 2.0 | 535 |
 :star: updated Apr 19, 2016
 
 ##### Technical Information
 
-| Library  | Main Programming Language | External APIs | Formats Support |
-|:--------:|:-------------------------:|:-------------:|:---------------:|
+| Library  | Main Programming Language | External APIs | File Formats Support |
+|:--------:|:-------------------------:|:-------------:|:--------------------:|
+| chrono   | C++ | C++, Python | Unknown |
+| Bullet   | C++ | C++ | URDF |
 | DART     | C++ | C++, Python | URDF, SDF, VSK, SKEL |
+| Drake    | C++ and MATLAB | C++, Python | own json format |
+| Simbody  | C++ | C++ | URDF |
 
 ##### Support
 
