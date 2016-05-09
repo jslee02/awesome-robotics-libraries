@@ -52,10 +52,11 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 | Library  | Main Programming Language | External APIs | File Formats Support |
 |:--------:|:-------------------------:|:-------------:|:--------------------:|
-| chrono   | C++ | C++, Python | Unknown |
+| chrono   | C++ | C++, Python | unknown |
 | Bullet   | C++ | C++ | URDF |
 | DART     | C++ | C++, Python | URDF, SDF, VSK, SKEL |
 | Drake    | C++ and MATLAB | C++, Python | own json format |
+| ODE      | C++ | C++ | unknown |
 | Simbody  | C++ | C++ | URDF |
 
 ##### Support
