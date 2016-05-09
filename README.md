@@ -16,6 +16,7 @@ A curated list of open source robotics libraries and software.
 * [Software](#software)
   * [Simulator](#simulator)
 * [Other Awesome Lists](#other-awesome-lists)
+* [Contributing](#contributing)
 
 ## [Libraries](#awesome-robotics-libraries)
 
