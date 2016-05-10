@@ -195,7 +195,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 ##### Papers
 
 * A. Staranowicz, G. L. Mariottini, [A Survey and Comparison of Commercial and
-Open-Source Robotic Simulator Software], PETRA 2011. ([pdf](http://ranger.uta.edu/~gianluca/papers/StMa_PETRA11.pdf))
+Open-Source Robotic Simulator Software](http://dl.acm.org/citation.cfm?id=2141689), PETRA 2011. ([pdf](http://ranger.uta.edu/~gianluca/papers/StMa_PETRA11.pdf))
 
 ## [Other Awesome Lists](#awesome-robotics-libraries)
 
