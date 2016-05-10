@@ -192,6 +192,11 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 | V-REP    | [Coppelia Robotics](http://www.coppeliarobotics.com/contact.html) | [3.3.0 (2016-02-19)](http://www.coppeliarobotics.com/downloads.html) | Linux, Mac, Windows | [Commercial / Free educational](http://www.coppeliarobotics.com/licensing.html) | N/A |
 :star: updated Apr 19, 2016
 
+##### Papers
+
+* A. Staranowicz, G. L. Mariottini, [A Survey and Comparison of Commercial and
+Open-Source Robotic Simulator Software], PETRA 2011. ([pdf](http://ranger.uta.edu/~gianluca/papers/StMa_PETRA11.pdf))
+
 ## [Other Awesome Lists](#awesome-robotics-libraries)
 
 * [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) - This is a list of various books, courses and other resources for robotics. It's an attempt to gather useful material in one place for everybody who wants to learn more about the field.
