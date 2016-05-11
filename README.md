@@ -70,7 +70,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 | Library  | Lines of Code | Lines of Comments | Coverage | Continuous Integration | Static Code Checker | Style Checker |
 |:--------:|:-------------:|:-----------------:|:--------:|:----------------------:|:-------------------:|:-------------:|
-| DART    | 58k | 26k  | Unknown | Travis CI, Appveyor | None | None |
+| DART    | [75k](https://github.com/dartsim/dart/wiki/Project-Status) | [34k](https://github.com/dartsim/dart/wiki/Project-Status)  | [51%](https://coveralls.io/github/dartsim/dart) | Travis CI, Appveyor | None | None |
 
 ##### Simulation Features
 
