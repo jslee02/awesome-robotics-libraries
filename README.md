@@ -89,7 +89,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 | Library  | Revolute | Prismatic | Screw | Universal | [Cylindrical](https://en.wikipedia.org/wiki/Cylindrical_joint) | Ball | Euler | Translational | Planar | Free |
 |:--------:|:--------:|:---------:|:-----:|:---------:|:------------:|:----:|:-----:|:-------------:|:------:|:----:|
-| DART     | Yes | Yes  | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes |
+| DART     | Yes | Yes  | Yes | Yes | [No](https://github.com/dartsim/dart/issues/721) | Yes | Yes | Yes | Yes | Yes |
 
 ###### Supported Actuators
 
