@@ -103,6 +103,12 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 |:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|:------------:|:----------:|
 | DART     | No | No | No | No | No | No | No | No | No |
 
+###### Collision Detection
+
+| Library | Collision Detectors |
+|:-------:|:--------------------|
+| DART    | Builtin (supports only sphere, box), fcl, bullet |
+
 #### Benchmark
 
 ##### Problems
