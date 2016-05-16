@@ -166,8 +166,9 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 ### [Collision Detection](#awesome-robotics-libraries)
 
-* [FCL](https://github.com/flexible-collision-library/fcl) - Flexible Collision Library. ([github](https://github.com/flexible-collision-library/fcl))
-* [libccd](https://github.com/danfis/libccd) - Library for collision detection between two convex shapes. ([github](https://github.com/danfis/libccd))
+* [FCL](https://github.com/flexible-collision-library/fcl) ([github](https://github.com/flexible-collision-library/fcl)) - Flexible Collision Library.
+* [libccd](https://github.com/danfis/libccd) ([github](https://github.com/danfis/libccd)) - Library for collision detection between two convex shapes.
+* [OzCollide](http://www.tsarevitch.org/ozcollide/) - A fast, complete and free collision detection library.
 
 ### [Optimization](#awesome-robotics-libraries)
 
