@@ -166,9 +166,10 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 ### [Collision Detection](#awesome-robotics-libraries)
 
+* [ColDet](https://sourceforge.net/projects/coldet/) - A collision detection library for generic polyhedra.
 * [FCL](https://github.com/flexible-collision-library/fcl) ([github](https://github.com/flexible-collision-library/fcl)) - Flexible Collision Library.
 * [libccd](https://github.com/danfis/libccd) ([github](https://github.com/danfis/libccd)) - Library for collision detection between two convex shapes.
-* [OzCollide](http://www.tsarevitch.org/ozcollide/) - A fast, complete and free collision detection library.
+* [OZCollide](http://www.tsarevitch.org/ozcollide/) - A fast, complete and free collision detection library.
 
 ### [Optimization](#awesome-robotics-libraries)
 
