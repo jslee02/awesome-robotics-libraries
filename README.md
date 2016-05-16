@@ -103,7 +103,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 |:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|:------------:|:----------:|
 | DART     | No | No | No | No | No | No | No | No | No |
 
-###### Collision Detection
+###### Collision Detection Features
 
 | Library | Collision Detectors |
 |:-------:|:--------------------|
