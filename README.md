@@ -140,6 +140,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 * [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) - A library for dynamic simulation of multi-body systems in C++.
 * [KDL](http://www.orocos.org/kdl) ([github](https://github.com/orocos/orocos_kinematics_dynamics)) - Orocos Kinematics and Dynamics C++ library.
 * [MBDyn](https://www.mbdyn.org/) - Free MultiBody Dynamics Simulation Software
+* [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) ([github](https://github.com/SIM-TU-Darmstadt/mbslib), [paper](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7403876)) - An efficient and modular multibody systems library for kinematics and dynamics simulation, optimization and sensitivity analysis.
 * [metapod](https://github.com/laas/metapod) ([github](https://github.com/laas/metapod)) - A template-based robot dynamics library.
 * [Moby](http://physsim.sourceforge.net/index.html) ([github](https://github.com/PositronicsLab/Moby)) - Multi-body dynamics simulation library written in C++.
 * [mrpt](http://www.mrpt.org/) ([github](https://github.com/MRPT/mrpt)) - The Mobile Robot Programming Toolkit.
