@@ -172,6 +172,8 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 * [libccd](https://github.com/danfis/libccd) ([github](https://github.com/danfis/libccd)) - Library for collision detection between two convex shapes.
 * [OZCollide](http://www.tsarevitch.org/ozcollide/) - A fast, complete and free collision detection library.
 
+> Note that some multibody dynamics libraries (e.g., ODE and Bullet) can be used only for collision detection.
+
 ### [Optimization](#awesome-robotics-libraries)
 
 * [Ceres Solver](http://ceres-solver.org/) ([github](https://github.com/ceres-solver/ceres-solver)) - A large scale non-linear optimization library . Ceres Solver has been used in production at Google for more than four years now. It is clean, extensively tested and well documented code that is actively developed and supported.
