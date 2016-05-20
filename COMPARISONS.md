@@ -2,6 +2,7 @@
 
 #### Table of Contents
 * [Multibody Dynamics Libraries](#multibody-dynamics-libraries)
+* [Simulators](#simulators)
 
 ## [Multibody Dynamics Libraries](#awesome-robotics-libraries)
 
