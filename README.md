@@ -1,6 +1,6 @@
 # Awesome Robotics Libraries
 
-A curated list of open source robotics libraries and software.
+A curated list of open source robotics libraries and software. 
 
 #### Table of Contents
 * [Libraries](#libraries)
@@ -11,6 +11,7 @@ A curated list of open source robotics libraries and software.
   * [Robot Platform](#robot-platform)
 * [Software](#software)
   * [Simulator](#simulator)
+* [Comparisons](#comparisons)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
@@ -78,6 +79,10 @@ A curated list of open source robotics libraries and software.
 * [GraspIt!](http://graspit-simulator.github.io/) ([github](https://github.com/graspit-simulator/graspit)) - A simulator for grasping research that can accommodate arbitrary hand and robot designs developed by [the Columbia University Robotics Group](http://www.cs.columbia.edu/robotics/)
 * [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse)) - The Modular OpenRobots Simulation Engine.
 * [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
+
+## [Comparisons](#awesome-robotics-libraries)
+
+The comparisons are moved to [COMPARISONS.md](https://github.com/jslee02/awesome-robotics-libraries/blob/master/COMPARISONS.md).
 
 ## [Other Awesome Lists](#awesome-robotics-libraries)
 
