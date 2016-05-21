@@ -6,7 +6,6 @@ A curated list of open source robotics libraries and software.
 * [Libraries](#libraries)
   * [Multibody Dynamics](#multibody-dynamics)
   * [Motion Planning](#motion-planning)
-  * [Collision Detection](#collision-detection)
   * [Optimization](#optimization)
   * [Robot Model Description Format](#robot-model-description-format)
   * [Robot Platform](#robot-platform)
