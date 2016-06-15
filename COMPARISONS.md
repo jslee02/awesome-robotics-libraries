@@ -100,6 +100,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 #### Papers
 
+* M. Torres-Torriti et al. [Survey and comparative study of free simulation software for mobile robots](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=10215708&fileId=S0263574714001866). Robotica 2016.
 * T. Erez et al. [Simulation tools for model-based robotics: comparison of Bullet, Havok, MuJoCo, ODE, and PhysX](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7139807). ICRA 2015. ([pdf](https://homes.cs.washington.edu/~todorov/papers/ErezICRA15.pdf))
 * Y. Lu et al. [Comparison of Multibody Dynamics Solver Performance: Synthetic versus Realistic Data](http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=2483796). ASME IDETC/CIEC 2015. ([pdf](http://www.cs.rpi.edu/foswiki/pub/RoboticsWeb/LabPublications/LTasme2015.pdf))
 * S. Ivaldi et al. [Tools for simulating humanoid robot dynamics: a survey based on user feedback](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7041462). Humanoids 2014. ([pdf](http://arxiv.org/pdf/1402.7050.pdf))
