@@ -45,6 +45,7 @@ A curated list of open source robotics libraries and software.
 * [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) - A collection of C++ libraries for simulation and control of robot systems.
 * [siconos](http://siconos.gforge.inria.fr) ([github](https://github.com/siconos/siconos)) - A software package for the modeling and simulation of nonsmooth dynamical systems.
 * [Simbody](https://simtk.org/home/simbody/) ([github](https://github.com/simbody/simbody.git)) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems.
+* [SOFA](https://www.sofa-framework.org/) ([github](https://github.com/sofa-framework/sofa)) - An Open Source framework primarily targeted at real-time simulation, with an emphasis on medical simulation.
 * qu3e ([github](https://github.com/RandyGaul/qu3e)) - Lightweight and Simple 3D Open Source Physics Engine in C++.
 
 #### Python
