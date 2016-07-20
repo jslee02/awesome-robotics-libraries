@@ -51,6 +51,7 @@ A curated list of open source robotics libraries and software.
 #### Python
 
 * [PyDy](http://www.pydy.org/) ([github](https://github.com/pydy/pydy)) - A tool kit written in the Python programming language that utilizes an array of scientific programs to enable the study of multibody dynamics.
+* [trep](http://murpheylab.github.io/trep/) ([github](https://github.com/MurpheyLab/trep)) - Python module for modeling articulated rigid body mechanical systems in generalized coordinates.
 
 ### [Motion Planning](#awesome-robotics-libraries)
 
