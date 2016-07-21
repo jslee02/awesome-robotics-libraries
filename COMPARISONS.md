@@ -93,6 +93,8 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 ### Benchmark
 
+* [scpeters/benchmark](https://github.com/scpeters/benchmark) - Benchmark comparisons of rigid-body dynamics simulators
+
 #### Problems
 
 * [IFToMM](http://iftomm-multibody.org/benchmark/) - A tool for the international multibody dynamics community to propose, solve, and refer to a collection of benchmark problems.
