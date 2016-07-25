@@ -56,7 +56,8 @@ A curated list of open source robotics libraries and software.
 ### [Motion Planning](#awesome-robotics-libraries)
 
 * [Aikido](https://github.com/personalrobotics/aikido) ([github](https://github.com/personalrobotics/aikido)) - A C++ library for solving robotic motion planning and decision making problems.
-* [HPP](https://humanoid-path-planner.github.io/hpp-doc/) ([github](https://github.com/humanoid-path-planner)) - Humanoid Path Planner: a C++ Software Developement Kit implementing path planning for kinematic chains in environments cluttered with obstacles. 
+* [HPP](https://humanoid-path-planner.github.io/hpp-doc/) ([github](https://github.com/humanoid-path-planner)) - Humanoid Path Planner: a C++ Software Developement Kit implementing path planning for kinematic chains in environments cluttered with obstacles.
+* [MoveIt!](http://moveit.ros.org/) ([github](https://github.com/ros-planning/moveit_core)) - State of the art software for mobile manipulation, incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation.
 * [OMPL](http://ompl.kavrakilab.org/) ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl)) - The Open Motion Planning Library.
 
 ### [Optimization](#awesome-robotics-libraries)
