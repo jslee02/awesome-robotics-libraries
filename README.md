@@ -64,7 +64,7 @@ A curated list of open source robotics libraries and software.
 
 #### Motion Optimizer
 
-* [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) - ([github](https://github.com/joschu/trajopt)) - A software framework for generating robot trajectories by local optimization.
+* [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) ([github](https://github.com/joschu/trajopt)) - A software framework for generating robot trajectories by local optimization.
 
 #### Nonlinear Programming Libraries
 
