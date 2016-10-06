@@ -9,6 +9,7 @@ A curated list of open source robotics libraries and software.
   * [Optimization](#optimization)
   * [Robot Model Description Format](#robot-model-description-format)
   * [Robot Platform](#robot-platform)
+  * [SLAM](#slam)
 * [Software](#software)
   * [Simulator](#simulator)
 * [Comparisons](#comparisons)
@@ -81,6 +82,10 @@ A curated list of open source robotics libraries and software.
 
 * [ROS](http://www.ros.org/) ([github repos](http://wiki.ros.org/Tickets)) - A set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project.
 * [YARP](http://www.yarp.it/) ([github](https://github.com/robotology/yarp)) - A library and toolkit for communication and device interfaces, used on everything from humanoids to embedded devices.
+
+### [SLAM](#awesome-robotics-libraries)
+
+* Cartographer ([github](https://github.com/googlecartographer/cartographer)) - A system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.
 
 ## [Software](#awesome-robotics-libraries)
 
