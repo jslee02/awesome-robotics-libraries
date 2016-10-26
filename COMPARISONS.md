@@ -85,12 +85,6 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 |:--------:|:--------------:|:---------------:|:-----------:|:---------------:|:----------:|:-----------:|:---------------------:|:------------:|:----------:|
 | DART     | No | No | No | No | No | No | No | No | No |
 
-#### Collision Detection Features
-
-| Library | Collision Detectors |
-|:-------:|:--------------------|
-| DART    | Builtin (supports only sphere, box), fcl, bullet |
-
 ### Benchmark
 
 * [scpeters/benchmark](https://github.com/scpeters/benchmark) - Benchmark comparisons of rigid-body dynamics simulators
