@@ -86,7 +86,7 @@ A curated list of open source robotics libraries and software.
 
 ### [SLAM](#awesome-robotics-libraries)
 
-* Cartographer ([github](https://github.com/googlecartographer/cartographer)) - A system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.
+* Cartographer ([github](https://github.com/googlecartographer/cartographer) ![cartographer](https://img.shields.io/github/stars/googlecartographer/cartographer.svg?style=social&label=Star&maxAge=2592000)) - A system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.
 
 ## [Software](#awesome-robotics-libraries)
 
