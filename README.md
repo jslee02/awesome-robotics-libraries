@@ -57,6 +57,7 @@ A curated list of open source robotics libraries and software.
 ### [Motion Planning](#awesome-robotics-libraries)
 
 * [Aikido](https://github.com/personalrobotics/aikido) ([github](https://github.com/personalrobotics/aikido)) - A C++ library for solving robotic motion planning and decision making problems.
+* [CuiKSuite](http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html) - A set of applications to solve position analysis and path planning problems with applications mainly to robotics, but also to molecular biology
 * [HPP](https://humanoid-path-planner.github.io/hpp-doc/) ([github](https://github.com/humanoid-path-planner)) - Humanoid Path Planner: a C++ Software Developement Kit implementing path planning for kinematic chains in environments cluttered with obstacles.
 * [MoveIt!](http://moveit.ros.org/) ([github](https://github.com/ros-planning/moveit_core)) - State of the art software for mobile manipulation, incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation.
 * [OMPL](http://ompl.kavrakilab.org/) ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl)) - The Open Motion Planning Library.
@@ -69,6 +70,7 @@ A curated list of open source robotics libraries and software.
 
 #### Nonlinear Programming Libraries
 
+* [CasADi](https://github.com/casadi/casadi/wiki) ([github](https://github.com/casadi/casadi) ![casadi](https://img.shields.io/github/stars/casadi/casadi.svg?style=social&label=Star&maxAge=2592000)) - A symbolic framework for algorithmic (a.k.a. automatic) differentiation and numeric optimization
 * [Ceres Solver](http://ceres-solver.org/) ([github](https://github.com/ceres-solver/ceres-solver) ![ceres-solver](https://img.shields.io/github/stars/ceres-solver/ceres-solver.svg?style=social&label=Star&maxAge=2592000)) - A large scale non-linear optimization library . Ceres Solver has been used in production at Google for more than four years now. It is clean, extensively tested and well documented code that is actively developed and supported.
 * [Ipopt](https://projects.coin-or.org/Ipopt) ([github](https://github.com/coin-or/Ipopt) ![Ipopt](https://img.shields.io/github/stars/coin-or/Ipopt.svg?style=social&label=Star&maxAge=2592000)) - Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software package for large-scale ​nonlinear optimization.
 * [NLopt](http://ab-initio.mit.edu/wiki/index.php/NLopt) ([github](https://github.com/stevengj/nlopt) ![nlopt](https://img.shields.io/github/stars/stevengj/nlopt.svg?style=social&label=Star&maxAge=2592000)) - NLopt is a free/open-source library for nonlinear optimization, providing a common interface for a number of different free optimization routines available online as well as original implementations of various other algorithms.
