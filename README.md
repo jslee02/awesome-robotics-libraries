@@ -64,13 +64,8 @@ A curated list of open source robotics libraries and software.
 
 #### Nearest Neighbor
 
-* Cover tree
-  * [Wikipedia](https://en.wikipedia.org/wiki/Cover_tree)
-  * [Cover Tree for Nearest Neighbor caclulations](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) by Alina Beygelzimer et al, ICML 2006.
-  * https://github.com/DNCrane/Cover-Tree
-* Faster cover tree
+* [Cover-Tree](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) ([github](https://github.com/DNCrane/Cover-Tree) ![Cover-Tree](https://img.shields.io/github/stars/DNCrane/Cover-Tree.svg?style=social&label=Star&maxAge=2592000)) - A well-documented C++ implementation of the cover tree datastructure for quick k-nearest-neighbor search
   * [Faster cover tree](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2015_izbicki15.pdf) by Mike Izbicki et al., ICML 2015.
-  * https://github.com/manzilzaheer/CoverTree
 * [FLANN](http://www.cs.ubc.ca/research/flann/) ([github](https://github.com/mariusmuja/flann) ![flann](https://img.shields.io/github/stars/mariusmuja/flann.svg?style=social&label=Star&maxAge=2592000)) - Fast Library for Approximate Nearest Neighbors
 * [nanoflann](http://www.cs.ubc.ca/research/flann/) ([github](https://github.com/jlblancoc/nanoflann) ![nanoflann](https://img.shields.io/github/stars/jlblancoc/nanoflann.svg?style=social&label=Star&maxAge=2592000)) - C++ header-only library for Nearest Neighbor (NN) search wih KD-trees
 
