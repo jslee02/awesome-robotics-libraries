@@ -62,6 +62,18 @@ A curated list of open source robotics libraries and software.
 * [MoveIt!](http://moveit.ros.org/) ([github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=social&label=Star&maxAge=2592000)) - State of the art software for mobile manipulation, incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation.
 * [OMPL](http://ompl.kavrakilab.org/) ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=social&label=Star&maxAge=2592000)) - The Open Motion Planning Library.
 
+#### Nearest Neighbor
+
+* Cover tree
+  * [Wikipedia](https://en.wikipedia.org/wiki/Cover_tree)
+  * [Cover Tree for Nearest Neighbor caclulations](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) by Alina Beygelzimer et al, ICML 2006.
+  * https://github.com/DNCrane/Cover-Tree
+* Faster cover tree
+  * [Faster cover tree](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2015_izbicki15.pdf) by Mike Izbicki et al., ICML 2015.
+  * https://github.com/manzilzaheer/CoverTree
+* [FLANN](http://www.cs.ubc.ca/research/flann/) ([github](https://github.com/mariusmuja/flann) ![flann](https://img.shields.io/github/stars/mariusmuja/flann.svg?style=social&label=Star&maxAge=2592000)) - Fast Library for Approximate Nearest Neighbors
+* [nanoflann](http://www.cs.ubc.ca/research/flann/) ([github](https://github.com/jlblancoc/nanoflann) ![nanoflann](https://img.shields.io/github/stars/jlblancoc/nanoflann.svg?style=social&label=Star&maxAge=2592000)) - C++ header-only library for Nearest Neighbor (NN) search wih KD-trees
+
 ### [Optimization](#awesome-robotics-libraries)
 
 #### Motion Optimizer
