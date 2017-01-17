@@ -113,6 +113,11 @@ A curated list of open source robotics libraries and software.
 * [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse)) - The Modular OpenRobots Simulation Engine.
 * [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
 
+#### Commercial
+
+* [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
+* [Webots](http://www.cyberbotics.com/) - A commercial robot simulator used in more than 1200 companies, universities and research centers worldwide for R&D, education and research.
+
 ## [Comparisons](#awesome-robotics-libraries)
 
 The comparisons are moved to [COMPARISONS.md](https://github.com/jslee02/awesome-robotics-libraries/blob/master/COMPARISONS.md).
