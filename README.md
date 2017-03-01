@@ -22,42 +22,53 @@ A curated list of open source robotics libraries and software.
 
 #### General Robots
 
-##### C++
+| Name | Models | Features | Languages | Licenses | Code & References |
+|:----:| ------ | -------- | --------- | -------- | ----------------- |
+| Bullet | rigid, soft | ik | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
+| [CHRONO::ENGINE](http://chronoengine.info/) | rigid, soft, granular, fluid | | C++, Python | BSD-3-Clause | [github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000) |
+| [DART](http://dartsim.github.io/) | rigid, soft | ik, plan | C++, Python | BSD-2-Clause | [github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000) |
+| [Drake](http://drake002.csail.mit.edu/drake/sphinx/) | rigid, aero, fluid | ik, trj-opt, plan | C++, Matlab | BSD-3-Clause | [github](https://github.com/RobotLocomotion/drake) ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000) |
+| [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) | rigid, particle | | C++ | Zlib | |
+| idyntree | (todo) | (todo) | C++, Python, Matlab, Lua | LGPL-2.1 | [github](https://github.com/robotology/idyntree) ![idyntree](https://img.shields.io/github/stars/robotology/idyntree.svg?style=social&label=Star&maxAge=2592000) |
+| [KDL](http://www.orocos.org/kdl) | (todo) | (todo) | C++ | LGPL-2.1 | [github](https://github.com/orocos/orocos_kinematics_dynamics) ![orocos_kinematics_dynamics](https://img.shields.io/github/stars/orocos/orocos_kinematics_dynamics.svg?style=social&label=Star&maxAge=2592000) |
+| kindr | (todo) | (todo) | C++, Matlab | BSD-3-Clause | [github](https://github.com/ethz-asl/kindr) ![kindr](https://img.shields.io/github/stars/ethz-asl/kindr.svg?style=social&label=Star&maxAge=2592000) |
+| [Klampt](http://motion.pratt.duke.edu/klampt/) | (todo) | (todo) | C++, Python | BSD-3-Clause | [github](https://github.com/krishauser/Klampt) ![Klampt](https://img.shields.io/github/stars/krishauser/Klampt.svg?style=social&label=Star&maxAge=2592000) |
+| [MARS](http://rock-simulation.github.io/mars/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/rock-simulation/mars) ![mars](https://img.shields.io/github/stars/rock-simulation/mars.svg?style=social&label=Star&maxAge=2592000) |
+| [MBDyn](https://www.mbdyn.org/) | (todo) | (todo) | (todo) | (todo) | |
+| [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/SIM-TU-Darmstadt/mbslib) ![mbslib](https://img.shields.io/github/stars/SIM-TU-Darmstadt/mbslib.svg?style=social&label=Star&maxAge=2592000), [paper](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7403876) |
+| [metapod](https://github.com/laas/metapod) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/laas/metapod) ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=social&label=Star&maxAge=2592000) |
+| [Moby](http://physsim.sourceforge.net/index.html) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/PositronicsLab/Moby) ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=social&label=Star&maxAge=2592000)
+| [MuJoCo](http://www.mujoco.org/index.html) | (todo) | (todo) | (todo) | (todo) | (closed source) |
+| [Newton Dynamics](http://newtondynamics.com/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/MADEAPPS/newton-dynamics) ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=social&label=Star&maxAge=2592000) |
+| [ODE](http://www.ode.org/) | (todo) | (todo) | (todo) | (todo) | [bitbucket](https://bitbucket.org/odedevs/ode) |
+| [OpenRAVE](http://www.openrave.org) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/rdiankov/openrave) ![openrave](https://img.shields.io/github/stars/rdiankov/openrave.svg?style=social&label=Star&maxAge=2592000) |
+| [pinocchio](http://stack-of-tasks.github.io/pinocchio/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/stack-of-tasks/pinocchio) ![pinocchio](https://img.shields.io/github/stars/stack-of-tasks/pinocchio.svg?style=social&label=Star&maxAge=2592000) |
+| PositionBasedDynamics | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics) ![PositionBasedDynamics](https://img.shields.io/github/stars/InteractiveComputerGraphics/PositionBasedDynamics.svg?style=social&label=Star&maxAge=2592000) |
+| [PyDy](http://www.pydy.org/) | (todo) | (todo) | Python | (todo) | [github](https://github.com/pydy/pydy) |
+| [RBDL](http://rbdl.bitbucket.org/) | (todo) | (todo) | (todo) | LGPL-3.0 | [bitbucket](https://bitbucket.org/rbdl/rbdl) |
+| RBDyn | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/jrl-umi3218/RBDyn) ![RBDyn](https://img.shields.io/github/stars/jrl-umi3218/RBDyn.svg?style=social&label=Star&maxAge=2592000) |
+| [ReactPhysics3d](http://www.reactphysics3d.com/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/DanielChappuis/reactphysics3d) ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000) |
+| [Robotics Library](http://www.roboticslibrary.org/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/roboticslibrary/rl) ![rl](https://img.shields.io/github/stars/roboticslibrary/rl.svg?style=social&label=Star&maxAge=2592000) |
+| [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) | (todo) | (todo) | (todo) | (todo) | |
+| [siconos](http://siconos.gforge.inria.fr) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/siconos/siconos) ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000) |
+| [Simbody](https://simtk.org/home/simbody/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/simbody/simbody.git) ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000) |
+| [trep](http://murpheylab.github.io/trep/) | (todo) | (todo) | Python | (todo) | [github](https://github.com/MurpheyLab/trep) |
+| qu3e | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
 
-* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)) - Real-Time Physics Simulation
-* [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000)) - C++ library for multibody dynamics simulations.
-* [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000)) - Dynamic Animation and Robotics Toolkit.
-* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) ([github](https://github.com/RobotLocomotion/drake) ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000)) - A planning, control, and analysis toolbox for nonlinear dynamical systems.
-* [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) - A library for dynamic simulation of multi-body systems in C++.
-* idyntree ([github](https://github.com/robotology/idyntree) ![idyntree](https://img.shields.io/github/stars/robotology/idyntree.svg?style=social&label=Star&maxAge=2592000)) - A library of robots dynamics algorithms for control, estimation and simulation..
-* [KDL](http://www.orocos.org/kdl) ([github](https://github.com/orocos/orocos_kinematics_dynamics) ![orocos_kinematics_dynamics](https://img.shields.io/github/stars/orocos/orocos_kinematics_dynamics.svg?style=social&label=Star&maxAge=2592000)) - Orocos Kinematics and Dynamics C++ library.
-* kindr ([github](https://github.com/ethz-asl/kindr) ![kindr](https://img.shields.io/github/stars/ethz-asl/kindr.svg?style=social&label=Star&maxAge=2592000)) - Kinematics and Dynamics for Robotics.
-* [Klampt](http://motion.pratt.duke.edu/klampt/) ([github](https://github.com/krishauser/Klampt) ![Klampt](https://img.shields.io/github/stars/krishauser/Klampt.svg?style=social&label=Star&maxAge=2592000)) - Kris' Locomotion and Manipulation Planning Toolkit
-* [MARS](http://rock-simulation.github.io/mars/) ([github](https://github.com/rock-simulation/mars) ![mars](https://img.shields.io/github/stars/rock-simulation/mars.svg?style=social&label=Star&maxAge=2592000)) - MARS (Machina Arte Robotum Simulans) is a cross-platform simulation and visualisation tool created for robotics research developed at the [Robotics Innovation Center of the German Research Center for Artificial Intelligence (DFKI-RIC)](http://robotik.dfki-bremen.de/en/startpage.html) and the [University of Bremen](http://www.informatik.uni-bremen.de/robotik/index_en.php).
-* [MBDyn](https://www.mbdyn.org/) - Free MultiBody Dynamics Simulation Software
-* [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) ([github](https://github.com/SIM-TU-Darmstadt/mbslib) ![mbslib](https://img.shields.io/github/stars/SIM-TU-Darmstadt/mbslib.svg?style=social&label=Star&maxAge=2592000), [paper](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7403876)) - An efficient and modular multibody systems library for kinematics and dynamics simulation, optimization and sensitivity analysis.
-* [metapod](https://github.com/laas/metapod) ([github](https://github.com/laas/metapod) ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=social&label=Star&maxAge=2592000)) - A template-based robot dynamics library.
-* [Moby](http://physsim.sourceforge.net/index.html) ([github](https://github.com/PositronicsLab/Moby) ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=social&label=Star&maxAge=2592000)) - Multi-body dynamics simulation library written in C++.
-* [MuJoCo](http://www.mujoco.org/index.html) (closed source) - A physics engine aiming to facilitate research and development in robotics, biomechanics, graphics and animation, and other areas where fast and accurate simulation is needed.
-* [Newton Dynamics](http://newtondynamics.com/) ([github](https://github.com/MADEAPPS/newton-dynamics) ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=social&label=Star&maxAge=2592000)) - A cross-platform life-like physics simulation library.
-* [ODE](http://www.ode.org/) ([bitbucket](https://bitbucket.org/odedevs/ode)) - An open source, high performance library for simulating rigid body dynamics.
-* [OpenRAVE](http://www.openrave.org) ([github](https://github.com/rdiankov/openrave) ![openrave](https://img.shields.io/github/stars/rdiankov/openrave.svg?style=social&label=Star&maxAge=2592000)) - An environment for testing, developing, and deploying robotics motion planning algorithms.
-* [pinocchio](http://stack-of-tasks.github.io/pinocchio/) ([github](https://github.com/stack-of-tasks/pinocchio) ![pinocchio](https://img.shields.io/github/stars/stack-of-tasks/pinocchio.svg?style=social&label=Star&maxAge=2592000)) - Dynamic computations using Spatial Algebra.
-* [PositionBasedDynamics](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics) (![PositionBasedDynamics](https://img.shields.io/github/stars/InteractiveComputerGraphics/PositionBasedDynamics.svg?style=social&label=Star&maxAge=2592000)) - A library for the physically-based simulation of rigid bodies, deformable solids and fluids.
-* [RBDL](http://rbdl.bitbucket.org/) ([bitbucket](https://bitbucket.org/rbdl/rbdl)) - Rigid Body Dynamics Library.
-* RBDyn ([github](https://github.com/jrl-umi3218/RBDyn) ![RBDyn](https://img.shields.io/github/stars/jrl-umi3218/RBDyn.svg?style=social&label=Star&maxAge=2592000)) - A set of class and function to model the dynamics of rigid body system.
-* [ReactPhysics3d](http://www.reactphysics3d.com/) ([github](https://github.com/DanielChappuis/reactphysics3d) ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000)) - An open source C++ physics engine library that can be used in 3D simulations and games.
-* [Robotics Library](http://www.roboticslibrary.org/) ([github](https://github.com/roboticslibrary/rl) ![rl](https://img.shields.io/github/stars/roboticslibrary/rl.svg?style=social&label=Star&maxAge=2592000)) - A self-contained C++ library for robot kinematics, motion planning and control.
-* [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) - A collection of C++ libraries for simulation and control of robot systems.
-* [siconos](http://siconos.gforge.inria.fr) ([github](https://github.com/siconos/siconos) ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000)) - A software package for the modeling and simulation of nonsmooth dynamical systems.
-* [Simbody](https://simtk.org/home/simbody/) ([github](https://github.com/simbody/simbody.git) ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000)) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems.
-* qu3e ([github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000)) - Lightweight and Simple 3D Open Source Physics Engine in C++.
+For simplicity, shortened names are used to represent the supported models and features as
 
-##### Python
+* Supported Models
+  * rigid: rigid bodies
+  * soft: soft bodies
+  * aero: aerodynamics
+  * granular: granular materials (like sand)
+  * fluid: fluid dynamics
 
-* [PyDy](http://www.pydy.org/) ([github](https://github.com/pydy/pydy)) - A tool kit written in the Python programming language that utilizes an array of scientific programs to enable the study of multibody dynamics.
-* [trep](http://murpheylab.github.io/trep/) ([github](https://github.com/MurpheyLab/trep)) - Python module for modeling articulated rigid body mechanical systems in generalized coordinates.
-
+* Features on Analysis, Planning, Control Design
+  * ik: inverse kinematics solvers
+  * trj-opt: trajectory optimization
+  * plan: motion planning algorithms
+  
 #### Mobile Robots
 
 * [mrpt](http://www.mrpt.org/) ([github](https://github.com/MRPT/mrpt) ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=social&label=Star&maxAge=2592000)) - The Mobile Robot Programming Toolkit.
