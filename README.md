@@ -20,15 +20,29 @@ A curated list of open source robotics libraries and software.
 
 ### [Dynamics Simulation](#awesome-robotics-libraries)
 
+The features of the libraries are categorized in the format: `Languages | License(s) | Supported Models | Features`. For simplicity, the shortened names are used as
+
+* Supported Models
+  * rigid: rigid bodies
+  * soft: soft bodies
+  * aero: aerodynamics
+  * granular: granular materials (like sand)
+  * fluid: fluid dynamics
+
+* Features on Analysis, Planning, Control Design
+  * ik: inverse kinematics solvers
+  * trj-opt: trajectory optimization
+  * plan: motion planning algorithms
+
 #### General Robots
 
 ##### C++
 
-* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)) - C++, Python | Zlib | rigid, soft
+* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)) - C++, Python | Zlib | rigid, soft | ik
 * [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000)) - C++, Python | BSD-3-Clause | rigid, soft, granular, fluid
-* [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000)) - C++, Python | BSD-2-Clause | rigid, soft
-* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) ([github](https://github.com/RobotLocomotion/drake) ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000)) - A planning, control, and analysis toolbox for nonlinear dynamical systems.
-* [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) - A library for dynamic simulation of multi-body systems in C++.
+* [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000)) - C++, Python | BSD-2-Clause | rigid, soft | ik, plan
+* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) ([github](https://github.com/RobotLocomotion/drake) ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000)) - C++, Matlab | BSD-3-Clause | rigid, aero, fluid | ik, trj-opt, plan
+* [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) - C++ | Zlib | rigid, particle
 * idyntree ([github](https://github.com/robotology/idyntree) ![idyntree](https://img.shields.io/github/stars/robotology/idyntree.svg?style=social&label=Star&maxAge=2592000)) - A library of robots dynamics algorithms for control, estimation and simulation..
 * [KDL](http://www.orocos.org/kdl) ([github](https://github.com/orocos/orocos_kinematics_dynamics) ![orocos_kinematics_dynamics](https://img.shields.io/github/stars/orocos/orocos_kinematics_dynamics.svg?style=social&label=Star&maxAge=2592000)) - Orocos Kinematics and Dynamics C++ library.
 * kindr ([github](https://github.com/ethz-asl/kindr) ![kindr](https://img.shields.io/github/stars/ethz-asl/kindr.svg?style=social&label=Star&maxAge=2592000)) - Kinematics and Dynamics for Robotics.
