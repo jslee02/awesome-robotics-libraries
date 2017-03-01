@@ -24,9 +24,9 @@ A curated list of open source robotics libraries and software.
 
 ##### C++
 
-* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)) - Real-Time Physics Simulation
-* [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000)) - C++ library for multibody dynamics simulations.
-* [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000)) - Dynamic Animation and Robotics Toolkit.
+* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)) - C++, Python | Zlib | rigid, soft
+* [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000)) - C++, Python | BSD-3-Clause | rigid, soft, granular, fluid
+* [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000)) - C++, Python | BSD-2-Clause | rigid, soft
 * [Drake](http://drake002.csail.mit.edu/drake/sphinx/) ([github](https://github.com/RobotLocomotion/drake) ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000)) - A planning, control, and analysis toolbox for nonlinear dynamical systems.
 * [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) - A library for dynamic simulation of multi-body systems in C++.
 * idyntree ([github](https://github.com/robotology/idyntree) ![idyntree](https://img.shields.io/github/stars/robotology/idyntree.svg?style=social&label=Star&maxAge=2592000)) - A library of robots dynamics algorithms for control, estimation and simulation..
