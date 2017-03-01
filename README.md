@@ -36,8 +36,6 @@ The characteristics of the libraries are categorized in the format: `Languages |
 
 #### General Robots
 
-##### C++
-
 * [Bullet](http://bulletphysics.org/wordpress/) - C++, Python | Zlib | rigid, soft | ik | [github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)
 * [CHRONO::ENGINE](http://chronoengine.info/) - C++, Python | BSD-3-Clause | rigid, soft, granular, fluid | [github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000)
 * [DART](http://dartsim.github.io/) - C++, Python | BSD-2-Clause | rigid, soft | ik, plan | [github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000)
