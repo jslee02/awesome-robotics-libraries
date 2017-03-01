@@ -51,7 +51,6 @@ A curated list of open source robotics libraries and software.
 * [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) - A collection of C++ libraries for simulation and control of robot systems.
 * [siconos](http://siconos.gforge.inria.fr) ([github](https://github.com/siconos/siconos) ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000)) - A software package for the modeling and simulation of nonsmooth dynamical systems.
 * [Simbody](https://simtk.org/home/simbody/) ([github](https://github.com/simbody/simbody.git) ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000)) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems.
-* [SOFA](https://www.sofa-framework.org/) ([github](https://github.com/sofa-framework/sofa) ![sofa](https://img.shields.io/github/stars/sofa-framework/sofa.svg?style=social&label=Star&maxAge=2592000)) - An Open Source framework primarily targeted at real-time simulation, with an emphasis on medical simulation.
 * qu3e ([github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000)) - Lightweight and Simple 3D Open Source Physics Engine in C++.
 
 ##### Python
@@ -66,6 +65,10 @@ A curated list of open source robotics libraries and software.
 #### Flying Robots
 
 * [LibrePilot](http://www.librepilot.org/site/index.html) ([bitbucket](https://bitbucket.org/librepilot/librepilot) [github](https://github.com/librepilot/LibrePilot) ![LibrePilot](https://img.shields.io/github/stars/librepilot/LibrePilot.svg?style=social&label=Star&maxAge=2592000)) - A software suite to control multicopter and other RC-models.
+
+#### Medical Simulation
+
+* [SOFA](https://www.sofa-framework.org/) ([github](https://github.com/sofa-framework/sofa) ![sofa](https://img.shields.io/github/stars/sofa-framework/sofa.svg?style=social&label=Star&maxAge=2592000)) - An Open Source framework primarily targeted at real-time simulation, with an emphasis on medical simulation.
 
 ### [Motion Planning](#awesome-robotics-libraries)
 
