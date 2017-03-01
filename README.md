@@ -20,7 +20,7 @@ A curated list of open source robotics libraries and software.
 
 ### [Dynamics Simulation](#awesome-robotics-libraries)
 
-The features of the libraries are categorized in the format: `Languages | License(s) | Supported Models | Features`. For simplicity, the shortened names are used as
+The characteristics of the libraries are categorized in the format: `Languages | License(s) | Supported Models | Features`. For simplicity, shortened names are used to represent the features as
 
 * Supported Models
   * rigid: rigid bodies
