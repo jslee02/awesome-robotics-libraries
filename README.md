@@ -20,7 +20,42 @@ A curated list of open source robotics libraries and software.
 
 ### [Dynamics Simulation](#awesome-robotics-libraries)
 
-The characteristics of the libraries are categorized in the format: `Languages | License(s) | Supported Models | Features`. For simplicity, shortened names are used to represent the features as
+#### General Robots
+
+| Name | Models | Features | Languages | Licenses | Code & References |
+|:----:| ------ | -------- | --------- | -------- | ----------------- |
+| Bullet | rigid, soft | ik | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
+| [CHRONO::ENGINE](http://chronoengine.info/) | rigid, soft, granular, fluid | | C++, Python | BSD-3-Clause | [github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000) |
+| [DART](http://dartsim.github.io/) | rigid, soft | ik, plan | C++, Python | BSD-2-Clause | [github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000) |
+| [Drake](http://drake002.csail.mit.edu/drake/sphinx/) | rigid, aero, fluid | ik, trj-opt, plan | C++, Matlab | BSD-3-Clause | [github](https://github.com/RobotLocomotion/drake) ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000) |
+| [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) | rigid, particle | | C++ | Zlib | |
+| idyntree | | | C++, Python, Matlab, Lua | LGPL-2.1 | [github](https://github.com/robotology/idyntree) ![idyntree](https://img.shields.io/github/stars/robotology/idyntree.svg?style=social&label=Star&maxAge=2592000) |
+| [KDL](http://www.orocos.org/kdl) | | | | | [github](https://github.com/orocos/orocos_kinematics_dynamics) ![orocos_kinematics_dynamics](https://img.shields.io/github/stars/orocos/orocos_kinematics_dynamics.svg?style=social&label=Star&maxAge=2592000) |
+| kindr | | | | | [github](https://github.com/ethz-asl/kindr) ![kindr](https://img.shields.io/github/stars/ethz-asl/kindr.svg?style=social&label=Star&maxAge=2592000) |
+| [Klampt](http://motion.pratt.duke.edu/klampt/) | | | | | [github](https://github.com/krishauser/Klampt) ![Klampt](https://img.shields.io/github/stars/krishauser/Klampt.svg?style=social&label=Star&maxAge=2592000) |
+| [MARS](http://rock-simulation.github.io/mars/) | | | | | [github](https://github.com/rock-simulation/mars) ![mars](https://img.shields.io/github/stars/rock-simulation/mars.svg?style=social&label=Star&maxAge=2592000) |
+| [MBDyn](https://www.mbdyn.org/) | | | | | |
+| [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) | | | | | [github](https://github.com/SIM-TU-Darmstadt/mbslib) ![mbslib](https://img.shields.io/github/stars/SIM-TU-Darmstadt/mbslib.svg?style=social&label=Star&maxAge=2592000), [paper](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7403876) |
+| [metapod](https://github.com/laas/metapod) | | | | | [github](https://github.com/laas/metapod) ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=social&label=Star&maxAge=2592000) |
+| [Moby](http://physsim.sourceforge.net/index.html) | | | | | [github](https://github.com/PositronicsLab/Moby) ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=social&label=Star&maxAge=2592000)
+| [MuJoCo](http://www.mujoco.org/index.html) | | | | | (closed source) |
+| [Newton Dynamics](http://newtondynamics.com/) | | | | | [github](https://github.com/MADEAPPS/newton-dynamics) ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=social&label=Star&maxAge=2592000) |
+| [ODE](http://www.ode.org/) | | | | | [bitbucket](https://bitbucket.org/odedevs/ode) |
+| [OpenRAVE](http://www.openrave.org) | | | | | [github](https://github.com/rdiankov/openrave) ![openrave](https://img.shields.io/github/stars/rdiankov/openrave.svg?style=social&label=Star&maxAge=2592000) |
+| [pinocchio](http://stack-of-tasks.github.io/pinocchio/) | | | | | [github](https://github.com/stack-of-tasks/pinocchio) ![pinocchio](https://img.shields.io/github/stars/stack-of-tasks/pinocchio.svg?style=social&label=Star&maxAge=2592000) |
+| PositionBasedDynamics | | | | | [github](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics) ![PositionBasedDynamics](https://img.shields.io/github/stars/InteractiveComputerGraphics/PositionBasedDynamics.svg?style=social&label=Star&maxAge=2592000) |
+| [PyDy](http://www.pydy.org/) | | | Python | | [github](https://github.com/pydy/pydy) |
+| [RBDL](http://rbdl.bitbucket.org/) | | | | LGPL-3.0 | [bitbucket](https://bitbucket.org/rbdl/rbdl) |
+| RBDyn | | | | | [github](https://github.com/jrl-umi3218/RBDyn) ![RBDyn](https://img.shields.io/github/stars/jrl-umi3218/RBDyn.svg?style=social&label=Star&maxAge=2592000) |
+| [ReactPhysics3d](http://www.reactphysics3d.com/) | | | | | [github](https://github.com/DanielChappuis/reactphysics3d) ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000) |
+| [Robotics Library](http://www.roboticslibrary.org/) | | | | | [github](https://github.com/roboticslibrary/rl) ![rl](https://img.shields.io/github/stars/roboticslibrary/rl.svg?style=social&label=Star&maxAge=2592000) |
+| [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) |
+| [siconos](http://siconos.gforge.inria.fr) | | | | | [github](https://github.com/siconos/siconos) ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000) |
+| [Simbody](https://simtk.org/home/simbody/) | | | | | [github](https://github.com/simbody/simbody.git) ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000) |
+| [trep](http://murpheylab.github.io/trep/) | | | Python | | [github](https://github.com/MurpheyLab/trep) |
+| qu3e | | | | | [github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
+
+For simplicity, shortened names are used to represent the supported models and features as
 
 * Supported Models
   * rigid: rigid bodies
@@ -33,40 +68,7 @@ The characteristics of the libraries are categorized in the format: `Languages |
   * ik: inverse kinematics solvers
   * trj-opt: trajectory optimization
   * plan: motion planning algorithms
-
-#### General Robots
-
-* [Bullet](http://bulletphysics.org/wordpress/) - C++, Python | Zlib | rigid, soft | ik | [github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)
-* [CHRONO::ENGINE](http://chronoengine.info/) - C++, Python | BSD-3-Clause | rigid, soft, granular, fluid | [github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000)
-* [DART](http://dartsim.github.io/) - C++, Python | BSD-2-Clause | rigid, soft | ik, plan | [github](https://github.com/dartsim/dart.git) ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000)
-* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) - C++, Matlab | BSD-3-Clause | rigid, aero, fluid | ik, trj-opt, plan | [github](https://github.com/RobotLocomotion/drake) ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000)
-* [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) - C++ | Zlib | rigid, particle
-* idyntree - [github](https://github.com/robotology/idyntree) ![idyntree](https://img.shields.io/github/stars/robotology/idyntree.svg?style=social&label=Star&maxAge=2592000)
-* [KDL](http://www.orocos.org/kdl) - [github](https://github.com/orocos/orocos_kinematics_dynamics) ![orocos_kinematics_dynamics](https://img.shields.io/github/stars/orocos/orocos_kinematics_dynamics.svg?style=social&label=Star&maxAge=2592000)
-* kindr - [github](https://github.com/ethz-asl/kindr) ![kindr](https://img.shields.io/github/stars/ethz-asl/kindr.svg?style=social&label=Star&maxAge=2592000)
-* [Klampt](http://motion.pratt.duke.edu/klampt/) - [github](https://github.com/krishauser/Klampt) ![Klampt](https://img.shields.io/github/stars/krishauser/Klampt.svg?style=social&label=Star&maxAge=2592000)
-* [MARS](http://rock-simulation.github.io/mars/) - [github](https://github.com/rock-simulation/mars) ![mars](https://img.shields.io/github/stars/rock-simulation/mars.svg?style=social&label=Star&maxAge=2592000)
-* [MBDyn](https://www.mbdyn.org/)
-* [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) - [github](https://github.com/SIM-TU-Darmstadt/mbslib) ![mbslib](https://img.shields.io/github/stars/SIM-TU-Darmstadt/mbslib.svg?style=social&label=Star&maxAge=2592000), [paper](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7403876)
-* [metapod](https://github.com/laas/metapod) - [github](https://github.com/laas/metapod) ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=social&label=Star&maxAge=2592000)
-* [Moby](http://physsim.sourceforge.net/index.html) - [github](https://github.com/PositronicsLab/Moby) ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=social&label=Star&maxAge=2592000)
-* [MuJoCo](http://www.mujoco.org/index.html) - (closed source)
-* [Newton Dynamics](http://newtondynamics.com/) - [github](https://github.com/MADEAPPS/newton-dynamics) ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=social&label=Star&maxAge=2592000)
-* [ODE](http://www.ode.org/) - [bitbucket](https://bitbucket.org/odedevs/ode)
-* [OpenRAVE](http://www.openrave.org) - [github](https://github.com/rdiankov/openrave) ![openrave](https://img.shields.io/github/stars/rdiankov/openrave.svg?style=social&label=Star&maxAge=2592000)
-* [pinocchio](http://stack-of-tasks.github.io/pinocchio/) - [github](https://github.com/stack-of-tasks/pinocchio) ![pinocchio](https://img.shields.io/github/stars/stack-of-tasks/pinocchio.svg?style=social&label=Star&maxAge=2592000)
-* PositionBasedDynamics - [github](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics) (![PositionBasedDynamics](https://img.shields.io/github/stars/InteractiveComputerGraphics/PositionBasedDynamics.svg?style=social&label=Star&maxAge=2592000)
-* [PyDy](http://www.pydy.org/) - Python | [github](https://github.com/pydy/pydy)
-* [RBDL](http://rbdl.bitbucket.org/) - [bitbucket](https://bitbucket.org/rbdl/rbdl)
-* RBDyn - [github](https://github.com/jrl-umi3218/RBDyn) ![RBDyn](https://img.shields.io/github/stars/jrl-umi3218/RBDyn.svg?style=social&label=Star&maxAge=2592000)
-* [ReactPhysics3d](http://www.reactphysics3d.com/) - [github](https://github.com/DanielChappuis/reactphysics3d) ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000)
-* [Robotics Library](http://www.roboticslibrary.org/) - [github](https://github.com/roboticslibrary/rl) ![rl](https://img.shields.io/github/stars/roboticslibrary/rl.svg?style=social&label=Star&maxAge=2592000)
-* [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html)
-* [siconos](http://siconos.gforge.inria.fr) - [github](https://github.com/siconos/siconos) ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000)
-* [Simbody](https://simtk.org/home/simbody/) - [github](https://github.com/simbody/simbody.git) ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000)
-* [trep](http://murpheylab.github.io/trep/) - Python | [github](https://github.com/MurpheyLab/trep)
-* qu3e - [github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000)
-
+  
 #### Mobile Robots
 
 * [mrpt](http://www.mrpt.org/) ([github](https://github.com/MRPT/mrpt) ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=social&label=Star&maxAge=2592000)) - The Mobile Robot Programming Toolkit.
