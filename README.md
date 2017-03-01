@@ -4,7 +4,7 @@ A curated list of open source robotics libraries and software.
 
 #### Table of Contents
 * [Libraries](#libraries)
-  * [Multibody Dynamics](#multibody-dynamics)
+  * [Dynamics Simulation](#dynamics-simulation)
   * [Motion Planning](#motion-planning)
   * [Optimization](#optimization)
   * [Robot Model Description Format](#robot-model-description-format)
@@ -18,9 +18,11 @@ A curated list of open source robotics libraries and software.
 
 ## [Libraries](#awesome-robotics-libraries)
 
-### [Multibody Dynamics](#awesome-robotics-libraries)
+### [Dynamics Simulation](#awesome-robotics-libraries)
 
-#### C++
+#### General Robots
+
+##### C++
 
 * [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000)) - Real-Time Physics Simulation
 * [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono) ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000)) - C++ library for multibody dynamics simulations.
@@ -36,7 +38,6 @@ A curated list of open source robotics libraries and software.
 * [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) ([github](https://github.com/SIM-TU-Darmstadt/mbslib) ![mbslib](https://img.shields.io/github/stars/SIM-TU-Darmstadt/mbslib.svg?style=social&label=Star&maxAge=2592000), [paper](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7403876)) - An efficient and modular multibody systems library for kinematics and dynamics simulation, optimization and sensitivity analysis.
 * [metapod](https://github.com/laas/metapod) ([github](https://github.com/laas/metapod) ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=social&label=Star&maxAge=2592000)) - A template-based robot dynamics library.
 * [Moby](http://physsim.sourceforge.net/index.html) ([github](https://github.com/PositronicsLab/Moby) ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=social&label=Star&maxAge=2592000)) - Multi-body dynamics simulation library written in C++.
-* [mrpt](http://www.mrpt.org/) ([github](https://github.com/MRPT/mrpt) ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=social&label=Star&maxAge=2592000)) - The Mobile Robot Programming Toolkit.
 * [MuJoCo](http://www.mujoco.org/index.html) (closed source) - A physics engine aiming to facilitate research and development in robotics, biomechanics, graphics and animation, and other areas where fast and accurate simulation is needed.
 * [Newton Dynamics](http://newtondynamics.com/) ([github](https://github.com/MADEAPPS/newton-dynamics) ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=social&label=Star&maxAge=2592000)) - A cross-platform life-like physics simulation library.
 * [ODE](http://www.ode.org/) ([bitbucket](https://bitbucket.org/odedevs/ode)) - An open source, high performance library for simulating rigid body dynamics.
@@ -53,10 +54,18 @@ A curated list of open source robotics libraries and software.
 * [SOFA](https://www.sofa-framework.org/) ([github](https://github.com/sofa-framework/sofa) ![sofa](https://img.shields.io/github/stars/sofa-framework/sofa.svg?style=social&label=Star&maxAge=2592000)) - An Open Source framework primarily targeted at real-time simulation, with an emphasis on medical simulation.
 * qu3e ([github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000)) - Lightweight and Simple 3D Open Source Physics Engine in C++.
 
-#### Python
+##### Python
 
 * [PyDy](http://www.pydy.org/) ([github](https://github.com/pydy/pydy)) - A tool kit written in the Python programming language that utilizes an array of scientific programs to enable the study of multibody dynamics.
 * [trep](http://murpheylab.github.io/trep/) ([github](https://github.com/MurpheyLab/trep)) - Python module for modeling articulated rigid body mechanical systems in generalized coordinates.
+
+#### Mobile Robots
+
+* [mrpt](http://www.mrpt.org/) ([github](https://github.com/MRPT/mrpt) ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=social&label=Star&maxAge=2592000)) - The Mobile Robot Programming Toolkit.
+
+#### Flying Robots
+
+* [LibrePilot](http://www.librepilot.org/site/index.html) ([bitbucket](https://bitbucket.org/librepilot/librepilot) [github](https://github.com/librepilot/LibrePilot) ![LibrePilot](https://img.shields.io/github/stars/librepilot/LibrePilot.svg?style=social&label=Star&maxAge=2592000)) - A software suite to control multicopter and other RC-models.
 
 ### [Motion Planning](#awesome-robotics-libraries)
 
