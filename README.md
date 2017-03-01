@@ -64,7 +64,7 @@ A curated list of open source robotics libraries and software.
 
 #### Flying Robots
 
-* [LibrePilot](http://www.librepilot.org/site/index.html) ([bitbucket](https://bitbucket.org/librepilot/librepilot) [github](https://github.com/librepilot/LibrePilot) ![LibrePilot](https://img.shields.io/github/stars/librepilot/LibrePilot.svg?style=social&label=Star&maxAge=2592000)) - A software suite to control multicopter and other RC-models.
+* [LibrePilot](http://www.librepilot.org/site/index.html) ([bitbucket](https://bitbucket.org/librepilot/librepilot) | [github](https://github.com/librepilot/LibrePilot) ![LibrePilot](https://img.shields.io/github/stars/librepilot/LibrePilot.svg?style=social&label=Star&maxAge=2592000)) - A software suite to control multicopter and other RC-models.
 
 #### Medical Simulation
 
