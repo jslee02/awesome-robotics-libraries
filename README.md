@@ -52,8 +52,8 @@ A curated list of open source robotics libraries and software.
 | [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) | (todo) | (todo) | (todo) | (todo) | |
 | [siconos](http://siconos.gforge.inria.fr) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/siconos/siconos) ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000) |
 | [Simbody](https://simtk.org/home/simbody/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/simbody/simbody.git) ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000) |
-| [trep](http://murpheylab.github.io/trep/) | (todo) | (todo) | Python | (todo) | [github](https://github.com/MurpheyLab/trep) |
-| qu3e | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
+| [trep](http://murpheylab.github.io/trep/) | rigid | dm, trj-opt | C, Python | GPL-3.0 | [github](https://github.com/MurpheyLab/trep) |
+| qu3e | rigid | - | C++ | Zlib | [github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
 
 For simplicity, shortened names are used to represent the supported models and features as
 
@@ -64,7 +64,8 @@ For simplicity, shortened names are used to represent the supported models and f
   * granular: granular materials (like sand)
   * fluid: fluid dynamics
 
-* Features on Analysis, Planning, Control Design
+* Features on Simulation, Analysis, Planning, Control Design
+  * dm: [discrete mechanics]()
   * ik: inverse kinematics solvers
   * trj-opt: trajectory optimization
   * plan: motion planning algorithms
