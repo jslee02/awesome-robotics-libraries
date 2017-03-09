@@ -65,7 +65,7 @@ For simplicity, shortened names are used to represent the supported models and f
   * fluid: fluid dynamics
 
 * Features on Simulation, Analysis, Planning, Control Design
-  * dm: [discrete mechanics]()
+  * dm: [discrete mechanics](https://www.cambridge.org/core/journals/acta-numerica/article/div-classtitlediscrete-mechanics-and-variational-integratorsdiv/C8F45478A9290DEC24E63BB7FBE3CEB5)
   * ik: inverse kinematics solvers
   * trj-opt: trajectory optimization
   * plan: motion planning algorithms
