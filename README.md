@@ -103,7 +103,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) ([github](https://github.com/joschu/trajopt)) - A software framework for generating robot trajectories by local optimization.
 
-#### Nonlinear Programming Libraries
+#### Nonlinear Programming
 
 * [CasADi](https://github.com/casadi/casadi/wiki) ([github](https://github.com/casadi/casadi) ![casadi](https://img.shields.io/github/stars/casadi/casadi.svg?style=social&label=Star&maxAge=2592000)) - A symbolic framework for algorithmic (a.k.a. automatic) differentiation and numeric optimization
 * [Ceres Solver](http://ceres-solver.org/) ([github](https://github.com/ceres-solver/ceres-solver) ![ceres-solver](https://img.shields.io/github/stars/ceres-solver/ceres-solver.svg?style=social&label=Star&maxAge=2592000)) - A large scale non-linear optimization library . Ceres Solver has been used in production at Google for more than four years now. It is clean, extensively tested and well documented code that is actively developed and supported.
