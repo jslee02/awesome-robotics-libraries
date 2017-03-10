@@ -49,9 +49,9 @@ A curated list of open source robotics libraries and software.
 | RBDyn | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/jrl-umi3218/RBDyn) ![RBDyn](https://img.shields.io/github/stars/jrl-umi3218/RBDyn.svg?style=social&label=Star&maxAge=2592000) |
 | [ReactPhysics3d](http://www.reactphysics3d.com/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/DanielChappuis/reactphysics3d) ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=social&label=Star&maxAge=2592000) |
 | [Robotics Library](http://www.roboticslibrary.org/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/roboticslibrary/rl) ![rl](https://img.shields.io/github/stars/roboticslibrary/rl.svg?style=social&label=Star&maxAge=2592000) |
-| [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) | (todo) | (todo) | (todo) | (todo) | |
-| [siconos](http://siconos.gforge.inria.fr) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/siconos/siconos) ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000) |
-| [Simbody](https://simtk.org/home/simbody/) | (todo) | (todo) | (todo) | (todo) | [github](https://github.com/simbody/simbody.git) ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000) |
+| [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) | (todo) | (todo) | C++ | Apache-2.0 | [SVN](https://svnsrv.sdu.dk/svn/RobWork/trunk) (id/pw required) |
+| [siconos](http://siconos.gforge.inria.fr) | (todo) | (todo) | C++, Python | Apache-2.0 | [github](https://github.com/siconos/siconos) ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000) |
+| [Simbody](https://simtk.org/home/simbody/) | (todo) | (todo) | C++ | Apache-2.0 | [github](https://github.com/simbody/simbody.git) ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000) |
 | [trep](http://murpheylab.github.io/trep/) | rigid | dm, trj-opt | C, Python | GPL-3.0 | [github](https://github.com/MurpheyLab/trep) |
 | qu3e | rigid | - | C++ | Zlib | [github](https://github.com/RandyGaul/qu3e) ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
 
