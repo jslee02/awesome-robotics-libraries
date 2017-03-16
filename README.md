@@ -20,7 +20,7 @@ A curated list of open source robotics libraries and software.
 
 ### [Dynamics Simulation](#awesome-robotics-libraries)
 
-#### General Robots
+###### General Robots
 
 | Name | Models | Features | Languages | Licenses | Code & References |
 |:----:| ------ | -------- | --------- | -------- | ----------------- |
@@ -70,15 +70,15 @@ For simplicity, shortened names are used to represent the supported models and f
   * trj-opt: trajectory optimization
   * plan: motion planning algorithms
   
-#### Mobile Robots
+###### Mobile Robots
 
 * [mrpt](http://www.mrpt.org/) ([github](https://github.com/MRPT/mrpt) ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=social&label=Star&maxAge=2592000)) - The Mobile Robot Programming Toolkit.
 
-#### Flying Robots
+###### Flying Robots
 
 * [LibrePilot](http://www.librepilot.org/site/index.html) ([bitbucket](https://bitbucket.org/librepilot/librepilot) | [github](https://github.com/librepilot/LibrePilot) ![LibrePilot](https://img.shields.io/github/stars/librepilot/LibrePilot.svg?style=social&label=Star&maxAge=2592000)) - A software suite to control multicopter and other RC-models.
 
-#### Medical Simulation
+###### Medical Simulation
 
 * [SOFA](https://www.sofa-framework.org/) ([github](https://github.com/sofa-framework/sofa) ![sofa](https://img.shields.io/github/stars/sofa-framework/sofa.svg?style=social&label=Star&maxAge=2592000)) - An Open Source framework primarily targeted at real-time simulation, with an emphasis on medical simulation.
 
@@ -99,11 +99,11 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ### [Optimization](#awesome-robotics-libraries)
 
-#### Motion Optimizer
+###### Motion Optimizer
 
 * [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) ([github](https://github.com/joschu/trajopt)) - A software framework for generating robot trajectories by local optimization.
 
-#### Nonlinear Programming
+###### Nonlinear Programming
 
 * [CasADi](https://github.com/casadi/casadi/wiki) ([github](https://github.com/casadi/casadi) ![casadi](https://img.shields.io/github/stars/casadi/casadi.svg?style=social&label=Star&maxAge=2592000)) - A symbolic framework for algorithmic (a.k.a. automatic) differentiation and numeric optimization
 * [Ceres Solver](http://ceres-solver.org/) ([github](https://github.com/ceres-solver/ceres-solver) ![ceres-solver](https://img.shields.io/github/stars/ceres-solver/ceres-solver.svg?style=social&label=Star&maxAge=2592000)) - A large scale non-linear optimization library . Ceres Solver has been used in production at Google for more than four years now. It is clean, extensively tested and well documented code that is actively developed and supported.
@@ -140,7 +140,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse)) - The Modular OpenRobots Simulation Engine.
 * [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
 
-#### Commercial
+###### Commercial
 
 * [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
 * [Webots](http://www.cyberbotics.com/) - A commercial robot simulator used in more than 1200 companies, universities and research centers worldwide for R&D, education and research.
