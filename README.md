@@ -83,7 +83,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [MoveIt!](http://moveit.ros.org/) ([github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=social&label=Star&maxAge=2592000)) - State of the art software for mobile manipulation, incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation.
 * [OMPL](http://ompl.kavrakilab.org/) ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=social&label=Star&maxAge=2592000)) - The Open Motion Planning Library.
 
-#### Nearest Neighbor
+###### Nearest Neighbor
 
 * [Cover-Tree](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) ([github](https://github.com/DNCrane/Cover-Tree) ![Cover-Tree](https://img.shields.io/github/stars/DNCrane/Cover-Tree.svg?style=social&label=Star&maxAge=2592000)) - A well-documented C++ implementation of the cover tree datastructure for quick k-nearest-neighbor search
   * [Faster cover tree](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2015_izbicki15.pdf) by Mike Izbicki et al., ICML 2015.
