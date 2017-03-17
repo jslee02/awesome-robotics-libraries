@@ -38,7 +38,7 @@ A curated list of open source robotics libraries and software.
 | metapod | (todo) | (todo) | C++ | LGPL-3.0 | [github](https://github.com/laas/metapod) | ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=social&label=Star&maxAge=2592000) |
 | [Moby](http://physsim.sourceforge.net/index.html) | (todo) | (todo) | C++ | GPL-2.0 | [github](https://github.com/PositronicsLab/Moby) | ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=social&label=Star&maxAge=2592000) |
 | [mrpt](http://www.mrpt.org/) | vehicle | slam | C++, Python, Matlab | BSD-3-Clause | [github](https://github.com/MRPT/mrpt) | ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=social&label=Star&maxAge=2592000) |
-| [MuJoCo](http://www.mujoco.org/index.html) | (todo) | (todo) | (todo) | (todo) | (closed source) | |
+| [MuJoCo](http://www.mujoco.org/index.html) | (todo) | (todo) | C++, Python | [licenses](https://www.roboti.us/license.html) | closed source | |
 | [Newton Dynamics](http://newtondynamics.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/MADEAPPS/newton-dynamics) | ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=social&label=Star&maxAge=2592000) |
 | [ODE](http://www.ode.org/) | (todo) | (todo) | C++ | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) | |
 | [OpenRAVE](http://www.openrave.org) | (todo) | (todo) | C++, Python | LGPL-3.0 | [github](https://github.com/rdiankov/openrave) | ![openrave](https://img.shields.io/github/stars/rdiankov/openrave.svg?style=social&label=Star&maxAge=2592000) |
