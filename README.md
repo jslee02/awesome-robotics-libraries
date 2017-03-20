@@ -20,6 +20,8 @@ A curated list of open source robotics libraries and software.
 
 ### [Dynamics Simulation](#awesome-robotics-libraries)
 
+> :warning: The following table is not complete. Please feel free to report if you find something incorrect or missing.
+
 | Name | Models | Features | Languages | Licenses | Code | Popularity |
 |:----:| ------ | -------- | --------- | -------- | ---- | ---------- |
 | Bullet | rigid, soft | ik, id | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
@@ -78,8 +80,6 @@ For simplicity, shortened names are used to represent the supported models and f
   * cv: computer visionn
   * urdf: [urdf](http://wiki.ros.org/urdf) parser
   * sdf: [sdf](http://sdformat.org/) parser
-
-Please feel free to report if you find something incorrect or missing on the table.
 
 ### [Motion Planning](#awesome-robotics-libraries)
 
