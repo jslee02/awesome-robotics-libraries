@@ -22,10 +22,10 @@ A curated list of open source robotics libraries and software.
 
 | Name | Models | Features | Languages | Licenses | Code | Popularity |
 |:----:| ------ | -------- | --------- | -------- | ---- | ---------- |
-| Bullet | rigid, soft | ik | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
-| [CHRONO::ENGINE](http://chronoengine.info/) | rigid, soft, granular, fluid | | C++, Python | BSD-3-Clause | [github](https://github.com/projectchrono/chrono) | ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000) |
-| [DART](http://dartsim.github.io/) | rigid, soft | ik, plan | C++, Python | BSD-2-Clause | [github](https://github.com/dartsim/dart.git) | ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000) |
-| [Drake](http://drake002.csail.mit.edu/drake/sphinx/) | rigid, aero, fluid | ik, trj-opt, plan | C++, Matlab | BSD-3-Clause | [github](https://github.com/RobotLocomotion/drake) | ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000) |
+| Bullet | rigid, soft | ik, id | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=social&label=Star&maxAge=2592000) |
+| [CHRONO::ENGINE](http://chronoengine.info/) | rigid, soft, granular, fluid | ik | C++, Python | BSD-3-Clause | [github](https://github.com/projectchrono/chrono) | ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=social&label=Star&maxAge=2592000) |
+| [DART](http://dartsim.github.io/) | rigid, soft | ik, id, plan, urdf, sdf | C++, Python | BSD-2-Clause | [github](https://github.com/dartsim/dart.git) | ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=social&label=Star&maxAge=2592000) |
+| [Drake](http://drake.mit.edu/) | rigid, aero, fluid | ik, trj-opt, plan | C++, Matlab | BSD-3-Clause | [github](https://github.com/RobotLocomotion/drake) | ![drake](https://img.shields.io/github/stars/RobotLocomotion/drake.svg?style=social&label=Star&maxAge=2592000) |
 | [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) | rigid, particle | | C++ | Zlib | | |
 | idyntree | rigid | (todo) | C++, Python, Matlab, Lua | LGPL-2.1 | [github](https://github.com/robotology/idyntree) | ![idyntree](https://img.shields.io/github/stars/robotology/idyntree.svg?style=social&label=Star&maxAge=2592000) |
 | [KDL](http://www.orocos.org/kdl) | rigid | ik | C++ | LGPL-2.1 | [github](https://github.com/orocos/orocos_kinematics_dynamics) | ![orocos_kinematics_dynamics](https://img.shields.io/github/stars/orocos/orocos_kinematics_dynamics.svg?style=social&label=Star&maxAge=2592000) |
@@ -36,9 +36,9 @@ A curated list of open source robotics libraries and software.
 | [MBDyn](https://www.mbdyn.org/) | (todo) | (todo) | C++ | GPL-2.1 | [download](https://www.mbdyn.org/?Software_Download) | |
 | [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) | (todo) | (todo) | C++ | LGPL-3.0 | [github](https://github.com/SIM-TU-Darmstadt/mbslib) | ![mbslib](https://img.shields.io/github/stars/SIM-TU-Darmstadt/mbslib.svg?style=social&label=Star&maxAge=2592000) |
 | metapod | (todo) | (todo) | C++ | LGPL-3.0 | [github](https://github.com/laas/metapod) | ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=social&label=Star&maxAge=2592000) |
-| [Moby](http://physsim.sourceforge.net/index.html) | (todo) | (todo) | C++ | GPL-2.0 | [github](https://github.com/PositronicsLab/Moby) | ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=social&label=Star&maxAge=2592000) |
-| [mrpt](http://www.mrpt.org/) | vehicle | slam | C++, Python, Matlab | BSD-3-Clause | [github](https://github.com/MRPT/mrpt) | ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=social&label=Star&maxAge=2592000) |
-| [MuJoCo](http://www.mujoco.org/index.html) | (todo) | (todo) | C++, Python | [licenses](https://www.roboti.us/license.html) | closed source | |
+| [Moby](http://physsim.sourceforge.net/index.html) | rigid | id | C++ | GPL-2.0 | [github](https://github.com/PositronicsLab/Moby) | ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=social&label=Star&maxAge=2592000) |
+| [mrpt](http://www.mrpt.org/) | vehicle | slam, cv | C++, Python, Matlab | BSD-3-Clause | [github](https://github.com/MRPT/mrpt) | ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=social&label=Star&maxAge=2592000) |
+| [MuJoCo](http://www.mujoco.org/index.html) | (todo) | id | C++, Python | [licenses](https://www.roboti.us/license.html) | closed source | |
 | [Newton Dynamics](http://newtondynamics.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/MADEAPPS/newton-dynamics) | ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=social&label=Star&maxAge=2592000) |
 | [ODE](http://www.ode.org/) | rigid | | C++ | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) | |
 | [OpenRAVE](http://www.openrave.org) | (todo) | (todo) | C++, Python | LGPL-3.0 | [github](https://github.com/rdiankov/openrave) | ![openrave](https://img.shields.io/github/stars/rdiankov/openrave.svg?style=social&label=Star&maxAge=2592000) |
@@ -71,9 +71,15 @@ For simplicity, shortened names are used to represent the supported models and f
 * Features on Simulation, Analysis, Planning, Control Design
   * dm: [discrete mechanics](https://www.cambridge.org/core/journals/acta-numerica/article/div-classtitlediscrete-mechanics-and-variational-integratorsdiv/C8F45478A9290DEC24E63BB7FBE3CEB5)
   * ik: inverse kinematics solvers
+  * id: [inverse dynamics](https://en.wikipedia.org/wiki/Inverse_dynamics)
   * slam: simultaneous localization and mapping
   * trj-opt: trajectory optimization
   * plan: motion planning algorithms
+  * cv: computer visionn
+  * urdf: [urdf](http://wiki.ros.org/urdf) parser
+  * sdf: [sdf](http://sdformat.org/) parser
+
+Please feel free to report if you find something incorrect or missing on the table.
 
 ### [Motion Planning](#awesome-robotics-libraries)
 
