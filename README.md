@@ -53,7 +53,7 @@ A curated list of open source robotics libraries and software.
 | [Robotics Library](http://www.roboticslibrary.org/) | (todo) | (todo) | C++ | GPL-3.0 or BSD-2-Clause | [github](https://github.com/roboticslibrary/rl) | ![rl](https://img.shields.io/github/stars/roboticslibrary/rl.svg?style=social&label=Star&maxAge=2592000) |
 | [RobWork](http://www.robwork.dk/apidoc/nightly/rw/index.html) | (todo) | (todo) | C++ | Apache-2.0 | [SVN](https://svnsrv.sdu.dk/svn/RobWork/trunk) (id/pw required) | |
 | [siconos](http://siconos.gforge.inria.fr) | (todo) | (todo) | C++, Python | Apache-2.0 | [github](https://github.com/siconos/siconos) | ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=social&label=Star&maxAge=2592000) |
-| [Simbody](https://simtk.org/home/simbody/) | (todo) | (todo) | C++ | Apache-2.0 | [github](https://github.com/simbody/simbody.git) | ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000) |
+| [Simbody](https://simtk.org/home/simbody/) | rigid, molecules | id, urdf | C++ | Apache-2.0 | [github](https://github.com/simbody/simbody.git) | ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=social&label=Star&maxAge=2592000) |
 | [SOFA](https://www.sofa-framework.org/) | medical | (todo) | C++ | LGPL-2.1 | [github](https://github.com/sofa-framework/sofa) | ![sofa](https://img.shields.io/github/stars/sofa-framework/sofa.svg?style=social&label=Star&maxAge=2592000) |
 | [trep](http://murpheylab.github.io/trep/) | rigid | dm, trj-opt | C, Python | GPL-3.0 | [github](https://github.com/MurpheyLab/trep) | ![trep](https://img.shields.io/github/stars/MurpheyLab/trep.svg?style=social&label=Star&maxAge=2592000) |
 | qu3e | rigid | - | C++ | Zlib | [github](https://github.com/RandyGaul/qu3e) | ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=social&label=Star&maxAge=2592000) |
@@ -69,6 +69,7 @@ For simplicity, shortened names are used to represent the supported models and f
   * vehicles
   * uav: unmanned aerial vehicles (like drones)
   * medical
+  * molecules
 
 * Features on Simulation, Analysis, Planning, Control Design
   * dm: [discrete mechanics](https://www.cambridge.org/core/journals/acta-numerica/article/div-classtitlediscrete-mechanics-and-variational-integratorsdiv/C8F45478A9290DEC24E63BB7FBE3CEB5)
