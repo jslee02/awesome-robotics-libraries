@@ -70,6 +70,7 @@ For simplicity, shortened names are used to represent the supported models and f
   * uav: unmanned aerial vehicles (like drones)
   * medical
   * molecules
+  * parallel: parallel mechanism (like Stewart platform)
 
 * Features on Simulation, Analysis, Planning, Control Design
   * dm: [discrete mechanics](https://www.cambridge.org/core/journals/acta-numerica/article/div-classtitlediscrete-mechanics-and-variational-integratorsdiv/C8F45478A9290DEC24E63BB7FBE3CEB5)
