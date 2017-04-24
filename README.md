@@ -98,6 +98,12 @@ For simplicity, shortened names are used to represent the supported models and f
 * [FLANN](http://www.cs.ubc.ca/research/flann/) ([github](https://github.com/mariusmuja/flann) ![flann](https://img.shields.io/github/stars/mariusmuja/flann.svg?style=social&label=Star&maxAge=2592000)) - Fast Library for Approximate Nearest Neighbors
 * [nanoflann](http://www.cs.ubc.ca/research/flann/) ([github](https://github.com/jlblancoc/nanoflann) ![nanoflann](https://img.shields.io/github/stars/jlblancoc/nanoflann.svg?style=social&label=Star&maxAge=2592000)) - C++ header-only library for Nearest Neighbor (NN) search wih KD-trees
 
+###### 3D Mapping
+
+* [OctoMap](http://octomap.github.io/) ([github](https://github.com/OctoMap/octomap) ![octomap](https://img.shields.io/github/stars/OctoMap/octomap.svg?style=social&label=Star&maxAge=2592000)) - An Efficient Probabilistic 3D Mapping Framework Based on Octrees. Contains the main OctoMap library, the viewer octovis, and dynamicEDT3D.
+
+* voxblox ([github](https://github.com/ethz-asl/voxblox) ![voxblox](https://img.shields.io/github/stars/ethz-asl/voxblox.svg?style=social&label=Star&maxAge=2592000)) - A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.
+
 ### [Optimization](#awesome-robotics-libraries)
 
 ###### Motion Optimizer
