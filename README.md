@@ -10,6 +10,7 @@ A curated list of open source robotics libraries and software.
   * [Robot Model Description Format](#robot-model-description-format)
   * [Robot Platform](#robot-platform)
   * [SLAM](#slam)
+  * [Machine Learning](#machine-learning)
 * [Software](#software)
   * [Simulator](#simulator)
 * [Comparisons](#comparisons)
@@ -137,6 +138,11 @@ For simplicity, shortened names are used to represent the supported models and f
 * [LSD-SLAM](https://vision.in.tum.de/research/vslam/lsdslam) ([github](http://github.com/tum-vision/lsd_slam) ![lsdslam](https://img.shields.io/github/stars/tum-vision/lsd_slam.svg?style=social&label=Star&maxAge=2592000)) - LSD-SLAM is a novel approach to real-time monocular SLAM. It is fully direct (i.e. does not use keypoints / features) and creates large-scale, semi-dense maps in real-time on a laptop.
 * ORB-SLAM2 ([github](http://github.com/raulmur/ORB_SLAM2) ![ORB_SLAM2](https://img.shields.io/github/stars/raulmur/ORB_SLAM2.svg?style=social&label=Star&maxAge=2592000)) - A real-time SLAM library for Monocular, Stereo and RGB-D cameras that computes the camera trajectory and a sparse 3D reconstruction (in the stereo and RGB-D case with true scale).
 * [SRBA](http://mrpt.github.io/srba/) ([github](http://github.com/MRPT/srba) ![srba](https://img.shields.io/github/stars/MRPT/srba.svg?style=social&label=Star&maxAge=2592000)) - Sparser Relative Bundle Adjustment (SRBA) is a header-only C++ library for solving SLAM/BA in relative coordinates with flexibility for different submapping strategies and aimed at constant time local graph update. BSD 3-Clause License.
+
+### [Machine Learning](#awesome-robotics-libraries)
+
+* [OpenAI Gym](https://gym.openai.com/) ([github](http://github.com/openai/gym) ![gym](https://img.shields.io/github/stars/openai/gym.svg?style=social&label=Star&maxAge=2592000)) - A toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like Pong or Go.
+  * OpenAI Gym with DART ([github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=social&label=Star&maxAge=2592000))
 
 ## [Software](#awesome-robotics-libraries)
 
