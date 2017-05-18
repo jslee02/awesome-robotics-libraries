@@ -165,6 +165,7 @@ The comparisons are moved to [COMPARISONS.md](https://github.com/jslee02/awesome
 ## [Other Awesome Lists](#awesome-robotics-libraries)
 
 * [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) - This is a list of various books, courses and other resources for robotics. It's an attempt to gather useful material in one place for everybody who wants to learn more about the field.
+* [Awesome Robotics](https://github.com/ahundt/awesome-robotics) - Awesome links and software libraries that are useful for robots.
 * [Awesome Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence)
 * [Awesome Collision Detection](https://github.com/jslee02/awesome-collision-detection)
 * [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
