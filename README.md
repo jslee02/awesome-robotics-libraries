@@ -1,8 +1,9 @@
 # Awesome Robotics Libraries
 
-A curated list of open source robotics libraries and software. 
+A curated list of open source robotics simulators and libraries. 
 
 #### Table of Contents
+* [Simulators](#simulators)
 * [Libraries](#libraries)
   * [Dynamics Simulation](#dynamics-simulation)
   * [Motion Planning](#motion-planning)
@@ -11,11 +12,24 @@ A curated list of open source robotics libraries and software.
   * [Robot Platform](#robot-platform)
   * [SLAM](#slam)
   * [Machine Learning](#machine-learning)
-* [Software](#software)
-  * [Simulator](#simulator)
 * [Comparisons](#comparisons)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
+
+## [Simulators](#awesome-robotics-libraries)
+
+##### Free or Open Source
+
+* AirSim ([github](https://github.com/Microsoft/AirSim)) - Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research
+* [Gazebo](http://www.gazebosim.org/) ([bitbucket](https://bitbucket.org/osrf/gazebo)) - A dynamic multi-robot simulator.
+* [GraspIt!](http://graspit-simulator.github.io/) ([github](https://github.com/graspit-simulator/graspit)) - A simulator for grasping research that can accommodate arbitrary hand and robot designs developed by [the Columbia University Robotics Group](http://www.cs.columbia.edu/robotics/)
+* [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse)) - The Modular OpenRobots Simulation Engine.
+* [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
+
+##### Commercial
+
+* [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
+* [Webots](http://www.cyberbotics.com/) - A commercial robot simulator used in more than 1200 companies, universities and research centers worldwide for R&D, education and research.
 
 ## [Libraries](#awesome-robotics-libraries)
 
@@ -143,25 +157,6 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * [OpenAI Gym](https://gym.openai.com/) ([github](http://github.com/openai/gym) ![gym](https://img.shields.io/github/stars/openai/gym.svg?style=social&label=Star&maxAge=2592000)) - A toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like Pong or Go.
   * OpenAI Gym with DART ([github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=social&label=Star&maxAge=2592000))
-
-## [Software](#awesome-robotics-libraries)
-
-### [Simulator](#awesome-robotics-libraries)
-
-* AirSim ([github](https://github.com/Microsoft/AirSim)) - Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research
-* [Gazebo](http://www.gazebosim.org/) ([bitbucket](https://bitbucket.org/osrf/gazebo)) - A dynamic multi-robot simulator.
-* [GraspIt!](http://graspit-simulator.github.io/) ([github](https://github.com/graspit-simulator/graspit)) - A simulator for grasping research that can accommodate arbitrary hand and robot designs developed by [the Columbia University Robotics Group](http://www.cs.columbia.edu/robotics/)
-* [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse)) - The Modular OpenRobots Simulation Engine.
-* [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
-
-###### Commercial
-
-* [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
-* [Webots](http://www.cyberbotics.com/) - A commercial robot simulator used in more than 1200 companies, universities and research centers worldwide for R&D, education and research.
-
-## [Comparisons](#awesome-robotics-libraries)
-
-The comparisons are moved to [COMPARISONS.md](https://github.com/jslee02/awesome-robotics-libraries/blob/master/COMPARISONS.md).
 
 ## [Other Awesome Lists](#awesome-robotics-libraries)
 
