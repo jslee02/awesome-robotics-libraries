@@ -18,7 +18,7 @@ A curated list of open source robotics simulators and libraries.
 
 ## [Simulators](#awesome-robotics-libraries)
 
-##### Free or Open Source
+###### Free or Open Source
 
 * AirSim ([github](https://github.com/Microsoft/AirSim)) - Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research
 * [Gazebo](http://www.gazebosim.org/) ([bitbucket](https://bitbucket.org/osrf/gazebo)) - A dynamic multi-robot simulator.
@@ -26,7 +26,7 @@ A curated list of open source robotics simulators and libraries.
 * [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse)) - The Modular OpenRobots Simulation Engine.
 * [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
 
-##### Commercial
+###### Commercial
 
 * [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
 * [Webots](http://www.cyberbotics.com/) - A commercial robot simulator used in more than 1200 companies, universities and research centers worldwide for R&D, education and research.
