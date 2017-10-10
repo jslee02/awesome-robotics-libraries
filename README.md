@@ -148,6 +148,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ### [Simulator](#awesome-robotics-libraries)
 
+* AirSim ([github](https://github.com/Microsoft/AirSim)) - Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research
 * [Gazebo](http://www.gazebosim.org/) ([bitbucket](https://bitbucket.org/osrf/gazebo)) - A dynamic multi-robot simulator.
 * [GraspIt!](http://graspit-simulator.github.io/) ([github](https://github.com/graspit-simulator/graspit)) - A simulator for grasping research that can accommodate arbitrary hand and robot designs developed by [the Columbia University Robotics Group](http://www.cs.columbia.edu/robotics/)
 * [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse)) - The Modular OpenRobots Simulation Engine.
