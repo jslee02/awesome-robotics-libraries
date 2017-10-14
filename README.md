@@ -12,7 +12,6 @@ A curated list of open source robotics simulators and libraries.
   * [Robot Platform](#robot-platform)
   * [SLAM](#slam)
   * [Machine Learning](#machine-learning)
-* [Comparisons](#comparisons)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
