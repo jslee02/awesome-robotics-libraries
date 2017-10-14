@@ -88,9 +88,9 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * Features on Simulation, Analysis, Planning, Control Design
   * dm: [discrete mechanics](https://www.cambridge.org/core/journals/acta-numerica/article/div-classtitlediscrete-mechanics-and-variational-integratorsdiv/C8F45478A9290DEC24E63BB7FBE3CEB5)
-  * ik: inverse kinematics solvers
+  * ik: [inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics) solvers
   * id: [inverse dynamics](https://en.wikipedia.org/wiki/Inverse_dynamics)
-  * slam: simultaneous localization and mapping
+  * slam: [simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
   * trj-opt: trajectory optimization
   * plan: motion planning algorithms
   * cv: computer visionn
