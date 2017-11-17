@@ -146,7 +146,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model. ([github](https://github.com/ros/urdfdom))
 
 ###### Utility to Build Robot Models
-* phobos - An add-on for Blender allowing to create URDF and SMURF robot models in a WYSIWYG environment. ([github](https://github.com/rock-simulation/phobos) ![phobos](https://img.shields.io/github/stars/rock-simulation/phobos.svg?style=social&label=Star&maxAge=2592000)))
+* phobos - An add-on for Blender allowing to create URDF and SMURF robot models in a WYSIWYG environment. ([github](https://github.com/rock-simulation/phobos) ![phobos](https://img.shields.io/github/stars/rock-simulation/phobos.svg?style=social&label=Star&maxAge=2592000))
 
 ### [Robot Platform](#awesome-robotics-libraries)
 
