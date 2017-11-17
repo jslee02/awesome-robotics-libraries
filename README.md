@@ -9,7 +9,7 @@ A curated list of open source robotics simulators and libraries.
   * [Machine Learning](#machine-learning)
   * [Motion Planning](#motion-planning)
   * [Optimization](#optimization)
-  * [Robot Model Description Format](#robot-model-description-format)
+  * [Robot Modeling](#robot-modeling)
   * [Robot Platform](#robot-platform)
   * [SLAM](#slam)
 * [Other Awesome Lists](#other-awesome-lists)
@@ -139,10 +139,14 @@ For simplicity, shortened names are used to represent the supported models and f
 * [NLopt](http://ab-initio.mit.edu/wiki/index.php/NLopt) ([github](https://github.com/stevengj/nlopt) ![nlopt](https://img.shields.io/github/stars/stevengj/nlopt.svg?style=social&label=Star&maxAge=2592000)) - NLopt is a free/open-source library for nonlinear optimization, providing a common interface for a number of different free optimization routines available online as well as original implementations of various other algorithms.
 * [SCS](http://web.stanford.edu/~boyd/papers/scs.html) ([github](https://github.com/cvxgrp/scs) ![scs](https://img.shields.io/github/stars/cvxgrp/scs.svg?style=social&label=Star&maxAge=2592000)) - SCS (Splitting Conic Solver) is a numerical optimization package for solving large-scale convex cone problems, based on our paper [Conic Optimization via Operator Splitting and Homogeneous Self-Dual Embedding](http://www.stanford.edu/~boyd/papers/scs.html).
 
-### [Robot Model Description Format](#awesome-robotics-libraries)
+### [Robot Modeling](#awesome-robotics-libraries)
 
+#### Robot Model Description Format
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
 * [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model. ([github](https://github.com/ros/urdfdom))
+
+#### Utility to Build Robot Models
+* phobos - An add-on for Blender allowing to create URDF and SMURF robot models in a WYSIWYG environment. ([github](https://github.com/rock-simulation/phobos) ![phobos](https://img.shields.io/github/stars/rock-simulation/phobos.svg?style=social&label=Star&maxAge=2592000)))
 
 ### [Robot Platform](#awesome-robotics-libraries)
 
