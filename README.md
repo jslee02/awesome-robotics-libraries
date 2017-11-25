@@ -112,6 +112,10 @@ For simplicity, shortened names are used to represent the supported models and f
 * [MoveIt!](http://moveit.ros.org/) ([github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=flat&label=Star&maxAge=86400)) - State of the art software for mobile manipulation, incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation.
 * [OMPL](http://ompl.kavrakilab.org/) ([bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=flat&label=Star&maxAge=86400)) - The Open Motion Planning Library.
 
+###### Motion Optimizer
+
+* [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) ([github](https://github.com/joschu/trajopt)) - A software framework for generating robot trajectories by local optimization.
+
 ###### Nearest Neighbor
 
 * [Cover-Tree](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) ([github](https://github.com/DNCrane/Cover-Tree) ![Cover-Tree](https://img.shields.io/github/stars/DNCrane/Cover-Tree.svg?style=flat&label=Star&maxAge=86400)) - A well-documented C++ implementation of the cover tree datastructure for quick k-nearest-neighbor search
@@ -126,10 +130,6 @@ For simplicity, shortened names are used to represent the supported models and f
 * voxblox ([github](https://github.com/ethz-asl/voxblox) ![voxblox](https://img.shields.io/github/stars/ethz-asl/voxblox.svg?style=flat&label=Star&maxAge=86400)) - A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.
 
 ### [Optimization](#awesome-robotics-libraries)
-
-###### Motion Optimizer
-
-* [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) ([github](https://github.com/joschu/trajopt)) - A software framework for generating robot trajectories by local optimization.
 
 ###### Nonlinear Programming
 
