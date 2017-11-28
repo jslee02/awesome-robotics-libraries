@@ -172,6 +172,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 * [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
+* [Awesome Gazebo](https://github.com/fkromer/awesome-gazebo)
 
 ## [Contributing](#awesome-robotics-libraries)
 
