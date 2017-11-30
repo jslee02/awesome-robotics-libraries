@@ -114,7 +114,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ###### Motion Optimizer
 
-* [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) ([github](https://github.com/joschu/trajopt)) - A software framework for generating robot trajectories by local optimization.
+* [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) ([github](https://github.com/joschu/trajopt) ![joschu/trajopt](https://img.shields.io/github/stars/joschu/trajopt.svg?style=flat&label=Star&maxAge=86400)) - A software framework for generating robot trajectories by local optimization.
 
 ###### Nearest Neighbor
 
