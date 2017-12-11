@@ -12,6 +12,7 @@ A curated list of open source robotics simulators and libraries.
   * [Robot Modeling](#robot-modeling)
   * [Robot Platform](#robot-platform)
   * [SLAM](#slam)
+  * [Vision](#vision)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
@@ -162,6 +163,9 @@ For simplicity, shortened names are used to represent the supported models and f
 * [LSD-SLAM](https://vision.in.tum.de/research/vslam/lsdslam) ([github](http://github.com/tum-vision/lsd_slam) ![lsdslam](https://img.shields.io/github/stars/tum-vision/lsd_slam.svg?style=flat&label=Star&maxAge=86400)) - LSD-SLAM is a novel approach to real-time monocular SLAM. It is fully direct (i.e. does not use keypoints / features) and creates large-scale, semi-dense maps in real-time on a laptop.
 * ORB-SLAM2 ([github](http://github.com/raulmur/ORB_SLAM2) ![ORB_SLAM2](https://img.shields.io/github/stars/raulmur/ORB_SLAM2.svg?style=flat&label=Star&maxAge=86400)) - A real-time SLAM library for Monocular, Stereo and RGB-D cameras that computes the camera trajectory and a sparse 3D reconstruction (in the stereo and RGB-D case with true scale).
 * [SRBA](http://mrpt.github.io/srba/) ([github](http://github.com/MRPT/srba) ![srba](https://img.shields.io/github/stars/MRPT/srba.svg?style=flat&label=Star&maxAge=86400)) - Sparser Relative Bundle Adjustment (SRBA) is a header-only C++ library for solving SLAM/BA in relative coordinates with flexibility for different submapping strategies and aimed at constant time local graph update. BSD 3-Clause License.
+
+### [Vision](#vision)
+* [ViSP](http://visp.inria.fr/) ([github](https://github.com/lagadic/visp) ![lagadic/visp](https://img.shields.io/github/stars/lagadic/visp.svg?style=flat&label=Star&maxAge=86400)) - A cross-platform library that allows prototyping and developing applications using visual tracking and visual servoing technics at the heart of the researches done by Inria Lagadic team.
 
 ## [Other Awesome Lists](#awesome-robotics-libraries)
 
