@@ -21,7 +21,7 @@ A curated list of open source robotics simulators and libraries.
 ###### Free or Open Source
 
 * AirSim ([github](https://github.com/Microsoft/AirSim) ![AirSim](https://img.shields.io/github/stars/Microsoft/AirSim.svg?style=flat&label=Star&maxAge=86400)) - Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research
-* [Gazebo](http://www.gazebosim.org/) ([bitbucket](https://bitbucket.org/osrf/gazebo)) - A dynamic multi-robot simulator from [OSRF](https://www.osrfoundation.org/).
+* [Gazebo](http://www.gazebosim.org/) ([bitbucket](https://bitbucket.org/osrf/gazebo)) - A dynamic multi-robot simulator from [Open Robotics](https://www.osrfoundation.org/).
 * [GraspIt!](http://graspit-simulator.github.io/) ([github](https://github.com/graspit-simulator/graspit) ![graspit](https://img.shields.io/github/stars/graspit-simulator/graspit.svg?style=flat&label=Star&maxAge=86400)) - A simulator for grasping research that can accommodate arbitrary hand and robot designs developed by [the Columbia University Robotics Group](http://www.cs.columbia.edu/robotics/)
 * [Isaac](https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/) - Nvidia's virtual simulator for robots
 * [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse) ![morse](https://img.shields.io/github/stars/morse-simulator/morse.svg?style=flat&label=Star&maxAge=86400)) - The Modular OpenRobots Simulation Engine.
