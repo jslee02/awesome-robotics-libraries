@@ -7,7 +7,7 @@ A curated list of open source robotics simulators and libraries.
 * [Libraries](#libraries)
   * [Dynamics Simulation](#dynamics-simulation)
   * [Machine Learning](#machine-learning)
-  * [Motion Planning](#motion-planning)
+  * [Motion Planning and Control](#motion-planning-and-control)
   * [Optimization](#optimization)
   * [Robot Modeling](#robot-modeling)
   * [Robot Platform](#robot-platform)
@@ -106,10 +106,11 @@ For simplicity, shortened names are used to represent the supported models and f
   * [OpenAI Gym](https://gym.openai.com/) - A toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like Pong or Go. [[github](http://github.com/openai/gym) ![gym](https://img.shields.io/github/stars/openai/gym.svg?style=flat&label=Star&maxAge=86400)]
   * OpenAI Gym with DART [[github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Motion Planning](#awesome-robotics-libraries)
+### [Motion Planning and Control](#awesome-robotics-libraries)
 
 * [Aikido](https://github.com/personalrobotics/aikido) - A C++ library for solving robotic motion planning and decision making problems. [[github](https://github.com/personalrobotics/aikido) ![aikido](https://img.shields.io/github/stars/personalrobotics/aikido.svg?style=flat&label=Star&maxAge=86400)]
 * [CuiKSuite](http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html) - A set of applications to solve position analysis and path planning problems with applications mainly to robotics, but also to molecular biology
+* [Control Toolbox](https://adrlab.bitbucket.io/ct/v2.1/ct_doc/doc/html/index.html) - An efficient C++ library for control, estimation, optimization and motion planning in robotics. [[bitbucket](https://bitbucket.org/adrlab/ct)]
 * [HPP](https://humanoid-path-planner.github.io/hpp-doc/) - Humanoid Path Planner: a C++ Software Developement Kit implementing path planning for kinematic chains in environments cluttered with obstacles. [[github](https://github.com/humanoid-path-planner)]
 * [MoveIt!](http://moveit.ros.org/) - State of the art software for mobile manipulation, incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation. [[github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=flat&label=Star&maxAge=86400)]
 * [OMPL](http://ompl.kavrakilab.org/) - The Open Motion Planning Library. [[bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=flat&label=Star&maxAge=86400)]
