@@ -155,7 +155,9 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * [ROS](http://www.ros.org/) - A set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. [[github repos](http://wiki.ros.org/Tickets)]
 * [YARP](http://www.yarp.it/) - A library and toolkit for communication and device interfaces, used on everything from humanoids to embedded devices. [[github](https://github.com/robotology/yarp) ![robotology/yarp](https://img.shields.io/github/stars/robotology/yarp.svg?style=flat&label=Star&maxAge=86400)]
-
+* [Linorobot](https://linorobot.org/) - A suite of Open Source ROS compatible robots that aims to provide students, developers, and researchers a low-cost platform in creating new exciting applications on top of ROS. [[github](https://github.com/linorobot/linorobot) ![linorobot/linorobot](https://img.shields.io/github/stars/linorobot/linorobot.svg?style=flat&label=Star&maxAge=86400)]
+  * onine - Service Robot based on [Linorobot](https://github.com/linorobot/linorobot) and [Braccio Arm](https://github.com/grassjelly/ros_braccio_moveit) [[github](https://github.com/grassjelly/onine) ![grassjelly/onine](https://img.shields.io/github/stars/grassjelly/onine.svg?style=flat&label=Star&maxAge=86400)]
+  
 ### [SLAM](#awesome-robotics-libraries)
 
 * Cartographer - A system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations. [[github](https://github.com/googlecartographer/cartographer) ![cartographer](https://img.shields.io/github/stars/googlecartographer/cartographer.svg?style=flat&label=Star&maxAge=86400)]
