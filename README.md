@@ -21,6 +21,7 @@ A curated list of open source robotics simulators and libraries.
 ###### Free or Open Source
 
 * AirSim - Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research. [[github](https://github.com/Microsoft/AirSim) ![AirSim](https://img.shields.io/github/stars/Microsoft/AirSim.svg?style=flat&label=Star&maxAge=86400)]
+* [ARTE](http://arvc.umh.es/arte/index_en.html) - A Matlab toolbox focussed on robotic manipulators, both serial and parallel mechanisms are included. [[github](https://github.com/4rtur1t0/ARTE) ![4rtur1t0/ARTE](https://img.shields.io/github/stars/4rtur1t0/ARTE.svg?style=flat&label=Star&maxAge=86400)]
 * [Gazebo](http://www.gazebosim.org/) - A dynamic multi-robot simulator from [Open Robotics](https://www.osrfoundation.org/).  [[bitbucket](https://bitbucket.org/osrf/gazebo)]
 * [GraspIt!](http://graspit-simulator.github.io/) - A simulator for grasping research that can accommodate arbitrary hand and robot designs developed by [the Columbia University Robotics Group](http://www.cs.columbia.edu/robotics/). [[github](https://github.com/graspit-simulator/graspit) ![graspit](https://img.shields.io/github/stars/graspit-simulator/graspit.svg?style=flat&label=Star&maxAge=86400)]
 * [Isaac](https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/) - Nvidia's virtual simulator for robots
