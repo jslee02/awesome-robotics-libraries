@@ -31,6 +31,7 @@ A curated list of open source robotics simulators and libraries.
 ###### Commercial
 
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots
+* [RobotStudio](http://new.abb.com/products/robotics/robotstudio)
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/)
 * [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
 * [Visual Components](https://www.visualcomponents.com/)
