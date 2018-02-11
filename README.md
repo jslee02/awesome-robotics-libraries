@@ -32,6 +32,7 @@ A curated list of open source robotics simulators and libraries.
 
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots
 * [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
+* [Visual Components](https://www.visualcomponents.com/)
 * [Webots](http://www.cyberbotics.com/) - A commercial robot simulator used in more than 1200 companies, universities and research centers worldwide for R&D, education and research.
 
 ## [Libraries](#awesome-robotics-libraries)
