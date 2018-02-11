@@ -30,6 +30,7 @@ A curated list of open source robotics simulators and libraries.
 
 ###### Commercial
 
+* [Actin Simulation](http://www.energid.com/)
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots
 * [RobotStudio](http://new.abb.com/products/robotics/robotstudio)
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/)
