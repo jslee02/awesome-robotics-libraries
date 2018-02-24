@@ -106,7 +106,7 @@ For simplicity, shortened names are used to represent the supported models and f
   * slam: [simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
   * trj-opt: trajectory optimization
   * plan: motion planning algorithms
-  * cv: computer visionn
+  * cv: computer vision
   * urdf: [urdf](http://wiki.ros.org/urdf) parser
   * sdf: [sdf](http://sdformat.org/) parser
 
