@@ -1,6 +1,6 @@
 # Awesome Robotics Libraries
 
-A curated list of open source robotics simulators and libraries. 
+A curated list of robotics simulators and libraries. 
 
 #### Table of Contents
 * [Simulators](#simulators)
