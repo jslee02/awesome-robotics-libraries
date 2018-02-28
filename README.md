@@ -20,13 +20,13 @@ A curated list of open source robotics simulators and libraries.
 
 ###### Free or Open Source
 
-* AirSim - Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research. [[github](https://github.com/Microsoft/AirSim) ![AirSim](https://img.shields.io/github/stars/Microsoft/AirSim.svg?style=flat&label=Star&maxAge=86400)]
-* [ARTE](http://arvc.umh.es/arte/index_en.html) - A Matlab toolbox focussed on robotic manipulators, both serial and parallel mechanisms are included. [[github](https://github.com/4rtur1t0/ARTE) ![4rtur1t0/ARTE](https://img.shields.io/github/stars/4rtur1t0/ARTE.svg?style=flat&label=Star&maxAge=86400)]
-* [Gazebo](http://www.gazebosim.org/) - A dynamic multi-robot simulator from [Open Robotics](https://www.osrfoundation.org/).  [[bitbucket](https://bitbucket.org/osrf/gazebo)]
-* [GraspIt!](http://graspit-simulator.github.io/) - A simulator for grasping research that can accommodate arbitrary hand and robot designs developed by [the Columbia University Robotics Group](http://www.cs.columbia.edu/robotics/). [[github](https://github.com/graspit-simulator/graspit) ![graspit](https://img.shields.io/github/stars/graspit-simulator/graspit.svg?style=flat&label=Star&maxAge=86400)]
+* AirSim - Open source simulator based on Unreal Engine for autonomous vehicles [[github](https://github.com/Microsoft/AirSim) ![AirSim](https://img.shields.io/github/stars/Microsoft/AirSim.svg?style=flat&label=Star&maxAge=86400)]
+* [ARTE](http://arvc.umh.es/arte/index_en.html) - Matlab toolbox focussed on robotic manipulators [[github](https://github.com/4rtur1t0/ARTE) ![4rtur1t0/ARTE](https://img.shields.io/github/stars/4rtur1t0/ARTE.svg?style=flat&label=Star&maxAge=86400)]
+* [Gazebo](http://www.gazebosim.org/) - Dynamic multi-robot simulator from [Open Robotics](https://www.osrfoundation.org/).  [[bitbucket](https://bitbucket.org/osrf/gazebo)]
+* [GraspIt!](http://graspit-simulator.github.io/) - Simulator for grasping research that can accommodate arbitrary hand and robot designs [[github](https://github.com/graspit-simulator/graspit) ![graspit](https://img.shields.io/github/stars/graspit-simulator/graspit.svg?style=flat&label=Star&maxAge=86400)]
 * [Isaac](https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/) - Nvidia's virtual simulator for robots
-* [MORSE](http://morse-simulator.github.io/) - The Modular OpenRobots Simulation Engine. [[github](https://github.com/morse-simulator/morse) ![morse](https://img.shields.io/github/stars/morse-simulator/morse.svg?style=flat&label=Star&maxAge=86400)]
-* [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
+* [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine [[github](https://github.com/morse-simulator/morse) ![morse](https://img.shields.io/github/stars/morse-simulator/morse.svg?style=flat&label=Star&maxAge=86400)]
+* [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform
 
 ###### Commercial
 
@@ -112,34 +112,33 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ### [Machine Learning](#awesome-robotics-libraries)
 
-  * [OpenAI Gym](https://gym.openai.com/) - A toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like Pong or Go. [[github](http://github.com/openai/gym) ![gym](https://img.shields.io/github/stars/openai/gym.svg?style=flat&label=Star&maxAge=86400)]
-  * OpenAI Gym with DART [[github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=flat&label=Star&maxAge=86400)]
+  * [OpenAI Gym](https://gym.openai.com/) - Developing and comparing reinforcement learning algorithms [[github](http://github.com/openai/gym) ![gym](https://img.shields.io/github/stars/openai/gym.svg?style=flat&label=Star&maxAge=86400)]
+    * OpenAI Gym with DART [[github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Motion Planning and Control](#awesome-robotics-libraries)
 
-* [Aikido](https://github.com/personalrobotics/aikido) - A C++ library for solving robotic motion planning and decision making problems. [[github](https://github.com/personalrobotics/aikido) ![aikido](https://img.shields.io/github/stars/personalrobotics/aikido.svg?style=flat&label=Star&maxAge=86400)]
-* [CuiKSuite](http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html) - A set of applications to solve position analysis and path planning problems with applications mainly to robotics, but also to molecular biology
-* [Control Toolbox](https://adrlab.bitbucket.io/ct/v2.1/ct_doc/doc/html/index.html) - An efficient C++ library for control, estimation, optimization and motion planning in robotics. [[bitbucket](https://bitbucket.org/adrlab/ct)]
-* [HPP](https://humanoid-path-planner.github.io/hpp-doc/) - Humanoid Path Planner: a C++ Software Developement Kit implementing path planning for kinematic chains in environments cluttered with obstacles. [[github](https://github.com/humanoid-path-planner)]
-* [MoveIt!](http://moveit.ros.org/) - State of the art software for mobile manipulation, incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation. [[github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=flat&label=Star&maxAge=86400)]
-* [OMPL](http://ompl.kavrakilab.org/) - The Open Motion Planning Library. [[bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=flat&label=Star&maxAge=86400)]
+* [Aikido](https://github.com/personalrobotics/aikido) - Solving robotic motion planning and decision making problems. [[github](https://github.com/personalrobotics/aikido) ![aikido](https://img.shields.io/github/stars/personalrobotics/aikido.svg?style=flat&label=Star&maxAge=86400)]
+* [CuiKSuite](http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html) - Applications to solve position analysis and path planning problems
+* [Control Toolbox](https://adrlab.bitbucket.io/ct/v2.1/ct_doc/doc/html/index.html) - Control, estimation, optimization and motion planning in robotics [[bitbucket](https://bitbucket.org/adrlab/ct)]
+* [HPP](https://humanoid-path-planner.github.io/hpp-doc/) - Path planning for kinematic chains in environments cluttered with obstacles [[github](https://github.com/humanoid-path-planner)]
+* [MoveIt!](http://moveit.ros.org/) - Motion planning framework [[github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=flat&label=Star&maxAge=86400)]
+* [OMPL](http://ompl.kavrakilab.org/) - Open motion planning library [[bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Motion Optimizer
 
-* [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) - A software framework for generating robot trajectories by local optimization. [[github](https://github.com/joschu/trajopt) ![joschu/trajopt](https://img.shields.io/github/stars/joschu/trajopt.svg?style=flat&label=Star&maxAge=86400)]
+* [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) - Framework for generating robot trajectories by local optimization [[github](https://github.com/joschu/trajopt) ![joschu/trajopt](https://img.shields.io/github/stars/joschu/trajopt.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Nearest Neighbor
 
-* [Cover-Tree](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) - A well-documented C++ implementation of the cover tree datastructure for quick k-nearest-neighbor search. [[github](https://github.com/DNCrane/Cover-Tree) ![Cover-Tree](https://img.shields.io/github/stars/DNCrane/Cover-Tree.svg?style=flat&label=Star&maxAge=86400)]
-  * [Faster cover tree](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2015_izbicki15.pdf) by Mike Izbicki et al., ICML 2015.
-* [FLANN](http://www.cs.ubc.ca/research/flann/) - Fast Library for Approximate Nearest Neighbors. [[github](https://github.com/mariusmuja/flann) ![flann](https://img.shields.io/github/stars/mariusmuja/flann.svg?style=flat&label=Star&maxAge=86400)]
-* [nanoflann](http://www.cs.ubc.ca/research/flann/) - C++ header-only library for Nearest Neighbor (NN) search wih KD-trees. [[github](https://github.com/jlblancoc/nanoflann) ![nanoflann](https://img.shields.io/github/stars/jlblancoc/nanoflann.svg?style=flat&label=Star&maxAge=86400)]
+* [Cover-Tree](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) - Cover tree datastructure for quick k-nearest-neighbor search [[github](https://github.com/DNCrane/Cover-Tree) ![Cover-Tree](https://img.shields.io/github/stars/DNCrane/Cover-Tree.svg?style=flat&label=Star&maxAge=86400)]
+  * [Faster cover trees](http://proceedings.mlr.press/v37/izbicki15.pdf) by Mike Izbicki et al., ICML 2015.
+* [FLANN](http://www.cs.ubc.ca/research/flann/) - Fast Library for Approximate Nearest Neighbors [[github](https://github.com/mariusmuja/flann) ![flann](https://img.shields.io/github/stars/mariusmuja/flann.svg?style=flat&label=Star&maxAge=86400)]
+* [nanoflann](http://www.cs.ubc.ca/research/flann/) - Nearest Neighbor search wih KD-trees [[github](https://github.com/jlblancoc/nanoflann) ![nanoflann](https://img.shields.io/github/stars/jlblancoc/nanoflann.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### 3D Mapping
 
-* [OctoMap](http://octomap.github.io/) - An Efficient Probabilistic 3D Mapping Framework Based on Octrees. Contains the main OctoMap library, the viewer octovis, and dynamicEDT3D. [[github](https://github.com/OctoMap/octomap) ![octomap](https://img.shields.io/github/stars/OctoMap/octomap.svg?style=flat&label=Star&maxAge=86400)]
-
-* voxblox - A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields. [[github](https://github.com/ethz-asl/voxblox) ![voxblox](https://img.shields.io/github/stars/ethz-asl/voxblox.svg?style=flat&label=Star&maxAge=86400)]
+* [OctoMap](http://octomap.github.io/) - Efficient Probabilistic 3D Mapping Framework Based on Octrees [[github](https://github.com/OctoMap/octomap) ![octomap](https://img.shields.io/github/stars/OctoMap/octomap.svg?style=flat&label=Star&maxAge=86400)]
+* voxblox - Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields [[github](https://github.com/ethz-asl/voxblox) ![voxblox](https://img.shields.io/github/stars/ethz-asl/voxblox.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Optimization](#awesome-robotics-libraries)
 
@@ -156,18 +155,18 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Robot Modeling](#awesome-robotics-libraries)
 
 ###### Robot Model Description Format
-* [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control. ([bitbucket](https://bitbucket.org/osrf/sdformat))
-* [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model. [[github](https://github.com/ros/urdfdom) ![ros/urdfdom](https://img.shields.io/github/stars/ros/urdfdom.svg?style=flat&label=Star&maxAge=86400)]
+* [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control ([bitbucket](https://bitbucket.org/osrf/sdformat))
+* [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model [[github](https://github.com/ros/urdfdom) ![ros/urdfdom](https://img.shields.io/github/stars/ros/urdfdom.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Utility to Build Robot Models
-* phobos - An add-on for Blender allowing to create URDF and SMURF robot models in a WYSIWYG environment. [[github](https://github.com/rock-simulation/phobos) ![phobos](https://img.shields.io/github/stars/rock-simulation/phobos.svg?style=flat&label=Star&maxAge=86400)]
+* phobos - Add-on for Blender creating URDF and SMURF robot models [[github](https://github.com/rock-simulation/phobos) ![phobos](https://img.shields.io/github/stars/rock-simulation/phobos.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Robot Platform](#awesome-robotics-libraries)
 
-* [ROS](http://www.ros.org/) - A set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. [[github repos](http://wiki.ros.org/Tickets)]
-* [YARP](http://www.yarp.it/) - A library and toolkit for communication and device interfaces, used on everything from humanoids to embedded devices. [[github](https://github.com/robotology/yarp) ![robotology/yarp](https://img.shields.io/github/stars/robotology/yarp.svg?style=flat&label=Star&maxAge=86400)]
-* [Linorobot](https://linorobot.org/) - A suite of Open Source ROS compatible robots that aims to provide students, developers, and researchers a low-cost platform in creating new exciting applications on top of ROS. [[github](https://github.com/linorobot/linorobot) ![linorobot/linorobot](https://img.shields.io/github/stars/linorobot/linorobot.svg?style=flat&label=Star&maxAge=86400)]
-  * onine - Service Robot based on [Linorobot](https://github.com/linorobot/linorobot) and [Braccio Arm](https://github.com/grassjelly/ros_braccio_moveit) [[github](https://github.com/grassjelly/onine) ![grassjelly/onine](https://img.shields.io/github/stars/grassjelly/onine.svg?style=flat&label=Star&maxAge=86400)]
+* [ROS](http://www.ros.org/) - Flexible framework for writing robot software [[github repos](http://wiki.ros.org/Tickets)]
+* [YARP](http://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices [[github](https://github.com/robotology/yarp) ![robotology/yarp](https://img.shields.io/github/stars/robotology/yarp.svg?style=flat&label=Star&maxAge=86400)]
+* [Linorobot](https://linorobot.org/) - ROS compatible ground robots [[github](https://github.com/linorobot/linorobot) ![linorobot/linorobot](https://img.shields.io/github/stars/linorobot/linorobot.svg?style=flat&label=Star&maxAge=86400)]
+  * onine - Service Robot based on [Linorobot](https://github.com/linorobot/linorobot) and Braccio Arm [[github](https://github.com/grassjelly/onine) ![grassjelly/onine](https://img.shields.io/github/stars/grassjelly/onine.svg?style=flat&label=Star&maxAge=86400)]
   
 ### [SLAM](#awesome-robotics-libraries)
 
