@@ -165,11 +165,11 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ### [Robot Platform](#awesome-robotics-libraries)
 
-* [ROS](http://www.ros.org/) - Flexible framework for writing robot software [[github repos](http://wiki.ros.org/Tickets)]
-* [YARP](http://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices [[github](https://github.com/robotology/yarp) ![robotology/yarp](https://img.shields.io/github/stars/robotology/yarp.svg?style=flat&label=Star&maxAge=86400)]
 * [Linorobot](https://linorobot.org/) - ROS compatible ground robots [[github](https://github.com/linorobot/linorobot) ![linorobot/linorobot](https://img.shields.io/github/stars/linorobot/linorobot.svg?style=flat&label=Star&maxAge=86400)]
   * onine - Service Robot based on [Linorobot](https://github.com/linorobot/linorobot) and Braccio Arm [[github](https://github.com/grassjelly/onine) ![grassjelly/onine](https://img.shields.io/github/stars/grassjelly/onine.svg?style=flat&label=Star&maxAge=86400)]
 * [Rock](https://www.rock-robotics.org/stable/) - Software framework for robotic systems 
+* [ROS](http://www.ros.org/) - Flexible framework for writing robot software [[github repos](http://wiki.ros.org/Tickets)]
+* [YARP](http://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices [[github](https://github.com/robotology/yarp) ![robotology/yarp](https://img.shields.io/github/stars/robotology/yarp.svg?style=flat&label=Star&maxAge=86400)]
    
 ### [SLAM](#awesome-robotics-libraries)
 
