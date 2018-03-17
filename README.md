@@ -194,6 +194,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 * [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
 * [Awesome Gazebo](https://github.com/fkromer/awesome-gazebo)
+* [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics)
 
 ## [Contributing](#awesome-robotics-libraries)
 
