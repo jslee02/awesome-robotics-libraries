@@ -114,6 +114,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ### [Machine Learning](#awesome-robotics-libraries)
 
+  * [Fido](http://fidoproject.github.io/) - Lightweight C++ machine learning library for embedded electronics and robotics [[github](http://github.com/FidoProject/Fido) ![FidoProject/Fido](https://img.shields.io/github/stars/FidoProject/Fido.svg?style=flat&label=Star&maxAge=86400)]
   * [OpenAI Gym](https://gym.openai.com/) - Developing and comparing reinforcement learning algorithms [[github](http://github.com/openai/gym) ![gym](https://img.shields.io/github/stars/openai/gym.svg?style=flat&label=Star&maxAge=86400)]
     * gym-dart [[github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=flat&label=Star&maxAge=86400)]
     * gym-gazebo [[github](http://github.com/erlerobot/gym-gazebo) ![dart-env](https://img.shields.io/github/stars/erlerobot/gym-gazebo.svg?style=flat&label=Star&maxAge=86400)]
