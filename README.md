@@ -13,6 +13,7 @@ A curated list of robotics simulators and libraries.
   * [Robot Platform](#robot-platform)
   * [SLAM](#slam)
   * [Vision](#vision)
+  * [Math](#math)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
@@ -115,6 +116,7 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Machine Learning](#awesome-robotics-libraries)
 
   * [Fido](http://fidoproject.github.io/) - Lightweight C++ machine learning library for embedded electronics and robotics [[github](http://github.com/FidoProject/Fido) ![FidoProject/Fido](https://img.shields.io/github/stars/FidoProject/Fido.svg?style=flat&label=Star&maxAge=86400)]
+  * libdeep - C/C++ library for deep learning [[github](http://github.com/bashrc/libdeep) ![bashrc/libdeep](https://img.shields.io/github/stars/bashrc/libdeep.svg?style=flat&label=Star&maxAge=86400)]
   * [OpenAI Gym](https://gym.openai.com/) - Developing and comparing reinforcement learning algorithms [[github](http://github.com/openai/gym) ![gym](https://img.shields.io/github/stars/openai/gym.svg?style=flat&label=Star&maxAge=86400)]
     * gym-dart [[github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=flat&label=Star&maxAge=86400)]
     * gym-gazebo [[github](http://github.com/erlerobot/gym-gazebo) ![dart-env](https://img.shields.io/github/stars/erlerobot/gym-gazebo.svg?style=flat&label=Star&maxAge=86400)]
@@ -188,7 +190,13 @@ For simplicity, shortened names are used to represent the supported models and f
 * [SRBA](http://mrpt.github.io/srba/) - Solving SLAM/BA in relative coordinates with flexibility for different submapping strategies [[github](http://github.com/MRPT/srba) ![srba](https://img.shields.io/github/stars/MRPT/srba.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Vision](#awesome-robotics-libraries)
+
 * [ViSP](http://visp.inria.fr/) - Visual Servoing Platform [[github](https://github.com/lagadic/visp) ![lagadic/visp](https://img.shields.io/github/stars/lagadic/visp.svg?style=flat&label=Star&maxAge=86400)]
+
+### [Math](#awesome-robotics-libraries)
+
+* Sophus - Lie groups using Eigen [[github](https://github.com/strasdat/Sophus) ![strasdat/Sophus](https://img.shields.io/github/stars/strasdat/Sophus.svg?style=flat&label=Star&maxAge=86400)]
+* SpaceVelAlg - Spatial vector algebra with the Eigen3 [[github](https://github.com/jrl-umi3218/SpaceVecAlg) ![jrl-umi3218/SpaceVecAlg](https://img.shields.io/github/stars/jrl-umi3218/SpaceVecAlg.svg?style=flat&label=Star&maxAge=86400)]
 
 ## [Other Awesome Lists](#awesome-robotics-libraries)
 
