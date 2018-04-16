@@ -123,7 +123,7 @@ For simplicity, shortened names are used to represent the supported models and f
   * gym-dart [[github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=flat&label=Star&maxAge=86400)]
   * gym-gazebo [[github](http://github.com/erlerobot/gym-gazebo) ![dart-env](https://img.shields.io/github/stars/erlerobot/gym-gazebo.svg?style=flat&label=Star&maxAge=86400)]
 * [RLLib](http://web.cs.miami.edu/home/saminda/rllib.html) - Temporal-difference learning algorithms in reinforcement learning [[github](http://github.com/samindaa/RLLib) ![samindaa/RLLib](https://img.shields.io/github/stars/samindaa/RLLib.svg?style=flat&label=Star&maxAge=86400)]
-* [tiny-dnn](http://tiny-dnn.readthedocs.io/en/latest/) - Header only, dependency-free deep learning framework in C++14 [[github](http://github.com/tiny-dnn/tiny-dnn) ![tiny-dnn/tiny-dnn/RLLib](https://img.shields.io/github/stars/tiny-dnn/tiny-dnn.svg?style=flat&label=Star&maxAge=86400)]
+* [tiny-dnn](http://tiny-dnn.readthedocs.io/en/latest/) - Header only, dependency-free deep learning framework in C++14 [[github](http://github.com/tiny-dnn/tiny-dnn) ![tiny-dnn/tiny-dnn](https://img.shields.io/github/stars/tiny-dnn/tiny-dnn.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Motion Planning and Control](#awesome-robotics-libraries)
 
