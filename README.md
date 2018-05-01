@@ -149,6 +149,7 @@ For simplicity, shortened names are used to represent the supported models and f
 ###### 3D Mapping
 
 * [libpointmatcher](http://libpointmatcher.readthedocs.io/en/latest/) - Iterative Closest Point library for 2-D/3-D mapping in Robotics [[github](https://github.com/ethz-asl/libpointmatcher) ![ethz-asl/libpointmatcher](https://img.shields.io/github/stars/ethz-asl/libpointmatcher.svg?style=flat&label=Star&maxAge=86400)]
+* Octree - Fast radius neighbor search with an Octree [[github](https://github.com/jbehley/octree) ![jbehley/octree](https://img.shields.io/github/stars/jbehley/octree.svg?style=flat&label=Star&maxAge=86400)]
 * [OctoMap](http://octomap.github.io/) - Efficient Probabilistic 3D Mapping Framework Based on Octrees [[github](https://github.com/OctoMap/octomap) ![octomap](https://img.shields.io/github/stars/OctoMap/octomap.svg?style=flat&label=Star&maxAge=86400)]
 * [PCL](http://www.pointclouds.org/) - 2D/3D image and point cloud processing [[github](https://github.com/PointCloudLibrary/pcl) ![PointCloudLibrary/pcl](https://img.shields.io/github/stars/PointCloudLibrary/pcl.svg?style=flat&label=Star&maxAge=86400)]
 * voxblox - Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields [[github](https://github.com/ethz-asl/voxblox) ![voxblox](https://img.shields.io/github/stars/ethz-asl/voxblox.svg?style=flat&label=Star&maxAge=86400)]
