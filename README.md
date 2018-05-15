@@ -69,6 +69,7 @@ A curated list of robotics simulators and libraries.
 | [Moby](http://physsim.sourceforge.net/index.html) | rigid | id | C++ | GPL-2.0 | [github](https://github.com/PositronicsLab/Moby) | ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=flat&label=Star&maxAge=86400) |
 | [mrpt](http://www.mrpt.org/) | vehicle | slam, cv | C++, Python, Matlab | BSD-3-Clause | [github](https://github.com/MRPT/mrpt) | ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=flat&label=Star&maxAge=86400) |
 | [MuJoCo](http://www.mujoco.org/index.html) | (todo) | id | C++, Python | [licenses](https://www.roboti.us/license.html) | closed source | |
+| [mvsim](http://wiki.ros.org/mvsim) | vehicle | (todo) | C++ | GPL-3.0 | [github](https://github.com/ual-arm-ros-pkg/mvsim) | ![ual-arm-ros-pkg/mvsim](https://img.shields.io/github/stars/ual-arm-ros-pkg/mvsim.svg?style=flat&label=Star&maxAge=86400) |
 | [Newton Dynamics](http://newtondynamics.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/MADEAPPS/newton-dynamics) | ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=flat&label=Star&maxAge=86400) |
 | [nphysics](http://nphysics.org/) | (todo) | (todo) | Rust | BSD-3-Clause | [github](https://github.com/sebcrozet/nphysics) | ![sebcrozet/nphysics](https://img.shields.io/github/stars/sebcrozet/nphysics.svg?style=flat&label=Star&maxAge=86400) |
 | [ODE](http://www.ode.org/) | rigid | | C++ | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) | |
