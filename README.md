@@ -23,7 +23,7 @@ A curated list of robotics simulators and libraries.
 
 * AirSim - Simulator based on Unreal Engine for autonomous vehicles [[github](https://github.com/Microsoft/AirSim) ![AirSim](https://img.shields.io/github/stars/Microsoft/AirSim.svg?style=flat&label=Star&maxAge=86400)]
 * [ARTE](http://arvc.umh.es/arte/index_en.html) - Matlab toolbox focussed on robotic manipulators [[github](https://github.com/4rtur1t0/ARTE) ![4rtur1t0/ARTE](https://img.shields.io/github/stars/4rtur1t0/ARTE.svg?style=flat&label=Star&maxAge=86400)]
-* [Gazebo](http://www.gazebosim.org/) - Dynamic multi-robot simulator [[bitbucket](https://bitbucket.org/osrf/gazebo)]
+* [Gazebo](http://gazebosim.org/) - Dynamic multi-robot simulator [[bitbucket](https://bitbucket.org/osrf/gazebo)]
 * [GraspIt!](http://graspit-simulator.github.io/) - Simulator for grasping research that can accommodate arbitrary hand and robot designs [[github](https://github.com/graspit-simulator/graspit) ![graspit](https://img.shields.io/github/stars/graspit-simulator/graspit.svg?style=flat&label=Star&maxAge=86400)]
 * [Isaac](https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/) - Nvidia's virtual simulator for robots
 * [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine [[github](https://github.com/morse-simulator/morse) ![morse](https://img.shields.io/github/stars/morse-simulator/morse.svg?style=flat&label=Star&maxAge=86400)]
