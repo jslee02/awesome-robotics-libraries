@@ -119,7 +119,6 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * DLL - Deep Learning Library (DLL) for C++ [[github](http://github.com/wichtounet/dll) ![wichtounet/dll](https://img.shields.io/github/stars/wichtounet/dll.svg?style=flat&label=Star&maxAge=86400)]
 * [Fido](http://fidoproject.github.io/) - Lightweight C++ machine learning library for embedded electronics and robotics [[github](http://github.com/FidoProject/Fido) ![FidoProject/Fido](https://img.shields.io/github/stars/FidoProject/Fido.svg?style=flat&label=Star&maxAge=86400)]
-* libdeep - C/C++ library for deep learning [[github](http://github.com/bashrc/libdeep) ![bashrc/libdeep](https://img.shields.io/github/stars/bashrc/libdeep.svg?style=flat&label=Star&maxAge=86400)]
 * [mlpack](http://www.mlpack.org/) - Scalable C++ machine learning library [[github](http://github.com/mlpack/mlpack) ![mlpack/mlpack](https://img.shields.io/github/stars/mlpack/mlpack.svg?style=flat&label=Star&maxAge=86400)]
 * [OpenAI Gym](https://gym.openai.com/) - Developing and comparing reinforcement learning algorithms [[github](http://github.com/openai/gym) ![gym](https://img.shields.io/github/stars/openai/gym.svg?style=flat&label=Star&maxAge=86400)]
   * gym-dart [[github](http://github.com/DartEnv/dart-env) ![dart-env](https://img.shields.io/github/stars/DartEnv/dart-env.svg?style=flat&label=Star&maxAge=86400)]
