@@ -6,6 +6,7 @@ A curated list of robotics simulators and libraries.
 * [Simulators](#simulators)
 * [Libraries](#libraries)
   * [Dynamics Simulation](#dynamics-simulation)
+  * [Inverse Kinematics](#inverse-kinematics)
   * [Machine Learning](#machine-learning)
   * [Motion Planning and Control](#motion-planning-and-control)
   * [Optimization](#optimization)
@@ -106,7 +107,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * Features on Simulation, Analysis, Planning, Control Design
   * dm: [discrete mechanics](https://www.cambridge.org/core/journals/acta-numerica/article/div-classtitlediscrete-mechanics-and-variational-integratorsdiv/C8F45478A9290DEC24E63BB7FBE3CEB5)
-  * ik: [inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics) solvers
+  * ik: [inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics) solvers (please find IK specialized packages in [this list](#inverse-kinematics))
   * id: [inverse dynamics](https://en.wikipedia.org/wiki/Inverse_dynamics)
   * slam: [simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
   * trj-opt: trajectory optimization
@@ -114,6 +115,10 @@ For simplicity, shortened names are used to represent the supported models and f
   * cv: computer vision
   * urdf: [urdf](http://wiki.ros.org/urdf) parser
   * sdf: [sdf](http://sdformat.org/) parser
+
+### [Inverse Kinematics](#awesome-robotics-libraries)
+
+  * IKBT - A python package to solve robot arm inverse kinematics in symbolic form [[github](http://github.com/uw-biorobotics/IKBT) ![uw-biorobotics/IKBT](https://img.shields.io/github/stars/uw-biorobotics/IKBT.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Machine Learning](#awesome-robotics-libraries)
 
