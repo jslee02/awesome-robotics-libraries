@@ -30,7 +30,7 @@ A curated list of robotics simulators and libraries.
 * [Isaac](https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/) - Nvidia's virtual simulator for robots
 * [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine [[github](https://github.com/morse-simulator/morse) ![morse](https://img.shields.io/github/stars/morse-simulator/morse.svg?style=flat&label=Star&maxAge=86400)]
 * [Neurorobotics Platform](https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
-* [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform
+* [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform [[github](https://github.com/CoppeliaRobotics/v_rep) ![CoppeliaRobotics/v_rep](https://img.shields.io/github/stars/CoppeliaRobotics/v_rep.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Commercial
 
