@@ -20,14 +20,14 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 ### General Information
 
-| Library  | Developer(s) | Latest Release | Platform Supported | License | Github :star: |
-|:--------:| ------------ | -------------- | ------------------ | ------- |:------------:|
-| chrono   | [University of Wisconsin-Madison](http://www.projectchrono.org/about/) | IntPoint1.2 (2016-02-27) | Linux, Windows | BSD 3-Clause | 57 |
-| Bullet   | Erwin Coumans | 2.83 (2016-01-08) | Linux, MacOS, Windows | Zlib | 1644 |
-| DART     | Georgia Tech and CMU | [6.0.0 (2016-05-10)](https://github.com/dartsim/dart/releases/tag/v6.0.0) | Linux, MacOS, Windows | BSD 2-Clause | [90](https://github.com/dartsim/dart/stargazers) |
-| Drake    | MIT and TRI | 0.9.11 (2015-10-08) | Linux, MacOS, Windows | BSD 3-Clause | 443 |
-| ODE      | [Russell Smith](http://www.q12.org/) | [0.14 (2015-12-18)](https://bitbucket.org/odedevs/ode/commits/tag/0.14) | Linux, MacOS, Windows | LGPL 2.1 or BSD 3-Clause | N/A |
-| Simbody  | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15) | Linux, MacOS, Windows | Apache 2.0 | 535 |
+| Library  | Developer(s) | Latest Release | Platform Supported | License |
+|:--------:| ------------ | -------------- | ------------------ | ------- |
+| chrono   | [University of Wisconsin-Madison](http://www.projectchrono.org/about/) | IntPoint1.2 (2016-02-27) | Linux, Windows | BSD 3-Clause |
+| Bullet   | Erwin Coumans | 2.83 (2016-01-08) | Linux, MacOS, Windows | Zlib |
+| DART     | Georgia Tech and CMU | [6.0.0 (2016-05-10)](https://github.com/dartsim/dart/releases/tag/v6.0.0) | Linux, MacOS, Windows | BSD 2-Clause |
+| Drake    | MIT and TRI | 0.9.11 (2015-10-08) | Linux, MacOS, Windows | BSD 3-Clause |
+| ODE      | [Russell Smith](http://www.q12.org/) | [0.14 (2015-12-18)](https://bitbucket.org/odedevs/ode/commits/tag/0.14) | Linux, MacOS, Windows | LGPL 2.1 or BSD 3-Clause |
+| Simbody  | [Simtk.org](https://simtk.org/xml/index.xml) | 3.5.3 (2015-06-15) | Linux, MacOS, Windows | Apache 2.0 |
 :star: updated Apr 19, 2016
 
 ### Technical Information
