@@ -88,6 +88,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 ### Benchmark
 
 * [scpeters/benchmark](https://github.com/scpeters/benchmark) - Benchmark comparisons of rigid-body dynamics simulators
+* [leggedrobotics/SimBenchmark](https://leggedrobotics.github.io/SimBenchmark/) - [[github](https://github.com/leggedrobotics/SimBenchmark)]
 
 #### Problems
 
