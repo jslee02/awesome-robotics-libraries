@@ -143,6 +143,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [MoveIt!](http://moveit.ros.org/) - Motion planning framework [[github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=flat&label=Star&maxAge=86400)]
 * [OMPL](http://ompl.kavrakilab.org/) - Open motion planning library [[bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=flat&label=Star&maxAge=86400)]
 * ROS Behavior Tree - [[github](https://github.com/miccol/ROS-Behavior-Tree) ![miccol/ROS-Behavior-Tree](https://img.shields.io/github/stars/miccol/ROS-Behavior-Tree.svg?style=flat&label=Star&maxAge=86400)]
+* TOPP-RA - Time-parameterizing robot trajectories subject to kinematic and dynamic constraints [[github](https://github.com/hungpham2511/toppra) ![hungpham2511/toppra](https://img.shields.io/github/stars/hungpham2511/toppra.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Motion Optimizer
 
