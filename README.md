@@ -125,6 +125,7 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Machine Learning](#awesome-robotics-libraries)
 
 * DLL - Deep Learning Library (DLL) for C++ [[github](http://github.com/wichtounet/dll) ![wichtounet/dll](https://img.shields.io/github/stars/wichtounet/dll.svg?style=flat&label=Star&maxAge=86400)]
+* [DyNet](https://dynet.readthedocs.io/en/latest/) - The Dynamic Neural Network Toolkit [[github](http://github.com/clab/dynet) ![clab/dynet](https://img.shields.io/github/stars/clab/dynet.svg?style=flat&label=Star&maxAge=86400)]
 * [Fido](http://fidoproject.github.io/) - Lightweight C++ machine learning library for embedded electronics and robotics [[github](http://github.com/FidoProject/Fido) ![FidoProject/Fido](https://img.shields.io/github/stars/FidoProject/Fido.svg?style=flat&label=Star&maxAge=86400)]
 * MiniDNN - A header-only C++ library for deep neural networks [[github](https://github.com/yixuan/MiniDNN) ![yixuan/MiniDNN](https://img.shields.io/github/stars/yixuan/MiniDNN.svg?style=flat&label=Star&maxAge=86400)]
 * [mlpack](http://www.mlpack.org/) - Scalable C++ machine learning library [[github](http://github.com/mlpack/mlpack) ![mlpack/mlpack](https://img.shields.io/github/stars/mlpack/mlpack.svg?style=flat&label=Star&maxAge=86400)]
