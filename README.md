@@ -148,6 +148,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ###### Motion Optimizer
 
+* opt_control - Time-optimal Trajectory Generation and Control [[github](https://github.com/AIS-Bonn/opt_control) ![AIS-Bonn/opt_control](https://img.shields.io/github/stars/AIS-Bonn/opt_control.svg?style=flat&label=Star&maxAge=86400)]
 * [towr](http://wiki.ros.org/towr) - A light-weight, Eigen-based C++ library for trajectory optimization for legged robots [[github](https://github.com/ethz-adrl/towr) ![ethz-adrl/towr](https://img.shields.io/github/stars/ethz-adrl/towr.svg?style=flat&label=Star&maxAge=86400)]
 * [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) - Framework for generating robot trajectories by local optimization [[github](https://github.com/joschu/trajopt) ![joschu/trajopt](https://img.shields.io/github/stars/joschu/trajopt.svg?style=flat&label=Star&maxAge=86400)]
 
