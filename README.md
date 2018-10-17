@@ -240,6 +240,8 @@ For simplicity, shortened names are used to represent the supported models and f
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 * [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
 * [Awesome Gazebo](https://github.com/fkromer/awesome-gazebo)
+* [Awesome Grasping](https://github.com/Po-Jen/awesome-grasping)
+* [Awesome Human Robot Interaction](https://github.com/Po-Jen/awesome-human-robot-interaction)
 * [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) - Python sample codes for robotics algorithms
 
 ## [Contributing](#awesome-robotics-libraries)
