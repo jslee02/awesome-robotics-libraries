@@ -14,6 +14,7 @@ A curated list of robotics simulators and libraries.
   * [Robot Platform](#robot-platform)
   * [SLAM](#slam)
   * [Vision](#vision)
+  * [Fluid](#fluid)
   * [Math](#math)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
