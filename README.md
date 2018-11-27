@@ -226,6 +226,10 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * [ViSP](http://visp.inria.fr/) - Visual Servoing Platform [[github](https://github.com/lagadic/visp) ![lagadic/visp](https://img.shields.io/github/stars/lagadic/visp.svg?style=flat&label=Star&maxAge=86400)]
 
+### [Fluid](#awesome-robotics-libraries)
+
+* [Fluid Engine Dev - Jet](https://fluidenginedevelopment.org/) - Fluid simulation engine for computer graphics applications [[github](https://github.com/doyubkim/fluid-engine-dev) ![doyubkim/fluid-engine-dev](https://img.shields.io/github/stars/doyubkim/fluid-engine-dev.svg?style=flat&label=Star&maxAge=86400)]
+
 ### [Math](#awesome-robotics-libraries)
 
 * linalg.h - Single header public domain linear algebra library for C++11 [[github](https://github.com/sgorsten/linalg) ![sgorsten/linalg](https://img.shields.io/github/stars/sgorsten/linalg.svg?style=flat&label=Star&maxAge=86400)]
