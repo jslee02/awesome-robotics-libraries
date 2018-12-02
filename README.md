@@ -15,6 +15,7 @@ A curated list of robotics simulators and libraries.
   * [SLAM](#slam)
   * [Vision](#vision)
   * [Fluid](#fluid)
+  * [Multiphysics](#multiphysics)
   * [Math](#math)
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
@@ -232,6 +233,10 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Fluid](#awesome-robotics-libraries)
 
 * [Fluid Engine Dev - Jet](https://fluidenginedevelopment.org/) - Fluid simulation engine for computer graphics applications [[github](https://github.com/doyubkim/fluid-engine-dev) ![doyubkim/fluid-engine-dev](https://img.shields.io/github/stars/doyubkim/fluid-engine-dev.svg?style=flat&label=Star&maxAge=86400)]
+
+### [Multiphysics]
+
+* [Kratos](http://www.cimne.com/kratos/) - Framework for building parallel multi-disciplinary simulation software [[github](https://github.com/KratosMultiphysics/Kratos) ![KratosMultiphysics/Kratos](https://img.shields.io/github/stars/KratosMultiphysics/Kratos.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Math](#awesome-robotics-libraries)
 
