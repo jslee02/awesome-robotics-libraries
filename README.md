@@ -44,6 +44,10 @@ A curated list of robotics simulators and libraries.
 * [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
 * [Visual Components](https://www.visualcomponents.com/)
 
+###### Cloud
+
+* [AWS RoboMaker](https://aws.amazon.com/robomaker/) - Service that makes it easy to develop, test, and deploy intelligent robotics applications at scale
+
 ## [Libraries](#awesome-robotics-libraries)
 
 ### [Dynamics Simulation](#awesome-robotics-libraries)
