@@ -33,6 +33,7 @@ A curated list of robotics simulators and libraries.
 * [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine [[github](https://github.com/morse-simulator/morse) ![morse](https://img.shields.io/github/stars/morse-simulator/morse.svg?style=flat&label=Star&maxAge=86400)]
 * [Neurorobotics Platform](https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
 * [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform [[github](https://github.com/CoppeliaRobotics/v_rep) ![CoppeliaRobotics/v_rep](https://img.shields.io/github/stars/CoppeliaRobotics/v_rep.svg?style=flat&label=Star&maxAge=86400)]
+* [Webots](http://www.cyberbotics.com/) - Robot simulator that provides a complete development environment [[github](https://github.com/omichel/webots) ![omichel/webots](https://img.shields.io/github/stars/omichel/webots.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Commercial
 
@@ -42,7 +43,6 @@ A curated list of robotics simulators and libraries.
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/)
 * [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
 * [Visual Components](https://www.visualcomponents.com/)
-* [Webots](http://www.cyberbotics.com/) - Robot simulator that provides a complete development environment
 
 ## [Libraries](#awesome-robotics-libraries)
 
