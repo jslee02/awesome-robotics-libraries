@@ -60,6 +60,7 @@ A curated list of robotics simulators and libraries.
 | Name | Models | Features | Languages | Licenses | Code | Popularity |
 |:----:| ------ | -------- | --------- | -------- | ---- | ---------- |
 | [ARCSim](http://graphics.berkeley.edu/resources/ARCSim/index.html) | soft |  | C++ | | |  |
+| Bounce | rigid |  | C++ | Zlib | [github](https://github.com/irlanrobson/bounce) | ![irlanrobson/bounce](https://img.shields.io/github/stars/irlanrobson/bounce.svg?style=flat&label=Star&maxAge=86400) |
 | [Bullet](http://bulletphysics.org) | rigid, soft | ik, id, urdf, sdf | C++, Python | Zlib | [github](https://github.com/bulletphysics/bullet3) | ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=flat&label=Star&maxAge=86400) |
 | [CHRONO::ENGINE](http://chronoengine.info/) | rigid, soft, granular, fluid | ik, urdf | C++, Python | BSD-3-Clause | [github](https://github.com/projectchrono/chrono) | ![chrono](https://img.shields.io/github/stars/projectchrono/chrono.svg?style=flat&label=Star&maxAge=86400) |
 | [DART](http://dartsim.github.io/) | rigid, soft | ik, id, plan, urdf, sdf | C++, Python | BSD-2-Clause | [github](https://github.com/dartsim/dart.git) | ![dart](https://img.shields.io/github/stars/dartsim/dart.svg?style=flat&label=Star&maxAge=86400) |
