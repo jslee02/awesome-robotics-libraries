@@ -41,6 +41,7 @@ A curated list of robotics simulators and libraries.
 ###### Commercial
 
 * [Actin Simulation](http://www.energid.com/)
+* [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics and digital mock-up review applications
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots
 * [RobotStudio](http://new.abb.com/products/robotics/robotstudio)
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/)
