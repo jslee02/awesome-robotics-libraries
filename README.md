@@ -41,6 +41,7 @@ A curated list of robotics simulators and libraries.
 ###### Commercial
 
 * [Actin Simulation](http://www.energid.com/)
+* [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics and digital mock-up review applications
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots
 * [RobotStudio](http://new.abb.com/products/robotics/robotstudio)
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/)
@@ -155,7 +156,6 @@ For simplicity, shortened names are used to represent the supported models and f
 * [Control Toolbox](https://ethz-adrl.github.io/ct/) - Open-Source C++ Library for Robotics, Optimal and Model Predictive Control [[github](https://github.com/ethz-adrl/control-toolbox) ![ethz-adrl/control-toolbox](https://img.shields.io/github/stars/ethz-adrl/control-toolbox.svg?style=flat&label=Star&maxAge=86400)]
 * GPMP2 - Gaussian Process Motion Planner 2 [[github](https://github.com/gtrll/gpmp2) ![gtrll/gpmp2](https://img.shields.io/github/stars/gtrll/gpmp2.svg?style=flat&label=Star&maxAge=86400)]
 * [HPP](https://humanoid-path-planner.github.io/hpp-doc/) - Path planning for kinematic chains in environments cluttered with obstacles [[github](https://github.com/humanoid-path-planner)]
-* [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path Planning and Trajectory Optimization for industrial robotics and digital mock-up review applications
 * [MoveIt!](http://moveit.ros.org/) - Motion planning framework [[github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=flat&label=Star&maxAge=86400)]
 * [OMPL](http://ompl.kavrakilab.org/) - Open motion planning library [[bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=flat&label=Star&maxAge=86400)]
 * pymanoid - Humanoid robotics prototyping environment based on OpenRAVE [[github](https://github.com/stephane-caron/pymanoid) ![stephane-caron/pymanoid](https://img.shields.io/github/stars/stephane-caron/pymanoid.svg?style=flat&label=Star&maxAge=86400)]
