@@ -272,6 +272,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) (Kiloreux)
 * [Awesome Robotics](https://github.com/ahundt/awesome-robotics) (ahundt)
+* [Awesome Robotic Tooling](https://github.com/Ly0n/awesome-robotic-tooling)
 * [Awesome Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence)
 * [Awesome Collision Detection](https://github.com/jslee02/awesome-collision-detection)
 * [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
