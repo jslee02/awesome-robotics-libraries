@@ -49,6 +49,7 @@ A curated list of robotics simulators and libraries.
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/)
 * [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
 * [Visual Components](https://www.visualcomponents.com/)
+* [Artiminds](https://www.artiminds.com/)
 
 ###### Cloud
 
