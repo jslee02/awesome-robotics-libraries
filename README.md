@@ -38,6 +38,7 @@ A curated list of robotics simulators and libraries.
 * [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine [[github](https://github.com/morse-simulator/morse) ![morse](https://img.shields.io/github/stars/morse-simulator/morse.svg?style=flat&label=Star&maxAge=86400)]
 * [Neurorobotics Platform](https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
 * [PyBullet](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3) - An easy to use simulator for robotics and deep reinforcement learning [[github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=flat&label=Star&maxAge=86400)]
+* [Unity](https://unity.com/solutions/automotive-transportation-manufacturing/robotics) - Popular game engine that now offers open-source tools, tutorials, and resources for robotics simulation [[github](https://github.com/Unity-Technologies/Unity-Robotics-Hub) ![Unity-Technologies/Unity-Robotics-Hub](https://img.shields.io/github/stars/Unity-Technologies/Unity-Robotics-Hub.svg?style=flat&label=Star&maxAge=86400)]
 * [Webots](http://www.cyberbotics.com/) - Robot simulator that provides a complete development environment [[github](https://github.com/omichel/webots) ![omichel/webots](https://img.shields.io/github/stars/omichel/webots.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Commercial
