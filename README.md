@@ -41,6 +41,8 @@ A curated list of robotics simulators and libraries.
 * [Simbad](http://simbad.sourceforge.net/) - A Java 3D robot simulator, enables to write own robot controller with modifying environment using available sensors.
 * [Unity](https://unity.com/solutions/automotive-transportation-manufacturing/robotics) - Popular game engine that now offers open-source tools, tutorials, and resources for robotics simulation [[github](https://github.com/Unity-Technologies/Unity-Robotics-Hub) ![Unity-Technologies/Unity-Robotics-Hub](https://img.shields.io/github/stars/Unity-Technologies/Unity-Robotics-Hub.svg?style=flat&label=Star&maxAge=86400)]
 * [Webots](http://www.cyberbotics.com/) - Robot simulator that provides a complete development environment [[github](https://github.com/omichel/webots) ![omichel/webots](https://img.shields.io/github/stars/omichel/webots.svg?style=flat&label=Star&maxAge=86400)]
+* [Hexapod Robot Simulator](https://hexapod.netlify.app/) - Open-source hexapod robot inverse kinematics and gaits visualizer [[github](https://github.com/mithi/hexapod) ![mithi/hexapod](https://img.shields.io/github/stars/mithi/hexapod.svg?style=flat&label=Star&maxAge=86400)]
+* [Robot Gui](http://robot.glumb.de/) - A three.js based 3D robot interface [[github](https://github.com/glumb/robot-gui) ![glumb/robot-gui](https://img.shields.io/github/stars/glumb/robot-gui.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Commercial
 
@@ -288,6 +290,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [Awesome Grasping](https://github.com/Po-Jen/awesome-grasping)
 * [Awesome Human Robot Interaction](https://github.com/Po-Jen/awesome-human-robot-interaction)
 * [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) - Python sample codes for robotics algorithms
+* [Robotics Coursework](https://github.com/mithi/robotics-coursework) - A list of robotics courses you can take online
 
 ## [Contributing](#awesome-robotics-libraries)
 
