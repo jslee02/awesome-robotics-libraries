@@ -163,10 +163,12 @@ For simplicity, shortened names are used to represent the supported models and f
 * [AIKIDO](https://github.com/personalrobotics/aikido) - Solving robotic motion planning and decision making problems. [[github](https://github.com/personalrobotics/aikido) ![aikido](https://img.shields.io/github/stars/personalrobotics/aikido.svg?style=flat&label=Star&maxAge=86400)]
 * [CuiKSuite](http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html) - Applications to solve position analysis and path planning problems
 * [Control Toolbox](https://ethz-adrl.github.io/ct/) - Open-Source C++ Library for Robotics, Optimal and Model Predictive Control [[github](https://github.com/ethz-adrl/control-toolbox) ![ethz-adrl/control-toolbox](https://img.shields.io/github/stars/ethz-adrl/control-toolbox.svg?style=flat&label=Star&maxAge=86400)]
+* Crocoddyl - Optimal control library for robot control under contact sequence [[github](https://github.com/loco-3d/crocoddyl) ![loco-3d/crocoddyl](https://img.shields.io/github/stars/loco-3d/crocoddyl.svg?style=flat&label=Star&maxAge=86400)]
 * GPMP2 - Gaussian Process Motion Planner 2 [[github](https://github.com/gtrll/gpmp2) ![gtrll/gpmp2](https://img.shields.io/github/stars/gtrll/gpmp2.svg?style=flat&label=Star&maxAge=86400)]
 * [HPP](https://humanoid-path-planner.github.io/hpp-doc/) - Path planning for kinematic chains in environments cluttered with obstacles [[github](https://github.com/humanoid-path-planner)]
 * [MoveIt!](http://moveit.ros.org/) - Motion planning framework [[github](https://github.com/ros-planning/moveit) ![moveit](https://img.shields.io/github/stars/ros-planning/moveit.svg?style=flat&label=Star&maxAge=86400)]
 * [OMPL](http://ompl.kavrakilab.org/) - Open motion planning library [[bitbucket](https://bitbucket.org/ompl/ompl), [github](https://github.com/ompl/ompl) ![ompl](https://img.shields.io/github/stars/ompl/ompl.svg?style=flat&label=Star&maxAge=86400)]
+* OCS2 - Efficient continuous and discrete time optimal control implementation [[bitbucket](https://bitbucket.org/leggedrobotics/ocs2/src/master/)]
 * pymanoid - Humanoid robotics prototyping environment based on OpenRAVE [[github](https://github.com/stephane-caron/pymanoid) ![stephane-caron/pymanoid](https://img.shields.io/github/stars/stephane-caron/pymanoid.svg?style=flat&label=Star&maxAge=86400)]
 * ROS Behavior Tree - [[github](https://github.com/miccol/ROS-Behavior-Tree) ![miccol/ROS-Behavior-Tree](https://img.shields.io/github/stars/miccol/ROS-Behavior-Tree.svg?style=flat&label=Star&maxAge=86400)]
 * [Ruckig](https://github.com/pantor/ruckig) - Real-time, time-optimal and jerk-constrained online trajectory generation. [[github](https://github.com/pantor/ruckig) ![ruckig](https://img.shields.io/github/stars/pantor/ruckig.svg?style=flat&label=Star&maxAge=86400)]
@@ -177,6 +179,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * TopiCo - Time-optimal Trajectory Generation and Control [[github](https://github.com/AIS-Bonn/TopiCo) ![AIS-Bonn/TopiCo](https://img.shields.io/github/stars/AIS-Bonn/TopiCo.svg?style=flat&label=Star)]
 * [towr](http://wiki.ros.org/towr) - A light-weight, Eigen-based C++ library for trajectory optimization for legged robots [[github](https://github.com/ethz-adrl/towr) ![ethz-adrl/towr](https://img.shields.io/github/stars/ethz-adrl/towr.svg?style=flat&label=Star&maxAge=86400)]
+* TrajectoryOptimization - A fast trajectory optimization library written in Julia [[github](https://github.com/RoboticExplorationLab/TrajectoryOptimization.jl) ![RoboticExplorationLab/TrajectoryOptimization.jl](https://img.shields.io/github/stars/RoboticExplorationLab/TrajectoryOptimization.jl.svg?style=flat&label=Star&maxAge=86400)]
 * [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) - Framework for generating robot trajectories by local optimization [[github](https://github.com/joschu/trajopt) ![joschu/trajopt](https://img.shields.io/github/stars/joschu/trajopt.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Nearest Neighbor
