@@ -143,6 +143,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
   * IKBT - A python package to solve robot arm inverse kinematics in symbolic form [[github](http://github.com/uw-biorobotics/IKBT) ![uw-biorobotics/IKBT](https://img.shields.io/github/stars/uw-biorobotics/IKBT.svg?style=flat&label=Star&maxAge=86400)]
   * RelaxedIK - Real-time Synthesis of Accurate and Feasible Robot Arm Motion [[github](http://github.com/uwgraphics/relaxed_ik) ![uwgraphics/relaxed_ik](https://img.shields.io/github/stars/uwgraphics/relaxed_ik.svg?style=flat&label=Star&maxAge=86400)]
+   * [Trip](https://trip-kinematics.readthedocs.io/en/main/index.html) - A python package that solves inverse kinematics of parallel-, serial- or hybrid-robots [[github](https://github.com/TriPed-Robot/TriP) ![uwgraphics/relaxed_ik](https://img.shields.io/github/stars/TriPed-Robot/TriP.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Machine Learning](#awesome-robotics-libraries)
 
