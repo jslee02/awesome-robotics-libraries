@@ -287,6 +287,7 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [ETC](#awesome-robotics-libraries)
 
 * fuse - General architecture for performing sensor fusion live on a robot [[github](https://github.com/locusrobotics/fuse) ![locusrobotics/fuse](https://img.shields.io/github/stars/locusrobotics/fuse.svg?style=flat&label=Star&maxAge=86400)]
+* [Foxglove Studio](https://foxglove.dev) – A fully integrated visualization and debugging desktop app for your robotics data. Combines functionality of tools like `rviz`, `rqt`, and more. Also available via [web app](https://studio.foxglove.dev).
 
 ## [Other Awesome Lists](#awesome-robotics-libraries)
 
