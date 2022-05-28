@@ -265,6 +265,8 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Vision](#awesome-robotics-libraries)
 
 * [ViSP](http://visp.inria.fr/) - Visual Servoing Platform [[github](https://github.com/lagadic/visp) ![lagadic/visp](https://img.shields.io/github/stars/lagadic/visp.svg?style=flat&label=Star&maxAge=86400)]
+* [BundleTrack](https://github.com/wenbowen123/BundleTrack) - 6D Pose Tracking for Novel Objects without 3D Models [[github](https://github.com/wenbowen123/BundleTrack) ![wenbowen123/BundleTrack](https://img.shields.io/github/stars/wenbowen123/BundleTrack.svg?style=flat&label=Star&maxAge=86400)]
+* [se(3)-TrackNet](https://github.com/wenbowen123/iros20-6d-pose-tracking) - 6D Pose Tracking for Novel Objects without 3D Models [[github](https://github.com/wenbowen123/iros20-6d-pose-tracking) ![wenbowen123/iros20-6d-pose-tracking](https://img.shields.io/github/stars/wenbowen123/iros20-6d-pose-tracking.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Fluid](#awesome-robotics-libraries)
 
