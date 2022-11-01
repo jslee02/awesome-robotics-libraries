@@ -235,7 +235,6 @@ For simplicity, shortened names are used to represent the supported models and f
 * [onshape-to-robot](https://github.com/Rhoban/onshape-to-robot) - Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API [[github](https://github.com/Rhoban/onshape-to-robot) ![phobos](https://img.shields.io/github/stars/Rhoban/onshape-to-robot.svg?style=flat&label=Star&maxAge=86400)]
 * phobos - Add-on for Blender creating URDF and SMURF robot models [[github](https://github.com/rock-simulation/phobos) ![phobos](https://img.shields.io/github/stars/rock-simulation/phobos.svg?style=flat&label=Star&maxAge=86400)]
 
-
 ### [Robot Platform](#awesome-robotics-libraries)
 
 * [AutoRally](http://autorally.github.io/) - High-performance testbed for advanced perception and control research [[github](https://github.com/autorally/autorally) ![autorally/autorally](https://img.shields.io/github/stars/autorally/autorally.svg?style=flat&label=Star&maxAge=86400)]
