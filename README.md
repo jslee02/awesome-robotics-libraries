@@ -225,6 +225,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * qpsolvers - Quadratic Programming solvers in Python with a unified API [[github](https://github.com/stephane-caron/qpsolvers) ![qpsolvers](https://img.shields.io/github/stars/stephane-caron/qpsolvers.svg?style=flat&label=Star&maxAge=86400)]
 * [RobOptim](http://roboptim.net/index.html) - Numerical Optimization for Robotics. [[github](https://github.com/roboptim/roboptim-core) ![roboptim/roboptim-core](https://img.shields.io/github/stars/roboptim/roboptim-core.svg?style=flat&label=Star&maxAge=86400)]
 * [SCS](http://web.stanford.edu/~boyd/papers/scs.html) - Numerical optimization for solving large-scale convex cone problems [[github](https://github.com/cvxgrp/scs) ![scs](https://img.shields.io/github/stars/cvxgrp/scs.svg?style=flat&label=Star&maxAge=86400)]
+* [SHOT](https://shotsolver.dev/shot/) - A solver for mixed-integer nonlinear optimization problems [[github](https://github.com/coin-or/SHOT) ![coin-or/SHOT](https://img.shields.io/github/stars/coin-or/SHOT.svg?style=flat&label=Star&maxAge=86400)]
 * sferes2 - Evolutionary computation [[github](https://github.com/sferes2/sferes2) ![sferes2/sferes2](https://img.shields.io/github/stars/sferes2/sferes2.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Robot Modeling](#awesome-robotics-libraries)
