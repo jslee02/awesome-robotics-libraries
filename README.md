@@ -166,6 +166,7 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Motion Planning and Control](#awesome-robotics-libraries)
 
 * [AIKIDO](https://github.com/personalrobotics/aikido) - Solving robotic motion planning and decision making problems. [[github](https://github.com/personalrobotics/aikido) ![aikido](https://img.shields.io/github/stars/personalrobotics/aikido.svg?style=flat&label=Star&maxAge=86400)]
+* Bioptim - Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics [[github](https://github.com/pyomeca/bioptim) ![pyomeca/bioptim](https://img.shields.io/github/stars/pyomeca/bioptim.svg?style=flat&label=Star&maxAge=86400)]
 * [CuiKSuite](http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html) - Applications to solve position analysis and path planning problems
 * [Control Toolbox](https://ethz-adrl.github.io/ct/) - Open-Source C++ Library for Robotics, Optimal and Model Predictive Control [[github](https://github.com/ethz-adrl/control-toolbox) ![ethz-adrl/control-toolbox](https://img.shields.io/github/stars/ethz-adrl/control-toolbox.svg?style=flat&label=Star&maxAge=86400)]
 * Crocoddyl - Optimal control library for robot control under contact sequence [[github](https://github.com/loco-3d/crocoddyl) ![loco-3d/crocoddyl](https://img.shields.io/github/stars/loco-3d/crocoddyl.svg?style=flat&label=Star&maxAge=86400)]
