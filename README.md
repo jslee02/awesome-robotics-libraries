@@ -206,6 +206,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [PCL](http://www.pointclouds.org/) - 2D/3D image and point cloud processing [[github](https://github.com/PointCloudLibrary/pcl) ![PointCloudLibrary/pcl](https://img.shields.io/github/stars/PointCloudLibrary/pcl.svg?style=flat&label=Star&maxAge=86400)]
 * Treexy - Brutally fast, sparse, 3D Voxel Grid [[github](https://github.com/facontidavide/Treexy) ![Treexy](https://img.shields.io/github/stars/facontidavide/Treexy.svg?style=flat&label=Star&maxAge=86400)]
 * voxblox - Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields [[github](https://github.com/ethz-asl/voxblox) ![voxblox](https://img.shields.io/github/stars/ethz-asl/voxblox.svg?style=flat&label=Star&maxAge=86400)]
+* [wavemap](https://ethz-asl.github.io/wavemap/) - Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping [[github](https://github.com/ethz-asl/wavemap) ![wavemap](https://img.shields.io/github/stars/ethz-asl/wavemap.svg?style=flat&label=Star&maxAge=86400)]
 * Utility Software
   * [Goxel](https://guillaumechereau.github.io/goxel/) - Free and open source 3D voxel editor [[github](https://github.com/guillaumechereau/goxel) ![guillaumechereau/goxel](https://img.shields.io/github/stars/guillaumechereau/goxel.svg?style=flat&label=Star&maxAge=86400)]
 
