@@ -254,6 +254,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [ROS](http://www.ros.org/) - Flexible framework for writing robot software [[github repos](http://wiki.ros.org/Tickets)]
 * [ROS 2](https://github.com/ros2/ros2/wiki) - Version 2.0 of the Robot Operating System (ROS) software stack [[github repos](https://github.com/ros2)]
 * [YARP](http://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices [[github](https://github.com/robotology/yarp) ![robotology/yarp](https://img.shields.io/github/stars/robotology/yarp.svg?style=flat&label=Star&maxAge=86400)]
+* [Micro-ROS for Arduino](https://github.com/kaiaai/micro_ros_arduino_kaiaai) - a [Micro-ROS](https://github.com/micro-ROS/micro_ros_arduino) fork available in the [Arduino](https://www.arduino.cc/) Library Manager
 
 ### [SLAM](#awesome-robotics-libraries)
 
