@@ -38,6 +38,7 @@ A curated list of robotics simulators and libraries.
 * [Hexapod Robot Simulator](https://hexapod.netlify.app/) - Open-source hexapod robot inverse kinematics and gaits visualizer [[github](https://github.com/mithi/hexapod) ![mithi/hexapod](https://img.shields.io/github/stars/mithi/hexapod.svg?style=flat&label=Star&maxAge=86400)]
 * [Ignition Gazebo](https://ignitionrobotics.org/home) - Open source robotics simulator [[github](https://github.com/ignitionrobotics/ign-gazebo) ![ignitionrobotics/ign-gazebo](https://img.shields.io/github/stars/ignitionrobotics/ign-gazebo.svg?style=flat&label=Star&maxAge=86400)]
 * [Isaac Sim](https://developer.nvidia.com/isaac/sim) - Nvidia's robotic simulation environment with GPU physics simulation and ray tracing 
+* [ManiSkill](https://github.com/haosulab/ManiSkill) - A robot simulation and behavior learning package powered by SAPIEN, with a strong focus on manipulation skills.
 * [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine [[github](https://github.com/morse-simulator/morse) ![morse](https://img.shields.io/github/stars/morse-simulator/morse.svg?style=flat&label=Star&maxAge=86400)]
 * [Neurorobotics Platform](https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
 * [PyBullet](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3) - An easy to use simulator for robotics and deep reinforcement learning [[github](https://github.com/bulletphysics/bullet3) ![bullet3](https://img.shields.io/github/stars/bulletphysics/bullet3.svg?style=flat&label=Star&maxAge=86400)]
@@ -145,6 +146,7 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Inverse Kinematics](#awesome-robotics-libraries)
 
   * IKBT - A python package to solve robot arm inverse kinematics in symbolic form [[github](http://github.com/uw-biorobotics/IKBT) ![uw-biorobotics/IKBT](https://img.shields.io/github/stars/uw-biorobotics/IKBT.svg?style=flat&label=Star&maxAge=86400)]
+  * Kinpy - A simple pure python package to solve inverse kinematics [[github](https://github.com/neka-nat/kinpy) ![neka-nat/kinpy](https://img.shields.io/github/stars/neka-nat/kinpy.svg?style=flat&label=Star&maxAge=86400)]
   * Lively - A highly configurable toolkit for commanding robots in mixed modalities [[github](https://github.com/Wisc-HCI/lively) ![Wisc-HCI/lively](https://img.shields.io/github/stars/Wisc-HCI/lively.svg?style=flat&label=Star&maxAge=86400)]
   * RelaxedIK - Real-time Synthesis of Accurate and Feasible Robot Arm Motion [[github](http://github.com/uwgraphics/relaxed_ik) ![uwgraphics/relaxed_ik](https://img.shields.io/github/stars/uwgraphics/relaxed_ik.svg?style=flat&label=Star&maxAge=86400)]
   * [Trip](https://trip-kinematics.readthedocs.io/en/main/index.html) - A python package that solves inverse kinematics of parallel-, serial- or hybrid-robots [[github](https://github.com/TriPed-Robot/TriP) ![TriPed-Robot/TriP](https://img.shields.io/github/stars/TriPed-Robot/TriP.svg?style=flat&label=Star&maxAge=86400)]
@@ -298,6 +300,8 @@ For simplicity, shortened names are used to represent the supported models and f
 * manif - Small c++11 header-only library for Lie theory. [[github](https://github.com/artivis/manif) ![artivis/manif](https://img.shields.io/github/stars/artivis/manif.svg?style=flat&label=Star&maxAge=86400)]
 * Sophus - Lie groups using Eigen [[github](https://github.com/strasdat/Sophus) ![strasdat/Sophus](https://img.shields.io/github/stars/strasdat/Sophus.svg?style=flat&label=Star&maxAge=86400)]
 * SpaceVelAlg - Spatial vector algebra with the Eigen3 [[github](https://github.com/jrl-umi3218/SpaceVecAlg) ![jrl-umi3218/SpaceVecAlg](https://img.shields.io/github/stars/jrl-umi3218/SpaceVecAlg.svg?style=flat&label=Star&maxAge=86400)]
+* spatialmath-python - A python package provides classes to represent pose and orientation in 3D and 2D space, along with a toolbox of spatial operations. [[github](https://github.com/bdaiinstitute/spatialmath-python) ![bdaiinstitute/spatialmath-python](https://img.shields.io/github/stars/bdaiinstitute/spatialmath-python.svg?style=flat&label=Star&maxAge=86400)]
+
 
 ### [ETC](#awesome-robotics-libraries)
 
