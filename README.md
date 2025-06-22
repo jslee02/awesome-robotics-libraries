@@ -154,6 +154,7 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Machine Learning](#awesome-robotics-libraries)
 
 * [AllenAct](https://allenact.org/) - Python/PyTorch-based Research Framework for Embodied AI [[github](http://github.com/allenai/allenact) ![wichtounet/dll](https://img.shields.io/github/stars/allenai/allenact.svg?style=flat&label=Star&maxAge=86400)]
+* Any4LeRobot - A collection of utilities and tools for LeRobot [[github](https://github.com/Tavish9/any4lerobot) ![wichtounet/dll](https://img.shields.io/github/stars/Tavish9/any4lerobot.svg?style=flat&label=Star&maxAge=86400)]
 * DLL - Deep Learning Library (DLL) for C++ [[github](http://github.com/wichtounet/dll) ![wichtounet/dll](https://img.shields.io/github/stars/wichtounet/dll.svg?style=flat&label=Star&maxAge=86400)]
 * [DyNet](https://dynet.readthedocs.io/en/latest/) - The Dynamic Neural Network Toolkit [[github](http://github.com/clab/dynet) ![clab/dynet](https://img.shields.io/github/stars/clab/dynet.svg?style=flat&label=Star&maxAge=86400)]
 * [Fido](http://fidoproject.github.io/) - Lightweight C++ machine learning library for embedded electronics and robotics [[github](http://github.com/FidoProject/Fido) ![FidoProject/Fido](https://img.shields.io/github/stars/FidoProject/Fido.svg?style=flat&label=Star&maxAge=86400)]
