@@ -253,7 +253,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * phobos - Add-on for Blender creating URDF and SMURF robot models [[github](https://github.com/rock-simulation/phobos) ![phobos](https://img.shields.io/github/stars/rock-simulation/phobos.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Robot Platform](#awesome-robotics-libraries)
-
+* [HORUS](https://github.com/softmata/horus) - A real-time Rust robotics framework.
 * [AutoRally](http://autorally.github.io/) - High-performance testbed for advanced perception and control research [[github](https://github.com/autorally/autorally) ![autorally/autorally](https://img.shields.io/github/stars/autorally/autorally.svg?style=flat&label=Star&maxAge=86400)]
 * [Linorobot](https://linorobot.org/) - ROS compatible ground robots [[github](https://github.com/linorobot/linorobot) ![linorobot/linorobot](https://img.shields.io/github/stars/linorobot/linorobot.svg?style=flat&label=Star&maxAge=86400)]
   * onine - Service Robot based on [Linorobot](https://github.com/linorobot/linorobot) and Braccio Arm [[github](https://github.com/grassjelly/onine) ![grassjelly/onine](https://img.shields.io/github/stars/grassjelly/onine.svg?style=flat&label=Star&maxAge=86400)]
