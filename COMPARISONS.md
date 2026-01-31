@@ -11,12 +11,12 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 ### [Selected Libraries to Compare](#Comparisons)
 
-* [Bullet](http://bulletphysics.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3)) - Real-Time Physics Simulation
-* [CHRONO::ENGINE](http://chronoengine.info/) ([github](https://github.com/projectchrono/chrono)) - C++ library for multibody dynamics simulations.
-* [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart.git)) - Dynamic Animation and Robotics Toolkit.
-* [Drake](http://drake002.csail.mit.edu/drake/sphinx/) ([github](https://github.com/RobotLocomotion/drake)) - A planning, control, and analysis toolbox for nonlinear dynamical systems.
-* [ODE](http://www.ode.org/) ([bitbucket](https://bitbucket.org/odedevs/ode)) - An open source, high performance library for simulating rigid body dynamics.
-* [Simbody](https://simtk.org/home/simbody/) ([github](https://github.com/simbody/simbody.git)) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems.
+* [Bullet](https://pybullet.org/wordpress/) ([github](https://github.com/bulletphysics/bullet3)) - Real-Time Physics Simulation
+* [CHRONO::ENGINE](https://projectchrono.org/) ([github](https://github.com/projectchrono/chrono)) - C++ library for multibody dynamics simulations.
+* [DART](http://dartsim.github.io/) ([github](https://github.com/dartsim/dart)) - Dynamic Animation and Robotics Toolkit.
+* [Drake](https://drake.mit.edu/) ([github](https://github.com/RobotLocomotion/drake)) - A planning, control, and analysis toolbox for nonlinear dynamical systems.
+* [ODE](https://ode.org/) ([bitbucket](https://bitbucket.org/odedevs/ode)) - An open source, high performance library for simulating rigid body dynamics.
+* [Simbody](https://simtk.org/home/simbody/) ([github](https://github.com/simbody/simbody)) - A multibody dynamics/physics library for simulating articulated biomechanical/mechanical systems.
 
 ### General Information
 
@@ -45,7 +45,7 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 | Library  | Mailing List | API Documentation | Public Forum/Help System | User Manual | Tutorial | Issue Tracker | Wiki |
 |:--------:|:------------:|:-----------------:|:------------------------:|:-----------:|:--------:|:-------------:|:----:|
-| DART    | No | [Yes](http://dartsim.github.io/dart/) | No | No | [Yes](http://dart.readthedocs.org/en/release-5.1/) | [Yes](https://github.com/dartsim/dart/issues) | [Yes](https://github.com/dartsim/dart/wiki) |
+| DART    | No | [Yes](https://dartsim.github.io/) | No | No | [Yes](https://dart.readthedocs.io/) | [Yes](https://github.com/dartsim/dart/issues) | [Yes](https://github.com/dartsim/dart/wiki) |
 
 ### Code Quality
 
@@ -99,41 +99,40 @@ Comparisons inspired by [Wikipedia's Robotics simulator](https://en.wikipedia.or
 
 * M. Torres-Torriti et al. [Survey and comparative study of free simulation software for mobile robots](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=10215708&fileId=S0263574714001866). Robotica 2016.
 * T. Erez et al. [Simulation tools for model-based robotics: comparison of Bullet, Havok, MuJoCo, ODE, and PhysX](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7139807). ICRA 2015. ([pdf](https://homes.cs.washington.edu/~todorov/papers/ErezICRA15.pdf))
-* Y. Lu et al. [Comparison of Multibody Dynamics Solver Performance: Synthetic versus Realistic Data](http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=2483796). ASME IDETC/CIEC 2015. ([pdf](http://www.cs.rpi.edu/foswiki/pub/RoboticsWeb/LabPublications/LTasme2015.pdf))
+* Y. Lu et al. Comparison of Multibody Dynamics Solver Performance: Synthetic versus Realistic Data. ASME IDETC/CIEC 2015.
 * S. Ivaldi et al. [Tools for simulating humanoid robot dynamics: a survey based on user feedback](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7041462). Humanoids 2014. ([pdf](http://arxiv.org/pdf/1402.7050.pdf))
 
 #### Articles
 
 * [9 open source robotics projects](https://opensource.com/life/16/4/open-source-robotics-projects) by [Jason Baker](https://opensource.com/users/jason-baker)
-* [Comparison of Rigid Body Dynamic Simulators for Robotic Simulation in Gazebo](http://www.osrfoundation.org/wordpress2/wp-content/uploads/2015/04/roscon2014_scpeters.pdf) by [Steven Peters](http://www.osrfoundation.org/team/steven-peters/) and [John Hsu](http://www.osrfoundation.org/team/john-hsu/)
+* [Comparison of Rigid Body Dynamic Simulators for Robotic Simulation in Gazebo](http://www.osrfoundation.org/wordpress2/wp-content/uploads/2015/04/roscon2014_scpeters.pdf) by Steven Peters and John Hsu
 * [Open Source Physics Engines](http://www.tapirgames.com/blog/open-source-physics-engines) by [Tapir Liu](https://twitter.com/TapirLiu)
-* [Survey of multibody dynamics software](http://homepages.rpi.edu/~luy4/survey.html) maintained by [Ying Lu](http://homepages.rpi.edu/~luy4/)
+* Survey of multibody dynamics software maintained by Ying Lu
 * [Wikipedia: Robotics simulator](https://en.wikipedia.org/wiki/Robotics_simulator#Simulators)
 
 ## [Simulators](#comparisons)
 
-* [Gazebo](http://www.gazebosim.org/) ([bitbucket](https://bitbucket.org/osrf/gazebo)) - A dynamic multi-robot simulator.
+* [Gazebo](https://gazebosim.org/) ([bitbucket](https://bitbucket.org/osrf/gazebo)) - A dynamic multi-robot simulator.
 * [GraspIt!](http://graspit-simulator.github.io/) ([github](https://github.com/graspit-simulator/graspit)) - A simulator for grasping research that can accommodate arbitrary hand and robot designs developed by [the Columbia University Robotics Group](http://www.cs.columbia.edu/robotics/)
 * [MORSE](http://morse-simulator.github.io/) ([github](https://github.com/morse-simulator/morse)) - The Modular OpenRobots Simulation Engine.
-* [V-REP](http://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
+* [V-REP](https://www.coppeliarobotics.com/) - Virtual robot experimentation platform.
 
 ### General Information
 
 | Library  | Developer(s) | Latest Release | Platform Supported | License | Github :star: |
 |:--------:| ------------ | -------------- | ------------------ | ------- |:------------:|
-| Gazebo   | [OSRF](http://www.osrfoundation.org/) | [7.1.0 (2016-04-08)](http://www.gazebosim.org/download) | Linux, Mac, Windows | Apache 2.0 | N/A |
+| Gazebo   | [OSRF](http://www.osrfoundation.org/) | [7.1.0 (2016-04-08)](https://gazebosim.org/docs) | Linux, Mac, Windows | Apache 2.0 | N/A |
 | MORSE    | [LAAS-CNRS and many](http://www.openrobots.org/morse/doc/latest/credits.html) | 1.4 (2016-02-08) | Linux | BSD 3-Clause | 153 |
-| V-REP    | [Coppelia Robotics](http://www.coppeliarobotics.com/contact.html) | [3.3.0 (2016-02-19)](http://www.coppeliarobotics.com/downloads.html) | Linux, Mac, Windows | [Commercial / Free educational](http://www.coppeliarobotics.com/licensing.html) | N/A |
+| V-REP    | [Coppelia Robotics](https://www.coppeliarobotics.com/) | [3.3.0 (2016-02-19)](https://www.coppeliarobotics.com/) | Linux, Mac, Windows | [Commercial / Free educational](https://www.coppeliarobotics.com/) | N/A |
 :star: updated Apr 19, 2016
 
 ### Papers
 
-* A. Staranowicz, G. L. Mariottini, [A Survey and Comparison of Commercial and
-Open-Source Robotic Simulator Software](http://dl.acm.org/citation.cfm?id=2141689), PETRA 2011. ([pdf](http://ranger.uta.edu/~gianluca/papers/StMa_PETRA11.pdf))
+* A. Staranowicz, G. L. Mariottini, A Survey and Comparison of Commercial and Open-Source Robotic Simulator Software, PETRA 2011.
 
 ## [Contributing](#comparison)
 
-Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/master/CONTRIBUTING.md) first. Also, please feel free to report any error.
+Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/main/CONTRIBUTING.md) first. Also, please feel free to report any error.
 
 ## [License](#comparison)
 
