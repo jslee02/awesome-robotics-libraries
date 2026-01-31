@@ -1,0 +1,19 @@
+max_retries = 3
+max_concurrency = 20
+timeout = 20
+retry_wait_time = 5
+user_agent = "Mozilla/5.0 (compatible; lychee-link-checker/0.21; +https://github.com/lycheeverse/lychee)"
+accept = [200, 403, 429]
+
+exclude = [
+  "^https://img\\.shields\\.io",
+  "^https://licensebuttons\\.net",
+  "^https?://dl\\.acm\\.org",
+  "^https?://proceedings\\.asmedigitalcollection\\.asme\\.org",
+  "^https?://ieeexplore\\.ieee\\.org",
+  "^https?://journals\\.cambridge\\.org",
+  "^https?://pybullet\\.org",
+  "^https?://www\\.interactive-graphics\\.de",
+  "^https?://grasp\\.robotics\\.cs\\.rpi\\.edu",
+  "^https?://www\\.q12\\.org",
+]
