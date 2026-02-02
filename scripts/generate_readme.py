@@ -11,13 +11,13 @@ import yaml
 
 # ── Section registry ────────────────────────────────────────────────────────
 # (yaml_key, display_name, heading_level, render_mode, subsection_heading_level)
-# render_mode: "bullet", "dynamics_table", "simple_table"
+# render_mode: "bullet", "other_awesome"
 # subsection_heading_level: 6 means ######, 4 means ####, None means no subsections
 
 SECTIONS = [
     ("simulators", "Simulators", 2, "bullet", 6),
     # -- "Libraries" divider inserted here --
-    ("dynamics-simulation", "Dynamics Simulation", 3, "dynamics_table", None),
+    ("dynamics-simulation", "Dynamics Simulation", 3, "bullet", None),
     ("inverse-kinematics", "Inverse Kinematics", 3, "bullet", None),
     ("machine-learning", "Machine Learning", 3, "bullet", None),
     ("motion-planning", "Motion Planning and Control", 3, "bullet", 6),
@@ -44,7 +44,7 @@ SECTIONS = [
 
 SECTION_DESCRIPTIONS: dict[str, str] = {
     "simulators": "Simulation environments for testing and developing robotic systems.",
-    "dynamics-simulation": "Physics engines and rigid/soft body dynamics libraries for robotics.",
+    "dynamics-simulation": "Physics engines and rigid/soft body dynamics libraries. See also [Comparisons](COMPARISONS.md).",
     "inverse-kinematics": "Libraries for computing joint configurations from end-effector poses.",
     "machine-learning": "Machine learning frameworks and tools applied to robotics.",
     "motion-planning": "Libraries for robot motion planning, trajectory optimization, and control.",
@@ -94,11 +94,60 @@ def _load_yaml(path: Path) -> list[dict]:
         return data if isinstance(data, list) else []
 
 
-def _stars_badge(github: str) -> str:
-    return (
-        f"https://img.shields.io/github/stars/"
-        f"{github}.svg?style=flat&label=Star&maxAge=86400"
-    )
+def _sort_entries(
+    entries: list[dict],
+    sort_key: str,
+    children_map: dict[str, list[str]],
+) -> list[dict]:
+    """Sort entries while preserving parent→child adjacency.
+
+    Parents are sorted; each parent's children stay immediately after it
+    in their original order. HEADER_ENTRIES keep their position relative
+    to their children. Entries without _meta sort to the end for
+    stars/last_commit modes.
+    """
+    if sort_key == "none":
+        return entries
+
+    # Build child set for quick lookup
+    child_names: set[str] = set()
+    for kids in children_map.values():
+        child_names.update(kids)
+
+    # Separate parents from children
+    parents = [e for e in entries if e["name"] not in child_names]
+
+    # Sort parents
+    if sort_key == "name":
+        parents.sort(key=lambda e: e["name"].lower())
+    elif sort_key == "stars":
+        parents.sort(
+            key=lambda e: (e.get("_meta") or {}).get("stars") or 0,
+            reverse=True,
+        )
+    elif sort_key == "last_commit":
+        parents.sort(
+            key=lambda e: (e.get("_meta") or {}).get("last_commit") or "",
+            reverse=True,
+        )
+
+    # Rebuild with children after their parents
+    result: list[dict] = []
+    for parent in parents:
+        result.append(parent)
+        kid_names = children_map.get(parent["name"], [])
+        if kid_names:
+            for entry in entries:
+                if entry["name"] in kid_names:
+                    result.append(entry)
+
+    return result
+
+
+def _format_stars(count: int) -> str:
+    if count >= 1000:
+        return f"{count / 1000:.1f}k".replace(".0k", "k")
+    return str(count)
 
 
 # ── Bullet rendering ───────────────────────────────────────────────────────
@@ -112,10 +161,10 @@ def _render_bullet(entry: dict, indent: str = "") -> str:
     gitlab = entry.get("gitlab")
     desc = entry.get("description", "")
     archived = entry.get("archived", False)
+    meta = entry.get("_meta", {})
 
     parts = [f"{indent}*"]
 
-    # Name part
     if archived:
         if url:
             parts.append(f"[{name}]({url}) (archived)")
@@ -126,126 +175,19 @@ def _render_bullet(entry: dict, indent: str = "") -> str:
     else:
         parts.append(name)
 
-    # Description
     if desc:
         parts.append(f"- {desc}")
 
-    # Repo badge
     if github:
-        badge = _stars_badge(github)
-        parts.append(f"[[github](https://github.com/{github}) ![{name}]({badge})]")
+        stars = meta.get("stars")
+        star_text = f" ⭐ {_format_stars(stars)}" if stars is not None else ""
+        parts.append(f"[[github](https://github.com/{github}){star_text}]")
     elif bitbucket:
         parts.append(f"[[bitbucket](https://bitbucket.org/{bitbucket})]")
     elif gitlab:
         parts.append(f"[[gitlab](https://gitlab.com/{gitlab})]")
 
     return " ".join(parts)
-
-
-# ── Dynamics table rendering ────────────────────────────────────────────────
-
-DYNAMICS_HEADER = """\
-> :warning: The following table is not complete. Please feel free to report if you find something incorrect or missing.
-
-| Name | Models | Features | Languages | Licenses | Code | Popularity |
-|:----:| ------ | -------- | --------- | -------- | ---- | ---------- |"""
-
-
-def _render_dynamics_row(entry: dict) -> str:
-    name = entry["name"]
-    url = entry.get("url")
-    github = entry.get("github")
-    bitbucket = entry.get("bitbucket")
-    gitlab = entry.get("gitlab")
-    code_url = entry.get("code_url")
-
-    name_cell = f"[{name}]({url})" if url else name
-    models = ", ".join(entry.get("models", [])) or "—"
-    features = ", ".join(entry.get("features", [])) or "—"
-    languages = ", ".join(entry.get("languages", [])) or "—"
-    license_val = entry.get("license", "—") or "—"
-
-    # Code cell (show all available repo links)
-    code_parts = []
-    if bitbucket:
-        code_parts.append(f"[bitbucket](https://bitbucket.org/{bitbucket})")
-    if github:
-        code_parts.append(f"[github](https://github.com/{github})")
-    if gitlab:
-        code_parts.append(f"[gitlab](https://gitlab.com/{gitlab})")
-    if not code_parts and code_url:
-        code_parts.append(f"[download]({code_url})")
-    code_cell = ", ".join(code_parts)
-
-    # Popularity cell
-    if github:
-        badge = _stars_badge(github)
-        pop_cell = f"![{name}]({badge})"
-    else:
-        pop_cell = ""
-
-    # Handle special license link cases
-    if license_val == "custom" and github:
-        license_cell = (
-            f"[custom](https://github.com/{github}/blob/"
-            f"a9e7673569997f35c0bc7eb5d11bc4fa188e863c/LICENSE.md)"
-        )
-    else:
-        license_cell = license_val
-
-    return (
-        f"| {name_cell} | {models} | {features} "
-        f"| {languages} | {license_cell} | {code_cell} | {pop_cell} |"
-    )
-
-
-DYNAMICS_LEGEND = """\
-
-For simplicity, shortened names are used to represent the supported models and features as
-
-* Supported Models
-  * rigid: rigid bodies
-  * soft: soft bodies
-  * aero: aerodynamics
-  * granular: granular materials (like sand)
-  * fluid: fluid dynamics
-  * vehicles
-  * uav: unmanned aerial vehicles (like drones)
-  * medical
-  * molecules
-  * parallel: parallel mechanism (like Stewart platform)
-
-* Features on Simulation, Analysis, Planning, Control Design
-  * dm: [discrete mechanics](https://www.cambridge.org/core/journals/acta-numerica/article/div-classtitlediscrete-mechanics-and-variational-integratorsdiv/C8F45478A9290DEC24E63BB7FBE3CEB5)
-  * ik: [inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics) solvers (please find IK specialized packages in [this list](#inverse-kinematics))
-  * id: [inverse dynamics](https://en.wikipedia.org/wiki/Inverse_dynamics)
-  * slam: [simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
-  * trj-opt: trajectory optimization
-  * plan: motion planning algorithms
-  * cv: computer vision
-  * urdf: [urdf](http://wiki.ros.org/urdf) parser
-  * sdf: [sdf](http://sdformat.org/) parser"""
-
-
-# ── Simple table rendering ──────────────────────────────────────────────────
-
-
-def _render_simple_table(entries: list[dict]) -> str:
-    lines = ["| Name | Stars |", "|------|-------|"]
-    for entry in entries:
-        name = entry["name"]
-        url = entry.get("url", "")
-        github = entry.get("github")
-        if not url and github:
-            url = f"https://github.com/{github}"
-        name_cell = f"[{name}]({url})" if url else name
-        if github:
-            badge = _stars_badge(github)
-            stars_cell = f"[![GitHub stars]({badge})](https://github.com/{github})"
-        else:
-            stars_cell = ""
-        lines.append(f"| {name_cell} | {stars_cell} |")
-    return "\n".join(lines)
 
 
 # ── Other awesome lists rendering ───────────────────────────────────────────
@@ -271,34 +213,25 @@ def _render_other_awesome(entries: list[dict]) -> str:
 
 
 def _render_section(
-    key: str, entries: list[dict], mode: str, sub_heading_level: int | None
+    key: str,
+    entries: list[dict],
+    mode: str,
+    sub_heading_level: int | None,
+    sort_key: str = "name",
 ) -> str:
     lines: list[str] = []
-
-    if mode == "dynamics_table":
-        lines.append(DYNAMICS_HEADER)
-        for entry in entries:
-            lines.append(_render_dynamics_row(entry))
-        lines.append(DYNAMICS_LEGEND)
-        return "\n".join(lines)
-
-    if mode == "simple_table":
-        return _render_simple_table(entries)
 
     if mode == "other_awesome":
         return _render_other_awesome(entries)
 
-    # bullet mode
     indent_all = key in INDENT_ALL
     base_indent = "  " if indent_all else ""
     children_map = CHILDREN.get(key, {})
 
-    # Build set of child names for skip logic
     child_names = set()
     for kids in children_map.values():
         child_names.update(kids)
 
-    # Group by subsection if applicable
     subsection_order = SUBSECTION_ORDER.get(key)
     if subsection_order:
         grouped: dict[str | None, list[dict]] = {s: [] for s in subsection_order}
@@ -315,6 +248,8 @@ def _render_section(
             if not sub_entries and sub is not None:
                 continue
 
+            sub_entries = _sort_entries(sub_entries, sort_key, children_map)
+
             if sub is not None:
                 if not first_sub or (first_sub and lines):
                     lines.append("")
@@ -327,7 +262,6 @@ def _render_section(
                     continue
                 if entry["name"] in HEADER_ENTRIES:
                     lines.append(f"* {entry['name']}")
-                    # Render children of this header
                     kids = children_map.get(entry["name"], [])
                     for sub_entry in sub_entries:
                         if sub_entry["name"] in kids:
@@ -335,7 +269,6 @@ def _render_section(
                     continue
 
                 lines.append(_render_bullet(entry, indent=base_indent))
-                # Render children
                 kids = children_map.get(entry["name"], [])
                 for kid_name in kids:
                     for sub_entry in sub_entries:
@@ -344,13 +277,14 @@ def _render_section(
 
             first_sub = False
     else:
-        for entry in entries:
+        sorted_entries = _sort_entries(entries, sort_key, children_map)
+        for entry in sorted_entries:
             if entry["name"] in child_names:
                 continue
             lines.append(_render_bullet(entry, indent=base_indent))
             kids = children_map.get(entry["name"], [])
             for kid_name in kids:
-                for sub_entry in entries:
+                for sub_entry in sorted_entries:
                     if sub_entry["name"] == kid_name:
                         lines.append(_render_bullet(sub_entry, indent="  "))
 
@@ -385,7 +319,7 @@ TOC = """\
 # ── Main ────────────────────────────────────────────────────────────────────
 
 
-def generate(data_dir: Path) -> str:
+def generate(data_dir: Path, sort_key: str = "name") -> str:
     out: list[str] = []
 
     out.append("# Awesome Robotics Libraries")
@@ -422,7 +356,7 @@ def generate(data_dir: Path) -> str:
             out.append(f"_{section_desc}_")
             out.append("")
 
-        body = _render_section(key, entries, mode, sub_hl)
+        body = _render_section(key, entries, mode, sub_hl, sort_key)
         out.append(body)
         out.append("")
 
@@ -457,6 +391,12 @@ def main():
         default=None,
         help="Output file path (default: README.md in repo root)",
     )
+    parser.add_argument(
+        "--sort",
+        choices=["name", "stars", "last_commit", "none"],
+        default="name",
+        help="Sort entries within each section (default: name)",
+    )
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parent.parent
@@ -466,7 +406,7 @@ def main():
         print(f"ERROR: {data_dir} not found", file=sys.stderr)
         sys.exit(1)
 
-    readme = generate(data_dir)
+    readme = generate(data_dir, sort_key=args.sort)
 
     output_path = Path(args.output) if args.output else repo_root / "README.md"
     output_path.write_text(readme, encoding="utf-8")

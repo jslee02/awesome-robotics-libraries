@@ -1,7 +1,8 @@
-# multiphysics
-# Source of truth — edit this file, then run: pixi run generate
-
 - name: Kratos
   url: http://www.cimne.com/kratos/
   github: KratosMultiphysics/Kratos
   description: Framework for building parallel multi-disciplinary simulation software.
+  _meta:
+    stars: 1219
+    last_commit: '2026-02-02'
+    language: C++
