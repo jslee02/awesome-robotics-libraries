@@ -1,0 +1,54 @@
+name: Suggest a Library
+description: Suggest a robotics library to add to the list
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Library Name
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Project website or repository URL
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Simulators
+        - Dynamics Simulation
+        - Inverse Kinematics
+        - Machine Learning
+        - Motion Planning and Control
+        - Optimization
+        - Robot Modeling
+        - Robot Platform
+        - Reinforcement Learning for Robotics
+        - SLAM
+        - Vision
+        - Fluid
+        - Grasping
+        - Humanoid Robotics
+        - Multiphysics
+        - Math
+        - ETC
+        - Other Awesome Lists
+        - New Category
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Brief description of what this library does
+    validations:
+      required: true

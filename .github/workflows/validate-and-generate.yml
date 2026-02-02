@@ -3,9 +3,9 @@ name: Validate Data
 on:
   pull_request:
     paths:
-      - data/**
-      - schema/**
-      - scripts/**
+      - "data/**"
+      - "schema/**"
+      - "scripts/**"
 
 jobs:
   validate:
@@ -19,4 +19,23 @@ jobs:
 
       - run: pip install pyyaml jsonschema
 
-      - run: python3 scripts/validate_entries.py
+      - name: Validate YAML against schema
+        run: python3 scripts/validate_entries.py
+
+      - name: Check README freshness
+        run: |
+          python3 scripts/generate_readme.py -o /tmp/generated-readme.md
+          if ! diff -q README.md /tmp/generated-readme.md > /dev/null 2>&1; then
+            echo "::error::README.md is out of date with YAML data."
+            echo ""
+            echo "Please regenerate by running:"
+            echo "  pip install pyyaml"
+            echo "  python3 scripts/generate_readme.py"
+            echo ""
+            echo "If you cannot run the generator locally, note it in your PR"
+            echo "and a maintainer will regenerate for you."
+            echo ""
+            diff --unified README.md /tmp/generated-readme.md || true
+            exit 1
+          fi
+          echo "README.md is up to date"
