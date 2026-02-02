@@ -31,8 +31,7 @@ data/*.yaml  -->  scripts/generate_readme.py  -->  README.md
 3. Regenerate README.md:
 
    ```bash
-   pip install pyyaml
-   python3 scripts/generate_readme.py
+   pixi run generate
    ```
 
 4. Commit both the YAML file and README.md:

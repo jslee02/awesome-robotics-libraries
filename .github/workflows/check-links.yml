@@ -28,14 +28,22 @@ jobs:
       - name: Fail on broken links (PR only)
         if: github.event_name == 'pull_request'
         run: |
-          # Lychee exit code 2 means "links have issues" which includes
-          # redirects (not just errors). Only fail on actual broken links.
-          if grep -qE '^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md 2>/dev/null; then
-            echo "::error::Broken links found:"
-            grep -E '^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md
+          # Lychee marks results as:
+          #   [404], [410], etc. — HTTP errors (definitively broken)
+          #   [ERROR] — network errors (usually transient)
+          #   [TIMEOUT] — slow servers (usually transient)
+          # Only fail PRs on HTTP 4xx errors. Transient failures are
+          # handled by the weekly cron job which auto-creates fix PRs.
+          if grep -qP '^\* \[\d{3}\]' lychee/results.md 2>/dev/null; then
+            echo "::error::Broken links found (HTTP errors):"
+            grep -P '^\* \[\d{3}\]' lychee/results.md
             exit 1
           fi
-          echo "No broken links found (redirects are OK)"
+          if grep -qE '^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md 2>/dev/null; then
+            echo "::warning::Transient failures (not blocking PR):"
+            grep -E '^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md
+          fi
+          echo "No broken links found"
 
   fix-links:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
