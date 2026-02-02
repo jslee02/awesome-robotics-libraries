@@ -27,6 +27,23 @@
     last_commit: '2025-10-22'
     language: C++
 
+- name: Brax
+  url: https://github.com/google/brax
+  description: Massively parallel differentiable rigid body physics engine in JAX for robotics and RL.
+  github: google/brax
+  license: Apache-2.0
+  languages:
+  - Python
+  models:
+  - rigid
+  features:
+  - id
+  _meta:
+    stars: 3047
+    last_commit: '2026-01-29'
+    license: Apache-2.0
+    language: Jupyter Notebook
+
 - name: CHRONO::ENGINE
   url: https://projectchrono.org/
   description: Multi-physics simulation of rigid and flexible bodies, granular, and fluid systems.
@@ -97,6 +114,7 @@
   url: https://developer.nvidia.com/flex
   description: GPU-based particle simulation for rigid bodies, fluids, and deformables.
   github: NVIDIAGameWorks/FleX
+  archived: true
   languages:
   - C++
   models:
@@ -107,6 +125,7 @@
   _meta:
     stars: 787
     last_commit: '2021-04-15'
+    archived: true
     language: C++
 
 - name: FROST
@@ -122,6 +141,24 @@
     stars: 169
     last_commit: '2023-11-29'
     language: MATLAB
+
+- name: Genesis
+  url: https://genesis-world.readthedocs.io
+  description: Generative and universal physics platform for robotics with GPU-accelerated parallel simulation.
+  github: Genesis-Embodied-AI/Genesis
+  license: Apache-2.0
+  languages:
+  - Python
+  models:
+  - rigid
+  - soft
+  - fluid
+  - particle
+  _meta:
+    stars: 28074
+    last_commit: '2026-02-02'
+    license: Apache-2.0
+    language: Python
 
 - name: IBDS
   url: http://www.interactive-graphics.de/index.php/downloads/12-ibds
@@ -339,6 +376,28 @@
     last_commit: '2026-01-29'
     license: BSD-3-Clause
     language: C++
+
+- name: Newton
+  url: https://newton-physics.github.io/newton/
+  description: GPU-accelerated differentiable physics engine built on NVIDIA Warp for robotics simulation.
+  github: newton-physics/newton
+  license: Apache-2.0
+  languages:
+  - Python
+  models:
+  - rigid
+  - soft
+  - fluid
+  features:
+  - ik
+  - id
+  - urdf
+  - mjcf
+  _meta:
+    stars: 2465
+    last_commit: '2026-01-31'
+    license: Apache-2.0
+    language: Python
 
 - name: Newton Dynamics
   url: https://newtondynamics.com/

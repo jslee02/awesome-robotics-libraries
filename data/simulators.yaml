@@ -127,8 +127,15 @@
 
 - name: Isaac Sim
   url: https://developer.nvidia.com/isaac/sim
-  description: Nvidia's robotic simulation environment with GPU physics simulation and ray tracing.
+  description: NVIDIA's GPU-accelerated robotics simulation platform built on Omniverse with PhysX 5 and RTX rendering.
+  github: isaac-sim/IsaacSim
+  license: Apache-2.0
   _subsection: Free or Open Source
+  _meta:
+    stars: 2477
+    last_commit: '2025-12-19'
+    license: Apache-2.0
+    language: Python
 
 - name: ManiSkill
   url: https://github.com/haosulab/ManiSkill
