@@ -30,7 +30,7 @@ A curated list of robotics simulators and libraries.
 ###### Free or Open Source
 
 * [AI2-THOR](https://ai2thor.allenai.org/) - Python framework with a Unity backend, providing interaction, navigation, and manipulation support for household based robotic agents [[github](https://github.com/allenai/ai2thor) ![AI2-THOR](https://img.shields.io/github/stars/allenai/ai2thor.svg?style=flat&label=Star&maxAge=86400)]
-* AirSim - Simulator based on Unreal Engine for autonomous vehicles [[github](https://github.com/Microsoft/AirSim) ![AirSim](https://img.shields.io/github/stars/Microsoft/AirSim.svg?style=flat&label=Star&maxAge=86400)]
+* AirSim (archived) - Simulator based on Unreal Engine for autonomous vehicles [[github](https://github.com/Microsoft/AirSim) ![AirSim](https://img.shields.io/github/stars/Microsoft/AirSim.svg?style=flat&label=Star&maxAge=86400)]
 * [ARGoS](https://www.argos-sim.info/) - Physics-based simulator designed to simulate large-scale robot swarms [[github](https://github.com/ilpincy/argos3) ![ilpincy/argos3](https://img.shields.io/github/stars/ilpincy/argos3.svg?style=flat&label=Star&maxAge=86400)]
 * [ARTE](http://arvc.umh.es/arte/index_en.html) - Matlab toolbox focussed on robotic manipulators [[github](https://github.com/4rtur1t0/ARTE) ![4rtur1t0/ARTE](https://img.shields.io/github/stars/4rtur1t0/ARTE.svg?style=flat&label=Star&maxAge=86400)]
 * [AVIS Engine](https://avisengine.com) - Autonomous Vehicles Intelligent simulation software, A Fast and robust simulator software for Autonomous vehicle development. [[github](https://github.com/AvisEngine/AVIS-Engine-Python-API) ![AvisEngine/AVIS-Engine-Python-API](https://img.shields.io/github/stars/AvisEngine/AVIS-Engine-Python-API.svg?style=flat&label=Star&maxAge=86400)]
