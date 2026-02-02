@@ -1,5 +1,5 @@
 # simulators
-# Auto-generated from README.md — do not edit manually after migration
+# Source of truth — edit this file, then run: pixi run generate
 
 - name: AI2-THOR
   url: "https://ai2thor.allenai.org/"

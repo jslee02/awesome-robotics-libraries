@@ -1,5 +1,5 @@
 # motion-planning
-# Auto-generated from README.md — do not edit manually after migration
+# Source of truth — edit this file, then run: pixi run generate
 
 - name: AIKIDO
   url: "https://github.com/personalrobotics/aikido"

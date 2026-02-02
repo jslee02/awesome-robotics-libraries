@@ -1,5 +1,5 @@
 # grasping
-# Auto-generated from README.md — do not edit manually after migration
+# Source of truth — edit this file, then run: pixi run generate
 
 - name: AnyGrasp SDK
   url: "https://github.com/graspnet/anygrasp_sdk"

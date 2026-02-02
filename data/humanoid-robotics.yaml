@@ -1,5 +1,5 @@
 # humanoid-robotics
-# Auto-generated from README.md — do not edit manually after migration
+# Source of truth — edit this file, then run: pixi run generate
 
 - name: Humanoid-Gym
   url: "https://github.com/roboterax/humanoid-gym"

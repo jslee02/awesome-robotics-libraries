@@ -1,5 +1,5 @@
 # reinforcement-learning
-# Auto-generated from README.md — do not edit manually after migration
+# Source of truth — edit this file, then run: pixi run generate
 
 - name: CleanRL
   url: "https://github.com/vwxyzjn/cleanrl"
