@@ -14,9 +14,12 @@ A curated list of robotics simulators and libraries.
   * [Optimization](#optimization)
   * [Robot Modeling](#robot-modeling)
   * [Robot Platform](#robot-platform)
+  * [Reinforcement Learning for Robotics](#reinforcement-learning-for-robotics)
   * [SLAM](#slam)
   * [Vision](#vision)
   * [Fluid](#fluid)
+  * [Grasping](#grasping)
+  * [Humanoid Robotics](#humanoid-robotics)
   * [Multiphysics](#multiphysics)
   * [Math](#math)
   * [ETC](#etc)
@@ -83,39 +86,39 @@ A curated list of robotics simulators and libraries.
 | [IBDS](http://www.interactive-graphics.de/index.php/downloads/12-ibds) | rigid, particle | | C++ | Zlib | | |
 | idyntree | rigid | id | C++, Python, Matlab, Lua | LGPL-2.1 | [github](https://github.com/gbionics/idyntree) | ![idyntree](https://img.shields.io/github/stars/gbionics/idyntree.svg?style=flat&label=Star&maxAge=86400) |
 | [KDL](https://www.orocos.org/kdl.html) | rigid | ik | C++ | LGPL-2.1 | [github](https://github.com/orocos/orocos_kinematics_dynamics) | ![orocos_kinematics_dynamics](https://img.shields.io/github/stars/orocos/orocos_kinematics_dynamics.svg?style=flat&label=Star&maxAge=86400) |
-| kindr | rigid | (todo) | C++, Matlab | BSD-3-Clause | [github](https://github.com/ANYbotics/kindr) | ![kindr](https://img.shields.io/github/stars/ANYbotics/kindr.svg?style=flat&label=Star&maxAge=86400) |
-| [Klampt](https://klampt.org/) | (todo) | (todo) | C++, Python | BSD-3-Clause | [github](https://github.com/krishauser/Klampt) | ![Klampt](https://img.shields.io/github/stars/krishauser/Klampt.svg?style=flat&label=Star&maxAge=86400) |
-| [LibrePilot](http://www.librepilot.org/site/index.html) | uav, vehicles | (todo) | C++ | GPL-3.0 | [bitbucket](https://bitbucket.org/librepilot/librepilot), [github](https://github.com/librepilot/LibrePilot) | ![LibrePilot](https://img.shields.io/github/stars/librepilot/LibrePilot.svg?style=flat&label=Star&maxAge=86400) |
-| [MARS](http://rock-simulation.github.io/mars/) | (todo) | (todo) | C++, Python | LGPL-3.0 | [github](https://github.com/rock-simulation/mars) | ![mars](https://img.shields.io/github/stars/rock-simulation/mars.svg?style=flat&label=Star&maxAge=86400) |
-| [MBDyn](https://www.mbdyn.org/) | (todo) | (todo) | C++ | GPL-2.1 | [download](https://www.mbdyn.org/?Software_Download) | |
-| [MBSim](https://www.mbsim-env.de/) | (todo) | (todo) | C++ | (not specified) | [github](https://github.com/mbsim-env/mbsim) | ![mbsim-env/mbsim](https://img.shields.io/github/stars/mbsim-env/mbsim.svg?style=flat&label=Star&maxAge=86400) |
-| [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) | (todo) | (todo) | C++ | LGPL-3.0 | [github](https://github.com/SIM-TU-Darmstadt/mbslib) | ![mbslib](https://img.shields.io/github/stars/SIM-TU-Darmstadt/mbslib.svg?style=flat&label=Star&maxAge=86400) |
-| metapod | (todo) | (todo) | C++ | LGPL-3.0 | [github](https://github.com/laas/metapod) | ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=flat&label=Star&maxAge=86400) |
+| kindr | rigid | — | C++, Matlab | BSD-3-Clause | [github](https://github.com/ANYbotics/kindr) | ![kindr](https://img.shields.io/github/stars/ANYbotics/kindr.svg?style=flat&label=Star&maxAge=86400) |
+| [Klampt](https://klampt.org/) | — | — | C++, Python | BSD-3-Clause | [github](https://github.com/krishauser/Klampt) | ![Klampt](https://img.shields.io/github/stars/krishauser/Klampt.svg?style=flat&label=Star&maxAge=86400) |
+| [LibrePilot](http://www.librepilot.org/site/index.html) | uav, vehicles | — | C++ | GPL-3.0 | [bitbucket](https://bitbucket.org/librepilot/librepilot), [github](https://github.com/librepilot/LibrePilot) | ![LibrePilot](https://img.shields.io/github/stars/librepilot/LibrePilot.svg?style=flat&label=Star&maxAge=86400) |
+| [MARS](http://rock-simulation.github.io/mars/) | — | — | C++, Python | LGPL-3.0 | [github](https://github.com/rock-simulation/mars) | ![mars](https://img.shields.io/github/stars/rock-simulation/mars.svg?style=flat&label=Star&maxAge=86400) |
+| [MBDyn](https://www.mbdyn.org/) | — | — | C++ | GPL-2.1 | [download](https://www.mbdyn.org/?Software_Download) | |
+| [MBSim](https://www.mbsim-env.de/) | — | — | C++ | (not specified) | [github](https://github.com/mbsim-env/mbsim) | ![mbsim-env/mbsim](https://img.shields.io/github/stars/mbsim-env/mbsim.svg?style=flat&label=Star&maxAge=86400) |
+| [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) | — | — | C++ | LGPL-3.0 | [github](https://github.com/SIM-TU-Darmstadt/mbslib) | ![mbslib](https://img.shields.io/github/stars/SIM-TU-Darmstadt/mbslib.svg?style=flat&label=Star&maxAge=86400) |
+| metapod | — | — | C++ | LGPL-3.0 | [github](https://github.com/laas/metapod) | ![metapod](https://img.shields.io/github/stars/laas/metapod.svg?style=flat&label=Star&maxAge=86400) |
 | [Moby](http://physsim.sourceforge.net/index.html) | rigid | id | C++ | GPL-2.0 | [github](https://github.com/PositronicsLab/Moby) | ![Moby](https://img.shields.io/github/stars/PositronicsLab/Moby.svg?style=flat&label=Star&maxAge=86400) |
 | [mrpt](https://www.mrpt.org/) | vehicle | slam, cv | C++, Python, Matlab | BSD-3-Clause | [github](https://github.com/MRPT/mrpt) | ![mrpt](https://img.shields.io/github/stars/MRPT/mrpt.svg?style=flat&label=Star&maxAge=86400) |
-| [MuJoCo](https://mujoco.org/) | (todo) | id | C++, Python | Apache-2.0 | [github](https://github.com/google-deepmind/mujoco) | ![google-deepmind/mujoco](https://img.shields.io/github/stars/google-deepmind/mujoco.svg?style=flat&label=Star&maxAge=86400) |
-| [mvsim](http://wiki.ros.org/mvsim) | vehicle | (todo) | C++ | GPL-3.0 | [github](https://github.com/MRPT/mvsim) | ![MRPT/mvsim](https://img.shields.io/github/stars/MRPT/mvsim.svg?style=flat&label=Star&maxAge=86400) |
-| [Newton Dynamics](https://newtondynamics.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/MADEAPPS/newton-dynamics) | ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=flat&label=Star&maxAge=86400) |
-| [nphysics](https://nphysics.org/) | (todo) | (todo) | Rust | BSD-3-Clause | [github](https://github.com/dimforge/nphysics) | ![dimforge/nphysics](https://img.shields.io/github/stars/dimforge/nphysics.svg?style=flat&label=Star&maxAge=86400) |
+| [MuJoCo](https://mujoco.org/) | — | id | C++, Python | Apache-2.0 | [github](https://github.com/google-deepmind/mujoco) | ![google-deepmind/mujoco](https://img.shields.io/github/stars/google-deepmind/mujoco.svg?style=flat&label=Star&maxAge=86400) |
+| [mvsim](http://wiki.ros.org/mvsim) | vehicle | — | C++ | GPL-3.0 | [github](https://github.com/MRPT/mvsim) | ![MRPT/mvsim](https://img.shields.io/github/stars/MRPT/mvsim.svg?style=flat&label=Star&maxAge=86400) |
+| [Newton Dynamics](https://newtondynamics.com/) | — | — | C++ | Zlib | [github](https://github.com/MADEAPPS/newton-dynamics) | ![newton-dynamics](https://img.shields.io/github/stars/MADEAPPS/newton-dynamics.svg?style=flat&label=Star&maxAge=86400) |
+| [nphysics](https://nphysics.org/) | — | — | Rust | BSD-3-Clause | [github](https://github.com/dimforge/nphysics) | ![dimforge/nphysics](https://img.shields.io/github/stars/dimforge/nphysics.svg?style=flat&label=Star&maxAge=86400) |
 | [ODE](https://ode.org/) | rigid | | C++ | LGPL-2.1 or BSD-3-Clause | [bitbucket](https://bitbucket.org/odedevs/ode) | |
-| [OpenRAVE](https://www.openrave.org/) | (todo) | (todo) | C++, Python | LGPL-3.0 | [github](https://github.com/rdiankov/openrave) | ![openrave](https://img.shields.io/github/stars/rdiankov/openrave.svg?style=flat&label=Star&maxAge=86400) |
+| [OpenRAVE](https://www.openrave.org/) | — | — | C++, Python | LGPL-3.0 | [github](https://github.com/rdiankov/openrave) | ![openrave](https://img.shields.io/github/stars/rdiankov/openrave.svg?style=flat&label=Star&maxAge=86400) |
 | [pinocchio](https://stack-of-tasks.github.io/pinocchio/) | rigid | ik, id, urdf, analytical derivatives, code generation | C++, Python | BSD-2-Clause | [github](https://github.com/stack-of-tasks/pinocchio) | ![pinocchio](https://img.shields.io/github/stars/stack-of-tasks/pinocchio.svg?style=flat&label=Star&maxAge=86400) |
-| PositionBasedDynamics | (todo) | (todo) | C++ | MIT | [github](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics) | ![PositionBasedDynamics](https://img.shields.io/github/stars/InteractiveComputerGraphics/PositionBasedDynamics.svg?style=flat&label=Star&maxAge=86400) |
-| [PhysX](https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html) | (todo) | (todo) | C++ | unknown | [github](https://github.com/NVIDIA-Omniverse/PhysX) | ![NVIDIA-Omniverse/PhysX](https://img.shields.io/github/stars/NVIDIA-Omniverse/PhysX.svg?style=flat&label=Star&maxAge=86400) |
-| [PyDy](https://www.pydy.org/) | (todo) | (todo) | Python | BSD-3-Clause | [github](https://github.com/pydy/pydy) | ![pydy](https://img.shields.io/github/stars/pydy/pydy.svg?style=flat&label=Star&maxAge=86400) |
+| PositionBasedDynamics | — | — | C++ | MIT | [github](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics) | ![PositionBasedDynamics](https://img.shields.io/github/stars/InteractiveComputerGraphics/PositionBasedDynamics.svg?style=flat&label=Star&maxAge=86400) |
+| [PhysX](https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html) | — | — | C++ | unknown | [github](https://github.com/NVIDIA-Omniverse/PhysX) | ![NVIDIA-Omniverse/PhysX](https://img.shields.io/github/stars/NVIDIA-Omniverse/PhysX.svg?style=flat&label=Star&maxAge=86400) |
+| [PyDy](https://www.pydy.org/) | — | — | Python | BSD-3-Clause | [github](https://github.com/pydy/pydy) | ![pydy](https://img.shields.io/github/stars/pydy/pydy.svg?style=flat&label=Star&maxAge=86400) |
 | [RBDL](https://rbdl.github.io/) | rigid | ik,id,urdf | C++, Python | Zlib | [github](https://github.com/rbdl/rbdl) | ![rbdl](https://img.shields.io/github/stars/rbdl/rbdl.svg?style=flat&label=Star&maxAge=86400) |
-| RBDyn | rigid | (todo) | C++, Python | LGPL-3.0 | [github](https://github.com/jrl-umi3218/RBDyn) | ![RBDyn](https://img.shields.io/github/stars/jrl-umi3218/RBDyn.svg?style=flat&label=Star&maxAge=86400) |
-| [RaiSim](https://slides.com/jeminhwangbo/raisim-manual) | (todo) | (todo) | C++ | [custom](https://github.com/leggedrobotics/raisimLib/blob/a9e7673569997f35c0bc7eb5d11bc4fa188e863c/LICENSE.md) | [github](https://github.com/leggedrobotics/raisimLib) | ![leggedrobotics/raisimLib](https://img.shields.io/github/stars/leggedrobotics/raisimLib.svg?style=flat&label=Star&maxAge=86400) |
-| [ReactPhysics3d](https://www.reactphysics3d.com/) | (todo) | (todo) | C++ | Zlib | [github](https://github.com/DanielChappuis/reactphysics3d) | ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=flat&label=Star&maxAge=86400) |
-| RigidBodyDynamics.jl | rigid | (todo) | Julia | MIT "Expat" | [github](https://github.com/JuliaRobotics/RigidBodyDynamics.jl) | ![RigidBodyDynamics.jl](https://img.shields.io/github/stars/JuliaRobotics/RigidBodyDynamics.jl.svg?style=flat&label=Star&maxAge=86400) |
-| [Rigs of Rods](https://www.rigsofrods.org/) | rigid, soft, vehicle | (todo) | C++ | GPL-3.0 | [github](https://github.com/RigsOfRods/rigs-of-rods) | ![RigsOfRods/rigs-of-rods](https://img.shields.io/github/stars/RigsOfRods/rigs-of-rods.svg?style=flat&label=Star&maxAge=86400) |
-| [Robopy](https://adityadua24.github.io/robopy/) | (todo) | (todo) | Python 3 | MIT | [github](https://github.com/adityadua24/robopy) | ![adityadua24/robopy](https://img.shields.io/github/stars/adityadua24/robopy.svg?style=flat&label=Star&maxAge=86400) |
-| [Robotics Library](https://www.roboticslibrary.org/) | (todo) | (todo) | C++ | GPL-3.0 or BSD-2-Clause | [github](https://github.com/roboticslibrary/rl) | ![rl](https://img.shields.io/github/stars/roboticslibrary/rl.svg?style=flat&label=Star&maxAge=86400) |
-| [RobWork](https://robwork.dk/) | (todo) | (todo) | C++ | Apache-2.0 | [gitlab](https://gitlab.com/sdurobotics/RobWork) | |
-| [siconos](https://nonsmooth.gricad-pages.univ-grenoble-alpes.fr/siconos/) | (todo) | (todo) | C++, Python | Apache-2.0 | [github](https://github.com/siconos/siconos) | ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=flat&label=Star&maxAge=86400) |
+| RBDyn | rigid | — | C++, Python | LGPL-3.0 | [github](https://github.com/jrl-umi3218/RBDyn) | ![RBDyn](https://img.shields.io/github/stars/jrl-umi3218/RBDyn.svg?style=flat&label=Star&maxAge=86400) |
+| [RaiSim](https://slides.com/jeminhwangbo/raisim-manual) | — | — | C++ | [custom](https://github.com/leggedrobotics/raisimLib/blob/a9e7673569997f35c0bc7eb5d11bc4fa188e863c/LICENSE.md) | [github](https://github.com/leggedrobotics/raisimLib) | ![leggedrobotics/raisimLib](https://img.shields.io/github/stars/leggedrobotics/raisimLib.svg?style=flat&label=Star&maxAge=86400) |
+| [ReactPhysics3d](https://www.reactphysics3d.com/) | — | — | C++ | Zlib | [github](https://github.com/DanielChappuis/reactphysics3d) | ![reactphysics3d](https://img.shields.io/github/stars/DanielChappuis/reactphysics3d.svg?style=flat&label=Star&maxAge=86400) |
+| RigidBodyDynamics.jl | rigid | — | Julia | MIT "Expat" | [github](https://github.com/JuliaRobotics/RigidBodyDynamics.jl) | ![RigidBodyDynamics.jl](https://img.shields.io/github/stars/JuliaRobotics/RigidBodyDynamics.jl.svg?style=flat&label=Star&maxAge=86400) |
+| [Rigs of Rods](https://www.rigsofrods.org/) | rigid, soft, vehicle | — | C++ | GPL-3.0 | [github](https://github.com/RigsOfRods/rigs-of-rods) | ![RigsOfRods/rigs-of-rods](https://img.shields.io/github/stars/RigsOfRods/rigs-of-rods.svg?style=flat&label=Star&maxAge=86400) |
+| [Robopy](https://adityadua24.github.io/robopy/) | — | — | Python 3 | MIT | [github](https://github.com/adityadua24/robopy) | ![adityadua24/robopy](https://img.shields.io/github/stars/adityadua24/robopy.svg?style=flat&label=Star&maxAge=86400) |
+| [Robotics Library](https://www.roboticslibrary.org/) | — | — | C++ | GPL-3.0 or BSD-2-Clause | [github](https://github.com/roboticslibrary/rl) | ![rl](https://img.shields.io/github/stars/roboticslibrary/rl.svg?style=flat&label=Star&maxAge=86400) |
+| [RobWork](https://robwork.dk/) | — | — | C++ | Apache-2.0 | [gitlab](https://gitlab.com/sdurobotics/RobWork) | |
+| [siconos](https://nonsmooth.gricad-pages.univ-grenoble-alpes.fr/siconos/) | — | — | C++, Python | Apache-2.0 | [github](https://github.com/siconos/siconos) | ![siconos](https://img.shields.io/github/stars/siconos/siconos.svg?style=flat&label=Star&maxAge=86400) |
 | [Simbody](https://simtk.org/home/simbody/) | rigid, molecules | id, urdf | C++ | Apache-2.0 | [github](https://github.com/simbody/simbody) | ![simbody](https://img.shields.io/github/stars/simbody/simbody.svg?style=flat&label=Star&maxAge=86400) |
-| [SOFA](https://www.sofa-framework.org/) | rigid, soft, medical | (todo) | C++ | LGPL-2.1 | [github](https://github.com/sofa-framework/sofa) | ![sofa](https://img.shields.io/github/stars/sofa-framework/sofa.svg?style=flat&label=Star&maxAge=86400) |
-| Tiny Differentiable Simulator | rigid | (todo) | C++, Python | Apache-2.0 | [github](https://github.com/erwincoumans/tiny-differentiable-simulator) | ![erwincoumans/tiny-differentiable-simulator](https://img.shields.io/github/stars/erwincoumans/tiny-differentiable-simulator.svg?style=flat&label=Star&maxAge=86400) |
+| [SOFA](https://www.sofa-framework.org/) | rigid, soft, medical | — | C++ | LGPL-2.1 | [github](https://github.com/sofa-framework/sofa) | ![sofa](https://img.shields.io/github/stars/sofa-framework/sofa.svg?style=flat&label=Star&maxAge=86400) |
+| Tiny Differentiable Simulator | rigid | — | C++, Python | Apache-2.0 | [github](https://github.com/erwincoumans/tiny-differentiable-simulator) | ![erwincoumans/tiny-differentiable-simulator](https://img.shields.io/github/stars/erwincoumans/tiny-differentiable-simulator.svg?style=flat&label=Star&maxAge=86400) |
 | [trep](http://murpheylab.github.io/trep/) | rigid | dm, trj-opt | C, Python | GPL-3.0 | [github](https://github.com/MurpheyLab/trep) | ![trep](https://img.shields.io/github/stars/MurpheyLab/trep.svg?style=flat&label=Star&maxAge=86400) |
 | qu3e | rigid | - | C++ | Zlib | [github](https://github.com/RandyGaul/qu3e) | ![qu3e](https://img.shields.io/github/stars/RandyGaul/qu3e.svg?style=flat&label=Star&maxAge=86400) |
 
@@ -264,6 +267,15 @@ For simplicity, shortened names are used to represent the supported models and f
 * [ROS 2](https://github.com/ros2/ros2/wiki) - Version 2.0 of the Robot Operating System (ROS) software stack [[github repos](https://github.com/ros2)]
 * [YARP](https://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices [[github](https://github.com/robotology/yarp) ![robotology/yarp](https://img.shields.io/github/stars/robotology/yarp.svg?style=flat&label=Star&maxAge=86400)]
 
+### [Reinforcement Learning for Robotics](#contents)
+
+| Name | Stars |
+|------|-------|
+| [CleanRL](https://github.com/vwxyzjn/cleanrl) | [![GitHub stars](https://img.shields.io/github/stars/vwxyzjn/cleanrl.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/vwxyzjn/cleanrl) |
+| [rl_games](https://github.com/Denys88/rl_games) | [![GitHub stars](https://img.shields.io/github/stars/Denys88/rl_games.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/Denys88/rl_games) |
+| [SKRL](https://github.com/Toni-SM/skrl) | [![GitHub stars](https://img.shields.io/github/stars/Toni-SM/skrl.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/Toni-SM/skrl) |
+| [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3) | [![GitHub stars](https://img.shields.io/github/stars/DLR-RM/stable-baselines3.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/DLR-RM/stable-baselines3) |
+
 ### [SLAM](#contents)
 
 * AprilSAM - Real-time smoothing and mapping [[github](https://github.com/xipengwang/AprilSAM) ![xipengwang/AprilSAM](https://img.shields.io/github/stars/xipengwang/AprilSAM.svg?style=flat&label=Star&maxAge=86400)]
@@ -291,6 +303,23 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Fluid](#contents)
 
 * [Fluid Engine Dev - Jet](https://fluidenginedevelopment.org/) - Fluid simulation engine for computer graphics applications [[github](https://github.com/doyubkim/fluid-engine-dev) ![doyubkim/fluid-engine-dev](https://img.shields.io/github/stars/doyubkim/fluid-engine-dev.svg?style=flat&label=Star&maxAge=86400)]
+
+### [Grasping](#contents)
+
+| Name | Stars |
+|------|-------|
+| [AnyGrasp SDK](https://github.com/graspnet/anygrasp_sdk) | [![GitHub stars](https://img.shields.io/github/stars/graspnet/anygrasp_sdk.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/graspnet/anygrasp_sdk) |
+| [Contact-GraspNet](https://github.com/NVlabs/contact_graspnet) | [![GitHub stars](https://img.shields.io/github/stars/NVlabs/contact_graspnet.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/NVlabs/contact_graspnet) |
+| [GraspNet API](https://github.com/graspnet/graspnetAPI) | [![GitHub stars](https://img.shields.io/github/stars/graspnet/graspnetAPI.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/graspnet/graspnetAPI) |
+| [GraspIt!](https://graspit-simulator.github.io/) | [![GitHub stars](https://img.shields.io/github/stars/graspit-simulator/graspit.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/graspit-simulator/graspit) |
+
+### [Humanoid Robotics](#contents)
+
+| Name | Stars |
+|------|-------|
+| [Humanoid-Gym](https://github.com/roboterax/humanoid-gym) | [![GitHub stars](https://img.shields.io/github/stars/roboterax/humanoid-gym.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/roboterax/humanoid-gym) |
+| [Legged Gym](https://github.com/leggedrobotics/legged_gym) | [![GitHub stars](https://img.shields.io/github/stars/leggedrobotics/legged_gym.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/leggedrobotics/legged_gym) |
+| [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie) | [![GitHub stars](https://img.shields.io/github/stars/google-deepmind/mujoco_menagerie.svg?style=flat&amp;label=Star&amp;maxAge=86400)](https://github.com/google-deepmind/mujoco_menagerie) |
 
 ### [Multiphysics](#contents)
 
