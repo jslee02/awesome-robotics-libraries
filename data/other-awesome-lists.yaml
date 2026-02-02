@@ -4,10 +4,12 @@
 - name: Awesome Robotics
   url: "https://github.com/Kiloreux/awesome-robotics"
   github: Kiloreux/awesome-robotics
+  description: (Kiloreux)
 
 - name: Awesome Robotics
   url: "https://github.com/ahundt/awesome-robotics"
   github: ahundt/awesome-robotics
+  description: (ahundt)
 
 - name: Awesome Robotic Tooling
   url: "https://github.com/Ly0n/awesome-robotic-tooling"

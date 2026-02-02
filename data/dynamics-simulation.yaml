@@ -86,6 +86,7 @@
 
 - name: LibrePilot
   url: "http://www.librepilot.org/site/index.html"
+  bitbucket: librepilot/librepilot
   github: librepilot/LibrePilot
   license: GPL-3.0
   languages: [C++]

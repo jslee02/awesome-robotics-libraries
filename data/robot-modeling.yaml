@@ -4,7 +4,7 @@
 - name: SDF
   url: "http://sdformat.org/"
   bitbucket: osrf/sdformat
-  description: "XML format that describes objects and environments for robot simulators, visualization, and control (bitbucket)"
+  description: XML format that describes objects and environments for robot simulators, visualization, and control
   _subsection: Robot Model Description Format
 
 - name: urdf
