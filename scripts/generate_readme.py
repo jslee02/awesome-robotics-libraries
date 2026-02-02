@@ -144,17 +144,17 @@ def _render_dynamics_row(entry: dict) -> str:
     languages = ", ".join(entry.get("languages", [])) or "—"
     license_val = entry.get("license", "—") or "—"
 
-    # Code cell
+    # Code cell (show all available repo links)
+    code_parts = []
+    if bitbucket:
+        code_parts.append(f"[bitbucket](https://bitbucket.org/{bitbucket})")
     if github:
-        code_cell = f"[github](https://github.com/{github})"
-    elif bitbucket:
-        code_cell = f"[bitbucket](https://bitbucket.org/{bitbucket})"
-    elif gitlab:
-        code_cell = f"[gitlab](https://gitlab.com/{gitlab})"
-    elif code_url:
-        code_cell = f"[download]({code_url})"
-    else:
-        code_cell = ""
+        code_parts.append(f"[github](https://github.com/{github})")
+    if gitlab:
+        code_parts.append(f"[gitlab](https://gitlab.com/{gitlab})")
+    if not code_parts and code_url:
+        code_parts.append(f"[download]({code_url})")
+    code_cell = ", ".join(code_parts)
 
     # Popularity cell
     if github:

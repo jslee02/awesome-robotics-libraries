@@ -60,7 +60,6 @@
 
 - name: ROS Behavior Tree
   github: miccol/ROS-Behavior-Tree
-  description: "[github ]"
 
 - name: Ruckig
   url: "https://github.com/pantor/ruckig"
@@ -112,6 +111,7 @@
 
 - name: Faster cover trees
   url: "http://proceedings.mlr.press/v37/izbicki15.pdf"
+  description: by Mike Izbicki et al., ICML 2015.
   _subsection: Nearest Neighbor
 
 - name: FLANN

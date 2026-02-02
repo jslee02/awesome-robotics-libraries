@@ -7,4 +7,5 @@
 
 - name: Foxglove Studio
   url: "https://foxglove.dev"
+  description: "A fully integrated visualization and debugging desktop app for your robotics data"
 
