@@ -4,12 +4,16 @@
 - name: Humanoid-Gym
   url: "https://github.com/roboterax/humanoid-gym"
   github: roboterax/humanoid-gym
+  description: Reinforcement learning environment for humanoid robot locomotion.
+
 
 - name: Legged Gym
   url: "https://github.com/leggedrobotics/legged_gym"
   github: leggedrobotics/legged_gym
+  description: Isaac Gym environments for legged robot locomotion training.
+
 
 - name: MuJoCo Menagerie
   url: "https://github.com/google-deepmind/mujoco_menagerie"
   github: google-deepmind/mujoco_menagerie
-
+  description: Collection of well-tuned MuJoCo models for research and development.

@@ -2,25 +2,24 @@
 # Source of truth — edit this file, then run: pixi run generate
 
 - name: SDF
-  url: "http://sdformat.org/"
+  url: http://sdformat.org/
   bitbucket: osrf/sdformat
-  description: XML format that describes objects and environments for robot simulators, visualization, and control
+  description: XML format that describes objects and environments for robot simulators, visualization, and control.
   _subsection: Robot Model Description Format
 
 - name: urdf
-  url: "http://wiki.ros.org/urdf"
+  url: http://wiki.ros.org/urdf
   github: ros/urdfdom
-  description: XML format for representing a robot model
+  description: XML format for representing a robot model.
   _subsection: Robot Model Description Format
 
 - name: onshape-to-robot
-  url: "https://github.com/Rhoban/onshape-to-robot"
+  url: https://github.com/Rhoban/onshape-to-robot
   github: Rhoban/onshape-to-robot
-  description: Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API
+  description: Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API.
   _subsection: Utility to Build Robot Models
 
 - name: phobos
   github: dfki-ric/phobos
-  description: Add-on for Blender creating URDF and SMURF robot models
+  description: Add-on for Blender creating URDF and SMURF robot models.
   _subsection: Utility to Build Robot Models
-

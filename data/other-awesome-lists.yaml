@@ -2,58 +2,57 @@
 # Source of truth — edit this file, then run: pixi run generate
 
 - name: Awesome Robotics
-  url: "https://github.com/Kiloreux/awesome-robotics"
+  url: https://github.com/Kiloreux/awesome-robotics
   github: Kiloreux/awesome-robotics
-  description: (Kiloreux)
+  description: (Kiloreux).
 
 - name: Awesome Robotics
-  url: "https://github.com/ahundt/awesome-robotics"
+  url: https://github.com/ahundt/awesome-robotics
   github: ahundt/awesome-robotics
-  description: (ahundt)
+  description: (ahundt).
 
 - name: Awesome Robotic Tooling
-  url: "https://github.com/Ly0n/awesome-robotic-tooling"
+  url: https://github.com/Ly0n/awesome-robotic-tooling
   github: Ly0n/awesome-robotic-tooling
 
 - name: Awesome Artificial Intelligence
-  url: "https://github.com/owainlewis/awesome-artificial-intelligence"
+  url: https://github.com/owainlewis/awesome-artificial-intelligence
   github: owainlewis/awesome-artificial-intelligence
 
 - name: Awesome Collision Detection
-  url: "https://github.com/jslee02/awesome-collision-detection"
+  url: https://github.com/jslee02/awesome-collision-detection
   github: jslee02/awesome-collision-detection
 
 - name: Awesome Computer Vision
-  url: "https://github.com/jbhuang0604/awesome-computer-vision"
+  url: https://github.com/jbhuang0604/awesome-computer-vision
   github: jbhuang0604/awesome-computer-vision
 
 - name: Awesome Machine Learning
-  url: "https://github.com/josephmisiti/awesome-machine-learning"
+  url: https://github.com/josephmisiti/awesome-machine-learning
   github: josephmisiti/awesome-machine-learning
 
 - name: Awesome Deep Learning
-  url: "https://github.com/ChristosChristofidis/awesome-deep-learning"
+  url: https://github.com/ChristosChristofidis/awesome-deep-learning
   github: ChristosChristofidis/awesome-deep-learning
 
 - name: Awesome Gazebo
-  url: "https://github.com/fkromer/awesome-gazebo"
+  url: https://github.com/fkromer/awesome-gazebo
   github: fkromer/awesome-gazebo
 
 - name: Awesome Grasping
-  url: "https://github.com/Po-Jen/awesome-grasping"
+  url: https://github.com/Po-Jen/awesome-grasping
   github: Po-Jen/awesome-grasping
 
 - name: Awesome Human Robot Interaction
-  url: "https://github.com/Po-Jen/awesome-human-robot-interaction"
+  url: https://github.com/Po-Jen/awesome-human-robot-interaction
   github: Po-Jen/awesome-human-robot-interaction
 
 - name: PythonRobotics
-  url: "https://github.com/AtsushiSakai/PythonRobotics"
+  url: https://github.com/AtsushiSakai/PythonRobotics
   github: AtsushiSakai/PythonRobotics
-  description: Python sample codes for robotics algorithms
+  description: Python sample codes for robotics algorithms.
 
 - name: Robotics Coursework
-  url: "https://github.com/mithi/robotics-coursework"
+  url: https://github.com/mithi/robotics-coursework
   github: mithi/robotics-coursework
-  description: A list of robotics courses you can take online
-
+  description: A list of robotics courses you can take online.

@@ -2,17 +2,16 @@
 # Source of truth — edit this file, then run: pixi run generate
 
 - name: ViSP
-  url: "http://visp.inria.fr/"
+  url: http://visp.inria.fr/
   github: lagadic/visp
-  description: Visual Servoing Platform
+  description: Visual Servoing Platform.
 
 - name: BundleTrack
-  url: "https://github.com/wenbowen123/BundleTrack"
+  url: https://github.com/wenbowen123/BundleTrack
   github: wenbowen123/BundleTrack
-  description: 6D Pose Tracking for Novel Objects without 3D Models
+  description: 6D Pose Tracking for Novel Objects without 3D Models.
 
 - name: se(3)-TrackNet
-  url: "https://github.com/wenbowen123/iros20-6d-pose-tracking"
+  url: https://github.com/wenbowen123/iros20-6d-pose-tracking
   github: wenbowen123/iros20-6d-pose-tracking
-  description: 6D Pose Tracking for Novel Objects without 3D Models
-
+  description: 6D Pose Tracking for Novel Objects without 3D Models.

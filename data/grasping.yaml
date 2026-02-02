@@ -4,16 +4,22 @@
 - name: AnyGrasp SDK
   url: "https://github.com/graspnet/anygrasp_sdk"
   github: graspnet/anygrasp_sdk
+  description: SDK for AnyGrasp, a 6-DoF grasp pose detection method.
+
 
 - name: Contact-GraspNet
   url: "https://github.com/NVlabs/contact_graspnet"
   github: NVlabs/contact_graspnet
+  description: 6-DoF grasp generation for parallel-jaw grippers using contact maps.
+
 
 - name: GraspNet API
   url: "https://github.com/graspnet/graspnetAPI"
   github: graspnet/graspnetAPI
+  description: Python API and evaluation tools for the GraspNet benchmark.
+
 
 - name: "GraspIt!"
   url: "https://graspit-simulator.github.io/"
   github: graspit-simulator/graspit
-
+  description: Simulator for grasping research that can accommodate arbitrary hand and robot designs.

@@ -28,19 +28,40 @@ SECTIONS = [
         "reinforcement-learning",
         "Reinforcement Learning for Robotics",
         3,
-        "simple_table",
+        "bullet",
         None,
     ),
     ("slam", "SLAM", 3, "bullet", 4),
     ("vision", "Vision", 3, "bullet", None),
     ("fluid", "Fluid", 3, "bullet", None),
-    ("grasping", "Grasping", 3, "simple_table", None),
-    ("humanoid-robotics", "Humanoid Robotics", 3, "simple_table", None),
+    ("grasping", "Grasping", 3, "bullet", None),
+    ("humanoid-robotics", "Humanoid Robotics", 3, "bullet", None),
     ("multiphysics", "Multiphysics", 3, "bullet", None),
     ("math", "Math", 3, "bullet", None),
     ("etc", "ETC", 3, "bullet", None),
     ("other-awesome-lists", "Other Awesome Lists", 2, "other_awesome", None),
 ]
+
+SECTION_DESCRIPTIONS: dict[str, str] = {
+    "simulators": "Simulation environments for testing and developing robotic systems.",
+    "dynamics-simulation": "Physics engines and rigid/soft body dynamics libraries for robotics.",
+    "inverse-kinematics": "Libraries for computing joint configurations from end-effector poses.",
+    "machine-learning": "Machine learning frameworks and tools applied to robotics.",
+    "motion-planning": "Libraries for robot motion planning, trajectory optimization, and control.",
+    "optimization": "Numerical optimization solvers and frameworks used in robotics.",
+    "robot-modeling": "Tools and formats for describing robot models.",
+    "robot-platform": "Middleware and frameworks for building robot software systems.",
+    "reinforcement-learning": "Reinforcement learning libraries commonly used in robotic control.",
+    "slam": "Simultaneous Localization and Mapping libraries.",
+    "vision": "Computer vision libraries for robotic perception.",
+    "fluid": "Fluid dynamics simulation libraries.",
+    "grasping": "Libraries and tools for robotic grasping and manipulation.",
+    "humanoid-robotics": "Environments and models for humanoid robot research.",
+    "multiphysics": "Frameworks for coupled multi-physics simulations.",
+    "math": "Mathematics libraries for spatial algebra, Lie groups, and linear algebra.",
+    "etc": "Other robotics-related tools and utilities.",
+    "other-awesome-lists": "Related curated lists of robotics and AI resources.",
+}
 
 # Subsection ordering per section
 SUBSECTION_ORDER = {
@@ -395,6 +416,11 @@ def generate(data_dir: Path) -> str:
         hashes = "#" * level
         out.append(f"{hashes} [{display}](#contents)")
         out.append("")
+
+        section_desc = SECTION_DESCRIPTIONS.get(key)
+        if section_desc:
+            out.append(f"_{section_desc}_")
+            out.append("")
 
         body = _render_section(key, entries, mode, sub_hl)
         out.append(body)
