@@ -1,0 +1,104 @@
+# optimization
+# Source of truth — edit this file, then run: pixi run generate
+
+- name: CasADi
+  url: "https://github.com/casadi/casadi/wiki"
+  github: casadi/casadi
+  description: Symbolic framework for algorithmic differentiation and numeric optimization
+
+- name: Ceres Solver
+  url: "http://ceres-solver.org/"
+  github: ceres-solver/ceres-solver
+  description: Large scale nonlinear optimization library
+
+- name: eigen-qld
+  github: jrl-umi3218/eigen-qld
+  description: Interface to use the QLD QP solver with the Eigen3 library
+
+- name: EXOTica
+  github: ipab-slmc/exotica
+  description: Generic optimisation toolset for robotics platforms
+
+- name: hpipm
+  github: giaf/hpipm
+  description: "High-performance interior-point-method QP solvers (Ipopt, Snopt)"
+
+- name: HYPRE
+  url: "https://hypre.readthedocs.io/"
+  github: hypre-space/hypre
+  description: Parallel solvers for sparse linear systems featuring multigrid methods
+
+- name: ifopt
+  github: ethz-adrl/ifopt
+  description: "An Eigen-based, light-weight C++ Interface to Nonlinear Programming Solvers (Ipopt, Snopt)"
+
+- name: Ipopt
+  url: "https://projects.coin-or.org/Ipopt"
+  github: coin-or/Ipopt
+  description: Large scale nonlinear optimization library
+
+- name: libcmaes
+  github: CMA-ES/libcmaes
+  description: Blackbox stochastic optimization using the CMA-ES algorithm
+
+- name: limbo
+  url: "http://www.resibots.eu/limbo/"
+  github: resibots/limbo
+  description: Gaussian processes and Bayesian optimization of black-box functions
+
+- name: lpsolvers
+  github: stephane-caron/lpsolvers
+  description: Linear Programming solvers in Python with a unified API
+
+- name: NLopt
+  url: "https://nlopt.readthedocs.io/en/latest/"
+  github: stevengj/nlopt
+  description: Nonlinear optimization
+
+- name: OptimLib
+  url: "https://www.kthohr.com/optimlib.html"
+  github: kthohr/optim
+  description: Lightweight C++ library of numerical optimization methods for nonlinear functions
+
+- name: OSQP
+  url: "https://osqp.org/"
+  github: osqp/osqp
+  description: The Operator Splitting QP Solver
+
+- name: Pagmo
+  url: "https://esa.github.io/pagmo2/index.html"
+  github: esa/pagmo2
+  description: Scientific library for massively parallel optimization
+
+- name: ProxSuite
+  url: "https://simple-robotics.github.io/proxsuite/"
+  github: Simple-Robotics/ProxSuite
+  description: The Advanced Proximal Optimization Toolbox
+
+- name: pymoo
+  url: "https://www.pymoo.org/"
+  github: msu-coinlab/pymoo
+  description: Multi-objective Optimization in Python
+
+- name: qpsolvers
+  github: qpsolvers/qpsolvers
+  description: Quadratic Programming solvers in Python with a unified API
+
+- name: RobOptim
+  url: "http://roboptim.net/index.html"
+  github: roboptim/roboptim-core
+  description: Numerical Optimization for Robotics.
+
+- name: SCS
+  url: "http://web.stanford.edu/~boyd/papers/scs.html"
+  github: cvxgrp/scs
+  description: Numerical optimization for solving large-scale convex cone problems
+
+- name: SHOT
+  github: coin-or/SHOT
+  description: A solver for mixed-integer nonlinear optimization problems
+
+- name: sferes2
+  github: sferes2/sferes2
+  description: Evolutionary computation
+

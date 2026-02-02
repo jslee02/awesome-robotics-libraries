@@ -1,0 +1,29 @@
+name: Report an Issue
+description: Report a broken link, incorrect information, or other issue
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Issue Type
+      options:
+        - Broken link
+        - Incorrect information
+        - Missing information
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: entry
+    attributes:
+      label: Affected Entry
+      description: Which library or section is affected?
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue
+    validations:
+      required: true

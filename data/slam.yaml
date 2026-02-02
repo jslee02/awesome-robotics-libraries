@@ -1,0 +1,57 @@
+# slam
+# Source of truth — edit this file, then run: pixi run generate
+
+- name: AprilSAM
+  github: xipengwang/AprilSAM
+  description: Real-time smoothing and mapping
+
+- name: Cartographer
+  github: cartographer-project/cartographer
+  description: Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations
+
+- name: DSO
+  url: "https://vision.in.tum.de/research/vslam/dso"
+  github: JakobEngel/dso
+  description: Novel direct and sparse formulation for Visual Odometry
+
+- name: ElasticFusion
+  github: mp3guy/ElasticFusion
+  description: Real-time dense visual SLAM system
+
+- name: fiducials
+  url: "http://wiki.ros.org/fiducials"
+  github: UbiquityRobotics/fiducials
+  description: Simultaneous localization and mapping using fiducial markers
+
+- name: GTSAM
+  github: borglab/gtsam
+  description: Smoothing and mapping (SAM) in robotics and vision
+
+- name: Kintinuous
+  github: mp3guy/Kintinuous
+  description: Real-time large scale dense visual SLAM system
+
+- name: LSD-SLAM
+  url: "https://vision.in.tum.de/research/vslam/lsdslam"
+  github: tum-vision/lsd_slam
+  description: Real-time monocular SLAM
+
+- name: ORB-SLAM2
+  github: raulmur/ORB_SLAM2
+  description: "Real-time SLAM library for Monocular, Stereo and RGB-D cameras"
+
+- name: RTAP-Map
+  url: "http://introlab.github.io/rtabmap/"
+  github: introlab/rtabmap
+  description: RGB-D Graph SLAM approach based on a global Bayesian loop closure detector
+
+- name: SRBA
+  url: "http://mrpt.github.io/srba/"
+  github: MRPT/srba
+  description: Solving SLAM/BA in relative coordinates with flexibility for different submapping strategies
+
+- name: Awesome SLAM Datasets
+  url: "https://github.com/youngguncho/awesome-slam-datasets"
+  github: youngguncho/awesome-slam-datasets
+  _subsection: SLAM Dataset
+

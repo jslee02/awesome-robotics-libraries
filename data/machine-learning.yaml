@@ -1,0 +1,74 @@
+# machine-learning
+# Source of truth — edit this file, then run: pixi run generate
+
+- name: AllenAct
+  url: "https://allenact.org/"
+  github: allenai/allenact
+  description: Python/PyTorch-based Research Framework for Embodied AI
+
+- name: Any4LeRobot
+  github: Tavish9/any4lerobot
+  description: A collection of utilities and tools for LeRobot
+
+- name: DLL
+  github: wichtounet/dll
+  description: Deep Learning Library (DLL) for C++
+
+- name: DyNet
+  url: "https://dynet.readthedocs.io/en/latest/"
+  github: clab/dynet
+  description: The Dynamic Neural Network Toolkit
+
+- name: Fido
+  url: "http://fidoproject.github.io/"
+  github: FidoProject/Fido
+  description: Lightweight C++ machine learning library for embedded electronics and robotics
+
+- name: Ivy
+  url: "https://lets-unify.ai/"
+  github: ivy-llc/ivy
+  description: Unified Machine Learning Framework
+
+- name: LeRobot
+  github: huggingface/lerobot
+  description: "State-of-the-art approaches, pretrained models, datasets, and simulation environments for real-world robotics in PyTorch."
+
+- name: LeRobot Episode Scoring Toolkit
+  url: "https://github.com/RoboticsData/score_lerobot_episodes"
+  github: RoboticsData/score_lerobot_episodes
+  description: "One-click tool to score, filter, and export higher-quality LeRobot datasets."
+
+- name: MiniDNN
+  github: yixuan/MiniDNN
+  description: A header-only C++ library for deep neural networks
+
+- name: mlpack
+  url: "https://www.mlpack.org/"
+  github: mlpack/mlpack
+  description: Scalable C++ machine learning library
+
+- name: Gymnasium
+  url: "https://gymnasium.farama.org/"
+  github: Farama-Foundation/Gymnasium
+  description: Developing and comparing reinforcement learning algorithms
+
+- name: gym-dart
+  github: DartEnv/dart-env
+
+- name: gym-gazebo
+  github: erlerobot/gym-gazebo
+
+- name: RLLib
+  github: samindaa/RLLib
+  description: Temporal-difference learning algorithms in reinforcement learning
+
+- name: robosuite
+  url: "https://robosuite.ai"
+  github: ARISE-Initiative/robosuite
+  description: A modular simulation framework and benchmark for robot learning
+
+- name: tiny-dnn
+  url: "http://tiny-dnn.readthedocs.io/en/latest/"
+  github: tiny-dnn/tiny-dnn
+  description: "Header only, dependency-free deep learning framework in C++14"
+

@@ -1,0 +1,15 @@
+# humanoid-robotics
+# Source of truth — edit this file, then run: pixi run generate
+
+- name: Humanoid-Gym
+  url: "https://github.com/roboterax/humanoid-gym"
+  github: roboterax/humanoid-gym
+
+- name: Legged Gym
+  url: "https://github.com/leggedrobotics/legged_gym"
+  github: leggedrobotics/legged_gym
+
+- name: MuJoCo Menagerie
+  url: "https://github.com/google-deepmind/mujoco_menagerie"
+  github: google-deepmind/mujoco_menagerie
+

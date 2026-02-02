@@ -1,0 +1,11 @@
+# etc
+# Source of truth — edit this file, then run: pixi run generate
+
+- name: fuse
+  github: locusrobotics/fuse
+  description: General architecture for performing sensor fusion live on a robot
+
+- name: Foxglove Studio
+  url: "https://foxglove.dev"
+  description: "A fully integrated visualization and debugging desktop app for your robotics data"
+

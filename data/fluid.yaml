@@ -1,0 +1,8 @@
+# fluid
+# Source of truth — edit this file, then run: pixi run generate
+
+- name: Fluid Engine Dev - Jet
+  url: "https://fluidenginedevelopment.org/"
+  github: doyubkim/fluid-engine-dev
+  description: Fluid simulation engine for computer graphics applications
+
