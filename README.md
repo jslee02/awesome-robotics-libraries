@@ -1,8 +1,10 @@
 # Awesome Robotics Libraries
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
 A curated list of robotics simulators and libraries.
 
-#### Table of Contents
+## Contents
 * [Simulators](#simulators)
 * [Libraries](#libraries)
   * [Dynamics Simulation](#dynamics-simulation)
@@ -19,9 +21,8 @@ A curated list of robotics simulators and libraries.
   * [Math](#math)
   * [ETC](#etc)
 * [Other Awesome Lists](#other-awesome-lists)
-* [Contributing](#contributing)
 
-## [Simulators](#awesome-robotics-libraries)
+## [Simulators](#contents)
 
 ###### Free or Open Source
 
@@ -55,7 +56,7 @@ A curated list of robotics simulators and libraries.
 * [Artiminds](https://www.artiminds.com/) - Planning, programming, operation, analysis and optimization
 * [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics and digital mock-up review applications
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots
-* [RobotStudio](http://new.abb.com/products/robotics/robotstudio)
+* [RobotStudio](https://www.abb.com/global/en/areas/robotics/products/software/robotstudio-suite)
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/)
 * [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/)
 * [Visual Components](https://www.visualcomponents.com/)
@@ -64,9 +65,9 @@ A curated list of robotics simulators and libraries.
 
 * [AWS RoboMaker](https://aws.amazon.com/robomaker/) - Service that makes it easy to develop, test, and deploy intelligent robotics applications at scale
 
-## [Libraries](#awesome-robotics-libraries)
+## [Libraries](#contents)
 
-### [Dynamics Simulation](#awesome-robotics-libraries)
+### [Dynamics Simulation](#contents)
 
 > :warning: The following table is not complete. Please feel free to report if you find something incorrect or missing.
 
@@ -143,7 +144,7 @@ For simplicity, shortened names are used to represent the supported models and f
   * urdf: [urdf](http://wiki.ros.org/urdf) parser
   * sdf: [sdf](http://sdformat.org/) parser
 
-### [Inverse Kinematics](#awesome-robotics-libraries)
+### [Inverse Kinematics](#contents)
 
   * IKBT - A python package to solve robot arm inverse kinematics in symbolic form [[github](https://github.com/uw-biorobotics/IKBT) ![uw-biorobotics/IKBT](https://img.shields.io/github/stars/uw-biorobotics/IKBT.svg?style=flat&label=Star&maxAge=86400)]
   * Kinpy - A simple pure python package to solve inverse kinematics [[github](https://github.com/neka-nat/kinpy) ![neka-nat/kinpy](https://img.shields.io/github/stars/neka-nat/kinpy.svg?style=flat&label=Star&maxAge=86400)]
@@ -151,7 +152,7 @@ For simplicity, shortened names are used to represent the supported models and f
   * RelaxedIK - Real-time Synthesis of Accurate and Feasible Robot Arm Motion [[github](https://github.com/uwgraphics/relaxed_ik) ![uwgraphics/relaxed_ik](https://img.shields.io/github/stars/uwgraphics/relaxed_ik.svg?style=flat&label=Star&maxAge=86400)]
   * [Trip](https://trip-kinematics.readthedocs.io/en/main/index.html) - A python package that solves inverse kinematics of parallel-, serial- or hybrid-robots [[github](https://github.com/TriPed-Robot/trip_kinematics) ![TriPed-Robot/trip_kinematics](https://img.shields.io/github/stars/TriPed-Robot/trip_kinematics.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Machine Learning](#awesome-robotics-libraries)
+### [Machine Learning](#contents)
 
 * [AllenAct](https://allenact.org/) - Python/PyTorch-based Research Framework for Embodied AI [[github](https://github.com/allenai/allenact) ![wichtounet/dll](https://img.shields.io/github/stars/allenai/allenact.svg?style=flat&label=Star&maxAge=86400)]
 * Any4LeRobot - A collection of utilities and tools for LeRobot [[github](https://github.com/Tavish9/any4lerobot) ![wichtounet/dll](https://img.shields.io/github/stars/Tavish9/any4lerobot.svg?style=flat&label=Star&maxAge=86400)]
@@ -170,7 +171,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [robosuite](https://robosuite.ai) - A modular simulation framework and benchmark for robot learning [[github](https://github.com/ARISE-Initiative/robosuite) ![ARISE-Initiative/robosuite](https://img.shields.io/github/stars/ARISE-Initiative/robosuite.svg?style=flat&label=Star&maxAge=86400)]
 * [tiny-dnn](http://tiny-dnn.readthedocs.io/en/latest/) - Header only, dependency-free deep learning framework in C++14 [[github](https://github.com/tiny-dnn/tiny-dnn) ![tiny-dnn/tiny-dnn](https://img.shields.io/github/stars/tiny-dnn/tiny-dnn.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Motion Planning and Control](#awesome-robotics-libraries)
+### [Motion Planning and Control](#contents)
 
 * [AIKIDO](https://github.com/personalrobotics/aikido) - Solving robotic motion planning and decision making problems. [[github](https://github.com/personalrobotics/aikido) ![aikido](https://img.shields.io/github/stars/personalrobotics/aikido.svg?style=flat&label=Star&maxAge=86400)]
 * Bioptim - Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics [[github](https://github.com/pyomeca/bioptim) ![pyomeca/bioptim](https://img.shields.io/github/stars/pyomeca/bioptim.svg?style=flat&label=Star&maxAge=86400)]
@@ -217,7 +218,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * Utility Software
   * [Goxel](https://guillaumechereau.github.io/goxel/) - Free and open source 3D voxel editor [[github](https://github.com/guillaumechereau/goxel) ![guillaumechereau/goxel](https://img.shields.io/github/stars/guillaumechereau/goxel.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Optimization](#awesome-robotics-libraries)
+### [Optimization](#contents)
 
 * [CasADi](https://github.com/casadi/casadi/wiki) - Symbolic framework for algorithmic differentiation and numeric optimization [[github](https://github.com/casadi/casadi) ![casadi](https://img.shields.io/github/stars/casadi/casadi.svg?style=flat&label=Star&maxAge=86400)]
 * [Ceres Solver](http://ceres-solver.org/) - Large scale nonlinear optimization library [[github](https://github.com/ceres-solver/ceres-solver) ![ceres-solver](https://img.shields.io/github/stars/ceres-solver/ceres-solver.svg?style=flat&label=Star&maxAge=86400)]
@@ -242,7 +243,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * SHOT - A solver for mixed-integer nonlinear optimization problems [[github](https://github.com/coin-or/SHOT) ![coin-or/SHOT](https://img.shields.io/github/stars/coin-or/SHOT.svg?style=flat&label=Star&maxAge=86400)]
 * sferes2 - Evolutionary computation [[github](https://github.com/sferes2/sferes2) ![sferes2/sferes2](https://img.shields.io/github/stars/sferes2/sferes2.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Robot Modeling](#awesome-robotics-libraries)
+### [Robot Modeling](#contents)
 
 ###### Robot Model Description Format
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control ([bitbucket](https://bitbucket.org/osrf/sdformat))
@@ -252,7 +253,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [onshape-to-robot](https://github.com/Rhoban/onshape-to-robot) - Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API [[github](https://github.com/Rhoban/onshape-to-robot) ![phobos](https://img.shields.io/github/stars/Rhoban/onshape-to-robot.svg?style=flat&label=Star&maxAge=86400)]
 * phobos - Add-on for Blender creating URDF and SMURF robot models [[github](https://github.com/dfki-ric/phobos) ![phobos](https://img.shields.io/github/stars/dfki-ric/phobos.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Robot Platform](#awesome-robotics-libraries)
+### [Robot Platform](#contents)
 
 * [AutoRally](http://autorally.github.io/) - High-performance testbed for advanced perception and control research [[github](https://github.com/autorally/autorally) ![autorally/autorally](https://img.shields.io/github/stars/autorally/autorally.svg?style=flat&label=Star&maxAge=86400)]
 * [Linorobot](https://linorobot.org/) - ROS compatible ground robots [[github](https://github.com/linorobot/linorobot) ![linorobot/linorobot](https://img.shields.io/github/stars/linorobot/linorobot.svg?style=flat&label=Star&maxAge=86400)]
@@ -263,7 +264,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [ROS 2](https://github.com/ros2/ros2/wiki) - Version 2.0 of the Robot Operating System (ROS) software stack [[github repos](https://github.com/ros2)]
 * [YARP](https://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices [[github](https://github.com/robotology/yarp) ![robotology/yarp](https://img.shields.io/github/stars/robotology/yarp.svg?style=flat&label=Star&maxAge=86400)]
 
-### [SLAM](#awesome-robotics-libraries)
+### [SLAM](#contents)
 
 * AprilSAM - Real-time smoothing and mapping [[github](https://github.com/xipengwang/AprilSAM) ![xipengwang/AprilSAM](https://img.shields.io/github/stars/xipengwang/AprilSAM.svg?style=flat&label=Star&maxAge=86400)]
 * Cartographer - Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations [[github](https://github.com/cartographer-project/cartographer) ![cartographer](https://img.shields.io/github/stars/cartographer-project/cartographer.svg?style=flat&label=Star&maxAge=86400)]
@@ -281,21 +282,21 @@ For simplicity, shortened names are used to represent the supported models and f
 
 * [Awesome SLAM Datasets](https://github.com/youngguncho/awesome-slam-datasets)
 
-### [Vision](#awesome-robotics-libraries)
+### [Vision](#contents)
 
 * [ViSP](http://visp.inria.fr/) - Visual Servoing Platform [[github](https://github.com/lagadic/visp) ![lagadic/visp](https://img.shields.io/github/stars/lagadic/visp.svg?style=flat&label=Star&maxAge=86400)]
 * [BundleTrack](https://github.com/wenbowen123/BundleTrack) - 6D Pose Tracking for Novel Objects without 3D Models [[github](https://github.com/wenbowen123/BundleTrack) ![wenbowen123/BundleTrack](https://img.shields.io/github/stars/wenbowen123/BundleTrack.svg?style=flat&label=Star&maxAge=86400)]
 * [se(3)-TrackNet](https://github.com/wenbowen123/iros20-6d-pose-tracking) - 6D Pose Tracking for Novel Objects without 3D Models [[github](https://github.com/wenbowen123/iros20-6d-pose-tracking) ![wenbowen123/iros20-6d-pose-tracking](https://img.shields.io/github/stars/wenbowen123/iros20-6d-pose-tracking.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Fluid](#awesome-robotics-libraries)
+### [Fluid](#contents)
 
 * [Fluid Engine Dev - Jet](https://fluidenginedevelopment.org/) - Fluid simulation engine for computer graphics applications [[github](https://github.com/doyubkim/fluid-engine-dev) ![doyubkim/fluid-engine-dev](https://img.shields.io/github/stars/doyubkim/fluid-engine-dev.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Multiphysics](#awesome-robotics-libraries)
+### [Multiphysics](#contents)
 
 * [Kratos](http://www.cimne.com/kratos/) - Framework for building parallel multi-disciplinary simulation software [[github](https://github.com/KratosMultiphysics/Kratos) ![KratosMultiphysics/Kratos](https://img.shields.io/github/stars/KratosMultiphysics/Kratos.svg?style=flat&label=Star&maxAge=86400)]
 
-### [Math](#awesome-robotics-libraries)
+### [Math](#contents)
 
 * Fastor - Light-weight high performance tensor algebra framework in C++11/14/17 [[github](https://github.com/romeric/Fastor) ![romeric/Fastor](https://img.shields.io/github/stars/romeric/Fastor.svg?style=flat&label=Star&maxAge=86400)]
 * linalg.h - Single header public domain linear algebra library for C++11 [[github](https://github.com/sgorsten/linalg) ![sgorsten/linalg](https://img.shields.io/github/stars/sgorsten/linalg.svg?style=flat&label=Star&maxAge=86400)]
@@ -305,12 +306,12 @@ For simplicity, shortened names are used to represent the supported models and f
 * spatialmath-python - A python package provides classes to represent pose and orientation in 3D and 2D space, along with a toolbox of spatial operations. [[github](https://github.com/bdaiinstitute/spatialmath-python) ![bdaiinstitute/spatialmath-python](https://img.shields.io/github/stars/bdaiinstitute/spatialmath-python.svg?style=flat&label=Star&maxAge=86400)]
 
 
-### [ETC](#awesome-robotics-libraries)
+### [ETC](#contents)
 
 * fuse - General architecture for performing sensor fusion live on a robot [[github](https://github.com/locusrobotics/fuse) ![locusrobotics/fuse](https://img.shields.io/github/stars/locusrobotics/fuse.svg?style=flat&label=Star&maxAge=86400)]
 * [Foxglove Studio](https://foxglove.dev) – A fully integrated visualization and debugging desktop app for your robotics data. Combines functionality of tools like `rviz`, `rqt`, and more. Also available via [web app](https://studio.foxglove.dev).
 
-## [Other Awesome Lists](#awesome-robotics-libraries)
+## [Other Awesome Lists](#contents)
 
 * [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) (Kiloreux)
 * [Awesome Robotics](https://github.com/ahundt/awesome-robotics) (ahundt)
@@ -326,10 +327,10 @@ For simplicity, shortened names are used to represent the supported models and f
 * [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) - Python sample codes for robotics algorithms
 * [Robotics Coursework](https://github.com/mithi/robotics-coursework) - A list of robotics courses you can take online
 
-## [Contributing](#awesome-robotics-libraries)
+## [Contributing](#contents)
 
 Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/main/CONTRIBUTING.md) first. Also, please feel free to report any error.
 
-## [License](#awesome-robotics-libraries)
+## [License](#contents)
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
