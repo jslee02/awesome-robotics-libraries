@@ -1,5 +1,7 @@
 # Comparisons
 
+> **Note**: The comparison data below was last comprehensively updated in 2016. While the structural information is still useful, specific feature details may be outdated. Contributions to update these tables are very welcome — please see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 #### Table of Contents
 * [Multibody Dynamics Libraries](#multibody-dynamics-libraries)
 * [Simulators](#simulators)
