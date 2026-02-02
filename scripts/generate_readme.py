@@ -300,6 +300,7 @@ def _render_section(
                 hashes = "#" * (sub_heading_level or 6)
                 lines.append(f"{hashes} {sub}")
 
+            lines.append("")
             for entry in sub_entries:
                 if entry["name"] in child_names:
                     continue

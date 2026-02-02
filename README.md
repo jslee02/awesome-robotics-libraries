@@ -28,6 +28,7 @@ A curated list of robotics simulators and libraries.
 ## [Simulators](#contents)
 
 ###### Free or Open Source
+
 * [AI2-THOR](https://ai2thor.allenai.org/) - Python framework with a Unity backend, providing interaction, navigation, and manipulation support for household based robotic agents [[github](https://github.com/allenai/ai2thor) ![AI2-THOR](https://img.shields.io/github/stars/allenai/ai2thor.svg?style=flat&label=Star&maxAge=86400)]
 * AirSim - Simulator based on Unreal Engine for autonomous vehicles [[github](https://github.com/Microsoft/AirSim) ![AirSim](https://img.shields.io/github/stars/Microsoft/AirSim.svg?style=flat&label=Star&maxAge=86400)]
 * [ARGoS](https://www.argos-sim.info/) - Physics-based simulator designed to simulate large-scale robot swarms [[github](https://github.com/ilpincy/argos3) ![ARGoS](https://img.shields.io/github/stars/ilpincy/argos3.svg?style=flat&label=Star&maxAge=86400)]
@@ -53,6 +54,7 @@ A curated list of robotics simulators and libraries.
 * [Webots](http://www.cyberbotics.com/) - A complete development environment to model, program and simulate robots, vehicles and mechanical systems [[github](https://github.com/cyberbotics/webots) ![Webots](https://img.shields.io/github/stars/cyberbotics/webots.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Commercial
+
 * [Actin Simulation](http://www.energid.com/)
 * [Artiminds](https://www.artiminds.com/) - Planning, programming, operation, analysis and optimization
 * [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics and digital mock-up review applications
@@ -63,6 +65,7 @@ A curated list of robotics simulators and libraries.
 * [Visual Components](https://www.visualcomponents.com/)
 
 ###### Cloud
+
 * [AWS RoboMaker](https://aws.amazon.com/robomaker/) - Service that makes it easy to develop, test, and deploy intelligent robotics applications at scale
 
 ## [Libraries](#contents)
@@ -173,6 +176,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ### [Motion Planning and Control](#contents)
 
+
 * [AIKIDO](https://github.com/personalrobotics/aikido) - Solving robotic motion planning and decision making problems. [[github](https://github.com/personalrobotics/aikido) ![AIKIDO](https://img.shields.io/github/stars/personalrobotics/aikido.svg?style=flat&label=Star&maxAge=86400)]
 * Bioptim - Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics [[github](https://github.com/pyomeca/bioptim) ![Bioptim](https://img.shields.io/github/stars/pyomeca/bioptim.svg?style=flat&label=Star&maxAge=86400)]
 * [CuiKSuite](http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html) - Applications to solve position analysis and path planning problems
@@ -193,18 +197,21 @@ For simplicity, shortened names are used to represent the supported models and f
 * [Ungar](https://github.com/fdevinc/ungar) - Expressive and efficient implementation of optimal control problems using template metaprogramming [[github](https://github.com/fdevinc/ungar) ![Ungar](https://img.shields.io/github/stars/fdevinc/ungar.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Motion Optimizer
+
 * TopiCo - Time-optimal Trajectory Generation and Control [[github](https://github.com/AIS-Bonn/TopiCo) ![TopiCo](https://img.shields.io/github/stars/AIS-Bonn/TopiCo.svg?style=flat&label=Star&maxAge=86400)]
 * [towr](http://wiki.ros.org/towr) - A light-weight, Eigen-based C++ library for trajectory optimization for legged robots [[github](https://github.com/ethz-adrl/towr) ![towr](https://img.shields.io/github/stars/ethz-adrl/towr.svg?style=flat&label=Star&maxAge=86400)]
 * TrajectoryOptimization - A fast trajectory optimization library written in Julia [[github](https://github.com/RoboticExplorationLab/TrajectoryOptimization.jl) ![TrajectoryOptimization](https://img.shields.io/github/stars/RoboticExplorationLab/TrajectoryOptimization.jl.svg?style=flat&label=Star&maxAge=86400)]
 * [trajopt](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) - Framework for generating robot trajectories by local optimization [[github](https://github.com/joschu/trajopt) ![trajopt](https://img.shields.io/github/stars/joschu/trajopt.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Nearest Neighbor
+
 * [Cover-Tree](http://hunch.net/~jl/projects/cover_tree/cover_tree.html) - Cover tree data structure for quick k-nearest-neighbor search [[github](https://github.com/DNCrane/Cover-Tree) ![Cover-Tree](https://img.shields.io/github/stars/DNCrane/Cover-Tree.svg?style=flat&label=Star&maxAge=86400)]
   * [Faster cover trees](http://proceedings.mlr.press/v37/izbicki15.pdf) - by Mike Izbicki et al., ICML 2015.
 * [FLANN](http://www.cs.ubc.ca/research/flann/) - Fast Library for Approximate Nearest Neighbors [[github](https://github.com/flann-lib/flann) ![FLANN](https://img.shields.io/github/stars/flann-lib/flann.svg?style=flat&label=Star&maxAge=86400)]
 * [nanoflann](http://www.cs.ubc.ca/research/flann/) - Nearest Neighbor search with KD-trees [[github](https://github.com/jlblancoc/nanoflann) ![nanoflann](https://img.shields.io/github/stars/jlblancoc/nanoflann.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### 3D Mapping
+
 * [libpointmatcher](http://libpointmatcher.readthedocs.io/en/latest/) - Iterative Closest Point library for 2-D/3-D mapping in Robotics [[github](https://github.com/norlab-ulaval/libpointmatcher) ![libpointmatcher](https://img.shields.io/github/stars/norlab-ulaval/libpointmatcher.svg?style=flat&label=Star&maxAge=86400)]
 * Octree - Fast radius neighbor search with an Octree [[github](https://github.com/jbehley/octree) ![Octree](https://img.shields.io/github/stars/jbehley/octree.svg?style=flat&label=Star&maxAge=86400)]
 * [OctoMap](http://octomap.github.io/) - Efficient Probabilistic 3D Mapping Framework Based on Octrees [[github](https://github.com/OctoMap/octomap) ![OctoMap](https://img.shields.io/github/stars/OctoMap/octomap.svg?style=flat&label=Star&maxAge=86400)]
@@ -243,10 +250,12 @@ For simplicity, shortened names are used to represent the supported models and f
 ### [Robot Modeling](#contents)
 
 ###### Robot Model Description Format
+
 * [SDF](http://sdformat.org/) - XML format that describes objects and environments for robot simulators, visualization, and control [[bitbucket](https://bitbucket.org/osrf/sdformat)]
 * [urdf](http://wiki.ros.org/urdf) - XML format for representing a robot model [[github](https://github.com/ros/urdfdom) ![urdf](https://img.shields.io/github/stars/ros/urdfdom.svg?style=flat&label=Star&maxAge=86400)]
 
 ###### Utility to Build Robot Models
+
 * [onshape-to-robot](https://github.com/Rhoban/onshape-to-robot) - Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API [[github](https://github.com/Rhoban/onshape-to-robot) ![onshape-to-robot](https://img.shields.io/github/stars/Rhoban/onshape-to-robot.svg?style=flat&label=Star&maxAge=86400)]
 * phobos - Add-on for Blender creating URDF and SMURF robot models [[github](https://github.com/dfki-ric/phobos) ![phobos](https://img.shields.io/github/stars/dfki-ric/phobos.svg?style=flat&label=Star&maxAge=86400)]
 
@@ -272,6 +281,7 @@ For simplicity, shortened names are used to represent the supported models and f
 
 ### [SLAM](#contents)
 
+
 * AprilSAM - Real-time smoothing and mapping [[github](https://github.com/xipengwang/AprilSAM) ![AprilSAM](https://img.shields.io/github/stars/xipengwang/AprilSAM.svg?style=flat&label=Star&maxAge=86400)]
 * Cartographer - Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations [[github](https://github.com/cartographer-project/cartographer) ![Cartographer](https://img.shields.io/github/stars/cartographer-project/cartographer.svg?style=flat&label=Star&maxAge=86400)]
 * [DSO](https://vision.in.tum.de/research/vslam/dso) - Novel direct and sparse formulation for Visual Odometry [[github](https://github.com/JakobEngel/dso) ![DSO](https://img.shields.io/github/stars/JakobEngel/dso.svg?style=flat&label=Star&maxAge=86400)]
@@ -285,6 +295,7 @@ For simplicity, shortened names are used to represent the supported models and f
 * [SRBA](http://mrpt.github.io/srba/) - Solving SLAM/BA in relative coordinates with flexibility for different submapping strategies [[github](https://github.com/MRPT/srba) ![SRBA](https://img.shields.io/github/stars/MRPT/srba.svg?style=flat&label=Star&maxAge=86400)]
 
 #### SLAM Dataset
+
 * [Awesome SLAM Datasets](https://github.com/youngguncho/awesome-slam-datasets) [[github](https://github.com/youngguncho/awesome-slam-datasets) ![Awesome SLAM Datasets](https://img.shields.io/github/stars/youngguncho/awesome-slam-datasets.svg?style=flat&label=Star&maxAge=86400)]
 
 ### [Vision](#contents)
