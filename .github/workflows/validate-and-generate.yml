@@ -1,0 +1,22 @@
+name: Validate Data
+
+on:
+  pull_request:
+    paths:
+      - data/**
+      - schema/**
+      - scripts/**
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml jsonschema
+
+      - run: python3 scripts/validate_entries.py

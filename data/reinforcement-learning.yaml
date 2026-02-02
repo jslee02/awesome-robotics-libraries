@@ -1,0 +1,19 @@
+# reinforcement-learning
+# Auto-generated from README.md — do not edit manually after migration
+
+- name: CleanRL
+  url: "https://github.com/vwxyzjn/cleanrl"
+  github: vwxyzjn/cleanrl
+
+- name: rl_games
+  url: "https://github.com/Denys88/rl_games"
+  github: Denys88/rl_games
+
+- name: SKRL
+  url: "https://github.com/Toni-SM/skrl"
+  github: Toni-SM/skrl
+
+- name: Stable-Baselines3
+  url: "https://github.com/DLR-RM/stable-baselines3"
+  github: DLR-RM/stable-baselines3
+

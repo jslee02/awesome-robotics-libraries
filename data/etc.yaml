@@ -1,0 +1,10 @@
+# etc
+# Auto-generated from README.md — do not edit manually after migration
+
+- name: fuse
+  github: locusrobotics/fuse
+  description: General architecture for performing sensor fusion live on a robot
+
+- name: Foxglove Studio
+  url: "https://foxglove.dev"
+

@@ -1,0 +1,178 @@
+# simulators
+# Auto-generated from README.md — do not edit manually after migration
+
+- name: AI2-THOR
+  url: "https://ai2thor.allenai.org/"
+  github: allenai/ai2thor
+  description: "Python framework with a Unity backend, providing interaction, navigation, and manipulation support for household based robotic agents"
+  _subsection: Free or Open Source
+
+- name: AirSim
+  github: Microsoft/AirSim
+  description: Simulator based on Unreal Engine for autonomous vehicles
+  _subsection: Free or Open Source
+
+- name: ARGoS
+  url: "https://www.argos-sim.info/"
+  github: ilpincy/argos3
+  description: Physics-based simulator designed to simulate large-scale robot swarms
+  _subsection: Free or Open Source
+
+- name: ARTE
+  url: "http://arvc.umh.es/arte/index_en.html"
+  github: 4rtur1t0/ARTE
+  description: Matlab toolbox focussed on robotic manipulators
+  _subsection: Free or Open Source
+
+- name: AVIS Engine
+  url: "https://avisengine.com"
+  github: AvisEngine/AVIS-Engine-Python-API
+  description: "Autonomous Vehicles Intelligent simulation software, A Fast and robust simulator software for Autonomous vehicle development."
+  _subsection: Free or Open Source
+
+- name: CARLA
+  url: "https://carla.org/"
+  github: carla-simulator/carla
+  description: Open-source simulator for autonomous driving research
+  _subsection: Free or Open Source
+
+- name: CoppeliaSim
+  url: "https://www.coppeliarobotics.com/"
+  github: CoppeliaRobotics/CoppeliaSimLib
+  description: Formaly V-REP. Virtual robot experimentation platform
+  _subsection: Free or Open Source
+
+- name: Gazebo
+  url: "https://gazebosim.org/"
+  github: gazebosim/gazebo-classic
+  description: Dynamic multi-robot simulator
+  _subsection: Free or Open Source
+
+- name: "GraspIt!"
+  url: "http://graspit-simulator.github.io/"
+  github: graspit-simulator/graspit
+  description: Simulator for grasping research that can accommodate arbitrary hand and robot designs
+  _subsection: Free or Open Source
+
+- name: Habitat-Sim
+  url: "https://aihabitat.org/"
+  github: facebookresearch/habitat-sim
+  description: Simulation platform for research in embodied artificial intelligence
+  _subsection: Free or Open Source
+
+- name: Hexapod Robot Simulator
+  url: "https://hexapod.netlify.app/"
+  github: mithi/hexapod
+  description: Open-source hexapod robot inverse kinematics and gaits visualizer
+  _subsection: Free or Open Source
+
+- name: Gazebo Sim
+  url: "https://gazebosim.org/"
+  github: gazebosim/gz-sim
+  description: Open source robotics simulator (formerly Ignition Gazebo)
+  _subsection: Free or Open Source
+
+- name: Isaac Sim
+  url: "https://developer.nvidia.com/isaac/sim"
+  description: Nvidia's robotic simulation environment with GPU physics simulation and ray tracing
+  _subsection: Free or Open Source
+
+- name: ManiSkill
+  url: "https://github.com/haosulab/ManiSkill"
+  github: haosulab/ManiSkill
+  description: "A robot simulation and behavior learning package powered by SAPIEN, with a strong focus on manipulation skills."
+  _subsection: Free or Open Source
+
+- name: MORSE
+  url: "http://morse-simulator.github.io/"
+  github: morse-simulator/morse
+  description: Modular open robots simulation engine
+  _subsection: Free or Open Source
+
+- name: Neurorobotics Platform
+  url: "https://neurorobotics.net/"
+  bitbucket: hbpneurorobotics/neurorobotics-platform
+  description: Internet-accessible simulation of robots controlled by spiking neural networks
+  _subsection: Free or Open Source
+
+- name: PyBullet
+  url: "https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3"
+  github: bulletphysics/bullet3
+  description: An easy to use simulator for robotics and deep reinforcement learning
+  _subsection: Free or Open Source
+
+- name: PyBullet_Industrial
+  url: "https://pybullet-industrial.readthedocs.io/en/latest/"
+  github: WBK-Robotics/pybullet_industrial
+  description: A extension to PyBullet that allows for the simulation of various robotic manufacturing processes such as milling or 3D-printing.
+  _subsection: Free or Open Source
+
+- name: Robot Gui
+  url: "http://robot.glumb.de/"
+  github: glumb/robot-gui
+  description: A three.js based 3D robot interface
+  _subsection: Free or Open Source
+
+- name: SAPIEN
+  url: "https://sapien.ucsd.edu"
+  github: haosulab/SAPIEN
+  description: A realistic and physics-rich simulated environment that hosts a large-scale set for articulated objects.
+  _subsection: Free or Open Source
+
+- name: Simbad
+  url: "http://simbad.sourceforge.net/"
+  description: "A Java 3D robot simulator, enables to write own robot controller with modifying environment using available sensors."
+  _subsection: Free or Open Source
+
+- name: Unity
+  url: "https://unity.com/solutions/automotive-transportation-manufacturing/robotics"
+  github: Unity-Technologies/Unity-Robotics-Hub
+  description: "Popular game engine that now offers open-source tools, tutorials, and resources for robotics simulation"
+  _subsection: Free or Open Source
+
+- name: Webots
+  url: "http://www.cyberbotics.com/"
+  github: cyberbotics/webots
+  description: "A complete development environment to model, program and simulate robots, vehicles and mechanical systems"
+  _subsection: Free or Open Source
+
+- name: Actin Simulation
+  url: "http://www.energid.com/"
+  _subsection: Commercial
+
+- name: Artiminds
+  url: "https://www.artiminds.com/"
+  description: "Planning, programming, operation, analysis and optimization"
+  _subsection: Commercial
+
+- name: Kineo
+  url: "https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html"
+  description: Path planning and trajectory optimization for industrial robotics and digital mock-up review applications
+  _subsection: Commercial
+
+- name: RobotDK
+  url: "https://robodk.com/"
+  description: Simulation and OLP for robots
+  _subsection: Commercial
+
+- name: RobotStudio
+  url: "https://www.abb.com/global/en/areas/robotics/products/software/robotstudio-suite"
+  _subsection: Commercial
+
+- name: Robot Virtual Worlds
+  url: "http://www.robotvirtualworlds.com/"
+  _subsection: Commercial
+
+- name: Virtual Robotics Toolkit
+  url: "https://www.virtualroboticstoolkit.com/"
+  _subsection: Commercial
+
+- name: Visual Components
+  url: "https://www.visualcomponents.com/"
+  _subsection: Commercial
+
+- name: AWS RoboMaker
+  url: "https://aws.amazon.com/robomaker/"
+  description: "Service that makes it easy to develop, test, and deploy intelligent robotics applications at scale"
+  _subsection: Cloud
+
