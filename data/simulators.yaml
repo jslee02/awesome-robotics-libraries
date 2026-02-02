@@ -1,76 +1,129 @@
-# simulators
-# Source of truth — edit this file, then run: pixi run generate
-
 - name: AI2-THOR
   url: https://ai2thor.allenai.org/
   github: allenai/ai2thor
-  description: Python framework with a Unity backend, providing interaction, navigation, and manipulation support for household based robotic agents.
+  description: Python framework with a Unity backend, providing interaction, navigation, and manipulation support for household
+    based robotic agents.
   _subsection: Free or Open Source
+  _meta:
+    stars: 1652
+    last_commit: '2025-11-04'
+    license: Apache-2.0
+    language: C#
 
 - name: AirSim
   github: Microsoft/AirSim
   description: Simulator based on Unreal Engine for autonomous vehicles.
   _subsection: Free or Open Source
+  _meta:
+    stars: 17921
+    last_commit: '2025-05-15'
+    language: C++
 
 - name: ARGoS
   url: https://www.argos-sim.info/
   github: ilpincy/argos3
   description: Physics-based simulator designed to simulate large-scale robot swarms.
   _subsection: Free or Open Source
+  _meta:
+    stars: 301
+    last_commit: '2025-05-03'
+    language: C++
 
 - name: ARTE
   url: http://arvc.umh.es/arte/index_en.html
   github: 4rtur1t0/ARTE
   description: Matlab toolbox focussed on robotic manipulators.
   _subsection: Free or Open Source
+  _meta:
+    stars: 101
+    last_commit: '2025-10-27'
+    language: MATLAB
 
 - name: AVIS Engine
   url: https://avisengine.com
   github: AvisEngine/AVIS-Engine-Python-API
-  description: Autonomous Vehicles Intelligent simulation software, A Fast and robust simulator software for Autonomous vehicle development.
+  description: Autonomous Vehicles Intelligent simulation software, A Fast and robust simulator software for Autonomous vehicle
+    development.
   _subsection: Free or Open Source
+  _meta:
+    stars: 21
+    last_commit: '2025-05-20'
+    language: Python
 
 - name: CARLA
   url: https://carla.org/
   github: carla-simulator/carla
   description: Open-source simulator for autonomous driving research.
   _subsection: Free or Open Source
+  _meta:
+    stars: 13546
+    last_commit: '2026-02-02'
+    license: MIT
+    language: C++
 
 - name: CoppeliaSim
   url: https://www.coppeliarobotics.com/
   github: CoppeliaRobotics/CoppeliaSimLib
   description: Formaly V-REP. Virtual robot experimentation platform.
   _subsection: Free or Open Source
+  _meta:
+    stars: 138
+    last_commit: '2026-02-02'
+    language: C++
 
 - name: Gazebo
   url: https://gazebosim.org/
   github: gazebosim/gazebo-classic
   description: Dynamic multi-robot simulator.
   _subsection: Free or Open Source
+  _meta:
+    stars: 1324
+    last_commit: '2024-12-03'
+    archived: true
+    language: C++
 
 - name: GraspIt!
   url: http://graspit-simulator.github.io/
   github: graspit-simulator/graspit
   description: Simulator for grasping research that can accommodate arbitrary hand and robot designs.
   _subsection: Free or Open Source
+  _meta:
+    stars: 207
+    last_commit: '2021-04-19'
+    language: C++
 
 - name: Habitat-Sim
   url: https://aihabitat.org/
   github: facebookresearch/habitat-sim
   description: Simulation platform for research in embodied artificial intelligence.
   _subsection: Free or Open Source
+  _meta:
+    stars: 3508
+    last_commit: '2026-02-02'
+    license: MIT
+    language: C++
 
 - name: Hexapod Robot Simulator
   url: https://hexapod.netlify.app/
   github: mithi/hexapod
   description: Open-source hexapod robot inverse kinematics and gaits visualizer.
   _subsection: Free or Open Source
+  _meta:
+    stars: 681
+    last_commit: '2026-01-22'
+    license: Apache-2.0
+    language: JavaScript
 
 - name: Gazebo Sim
   url: https://gazebosim.org/
   github: gazebosim/gz-sim
   description: Open source robotics simulator (formerly Ignition Gazebo).
   _subsection: Free or Open Source
+  _meta:
+    stars: 1191
+    last_commit: '2026-01-31'
+    license: Apache-2.0
+    language: C++
 
 - name: Isaac Sim
   url: https://developer.nvidia.com/isaac/sim
@@ -82,12 +135,21 @@
   github: haosulab/ManiSkill
   description: A robot simulation and behavior learning package powered by SAPIEN, with a strong focus on manipulation skills.
   _subsection: Free or Open Source
+  _meta:
+    stars: 2524
+    last_commit: '2026-01-31'
+    license: Apache-2.0
+    language: Python
 
 - name: MORSE
   url: http://morse-simulator.github.io/
   github: morse-simulator/morse
   description: Modular open robots simulation engine.
   _subsection: Free or Open Source
+  _meta:
+    stars: 370
+    last_commit: '2022-05-13'
+    language: C
 
 - name: Neurorobotics Platform
   url: https://neurorobotics.net/
@@ -100,28 +162,48 @@
   github: bulletphysics/bullet3
   description: An easy to use simulator for robotics and deep reinforcement learning.
   _subsection: Free or Open Source
+  _meta:
+    stars: 14206
+    last_commit: '2025-10-22'
+    language: C++
 
 - name: PyBullet_Industrial
   url: https://pybullet-industrial.readthedocs.io/en/latest/
   github: WBK-Robotics/pybullet_industrial
-  description: A extension to PyBullet that allows for the simulation of various robotic manufacturing processes such as milling or 3D-printing.
+  description: A extension to PyBullet that allows for the simulation of various robotic manufacturing processes such as milling
+    or 3D-printing.
   _subsection: Free or Open Source
+  _meta:
+    stars: 48
+    last_commit: '2025-06-17'
+    license: MIT
+    language: Python
 
 - name: Robot Gui
   url: http://robot.glumb.de/
   github: glumb/robot-gui
   description: A three.js based 3D robot interface.
   _subsection: Free or Open Source
+  _meta:
+    stars: 384
+    last_commit: '2023-06-26'
+    license: MIT
+    language: JavaScript
 
 - name: SAPIEN
   url: https://sapien.ucsd.edu
   github: haosulab/SAPIEN
   description: A realistic and physics-rich simulated environment that hosts a large-scale set for articulated objects.
   _subsection: Free or Open Source
+  _meta:
+    stars: 714
+    last_commit: '2026-02-02'
+    language: C++
 
 - name: Simbad
   url: http://simbad.sourceforge.net/
-  description: A Java 3D robot simulator, enables to write own robot controller with modifying environment using available sensors.
+  description: A Java 3D robot simulator, enables to write own robot controller with modifying environment using available
+    sensors.
   _subsection: Free or Open Source
 
 - name: Unity
@@ -129,12 +211,21 @@
   github: Unity-Technologies/Unity-Robotics-Hub
   description: Popular game engine that now offers open-source tools, tutorials, and resources for robotics simulation.
   _subsection: Free or Open Source
+  _meta:
+    stars: 2456
+    last_commit: '2024-11-26'
+    language: C#
 
 - name: Webots
   url: http://www.cyberbotics.com/
   github: cyberbotics/webots
   description: A complete development environment to model, program and simulate robots, vehicles and mechanical systems.
   _subsection: Free or Open Source
+  _meta:
+    stars: 4073
+    last_commit: '2026-01-30'
+    license: Apache-2.0
+    language: C++
 
 - name: Actin Simulation
   url: http://www.energid.com/

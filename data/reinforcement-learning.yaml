@@ -1,25 +1,38 @@
-# reinforcement-learning
-# Source of truth — edit this file, then run: pixi run generate
-
 - name: CleanRL
-  url: "https://github.com/vwxyzjn/cleanrl"
+  url: https://github.com/vwxyzjn/cleanrl
   github: vwxyzjn/cleanrl
   description: Single-file implementations of deep reinforcement learning algorithms.
-
+  _meta:
+    stars: 9019
+    last_commit: '2025-07-08'
+    language: Python
 
 - name: rl_games
-  url: "https://github.com/Denys88/rl_games"
+  url: https://github.com/Denys88/rl_games
   github: Denys88/rl_games
   description: High-performance RL library used in Isaac Gym environments.
-
+  _meta:
+    stars: 1290
+    last_commit: '2026-01-30'
+    license: MIT
+    language: Jupyter Notebook
 
 - name: SKRL
-  url: "https://github.com/Toni-SM/skrl"
+  url: https://github.com/Toni-SM/skrl
   github: Toni-SM/skrl
   description: Modular reinforcement learning library with support for multiple ML frameworks.
-
+  _meta:
+    stars: 982
+    last_commit: '2026-01-25'
+    license: MIT
+    language: Python
 
 - name: Stable-Baselines3
-  url: "https://github.com/DLR-RM/stable-baselines3"
+  url: https://github.com/DLR-RM/stable-baselines3
   github: DLR-RM/stable-baselines3
   description: Reliable implementations of reinforcement learning algorithms in PyTorch.
+  _meta:
+    stars: 12676
+    last_commit: '2026-01-23'
+    license: MIT
+    language: Python

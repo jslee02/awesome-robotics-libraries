@@ -1,9 +1,10 @@
-# etc
-# Source of truth — edit this file, then run: pixi run generate
-
 - name: fuse
   github: locusrobotics/fuse
   description: General architecture for performing sensor fusion live on a robot.
+  _meta:
+    stars: 847
+    last_commit: '2025-12-30'
+    language: C++
 
 - name: Foxglove Studio
   url: https://foxglove.dev
