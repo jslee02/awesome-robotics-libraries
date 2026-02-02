@@ -34,9 +34,9 @@ jobs:
           #   [TIMEOUT] — slow servers (usually transient)
           # Only fail PRs on HTTP 4xx errors. Transient failures are
           # handled by the weekly cron job which auto-creates fix PRs.
-          if grep -qP '^\* \[\d{3}\]' lychee/results.md 2>/dev/null; then
+          if grep -qP '^\* \[[45]\d{2}\]' lychee/results.md 2>/dev/null; then
             echo "::error::Broken links found (HTTP errors):"
-            grep -P '^\* \[\d{3}\]' lychee/results.md
+            grep -P '^\* \[[45]\d{2}\]' lychee/results.md
             exit 1
           fi
           if grep -qE '^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md 2>/dev/null; then
