@@ -1,0 +1,40 @@
+name: Update Metadata
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Fetch metadata
+        run: python3 scripts/fetch_metadata.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: update GitHub metadata for all entries"
+          title: "chore: weekly metadata update"
+          body: |
+            Automated weekly update of GitHub metadata (stars, last commit,
+            archived status, license, primary language) for all entries.
+          branch: chore/update-metadata
+          delete-branch: true
+          labels: maintenance
+          signoff: true

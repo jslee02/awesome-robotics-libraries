@@ -71,9 +71,14 @@ def validate_entries():
             # Get entry name for error reporting
             entry_name = entry.get("name", f"[entry {idx}]")
 
-            # Validate against schema
+            # Validate against schema (FormatChecker enforces format
+            # constraints like "uri" and "date" declared in the schema)
             try:
-                jsonschema.validate(instance=entry, schema=schema)
+                jsonschema.validate(
+                    instance=entry,
+                    schema=schema,
+                    format_checker=jsonschema.FormatChecker(),
+                )
             except jsonschema.ValidationError as e:
                 print(
                     f"ERROR: {yaml_file.name}[{entry_name}]: {e.message}",
