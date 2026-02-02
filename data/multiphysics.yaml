@@ -2,7 +2,6 @@
 # Source of truth — edit this file, then run: pixi run generate
 
 - name: Kratos
-  url: "http://www.cimne.com/kratos/"
+  url: http://www.cimne.com/kratos/
   github: KratosMultiphysics/Kratos
-  description: Framework for building parallel multi-disciplinary simulation software
-
+  description: Framework for building parallel multi-disciplinary simulation software.

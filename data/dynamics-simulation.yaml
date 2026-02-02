@@ -6,6 +6,7 @@
   languages: [C++]
   models: [soft]
 
+
 - name: Bullet
   url: "https://pybullet.org/"
   github: bulletphysics/bullet3
@@ -13,6 +14,7 @@
   languages: [C++, Python]
   models: [rigid, soft]
   features: [ik, id, urdf, sdf]
+
 
 - name: "CHRONO::ENGINE"
   url: "https://projectchrono.org/"
@@ -22,6 +24,7 @@
   models: [rigid, soft, granular, fluid]
   features: [ik, urdf]
 
+
 - name: DART
   url: "http://dartsim.github.io/"
   github: dartsim/dart
@@ -29,6 +32,7 @@
   languages: [C++, Python]
   models: [rigid, soft]
   features: [ik, id, plan, urdf, sdf]
+
 
 - name: Drake
   url: "https://drake.mit.edu/"
@@ -38,11 +42,13 @@
   models: [rigid, aero, fluid]
   features: [ik, trj-opt, plan]
 
+
 - name: Flex
   url: "https://developer.nvidia.com/flex"
   github: NVIDIAGameWorks/FleX
   languages: [C++]
   models: [rigid, soft, particle, fluid]
+
 
 - name: FROST
   url: "https://ayonga.github.io/frost-dev/index.html"
@@ -51,11 +57,13 @@
   languages: [MATLAB]
   models: [rigid]
 
+
 - name: IBDS
   url: "http://www.interactive-graphics.de/index.php/downloads/12-ibds"
   license: Zlib
   languages: [C++]
   models: [rigid, particle]
+
 
 - name: idyntree
   github: gbionics/idyntree
@@ -63,6 +71,7 @@
   languages: [C++, Python, Matlab, Lua]
   models: [rigid]
   features: [id]
+
 
 - name: KDL
   url: "https://www.orocos.org/kdl.html"
@@ -72,17 +81,20 @@
   models: [rigid]
   features: [ik]
 
+
 - name: kindr
   github: ANYbotics/kindr
   license: BSD-3-Clause
   languages: [C++, Matlab]
   models: [rigid]
 
+
 - name: Klampt
   url: "https://klampt.org/"
   github: krishauser/Klampt
   license: BSD-3-Clause
   languages: [C++, Python]
+
 
 - name: LibrePilot
   url: "http://www.librepilot.org/site/index.html"
@@ -92,11 +104,13 @@
   languages: [C++]
   models: [uav, vehicles]
 
+
 - name: MARS
   url: "http://rock-simulation.github.io/mars/"
   github: rock-simulation/mars
   license: LGPL-3.0
   languages: [C++, Python]
+
 
 - name: MBDyn
   url: "https://www.mbdyn.org/"
@@ -104,11 +118,13 @@
   license: GPL-2.1
   languages: [C++]
 
+
 - name: MBSim
   url: "https://www.mbsim-env.de/"
   github: mbsim-env/mbsim
   license: (not specified)
   languages: [C++]
+
 
 - name: MBSlib
   url: "http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib"
@@ -116,10 +132,12 @@
   license: LGPL-3.0
   languages: [C++]
 
+
 - name: metapod
   github: laas/metapod
   license: LGPL-3.0
   languages: [C++]
+
 
 - name: Moby
   url: "http://physsim.sourceforge.net/index.html"
@@ -129,6 +147,7 @@
   models: [rigid]
   features: [id]
 
+
 - name: mrpt
   url: "https://www.mrpt.org/"
   github: MRPT/mrpt
@@ -137,12 +156,14 @@
   models: [vehicle]
   features: [slam, cv]
 
+
 - name: MuJoCo
   url: "https://mujoco.org/"
   github: google-deepmind/mujoco
   license: Apache-2.0
   languages: [C++, Python]
   features: [id]
+
 
 - name: mvsim
   url: "http://wiki.ros.org/mvsim"
@@ -151,17 +172,20 @@
   languages: [C++]
   models: [vehicle]
 
+
 - name: Newton Dynamics
   url: "https://newtondynamics.com/"
   github: MADEAPPS/newton-dynamics
   license: Zlib
   languages: [C++]
 
+
 - name: nphysics
   url: "https://nphysics.org/"
   github: dimforge/nphysics
   license: BSD-3-Clause
   languages: [Rust]
+
 
 - name: ODE
   url: "https://ode.org/"
@@ -170,11 +194,13 @@
   languages: [C++]
   models: [rigid]
 
+
 - name: OpenRAVE
   url: "https://www.openrave.org/"
   github: rdiankov/openrave
   license: LGPL-3.0
   languages: [C++, Python]
+
 
 - name: pinocchio
   url: "https://stack-of-tasks.github.io/pinocchio/"
@@ -184,10 +210,12 @@
   models: [rigid]
   features: [ik, id, urdf, analytical derivatives, code generation]
 
+
 - name: PositionBasedDynamics
   github: InteractiveComputerGraphics/PositionBasedDynamics
   license: MIT
   languages: [C++]
+
 
 - name: PhysX
   url: "https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html"
@@ -195,11 +223,13 @@
   license: unknown
   languages: [C++]
 
+
 - name: PyDy
   url: "https://www.pydy.org/"
   github: pydy/pydy
   license: BSD-3-Clause
   languages: [Python]
+
 
 - name: RBDL
   url: "https://rbdl.github.io/"
@@ -209,11 +239,13 @@
   models: [rigid]
   features: [ik, id, urdf]
 
+
 - name: RBDyn
   github: jrl-umi3218/RBDyn
   license: LGPL-3.0
   languages: [C++, Python]
   models: [rigid]
+
 
 - name: RaiSim
   url: "https://slides.com/jeminhwangbo/raisim-manual"
@@ -221,17 +253,20 @@
   license: custom
   languages: [C++]
 
+
 - name: ReactPhysics3d
   url: "https://www.reactphysics3d.com/"
   github: DanielChappuis/reactphysics3d
   license: Zlib
   languages: [C++]
 
+
 - name: RigidBodyDynamics.jl
   github: JuliaRobotics/RigidBodyDynamics.jl
   license: MIT "Expat"
   languages: [Julia]
   models: [rigid]
+
 
 - name: Rigs of Rods
   url: "https://www.rigsofrods.org/"
@@ -240,11 +275,13 @@
   languages: [C++]
   models: [rigid, soft, vehicle]
 
+
 - name: Robopy
   url: "https://adityadua24.github.io/robopy/"
   github: adityadua24/robopy
   license: MIT
   languages: [Python 3]
+
 
 - name: Robotics Library
   url: "https://www.roboticslibrary.org/"
@@ -252,17 +289,20 @@
   license: GPL-3.0 or BSD-2-Clause
   languages: [C++]
 
+
 - name: RobWork
   url: "https://robwork.dk/"
   gitlab: sdurobotics/RobWork
   license: Apache-2.0
   languages: [C++]
 
+
 - name: siconos
   url: "https://nonsmooth.gricad-pages.univ-grenoble-alpes.fr/siconos/"
   github: siconos/siconos
   license: Apache-2.0
   languages: [C++, Python]
+
 
 - name: Simbody
   url: "https://simtk.org/home/simbody/"
@@ -272,6 +312,7 @@
   models: [rigid, molecules]
   features: [id, urdf]
 
+
 - name: SOFA
   url: "https://www.sofa-framework.org/"
   github: sofa-framework/sofa
@@ -279,11 +320,13 @@
   languages: [C++]
   models: [rigid, soft, medical]
 
+
 - name: Tiny Differentiable Simulator
   github: erwincoumans/tiny-differentiable-simulator
   license: Apache-2.0
   languages: [C++, Python]
   models: [rigid]
+
 
 - name: trep
   url: "http://murpheylab.github.io/trep/"
@@ -292,6 +335,7 @@
   languages: [C, Python]
   models: [rigid]
   features: [dm, trj-opt]
+
 
 - name: qu3e
   github: RandyGaul/qu3e

@@ -3,22 +3,21 @@
 
 - name: IKBT
   github: uw-biorobotics/IKBT
-  description: A python package to solve robot arm inverse kinematics in symbolic form
+  description: A python package to solve robot arm inverse kinematics in symbolic form.
 
 - name: Kinpy
   github: neka-nat/kinpy
-  description: A simple pure python package to solve inverse kinematics
+  description: A simple pure python package to solve inverse kinematics.
 
 - name: Lively
   github: Wisc-HCI/lively
-  description: A highly configurable toolkit for commanding robots in mixed modalities
+  description: A highly configurable toolkit for commanding robots in mixed modalities.
 
 - name: RelaxedIK
   github: uwgraphics/relaxed_ik
-  description: Real-time Synthesis of Accurate and Feasible Robot Arm Motion
+  description: Real-time Synthesis of Accurate and Feasible Robot Arm Motion.
 
 - name: Trip
-  url: "https://trip-kinematics.readthedocs.io/en/main/index.html"
+  url: https://trip-kinematics.readthedocs.io/en/main/index.html
   github: TriPed-Robot/trip_kinematics
-  description: "A python package that solves inverse kinematics of parallel-, serial- or hybrid-robots"
-
+  description: A python package that solves inverse kinematics of parallel-, serial- or hybrid-robots.

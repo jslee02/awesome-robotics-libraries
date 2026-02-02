@@ -3,11 +3,11 @@
 
 - name: Fastor
   github: romeric/Fastor
-  description: Light-weight high performance tensor algebra framework in C++11/14/17
+  description: Light-weight high performance tensor algebra framework in C++11/14/17.
 
 - name: linalg.h
   github: sgorsten/linalg
-  description: Single header public domain linear algebra library for C++11
+  description: Single header public domain linear algebra library for C++11.
 
 - name: manif
   github: artivis/manif
@@ -15,13 +15,12 @@
 
 - name: Sophus
   github: strasdat/Sophus
-  description: Lie groups using Eigen
+  description: Lie groups using Eigen.
 
 - name: SpaceVelAlg
   github: jrl-umi3218/SpaceVecAlg
-  description: Spatial vector algebra with the Eigen3
+  description: Spatial vector algebra with the Eigen3.
 
 - name: spatialmath-python
   github: bdaiinstitute/spatialmath-python
-  description: "A python package provides classes to represent pose and orientation in 3D and 2D space, along with a toolbox of spatial operations."
-
+  description: A python package provides classes to represent pose and orientation in 3D and 2D space, along with a toolbox of spatial operations.

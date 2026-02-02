@@ -2,39 +2,38 @@
 # Source of truth — edit this file, then run: pixi run generate
 
 - name: AutoRally
-  url: "http://autorally.github.io/"
+  url: http://autorally.github.io/
   github: autorally/autorally
-  description: High-performance testbed for advanced perception and control research
+  description: High-performance testbed for advanced perception and control research.
 
 - name: Linorobot
-  url: "https://linorobot.org/"
+  url: https://linorobot.org/
   github: linorobot/linorobot
-  description: ROS compatible ground robots
+  description: ROS compatible ground robots.
 
 - name: onine
   github: grassjelly/onine
-  description: Service Robot based on Linorobot and Braccio Arm
+  description: Service Robot based on Linorobot and Braccio Arm.
 
 - name: Micro-ROS for Arduino
-  url: "https://github.com/kaiaai/micro_ros_arduino_kaiaai"
+  url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
   github: kaiaai/micro_ros_arduino_kaiaai
-  description: a Micro-ROS fork available in the Arduino Library Manager
+  description: a Micro-ROS fork available in the Arduino Library Manager.
 
 - name: Rock
-  url: "https://www.rock-robotics.org/"
-  description: Software framework for robotic systems
+  url: https://www.rock-robotics.org/
+  description: Software framework for robotic systems.
 
 - name: ROS
-  url: "https://www.ros.org/"
-  description: Flexible framework for writing robot software
+  url: https://www.ros.org/
+  description: Flexible framework for writing robot software.
 
 - name: ROS 2
-  url: "https://github.com/ros2/ros2/wiki"
+  url: https://github.com/ros2/ros2/wiki
   github: ros2/ros2
-  description: Version 2.0 of the Robot Operating System (ROS) software stack
+  description: Version 2.0 of the Robot Operating System (ROS) software stack.
 
 - name: YARP
-  url: "https://www.yarp.it/"
+  url: https://www.yarp.it/
   github: robotology/yarp
-  description: Communication and device interfaces applicable from humanoids to embedded devices
-
+  description: Communication and device interfaces applicable from humanoids to embedded devices.

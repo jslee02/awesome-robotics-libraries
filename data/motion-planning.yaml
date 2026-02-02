@@ -2,175 +2,175 @@
 # Source of truth — edit this file, then run: pixi run generate
 
 - name: AIKIDO
-  url: "https://github.com/personalrobotics/aikido"
+  url: https://github.com/personalrobotics/aikido
   github: personalrobotics/aikido
   description: Solving robotic motion planning and decision making problems.
 
 - name: Bioptim
   github: pyomeca/bioptim
-  description: "Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics"
+  description: Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics.
 
 - name: CuiKSuite
-  url: "http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html"
-  description: Applications to solve position analysis and path planning problems
+  url: http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html
+  description: Applications to solve position analysis and path planning problems.
 
 - name: cuRobo
-  url: "https://curobo.org"
+  url: https://curobo.org
   github: nvlabs/curobo
   description: A CUDA accelerated library containing a suite of robotics algorithms that run significantly faster.
 
 - name: Control Toolbox
-  url: "https://ethz-adrl.github.io/ct/"
+  url: https://ethz-adrl.github.io/ct/
   github: ethz-adrl/control-toolbox
-  description: "Open-Source C++ Library for Robotics, Optimal and Model Predictive Control"
+  description: Open-Source C++ Library for Robotics, Optimal and Model Predictive Control.
 
 - name: Crocoddyl
   github: loco-3d/crocoddyl
-  description: Optimal control library for robot control under contact sequence
+  description: Optimal control library for robot control under contact sequence.
 
 - name: Fields2Cover
   github: fields2cover/fields2cover
-  description: Robust and efficient coverage paths for autonomous agricultural vehicles
+  description: Robust and efficient coverage paths for autonomous agricultural vehicles.
 
 - name: GPMP2
   github: gtrll/gpmp2
-  description: Gaussian Process Motion Planner 2
+  description: Gaussian Process Motion Planner 2.
 
 - name: HPP
-  url: "https://humanoid-path-planner.github.io/hpp-doc/"
-  description: Path planning for kinematic chains in environments cluttered with obstacles
+  url: https://humanoid-path-planner.github.io/hpp-doc/
+  description: Path planning for kinematic chains in environments cluttered with obstacles.
 
-- name: "MoveIt!"
-  url: "https://moveit.ai/"
+- name: MoveIt!
+  url: https://moveit.ai/
   github: moveit/moveit
-  description: Motion planning framework
+  description: Motion planning framework.
 
 - name: OMPL
-  url: "https://ompl.kavrakilab.org/"
+  url: https://ompl.kavrakilab.org/
   github: ompl/ompl
-  description: Open motion planning library
+  description: Open motion planning library.
 
 - name: OCS2
   github: leggedrobotics/ocs2
-  description: Efficient continuous and discrete time optimal control implementation
+  description: Efficient continuous and discrete time optimal control implementation.
 
 - name: pymanoid
   github: stephane-caron/pymanoid
-  description: Humanoid robotics prototyping environment based on OpenRAVE
+  description: Humanoid robotics prototyping environment based on OpenRAVE.
 
 - name: ROS Behavior Tree
   github: miccol/ROS-Behavior-Tree
+  description: Behavior tree implementation for ROS-based robot task planning.
 
 - name: Ruckig
-  url: "https://github.com/pantor/ruckig"
+  url: https://github.com/pantor/ruckig
   github: pantor/ruckig
-  description: "Real-time, time-optimal and jerk-constrained online trajectory generation."
+  description: Real-time, time-optimal and jerk-constrained online trajectory generation.
 
 - name: The Kautham Project
-  url: "https://sir.upc.es/projects/kautham/"
+  url: https://sir.upc.es/projects/kautham/
   github: iocroblab/kautham
-  description: A robot simulation toolkit for motion planning
+  description: A robot simulation toolkit for motion planning.
 
 - name: TOPP-RA
-  url: "https://hungpham2511.github.io/toppra/"
+  url: https://hungpham2511.github.io/toppra/
   github: hungpham2511/toppra
-  description: Time-parameterizing robot trajectories subject to kinematic and dynamic constraints
+  description: Time-parameterizing robot trajectories subject to kinematic and dynamic constraints.
 
 - name: Ungar
-  url: "https://github.com/fdevinc/ungar"
+  url: https://github.com/fdevinc/ungar
   github: fdevinc/ungar
-  description: Expressive and efficient implementation of optimal control problems using template metaprogramming
+  description: Expressive and efficient implementation of optimal control problems using template metaprogramming.
 
 - name: TopiCo
   github: AIS-Bonn/TopiCo
-  description: Time-optimal Trajectory Generation and Control
+  description: Time-optimal Trajectory Generation and Control.
   _subsection: Motion Optimizer
 
 - name: towr
-  url: "http://wiki.ros.org/towr"
+  url: http://wiki.ros.org/towr
   github: ethz-adrl/towr
-  description: "A light-weight, Eigen-based C++ library for trajectory optimization for legged robots"
+  description: A light-weight, Eigen-based C++ library for trajectory optimization for legged robots.
   _subsection: Motion Optimizer
 
 - name: TrajectoryOptimization
   github: RoboticExplorationLab/TrajectoryOptimization.jl
-  description: A fast trajectory optimization library written in Julia
+  description: A fast trajectory optimization library written in Julia.
   _subsection: Motion Optimizer
 
 - name: trajopt
-  url: "http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/"
+  url: http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/
   github: joschu/trajopt
-  description: Framework for generating robot trajectories by local optimization
+  description: Framework for generating robot trajectories by local optimization.
   _subsection: Motion Optimizer
 
 - name: Cover-Tree
-  url: "http://hunch.net/~jl/projects/cover_tree/cover_tree.html"
+  url: http://hunch.net/~jl/projects/cover_tree/cover_tree.html
   github: DNCrane/Cover-Tree
-  description: Cover tree data structure for quick k-nearest-neighbor search
+  description: Cover tree data structure for quick k-nearest-neighbor search.
   _subsection: Nearest Neighbor
 
 - name: Faster cover trees
-  url: "http://proceedings.mlr.press/v37/izbicki15.pdf"
+  url: http://proceedings.mlr.press/v37/izbicki15.pdf
   description: by Mike Izbicki et al., ICML 2015.
   _subsection: Nearest Neighbor
 
 - name: FLANN
-  url: "http://www.cs.ubc.ca/research/flann/"
+  url: http://www.cs.ubc.ca/research/flann/
   github: flann-lib/flann
-  description: Fast Library for Approximate Nearest Neighbors
+  description: Fast Library for Approximate Nearest Neighbors.
   _subsection: Nearest Neighbor
 
 - name: nanoflann
-  url: "http://www.cs.ubc.ca/research/flann/"
+  url: http://www.cs.ubc.ca/research/flann/
   github: jlblancoc/nanoflann
-  description: Nearest Neighbor search with KD-trees
+  description: Nearest Neighbor search with KD-trees.
   _subsection: Nearest Neighbor
 
 - name: libpointmatcher
-  url: "http://libpointmatcher.readthedocs.io/en/latest/"
+  url: http://libpointmatcher.readthedocs.io/en/latest/
   github: norlab-ulaval/libpointmatcher
-  description: Iterative Closest Point library for 2-D/3-D mapping in Robotics
+  description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
   _subsection: 3D Mapping
 
 - name: Octree
   github: jbehley/octree
-  description: Fast radius neighbor search with an Octree
+  description: Fast radius neighbor search with an Octree.
   _subsection: 3D Mapping
 
 - name: OctoMap
-  url: "http://octomap.github.io/"
+  url: http://octomap.github.io/
   github: OctoMap/octomap
-  description: Efficient Probabilistic 3D Mapping Framework Based on Octrees
+  description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
   _subsection: 3D Mapping
 
 - name: PCL
-  url: "https://pointclouds.org/"
+  url: https://pointclouds.org/
   github: PointCloudLibrary/pcl
-  description: 2D/3D image and point cloud processing
+  description: 2D/3D image and point cloud processing.
   _subsection: 3D Mapping
 
 - name: Bonxai
   github: facontidavide/Bonxai
-  description: "Brutally fast, sparse, 3D Voxel Grid (formerly Treexy)"
+  description: Brutally fast, sparse, 3D Voxel Grid (formerly Treexy).
   _subsection: 3D Mapping
 
 - name: voxblox
   github: ethz-asl/voxblox
-  description: Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields
+  description: Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields.
   _subsection: 3D Mapping
 
 - name: wavemap
-  url: "https://projects.asl.ethz.ch/wavemap/"
+  url: https://projects.asl.ethz.ch/wavemap/
   github: ethz-asl/wavemap
-  description: "Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping"
+  description: Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping.
   _subsection: 3D Mapping
 
 - name: Utility Software
   _subsection: 3D Mapping
 
 - name: Goxel
-  url: "https://guillaumechereau.github.io/goxel/"
+  url: https://guillaumechereau.github.io/goxel/
   github: guillaumechereau/goxel
-  description: Free and open source 3D voxel editor
+  description: Free and open source 3D voxel editor.
   _subsection: 3D Mapping
-
