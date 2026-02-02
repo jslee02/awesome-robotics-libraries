@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Awesome Robotics Libraries Entry",
+  "description": "Schema for entries in the awesome-robotics-libraries data files",
+  "type": "object",
+  "required": ["name"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Display name of the library or tool"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Homepage or primary URL"
+    },
+    "github": {
+      "type": "string",
+      "pattern": "^[^/]+/[^/]+$",
+      "description": "GitHub owner/repo (e.g., 'google-deepmind/mujoco')"
+    },
+    "gitlab": {
+      "type": "string",
+      "description": "GitLab path"
+    },
+    "bitbucket": {
+      "type": "string",
+      "description": "Bitbucket path"
+    },
+    "description": {
+      "type": "string",
+      "description": "One-line description of what the library does"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier"
+    },
+    "languages": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Programming languages"
+    },
+    "models": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported simulation models (for dynamics entries)"
+    },
+    "features": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported features (for dynamics entries)"
+    },
+    "archived": {
+      "type": "boolean",
+      "description": "Whether the project is archived/deprecated"
+    },
+    "code_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Non-GitHub/GitLab source code URL (e.g., direct download)"
+    },
+    "_meta": {
+      "type": "object",
+      "description": "Auto-populated metadata from GitHub API",
+      "properties": {
+        "stars": { "type": "integer" },
+        "last_commit": { "type": "string", "format": "date" },
+        "archived": { "type": "boolean" },
+        "license": { "type": "string" },
+        "language": { "type": "string" }
+      }
+    },
+    "_subsection": {
+      "type": "string",
+      "description": "Subsection grouping key"
+    }
+  },
+  "additionalProperties": false
+}

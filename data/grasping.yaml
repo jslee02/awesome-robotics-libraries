@@ -1,0 +1,19 @@
+# grasping
+# Auto-generated from README.md — do not edit manually after migration
+
+- name: AnyGrasp SDK
+  url: "https://github.com/graspnet/anygrasp_sdk"
+  github: graspnet/anygrasp_sdk
+
+- name: Contact-GraspNet
+  url: "https://github.com/NVlabs/contact_graspnet"
+  github: NVlabs/contact_graspnet
+
+- name: GraspNet API
+  url: "https://github.com/graspnet/graspnetAPI"
+  github: graspnet/graspnetAPI
+
+- name: "GraspIt!"
+  url: "https://graspit-simulator.github.io/"
+  github: graspit-simulator/graspit
+
