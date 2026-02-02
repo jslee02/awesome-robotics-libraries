@@ -44,8 +44,7 @@
 
 - name: spatialmath-python
   github: bdaiinstitute/spatialmath-python
-  description: A python package provides classes to represent pose and orientation in 3D and 2D space, along with a toolbox
-    of spatial operations.
+  description: Python classes for pose and orientation in 2D/3D with spatial operations toolbox.
   _meta:
     stars: 615
     last_commit: '2025-11-20'

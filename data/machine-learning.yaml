@@ -56,8 +56,7 @@
 
 - name: LeRobot
   github: huggingface/lerobot
-  description: State-of-the-art approaches, pretrained models, datasets, and simulation environments for real-world robotics
-    in PyTorch.
+  description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
     stars: 21363
     last_commit: '2026-02-02'
