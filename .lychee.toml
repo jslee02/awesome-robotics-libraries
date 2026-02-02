@@ -19,4 +19,5 @@ exclude = [
   "^https?://www\\.abb\\.com",
   "^https?://arvc\\.umh\\.es",
   "^https?://www\\.sim\\.informatik\\.tu-darmstadt\\.de",
+  "^https?://web\\.stanford\\.edu",
 ]
