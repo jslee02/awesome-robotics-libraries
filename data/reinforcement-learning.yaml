@@ -1,3 +1,13 @@
+- name: Brax
+  url: https://github.com/google/brax
+  github: google/brax
+  description: Massively parallel differentiable rigid body physics engine in JAX for robotics and RL.
+  _meta:
+    stars: 3047
+    last_commit: '2026-01-29'
+    license: Apache-2.0
+    language: Jupyter Notebook
+
 - name: CleanRL
   url: https://github.com/vwxyzjn/cleanrl
   github: vwxyzjn/cleanrl
@@ -5,6 +15,17 @@
   _meta:
     stars: 9019
     last_commit: '2025-07-08'
+    language: Python
+
+- name: Isaac Lab
+  url: https://isaac-sim.github.io/IsaacLab
+  github: isaac-sim/IsaacLab
+  description: GPU-accelerated open-source framework for robot learning built on NVIDIA Isaac Sim.
+  license: BSD-3-Clause
+  _meta:
+    stars: 6232
+    last_commit: '2026-02-02'
+    license: BSD-3-Clause
     language: Python
 
 - name: rl_games

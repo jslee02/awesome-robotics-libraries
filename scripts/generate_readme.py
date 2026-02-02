@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from datetime import date
 from pathlib import Path
 
 import yaml
@@ -150,27 +151,55 @@ def _format_stars(count: int) -> str:
     return str(count)
 
 
+def _activity_emoji(entry: dict) -> str:
+    """Return activity indicator emoji based on last commit and archived status."""
+    if entry.get("archived") or (entry.get("_meta") or {}).get("archived"):
+        return "💀"
+    meta = entry.get("_meta") or {}
+    last_commit = meta.get("last_commit")
+    if not last_commit:
+        return ""
+    try:
+        commit_date = date.fromisoformat(str(last_commit))
+    except (ValueError, TypeError):
+        return ""
+    days_ago = (date.today() - commit_date).days
+    if days_ago <= 365:
+        return "🟢"
+    elif days_ago <= 730:
+        return "🟡"
+    else:
+        return "🔴"
+
+
+def _repo_url(entry: dict) -> str | None:
+    """Return the repository URL if available."""
+    if entry.get("github"):
+        return f"https://github.com/{entry['github']}"
+    if entry.get("gitlab"):
+        return f"https://gitlab.com/{entry['gitlab']}"
+    if entry.get("bitbucket"):
+        return f"https://bitbucket.org/{entry['bitbucket']}"
+    if entry.get("code_url"):
+        return entry["code_url"]
+    return None
+
+
 # ── Bullet rendering ───────────────────────────────────────────────────────
 
 
 def _render_bullet(entry: dict, indent: str = "") -> str:
     name = entry["name"]
     url = entry.get("url")
-    github = entry.get("github")
-    bitbucket = entry.get("bitbucket")
-    gitlab = entry.get("gitlab")
     desc = entry.get("description", "")
-    archived = entry.get("archived", False)
-    meta = entry.get("_meta", {})
+    meta = entry.get("_meta") or {}
 
+    emoji = _activity_emoji(entry)
     parts = [f"{indent}*"]
+    if emoji:
+        parts.append(emoji)
 
-    if archived:
-        if url:
-            parts.append(f"[{name}]({url}) (archived)")
-        else:
-            parts.append(f"{name} (archived)")
-    elif url:
+    if url:
         parts.append(f"[{name}]({url})")
     else:
         parts.append(name)
@@ -178,14 +207,21 @@ def _render_bullet(entry: dict, indent: str = "") -> str:
     if desc:
         parts.append(f"- {desc}")
 
-    if github:
+    repo = _repo_url(entry)
+    if repo:
         stars = meta.get("stars")
-        star_text = f" ⭐ {_format_stars(stars)}" if stars is not None else ""
-        parts.append(f"[[github](https://github.com/{github}){star_text}]")
-    elif bitbucket:
-        parts.append(f"[[bitbucket](https://bitbucket.org/{bitbucket})]")
-    elif gitlab:
-        parts.append(f"[[gitlab](https://gitlab.com/{gitlab})]")
+        if stars is not None:
+            parts.append(f"[⭐ {_format_stars(stars)}]({repo})")
+        else:
+            if entry.get("github"):
+                label = "github"
+            elif entry.get("gitlab"):
+                label = "gitlab"
+            elif entry.get("bitbucket"):
+                label = "bitbucket"
+            else:
+                label = "code"
+            parts.append(f"[[{label}]({repo})]")
 
     return " ".join(parts)
 
@@ -329,6 +365,14 @@ def generate(data_dir: Path, sort_key: str = "name") -> str:
     out.append("A curated list of robotics simulators and libraries.")
     out.append("")
     out.append(TOC)
+    out.append("")
+    out.append(
+        "> **Legend**: "
+        "🟢 Active (<1yr) · "
+        "🟡 Slow (1-2yr) · "
+        "🔴 Stale (>2yr) · "
+        "💀 Archived"
+    )
     out.append("")
 
     libraries_emitted = False
