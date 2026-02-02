@@ -28,20 +28,21 @@ jobs:
       - name: Fail on broken links (PR only)
         if: github.event_name == 'pull_request'
         run: |
-          # Lychee marks results as:
-          #   [404], [410], etc. — HTTP errors (definitively broken)
-          #   [ERROR] — network errors (usually transient)
-          #   [TIMEOUT] — slow servers (usually transient)
-          # Only fail PRs on HTTP 4xx errors. Transient failures are
-          # handled by the weekly cron job which auto-creates fix PRs.
-          if grep -qP '^\* \[[45]\d{2}\]' lychee/results.md 2>/dev/null; then
-            echo "::error::Broken links found (HTTP errors):"
-            grep -P '^\* \[[45]\d{2}\]' lychee/results.md
+          # Lychee results format:
+          #   [404], [410] — HTTP 4xx client errors (definitively broken)
+          #   [500], [504] — HTTP 5xx server errors (transient)
+          #   [ERROR]      — network errors (transient)
+          #   [TIMEOUT]    — slow servers (transient)
+          # Only fail PRs on 4xx. Everything else is transient and
+          # handled by the weekly cron that auto-creates fix PRs.
+          if grep -qP '^\* \[4\d{2}\]' lychee/results.md 2>/dev/null; then
+            echo "::error::Broken links found (HTTP 4xx):"
+            grep -P '^\* \[4\d{2}\]' lychee/results.md
             exit 1
           fi
-          if grep -qE '^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md 2>/dev/null; then
+          if grep -qP '^\* \[5\d{2}\]|^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md 2>/dev/null; then
             echo "::warning::Transient failures (not blocking PR):"
-            grep -E '^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md
+            grep -P '^\* \[5\d{2}\]|^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md
           fi
           echo "No broken links found"
 
