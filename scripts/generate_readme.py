@@ -80,13 +80,6 @@ def _stars_badge(github: str) -> str:
     )
 
 
-def _stars_badge_amp(github: str) -> str:
-    return (
-        f"https://img.shields.io/github/stars/"
-        f"{github}.svg?style=flat&amp;label=Star&amp;maxAge=86400"
-    )
-
-
 # ── Bullet rendering ───────────────────────────────────────────────────────
 
 
@@ -226,7 +219,7 @@ def _render_simple_table(entries: list[dict]) -> str:
             url = f"https://github.com/{github}"
         name_cell = f"[{name}]({url})" if url else name
         if github:
-            badge = _stars_badge_amp(github)
+            badge = _stars_badge(github)
             stars_cell = f"[![GitHub stars]({badge})](https://github.com/{github})"
         else:
             stars_cell = ""
