@@ -33,11 +33,11 @@ _Simulation environments for testing and developing robotic systems._
 
 ###### Free or Open Source
 
-* 🟢 [AI2-THOR](https://ai2thor.allenai.org/) - Python framework with a Unity backend, providing interaction, navigation, and manipulation support for household based robotic agents. [⭐ 1.7k](https://github.com/allenai/ai2thor)
+* 🟢 [AI2-THOR](https://ai2thor.allenai.org/) - Interactive household environment for embodied AI with Unity backend. [⭐ 1.7k](https://github.com/allenai/ai2thor)
 * 🟢 AirSim - Simulator based on Unreal Engine for autonomous vehicles. [⭐ 17.9k](https://github.com/Microsoft/AirSim)
 * 🟢 [ARGoS](https://www.argos-sim.info/) - Physics-based simulator designed to simulate large-scale robot swarms. [⭐ 301](https://github.com/ilpincy/argos3)
 * 🟢 [ARTE](http://arvc.umh.es/arte/index_en.html) - Matlab toolbox focussed on robotic manipulators. [⭐ 101](https://github.com/4rtur1t0/ARTE)
-* 🟢 [AVIS Engine](https://avisengine.com) - Autonomous Vehicles Intelligent simulation software, A Fast and robust simulator software for Autonomous vehicle development. [⭐ 21](https://github.com/AvisEngine/AVIS-Engine-Python-API)
+* 🟢 [AVIS Engine](https://avisengine.com) - Fast simulation software for autonomous vehicle development. [⭐ 21](https://github.com/AvisEngine/AVIS-Engine-Python-API)
 * 🟢 [CARLA](https://carla.org/) - Open-source simulator for autonomous driving research. [⭐ 13.5k](https://github.com/carla-simulator/carla)
 * 🟢 [CoppeliaSim](https://www.coppeliarobotics.com/) - Formaly V-REP. Virtual robot experimentation platform. [⭐ 138](https://github.com/CoppeliaRobotics/CoppeliaSimLib)
 * 💀 [Gazebo](https://gazebosim.org/) - Dynamic multi-robot simulator. [⭐ 1.3k](https://github.com/gazebosim/gazebo-classic)
@@ -45,23 +45,23 @@ _Simulation environments for testing and developing robotic systems._
 * 🔴 [GraspIt!](http://graspit-simulator.github.io/) - Simulator for grasping research that can accommodate arbitrary hand and robot designs. [⭐ 207](https://github.com/graspit-simulator/graspit)
 * 🟢 [Habitat-Sim](https://aihabitat.org/) - Simulation platform for research in embodied artificial intelligence. [⭐ 3.5k](https://github.com/facebookresearch/habitat-sim)
 * 🟢 [Hexapod Robot Simulator](https://hexapod.netlify.app/) - Open-source hexapod robot inverse kinematics and gaits visualizer. [⭐ 681](https://github.com/mithi/hexapod)
-* 🟢 [Isaac Sim](https://developer.nvidia.com/isaac/sim) - NVIDIA's GPU-accelerated robotics simulation platform built on Omniverse with PhysX 5 and RTX rendering. [⭐ 2.5k](https://github.com/isaac-sim/IsaacSim)
-* 🟢 [ManiSkill](https://github.com/haosulab/ManiSkill) - A robot simulation and behavior learning package powered by SAPIEN, with a strong focus on manipulation skills. [⭐ 2.5k](https://github.com/haosulab/ManiSkill)
+* 🟢 [Isaac Sim](https://developer.nvidia.com/isaac/sim) - NVIDIA's GPU-accelerated robotics simulation platform with PhysX 5 and RTX rendering. [⭐ 2.5k](https://github.com/isaac-sim/IsaacSim)
+* 🟢 [ManiSkill](https://github.com/haosulab/ManiSkill) - Robot simulation and manipulation learning package powered by SAPIEN. [⭐ 2.5k](https://github.com/haosulab/ManiSkill)
 * 🔴 [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine. [⭐ 370](https://github.com/morse-simulator/morse)
 * [Neurorobotics Platform](https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks. [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
 * 🟢 [PyBullet](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3) - An easy to use simulator for robotics and deep reinforcement learning. [⭐ 14.2k](https://github.com/bulletphysics/bullet3)
-* 🟢 [PyBullet_Industrial](https://pybullet-industrial.readthedocs.io/en/latest/) - A extension to PyBullet that allows for the simulation of various robotic manufacturing processes such as milling or 3D-printing. [⭐ 48](https://github.com/WBK-Robotics/pybullet_industrial)
+* 🟢 [PyBullet_Industrial](https://pybullet-industrial.readthedocs.io/en/latest/) - PyBullet extension for simulating robotic manufacturing processes like milling and 3D printing. [⭐ 48](https://github.com/WBK-Robotics/pybullet_industrial)
 * 🔴 [Robot Gui](http://robot.glumb.de/) - A three.js based 3D robot interface. [⭐ 384](https://github.com/glumb/robot-gui)
-* 🟢 [SAPIEN](https://sapien.ucsd.edu) - A realistic and physics-rich simulated environment that hosts a large-scale set for articulated objects. [⭐ 714](https://github.com/haosulab/SAPIEN)
-* [Simbad](http://simbad.sourceforge.net/) - A Java 3D robot simulator, enables to write own robot controller with modifying environment using available sensors.
-* 🟡 [Unity](https://unity.com/solutions/automotive-transportation-manufacturing/robotics) - Popular game engine that now offers open-source tools, tutorials, and resources for robotics simulation. [⭐ 2.5k](https://github.com/Unity-Technologies/Unity-Robotics-Hub)
-* 🟢 [Webots](http://www.cyberbotics.com/) - A complete development environment to model, program and simulate robots, vehicles and mechanical systems. [⭐ 4.1k](https://github.com/cyberbotics/webots)
+* 🟢 [SAPIEN](https://sapien.ucsd.edu) - Physics-rich simulation environment for articulated objects and manipulation. [⭐ 714](https://github.com/haosulab/SAPIEN)
+* [Simbad](http://simbad.sourceforge.net/) - Java 3D robot simulator with custom controller and sensor support.
+* 🟡 [Unity](https://unity.com/solutions/automotive-transportation-manufacturing/robotics) - Game engine with open-source robotics simulation tools and tutorials. [⭐ 2.5k](https://github.com/Unity-Technologies/Unity-Robotics-Hub)
+* 🟢 [Webots](http://www.cyberbotics.com/) - Development environment to model, program, and simulate robots and mechanical systems. [⭐ 4.1k](https://github.com/cyberbotics/webots)
 
 ###### Commercial
 
 * [Actin Simulation](http://www.energid.com/) - Real-time robot simulation and control software.
 * [Artiminds](https://www.artiminds.com/) - Planning, programming, operation, analysis and optimization.
-* [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics and digital mock-up review applications.
+* [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics.
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/) - Virtual reality software for educational robotics.
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots.
 * [RobotStudio](https://www.abb.com/global/en/areas/robotics/products/software/robotstudio-suite) - ABB's simulation and offline programming software for robotics.
@@ -150,7 +150,7 @@ _Machine learning frameworks and tools applied to robotics._
   * 🔴 gym-dart - OpenAI Gym environments using the DART physics engine. [⭐ 141](https://github.com/DartEnv/dart-env)
   * 💀 gym-gazebo - OpenAI Gym environments for the Gazebo simulator. [⭐ 845](https://github.com/erlerobot/gym-gazebo)
 * 🟢 [Ivy](https://lets-unify.ai/) - Unified Machine Learning Framework. [⭐ 14.2k](https://github.com/ivy-llc/ivy)
-* 🟢 LeRobot - State-of-the-art approaches, pretrained models, datasets, and simulation environments for real-world robotics in PyTorch. [⭐ 21.4k](https://github.com/huggingface/lerobot)
+* 🟢 LeRobot - Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch. [⭐ 21.4k](https://github.com/huggingface/lerobot)
 * 🟢 [LeRobot Episode Scoring Toolkit](https://github.com/RoboticsData/score_lerobot_episodes) - One-click tool to score, filter, and export higher-quality LeRobot datasets. [⭐ 48](https://github.com/RoboticsData/score_lerobot_episodes)
 * 🔴 MiniDNN - A header-only C++ library for deep neural networks. [⭐ 431](https://github.com/yixuan/MiniDNN)
 * 🟢 [mlpack](https://www.mlpack.org/) - Scalable C++ machine learning library. [⭐ 5.6k](https://github.com/mlpack/mlpack)
@@ -340,7 +340,7 @@ _Mathematics libraries for spatial algebra, Lie groups, and linear algebra._
 * 🟢 manif - Small c++11 header-only library for Lie theory. [⭐ 1.7k](https://github.com/artivis/manif)
 * 🟡 Sophus - Lie groups using Eigen. [⭐ 2.4k](https://github.com/strasdat/Sophus)
 * 🟢 SpaceVelAlg - Spatial vector algebra with the Eigen3. [⭐ 80](https://github.com/jrl-umi3218/SpaceVecAlg)
-* 🟢 spatialmath-python - A python package provides classes to represent pose and orientation in 3D and 2D space, along with a toolbox of spatial operations. [⭐ 615](https://github.com/bdaiinstitute/spatialmath-python)
+* 🟢 spatialmath-python - Python classes for pose and orientation in 2D/3D with spatial operations toolbox. [⭐ 615](https://github.com/bdaiinstitute/spatialmath-python)
 
 ### [ETC](#contents)
 
@@ -370,6 +370,10 @@ _Related curated lists of robotics and AI resources._
 ## [Contributing](#contents)
 
 Contributions are very welcome! Please read the [contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/main/CONTRIBUTING.md) first. Also, please feel free to report any error.
+
+## [Star History](#contents)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jslee02/awesome-robotics-libraries&type=Date)](https://star-history.com/#jslee02/awesome-robotics-libraries)
 
 ## [License](#contents)
 

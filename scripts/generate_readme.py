@@ -415,6 +415,16 @@ def generate(data_dir: Path, sort_key: str = "name") -> str:
     )
     out.append("")
 
+    # Star History
+    out.append("## [Star History](#contents)")
+    out.append("")
+    out.append(
+        "[![Star History Chart]"
+        "(https://api.star-history.com/svg?repos=jslee02/awesome-robotics-libraries&type=Date)]"
+        "(https://star-history.com/#jslee02/awesome-robotics-libraries)"
+    )
+    out.append("")
+
     # License
     out.append("## [License](#contents)")
     out.append("")

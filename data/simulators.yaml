@@ -1,8 +1,7 @@
 - name: AI2-THOR
   url: https://ai2thor.allenai.org/
   github: allenai/ai2thor
-  description: Python framework with a Unity backend, providing interaction, navigation, and manipulation support for household
-    based robotic agents.
+  description: Interactive household environment for embodied AI with Unity backend.
   _subsection: Free or Open Source
   _meta:
     stars: 1652
@@ -42,8 +41,7 @@
 - name: AVIS Engine
   url: https://avisengine.com
   github: AvisEngine/AVIS-Engine-Python-API
-  description: Autonomous Vehicles Intelligent simulation software, A Fast and robust simulator software for Autonomous vehicle
-    development.
+  description: Fast simulation software for autonomous vehicle development.
   _subsection: Free or Open Source
   _meta:
     stars: 21
@@ -127,7 +125,7 @@
 
 - name: Isaac Sim
   url: https://developer.nvidia.com/isaac/sim
-  description: NVIDIA's GPU-accelerated robotics simulation platform built on Omniverse with PhysX 5 and RTX rendering.
+  description: NVIDIA's GPU-accelerated robotics simulation platform with PhysX 5 and RTX rendering.
   github: isaac-sim/IsaacSim
   license: Apache-2.0
   _subsection: Free or Open Source
@@ -140,7 +138,7 @@
 - name: ManiSkill
   url: https://github.com/haosulab/ManiSkill
   github: haosulab/ManiSkill
-  description: A robot simulation and behavior learning package powered by SAPIEN, with a strong focus on manipulation skills.
+  description: Robot simulation and manipulation learning package powered by SAPIEN.
   _subsection: Free or Open Source
   _meta:
     stars: 2524
@@ -177,8 +175,7 @@
 - name: PyBullet_Industrial
   url: https://pybullet-industrial.readthedocs.io/en/latest/
   github: WBK-Robotics/pybullet_industrial
-  description: A extension to PyBullet that allows for the simulation of various robotic manufacturing processes such as milling
-    or 3D-printing.
+  description: PyBullet extension for simulating robotic manufacturing processes like milling and 3D printing.
   _subsection: Free or Open Source
   _meta:
     stars: 48
@@ -200,7 +197,7 @@
 - name: SAPIEN
   url: https://sapien.ucsd.edu
   github: haosulab/SAPIEN
-  description: A realistic and physics-rich simulated environment that hosts a large-scale set for articulated objects.
+  description: Physics-rich simulation environment for articulated objects and manipulation.
   _subsection: Free or Open Source
   _meta:
     stars: 714
@@ -209,14 +206,13 @@
 
 - name: Simbad
   url: http://simbad.sourceforge.net/
-  description: A Java 3D robot simulator, enables to write own robot controller with modifying environment using available
-    sensors.
+  description: Java 3D robot simulator with custom controller and sensor support.
   _subsection: Free or Open Source
 
 - name: Unity
   url: https://unity.com/solutions/automotive-transportation-manufacturing/robotics
   github: Unity-Technologies/Unity-Robotics-Hub
-  description: Popular game engine that now offers open-source tools, tutorials, and resources for robotics simulation.
+  description: Game engine with open-source robotics simulation tools and tutorials.
   _subsection: Free or Open Source
   _meta:
     stars: 2456
@@ -226,7 +222,7 @@
 - name: Webots
   url: http://www.cyberbotics.com/
   github: cyberbotics/webots
-  description: A complete development environment to model, program and simulate robots, vehicles and mechanical systems.
+  description: Development environment to model, program, and simulate robots and mechanical systems.
   _subsection: Free or Open Source
   _meta:
     stars: 4073
@@ -246,7 +242,7 @@
 
 - name: Kineo
   url: https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html
-  description: Path planning and trajectory optimization for industrial robotics and digital mock-up review applications.
+  description: Path planning and trajectory optimization for industrial robotics.
   _subsection: Commercial
 
 - name: RobotDK
