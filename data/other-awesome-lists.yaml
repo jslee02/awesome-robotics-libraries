@@ -1,7 +1,7 @@
 - name: Awesome Robotics
   url: https://github.com/Kiloreux/awesome-robotics
   github: Kiloreux/awesome-robotics
-  description: (Kiloreux).
+  description: Curated list of robotics resources (Kiloreux).
   _meta:
     stars: 6007
     last_commit: '2024-09-22'
@@ -9,7 +9,7 @@
 - name: Awesome Robotics
   url: https://github.com/ahundt/awesome-robotics
   github: ahundt/awesome-robotics
-  description: (ahundt).
+  description: Curated list of robotics links and software libraries (ahundt).
   _meta:
     stars: 1322
     last_commit: '2024-01-10'
@@ -17,6 +17,7 @@
 - name: Awesome Robotic Tooling
   url: https://github.com/Ly0n/awesome-robotic-tooling
   github: Ly0n/awesome-robotic-tooling
+  description: Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
   _meta:
     stars: 3722
     last_commit: '2023-11-20'
@@ -25,6 +26,7 @@
 - name: Awesome Artificial Intelligence
   url: https://github.com/owainlewis/awesome-artificial-intelligence
   github: owainlewis/awesome-artificial-intelligence
+  description: Curated list of AI courses, books, video lectures, and papers.
   _meta:
     stars: 12923
     last_commit: '2025-08-12'
@@ -33,6 +35,7 @@
 - name: Awesome Collision Detection
   url: https://github.com/jslee02/awesome-collision-detection
   github: jslee02/awesome-collision-detection
+  description: Curated list of collision detection libraries and resources.
   _meta:
     stars: 999
     last_commit: '2023-09-30'
@@ -41,6 +44,7 @@
 - name: Awesome Computer Vision
   url: https://github.com/jbhuang0604/awesome-computer-vision
   github: jbhuang0604/awesome-computer-vision
+  description: Curated list of computer vision resources.
   _meta:
     stars: 23033
     last_commit: '2024-05-17'
@@ -48,6 +52,7 @@
 - name: Awesome Machine Learning
   url: https://github.com/josephmisiti/awesome-machine-learning
   github: josephmisiti/awesome-machine-learning
+  description: Curated list of machine learning frameworks, libraries, and software.
   _meta:
     stars: 71565
     last_commit: '2026-01-29'
@@ -56,6 +61,7 @@
 - name: Awesome Deep Learning
   url: https://github.com/ChristosChristofidis/awesome-deep-learning
   github: ChristosChristofidis/awesome-deep-learning
+  description: Curated list of deep learning tutorials, projects, and communities.
   _meta:
     stars: 27443
     last_commit: '2025-05-26'
@@ -63,6 +69,7 @@
 - name: Awesome Gazebo
   url: https://github.com/fkromer/awesome-gazebo
   github: fkromer/awesome-gazebo
+  description: Curated list of Gazebo simulation framework resources.
   _meta:
     stars: 153
     last_commit: '2021-01-24'
@@ -71,6 +78,7 @@
 - name: Awesome Grasping
   url: https://github.com/Po-Jen/awesome-grasping
   github: Po-Jen/awesome-grasping
+  description: Curated list of grasping libraries and resources.
   _meta:
     stars: 96
     last_commit: '2019-07-13'
@@ -79,6 +87,7 @@
 - name: Awesome Human Robot Interaction
   url: https://github.com/Po-Jen/awesome-human-robot-interaction
   github: Po-Jen/awesome-human-robot-interaction
+  description: Curated list of human-robot interaction libraries and resources.
   _meta:
     stars: 147
     last_commit: '2019-02-12'
