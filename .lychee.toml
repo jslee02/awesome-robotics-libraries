@@ -16,4 +16,5 @@ exclude = [
   "^https?://www\\.interactive-graphics\\.de",
   "^https?://grasp\\.robotics\\.cs\\.rpi\\.edu",
   "^https?://www\\.q12\\.org",
+  "^https?://www\\.abb\\.com",
 ]
