@@ -277,6 +277,7 @@ _Libraries and tools for robotic grasping and manipulation._
 _Environments and models for humanoid robot research._
 
 * 🟡 [Humanoid-Gym](https://github.com/roboterax/humanoid-gym) - Reinforcement learning environment for humanoid robot locomotion. [⭐ 1.8k](https://github.com/roboterax/humanoid-gym)
+* 🟢 [iCub](http://www.icub.org/) - Open-source cognitive humanoid robotic platform for embodied cognition research. [⭐ 117](https://github.com/robotology/icub-main)
 * 🟢 [Legged Gym](https://github.com/leggedrobotics/legged_gym) - Isaac Gym environments for legged robot locomotion training. [⭐ 2.7k](https://github.com/leggedrobotics/legged_gym)
 * 🟢 [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie) - Collection of well-tuned MuJoCo models for research and development. [⭐ 3k](https://github.com/google-deepmind/mujoco_menagerie)
 
