@@ -1,3 +1,12 @@
+- name: iCub
+  url: http://www.icub.org/
+  github: robotology/icub-main
+  description: Open-source cognitive humanoid robotic platform for embodied cognition research.
+  _meta:
+    stars: 117
+    last_commit: '2025-12-11'
+    language: C++
+
 - name: Humanoid-Gym
   url: https://github.com/roboterax/humanoid-gym
   github: roboterax/humanoid-gym
