@@ -6,7 +6,6 @@
     stars: 775
     last_commit: '2023-03-03'
     language: C++
-
 - name: Linorobot
   url: https://linorobot.org/
   github: linorobot/linorobot
@@ -16,15 +15,6 @@
     last_commit: '2023-05-10'
     license: BSD-2-Clause
     language: C++
-
-- name: onine
-  github: grassjelly/onine
-  description: Service Robot based on Linorobot and Braccio Arm.
-  _meta:
-    stars: 47
-    last_commit: '2018-09-19'
-    language: C++
-
 - name: Micro-ROS for Arduino
   url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
   github: kaiaai/micro_ros_arduino_kaiaai
@@ -34,15 +24,29 @@
     last_commit: '2024-10-28'
     license: Apache-2.0
     language: C
-
+- name: onine
+  github: grassjelly/onine
+  description: Service Robot based on Linorobot and Braccio Arm.
+  _meta:
+    stars: 47
+    last_commit: '2018-09-19'
+    language: C++
+- name: openpilot
+  url: https://comma.ai/openpilot
+  github: commaai/openpilot
+  description: Open-source driver assistance system that upgrades the driving experience on 300+ supported cars. Provides
+    adaptive cruise control, lane keeping, and more.
+  _meta:
+    stars: 59974
+    last_commit: '2026-02-03'
+    license: MIT
+    language: Python
 - name: Rock
   url: https://www.rock-robotics.org/
   description: Software framework for robotic systems.
-
 - name: ROS
   url: https://www.ros.org/
   description: Flexible framework for writing robot software.
-
 - name: ROS 2
   url: https://github.com/ros2/ros2/wiki
   github: ros2/ros2
@@ -50,7 +54,6 @@
   _meta:
     stars: 5028
     last_commit: '2026-01-28'
-
 - name: YARP
   url: https://www.yarp.it/
   github: robotology/yarp

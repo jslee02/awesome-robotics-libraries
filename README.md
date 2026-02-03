@@ -212,6 +212,7 @@ _Middleware and frameworks for building robot software systems._
 * 🔴 [Linorobot](https://linorobot.org/) - ROS compatible ground robots. [⭐ 1.1k](https://github.com/linorobot/linorobot)
   * 🔴 onine - Service Robot based on Linorobot and Braccio Arm. [⭐ 47](https://github.com/grassjelly/onine)
 * 🟡 [Micro-ROS for Arduino](https://github.com/kaiaai/micro_ros_arduino_kaiaai) - a Micro-ROS fork available in the Arduino Library Manager. [⭐ 12](https://github.com/kaiaai/micro_ros_arduino_kaiaai)
+* 🟢 [openpilot](https://comma.ai/openpilot) - Open-source driver assistance system that upgrades the driving experience on 300+ supported cars. Provides adaptive cruise control, lane keeping, and more. [⭐ 60k](https://github.com/commaai/openpilot)
 * [Rock](https://www.rock-robotics.org/) - Software framework for robotic systems.
 * [ROS](https://www.ros.org/) - Flexible framework for writing robot software.
 * 🟢 [ROS 2](https://github.com/ros2/ros2/wiki) - Version 2.0 of the Robot Operating System (ROS) software stack. [⭐ 5k](https://github.com/ros2/ros2)
