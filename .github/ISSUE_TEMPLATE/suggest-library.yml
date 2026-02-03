@@ -18,12 +18,18 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: github
+    attributes:
+      label: GitHub Repository
+      description: "GitHub `owner/repo` slug (e.g., `google-deepmind/mujoco`). Leave blank if the project is not on GitHub."
+      placeholder: owner/repo
+
   - type: dropdown
     id: category
     attributes:
       label: Category
       options:
-        - Simulators
         - Dynamics Simulation
         - Inverse Kinematics
         - Machine Learning
@@ -40,6 +46,7 @@ body:
         - Multiphysics
         - Math
         - ETC
+        - Simulators
         - Other Awesome Lists
         - New Category
     validations:
@@ -52,3 +59,32 @@ body:
       description: Brief description of what this library does
     validations:
       required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should it be included?
+      description: Explain what makes this library a good fit for the list (e.g., fills a gap, widely used, novel approach).
+
+  - type: checkboxes
+    id: must_have
+    attributes:
+      label: "Must-have checklist (all required)"
+      description: "All four must be checked for acceptance."
+      options:
+        - label: Relevant to robotics (simulation, planning, perception, control, dynamics, etc.)
+        - label: Publicly accessible (open source, or well-documented commercial tool)
+        - label: Not a duplicate of an existing entry
+        - label: Has a meaningful description
+
+  - type: checkboxes
+    id: scoring
+    attributes:
+      label: "Scoring checklist (need ≥ 3 of 5)"
+      description: "Check all that apply. We will verify these during review."
+      options:
+        - label: "**Popularity**: ≥ 50 GitHub stars (or equivalent community adoption)"
+        - label: "**Activity**: At least one commit within the last 2 years"
+        - label: "**Documentation**: Has a README with usage examples or API docs"
+        - label: "**Maturity**: Project is ≥ 6 months old"
+        - label: "**Uniqueness**: Fills a niche not already covered by existing entries"

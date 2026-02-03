@@ -16,8 +16,7 @@ import yaml
 # subsection_heading_level: 6 means ######, 4 means ####, None means no subsections
 
 SECTIONS = [
-    ("simulators", "Simulators", 2, "bullet", 6),
-    # -- "Libraries" divider inserted here --
+    # -- "Libraries" divider inserted before the first level-3 section --
     ("dynamics-simulation", "Dynamics Simulation", 3, "bullet", None),
     ("inverse-kinematics", "Inverse Kinematics", 3, "bullet", None),
     ("machine-learning", "Machine Learning", 3, "bullet", None),
@@ -40,6 +39,7 @@ SECTIONS = [
     ("multiphysics", "Multiphysics", 3, "bullet", None),
     ("math", "Math", 3, "bullet", None),
     ("etc", "ETC", 3, "bullet", None),
+    ("simulators", "Simulators", 2, "bullet", 6),
     ("other-awesome-lists", "Other Awesome Lists", 2, "other_awesome", None),
 ]
 
@@ -331,7 +331,6 @@ def _render_section(
 
 TOC = """\
 ## Contents
-* [Simulators](#simulators)
 * [Libraries](#libraries)
   * [Dynamics Simulation](#dynamics-simulation)
   * [Inverse Kinematics](#inverse-kinematics)
@@ -349,6 +348,7 @@ TOC = """\
   * [Multiphysics](#multiphysics)
   * [Math](#math)
   * [ETC](#etc)
+* [Simulators](#simulators)
 * [Other Awesome Lists](#other-awesome-lists)"""
 
 
@@ -362,7 +362,7 @@ def generate(data_dir: Path, sort_key: str = "name") -> str:
     out.append("")
     out.append("[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)")
     out.append("")
-    out.append("A curated list of robotics simulators and libraries.")
+    out.append("A curated list of robotics libraries and simulators.")
     out.append("")
     out.append(TOC)
     out.append("")

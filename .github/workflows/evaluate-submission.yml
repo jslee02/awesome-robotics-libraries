@@ -1,0 +1,108 @@
+name: Evaluate Submission
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  evaluate:
+    if: github.event.label.name == 'suggestion'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Extract GitHub repo from issue body
+        id: extract
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+
+            // Try the structured "github" field first (from issue template)
+            const ghMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+            if (ghMatch) {
+              core.setOutput('repo', ghMatch[1]);
+              return;
+            }
+
+            // Fallback: extract from any GitHub URL in the body
+            const urlMatch = body.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+            if (urlMatch) {
+              core.setOutput('repo', urlMatch[1]);
+              return;
+            }
+
+            core.setOutput('repo', '');
+
+      - name: Run evaluation
+        if: steps.extract.outputs.repo != ''
+        id: eval
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPORT=$(python3 scripts/evaluate_entry.py "${{ steps.extract.outputs.repo }}" 2>&1) || true
+          # Write to file to preserve formatting
+          echo "$REPORT" > /tmp/eval-report.md
+
+          # Get recommendation for labeling
+          REC=$(python3 scripts/evaluate_entry.py --json "${{ steps.extract.outputs.repo }}" 2>/dev/null | python3 -c "import sys,json; print(json.load(sys.stdin).get('recommendation','error'))" 2>/dev/null || echo "error")
+          echo "recommendation=$REC" >> "$GITHUB_OUTPUT"
+
+      - name: Post evaluation comment
+        if: steps.extract.outputs.repo != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('/tmp/eval-report.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: report
+            });
+
+      - name: Apply recommendation label
+        if: steps.extract.outputs.repo != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const rec = '${{ steps.eval.outputs.recommendation }}';
+            const labelMap = {
+              'accept': 'accepted',
+              'likely_accept': 'accepted',
+              'incubator': 'incubator',
+              'reject': 'needs-review',
+              'error': 'needs-review',
+            };
+            const label = labelMap[rec] || 'needs-review';
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: [label]
+            });
+
+      - name: Post fallback comment (no repo found)
+        if: steps.extract.outputs.repo == ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '⚠️ Could not extract a GitHub repository from this issue. Please ensure the **GitHub Repository** field contains a valid `owner/repo` slug, or include a GitHub URL in the description.\n\nA maintainer will review this suggestion manually.'
+            });
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['needs-review']
+            });
