@@ -17,6 +17,8 @@ jobs:
         with:
           python-version: "3.12"
 
+      - run: pip install pyyaml
+
       - name: Extract GitHub repo from issue body
         id: extract
         uses: actions/github-script@v7
@@ -46,12 +48,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          REPORT=$(python3 scripts/evaluate_entry.py "${{ steps.extract.outputs.repo }}" 2>&1) || true
-          # Write to file to preserve formatting
+          REPORT=$(python3 scripts/evaluate_entry.py --data-dir data/ "${{ steps.extract.outputs.repo }}" 2>&1) || true
           echo "$REPORT" > /tmp/eval-report.md
 
-          # Get recommendation for labeling
-          REC=$(python3 scripts/evaluate_entry.py --json "${{ steps.extract.outputs.repo }}" 2>/dev/null | python3 -c "import sys,json; print(json.load(sys.stdin).get('recommendation','error'))" 2>/dev/null || echo "error")
+          REC=$(python3 scripts/evaluate_entry.py --data-dir data/ --json "${{ steps.extract.outputs.repo }}" 2>/dev/null \
+            | python3 -c "import sys,json; print(json.load(sys.stdin).get('recommendation','error'))" 2>/dev/null || echo "error")
           echo "recommendation=$REC" >> "$GITHUB_OUTPUT"
 
       - name: Post evaluation comment
@@ -68,26 +69,35 @@ jobs:
               body: report
             });
 
-      - name: Apply recommendation label
+      - name: Apply label and handle outcome
         if: steps.extract.outputs.repo != ''
         uses: actions/github-script@v7
         with:
           script: |
             const rec = '${{ steps.eval.outputs.recommendation }}';
+            const issue = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
             const labelMap = {
               'accept': 'accepted',
               'likely_accept': 'accepted',
               'incubator': 'incubator',
-              'reject': 'needs-review',
+              'reject': 'incubator',
+              'duplicate': 'duplicate',
               'error': 'needs-review',
             };
             const label = labelMap[rec] || 'needs-review';
-            await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              labels: [label]
-            });
+            await github.rest.issues.addLabels({ owner, repo, issue_number: issue, labels: [label] });
+
+            // Auto-close duplicates with a friendly note
+            if (rec === 'duplicate') {
+              await github.rest.issues.update({
+                owner, repo, issue_number: issue,
+                state: 'closed',
+                state_reason: 'not_planned',
+              });
+            }
 
       - name: Post fallback comment (no repo found)
         if: steps.extract.outputs.repo == ''
@@ -98,7 +108,14 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: '⚠️ Could not extract a GitHub repository from this issue. Please ensure the **GitHub Repository** field contains a valid `owner/repo` slug, or include a GitHub URL in the description.\n\nA maintainer will review this suggestion manually.'
+              body: [
+                '👋 Thanks for the suggestion!',
+                '',
+                'I couldn\'t find a GitHub repository in this issue. Could you add the **GitHub Repository** field ',
+                '(e.g., `owner/repo`) so I can run an automated evaluation?',
+                '',
+                'If the project isn\'t on GitHub, no worries — a maintainer will review it manually.',
+              ].join('\n')
             });
             await github.rest.issues.addLabels({
               owner: context.repo.owner,

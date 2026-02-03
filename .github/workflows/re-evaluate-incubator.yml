@@ -1,0 +1,138 @@
+name: Re-evaluate Incubator
+
+on:
+  schedule:
+    - cron: "0 9 1 * *"  # 1st of each month, 9am UTC
+  workflow_dispatch: {}
+
+jobs:
+  re-evaluate:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Find and re-evaluate incubator issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { execSync } = require('child_process');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Find all open issues with 'incubator' label
+            const issues = await github.rest.issues.listForRepo({
+              owner, repo,
+              labels: 'incubator',
+              state: 'open',
+              per_page: 50,
+            });
+
+            if (issues.data.length === 0) {
+              console.log('No incubator issues to re-evaluate.');
+              return;
+            }
+
+            console.log(`Found ${issues.data.length} incubator issue(s) to re-evaluate.`);
+
+            for (const issue of issues.data) {
+              const body = issue.body || '';
+
+              // Extract GitHub repo
+              let ghRepo = '';
+              const ghMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+              if (ghMatch) {
+                ghRepo = ghMatch[1];
+              } else {
+                const urlMatch = body.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+                if (urlMatch) ghRepo = urlMatch[1];
+              }
+
+              if (!ghRepo) {
+                console.log(`  #${issue.number}: no repo found, skipping`);
+                continue;
+              }
+
+              console.log(`  #${issue.number}: re-evaluating ${ghRepo}...`);
+
+              // Run evaluator
+              let result;
+              try {
+                const output = execSync(
+                  `python3 scripts/evaluate_entry.py --data-dir data/ --json "${ghRepo}"`,
+                  { env: { ...process.env }, timeout: 30000 }
+                ).toString();
+                result = JSON.parse(output);
+              } catch (e) {
+                console.log(`    evaluation failed: ${e.message}`);
+                continue;
+              }
+
+              const rec = result.recommendation;
+              console.log(`    recommendation: ${rec} (score: ${result.auto_score}/${result.auto_total})`);
+
+              // Only act if the project now qualifies
+              if (rec === 'accept' || rec === 'likely_accept') {
+                // Generate a human-readable report
+                let report;
+                try {
+                  report = execSync(
+                    `python3 scripts/evaluate_entry.py --data-dir data/ "${ghRepo}"`,
+                    { env: { ...process.env }, timeout: 30000 }
+                  ).toString();
+                } catch (e) {
+                  report = `Re-evaluation suggests this project now qualifies (score: ${result.auto_score}/${result.auto_total}).`;
+                }
+
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: issue.number,
+                  body: [
+                    '🎉 **Monthly re-evaluation update**',
+                    '',
+                    'Great news — this project now meets our inclusion criteria!',
+                    '',
+                    report,
+                    '',
+                    'A maintainer will review and apply the `accepted` label to trigger the auto-add workflow.',
+                  ].join('\n'),
+                });
+
+                // Swap incubator → accepted
+                await github.rest.issues.removeLabel({
+                  owner, repo, issue_number: issue.number, name: 'incubator',
+                }).catch(() => {});
+                await github.rest.issues.addLabels({
+                  owner, repo, issue_number: issue.number, labels: ['accepted'],
+                });
+
+                console.log(`    ✅ promoted to accepted`);
+              } else if (rec === 'duplicate') {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: issue.number,
+                  body: [
+                    '📋 **Monthly re-evaluation update**',
+                    '',
+                    `It appears this project has been added to the list since this issue was created ` +
+                    `(found as "${result.duplicate_of}" in the ${result.duplicate_section} section).`,
+                    '',
+                    'Closing this issue. Thanks for the suggestion! 🙏',
+                  ].join('\n'),
+                });
+                await github.rest.issues.update({
+                  owner, repo, issue_number: issue.number,
+                  state: 'closed', state_reason: 'completed',
+                });
+                console.log(`    closed as duplicate`);
+              } else {
+                console.log(`    still incubating (${result.auto_score}/${result.auto_total})`);
+              }
+            }

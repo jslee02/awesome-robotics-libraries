@@ -1,0 +1,229 @@
+name: Add Accepted Entry
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  add-entry:
+    if: github.event.label.name == 'accepted'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml jsonschema
+
+      - name: Parse issue and build entry
+        id: parse
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+
+            function extractField(body, header) {
+              const re = new RegExp(`### ${header}\\s*\\n\\s*\\n?\\s*([\\s\\S]*?)(?=\\n###|$)`);
+              const m = body.match(re);
+              return m ? m[1].trim() : '';
+            }
+
+            const name = extractField(body, 'Library Name');
+            const url = extractField(body, 'URL');
+            const category = extractField(body, 'Category');
+            const description = extractField(body, 'Description');
+
+            // GitHub repo: from structured field or from URL
+            let ghRepo = extractField(body, 'GitHub Repository');
+            if (!ghRepo) {
+              const urlMatch = body.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+              if (urlMatch) ghRepo = urlMatch[1];
+            }
+
+            if (!name || !category) {
+              core.setFailed('Could not parse required fields (name, category) from issue body');
+              return;
+            }
+
+            // Map category to YAML filename
+            const categoryMap = {
+              'Dynamics Simulation': 'dynamics-simulation',
+              'Inverse Kinematics': 'inverse-kinematics',
+              'Machine Learning': 'machine-learning',
+              'Motion Planning and Control': 'motion-planning',
+              'Optimization': 'optimization',
+              'Robot Modeling': 'robot-modeling',
+              'Robot Platform': 'robot-platform',
+              'Reinforcement Learning for Robotics': 'reinforcement-learning',
+              'SLAM': 'slam',
+              'Vision': 'vision',
+              'Fluid': 'fluid',
+              'Grasping': 'grasping',
+              'Humanoid Robotics': 'humanoid-robotics',
+              'Multiphysics': 'multiphysics',
+              'Math': 'math',
+              'ETC': 'etc',
+              'Simulators': 'simulators',
+              'Other Awesome Lists': 'other-awesome-lists',
+            };
+
+            const yamlFile = categoryMap[category];
+            if (!yamlFile) {
+              core.setFailed(`Unknown category: ${category}`);
+              return;
+            }
+
+            core.setOutput('name', name);
+            core.setOutput('url', url);
+            core.setOutput('github_repo', ghRepo);
+            core.setOutput('category', category);
+            core.setOutput('description', description);
+            core.setOutput('yaml_file', yamlFile);
+            core.setOutput('issue_number', context.issue.number);
+
+      - name: Fetch metadata and add YAML entry
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENTRY_NAME: ${{ steps.parse.outputs.name }}
+          ENTRY_URL: ${{ steps.parse.outputs.url }}
+          ENTRY_GITHUB: ${{ steps.parse.outputs.github_repo }}
+          ENTRY_DESCRIPTION: ${{ steps.parse.outputs.description }}
+          ENTRY_YAML_FILE: ${{ steps.parse.outputs.yaml_file }}
+        run: |
+          python3 - <<'PYTHON_SCRIPT'
+          import json, os, sys, urllib.request, urllib.error
+          from pathlib import Path
+          import yaml
+
+          name = os.environ.get("ENTRY_NAME", "")
+          url = os.environ.get("ENTRY_URL", "")
+          gh_repo = os.environ.get("ENTRY_GITHUB", "")
+          description = os.environ.get("ENTRY_DESCRIPTION", "")
+          yaml_file = os.environ.get("ENTRY_YAML_FILE", "")
+          token = os.environ.get("GITHUB_TOKEN", "")
+
+          yaml_path = Path("data") / f"{yaml_file}.yaml"
+          if not yaml_path.exists():
+              print(f"ERROR: {yaml_path} not found", file=sys.stderr)
+              sys.exit(1)
+
+          # Build entry
+          entry = {"name": name}
+          if url:
+              entry["url"] = url
+          if gh_repo:
+              entry["github"] = gh_repo
+
+          if description:
+              entry["description"] = description
+
+          # Fetch _meta from GitHub API
+          if gh_repo:
+              headers = {
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "awesome-robotics-libraries-bot",
+              }
+              if token:
+                  headers["Authorization"] = f"Bearer {token}"
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{gh_repo}", headers=headers
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=15) as resp:
+                      data = json.loads(resp.read())
+                  meta = {}
+                  if "stargazers_count" in data:
+                      meta["stars"] = data["stargazers_count"]
+                  if data.get("pushed_at"):
+                      meta["last_commit"] = data["pushed_at"][:10]
+                  if data.get("archived"):
+                      meta["archived"] = True
+                  if data.get("license") and data["license"].get("spdx_id", "NOASSERTION") != "NOASSERTION":
+                      meta["license"] = data["license"]["spdx_id"]
+                  if data.get("language"):
+                      meta["language"] = data["language"]
+                  if meta:
+                      entry["_meta"] = meta
+              except Exception as e:
+                  print(f"WARN: Could not fetch metadata: {e}", file=sys.stderr)
+
+          # Load existing entries and insert alphabetically
+          with open(yaml_path, encoding="utf-8") as f:
+              entries = yaml.safe_load(f) or []
+
+          entries.append(entry)
+          entries.sort(key=lambda e: e["name"].lower())
+
+          with open(yaml_path, "w", encoding="utf-8") as f:
+              yaml.dump(entries, f, default_flow_style=False, allow_unicode=True, sort_keys=False, width=120)
+
+          print(f"Added {name} to {yaml_path}")
+          PYTHON_SCRIPT
+
+      - name: Regenerate README
+        if: success()
+        run: python3 scripts/generate_readme.py
+
+      - name: Validate
+        if: success()
+        run: python3 scripts/validate_entries.py
+
+      - name: Create PR
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ steps.parse.outputs.issue_number }}
+          ENTRY_NAME: ${{ steps.parse.outputs.name }}
+          YAML_FILE: ${{ steps.parse.outputs.yaml_file }}
+        run: |
+          BRANCH="add-entry/${{ steps.parse.outputs.yaml_file }}-$(echo '${{ steps.parse.outputs.name }}' | tr '[:upper:] ' '[:lower:]-' | tr -cd 'a-z0-9-')"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add "data/${YAML_FILE}.yaml" README.md
+          git commit --signoff -m "content: add ${ENTRY_NAME} to ${YAML_FILE}
+
+          Closes #${ISSUE_NUMBER}"
+          git push -u origin "$BRANCH"
+
+          gh pr create \
+            --title "content: add ${ENTRY_NAME}" \
+            --body "$(cat <<EOF
+          ## Auto-generated from issue #${ISSUE_NUMBER}
+
+          Adds **${ENTRY_NAME}** to the \`${YAML_FILE}\` section.
+
+          - YAML entry with metadata populated from GitHub API
+          - README.md regenerated
+          - Schema validation passed
+
+          Closes #${ISSUE_NUMBER}
+          EOF
+          )"
+
+      - name: Comment on issue
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                '🎉 Great news! A PR has been automatically created to add this entry to the list.',
+                '',
+                'A maintainer will review and merge it shortly. Thanks for contributing!',
+              ].join('\n')
+            });
