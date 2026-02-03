@@ -145,6 +145,46 @@ Every pull request that touches `data/`, `schema/`, or `scripts/` runs these che
 - Sign your commits: `git commit --signoff` (required by DCO check)
 - Check your spelling and grammar
 
+## Inclusion & Exclusion Criteria
+
+This is a **curated** list — not every robotics project belongs here. We use objective criteria to keep the list high-quality and fair.
+
+### Acceptance
+
+**Must-have** (all required):
+
+- [ ] Relevant to robotics (simulation, planning, perception, control, dynamics, etc.)
+- [ ] Publicly accessible (open source, or well-documented commercial tool)
+- [ ] Not a duplicate of an existing entry
+- [ ] Has a meaningful description
+
+**Scoring** (need ≥ 3 of 5):
+
+- [ ] **Popularity**: ≥ 50 GitHub stars (or equivalent community adoption for non-GitHub projects)
+- [ ] **Activity**: At least one commit within the last 2 years
+- [ ] **Documentation**: Has a README with usage examples or API docs
+- [ ] **Maturity**: Project is ≥ 6 months old (not premature/experimental)
+- [ ] **Uniqueness**: Fills a niche not already covered by existing entries
+
+| Result | Criteria | Action |
+|--------|----------|--------|
+| ✅ Accept | Meets all must-haves + ≥ 3 scoring points | Add to the main list |
+| 🟡 Incubator | Meets all must-haves + 1–2 scoring points | Issue stays open with `incubator` label; re-evaluated when project matures |
+| ❌ Reject | Fails any must-have | Issue closed with explanation |
+
+### Removal
+
+An existing entry may be removed if **any** of the following apply:
+
+- Archived **and** superseded by another listed entry (e.g., nphysics → Rapier)
+- No commits in 5+ years **and** < 100 stars **and** no historical significance
+- URL permanently broken (after link-check CI has flagged it for 3+ months)
+
+### Exceptions
+
+- **Historical significance**: Foundational libraries (e.g., ODE, Simbody) are kept even if inactive — they remain important references.
+- **Commercial tools**: Accepted if widely used in the robotics community, even without a public repo.
+
 ## For Maintainers
 
 ### Regenerating README for a contributor

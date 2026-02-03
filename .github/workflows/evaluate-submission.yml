@@ -1,0 +1,135 @@
+name: Evaluate Submission
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  evaluate:
+    if: github.event.label.name == 'suggestion'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Extract GitHub repo from issue body
+        id: extract
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+
+            // Try the structured "github" field first (from issue template)
+            const ghMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+            if (ghMatch) {
+              core.setOutput('repo', ghMatch[1]);
+              return;
+            }
+
+            // Fallback: extract from any GitHub URL in the body
+            const urlMatch = body.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+            if (urlMatch) {
+              core.setOutput('repo', urlMatch[1]);
+              return;
+            }
+
+            core.setOutput('repo', '');
+
+      - name: Run evaluation
+        if: steps.extract.outputs.repo != ''
+        id: eval
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPORT=$(python3 scripts/evaluate_entry.py --data-dir data/ "${{ steps.extract.outputs.repo }}" 2>&1) || true
+          echo "$REPORT" > /tmp/eval-report.md
+
+          python3 scripts/evaluate_entry.py --data-dir data/ --json "${{ steps.extract.outputs.repo }}" 2>/dev/null > /tmp/eval-result.json || true
+          REC=$(python3 -c "import sys,json; print(json.load(open('/tmp/eval-result.json')).get('recommendation','error'))" 2>/dev/null || echo "error")
+          ARCHIVED=$(python3 -c "import sys,json; print(str(json.load(open('/tmp/eval-result.json')).get('archived',False)).lower())" 2>/dev/null || echo "false")
+          echo "recommendation=$REC" >> "$GITHUB_OUTPUT"
+          echo "archived=$ARCHIVED" >> "$GITHUB_OUTPUT"
+
+      - name: Post evaluation comment
+        if: steps.extract.outputs.repo != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('/tmp/eval-report.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: report
+            });
+
+      - name: Apply label and handle outcome
+        if: steps.extract.outputs.repo != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const rec = '${{ steps.eval.outputs.recommendation }}';
+            const archived = '${{ steps.eval.outputs.archived }}' === 'true';
+            const issue = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Archived rejects close immediately; 0-score rejects stay in incubator queue
+            let label;
+            if (rec === 'reject' && archived) {
+              label = 'rejected';
+            } else {
+              const labelMap = {
+                'accept': 'accepted',
+                'likely_accept': 'accepted',
+                'incubator': 'incubator',
+                'reject': 'incubator',
+                'duplicate': 'duplicate',
+                'error': 'needs-review',
+              };
+              label = labelMap[rec] || 'needs-review';
+            }
+            await github.rest.issues.addLabels({ owner, repo, issue_number: issue, labels: [label] });
+
+            // Auto-close duplicates and archived rejects
+            if (rec === 'duplicate' || (rec === 'reject' && archived)) {
+              await github.rest.issues.update({
+                owner, repo, issue_number: issue,
+                state: 'closed',
+                state_reason: 'not_planned',
+              });
+            }
+
+      - name: Post fallback comment (no repo found)
+        if: steps.extract.outputs.repo == ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                '👋 Thanks for the suggestion!',
+                '',
+                'I couldn\'t find a GitHub repository in this issue. Could you add the **GitHub Repository** field ',
+                '(e.g., `owner/repo`) so I can run an automated evaluation?',
+                '',
+                'If the project isn\'t on GitHub, no worries — a maintainer will review it manually.',
+              ].join('\n')
+            });
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['needs-review']
+            });

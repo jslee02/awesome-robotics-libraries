@@ -2,10 +2,9 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of robotics simulators and libraries.
+A curated list of robotics libraries and simulators.
 
 ## Contents
-* [Simulators](#simulators)
 * [Libraries](#libraries)
   * [Dynamics Simulation](#dynamics-simulation)
   * [Inverse Kinematics](#inverse-kinematics)
@@ -23,54 +22,10 @@ A curated list of robotics simulators and libraries.
   * [Multiphysics](#multiphysics)
   * [Math](#math)
   * [ETC](#etc)
+* [Simulators](#simulators)
 * [Other Awesome Lists](#other-awesome-lists)
 
 > **Legend**: 🟢 Active (<1yr) · 🟡 Slow (1-2yr) · 🔴 Stale (>2yr) · 💀 Archived
-
-## [Simulators](#contents)
-
-_Simulation environments for testing and developing robotic systems._
-
-###### Free or Open Source
-
-* 🟢 [AI2-THOR](https://ai2thor.allenai.org/) - Interactive household environment for embodied AI with Unity backend. [⭐ 1.7k](https://github.com/allenai/ai2thor)
-* 🟢 AirSim - Simulator based on Unreal Engine for autonomous vehicles. [⭐ 17.9k](https://github.com/Microsoft/AirSim)
-* 🟢 [ARGoS](https://www.argos-sim.info/) - Physics-based simulator designed to simulate large-scale robot swarms. [⭐ 301](https://github.com/ilpincy/argos3)
-* 🟢 [ARTE](http://arvc.umh.es/arte/index_en.html) - Matlab toolbox focussed on robotic manipulators. [⭐ 101](https://github.com/4rtur1t0/ARTE)
-* 🟢 [AVIS Engine](https://avisengine.com) - Fast simulation software for autonomous vehicle development. [⭐ 21](https://github.com/AvisEngine/AVIS-Engine-Python-API)
-* 🟢 [CARLA](https://carla.org/) - Open-source simulator for autonomous driving research. [⭐ 13.5k](https://github.com/carla-simulator/carla)
-* 🟢 [CoppeliaSim](https://www.coppeliarobotics.com/) - Formaly V-REP. Virtual robot experimentation platform. [⭐ 138](https://github.com/CoppeliaRobotics/CoppeliaSimLib)
-* 💀 [Gazebo](https://gazebosim.org/) - Dynamic multi-robot simulator. [⭐ 1.3k](https://github.com/gazebosim/gazebo-classic)
-* 🟢 [Gazebo Sim](https://gazebosim.org/) - Open source robotics simulator (formerly Ignition Gazebo). [⭐ 1.2k](https://github.com/gazebosim/gz-sim)
-* 🔴 [GraspIt!](http://graspit-simulator.github.io/) - Simulator for grasping research that can accommodate arbitrary hand and robot designs. [⭐ 207](https://github.com/graspit-simulator/graspit)
-* 🟢 [Habitat-Sim](https://aihabitat.org/) - Simulation platform for research in embodied artificial intelligence. [⭐ 3.5k](https://github.com/facebookresearch/habitat-sim)
-* 🟢 [Hexapod Robot Simulator](https://hexapod.netlify.app/) - Open-source hexapod robot inverse kinematics and gaits visualizer. [⭐ 681](https://github.com/mithi/hexapod)
-* 🟢 [Isaac Sim](https://developer.nvidia.com/isaac/sim) - NVIDIA's GPU-accelerated robotics simulation platform with PhysX 5 and RTX rendering. [⭐ 2.5k](https://github.com/isaac-sim/IsaacSim)
-* 🟢 [ManiSkill](https://github.com/haosulab/ManiSkill) - Robot simulation and manipulation learning package powered by SAPIEN. [⭐ 2.5k](https://github.com/haosulab/ManiSkill)
-* 🔴 [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine. [⭐ 370](https://github.com/morse-simulator/morse)
-* [Neurorobotics Platform](https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks. [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
-* 🟢 [PyBullet](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3) - An easy to use simulator for robotics and deep reinforcement learning. [⭐ 14.2k](https://github.com/bulletphysics/bullet3)
-* 🟢 [PyBullet_Industrial](https://pybullet-industrial.readthedocs.io/en/latest/) - PyBullet extension for simulating robotic manufacturing processes like milling and 3D printing. [⭐ 48](https://github.com/WBK-Robotics/pybullet_industrial)
-* 🔴 [Robot Gui](http://robot.glumb.de/) - A three.js based 3D robot interface. [⭐ 384](https://github.com/glumb/robot-gui)
-* 🟢 [SAPIEN](https://sapien.ucsd.edu) - Physics-rich simulation environment for articulated objects and manipulation. [⭐ 714](https://github.com/haosulab/SAPIEN)
-* [Simbad](http://simbad.sourceforge.net/) - Java 3D robot simulator with custom controller and sensor support.
-* 🟡 [Unity](https://unity.com/solutions/automotive-transportation-manufacturing/robotics) - Game engine with open-source robotics simulation tools and tutorials. [⭐ 2.5k](https://github.com/Unity-Technologies/Unity-Robotics-Hub)
-* 🟢 [Webots](http://www.cyberbotics.com/) - Development environment to model, program, and simulate robots and mechanical systems. [⭐ 4.1k](https://github.com/cyberbotics/webots)
-
-###### Commercial
-
-* [Actin Simulation](http://www.energid.com/) - Real-time robot simulation and control software.
-* [Artiminds](https://www.artiminds.com/) - Planning, programming, operation, analysis and optimization.
-* [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics.
-* [Robot Virtual Worlds](http://www.robotvirtualworlds.com/) - Virtual reality software for educational robotics.
-* [RobotDK](https://robodk.com/) - Simulation and OLP for robots.
-* [RobotStudio](https://www.abb.com/global/en/areas/robotics/products/software/robotstudio-suite) - ABB's simulation and offline programming software for robotics.
-* [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/) - 3D virtual environment for programming and testing robots.
-* [Visual Components](https://www.visualcomponents.com/) - 3D manufacturing simulation and visualization platform.
-
-###### Cloud
-
-* [AWS RoboMaker](https://aws.amazon.com/robomaker/) - Service that makes it easy to develop, test, and deploy intelligent robotics applications at scale.
 
 ## [Libraries](#contents)
 
@@ -348,6 +303,51 @@ _Other robotics-related tools and utilities._
 
 * [Foxglove Studio](https://foxglove.dev) - A fully integrated visualization and debugging desktop app for your robotics data.
 * 🟢 fuse - General architecture for performing sensor fusion live on a robot. [⭐ 847](https://github.com/locusrobotics/fuse)
+
+## [Simulators](#contents)
+
+_Simulation environments for testing and developing robotic systems._
+
+###### Free or Open Source
+
+* 🟢 [AI2-THOR](https://ai2thor.allenai.org/) - Interactive household environment for embodied AI with Unity backend. [⭐ 1.7k](https://github.com/allenai/ai2thor)
+* 🟢 AirSim - Simulator based on Unreal Engine for autonomous vehicles. [⭐ 17.9k](https://github.com/Microsoft/AirSim)
+* 🟢 [ARGoS](https://www.argos-sim.info/) - Physics-based simulator designed to simulate large-scale robot swarms. [⭐ 301](https://github.com/ilpincy/argos3)
+* 🟢 [ARTE](http://arvc.umh.es/arte/index_en.html) - Matlab toolbox focussed on robotic manipulators. [⭐ 101](https://github.com/4rtur1t0/ARTE)
+* 🟢 [AVIS Engine](https://avisengine.com) - Fast simulation software for autonomous vehicle development. [⭐ 21](https://github.com/AvisEngine/AVIS-Engine-Python-API)
+* 🟢 [CARLA](https://carla.org/) - Open-source simulator for autonomous driving research. [⭐ 13.5k](https://github.com/carla-simulator/carla)
+* 🟢 [CoppeliaSim](https://www.coppeliarobotics.com/) - Formaly V-REP. Virtual robot experimentation platform. [⭐ 138](https://github.com/CoppeliaRobotics/CoppeliaSimLib)
+* 💀 [Gazebo](https://gazebosim.org/) - Dynamic multi-robot simulator. [⭐ 1.3k](https://github.com/gazebosim/gazebo-classic)
+* 🟢 [Gazebo Sim](https://gazebosim.org/) - Open source robotics simulator (formerly Ignition Gazebo). [⭐ 1.2k](https://github.com/gazebosim/gz-sim)
+* 🔴 [GraspIt!](http://graspit-simulator.github.io/) - Simulator for grasping research that can accommodate arbitrary hand and robot designs. [⭐ 207](https://github.com/graspit-simulator/graspit)
+* 🟢 [Habitat-Sim](https://aihabitat.org/) - Simulation platform for research in embodied artificial intelligence. [⭐ 3.5k](https://github.com/facebookresearch/habitat-sim)
+* 🟢 [Hexapod Robot Simulator](https://hexapod.netlify.app/) - Open-source hexapod robot inverse kinematics and gaits visualizer. [⭐ 681](https://github.com/mithi/hexapod)
+* 🟢 [Isaac Sim](https://developer.nvidia.com/isaac/sim) - NVIDIA's GPU-accelerated robotics simulation platform with PhysX 5 and RTX rendering. [⭐ 2.5k](https://github.com/isaac-sim/IsaacSim)
+* 🟢 [ManiSkill](https://github.com/haosulab/ManiSkill) - Robot simulation and manipulation learning package powered by SAPIEN. [⭐ 2.5k](https://github.com/haosulab/ManiSkill)
+* 🔴 [MORSE](http://morse-simulator.github.io/) - Modular open robots simulation engine. [⭐ 370](https://github.com/morse-simulator/morse)
+* [Neurorobotics Platform](https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks. [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
+* 🟢 [PyBullet](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3) - An easy to use simulator for robotics and deep reinforcement learning. [⭐ 14.2k](https://github.com/bulletphysics/bullet3)
+* 🟢 [PyBullet_Industrial](https://pybullet-industrial.readthedocs.io/en/latest/) - PyBullet extension for simulating robotic manufacturing processes like milling and 3D printing. [⭐ 48](https://github.com/WBK-Robotics/pybullet_industrial)
+* 🔴 [Robot Gui](http://robot.glumb.de/) - A three.js based 3D robot interface. [⭐ 384](https://github.com/glumb/robot-gui)
+* 🟢 [SAPIEN](https://sapien.ucsd.edu) - Physics-rich simulation environment for articulated objects and manipulation. [⭐ 714](https://github.com/haosulab/SAPIEN)
+* [Simbad](http://simbad.sourceforge.net/) - Java 3D robot simulator with custom controller and sensor support.
+* 🟡 [Unity](https://unity.com/solutions/automotive-transportation-manufacturing/robotics) - Game engine with open-source robotics simulation tools and tutorials. [⭐ 2.5k](https://github.com/Unity-Technologies/Unity-Robotics-Hub)
+* 🟢 [Webots](http://www.cyberbotics.com/) - Development environment to model, program, and simulate robots and mechanical systems. [⭐ 4.1k](https://github.com/cyberbotics/webots)
+
+###### Commercial
+
+* [Actin Simulation](http://www.energid.com/) - Real-time robot simulation and control software.
+* [Artiminds](https://www.artiminds.com/) - Planning, programming, operation, analysis and optimization.
+* [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics.
+* [Robot Virtual Worlds](http://www.robotvirtualworlds.com/) - Virtual reality software for educational robotics.
+* [RobotDK](https://robodk.com/) - Simulation and OLP for robots.
+* [RobotStudio](https://www.abb.com/global/en/areas/robotics/products/software/robotstudio-suite) - ABB's simulation and offline programming software for robotics.
+* [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/) - 3D virtual environment for programming and testing robots.
+* [Visual Components](https://www.visualcomponents.com/) - 3D manufacturing simulation and visualization platform.
+
+###### Cloud
+
+* [AWS RoboMaker](https://aws.amazon.com/robomaker/) - Service that makes it easy to develop, test, and deploy intelligent robotics applications at scale.
 
 ## [Other Awesome Lists](#contents)
 
