@@ -52,9 +52,11 @@ jobs:
           REPORT=$(python3 scripts/evaluate_entry.py --data-dir data/ "${{ steps.extract.outputs.repo }}" 2>&1) || true
           echo "$REPORT" > /tmp/eval-report.md
 
-          REC=$(python3 scripts/evaluate_entry.py --data-dir data/ --json "${{ steps.extract.outputs.repo }}" 2>/dev/null \
-            | python3 -c "import sys,json; print(json.load(sys.stdin).get('recommendation','error'))" 2>/dev/null || echo "error")
+          python3 scripts/evaluate_entry.py --data-dir data/ --json "${{ steps.extract.outputs.repo }}" 2>/dev/null > /tmp/eval-result.json || true
+          REC=$(python3 -c "import sys,json; print(json.load(open('/tmp/eval-result.json')).get('recommendation','error'))" 2>/dev/null || echo "error")
+          ARCHIVED=$(python3 -c "import sys,json; print(str(json.load(open('/tmp/eval-result.json')).get('archived',False)).lower())" 2>/dev/null || echo "false")
           echo "recommendation=$REC" >> "$GITHUB_OUTPUT"
+          echo "archived=$ARCHIVED" >> "$GITHUB_OUTPUT"
 
       - name: Post evaluation comment
         if: steps.extract.outputs.repo != ''
@@ -76,23 +78,30 @@ jobs:
         with:
           script: |
             const rec = '${{ steps.eval.outputs.recommendation }}';
+            const archived = '${{ steps.eval.outputs.archived }}' === 'true';
             const issue = context.issue.number;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
-            const labelMap = {
-              'accept': 'accepted',
-              'likely_accept': 'accepted',
-              'incubator': 'incubator',
-              'reject': 'incubator',
-              'duplicate': 'duplicate',
-              'error': 'needs-review',
-            };
-            const label = labelMap[rec] || 'needs-review';
+            // Archived rejects close immediately; 0-score rejects stay in incubator queue
+            let label;
+            if (rec === 'reject' && archived) {
+              label = 'rejected';
+            } else {
+              const labelMap = {
+                'accept': 'accepted',
+                'likely_accept': 'accepted',
+                'incubator': 'incubator',
+                'reject': 'incubator',
+                'duplicate': 'duplicate',
+                'error': 'needs-review',
+              };
+              label = labelMap[rec] || 'needs-review';
+            }
             await github.rest.issues.addLabels({ owner, repo, issue_number: issue, labels: [label] });
 
-            // Auto-close duplicates with a friendly note
-            if (rec === 'duplicate') {
+            // Auto-close duplicates and archived rejects
+            if (rec === 'duplicate' || (rec === 'reject' && archived)) {
               await github.rest.issues.update({
                 owner, repo, issue_number: issue,
                 state: 'closed',
