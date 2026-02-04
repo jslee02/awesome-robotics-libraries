@@ -1,12 +1,12 @@
-name: Suggest a Library
-description: Suggest a robotics library to add to the list
+name: Suggest a Resource
+description: Suggest a robotics library, simulator, tool, or other resource to add to the list
 title: "[Suggestion] "
 labels: ["suggestion"]
 body:
   - type: input
     id: name
     attributes:
-      label: Library Name
+      label: Resource Name
     validations:
       required: true
 
@@ -22,8 +22,15 @@ body:
     id: github
     attributes:
       label: GitHub Repository
-      description: "GitHub `owner/repo` slug (e.g., `google-deepmind/mujoco`). Leave blank if the project is not on GitHub."
+      description: "GitHub `owner/repo` slug (e.g., `google-deepmind/mujoco`). Leave blank if the project is not on GitHub — a maintainer will review it manually."
       placeholder: owner/repo
+
+  - type: input
+    id: alt_repo
+    attributes:
+      label: Alternative Repository
+      description: "GitLab, Bitbucket, or other repository URL (if not on GitHub)."
+      placeholder: https://gitlab.com/org/project
 
   - type: dropdown
     id: category
@@ -56,7 +63,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Brief description of what this library does
+      description: Brief description of what this resource does
     validations:
       required: true
 
@@ -64,7 +71,7 @@ body:
     id: why
     attributes:
       label: Why should it be included?
-      description: Explain what makes this library a good fit for the list (e.g., fills a gap, widely used, novel approach).
+      description: Explain what makes this resource a good fit for the list (e.g., fills a gap, widely used, novel approach).
 
   - type: checkboxes
     id: must_have
@@ -81,9 +88,9 @@ body:
     id: scoring
     attributes:
       label: "Scoring checklist (need ≥ 3 of 5)"
-      description: "Check all that apply. We will verify these during review."
+      description: "Check all that apply. We will verify these during review. For non-GitHub projects, equivalent metrics are accepted."
       options:
-        - label: "**Popularity**: ≥ 50 GitHub stars (or equivalent community adoption)"
+        - label: "**Popularity**: ≥ 50 GitHub stars (or equivalent community adoption for non-GitHub projects)"
         - label: "**Activity**: At least one commit within the last 2 years"
         - label: "**Documentation**: Has a README with usage examples or API docs"
         - label: "**Maturity**: Project is ≥ 6 months old"
