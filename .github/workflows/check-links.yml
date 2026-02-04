@@ -78,7 +78,7 @@ jobs:
 
       - name: Create pull request with fixes
         if: steps.fix.outputs.fixes_applied == 'true'
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "fix: replace broken links with updated URLs"
           title: "fix: auto-fix broken links"
