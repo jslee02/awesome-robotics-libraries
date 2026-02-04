@@ -365,6 +365,7 @@ _Related curated lists of robotics and AI resources._
 * [Awesome Gazebo](https://github.com/fkromer/awesome-gazebo) - Curated list of Gazebo simulation framework resources.
 * [Awesome Grasping](https://github.com/Po-Jen/awesome-grasping) - Curated list of grasping libraries and resources.
 * [Awesome Human Robot Interaction](https://github.com/Po-Jen/awesome-human-robot-interaction) - Curated list of human-robot interaction libraries and resources.
+* [Awesome Physical AI](https://github.com/keon/awesome-physical-ai) - Curated list of academic papers and resources on Physical AI.
 * [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) - Python sample codes for robotics algorithms.
 * [Robotics Coursework](https://github.com/mithi/robotics-coursework) - A list of robotics courses you can take online.
 

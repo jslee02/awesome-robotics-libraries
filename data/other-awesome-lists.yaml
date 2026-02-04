@@ -93,6 +93,15 @@
     last_commit: '2019-02-12'
     license: MIT
 
+- name: Awesome Physical AI
+  url: https://github.com/keon/awesome-physical-ai
+  github: keon/awesome-physical-ai
+  description: Curated list of academic papers and resources on Physical AI.
+  _meta:
+    stars: 79
+    last_commit: '2026-01-18'
+    license: CC0-1.0
+
 - name: PythonRobotics
   url: https://github.com/AtsushiSakai/PythonRobotics
   github: AtsushiSakai/PythonRobotics
