@@ -1,25 +1,56 @@
 # Contributing
 
-Thank you for improving this list! This guide explains how to add libraries, fix entries, and work with the project.
+Thank you for improving this list! This guide explains how to suggest resources, fix entries, and work with the project.
+
+> [!TIP]
+> **Want to add something to the list?** The easiest way is to [open a suggestion issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml). Our automation evaluates GitHub-hosted projects automatically, and once accepted, a PR is created for you — no local setup needed.
+
+> [!CAUTION]
+> **Do not edit `README.md` directly.** It is auto-generated from YAML data files. Manual edits will be overwritten, and PRs that only modify `README.md` will be rejected by CI.
 
 ## How It Works
 
 This repository uses a **YAML-first** workflow:
 
 ```
-data/*.yaml  -->  scripts/generate_readme.py  -->  README.md
+data/*.yaml  →  scripts/generate_readme.py  →  README.md
 ```
 
-- **Source of truth**: YAML files in `data/` (one per section)
-- **Schema**: `schema/entry.schema.json` defines valid entry fields
-- **Generator**: `scripts/generate_readme.py` builds README.md from YAML
-- **Do not edit README.md by hand** — changes will be overwritten on the next generation
+| Component | Role |
+|-----------|------|
+| `data/*.yaml` | **Source of truth** — one file per section |
+| `schema/entry.schema.json` | Defines valid entry fields |
+| `scripts/generate_readme.py` | Generates `README.md` from YAML |
 
-## Adding a Library
+## Ways to Contribute
 
-1. Find the right YAML file in `data/` (e.g., `data/simulators.yaml`, `data/slam.yaml`)
+| What you want to do | How |
+|---------------------|-----|
+| **Suggest a new resource** | [Open a suggestion issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml) *(recommended)* |
+| **Fix a URL or description** | Edit the relevant `data/*.yaml` file and [open a PR](#editing-existing-entries) |
+| **Report broken links or errors** | [Open a report issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=report-issue.yml) |
+| **Change section headings or layout** | Edit `scripts/generate_readme.py` and open a PR |
 
-2. Add your entry in alphabetical order within the file:
+## Adding a Resource
+
+### Via Issue (Recommended)
+
+1. Go to **[Suggest a Resource](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml)**
+2. Fill in the name, URL, category, and description
+3. Submit — automation handles the rest:
+   - GitHub-hosted projects are evaluated against [inclusion criteria](#inclusion--exclusion-criteria) automatically
+   - Non-GitHub resources are flagged for manual maintainer review
+   - Once accepted, a PR with the YAML entry, metadata, and regenerated README is created automatically
+   - A maintainer reviews and merges
+
+No local setup or code changes needed.
+
+### Via Pull Request
+
+If you prefer to submit a PR directly:
+
+1. Find the right YAML file in `data/` (see [Which YAML File?](#which-yaml-file) below)
+2. Add your entry in alphabetical order:
 
    ```yaml
    - name: MyLibrary
@@ -31,7 +62,8 @@ data/*.yaml  -->  scripts/generate_readme.py  -->  README.md
 3. Regenerate README.md:
 
    ```bash
-   pixi run generate
+   pip install pyyaml
+   python3 scripts/generate_readme.py
    ```
 
 4. Commit both the YAML file and README.md:
@@ -41,13 +73,14 @@ data/*.yaml  -->  scripts/generate_readme.py  -->  README.md
    git commit --signoff -m "content: add MyLibrary to section-name"
    ```
 
-> **Tip**: If you cannot run the generator locally, submit your PR with just the YAML change and note it in the PR description. A maintainer will regenerate README.md for you.
+> [!TIP]
+> If you cannot run the generator locally, submit your PR with just the YAML change and note it in the PR description. A maintainer will regenerate README.md for you.
 
 ### Entry Fields
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| `name` | Yes | Library display name |
+| `name` | Yes | Display name |
 | `url` | | Project website |
 | `github` | | GitHub `owner/repo` (e.g., `dartsim/dart`) |
 | `gitlab` | | GitLab path |
@@ -128,18 +161,19 @@ lychee --config .lychee.toml '**/*.md'
 
 ## What CI Checks
 
-Every pull request that touches `data/`, `schema/`, or `scripts/` runs these checks:
+Every pull request runs applicable checks automatically:
 
-| Check | Description |
-|-------|-------------|
-| **Validate Data** | YAML entries pass JSON schema validation |
-| **README Freshness** | README.md matches the generated output from YAML |
-| **Check Links** | All URLs in markdown files are reachable |
-| **DCO** | Commits are signed off (`git commit --signoff`) |
+| Check | Triggers On | Description |
+|-------|-------------|-------------|
+| **Validate Data** | `data/**`, `schema/**`, `scripts/**` | YAML entries pass JSON schema validation |
+| **README Freshness** | `data/**`, `schema/**`, `scripts/**` | README.md matches the generated output from YAML |
+| **Protect README** | `README.md` | Rejects PRs that edit README.md without corresponding data/script changes |
+| **Check Links** | `**.md` | All URLs in markdown files are reachable |
+| **DCO** | All PRs | Commits are signed off (`git commit --signoff`) |
 
 ## Guidelines
 
-- One library per pull request (when possible)
+- One resource per pull request (when possible)
 - Alphabetical order within each section
 - Keep descriptions short and descriptive
 - Sign your commits: `git commit --signoff` (required by DCO check)
@@ -206,3 +240,4 @@ git push
 |----------|----------|-------------|
 | Check Links | Weekly (Mon 8am UTC) | Checks for broken links; auto-creates fix PRs |
 | Validate Data | On PR | Validates YAML schema and README freshness |
+| Protect README | On PR | Blocks direct README.md edits without data changes |

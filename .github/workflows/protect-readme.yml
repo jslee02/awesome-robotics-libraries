@@ -1,0 +1,43 @@
+name: Protect README
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Block direct README edits
+        # Skip for bot-authored PRs (auto-fix links, add-accepted-entry, etc.)
+        if: github.event.pull_request.user.type != 'Bot'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              per_page: 100,
+            });
+
+            const hasSourceChanges = files.some(f =>
+              f.filename.startsWith('data/') ||
+              f.filename.startsWith('scripts/') ||
+              f.filename.startsWith('schema/')
+            );
+
+            if (!hasSourceChanges) {
+              core.setFailed(
+                '❌ README.md must not be edited directly.\n\n' +
+                'This repository uses a YAML-first workflow — README.md is auto-generated ' +
+                'from data/*.yaml files.\n\n' +
+                '📋 To suggest adding a resource, please open an issue instead:\n' +
+                `   https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new/choose\n\n` +
+                '🔧 To fix an existing entry, edit the relevant data/*.yaml file.\n\n' +
+                'See CONTRIBUTING.md for details.'
+              );
+            }
+
+            console.log('✅ README.md change accompanied by source file changes — OK');
