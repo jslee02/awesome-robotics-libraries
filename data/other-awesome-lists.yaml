@@ -3,78 +3,69 @@
   github: Kiloreux/awesome-robotics
   description: Curated list of robotics resources (Kiloreux).
   _meta:
-    stars: 6007
+    stars: 6042
     last_commit: '2024-09-22'
-
 - name: Awesome Robotics
   url: https://github.com/ahundt/awesome-robotics
   github: ahundt/awesome-robotics
   description: Curated list of robotics links and software libraries (ahundt).
   _meta:
-    stars: 1322
+    stars: 1323
     last_commit: '2024-01-10'
-
 - name: Awesome Robotic Tooling
   url: https://github.com/Ly0n/awesome-robotic-tooling
   github: Ly0n/awesome-robotic-tooling
   description: Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
   _meta:
-    stars: 3722
+    stars: 3726
     last_commit: '2023-11-20'
     license: CC0-1.0
-
 - name: Awesome Artificial Intelligence
   url: https://github.com/owainlewis/awesome-artificial-intelligence
   github: owainlewis/awesome-artificial-intelligence
   description: Curated list of AI courses, books, video lectures, and papers.
   _meta:
-    stars: 12923
+    stars: 12939
     last_commit: '2025-08-12'
     license: MIT
-
 - name: Awesome Collision Detection
   url: https://github.com/jslee02/awesome-collision-detection
   github: jslee02/awesome-collision-detection
   description: Curated list of collision detection libraries and resources.
   _meta:
-    stars: 999
+    stars: 1001
     last_commit: '2023-09-30'
     license: CC0-1.0
-
 - name: Awesome Computer Vision
   url: https://github.com/jbhuang0604/awesome-computer-vision
   github: jbhuang0604/awesome-computer-vision
   description: Curated list of computer vision resources.
   _meta:
-    stars: 23033
+    stars: 23049
     last_commit: '2024-05-17'
-
 - name: Awesome Machine Learning
   url: https://github.com/josephmisiti/awesome-machine-learning
   github: josephmisiti/awesome-machine-learning
   description: Curated list of machine learning frameworks, libraries, and software.
   _meta:
-    stars: 71565
+    stars: 71621
     last_commit: '2026-01-29'
     language: Python
-
 - name: Awesome Deep Learning
   url: https://github.com/ChristosChristofidis/awesome-deep-learning
   github: ChristosChristofidis/awesome-deep-learning
   description: Curated list of deep learning tutorials, projects, and communities.
   _meta:
-    stars: 27443
+    stars: 27499
     last_commit: '2025-05-26'
-
 - name: Awesome Gazebo
   url: https://github.com/fkromer/awesome-gazebo
   github: fkromer/awesome-gazebo
   description: Curated list of Gazebo simulation framework resources.
   _meta:
-    stars: 153
+    stars: 154
     last_commit: '2021-01-24'
     archived: true
-
 - name: Awesome Grasping
   url: https://github.com/Po-Jen/awesome-grasping
   github: Po-Jen/awesome-grasping
@@ -83,7 +74,6 @@
     stars: 96
     last_commit: '2019-07-13'
     license: Unlicense
-
 - name: Awesome Human Robot Interaction
   url: https://github.com/Po-Jen/awesome-human-robot-interaction
   github: Po-Jen/awesome-human-robot-interaction
@@ -92,30 +82,27 @@
     stars: 147
     last_commit: '2019-02-12'
     license: MIT
-
 - name: Awesome Physical AI
   url: https://github.com/keon/awesome-physical-ai
   github: keon/awesome-physical-ai
   description: Curated list of academic papers and resources on Physical AI.
   _meta:
-    stars: 79
+    stars: 80
     last_commit: '2026-01-18'
     license: CC0-1.0
-
 - name: PythonRobotics
   url: https://github.com/AtsushiSakai/PythonRobotics
   github: AtsushiSakai/PythonRobotics
   description: Python sample codes for robotics algorithms.
   _meta:
-    stars: 28485
-    last_commit: '2026-01-27'
+    stars: 28595
+    last_commit: '2026-02-03'
     language: Python
-
 - name: Robotics Coursework
   url: https://github.com/mithi/robotics-coursework
   github: mithi/robotics-coursework
   description: A list of robotics courses you can take online.
   _meta:
-    stars: 3906
+    stars: 3929
     last_commit: '2026-01-24'
     license: Unlicense

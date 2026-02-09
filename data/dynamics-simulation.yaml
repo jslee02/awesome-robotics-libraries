@@ -5,7 +5,6 @@
   - C++
   models:
   - soft
-
 - name: Bullet
   url: https://pybullet.org/
   description: Real-time physics simulation for games, visual effects, and robotics.
@@ -23,10 +22,9 @@
   - urdf
   - sdf
   _meta:
-    stars: 14206
+    stars: 14220
     last_commit: '2025-10-22'
     language: C++
-
 - name: Brax
   url: https://github.com/google/brax
   description: Massively parallel differentiable rigid body physics engine in JAX for robotics and RL.
@@ -39,11 +37,10 @@
   features:
   - id
   _meta:
-    stars: 3047
-    last_commit: '2026-01-29'
+    stars: 3053
+    last_commit: '2026-02-06'
     license: Apache-2.0
     language: Jupyter Notebook
-
 - name: CHRONO::ENGINE
   url: https://projectchrono.org/
   description: Multi-physics simulation of rigid and flexible bodies, granular, and fluid systems.
@@ -61,11 +58,10 @@
   - ik
   - urdf
   _meta:
-    stars: 2706
-    last_commit: '2026-01-31'
+    stars: 2715
+    last_commit: '2026-02-08'
     license: BSD-3-Clause
     language: C++
-
 - name: DART
   url: http://dartsim.github.io/
   description: Dynamic Animation and Robotics Toolkit for multibody simulation and planning.
@@ -84,11 +80,10 @@
   - urdf
   - sdf
   _meta:
-    stars: 1052
-    last_commit: '2026-02-02'
+    stars: 1053
+    last_commit: '2026-02-08'
     license: BSD-2-Clause
     language: C++
-
 - name: Drake
   url: https://drake.mit.edu/
   description: Planning, control, and analysis toolbox for nonlinear dynamical systems.
@@ -106,10 +101,9 @@
   - trj-opt
   - plan
   _meta:
-    stars: 3890
-    last_commit: '2026-02-02'
+    stars: 3899
+    last_commit: '2026-02-09'
     language: C++
-
 - name: Flex
   url: https://developer.nvidia.com/flex
   description: GPU-based particle simulation for rigid bodies, fluids, and deformables.
@@ -123,11 +117,9 @@
   - particle
   - fluid
   _meta:
-    stars: 787
+    stars: 788
     last_commit: '2021-04-15'
-    archived: true
     language: C++
-
 - name: FROST
   url: https://ayonga.github.io/frost-dev/index.html
   description: Fast Robot Optimization and Simulation Toolkit for hybrid dynamical systems in MATLAB.
@@ -138,10 +130,9 @@
   models:
   - rigid
   _meta:
-    stars: 169
+    stars: 170
     last_commit: '2023-11-29'
     language: MATLAB
-
 - name: Genesis
   url: https://genesis-world.readthedocs.io
   description: Generative and universal physics platform for robotics with GPU-accelerated parallel simulation.
@@ -155,11 +146,10 @@
   - fluid
   - particle
   _meta:
-    stars: 28074
-    last_commit: '2026-02-02'
+    stars: 28109
+    last_commit: '2026-02-09'
     license: Apache-2.0
     language: Python
-
 - name: IBDS
   url: http://www.interactive-graphics.de/index.php/downloads/12-ibds
   description: Impulse-based dynamics simulation for rigid bodies and particle systems.
@@ -169,7 +159,6 @@
   models:
   - rigid
   - particle
-
 - name: idyntree
   description: Library for estimation and whole-body dynamics of floating-base robots.
   github: gbionics/idyntree
@@ -184,11 +173,10 @@
   features:
   - id
   _meta:
-    stars: 223
+    stars: 224
     last_commit: '2026-01-30'
     license: BSD-3-Clause
     language: C++
-
 - name: KDL
   url: https://www.orocos.org/kdl.html
   description: Orocos Kinematics and Dynamics Library for kinematic chains.
@@ -201,10 +189,9 @@
   features:
   - ik
   _meta:
-    stars: 857
+    stars: 859
     last_commit: '2025-12-23'
     language: C++
-
 - name: kindr
   description: Kinematics and dynamics library for rigid body transformations.
   github: ANYbotics/kindr
@@ -219,7 +206,6 @@
     last_commit: '2025-02-15'
     license: BSD-3-Clause
     language: C++
-
 - name: Klampt
   url: https://klampt.org/
   description: Robot planning, control, and simulation with visualization support.
@@ -233,7 +219,6 @@
     last_commit: '2026-01-10'
     license: BSD-3-Clause
     language: C++
-
 - name: LibrePilot
   url: http://www.librepilot.org/site/index.html
   description: Open-source autopilot for UAVs and other autonomous vehicles.
@@ -249,7 +234,6 @@
     stars: 348
     last_commit: '2023-12-14'
     language: C
-
 - name: MARS
   url: http://rock-simulation.github.io/mars/
   description: Machina Arte Robotum Simulans — a cross-platform simulation environment.
@@ -262,7 +246,6 @@
     stars: 67
     last_commit: '2025-09-01'
     language: C++
-
 - name: MBDyn
   url: https://www.mbdyn.org/
   description: General-purpose multibody dynamics analysis software.
@@ -270,7 +253,6 @@
   license: GPL-2.1
   languages:
   - C++
-
 - name: MBSim
   url: https://www.mbsim-env.de/
   description: Multi-body simulation environment for flexible and rigid systems.
@@ -280,10 +262,9 @@
   - C++
   _meta:
     stars: 51
-    last_commit: '2026-02-02'
+    last_commit: '2026-02-06'
     license: LGPL-2.1
     language: C++
-
 - name: MBSlib
   url: http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib
   description: Lightweight multibody system dynamics library.
@@ -296,7 +277,6 @@
     last_commit: '2016-08-17'
     license: LGPL-3.0
     language: C++
-
 - name: metapod
   description: Template-based robot dynamics library using spatial algebra.
   github: laas/metapod
@@ -309,7 +289,6 @@
     archived: true
     license: LGPL-3.0
     language: C++
-
 - name: Moby
   url: http://physsim.sourceforge.net/index.html
   description: Multi-body dynamics simulation for rigid bodies with contact.
@@ -325,7 +304,6 @@
     stars: 37
     last_commit: '2021-11-26'
     language: C++
-
 - name: mrpt
   url: https://www.mrpt.org/
   description: Mobile Robot Programming Toolkit for SLAM, navigation, and computer vision.
@@ -342,10 +320,9 @@
   - cv
   _meta:
     stars: 2110
-    last_commit: '2026-02-02'
+    last_commit: '2026-02-08'
     license: BSD-3-Clause
     language: C++
-
 - name: MuJoCo
   url: https://mujoco.org/
   description: Multi-joint dynamics with contact for physics-based simulation and control.
@@ -357,11 +334,10 @@
   features:
   - id
   _meta:
-    stars: 11899
-    last_commit: '2026-02-02'
+    stars: 11954
+    last_commit: '2026-02-08'
     license: Apache-2.0
     language: C++
-
 - name: mvsim
   url: http://wiki.ros.org/mvsim
   description: Lightweight multi-vehicle 2D simulator with ROS integration.
@@ -372,11 +348,10 @@
   models:
   - vehicle
   _meta:
-    stars: 359
-    last_commit: '2026-01-29'
+    stars: 361
+    last_commit: '2026-02-08'
     license: BSD-3-Clause
     language: C++
-
 - name: Newton
   url: https://newton-physics.github.io/newton/
   description: GPU-accelerated differentiable physics engine built on NVIDIA Warp for robotics simulation.
@@ -394,11 +369,10 @@
   - urdf
   - mjcf
   _meta:
-    stars: 2465
-    last_commit: '2026-01-31'
+    stars: 2488
+    last_commit: '2026-02-08'
     license: Apache-2.0
     language: Python
-
 - name: Newton Dynamics
   url: https://newtondynamics.com/
   description: Real-time physics engine for rigid body simulation.
@@ -410,7 +384,6 @@
     stars: 1022
     last_commit: '2026-01-17'
     language: HTML
-
 - name: nphysics
   url: https://nphysics.org/
   description: 2D and 3D rigid body physics engine written in Rust.
@@ -423,7 +396,6 @@
     last_commit: '2021-07-27'
     license: Apache-2.0
     language: Rust
-
 - name: ODE
   url: https://ode.org/
   description: Open Dynamics Engine for simulating rigid body dynamics.
@@ -433,7 +405,6 @@
   - C++
   models:
   - rigid
-
 - name: OpenRAVE
   url: https://www.openrave.org/
   description: Open Robotics Automation Virtual Environment for planning and simulation.
@@ -444,9 +415,8 @@
   - Python
   _meta:
     stars: 798
-    last_commit: '2026-02-02'
+    last_commit: '2026-02-08'
     language: C++
-
 - name: pinocchio
   url: https://stack-of-tasks.github.io/pinocchio/
   description: Fast and flexible algorithms for rigid-body dynamics with analytical derivatives.
@@ -464,11 +434,10 @@
   - analytical derivatives
   - code generation
   _meta:
-    stars: 3089
-    last_commit: '2026-02-02'
+    stars: 3102
+    last_commit: '2026-02-05'
     license: BSD-2-Clause
     language: C++
-
 - name: PositionBasedDynamics
   description: Position-based methods for simulating deformable objects and fluids.
   github: InteractiveComputerGraphics/PositionBasedDynamics
@@ -476,11 +445,10 @@
   languages:
   - C++
   _meta:
-    stars: 2175
+    stars: 2179
     last_commit: '2025-09-04'
     license: MIT
     language: C++
-
 - name: PhysX
   url: https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html
   description: NVIDIA physics engine for real-time rigid body and vehicle simulation.
@@ -489,11 +457,10 @@
   languages:
   - C++
   _meta:
-    stars: 4377
+    stars: 4387
     last_commit: '2025-10-21'
     license: BSD-3-Clause
     language: C++
-
 - name: PyDy
   url: https://www.pydy.org/
   description: Multibody dynamics analysis with symbolic Python using SymPy.
@@ -506,7 +473,6 @@
     last_commit: '2025-11-03'
     license: BSD-3-Clause
     language: Python
-
 - name: RBDL
   url: https://rbdl.github.io/
   description: Rigid Body Dynamics Library based on Featherstone algorithms.
@@ -522,10 +488,9 @@
   - id
   - urdf
   _meta:
-    stars: 683
+    stars: 684
     last_commit: '2025-06-09'
     language: C++
-
 - name: RBDyn
   description: Rigid body dynamics algorithms using spatial algebra with Eigen.
   github: jrl-umi3218/RBDyn
@@ -537,10 +502,9 @@
   - rigid
   _meta:
     stars: 211
-    last_commit: '2026-01-20'
+    last_commit: '2026-02-03'
     license: BSD-2-Clause
     language: C++
-
 - name: RaiSim
   url: https://slides.com/jeminhwangbo/raisim-manual
   description: Cross-platform physics engine for robotics and reinforcement learning.
@@ -552,7 +516,6 @@
     stars: 329
     last_commit: '2020-11-26'
     archived: true
-
 - name: ReactPhysics3d
   url: https://www.reactphysics3d.com/
   description: Open-source 3D physics engine for rigid body simulation and collision detection.
@@ -561,11 +524,10 @@
   languages:
   - C++
   _meta:
-    stars: 1708
+    stars: 1710
     last_commit: '2025-03-28'
     license: Zlib
     language: C++
-
 - name: RigidBodyDynamics.jl
   description: Julia library for rigid body dynamics algorithms.
   github: JuliaRobotics/RigidBodyDynamics.jl
@@ -575,10 +537,9 @@
   models:
   - rigid
   _meta:
-    stars: 307
+    stars: 308
     last_commit: '2024-11-08'
     language: Julia
-
 - name: Rigs of Rods
   url: https://www.rigsofrods.org/
   description: Soft-body vehicle simulator using beam physics.
@@ -591,11 +552,10 @@
   - soft
   - vehicle
   _meta:
-    stars: 1149
+    stars: 1151
     last_commit: '2026-01-18'
     license: GPL-3.0
     language: C++
-
 - name: Robopy
   url: https://adityadua24.github.io/robopy/
   description: Python robotics toolbox inspired by Peter Corke's Robotics Toolbox.
@@ -608,7 +568,6 @@
     last_commit: '2021-02-10'
     license: MIT
     language: Python
-
 - name: Robotics Library
   url: https://www.roboticslibrary.org/
   description: Self-contained C++ library for robot kinematics, planning, and control.
@@ -617,11 +576,10 @@
   languages:
   - C++
   _meta:
-    stars: 1154
+    stars: 1155
     last_commit: '2025-04-15'
     license: BSD-2-Clause
     language: C++
-
 - name: RobWork
   url: https://robwork.dk/
   description: Framework for simulation and control of robot systems.
@@ -629,7 +587,6 @@
   license: Apache-2.0
   languages:
   - C++
-
 - name: siconos
   url: https://nonsmooth.gricad-pages.univ-grenoble-alpes.fr/siconos/
   description: Nonsmooth dynamical systems modeling and simulation platform.
@@ -639,11 +596,10 @@
   - C++
   - Python
   _meta:
-    stars: 182
+    stars: 183
     last_commit: '2025-09-19'
     license: Apache-2.0
     language: C
-
 - name: Simbody
   url: https://simtk.org/home/simbody/
   description: Multibody dynamics library for biomechanical and mechanical systems.
@@ -658,11 +614,10 @@
   - id
   - urdf
   _meta:
-    stars: 2495
+    stars: 2496
     last_commit: '2026-01-31'
     license: Apache-2.0
     language: C++
-
 - name: SOFA
   url: https://www.sofa-framework.org/
   description: Simulation Open Framework Architecture for medical and physics simulation.
@@ -675,11 +630,10 @@
   - soft
   - medical
   _meta:
-    stars: 1146
-    last_commit: '2026-02-02'
+    stars: 1150
+    last_commit: '2026-02-09'
     license: LGPL-2.1
     language: C++
-
 - name: Tiny Differentiable Simulator
   description: Header-only differentiable physics engine for robotics.
   github: erwincoumans/tiny-differentiable-simulator
@@ -694,7 +648,6 @@
     last_commit: '2024-10-18'
     license: Apache-2.0
     language: C++
-
 - name: trep
   url: http://murpheylab.github.io/trep/
   description: Simulation and optimal control using variational integrators.
@@ -713,7 +666,6 @@
     last_commit: '2023-09-03'
     license: GPL-3.0
     language: C
-
 - name: qu3e
   description: Lightweight 3D physics engine for rigid body dynamics.
   github: RandyGaul/qu3e
@@ -723,7 +675,7 @@
   models:
   - rigid
   _meta:
-    stars: 974
+    stars: 976
     last_commit: '2021-05-09'
     archived: true
     license: Zlib

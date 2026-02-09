@@ -6,30 +6,27 @@
     stars: 117
     last_commit: '2025-12-11'
     language: C++
-
 - name: Humanoid-Gym
   url: https://github.com/roboterax/humanoid-gym
   github: roboterax/humanoid-gym
   description: Reinforcement learning environment for humanoid robot locomotion.
   _meta:
-    stars: 1826
+    stars: 1843
     last_commit: '2025-01-26'
     language: Python
-
 - name: Legged Gym
   url: https://github.com/leggedrobotics/legged_gym
   github: leggedrobotics/legged_gym
   description: Isaac Gym environments for legged robot locomotion training.
   _meta:
-    stars: 2673
+    stars: 2686
     last_commit: '2025-05-29'
     language: Python
-
 - name: MuJoCo Menagerie
   url: https://github.com/google-deepmind/mujoco_menagerie
   github: google-deepmind/mujoco_menagerie
   description: Collection of well-tuned MuJoCo models for research and development.
   _meta:
-    stars: 3001
+    stars: 3020
     last_commit: '2026-01-11'
     language: Python

@@ -5,7 +5,6 @@
     stars: 215
     last_commit: '2026-01-30'
     language: Python
-
 - name: Kinpy
   github: neka-nat/kinpy
   description: A simple pure python package to solve inverse kinematics.
@@ -14,7 +13,6 @@
     last_commit: '2025-12-20'
     license: MIT
     language: Python
-
 - name: Lively
   github: Wisc-HCI/lively
   description: A highly configurable toolkit for commanding robots in mixed modalities.
@@ -23,16 +21,14 @@
     last_commit: '2023-08-15'
     license: MIT
     language: Rust
-
 - name: RelaxedIK
   github: uwgraphics/relaxed_ik
   description: Real-time Synthesis of Accurate and Feasible Robot Arm Motion.
   _meta:
-    stars: 235
+    stars: 236
     last_commit: '2023-04-13'
     license: MIT
     language: Python
-
 - name: Trip
   url: https://trip-kinematics.readthedocs.io/en/main/index.html
   github: TriPed-Robot/trip_kinematics
