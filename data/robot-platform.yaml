@@ -44,6 +44,10 @@
   _meta:
     stars: 5046
     last_commit: '2026-01-28'
+- name: ros2_medkit
+  url: https://selfpatch.github.io/ros2_medkit/
+  github: selfpatch/ros2_medkit
+  description: Structured fault management for ROS 2 — persistent fault lifecycle, REST/SSE API, root cause correlation, and automatic rosbag capture on fault. Inspired by SOVD (Service-Oriented Vehicle Diagnostics), the ASAM standard that brings HTTP/REST diagnostics to automotive and robotics.
 - name: YARP
   url: https://www.yarp.it/
   github: robotology/yarp
