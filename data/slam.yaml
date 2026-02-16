@@ -10,7 +10,7 @@
   github: cartographer-project/cartographer
   description: Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations.
   _meta:
-    stars: 7777
+    stars: 7780
     last_commit: '2024-01-05'
     license: Apache-2.0
     language: C++
@@ -19,7 +19,7 @@
   github: JakobEngel/dso
   description: Novel direct and sparse formulation for Visual Odometry.
   _meta:
-    stars: 2431
+    stars: 2433
     last_commit: '2024-02-23'
     license: GPL-3.0
     language: C++
@@ -35,7 +35,7 @@
   github: UbiquityRobotics/fiducials
   description: Simultaneous localization and mapping using fiducial markers.
   _meta:
-    stars: 278
+    stars: 279
     last_commit: '2025-11-27'
     license: BSD-3-Clause
     language: C
@@ -43,8 +43,8 @@
   github: borglab/gtsam
   description: Smoothing and mapping (SAM) in robotics and vision.
   _meta:
-    stars: 3290
-    last_commit: '2026-02-08'
+    stars: 3294
+    last_commit: '2026-02-14'
     language: Jupyter Notebook
 - name: Kintinuous
   github: mp3guy/Kintinuous
@@ -66,7 +66,7 @@
   github: raulmur/ORB_SLAM2
   description: Real-time SLAM library for Monocular, Stereo and RGB-D cameras.
   _meta:
-    stars: 10095
+    stars: 10100
     last_commit: '2024-05-15'
     language: C++
 - name: RTAP-Map
@@ -74,8 +74,8 @@
   github: introlab/rtabmap
   description: RGB-D Graph SLAM approach based on a global Bayesian loop closure detector.
   _meta:
-    stars: 3622
-    last_commit: '2026-02-09'
+    stars: 3630
+    last_commit: '2026-02-16'
     language: C++
 - name: SRBA
   url: http://mrpt.github.io/srba/
@@ -91,5 +91,5 @@
   description: Curated list of SLAM-related datasets.
   _subsection: SLAM Dataset
   _meta:
-    stars: 1907
+    stars: 1908
     last_commit: '2024-12-13'

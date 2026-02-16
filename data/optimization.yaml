@@ -3,8 +3,8 @@
   github: casadi/casadi
   description: Symbolic framework for algorithmic differentiation and numeric optimization.
   _meta:
-    stars: 2130
-    last_commit: '2026-02-06'
+    stars: 2134
+    last_commit: '2026-02-12'
     license: LGPL-3.0
     language: C++
 - name: Ceres Solver
@@ -12,7 +12,7 @@
   github: ceres-solver/ceres-solver
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 4409
+    stars: 4414
     last_commit: '2026-02-03'
     language: C++
 - name: eigen-qld
@@ -27,7 +27,7 @@
   github: ipab-slmc/exotica
   description: Generic optimisation toolset for robotics platforms.
   _meta:
-    stars: 161
+    stars: 162
     last_commit: '2024-08-14'
     license: BSD-3-Clause
     language: C++
@@ -35,16 +35,16 @@
   github: giaf/hpipm
   description: High-performance interior-point-method QP solvers (Ipopt, Snopt).
   _meta:
-    stars: 666
-    last_commit: '2026-02-04'
+    stars: 667
+    last_commit: '2026-02-10'
     language: C
 - name: HYPRE
   url: https://hypre.readthedocs.io/
   github: hypre-space/hypre
   description: Parallel solvers for sparse linear systems featuring multigrid methods.
   _meta:
-    stars: 815
-    last_commit: '2026-02-09'
+    stars: 819
+    last_commit: '2026-02-14'
     language: C
 - name: ifopt
   github: ethz-adrl/ifopt
@@ -59,7 +59,7 @@
   github: coin-or/Ipopt
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 1708
+    stars: 1710
     last_commit: '2026-02-01'
     license: EPL-2.0
     language: C++
@@ -67,7 +67,7 @@
   github: CMA-ES/libcmaes
   description: Blackbox stochastic optimization using the CMA-ES algorithm.
   _meta:
-    stars: 355
+    stars: 356
     last_commit: '2025-09-15'
     language: C++
 - name: limbo
@@ -91,8 +91,8 @@
   github: stevengj/nlopt
   description: Nonlinear optimization.
   _meta:
-    stars: 2179
-    last_commit: '2025-12-17'
+    stars: 2178
+    last_commit: '2026-02-09'
     language: C
 - name: OptimLib
   url: https://www.kthohr.com/optimlib.html
@@ -117,7 +117,7 @@
   github: esa/pagmo2
   description: Scientific library for massively parallel optimization.
   _meta:
-    stars: 908
+    stars: 907
     last_commit: '2025-10-28'
     license: GPL-3.0
     language: C++
@@ -126,8 +126,8 @@
   github: Simple-Robotics/ProxSuite
   description: The Advanced Proximal Optimization Toolbox.
   _meta:
-    stars: 539
-    last_commit: '2026-02-02'
+    stars: 541
+    last_commit: '2026-02-12'
     license: BSD-2-Clause
     language: C++
 - name: pymoo
@@ -142,7 +142,7 @@
   github: qpsolvers/qpsolvers
   description: Quadratic Programming solvers in Python with a unified API.
   _meta:
-    stars: 729
+    stars: 730
     last_commit: '2025-12-08'
     license: LGPL-3.0
     language: Python
@@ -160,7 +160,7 @@
   github: cvxgrp/scs
   description: Numerical optimization for solving large-scale convex cone problems.
   _meta:
-    stars: 614
+    stars: 617
     last_commit: '2026-02-05'
     license: MIT
     language: C
@@ -169,7 +169,7 @@
   description: A solver for mixed-integer nonlinear optimization problems.
   _meta:
     stars: 130
-    last_commit: '2026-02-07'
+    last_commit: '2026-02-10'
     license: EPL-2.0
     language: C++
 - name: sferes2

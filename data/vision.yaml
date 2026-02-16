@@ -4,7 +4,7 @@
   description: Visual Servoing Platform.
   _meta:
     stars: 849
-    last_commit: '2026-02-07'
+    last_commit: '2026-02-14'
     license: GPL-2.0
     language: C++
 - name: BundleTrack

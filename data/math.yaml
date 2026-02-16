@@ -2,7 +2,7 @@
   github: romeric/Fastor
   description: Light-weight high performance tensor algebra framework in C++11/14/17.
   _meta:
-    stars: 830
+    stars: 831
     last_commit: '2025-07-08'
     license: MIT
     language: C++
@@ -18,7 +18,7 @@
   github: artivis/manif
   description: Small c++11 header-only library for Lie theory.
   _meta:
-    stars: 1727
+    stars: 1731
     last_commit: '2025-11-01'
     license: MIT
     language: C++
@@ -26,7 +26,7 @@
   github: strasdat/Sophus
   description: Lie groups using Eigen.
   _meta:
-    stars: 2368
+    stars: 2371
     last_commit: '2024-07-06'
     language: C++
 - name: SpaceVelAlg
