@@ -11,7 +11,7 @@
   github: linorobot/linorobot
   description: ROS compatible ground robots.
   _meta:
-    stars: 1083
+    stars: 1084
     last_commit: '2023-05-10'
     license: BSD-2-Clause
     language: C++
@@ -19,7 +19,7 @@
   github: grassjelly/onine
   description: Service Robot based on Linorobot and Braccio Arm.
   _meta:
-    stars: 47
+    stars: 49
     last_commit: '2018-09-19'
     language: C++
 - name: Micro-ROS for Arduino
@@ -42,17 +42,24 @@
   github: ros2/ros2
   description: Version 2.0 of the Robot Operating System (ROS) software stack.
   _meta:
-    stars: 5046
-    last_commit: '2026-01-28'
+    stars: 5065
+    last_commit: '2026-02-12'
 - name: ros2_medkit
   url: https://selfpatch.github.io/ros2_medkit/
   github: selfpatch/ros2_medkit
-  description: Structured fault management for ROS 2 — persistent fault lifecycle, REST/SSE API, root cause correlation, and automatic rosbag capture on fault. Inspired by SOVD (Service-Oriented Vehicle Diagnostics), the ASAM standard that brings HTTP/REST diagnostics to automotive and robotics.
+  description: Structured fault management for ROS 2 — persistent fault lifecycle, REST/SSE API, root cause correlation, and
+    automatic rosbag capture on fault. Inspired by SOVD (Service-Oriented Vehicle Diagnostics), the ASAM standard that brings
+    HTTP/REST diagnostics to automotive and robotics.
+  _meta:
+    stars: 100
+    last_commit: '2026-02-16'
+    license: Apache-2.0
+    language: C++
 - name: YARP
   url: https://www.yarp.it/
   github: robotology/yarp
   description: Communication and device interfaces applicable from humanoids to embedded devices.
   _meta:
-    stars: 585
+    stars: 586
     last_commit: '2026-02-07'
     language: C++

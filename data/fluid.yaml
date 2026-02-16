@@ -3,7 +3,7 @@
   github: doyubkim/fluid-engine-dev
   description: Fluid simulation engine for computer graphics applications.
   _meta:
-    stars: 2068
+    stars: 2071
     last_commit: '2023-12-24'
     license: MIT
     language: C++

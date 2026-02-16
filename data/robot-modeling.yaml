@@ -9,7 +9,7 @@
   description: XML format for representing a robot model.
   _subsection: Robot Model Description Format
   _meta:
-    stars: 119
+    stars: 120
     last_commit: '2026-02-06'
     language: C++
 - name: onshape-to-robot
@@ -27,7 +27,7 @@
   description: Add-on for Blender creating URDF and SMURF robot models.
   _subsection: Utility to Build Robot Models
   _meta:
-    stars: 857
+    stars: 860
     last_commit: '2025-07-30'
     license: BSD-3-Clause
     language: Python

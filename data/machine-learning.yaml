@@ -3,14 +3,14 @@
   github: allenai/allenact
   description: Python/PyTorch-based Research Framework for Embodied AI.
   _meta:
-    stars: 376
+    stars: 377
     last_commit: '2025-08-22'
     language: Python
 - name: Any4LeRobot
   github: Tavish9/any4lerobot
   description: A collection of utilities and tools for LeRobot.
   _meta:
-    stars: 856
+    stars: 863
     last_commit: '2026-02-07'
     license: MIT
     language: Python
@@ -45,15 +45,15 @@
   github: ivy-llc/ivy
   description: Unified Machine Learning Framework.
   _meta:
-    stars: 14215
+    stars: 14211
     last_commit: '2026-02-07'
     language: Python
 - name: LeRobot
   github: huggingface/lerobot
   description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
-    stars: 21520
-    last_commit: '2026-02-06'
+    stars: 21633
+    last_commit: '2026-02-14'
     license: Apache-2.0
     language: Python
 - name: LeRobot Episode Scoring Toolkit
@@ -69,7 +69,7 @@
   github: yixuan/MiniDNN
   description: A header-only C++ library for deep neural networks.
   _meta:
-    stars: 431
+    stars: 432
     last_commit: '2021-04-16'
     language: C++
 - name: mlpack
@@ -77,16 +77,16 @@
   github: mlpack/mlpack
   description: Scalable C++ machine learning library.
   _meta:
-    stars: 5594
-    last_commit: '2026-02-08'
+    stars: 5599
+    last_commit: '2026-02-15'
     language: C++
 - name: Gymnasium
   url: https://gymnasium.farama.org/
   github: Farama-Foundation/Gymnasium
   description: Developing and comparing reinforcement learning algorithms.
   _meta:
-    stars: 11290
-    last_commit: '2026-02-02'
+    stars: 11331
+    last_commit: '2026-02-10'
     license: MIT
     language: Python
 - name: gym-dart
@@ -117,14 +117,14 @@
   github: ARISE-Initiative/robosuite
   description: A modular simulation framework and benchmark for robot learning.
   _meta:
-    stars: 2203
-    last_commit: '2026-02-04'
+    stars: 2211
+    last_commit: '2026-02-12'
     language: Python
 - name: tiny-dnn
   url: http://tiny-dnn.readthedocs.io/en/latest/
   github: tiny-dnn/tiny-dnn
   description: Header only, dependency-free deep learning framework in C++14.
   _meta:
-    stars: 6017
+    stars: 6016
     last_commit: '2022-04-17'
     language: C++
