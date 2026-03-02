@@ -2,7 +2,7 @@
   github: uw-biorobotics/IKBT
   description: A python package to solve robot arm inverse kinematics in symbolic form.
   _meta:
-    stars: 215
+    stars: 216
     last_commit: '2026-01-30'
     language: Python
 - name: Kinpy
@@ -25,7 +25,7 @@
   github: uwgraphics/relaxed_ik
   description: Real-time Synthesis of Accurate and Feasible Robot Arm Motion.
   _meta:
-    stars: 236
+    stars: 239
     last_commit: '2023-04-13'
     license: MIT
     language: Python
