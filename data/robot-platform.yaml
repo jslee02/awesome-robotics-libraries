@@ -3,7 +3,7 @@
   github: autorally/autorally
   description: High-performance testbed for advanced perception and control research.
   _meta:
-    stars: 777
+    stars: 779
     last_commit: '2023-03-03'
     language: C++
 - name: Linorobot
@@ -11,7 +11,7 @@
   github: linorobot/linorobot
   description: ROS compatible ground robots.
   _meta:
-    stars: 1085
+    stars: 1090
     last_commit: '2023-05-10'
     license: BSD-2-Clause
     language: C++
@@ -42,8 +42,8 @@
   github: ros2/ros2
   description: Version 2.0 of the Robot Operating System (ROS) software stack.
   _meta:
-    stars: 5126
-    last_commit: '2026-02-26'
+    stars: 5301
+    last_commit: '2026-04-03'
 - name: ros2_medkit
   url: https://selfpatch.github.io/ros2_medkit/
   github: selfpatch/ros2_medkit
@@ -51,8 +51,8 @@
     automatic rosbag capture on fault. Inspired by SOVD (Service-Oriented Vehicle Diagnostics), the ASAM standard that brings
     HTTP/REST diagnostics to automotive and robotics.
   _meta:
-    stars: 168
-    last_commit: '2026-02-27'
+    stars: 207
+    last_commit: '2026-04-06'
     license: Apache-2.0
     language: C++
 - name: YARP
@@ -60,6 +60,6 @@
   github: robotology/yarp
   description: Communication and device interfaces applicable from humanoids to embedded devices.
   _meta:
-    stars: 588
-    last_commit: '2026-02-24'
+    stars: 590
+    last_commit: '2026-03-26'
     language: C++

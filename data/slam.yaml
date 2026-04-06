@@ -10,7 +10,7 @@
   github: cartographer-project/cartographer
   description: Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations.
   _meta:
-    stars: 7787
+    stars: 7818
     last_commit: '2024-01-05'
     license: Apache-2.0
     language: C++
@@ -19,7 +19,7 @@
   github: JakobEngel/dso
   description: Novel direct and sparse formulation for Visual Odometry.
   _meta:
-    stars: 2432
+    stars: 2438
     last_commit: '2024-02-23'
     license: GPL-3.0
     language: C++
@@ -27,7 +27,7 @@
   github: mp3guy/ElasticFusion
   description: Real-time dense visual SLAM system.
   _meta:
-    stars: 1909
+    stars: 1911
     last_commit: '2025-08-03'
     language: C++
 - name: fiducials
@@ -43,14 +43,14 @@
   github: borglab/gtsam
   description: Smoothing and mapping (SAM) in robotics and vision.
   _meta:
-    stars: 3305
-    last_commit: '2026-03-02'
+    stars: 3364
+    last_commit: '2026-04-06'
     language: Jupyter Notebook
 - name: Kintinuous
   github: mp3guy/Kintinuous
   description: Real-time large scale dense visual SLAM system.
   _meta:
-    stars: 951
+    stars: 952
     last_commit: '2022-08-26'
     language: C++
 - name: LSD-SLAM
@@ -58,7 +58,7 @@
   github: tum-vision/lsd_slam
   description: Real-time monocular SLAM.
   _meta:
-    stars: 2702
+    stars: 2709
     last_commit: '2023-03-23'
     license: GPL-3.0
     language: C++
@@ -66,7 +66,7 @@
   github: raulmur/ORB_SLAM2
   description: Real-time SLAM library for Monocular, Stereo and RGB-D cameras.
   _meta:
-    stars: 10108
+    stars: 10137
     last_commit: '2024-05-15'
     language: C++
 - name: RTAP-Map
@@ -74,8 +74,8 @@
   github: introlab/rtabmap
   description: RGB-D Graph SLAM approach based on a global Bayesian loop closure detector.
   _meta:
-    stars: 3646
-    last_commit: '2026-03-02'
+    stars: 3708
+    last_commit: '2026-04-06'
     language: C++
 - name: SRBA
   url: http://mrpt.github.io/srba/
@@ -91,5 +91,5 @@
   description: Curated list of SLAM-related datasets.
   _subsection: SLAM Dataset
   _meta:
-    stars: 1909
+    stars: 1917
     last_commit: '2024-12-13'

@@ -9,7 +9,7 @@
   github: neka-nat/kinpy
   description: A simple pure python package to solve inverse kinematics.
   _meta:
-    stars: 179
+    stars: 181
     last_commit: '2025-12-20'
     license: MIT
     language: Python
@@ -25,7 +25,7 @@
   github: uwgraphics/relaxed_ik
   description: Real-time Synthesis of Accurate and Feasible Robot Arm Motion.
   _meta:
-    stars: 239
+    stars: 244
     last_commit: '2023-04-13'
     license: MIT
     language: Python
