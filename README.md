@@ -131,6 +131,7 @@ _Libraries for robot motion planning, trajectory optimization, and control._
 * 🟢 OCS2 - Efficient continuous and discrete time optimal control implementation. [⭐ 1.4k](https://github.com/leggedrobotics/ocs2)
 * 🟢 [OMPL](https://ompl.kavrakilab.org/) - Open motion planning library. [⭐ 2k](https://github.com/ompl/ompl)
 * 💀 pymanoid - Humanoid robotics prototyping environment based on OpenRAVE. [⭐ 232](https://github.com/stephane-caron/pymanoid)
+* 🟢 [Python Motion Planning](https://github.com/ai-winter/python_motion_planning) - Provides the implementations of common `Motion planning` algorithms, including path planners on N-D grid, controllers for path-tracking, curve generators, a visualizer based on matplotlib and a toy physical simulator to test controllers. [⭐ 1k](https://github.com/ai-winter/python_motion_planning)
 * 🔴 ROS Behavior Tree - Behavior tree implementation for ROS-based robot task planning. [⭐ 363](https://github.com/miccol/ROS-Behavior-Tree)
 * 🟢 [ROS Motion Planning](https://github.com/ai-winter/ros_motion_planning) - A computational problem that involves finding a sequence of valid configurations to move the robot from the source to the destination. Generally, it includes Path Searching and Trajectory Optimization. [⭐ 3.4k](https://github.com/ai-winter/ros_motion_planning)
 * 🟢 [Ruckig](https://github.com/pantor/ruckig) - Real-time, time-optimal and jerk-constrained online trajectory generation. [⭐ 1.2k](https://github.com/pantor/ruckig)

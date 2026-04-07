@@ -182,6 +182,16 @@
     archived: true
     license: GPL-3.0
     language: Python
+- name: Python Motion Planning
+  url: https://github.com/ai-winter/python_motion_planning
+  github: ai-winter/python_motion_planning
+  description: Provides the implementations of common `Motion planning` algorithms, including path planners on N-D grid, controllers
+    for path-tracking, curve generators, a visualizer based on matplotlib and a toy physical simulator to test controllers.
+  _meta:
+    stars: 1017
+    last_commit: '2026-03-16'
+    license: GPL-3.0
+    language: Python
 - name: ROS Behavior Tree
   github: miccol/ROS-Behavior-Tree
   description: Behavior tree implementation for ROS-based robot task planning.
