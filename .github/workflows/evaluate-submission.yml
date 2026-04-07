@@ -9,6 +9,7 @@ jobs:
     if: github.event.label.name == 'suggestion'
     runs-on: ubuntu-latest
     permissions:
+      actions: write
       contents: read
       issues: write
     steps:
@@ -27,10 +28,18 @@ jobs:
           script: |
             const body = context.payload.issue.body || '';
 
+            function normalizeGitHubRepo(value) {
+              if (!value) return '';
+              const trimmed = value.trim();
+              const slugMatch = trimmed.match(/^(?:https?:\/\/github\.com\/)?([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+?)(?:\.git|\/)?$/);
+              return slugMatch ? slugMatch[1] : '';
+            }
+
             // Try the structured "github" field first (from issue template)
-            const ghMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
-            if (ghMatch) {
-              core.setOutput('repo', ghMatch[1]);
+            const ghFieldMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([\s\S]*?)(?=\n###|$)/);
+            const ghRepo = normalizeGitHubRepo(ghFieldMatch ? ghFieldMatch[1] : '');
+            if (ghRepo) {
+              core.setOutput('repo', ghRepo);
               return;
             }
 
@@ -99,6 +108,18 @@ jobs:
               label = labelMap[rec] || 'needs-review';
             }
             await github.rest.issues.addLabels({ owner, repo, issue_number: issue, labels: [label] });
+
+            if (label === 'accepted') {
+              await github.rest.actions.createWorkflowDispatch({
+                owner,
+                repo,
+                workflow_id: 'add-accepted-entry.yml',
+                ref: context.payload.repository.default_branch,
+                inputs: {
+                  issue_number: String(issue),
+                },
+              });
+            }
 
             // Auto-close duplicates and archived rejects
             if (rec === 'duplicate' || (rec === 'reject' && archived)) {

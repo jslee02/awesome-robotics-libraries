@@ -9,6 +9,7 @@ jobs:
   re-evaluate:
     runs-on: ubuntu-latest
     permissions:
+      actions: write
       contents: read
       issues: write
     steps:
@@ -30,6 +31,13 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
+            function normalizeGitHubRepo(value) {
+              if (!value) return '';
+              const trimmed = value.trim();
+              const slugMatch = trimmed.match(/^(?:https?:\/\/github\.com\/)?([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+?)(?:\.git|\/)?$/);
+              return slugMatch ? slugMatch[1] : '';
+            }
+
             // Find all open issues with 'incubator' label
             const issues = await github.rest.issues.listForRepo({
               owner, repo,
@@ -50,10 +58,9 @@ jobs:
 
               // Extract GitHub repo
               let ghRepo = '';
-              const ghMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
-              if (ghMatch) {
-                ghRepo = ghMatch[1];
-              } else {
+              const ghFieldMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([\s\S]*?)(?=\n###|$)/);
+              ghRepo = normalizeGitHubRepo(ghFieldMatch ? ghFieldMatch[1] : '');
+              if (!ghRepo) {
                 const urlMatch = body.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
                 if (urlMatch) ghRepo = urlMatch[1];
               }
@@ -103,7 +110,7 @@ jobs:
                     '',
                     report,
                     '',
-                    'A maintainer will review and apply the `accepted` label to trigger the auto-add workflow.',
+                    'The `accepted` label will be applied automatically and an auto-generated PR will be queued.',
                   ].join('\n'),
                 });
 
@@ -113,6 +120,15 @@ jobs:
                 }).catch(() => {});
                 await github.rest.issues.addLabels({
                   owner, repo, issue_number: issue.number, labels: ['accepted'],
+                });
+                await github.rest.actions.createWorkflowDispatch({
+                  owner,
+                  repo,
+                  workflow_id: 'add-accepted-entry.yml',
+                  ref: context.payload.repository.default_branch,
+                  inputs: {
+                    issue_number: String(issue.number),
+                  },
                 });
 
                 console.log(`    ✅ promoted to accepted`);
