@@ -3,41 +3,34 @@
 
 from __future__ import annotations
 
-import json
 import os
 import sys
 import time
 import urllib.error
-import urllib.request
 from pathlib import Path
 
 import yaml
 
-API_BASE = "https://api.github.com"
+try:
+    from scripts.github_metadata import fetch_default_branch_commit_date, fetch_json
+except ModuleNotFoundError:
+    from github_metadata import fetch_default_branch_commit_date, fetch_json
+
 RATE_LIMIT_PAUSE = 2  # seconds between requests to avoid abuse detection
-
-
-def _github_headers() -> dict[str, str]:
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "awesome-robotics-libraries-metadata-bot",
-    }
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-    return headers
+USER_AGENT = "awesome-robotics-libraries-metadata-bot"
 
 
 def fetch_repo_metadata(owner_repo: str) -> dict | None:
-    url = f"{API_BASE}/repos/{owner_repo}"
-    req = urllib.request.Request(url, headers=_github_headers())
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read())
+        data = fetch_json(
+            f"https://api.github.com/repos/{owner_repo}",
+            token,
+            USER_AGENT,
+        )
     except urllib.error.HTTPError as e:
         if e.code == 404:
-            print(f"  WARN: {owner_repo} — 404 Not Found", file=sys.stderr)
+            print(f"  WARN: {owner_repo} - 404 Not Found", file=sys.stderr)
         elif e.code == 403:
             print(f"  WARN: {owner_repo} — 403 rate limited", file=sys.stderr)
         else:
@@ -48,10 +41,29 @@ def fetch_repo_metadata(owner_repo: str) -> dict | None:
         return None
 
     meta: dict = {}
+    last_commit = None
     if "stargazers_count" in data:
         meta["stars"] = data["stargazers_count"]
-    if data.get("pushed_at"):
-        meta["last_commit"] = data["pushed_at"][:10]
+    default_branch = data.get("default_branch") or ""
+    if default_branch:
+        try:
+            last_commit = fetch_default_branch_commit_date(
+                owner_repo, default_branch, token, USER_AGENT
+            )
+        except urllib.error.HTTPError as e:
+            print(
+                f"  WARN: {owner_repo} - commit lookup HTTP {e.code}, falling back to pushed_at",
+                file=sys.stderr,
+            )
+        except (urllib.error.URLError, TimeoutError) as e:
+            print(
+                f"  WARN: {owner_repo} - commit lookup failed ({e}), falling back to pushed_at",
+                file=sys.stderr,
+            )
+    if not last_commit and data.get("pushed_at"):
+        last_commit = data["pushed_at"][:10]
+    if last_commit:
+        meta["last_commit"] = last_commit
     if data.get("archived") is True:
         meta["archived"] = True
     if data.get("license") and data["license"].get("spdx_id"):

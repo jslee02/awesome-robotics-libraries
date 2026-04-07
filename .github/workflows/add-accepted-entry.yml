@@ -135,9 +135,12 @@ jobs:
           ENTRY_YAML_FILE: ${{ steps.parse.outputs.yaml_file }}
         run: |
           python3 - <<'PYTHON_SCRIPT'
-          import json, os, sys, urllib.request, urllib.error
+          import os
+          import sys
           from pathlib import Path
+
           import yaml
+          from scripts.github_metadata import fetch_default_branch_commit_date, fetch_json
 
           name = os.environ.get("ENTRY_NAME", "")
           url = os.environ.get("ENTRY_URL", "")
@@ -163,24 +166,34 @@ jobs:
 
           # Fetch _meta from GitHub API
           if gh_repo:
-              headers = {
-                  "Accept": "application/vnd.github+json",
-                  "X-GitHub-Api-Version": "2022-11-28",
-                  "User-Agent": "awesome-robotics-libraries-bot",
-              }
-              if token:
-                  headers["Authorization"] = f"Bearer {token}"
-              req = urllib.request.Request(
-                  f"https://api.github.com/repos/{gh_repo}", headers=headers
-              )
               try:
-                  with urllib.request.urlopen(req, timeout=15) as resp:
-                      data = json.loads(resp.read())
+                  data = fetch_json(
+                      f"https://api.github.com/repos/{gh_repo}",
+                      token,
+                      "awesome-robotics-libraries-bot",
+                  )
                   meta = {}
                   if "stargazers_count" in data:
                       meta["stars"] = data["stargazers_count"]
-                  if data.get("pushed_at"):
-                      meta["last_commit"] = data["pushed_at"][:10]
+                  last_commit = None
+                  default_branch = data.get("default_branch") or ""
+                  if default_branch:
+                      try:
+                          last_commit = fetch_default_branch_commit_date(
+                              gh_repo,
+                              default_branch,
+                              token,
+                              "awesome-robotics-libraries-bot",
+                          )
+                      except Exception as e:
+                          print(
+                              f"WARN: Could not fetch default-branch commit date: {e}",
+                              file=sys.stderr,
+                          )
+                  if not last_commit and data.get("pushed_at"):
+                      last_commit = data["pushed_at"][:10]
+                  if last_commit:
+                      meta["last_commit"] = last_commit
                   if data.get("archived"):
                       meta["archived"] = True
                   if data.get("license") and data["license"].get("spdx_id", "NOASSERTION") != "NOASSERTION":
