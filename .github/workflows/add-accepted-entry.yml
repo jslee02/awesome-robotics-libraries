@@ -249,13 +249,15 @@ jobs:
 
       - name: Comment on issue
         if: success()
+        env:
+          ISSUE_NUMBER: ${{ steps.parse.outputs.issue_number }}
         uses: actions/github-script@v8
         with:
           script: |
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.issue.number,
+              issue_number: Number(process.env.ISSUE_NUMBER),
               body: [
                 '🎉 Great news! A PR has been automatically created to add this entry to the list.',
                 '',
