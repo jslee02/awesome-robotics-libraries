@@ -17,13 +17,15 @@ import json
 import os
 import sys
 import urllib.error
-import urllib.request
 from datetime import date
 from pathlib import Path
 
 import yaml
-
-API_BASE = "https://api.github.com"
+from scripts.github_metadata import (
+    API_BASE,
+    fetch_default_branch_commit_date,
+    fetch_json,
+)
 
 CATEGORY_TO_YAML = {
     "Dynamics Simulation": "dynamics-simulation",
@@ -70,24 +72,12 @@ GUIDANCE = {
         "This issue will be automatically re-evaluated once the project matures — no action needed from you."
     ),
 }
+USER_AGENT = "awesome-robotics-libraries-evaluator"
 
 
-def _github_headers(token: str | None = None) -> dict[str, str]:
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "awesome-robotics-libraries-evaluator",
-    }
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-    return headers
-
-
-def _fetch_json(url: str, token: str | None = None) -> dict | None:
-    req = urllib.request.Request(url, headers=_github_headers(token))
+def _fetch_json(url: str, token: str | None = None) -> dict | list | None:
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            return json.loads(resp.read())
+        return fetch_json(url, token, USER_AGENT)
     except urllib.error.HTTPError as e:
         print(f"ERROR: HTTP {e.code} for {url}", file=sys.stderr)
         return None
@@ -161,6 +151,22 @@ def evaluate(
     archived = data.get("archived", False)
     created_at = data.get("created_at", "")[:10]
     pushed_at = data.get("pushed_at", "")[:10]
+    default_branch = data.get("default_branch") or ""
+    last_commit = None
+    if default_branch:
+        try:
+            last_commit = fetch_default_branch_commit_date(
+                owner_repo, default_branch, token, USER_AGENT
+            )
+        except urllib.error.HTTPError as e:
+            print(
+                f"ERROR: HTTP {e.code} for {API_BASE}/repos/{owner_repo}/commits",
+                file=sys.stderr,
+            )
+        except (urllib.error.URLError, TimeoutError) as e:
+            print(f"ERROR: {e} for {API_BASE}/repos/{owner_repo}/commits", file=sys.stderr)
+    if not last_commit:
+        last_commit = pushed_at
     license_spdx = None
     if (
         data.get("license")
@@ -184,15 +190,16 @@ def evaluate(
     }
 
     active = False
-    if pushed_at:
+    if last_commit:
         try:
-            last_push = date.fromisoformat(pushed_at)
-            active = (today - last_push).days <= 730
+            latest_commit = date.fromisoformat(last_commit)
+            active = (today - latest_commit).days <= 730
         except ValueError:
             pass
     checks["activity"] = {
         "pass": active and not archived,
-        "detail": f"last push {pushed_at}" + (" ⚠️ ARCHIVED" if archived else ""),
+        "detail": f"last default-branch commit {last_commit or 'unknown'}"
+        + (" ⚠️ ARCHIVED" if archived else ""),
     }
 
     checks["documentation"] = {
@@ -244,7 +251,9 @@ def evaluate(
         reason = f"Passes {auto_score}/{auto_total} auto-checkable criteria"
 
     # _meta block ready for YAML insertion
-    meta = {"stars": stars, "last_commit": pushed_at}
+    meta = {"stars": stars}
+    if last_commit:
+        meta["last_commit"] = last_commit
     if archived:
         meta["archived"] = True
     if license_spdx:
@@ -260,7 +269,7 @@ def evaluate(
         "stars": stars,
         "archived": archived,
         "created": created_at,
-        "last_push": pushed_at,
+        "last_commit": last_commit or "",
         "has_readme": has_readme,
         "has_license": license_spdx is not None,
         "license_spdx": license_spdx,
@@ -312,7 +321,7 @@ def format_report(result: dict) -> str:
     lines.append("|-------|-------|")
     lines.append(f"| Stars | {result['stars']:,} |")
     lines.append(f"| Created | {result['created']} |")
-    lines.append(f"| Last Push | {result['last_push']} |")
+    lines.append(f"| Last Commit (default branch) | {result['last_commit'] or 'unknown'} |")
     lines.append(f"| Archived | {'⚠️ Yes' if result['archived'] else 'No'} |")
     lines.append(f"| README | {'✅' if result['has_readme'] else '❌'} |")
     lines.append(
