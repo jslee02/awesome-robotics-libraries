@@ -132,6 +132,7 @@ _Libraries for robot motion planning, trajectory optimization, and control._
 * 🟢 [OMPL](https://ompl.kavrakilab.org/) - Open motion planning library. [⭐ 2k](https://github.com/ompl/ompl)
 * 💀 pymanoid - Humanoid robotics prototyping environment based on OpenRAVE. [⭐ 232](https://github.com/stephane-caron/pymanoid)
 * 🔴 ROS Behavior Tree - Behavior tree implementation for ROS-based robot task planning. [⭐ 363](https://github.com/miccol/ROS-Behavior-Tree)
+* 🟢 [ROS Motion Planning](https://github.com/ai-winter/ros_motion_planning) - A computational problem that involves finding a sequence of valid configurations to move the robot from the source to the destination. Generally, it includes Path Searching and Trajectory Optimization. [⭐ 3.4k](https://github.com/ai-winter/ros_motion_planning)
 * 🟢 [Ruckig](https://github.com/pantor/ruckig) - Real-time, time-optimal and jerk-constrained online trajectory generation. [⭐ 1.2k](https://github.com/pantor/ruckig)
 * 🟢 [The Kautham Project](https://sir.upc.es/projects/kautham/) - A robot simulation toolkit for motion planning. [⭐ 24](https://github.com/iocroblab/kautham)
 * 🟢 [TOPP-RA](https://hungpham2511.github.io/toppra/) - Time-parameterizing robot trajectories subject to kinematic and dynamic constraints. [⭐ 859](https://github.com/hungpham2511/toppra)
