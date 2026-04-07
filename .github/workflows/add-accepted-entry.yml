@@ -3,10 +3,18 @@ name: Add Accepted Entry
 on:
   issues:
     types: [labeled]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Issue number to process
+        required: true
+        type: number
 
 jobs:
   add-entry:
-    if: github.event.label.name == 'accepted'
+    if: |
+      (github.event_name == 'issues' && github.event.label.name == 'accepted') ||
+      github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -28,7 +36,28 @@ jobs:
         uses: actions/github-script@v8
         with:
           script: |
-            const body = context.payload.issue.body || '';
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issueNumber = context.eventName === 'workflow_dispatch'
+              ? Number('${{ inputs.issue_number }}')
+              : context.issue.number;
+
+            const issueData = context.eventName === 'workflow_dispatch'
+              ? (await github.rest.issues.get({
+                  owner,
+                  repo,
+                  issue_number: issueNumber,
+                })).data
+              : context.payload.issue;
+
+            const body = issueData.body || '';
+
+            function normalizeGitHubRepo(value) {
+              if (!value) return '';
+              const trimmed = value.trim();
+              const slugMatch = trimmed.match(/^(?:https?:\/\/github\.com\/)?([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+?)(?:\.git|\/)?$/);
+              return slugMatch ? slugMatch[1] : '';
+            }
 
             function extractField(body, header) {
               const re = new RegExp(`### ${header}\\s*\\n\\s*\\n?\\s*([\\s\\S]*?)(?=\\n###|$)`);
@@ -36,13 +65,19 @@ jobs:
               return m ? m[1].trim() : '';
             }
 
-            const name = extractField(body, 'Library Name');
+            const labels = (issueData.labels || []).map(label => typeof label === 'string' ? label : label.name);
+            if (!labels.includes('accepted')) {
+              core.setFailed(`Issue #${issueNumber} does not have the accepted label`);
+              return;
+            }
+
+            const name = extractField(body, 'Resource Name') || extractField(body, 'Library Name');
             const url = extractField(body, 'URL');
             const category = extractField(body, 'Category');
             const description = extractField(body, 'Description');
 
             // GitHub repo: from structured field or from URL
-            let ghRepo = extractField(body, 'GitHub Repository');
+            let ghRepo = normalizeGitHubRepo(extractField(body, 'GitHub Repository'));
             if (!ghRepo) {
               const urlMatch = body.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
               if (urlMatch) ghRepo = urlMatch[1];
@@ -87,7 +122,7 @@ jobs:
             core.setOutput('category', category);
             core.setOutput('description', description);
             core.setOutput('yaml_file', yamlFile);
-            core.setOutput('issue_number', context.issue.number);
+            core.setOutput('issue_number', issueNumber);
 
       - name: Fetch metadata and add YAML entry
         if: success()
