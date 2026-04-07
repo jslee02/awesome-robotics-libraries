@@ -21,11 +21,15 @@ from datetime import date
 from pathlib import Path
 
 import yaml
-from scripts.github_metadata import (
-    API_BASE,
-    fetch_default_branch_commit_date,
-    fetch_json,
-)
+
+try:
+    from scripts.github_metadata import (
+        API_BASE,
+        fetch_default_branch_commit_date,
+        fetch_json,
+    )
+except ModuleNotFoundError:
+    from github_metadata import API_BASE, fetch_default_branch_commit_date, fetch_json
 
 CATEGORY_TO_YAML = {
     "Dynamics Simulation": "dynamics-simulation",

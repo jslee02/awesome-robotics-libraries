@@ -10,7 +10,11 @@ import urllib.error
 from pathlib import Path
 
 import yaml
-from scripts.github_metadata import fetch_default_branch_commit_date, fetch_json
+
+try:
+    from scripts.github_metadata import fetch_default_branch_commit_date, fetch_json
+except ModuleNotFoundError:
+    from github_metadata import fetch_default_branch_commit_date, fetch_json
 
 RATE_LIMIT_PAUSE = 2  # seconds between requests to avoid abuse detection
 USER_AGENT = "awesome-robotics-libraries-metadata-bot"
