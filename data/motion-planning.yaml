@@ -200,6 +200,16 @@
     last_commit: '2018-10-22'
     license: MIT
     language: C++
+- name: ROS Motion Planning
+  url: https://github.com/ai-winter/ros_motion_planning
+  github: ai-winter/ros_motion_planning
+  description: A computational problem that involves finding a sequence of valid configurations to move the robot from the
+    source to the destination. Generally, it includes Path Searching and Trajectory Optimization.
+  _meta:
+    stars: 3444
+    last_commit: '2026-03-28'
+    license: GPL-3.0
+    language: C++
 - name: Ruckig
   url: https://github.com/pantor/ruckig
   github: pantor/ruckig
