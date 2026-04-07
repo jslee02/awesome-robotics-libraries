@@ -138,7 +138,9 @@ OpEn can automatically generate ROS packages, which can be used directly in robo
 
 Lastly, OpEn is becoming popular: it currently counts 616 stars on GitHub and more than 300k downloads from [crates.io](https://crates.io/crates/optimization_engine). The Python package, `opengen` counted 804 downloads in the last month ([link](https://pypistats.org/packages/opengen)). [⭐ 621](https://github.com/alphaville/optimization-engine)
 * 💀 pymanoid - Humanoid robotics prototyping environment based on OpenRAVE. [⭐ 232](https://github.com/stephane-caron/pymanoid)
+* 🟢 [Python Motion Planning](https://github.com/ai-winter/python_motion_planning) - Provides the implementations of common `Motion planning` algorithms, including path planners on N-D grid, controllers for path-tracking, curve generators, a visualizer based on matplotlib and a toy physical simulator to test controllers. [⭐ 1k](https://github.com/ai-winter/python_motion_planning)
 * 🔴 ROS Behavior Tree - Behavior tree implementation for ROS-based robot task planning. [⭐ 363](https://github.com/miccol/ROS-Behavior-Tree)
+* 🟢 [ROS Motion Planning](https://github.com/ai-winter/ros_motion_planning) - A computational problem that involves finding a sequence of valid configurations to move the robot from the source to the destination. Generally, it includes Path Searching and Trajectory Optimization. [⭐ 3.4k](https://github.com/ai-winter/ros_motion_planning)
 * 🟢 [Ruckig](https://github.com/pantor/ruckig) - Real-time, time-optimal and jerk-constrained online trajectory generation. [⭐ 1.2k](https://github.com/pantor/ruckig)
 * 🟢 [The Kautham Project](https://sir.upc.es/projects/kautham/) - A robot simulation toolkit for motion planning. [⭐ 24](https://github.com/iocroblab/kautham)
 * 🟢 [TOPP-RA](https://hungpham2511.github.io/toppra/) - Time-parameterizing robot trajectories subject to kinematic and dynamic constraints. [⭐ 859](https://github.com/hungpham2511/toppra)
@@ -362,18 +364,19 @@ _Simulation environments for testing and developing robotic systems._
 
 _Related curated lists of robotics and AI resources._
 
-* [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) - Curated list of robotics resources (Kiloreux).
-* [Awesome Robotics](https://github.com/ahundt/awesome-robotics) - Curated list of robotics links and software libraries (ahundt).
-* [Awesome Robotic Tooling](https://github.com/Ly0n/awesome-robotic-tooling) - Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
 * [Awesome Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence) - Curated list of AI courses, books, video lectures, and papers.
 * [Awesome Collision Detection](https://github.com/jslee02/awesome-collision-detection) - Curated list of collision detection libraries and resources.
 * [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision) - Curated list of computer vision resources.
-* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) - Curated list of machine learning frameworks, libraries, and software.
 * [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning) - Curated list of deep learning tutorials, projects, and communities.
 * [Awesome Gazebo](https://github.com/fkromer/awesome-gazebo) - Curated list of Gazebo simulation framework resources.
 * [Awesome Grasping](https://github.com/Po-Jen/awesome-grasping) - Curated list of grasping libraries and resources.
 * [Awesome Human Robot Interaction](https://github.com/Po-Jen/awesome-human-robot-interaction) - Curated list of human-robot interaction libraries and resources.
+* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) - Curated list of machine learning frameworks, libraries, and software.
 * [Awesome Physical AI](https://github.com/keon/awesome-physical-ai) - Curated list of academic papers and resources on Physical AI.
+* [Awesome Robotic Tooling](https://github.com/Ly0n/awesome-robotic-tooling) - Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
+* [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) - Curated list of robotics resources (Kiloreux).
+* [Awesome Robotics](https://github.com/ahundt/awesome-robotics) - Curated list of robotics links and software libraries (ahundt).
+* [Awesome VLA Study](https://github.com/MilkClouds/awesome-vla-study) - A curated VLA (Vision-Language-Action) study guide that organizes ~30 key papers into a 6-phase, 14-week reading curriculum — covering diffusion/flow matching foundations, robot foundation model architectures, data scaling, efficient inference, RL fine-tuning, and world models.
 * [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) - Python sample codes for robotics algorithms.
 * [Robotics Coursework](https://github.com/mithi/robotics-coursework) - A list of robotics courses you can take online.
 

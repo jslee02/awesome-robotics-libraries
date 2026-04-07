@@ -1,25 +1,3 @@
-- name: Awesome Robotics
-  url: https://github.com/Kiloreux/awesome-robotics
-  github: Kiloreux/awesome-robotics
-  description: Curated list of robotics resources (Kiloreux).
-  _meta:
-    stars: 6294
-    last_commit: '2024-09-22'
-- name: Awesome Robotics
-  url: https://github.com/ahundt/awesome-robotics
-  github: ahundt/awesome-robotics
-  description: Curated list of robotics links and software libraries (ahundt).
-  _meta:
-    stars: 1364
-    last_commit: '2024-01-10'
-- name: Awesome Robotic Tooling
-  url: https://github.com/Ly0n/awesome-robotic-tooling
-  github: Ly0n/awesome-robotic-tooling
-  description: Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
-  _meta:
-    stars: 3786
-    last_commit: '2023-11-20'
-    license: CC0-1.0
 - name: Awesome Artificial Intelligence
   url: https://github.com/owainlewis/awesome-artificial-intelligence
   github: owainlewis/awesome-artificial-intelligence
@@ -43,14 +21,6 @@
   _meta:
     stars: 23171
     last_commit: '2024-05-17'
-- name: Awesome Machine Learning
-  url: https://github.com/josephmisiti/awesome-machine-learning
-  github: josephmisiti/awesome-machine-learning
-  description: Curated list of machine learning frameworks, libraries, and software.
-  _meta:
-    stars: 72160
-    last_commit: '2026-03-15'
-    language: Python
 - name: Awesome Deep Learning
   url: https://github.com/ChristosChristofidis/awesome-deep-learning
   github: ChristosChristofidis/awesome-deep-learning
@@ -82,6 +52,14 @@
     stars: 149
     last_commit: '2019-02-12'
     license: MIT
+- name: Awesome Machine Learning
+  url: https://github.com/josephmisiti/awesome-machine-learning
+  github: josephmisiti/awesome-machine-learning
+  description: Curated list of machine learning frameworks, libraries, and software.
+  _meta:
+    stars: 72160
+    last_commit: '2026-03-15'
+    language: Python
 - name: Awesome Physical AI
   url: https://github.com/keon/awesome-physical-ai
   github: keon/awesome-physical-ai
@@ -90,6 +68,37 @@
     stars: 182
     last_commit: '2026-03-30'
     license: CC0-1.0
+- name: Awesome Robotic Tooling
+  url: https://github.com/Ly0n/awesome-robotic-tooling
+  github: Ly0n/awesome-robotic-tooling
+  description: Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
+  _meta:
+    stars: 3786
+    last_commit: '2023-11-20'
+    license: CC0-1.0
+- name: Awesome Robotics
+  url: https://github.com/Kiloreux/awesome-robotics
+  github: Kiloreux/awesome-robotics
+  description: Curated list of robotics resources (Kiloreux).
+  _meta:
+    stars: 6294
+    last_commit: '2024-09-22'
+- name: Awesome Robotics
+  url: https://github.com/ahundt/awesome-robotics
+  github: ahundt/awesome-robotics
+  description: Curated list of robotics links and software libraries (ahundt).
+  _meta:
+    stars: 1364
+    last_commit: '2024-01-10'
+- name: Awesome VLA Study
+  url: https://github.com/MilkClouds/awesome-vla-study
+  github: MilkClouds/awesome-vla-study
+  description: A curated VLA (Vision-Language-Action) study guide that organizes ~30 key papers into a 6-phase, 14-week reading
+    curriculum — covering diffusion/flow matching foundations, robot foundation model architectures, data scaling, efficient
+    inference, RL fine-tuning, and world models.
+  _meta:
+    stars: 193
+    last_commit: '2026-03-21'
 - name: PythonRobotics
   url: https://github.com/AtsushiSakai/PythonRobotics
   github: AtsushiSakai/PythonRobotics
