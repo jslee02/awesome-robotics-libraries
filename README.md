@@ -130,6 +130,13 @@ _Libraries for robot motion planning, trajectory optimization, and control._
 * 🟢 [MoveIt!](https://moveit.ai/) - Motion planning framework. [⭐ 2k](https://github.com/moveit/moveit)
 * 🟢 OCS2 - Efficient continuous and discrete time optimal control implementation. [⭐ 1.4k](https://github.com/leggedrobotics/ocs2)
 * 🟢 [OMPL](https://ompl.kavrakilab.org/) - Open motion planning library. [⭐ 2k](https://github.com/ompl/ompl)
+* 🟢 [Optimization Engine (OpEn)](https://alphaville.github.io/optimization-engine/) - Optimization Engine (OpEn) is a numerical optimization library written in Rust and a code generator in Python that facilitates the design of optimizers, suitable for embedded applications and robotics. Typical applications include model predictive control (MPC) and moving horizon estimation (MHE), which are popular in robotics. OpEn has been used on ground and aerial vehicles. 
+
+Some examples of applications where OpEn has been used are [autonomous racing cars](https://giuseppesilano.net/publications/SMC22.pdf), navigation of a [Husky robot](https://alphaville.github.io/optimization-engine/docs/example_navigation_ros_codegen) using ROS, collision-free navigation of heavy equipment ([paper](https://arxiv.org/pdf/2404.14257), [demo](https://youtu.be/YrUXZ3_oJlU)).
+
+OpEn can automatically generate ROS packages, which can be used directly in robotics applications. 
+
+Lastly, OpEn is becoming popular: it currently counts 616 stars on GitHub and more than 300k downloads from [crates.io](https://crates.io/crates/optimization_engine). The Python package, `opengen` counted 804 downloads in the last month ([link](https://pypistats.org/packages/opengen)). [⭐ 621](https://github.com/alphaville/optimization-engine)
 * 💀 pymanoid - Humanoid robotics prototyping environment based on OpenRAVE. [⭐ 232](https://github.com/stephane-caron/pymanoid)
 * 🟢 [Python Motion Planning](https://github.com/ai-winter/python_motion_planning) - Provides the implementations of common `Motion planning` algorithms, including path planners on N-D grid, controllers for path-tracking, curve generators, a visualizer based on matplotlib and a toy physical simulator to test controllers. [⭐ 1k](https://github.com/ai-winter/python_motion_planning)
 * 🔴 ROS Behavior Tree - Behavior tree implementation for ROS-based robot task planning. [⭐ 363](https://github.com/miccol/ROS-Behavior-Tree)

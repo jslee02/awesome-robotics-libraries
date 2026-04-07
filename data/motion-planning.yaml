@@ -164,6 +164,22 @@
     stars: 1999
     last_commit: '2026-04-03'
     language: C++
+- name: Optimization Engine (OpEn)
+  url: https://alphaville.github.io/optimization-engine/
+  github: alphaville/optimization-engine
+  description: "Optimization Engine (OpEn) is a numerical optimization library written in Rust and a code generator in Python\
+    \ that facilitates the design of optimizers, suitable for embedded applications and robotics. Typical applications include\
+    \ model predictive control (MPC) and moving horizon estimation (MHE), which are popular in robotics. OpEn has been used\
+    \ on ground and aerial vehicles. \n\nSome examples of applications where OpEn has been used are [autonomous racing cars](https://giuseppesilano.net/publications/SMC22.pdf),\
+    \ navigation of a [Husky robot](https://alphaville.github.io/optimization-engine/docs/example_navigation_ros_codegen)\
+    \ using ROS, collision-free navigation of heavy equipment ([paper](https://arxiv.org/pdf/2404.14257), [demo](https://youtu.be/YrUXZ3_oJlU)).\n\
+    \nOpEn can automatically generate ROS packages, which can be used directly in robotics applications. \n\nLastly, OpEn\
+    \ is becoming popular: it currently counts 616 stars on GitHub and more than 300k downloads from [crates.io](https://crates.io/crates/optimization_engine).\
+    \ The Python package, `opengen` counted 804 downloads in the last month ([link](https://pypistats.org/packages/opengen))."
+  _meta:
+    stars: 621
+    last_commit: '2026-03-31'
+    language: Rust
 - name: PCL
   url: https://pointclouds.org/
   github: PointCloudLibrary/pcl
