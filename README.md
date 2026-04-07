@@ -356,18 +356,19 @@ _Simulation environments for testing and developing robotic systems._
 
 _Related curated lists of robotics and AI resources._
 
-* [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) - Curated list of robotics resources (Kiloreux).
-* [Awesome Robotics](https://github.com/ahundt/awesome-robotics) - Curated list of robotics links and software libraries (ahundt).
-* [Awesome Robotic Tooling](https://github.com/Ly0n/awesome-robotic-tooling) - Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
 * [Awesome Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence) - Curated list of AI courses, books, video lectures, and papers.
 * [Awesome Collision Detection](https://github.com/jslee02/awesome-collision-detection) - Curated list of collision detection libraries and resources.
 * [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision) - Curated list of computer vision resources.
-* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) - Curated list of machine learning frameworks, libraries, and software.
 * [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning) - Curated list of deep learning tutorials, projects, and communities.
 * [Awesome Gazebo](https://github.com/fkromer/awesome-gazebo) - Curated list of Gazebo simulation framework resources.
 * [Awesome Grasping](https://github.com/Po-Jen/awesome-grasping) - Curated list of grasping libraries and resources.
 * [Awesome Human Robot Interaction](https://github.com/Po-Jen/awesome-human-robot-interaction) - Curated list of human-robot interaction libraries and resources.
+* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) - Curated list of machine learning frameworks, libraries, and software.
 * [Awesome Physical AI](https://github.com/keon/awesome-physical-ai) - Curated list of academic papers and resources on Physical AI.
+* [Awesome Robotic Tooling](https://github.com/Ly0n/awesome-robotic-tooling) - Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
+* [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) - Curated list of robotics resources (Kiloreux).
+* [Awesome Robotics](https://github.com/ahundt/awesome-robotics) - Curated list of robotics links and software libraries (ahundt).
+* [Awesome VLA Study](https://github.com/MilkClouds/awesome-vla-study) - A curated VLA (Vision-Language-Action) study guide that organizes ~30 key papers into a 6-phase, 14-week reading curriculum — covering diffusion/flow matching foundations, robot foundation model architectures, data scaling, efficient inference, RL fine-tuning, and world models.
 * [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) - Python sample codes for robotics algorithms.
 * [Robotics Coursework](https://github.com/mithi/robotics-coursework) - A list of robotics courses you can take online.
 
