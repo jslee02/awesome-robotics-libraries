@@ -15,6 +15,41 @@
     last_commit: '2026-04-05'
     license: MIT
     language: Python
+- name: Bonxai
+  github: facontidavide/Bonxai
+  description: Brutally fast, sparse, 3D Voxel Grid (formerly Treexy).
+  _subsection: 3D Mapping
+  _meta:
+    stars: 834
+    last_commit: '2026-03-11'
+    license: MPL-2.0
+    language: C++
+- name: Control Toolbox
+  url: https://ethz-adrl.github.io/ct/
+  github: ethz-adrl/control-toolbox
+  description: Open-Source C++ Library for Robotics, Optimal and Model Predictive Control.
+  _meta:
+    stars: 1673
+    last_commit: '2022-11-09'
+    license: BSD-2-Clause
+    language: C++
+- name: Cover-Tree
+  url: http://hunch.net/~jl/projects/cover_tree/cover_tree.html
+  github: DNCrane/Cover-Tree
+  description: Cover tree data structure for quick k-nearest-neighbor search.
+  _subsection: Nearest Neighbor
+  _meta:
+    stars: 64
+    last_commit: '2018-02-13'
+    language: C++
+- name: Crocoddyl
+  github: loco-3d/crocoddyl
+  description: Optimal control library for robot control under contact sequence.
+  _meta:
+    stars: 1188
+    last_commit: '2026-04-01'
+    license: BSD-3-Clause
+    language: C++
 - name: CuiKSuite
   url: http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html
   description: Applications to solve position analysis and path planning problems.
@@ -26,23 +61,10 @@
     stars: 1420
     last_commit: '2026-03-02'
     language: Python
-- name: Control Toolbox
-  url: https://ethz-adrl.github.io/ct/
-  github: ethz-adrl/control-toolbox
-  description: Open-Source C++ Library for Robotics, Optimal and Model Predictive Control.
-  _meta:
-    stars: 1673
-    last_commit: '2022-11-09'
-    license: BSD-2-Clause
-    language: C++
-- name: Crocoddyl
-  github: loco-3d/crocoddyl
-  description: Optimal control library for robot control under contact sequence.
-  _meta:
-    stars: 1188
-    last_commit: '2026-04-01'
-    license: BSD-3-Clause
-    language: C++
+- name: Faster cover trees
+  url: http://proceedings.mlr.press/v37/izbicki15.pdf
+  description: by Mike Izbicki et al., ICML 2015.
+  _subsection: Nearest Neighbor
 - name: Fields2Cover
   github: fields2cover/fields2cover
   description: Robust and efficient coverage paths for autonomous agricultural vehicles.
@@ -50,6 +72,25 @@
     stars: 783
     last_commit: '2026-03-02'
     license: BSD-3-Clause
+    language: C++
+- name: FLANN
+  url: http://www.cs.ubc.ca/research/flann/
+  github: flann-lib/flann
+  description: Fast Library for Approximate Nearest Neighbors.
+  _subsection: Nearest Neighbor
+  _meta:
+    stars: 2372
+    last_commit: '2024-07-29'
+    language: C++
+- name: Goxel
+  url: https://guillaumechereau.github.io/goxel/
+  github: guillaumechereau/goxel
+  description: Free and open source 3D voxel editor.
+  _subsection: 3D Mapping
+  _meta:
+    stars: 3112
+    last_commit: '2026-01-20'
+    license: GPL-3.0
     language: C++
 - name: GPMP2
   github: gtrll/gpmp2
@@ -61,6 +102,16 @@
 - name: HPP
   url: https://humanoid-path-planner.github.io/hpp-doc/
   description: Path planning for kinematic chains in environments cluttered with obstacles.
+- name: libpointmatcher
+  url: http://libpointmatcher.readthedocs.io/en/latest/
+  github: norlab-ulaval/libpointmatcher
+  description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
+  _subsection: 3D Mapping
+  _meta:
+    stars: 1799
+    last_commit: '2025-10-29'
+    license: BSD-3-Clause
+    language: C++
 - name: MoveIt!
   url: https://moveit.ai/
   github: moveit/moveit
@@ -70,13 +121,14 @@
     last_commit: '2026-03-30'
     license: BSD-3-Clause
     language: C++
-- name: OMPL
-  url: https://ompl.kavrakilab.org/
-  github: ompl/ompl
-  description: Open motion planning library.
+- name: nanoflann
+  url: http://www.cs.ubc.ca/research/flann/
+  github: jlblancoc/nanoflann
+  description: Nearest Neighbor search with KD-trees.
+  _subsection: Nearest Neighbor
   _meta:
-    stars: 1999
-    last_commit: '2026-04-03'
+    stars: 2615
+    last_commit: '2025-12-26'
     language: C++
 - name: OCS2
   github: leggedrobotics/ocs2
@@ -86,6 +138,41 @@
     last_commit: '2026-03-25'
     license: BSD-3-Clause
     language: C++
+- name: OctoMap
+  url: http://octomap.github.io/
+  github: OctoMap/octomap
+  description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
+  _subsection: 3D Mapping
+  _meta:
+    stars: 2282
+    last_commit: '2026-02-08'
+    language: C++
+- name: Octree
+  github: jbehley/octree
+  description: Fast radius neighbor search with an Octree.
+  _subsection: 3D Mapping
+  _meta:
+    stars: 375
+    last_commit: '2019-12-17'
+    license: MIT
+    language: C++
+- name: OMPL
+  url: https://ompl.kavrakilab.org/
+  github: ompl/ompl
+  description: Open motion planning library.
+  _meta:
+    stars: 1999
+    last_commit: '2026-04-03'
+    language: C++
+- name: PCL
+  url: https://pointclouds.org/
+  github: PointCloudLibrary/pcl
+  description: 2D/3D image and point cloud processing.
+  _subsection: 3D Mapping
+  _meta:
+    stars: 10939
+    last_commit: '2026-03-21'
+    language: C++
 - name: pymanoid
   github: stephane-caron/pymanoid
   description: Humanoid robotics prototyping environment based on OpenRAVE.
@@ -93,6 +180,16 @@
     stars: 232
     last_commit: '2024-02-19'
     archived: true
+    license: GPL-3.0
+    language: Python
+- name: Python Motion Planning
+  url: https://github.com/ai-winter/python_motion_planning
+  github: ai-winter/python_motion_planning
+  description: Provides the implementations of common `Motion planning` algorithms, including path planners on N-D grid, controllers
+    for path-tracking, curve generators, a visualizer based on matplotlib and a toy physical simulator to test controllers.
+  _meta:
+    stars: 1017
+    last_commit: '2026-03-16'
     license: GPL-3.0
     language: Python
 - name: ROS Behavior Tree
@@ -120,24 +217,6 @@
     stars: 24
     last_commit: '2026-02-09'
     language: C++
-- name: TOPP-RA
-  url: https://hungpham2511.github.io/toppra/
-  github: hungpham2511/toppra
-  description: Time-parameterizing robot trajectories subject to kinematic and dynamic constraints.
-  _meta:
-    stars: 859
-    last_commit: '2026-04-01'
-    license: MIT
-    language: Python
-- name: Ungar
-  url: https://github.com/fdevinc/ungar
-  github: fdevinc/ungar
-  description: Expressive and efficient implementation of optimal control problems using template metaprogramming.
-  _meta:
-    stars: 108
-    last_commit: '2024-07-16'
-    license: Apache-2.0
-    language: C++
 - name: TopiCo
   github: AIS-Bonn/TopiCo
   description: Time-optimal Trajectory Generation and Control.
@@ -147,6 +226,15 @@
     last_commit: '2021-07-12'
     license: BSD-3-Clause
     language: C++
+- name: TOPP-RA
+  url: https://hungpham2511.github.io/toppra/
+  github: hungpham2511/toppra
+  description: Time-parameterizing robot trajectories subject to kinematic and dynamic constraints.
+  _meta:
+    stars: 859
+    last_commit: '2026-04-01'
+    license: MIT
+    language: Python
 - name: towr
   url: http://wiki.ros.org/towr
   github: ethz-adrl/towr
@@ -175,83 +263,17 @@
     stars: 454
     last_commit: '2022-12-05'
     language: C++
-- name: Cover-Tree
-  url: http://hunch.net/~jl/projects/cover_tree/cover_tree.html
-  github: DNCrane/Cover-Tree
-  description: Cover tree data structure for quick k-nearest-neighbor search.
-  _subsection: Nearest Neighbor
+- name: Ungar
+  url: https://github.com/fdevinc/ungar
+  github: fdevinc/ungar
+  description: Expressive and efficient implementation of optimal control problems using template metaprogramming.
   _meta:
-    stars: 64
-    last_commit: '2018-02-13'
+    stars: 108
+    last_commit: '2024-07-16'
+    license: Apache-2.0
     language: C++
-- name: Faster cover trees
-  url: http://proceedings.mlr.press/v37/izbicki15.pdf
-  description: by Mike Izbicki et al., ICML 2015.
-  _subsection: Nearest Neighbor
-- name: FLANN
-  url: http://www.cs.ubc.ca/research/flann/
-  github: flann-lib/flann
-  description: Fast Library for Approximate Nearest Neighbors.
-  _subsection: Nearest Neighbor
-  _meta:
-    stars: 2372
-    last_commit: '2024-07-29'
-    language: C++
-- name: nanoflann
-  url: http://www.cs.ubc.ca/research/flann/
-  github: jlblancoc/nanoflann
-  description: Nearest Neighbor search with KD-trees.
-  _subsection: Nearest Neighbor
-  _meta:
-    stars: 2615
-    last_commit: '2025-12-26'
-    language: C++
-- name: libpointmatcher
-  url: http://libpointmatcher.readthedocs.io/en/latest/
-  github: norlab-ulaval/libpointmatcher
-  description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
+- name: Utility Software
   _subsection: 3D Mapping
-  _meta:
-    stars: 1799
-    last_commit: '2025-10-29'
-    license: BSD-3-Clause
-    language: C++
-- name: Octree
-  github: jbehley/octree
-  description: Fast radius neighbor search with an Octree.
-  _subsection: 3D Mapping
-  _meta:
-    stars: 375
-    last_commit: '2019-12-17'
-    license: MIT
-    language: C++
-- name: OctoMap
-  url: http://octomap.github.io/
-  github: OctoMap/octomap
-  description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
-  _subsection: 3D Mapping
-  _meta:
-    stars: 2282
-    last_commit: '2026-02-08'
-    language: C++
-- name: PCL
-  url: https://pointclouds.org/
-  github: PointCloudLibrary/pcl
-  description: 2D/3D image and point cloud processing.
-  _subsection: 3D Mapping
-  _meta:
-    stars: 10939
-    last_commit: '2026-03-21'
-    language: C++
-- name: Bonxai
-  github: facontidavide/Bonxai
-  description: Brutally fast, sparse, 3D Voxel Grid (formerly Treexy).
-  _subsection: 3D Mapping
-  _meta:
-    stars: 834
-    last_commit: '2026-03-11'
-    license: MPL-2.0
-    language: C++
 - name: voxblox
   github: ethz-asl/voxblox
   description: Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields.
@@ -270,16 +292,4 @@
     stars: 553
     last_commit: '2024-12-30'
     license: BSD-3-Clause
-    language: C++
-- name: Utility Software
-  _subsection: 3D Mapping
-- name: Goxel
-  url: https://guillaumechereau.github.io/goxel/
-  github: guillaumechereau/goxel
-  description: Free and open source 3D voxel editor.
-  _subsection: 3D Mapping
-  _meta:
-    stars: 3112
-    last_commit: '2026-01-20'
-    license: GPL-3.0
     language: C++
