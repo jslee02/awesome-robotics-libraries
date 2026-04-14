@@ -33,7 +33,7 @@ jobs:
         id: parse
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const owner = context.repo.owner;
@@ -264,7 +264,7 @@ jobs:
         if: success()
         env:
           ISSUE_NUMBER: ${{ steps.parse.outputs.issue_number }}
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             await github.rest.issues.createComment({

@@ -23,7 +23,7 @@ jobs:
 
       - name: Extract GitHub repo from issue body
         id: extract
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const body = context.payload.issue.body || '';
@@ -69,7 +69,7 @@ jobs:
 
       - name: Post evaluation comment
         if: steps.extract.outputs.repo != ''
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
@@ -83,7 +83,7 @@ jobs:
 
       - name: Apply label and handle outcome
         if: steps.extract.outputs.repo != ''
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const rec = '${{ steps.eval.outputs.recommendation }}';
@@ -132,7 +132,7 @@ jobs:
 
       - name: Post fallback comment (no repo found)
         if: steps.extract.outputs.repo == ''
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             await github.rest.issues.createComment({
