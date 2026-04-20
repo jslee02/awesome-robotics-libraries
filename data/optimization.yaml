@@ -3,8 +3,8 @@
   github: casadi/casadi
   description: Symbolic framework for algorithmic differentiation and numeric optimization.
   _meta:
-    stars: 2187
-    last_commit: '2026-04-01'
+    stars: 2192
+    last_commit: '2026-04-17'
     license: LGPL-3.0
     language: C++
 - name: Ceres Solver
@@ -12,8 +12,8 @@
   github: ceres-solver/ceres-solver
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 4439
-    last_commit: '2026-04-06'
+    stars: 4451
+    last_commit: '2026-04-08'
     language: C++
 - name: eigen-qld
   github: jrl-umi3218/eigen-qld
@@ -27,30 +27,30 @@
   github: ipab-slmc/exotica
   description: Generic optimisation toolset for robotics platforms.
   _meta:
-    stars: 162
-    last_commit: '2026-02-27'
+    stars: 163
+    last_commit: '2024-05-27'
     license: BSD-3-Clause
     language: C++
 - name: hpipm
   github: giaf/hpipm
   description: High-performance interior-point-method QP solvers (Ipopt, Snopt).
   _meta:
-    stars: 674
-    last_commit: '2026-04-02'
+    stars: 677
+    last_commit: '2026-04-19'
     language: C
 - name: HYPRE
   url: https://hypre.readthedocs.io/
   github: hypre-space/hypre
   description: Parallel solvers for sparse linear systems featuring multigrid methods.
   _meta:
-    stars: 828
-    last_commit: '2026-04-05'
+    stars: 829
+    last_commit: '2026-04-17'
     language: C
 - name: ifopt
   github: ethz-adrl/ifopt
   description: An Eigen-based, light-weight C++ Interface to Nonlinear Programming Solvers (Ipopt, Snopt).
   _meta:
-    stars: 851
+    stars: 853
     last_commit: '2025-11-03'
     license: BSD-3-Clause
     language: C++
@@ -59,7 +59,7 @@
   github: coin-or/Ipopt
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 1726
+    stars: 1738
     last_commit: '2026-03-06'
     license: EPL-2.0
     language: C++
@@ -68,7 +68,7 @@
   description: Blackbox stochastic optimization using the CMA-ES algorithm.
   _meta:
     stars: 363
-    last_commit: '2025-09-15'
+    last_commit: '2026-04-14'
     language: C++
 - name: limbo
   url: http://www.resibots.eu/limbo/
@@ -83,7 +83,7 @@
   description: Linear Programming solvers in Python with a unified API.
   _meta:
     stars: 25
-    last_commit: '2025-04-09'
+    last_commit: '2026-04-09'
     license: LGPL-3.0
     language: Python
 - name: NLopt
@@ -91,7 +91,7 @@
   github: stevengj/nlopt
   description: Nonlinear optimization.
   _meta:
-    stars: 2200
+    stars: 2206
     last_commit: '2026-03-13'
     language: C
 - name: OptimLib
@@ -99,7 +99,7 @@
   github: kthohr/optim
   description: Lightweight C++ library of numerical optimization methods for nonlinear functions.
   _meta:
-    stars: 890
+    stars: 894
     last_commit: '2024-04-28'
     license: Apache-2.0
     language: C++
@@ -108,8 +108,8 @@
   github: osqp/osqp
   description: The Operator Splitting QP Solver.
   _meta:
-    stars: 2100
-    last_commit: '2026-01-12'
+    stars: 2107
+    last_commit: '2025-11-10'
     license: Apache-2.0
     language: C
 - name: Pagmo
@@ -117,8 +117,8 @@
   github: esa/pagmo2
   description: Scientific library for massively parallel optimization.
   _meta:
-    stars: 915
-    last_commit: '2025-10-28'
+    stars: 917
+    last_commit: '2026-04-13'
     license: GPL-3.0
     language: C++
 - name: ProxSuite
@@ -126,8 +126,8 @@
   github: Simple-Robotics/ProxSuite
   description: The Advanced Proximal Optimization Toolbox.
   _meta:
-    stars: 549
-    last_commit: '2026-04-01'
+    stars: 553
+    last_commit: '2026-04-07'
     license: BSD-2-Clause
     language: C++
 - name: pymoo
@@ -136,14 +136,14 @@
   description: Multi-objective Optimization in Python.
   _meta:
     stars: 26
-    last_commit: '2023-04-19'
+    last_commit: '2023-04-09'
     license: Apache-2.0
 - name: qpsolvers
   github: qpsolvers/qpsolvers
   description: Quadratic Programming solvers in Python with a unified API.
   _meta:
-    stars: 738
-    last_commit: '2026-03-19'
+    stars: 742
+    last_commit: '2026-04-17'
     license: LGPL-3.0
     language: Python
 - name: RobOptim
@@ -160,16 +160,16 @@
   github: cvxgrp/scs
   description: Numerical optimization for solving large-scale convex cone problems.
   _meta:
-    stars: 619
-    last_commit: '2026-04-06'
+    stars: 620
+    last_commit: '2026-04-13'
     license: MIT
     language: C
 - name: SHOT
   github: coin-or/SHOT
   description: A solver for mixed-integer nonlinear optimization problems.
   _meta:
-    stars: 131
-    last_commit: '2026-03-12'
+    stars: 132
+    last_commit: '2026-04-15'
     license: EPL-2.0
     language: C++
 - name: sferes2
@@ -177,5 +177,5 @@
   description: Evolutionary computation.
   _meta:
     stars: 170
-    last_commit: '2022-07-11'
+    last_commit: '2021-03-26'
     language: C++
