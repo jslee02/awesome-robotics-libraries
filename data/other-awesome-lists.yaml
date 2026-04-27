@@ -3,7 +3,7 @@
   github: owainlewis/awesome-artificial-intelligence
   description: Curated list of AI courses, books, video lectures, and papers.
   _meta:
-    stars: 13258
+    stars: 13530
     last_commit: '2025-08-12'
     license: MIT
 - name: Awesome Collision Detection
@@ -11,22 +11,22 @@
   github: jslee02/awesome-collision-detection
   description: Curated list of collision detection libraries and resources.
   _meta:
-    stars: 1012
-    last_commit: '2023-09-30'
+    stars: 1017
+    last_commit: '2026-04-07'
     license: CC0-1.0
 - name: Awesome Computer Vision
   url: https://github.com/jbhuang0604/awesome-computer-vision
   github: jbhuang0604/awesome-computer-vision
   description: Curated list of computer vision resources.
   _meta:
-    stars: 23171
-    last_commit: '2024-05-17'
+    stars: 23230
+    last_commit: '2021-09-28'
 - name: Awesome Deep Learning
   url: https://github.com/ChristosChristofidis/awesome-deep-learning
   github: ChristosChristofidis/awesome-deep-learning
   description: Curated list of deep learning tutorials, projects, and communities.
   _meta:
-    stars: 27851
+    stars: 27978
     last_commit: '2025-05-26'
 - name: Awesome Gazebo
   url: https://github.com/fkromer/awesome-gazebo
@@ -34,14 +34,14 @@
   description: Curated list of Gazebo simulation framework resources.
   _meta:
     stars: 155
-    last_commit: '2021-01-24'
+    last_commit: '2021-01-04'
     archived: true
 - name: Awesome Grasping
   url: https://github.com/Po-Jen/awesome-grasping
   github: Po-Jen/awesome-grasping
   description: Curated list of grasping libraries and resources.
   _meta:
-    stars: 96
+    stars: 97
     last_commit: '2019-07-13'
     license: Unlicense
 - name: Awesome Human Robot Interaction
@@ -57,15 +57,15 @@
   github: josephmisiti/awesome-machine-learning
   description: Curated list of machine learning frameworks, libraries, and software.
   _meta:
-    stars: 72160
-    last_commit: '2026-03-15'
+    stars: 72301
+    last_commit: '2026-04-26'
     language: Python
 - name: Awesome Physical AI
   url: https://github.com/keon/awesome-physical-ai
   github: keon/awesome-physical-ai
   description: Curated list of academic papers and resources on Physical AI.
   _meta:
-    stars: 182
+    stars: 221
     last_commit: '2026-03-30'
     license: CC0-1.0
 - name: Awesome Robotic Tooling
@@ -73,23 +73,23 @@
   github: Ly0n/awesome-robotic-tooling
   description: Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
   _meta:
-    stars: 3786
-    last_commit: '2023-11-20'
+    stars: 3809
+    last_commit: '2023-04-30'
     license: CC0-1.0
 - name: Awesome Robotics
   url: https://github.com/Kiloreux/awesome-robotics
   github: Kiloreux/awesome-robotics
   description: Curated list of robotics resources (Kiloreux).
   _meta:
-    stars: 6294
+    stars: 6498
     last_commit: '2024-09-22'
 - name: Awesome Robotics
   url: https://github.com/ahundt/awesome-robotics
   github: ahundt/awesome-robotics
   description: Curated list of robotics links and software libraries (ahundt).
   _meta:
-    stars: 1364
-    last_commit: '2024-01-10'
+    stars: 1371
+    last_commit: '2023-03-19'
 - name: Awesome VLA Study
   url: https://github.com/MilkClouds/awesome-vla-study
   github: MilkClouds/awesome-vla-study
@@ -97,21 +97,21 @@
     curriculum — covering diffusion/flow matching foundations, robot foundation model architectures, data scaling, efficient
     inference, RL fine-tuning, and world models.
   _meta:
-    stars: 193
+    stars: 231
     last_commit: '2026-03-21'
 - name: PythonRobotics
   url: https://github.com/AtsushiSakai/PythonRobotics
   github: AtsushiSakai/PythonRobotics
   description: Python sample codes for robotics algorithms.
   _meta:
-    stars: 29066
-    last_commit: '2026-03-30'
+    stars: 29263
+    last_commit: '2026-04-11'
     language: Python
 - name: Robotics Coursework
   url: https://github.com/mithi/robotics-coursework
   github: mithi/robotics-coursework
   description: A list of robotics courses you can take online.
   _meta:
-    stars: 4110
+    stars: 4548
     last_commit: '2026-01-24'
     license: Unlicense

@@ -9,8 +9,8 @@
   description: XML format for representing a robot model.
   _subsection: Robot Model Description Format
   _meta:
-    stars: 124
-    last_commit: '2026-03-25'
+    stars: 126
+    last_commit: '2026-04-20'
     language: C++
 - name: onshape-to-robot
   url: https://github.com/Rhoban/onshape-to-robot
@@ -18,8 +18,8 @@
   description: Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API.
   _subsection: Utility to Build Robot Models
   _meta:
-    stars: 516
-    last_commit: '2026-03-27'
+    stars: 536
+    last_commit: '2026-04-21'
     license: MIT
     language: Python
 - name: phobos
@@ -27,7 +27,7 @@
   description: Add-on for Blender creating URDF and SMURF robot models.
   _subsection: Utility to Build Robot Models
   _meta:
-    stars: 873
-    last_commit: '2025-07-30'
+    stars: 879
+    last_commit: '2024-06-13'
     license: BSD-3-Clause
     language: Python
