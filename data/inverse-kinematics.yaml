@@ -10,15 +10,15 @@
   description: A simple pure python package to solve inverse kinematics.
   _meta:
     stars: 181
-    last_commit: '2025-12-20'
+    last_commit: '2026-04-14'
     license: MIT
     language: Python
 - name: Lively
   github: Wisc-HCI/lively
   description: A highly configurable toolkit for commanding robots in mixed modalities.
   _meta:
-    stars: 7
-    last_commit: '2023-08-15'
+    stars: 8
+    last_commit: '2023-06-06'
     license: MIT
     language: Rust
 - name: RelaxedIK
