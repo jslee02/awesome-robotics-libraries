@@ -12,7 +12,7 @@ jobs:
       - name: Block direct README edits
         # Skip for bot-authored PRs (auto-fix links, add-accepted-entry, etc.)
         if: github.event.pull_request.user.type != 'Bot'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const files = await github.paginate(github.rest.pulls.listFiles, {
