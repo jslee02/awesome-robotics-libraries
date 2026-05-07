@@ -10,7 +10,7 @@
   github: sgorsten/linalg
   description: Single header public domain linear algebra library for C++11.
   _meta:
-    stars: 948
+    stars: 949
     last_commit: '2023-07-02'
     license: Unlicense
     language: C++
@@ -18,7 +18,7 @@
   github: artivis/manif
   description: Small c++11 header-only library for Lie theory.
   _meta:
-    stars: 1751
+    stars: 1760
     last_commit: '2025-11-01'
     license: MIT
     language: C++
@@ -26,22 +26,22 @@
   github: strasdat/Sophus
   description: Lie groups using Eigen.
   _meta:
-    stars: 2397
-    last_commit: '2024-07-06'
+    stars: 2411
+    last_commit: '2024-06-12'
     language: C++
 - name: SpaceVelAlg
   github: jrl-umi3218/SpaceVecAlg
   description: Spatial vector algebra with the Eigen3.
   _meta:
     stars: 81
-    last_commit: '2026-03-31'
+    last_commit: '2026-04-17'
     license: BSD-2-Clause
     language: C++
 - name: spatialmath-python
   github: bdaiinstitute/spatialmath-python
   description: Python classes for pose and orientation in 2D/3D with spatial operations toolbox.
   _meta:
-    stars: 623
-    last_commit: '2025-11-20'
+    stars: 625
+    last_commit: '2026-04-30'
     license: MIT
     language: Python
