@@ -10,8 +10,8 @@
   github: Tavish9/any4lerobot
   description: A collection of utilities and tools for LeRobot.
   _meta:
-    stars: 1016
-    last_commit: '2026-05-01'
+    stars: 1021
+    last_commit: '2026-05-10'
     license: MIT
     language: Python
 - name: DLL
@@ -45,15 +45,15 @@
   github: ivy-llc/ivy
   description: Unified Machine Learning Framework.
   _meta:
-    stars: 14197
+    stars: 14192
     last_commit: '2026-02-07'
     language: Python
 - name: LeRobot
   github: huggingface/lerobot
   description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
-    stars: 23726
-    last_commit: '2026-04-30'
+    stars: 23924
+    last_commit: '2026-05-10'
     license: Apache-2.0
     language: Python
 - name: LeRobot Episode Scoring Toolkit
@@ -61,7 +61,7 @@
   github: RoboticsData/score_lerobot_episodes
   description: One-click tool to score, filter, and export higher-quality LeRobot datasets.
   _meta:
-    stars: 73
+    stars: 74
     last_commit: '2026-03-13'
     license: Apache-2.0
     language: Python
@@ -77,16 +77,16 @@
   github: mlpack/mlpack
   description: Scalable C++ machine learning library.
   _meta:
-    stars: 5640
-    last_commit: '2026-05-01'
+    stars: 5637
+    last_commit: '2026-05-09'
     language: C++
 - name: Gymnasium
   url: https://gymnasium.farama.org/
   github: Farama-Foundation/Gymnasium
   description: Developing and comparing reinforcement learning algorithms.
   _meta:
-    stars: 11825
-    last_commit: '2026-05-01'
+    stars: 11864
+    last_commit: '2026-05-08'
     license: MIT
     language: Python
 - name: gym-dart
@@ -117,14 +117,14 @@
   github: ARISE-Initiative/robosuite
   description: A modular simulation framework and benchmark for robot learning.
   _meta:
-    stars: 2395
-    last_commit: '2026-03-03'
+    stars: 2405
+    last_commit: '2026-05-09'
     language: Python
 - name: tiny-dnn
   url: http://tiny-dnn.readthedocs.io/en/latest/
   github: tiny-dnn/tiny-dnn
   description: Header only, dependency-free deep learning framework in C++14.
   _meta:
-    stars: 6024
+    stars: 6021
     last_commit: '2018-10-23'
     language: C++
