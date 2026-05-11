@@ -3,7 +3,7 @@
   github: owainlewis/awesome-artificial-intelligence
   description: Curated list of AI courses, books, video lectures, and papers.
   _meta:
-    stars: 13743
+    stars: 13747
     last_commit: '2025-08-12'
     license: MIT
 - name: Awesome Collision Detection
@@ -20,7 +20,7 @@
   github: jbhuang0604/awesome-computer-vision
   description: Curated list of computer vision resources.
   _meta:
-    stars: 23256
+    stars: 23258
     last_commit: '2021-09-28'
 - name: Awesome Deep Learning
   url: https://github.com/ChristosChristofidis/awesome-deep-learning
@@ -58,7 +58,7 @@
   github: josephmisiti/awesome-machine-learning
   description: Curated list of machine learning frameworks, libraries, and software.
   _meta:
-    stars: 72437
+    stars: 72441
     last_commit: '2026-04-26'
     language: Python
 - name: Awesome Physical AI
@@ -105,7 +105,7 @@
   github: AtsushiSakai/PythonRobotics
   description: Python sample codes for robotics algorithms.
   _meta:
-    stars: 29464
+    stars: 29465
     last_commit: '2026-04-11'
     language: Python
 - name: Robotics Coursework
@@ -114,5 +114,5 @@
   description: A list of robotics courses you can take online.
   _meta:
     stars: 4620
-    last_commit: '2026-05-05'
+    last_commit: '2026-05-11'
     license: Unlicense

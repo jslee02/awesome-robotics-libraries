@@ -27,6 +27,6 @@
   github: google-deepmind/mujoco_menagerie
   description: Collection of well-tuned MuJoCo models for research and development.
   _meta:
-    stars: 3428
+    stars: 3429
     last_commit: '2026-05-09'
     language: Python

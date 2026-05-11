@@ -12,7 +12,7 @@
   github: ceres-solver/ceres-solver
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 4471
+    stars: 4472
     last_commit: '2026-05-01'
     language: C++
 - name: eigen-qld
@@ -95,7 +95,7 @@
     last_commit: '2026-05-07'
     language: C
 - name: OptimLib
-  url: https://www.kthohr.com/optimlib.html
+  url: https://github.com/kthohr/optim
   github: kthohr/optim
   description: Lightweight C++ library of numerical optimization methods for nonlinear functions.
   _meta:
@@ -117,7 +117,7 @@
   github: esa/pagmo2
   description: Scientific library for massively parallel optimization.
   _meta:
-    stars: 921
+    stars: 922
     last_commit: '2026-04-13'
     license: GPL-3.0
     language: C++
