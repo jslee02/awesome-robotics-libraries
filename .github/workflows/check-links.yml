@@ -10,88 +10,11 @@ on:
     paths: ["**.md"]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
 jobs:
   check-links:
-    if: github.event_name == 'push' || github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Check links
-        id: lychee
-        uses: lycheeverse/lychee-action@v2
-        with:
-          args: "--config .lychee.toml --verbose --no-progress './**/*.md'"
-          fail: false
-          output: lychee/results.md
-
-      - name: Fail on broken links (PR only)
-        if: github.event_name == 'pull_request'
-        run: |
-          # Lychee results format:
-          #   [404], [410] — HTTP 4xx client errors (definitively broken)
-          #   [500], [504] — HTTP 5xx server errors (transient)
-          #   [ERROR]      — network errors (transient)
-          #   [TIMEOUT]    — slow servers (transient)
-          # Only fail PRs on 4xx. Everything else is transient and
-          # handled by the weekly cron that auto-creates fix PRs.
-          if grep -qP '^\* \[4\d{2}\]' lychee/results.md 2>/dev/null; then
-            echo "::error::Broken links found (HTTP 4xx):"
-            grep -P '^\* \[4\d{2}\]' lychee/results.md
-            exit 1
-          fi
-          if grep -qP '^\* \[5\d{2}\]|^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md 2>/dev/null; then
-            echo "::warning::Transient failures (not blocking PR):"
-            grep -P '^\* \[5\d{2}\]|^\* \[ERROR\]|^\* \[TIMEOUT\]' lychee/results.md
-          fi
-          echo "No broken links found"
-
-  fix-links:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      issues: write
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Check links
-        id: lychee
-        uses: lycheeverse/lychee-action@v2
-        with:
-          args: >-
-            --config .lychee.toml
-            --verbose
-            --no-progress
-            --suggest
-            --archive wayback
-            --format json
-            './**/*.md'
-          fail: false
-          output: lychee/results.json
-
-      - name: Fix broken links
-        if: steps.lychee.outputs.exit_code != 0
-        id: fix
-        run: python .github/scripts/fix-links.py lychee/results.json
-
-      - name: Create pull request with fixes
-        if: steps.fix.outputs.fixes_applied == 'true'
-        uses: peter-evans/create-pull-request@v8
-        with:
-          commit-message: "fix: replace broken links with updated URLs"
-          title: "fix: auto-fix broken links"
-          body-path: lychee/fix-summary.md
-          branch: fix/broken-links
-          delete-branch: true
-          labels: maintenance
-
-      - name: Create issue for unfixable links
-        if: steps.fix.outputs.has_unfixable == 'true'
-        uses: peter-evans/create-issue-from-file@v6
-        with:
-          title: "Link Checker: broken links requiring manual fix"
-          content-filepath: lychee/unfixed-links.md
-          labels: maintenance
-          assignees: jslee02
+    uses: jslee02/awesome-list-infra/.github/workflows/check-links.yml@main
