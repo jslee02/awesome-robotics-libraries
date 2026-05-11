@@ -49,7 +49,7 @@
   description: Open-source simulator for autonomous driving research.
   _subsection: Free or Open Source
   _meta:
-    stars: 13938
+    stars: 13939
     last_commit: '2026-05-08'
     license: MIT
     language: C++
@@ -97,7 +97,7 @@
   description: Open-source hexapod robot inverse kinematics and gaits visualizer.
   _subsection: Free or Open Source
   _meta:
-    stars: 738
+    stars: 740
     last_commit: '2026-01-01'
     license: Apache-2.0
     language: JavaScript
@@ -107,7 +107,7 @@
   description: Open source robotics simulator (formerly Ignition Gazebo).
   _subsection: Free or Open Source
   _meta:
-    stars: 1333
+    stars: 1334
     last_commit: '2026-05-09'
     license: Apache-2.0
     language: C++

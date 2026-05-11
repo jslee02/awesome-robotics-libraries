@@ -146,7 +146,7 @@
   - fluid
   - particle
   _meta:
-    stars: 28739
+    stars: 28740
     last_commit: '2026-05-03'
     license: Apache-2.0
     language: Python
@@ -334,7 +334,7 @@
   features:
   - id
   _meta:
-    stars: 13434
+    stars: 13439
     last_commit: '2026-05-10'
     license: Apache-2.0
     language: C++
@@ -370,7 +370,7 @@
   - mjcf
   _meta:
     stars: 4879
-    last_commit: '2026-05-09'
+    last_commit: '2026-05-11'
     license: Apache-2.0
     language: Python
 - name: Newton Dynamics
@@ -445,7 +445,7 @@
   languages:
   - C++
   _meta:
-    stars: 2219
+    stars: 2220
     last_commit: '2025-09-04'
     license: MIT
     language: C++

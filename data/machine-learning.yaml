@@ -27,7 +27,7 @@
   github: clab/dynet
   description: The Dynamic Neural Network Toolkit.
   _meta:
-    stars: 3433
+    stars: 3434
     last_commit: '2023-11-08'
     license: Apache-2.0
     language: C++
@@ -52,7 +52,7 @@
   github: huggingface/lerobot
   description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
-    stars: 23924
+    stars: 23925
     last_commit: '2026-05-10'
     license: Apache-2.0
     language: Python
@@ -85,7 +85,7 @@
   github: Farama-Foundation/Gymnasium
   description: Developing and comparing reinforcement learning algorithms.
   _meta:
-    stars: 11864
+    stars: 11868
     last_commit: '2026-05-08'
     license: MIT
     language: Python
@@ -113,11 +113,11 @@
     last_commit: '2016-08-15'
     language: C++
 - name: robosuite
-  url: https://robosuite.ai
+  url: https://robosuite.ai/docs/
   github: ARISE-Initiative/robosuite
   description: A modular simulation framework and benchmark for robot learning.
   _meta:
-    stars: 2405
+    stars: 2406
     last_commit: '2026-05-09'
     language: Python
 - name: tiny-dnn

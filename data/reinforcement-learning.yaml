@@ -48,7 +48,7 @@
   github: DLR-RM/stable-baselines3
   description: Reliable implementations of reinforcement learning algorithms in PyTorch.
   _meta:
-    stars: 13240
+    stars: 13242
     last_commit: '2026-05-02'
     license: MIT
     language: Python
