@@ -18,7 +18,7 @@
   description: Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API.
   _subsection: Utility to Build Robot Models
   _meta:
-    stars: 537
+    stars: 541
     last_commit: '2026-04-21'
     license: MIT
     language: Python
@@ -27,7 +27,7 @@
   description: Add-on for Blender creating URDF and SMURF robot models.
   _subsection: Utility to Build Robot Models
   _meta:
-    stars: 886
-    last_commit: '2024-06-13'
+    stars: 889
+    last_commit: '2026-05-11'
     license: BSD-3-Clause
     language: Python
