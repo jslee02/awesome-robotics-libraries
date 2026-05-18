@@ -4,7 +4,7 @@
   description: Interactive household environment for embodied AI with Unity backend.
   _subsection: Free or Open Source
   _meta:
-    stars: 1718
+    stars: 1726
     last_commit: '2025-05-29'
     license: Apache-2.0
     language: C#
@@ -13,7 +13,7 @@
   description: Simulator based on Unreal Engine for autonomous vehicles.
   _subsection: Free or Open Source
   _meta:
-    stars: 18158
+    stars: 18171
     last_commit: '2026-03-15'
     language: C++
 - name: ARGoS
@@ -22,7 +22,7 @@
   description: Physics-based simulator designed to simulate large-scale robot swarms.
   _subsection: Free or Open Source
   _meta:
-    stars: 306
+    stars: 307
     last_commit: '2026-02-12'
     language: C++
 - name: ARTE
@@ -31,7 +31,7 @@
   description: Matlab toolbox focussed on robotic manipulators.
   _subsection: Free or Open Source
   _meta:
-    stars: 101
+    stars: 100
     last_commit: '2026-04-29'
     language: MATLAB
 - name: AVIS Engine
@@ -49,8 +49,8 @@
   description: Open-source simulator for autonomous driving research.
   _subsection: Free or Open Source
   _meta:
-    stars: 13939
-    last_commit: '2026-05-08'
+    stars: 13964
+    last_commit: '2026-05-15'
     license: MIT
     language: C++
 - name: CoppeliaSim
@@ -60,7 +60,7 @@
   _subsection: Free or Open Source
   _meta:
     stars: 146
-    last_commit: '2026-05-08'
+    last_commit: '2026-05-15'
     language: C++
 - name: Gazebo
   url: https://gazebosim.org/
@@ -68,7 +68,7 @@
   description: Dynamic multi-robot simulator.
   _subsection: Free or Open Source
   _meta:
-    stars: 1338
+    stars: 1341
     last_commit: '2024-12-03'
     archived: true
     language: C++
@@ -87,7 +87,7 @@
   description: Simulation platform for research in embodied artificial intelligence.
   _subsection: Free or Open Source
   _meta:
-    stars: 3661
+    stars: 3667
     last_commit: '2026-05-07'
     license: MIT
     language: C++
@@ -97,7 +97,7 @@
   description: Open-source hexapod robot inverse kinematics and gaits visualizer.
   _subsection: Free or Open Source
   _meta:
-    stars: 740
+    stars: 745
     last_commit: '2026-01-01'
     license: Apache-2.0
     language: JavaScript
@@ -107,8 +107,8 @@
   description: Open source robotics simulator (formerly Ignition Gazebo).
   _subsection: Free or Open Source
   _meta:
-    stars: 1334
-    last_commit: '2026-05-09'
+    stars: 1342
+    last_commit: '2026-05-18'
     license: Apache-2.0
     language: C++
 - name: Isaac Sim
@@ -118,7 +118,7 @@
   license: Apache-2.0
   _subsection: Free or Open Source
   _meta:
-    stars: 3177
+    stars: 3224
     last_commit: '2025-11-20'
     language: Python
 - name: ManiSkill
@@ -127,7 +127,7 @@
   description: Robot simulation and manipulation learning package powered by SAPIEN.
   _subsection: Free or Open Source
   _meta:
-    stars: 2860
+    stars: 2880
     last_commit: '2026-04-21'
     license: Apache-2.0
     language: Python
@@ -151,7 +151,7 @@
   description: An easy to use simulator for robotics and deep reinforcement learning.
   _subsection: Free or Open Source
   _meta:
-    stars: 14464
+    stars: 14477
     last_commit: '2025-10-22'
     language: C++
 - name: PyBullet_Industrial
@@ -170,7 +170,7 @@
   description: A three.js based 3D robot interface.
   _subsection: Free or Open Source
   _meta:
-    stars: 387
+    stars: 386
     last_commit: '2020-01-13'
     license: MIT
     language: JavaScript
@@ -180,7 +180,7 @@
   description: Physics-rich simulation environment for articulated objects and manipulation.
   _subsection: Free or Open Source
   _meta:
-    stars: 763
+    stars: 767
     last_commit: '2026-03-10'
     language: C++
 - name: Simbad
@@ -193,7 +193,7 @@
   description: Game engine with open-source robotics simulation tools and tutorials.
   _subsection: Free or Open Source
   _meta:
-    stars: 2512
+    stars: 2519
     last_commit: '2024-11-26'
     language: C#
 - name: Webots
@@ -202,7 +202,7 @@
   description: Development environment to model, program, and simulate robots and mechanical systems.
   _subsection: Free or Open Source
   _meta:
-    stars: 4346
+    stars: 4354
     last_commit: '2026-05-04'
     license: Apache-2.0
     language: C++
