@@ -29,6 +29,14 @@
     last_commit: '2023-04-13'
     license: MIT
     language: Python
+- name: ssik
+  github: personalrobotics/ssik
+  description: Analytical inverse kinematics for 6R and 7R revolute robot arms, returning every IK branch.
+  _meta:
+    stars: 4
+    last_commit: '2026-05-21'
+    license: BSD-3-Clause
+    language: Python
 - name: Trip
   url: https://trip-kinematics.readthedocs.io/en/main/index.html
   github: TriPed-Robot/trip_kinematics
