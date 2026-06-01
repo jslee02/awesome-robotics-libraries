@@ -3,8 +3,8 @@
   github: lagadic/visp
   description: Visual Servoing Platform.
   _meta:
-    stars: 878
-    last_commit: '2026-04-25'
+    stars: 883
+    last_commit: '2026-05-31'
     license: GPL-2.0
     language: C++
 - name: BundleTrack
