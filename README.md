@@ -313,6 +313,7 @@ _Mathematics libraries for spatial algebra, Lie groups, and linear algebra._
 
 _Other robotics-related tools and utilities._
 
+* [TWZRD Agent Intel](https://intel.twzrd.xyz) - Trust scoring for AI agents on Solana. Verify agent wallet identity before x402 micropayments in robotics AI pipelines. MCP: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
 * [Foxglove Studio](https://foxglove.dev) - A fully integrated visualization and debugging desktop app for your robotics data.
 * 🟢 fuse - General architecture for performing sensor fusion live on a robot. [⭐ 868](https://github.com/locusrobotics/fuse)
 
