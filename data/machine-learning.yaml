@@ -10,7 +10,7 @@
   github: Tavish9/any4lerobot
   description: A collection of utilities and tools for LeRobot.
   _meta:
-    stars: 1052
+    stars: 1060
     last_commit: '2026-05-10'
     license: MIT
     language: Python
@@ -18,7 +18,7 @@
   github: wichtounet/dll
   description: Deep Learning Library (DLL) for C++.
   _meta:
-    stars: 689
+    stars: 688
     last_commit: '2025-05-27'
     license: MIT
     language: C++
@@ -45,15 +45,15 @@
   github: ivy-llc/ivy
   description: Unified Machine Learning Framework.
   _meta:
-    stars: 14182
+    stars: 14180
     last_commit: '2026-02-07'
     language: Python
 - name: LeRobot
   github: huggingface/lerobot
   description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
-    stars: 24545
-    last_commit: '2026-05-29'
+    stars: 24781
+    last_commit: '2026-06-05'
     license: Apache-2.0
     language: Python
 - name: LeRobot Episode Scoring Toolkit
@@ -61,7 +61,7 @@
   github: RoboticsData/score_lerobot_episodes
   description: One-click tool to score, filter, and export higher-quality LeRobot datasets.
   _meta:
-    stars: 76
+    stars: 71
     last_commit: '2026-03-13'
     license: Apache-2.0
     language: Python
@@ -77,16 +77,16 @@
   github: mlpack/mlpack
   description: Scalable C++ machine learning library.
   _meta:
-    stars: 5651
-    last_commit: '2026-05-27'
+    stars: 5654
+    last_commit: '2026-06-07'
     language: C++
 - name: Gymnasium
   url: https://gymnasium.farama.org/
   github: Farama-Foundation/Gymnasium
   description: Developing and comparing reinforcement learning algorithms.
   _meta:
-    stars: 11973
-    last_commit: '2026-05-30'
+    stars: 12011
+    last_commit: '2026-06-03'
     license: MIT
     language: Python
 - name: gym-dart
@@ -117,7 +117,7 @@
   github: ARISE-Initiative/robosuite
   description: A modular simulation framework and benchmark for robot learning.
   _meta:
-    stars: 2439
+    stars: 2454
     last_commit: '2026-05-28'
     language: Python
 - name: tiny-dnn

@@ -3,8 +3,8 @@
   github: casadi/casadi
   description: Symbolic framework for algorithmic differentiation and numeric optimization.
   _meta:
-    stars: 2218
-    last_commit: '2026-05-26'
+    stars: 2225
+    last_commit: '2026-06-07'
     license: LGPL-3.0
     language: C++
 - name: Ceres Solver
@@ -12,7 +12,7 @@
   github: ceres-solver/ceres-solver
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 4491
+    stars: 4495
     last_commit: '2026-05-01'
     language: C++
 - name: eigen-qld
@@ -20,7 +20,7 @@
   description: Interface to use the QLD QP solver with the Eigen3 library.
   _meta:
     stars: 17
-    last_commit: '2026-03-31'
+    last_commit: '2026-06-03'
     license: BSD-2-Clause
     language: C
 - name: EXOTica
@@ -35,15 +35,15 @@
   github: giaf/hpipm
   description: High-performance interior-point-method QP solvers (Ipopt, Snopt).
   _meta:
-    stars: 685
-    last_commit: '2026-05-29'
+    stars: 686
+    last_commit: '2026-06-04'
     language: C
 - name: HYPRE
   url: https://hypre.readthedocs.io/
   github: hypre-space/hypre
   description: Parallel solvers for sparse linear systems featuring multigrid methods.
   _meta:
-    stars: 836
+    stars: 838
     last_commit: '2026-05-29'
     language: C
 - name: ifopt
@@ -59,7 +59,7 @@
   github: coin-or/Ipopt
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 1755
+    stars: 1757
     last_commit: '2026-05-25'
     license: EPL-2.0
     language: C++
@@ -91,8 +91,8 @@
   github: stevengj/nlopt
   description: Nonlinear optimization.
   _meta:
-    stars: 2223
-    last_commit: '2026-05-21'
+    stars: 2226
+    last_commit: '2026-06-06'
     language: C
 - name: OptimLib
   url: https://github.com/kthohr/optim
@@ -108,7 +108,7 @@
   github: osqp/osqp
   description: The Operator Splitting QP Solver.
   _meta:
-    stars: 2140
+    stars: 2141
     last_commit: '2025-11-10'
     license: Apache-2.0
     language: C
@@ -126,7 +126,7 @@
   github: Simple-Robotics/ProxSuite
   description: The Advanced Proximal Optimization Toolbox.
   _meta:
-    stars: 564
+    stars: 571
     last_commit: '2026-05-11'
     license: BSD-2-Clause
     language: C++
@@ -142,7 +142,7 @@
   github: qpsolvers/qpsolvers
   description: Quadratic Programming solvers in Python with a unified API.
   _meta:
-    stars: 751
+    stars: 752
     last_commit: '2026-05-08'
     license: LGPL-3.0
     language: Python
