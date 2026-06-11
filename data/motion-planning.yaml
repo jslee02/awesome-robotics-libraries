@@ -15,6 +15,9 @@
     last_commit: '2026-06-04'
     license: MIT
     language: Python
+- name: CERT-FLOW
+  github: Archerkattri/CERT-FLOW
+  description: 'Certified route planning under drifting costs: conformal LB <= OPT <= UB certificates on the optimal route, certificate-directed sensing, certified Contraction Hierarchies.'
 - name: Bonxai
   github: facontidavide/Bonxai
   description: Brutally fast, sparse, 3D Voxel Grid (formerly Treexy).
