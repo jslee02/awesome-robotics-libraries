@@ -3,8 +3,8 @@
   github: lagadic/visp
   description: Visual Servoing Platform.
   _meta:
-    stars: 885
-    last_commit: '2026-05-31'
+    stars: 891
+    last_commit: '2026-06-22'
     license: GPL-2.0
     language: C++
 - name: BundleTrack
@@ -12,7 +12,7 @@
   github: wenbowen123/BundleTrack
   description: 6D Pose Tracking for Novel Objects without 3D Models.
   _meta:
-    stars: 679
+    stars: 681
     last_commit: '2026-04-13'
     license: Apache-2.0
     language: C++

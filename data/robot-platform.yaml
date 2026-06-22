@@ -11,7 +11,7 @@
   github: linorobot/linorobot
   description: ROS compatible ground robots.
   _meta:
-    stars: 1102
+    stars: 1104
     last_commit: '2022-07-11'
     license: BSD-2-Clause
     language: C++
@@ -42,7 +42,7 @@
   github: ros2/ros2
   description: Version 2.0 of the Robot Operating System (ROS) software stack.
   _meta:
-    stars: 5599
+    stars: 5656
     last_commit: '2026-05-15'
 - name: ros2_medkit
   url: https://selfpatch.github.io/ros2_medkit/
@@ -51,8 +51,8 @@
     automatic rosbag capture on fault. Inspired by SOVD (Service-Oriented Vehicle Diagnostics), the ASAM standard that brings
     HTTP/REST diagnostics to automotive and robotics.
   _meta:
-    stars: 224
-    last_commit: '2026-06-07'
+    stars: 229
+    last_commit: '2026-06-21'
     license: Apache-2.0
     language: C++
 - name: YARP
@@ -60,6 +60,6 @@
   github: robotology/yarp
   description: Communication and device interfaces applicable from humanoids to embedded devices.
   _meta:
-    stars: 594
-    last_commit: '2026-06-03'
+    stars: 596
+    last_commit: '2026-06-20'
     language: C++
