@@ -2,8 +2,8 @@
   github: locusrobotics/fuse
   description: General architecture for performing sensor fusion live on a robot.
   _meta:
-    stars: 869
-    last_commit: '2026-03-06'
+    stars: 868
+    last_commit: '2026-06-18'
     language: C++
 - name: Foxglove Studio
   url: https://foxglove.dev
