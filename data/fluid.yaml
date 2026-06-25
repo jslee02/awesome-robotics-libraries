@@ -7,3 +7,12 @@
     last_commit: '2022-07-09'
     license: MIT
     language: C++
+- name: Ptera Software
+  url: https://docs.pterasoftware.com/
+  github: camUrban/PteraSoftware
+  description: Ptera Software is a fast, easy-to-use, and open-source software package for analyzing flapping-wing flight.
+  _meta:
+    stars: 250
+    last_commit: '2026-06-25'
+    license: MIT
+    language: Python
