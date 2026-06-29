@@ -3,15 +3,15 @@
   github: allenai/allenact
   description: Python/PyTorch-based Research Framework for Embodied AI.
   _meta:
-    stars: 382
+    stars: 383
     last_commit: '2024-07-23'
     language: Python
 - name: Any4LeRobot
   github: Tavish9/any4lerobot
   description: A collection of utilities and tools for LeRobot.
   _meta:
-    stars: 1071
-    last_commit: '2026-06-22'
+    stars: 1078
+    last_commit: '2026-06-23'
     license: MIT
     language: Python
 - name: DLL
@@ -27,7 +27,7 @@
   github: clab/dynet
   description: The Dynamic Neural Network Toolkit.
   _meta:
-    stars: 3433
+    stars: 3434
     last_commit: '2023-11-08'
     license: Apache-2.0
     language: C++
@@ -45,15 +45,15 @@
   github: ivy-llc/ivy
   description: Unified Machine Learning Framework.
   _meta:
-    stars: 14175
+    stars: 14168
     last_commit: '2026-02-07'
     language: Python
 - name: LeRobot
   github: huggingface/lerobot
   description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
-    stars: 25169
-    last_commit: '2026-06-21'
+    stars: 25353
+    last_commit: '2026-06-27'
     license: Apache-2.0
     language: Python
 - name: LeRobot Episode Scoring Toolkit
@@ -61,7 +61,7 @@
   github: RoboticsData/score_lerobot_episodes
   description: One-click tool to score, filter, and export higher-quality LeRobot datasets.
   _meta:
-    stars: 68
+    stars: 69
     last_commit: '2026-03-13'
     license: Apache-2.0
     language: Python
@@ -77,16 +77,16 @@
   github: mlpack/mlpack
   description: Scalable C++ machine learning library.
   _meta:
-    stars: 5667
-    last_commit: '2026-06-21'
+    stars: 5669
+    last_commit: '2026-06-22'
     language: C++
 - name: Gymnasium
   url: https://gymnasium.farama.org/
   github: Farama-Foundation/Gymnasium
   description: Developing and comparing reinforcement learning algorithms.
   _meta:
-    stars: 12072
-    last_commit: '2026-06-09'
+    stars: 12101
+    last_commit: '2026-06-28'
     license: MIT
     language: Python
 - name: gym-dart
@@ -117,7 +117,7 @@
   github: ARISE-Initiative/robosuite
   description: A modular simulation framework and benchmark for robot learning.
   _meta:
-    stars: 2472
+    stars: 2483
     last_commit: '2026-05-28'
     language: Python
 - name: tiny-dnn
@@ -125,6 +125,6 @@
   github: tiny-dnn/tiny-dnn
   description: Header only, dependency-free deep learning framework in C++14.
   _meta:
-    stars: 6020
+    stars: 6017
     last_commit: '2018-10-23'
     language: C++

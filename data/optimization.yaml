@@ -3,8 +3,8 @@
   github: casadi/casadi
   description: Symbolic framework for algorithmic differentiation and numeric optimization.
   _meta:
-    stars: 2232
-    last_commit: '2026-06-19'
+    stars: 2243
+    last_commit: '2026-06-27'
     license: LGPL-3.0
     language: C++
 - name: Ceres Solver
@@ -12,8 +12,8 @@
   github: ceres-solver/ceres-solver
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 4498
-    last_commit: '2026-06-09'
+    stars: 4504
+    last_commit: '2026-06-23'
     language: C++
 - name: eigen-qld
   github: jrl-umi3218/eigen-qld
@@ -35,7 +35,7 @@
   github: giaf/hpipm
   description: High-performance interior-point-method QP solvers (Ipopt, Snopt).
   _meta:
-    stars: 688
+    stars: 689
     last_commit: '2026-06-04'
     language: C
 - name: HYPRE
@@ -43,8 +43,8 @@
   github: hypre-space/hypre
   description: Parallel solvers for sparse linear systems featuring multigrid methods.
   _meta:
-    stars: 841
-    last_commit: '2026-06-09'
+    stars: 843
+    last_commit: '2026-06-26'
     language: C
 - name: ifopt
   github: ethz-adrl/ifopt
@@ -59,7 +59,7 @@
   github: coin-or/Ipopt
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 1761
+    stars: 1764
     last_commit: '2026-05-25'
     license: EPL-2.0
     language: C++
@@ -84,6 +84,7 @@
   _meta:
     stars: 25
     last_commit: '2026-04-09'
+    archived: true
     license: LGPL-3.0
     language: Python
 - name: NLopt
@@ -91,7 +92,7 @@
   github: stevengj/nlopt
   description: Nonlinear optimization.
   _meta:
-    stars: 2229
+    stars: 2231
     last_commit: '2026-06-06'
     language: C
 - name: OptimLib
@@ -108,7 +109,7 @@
   github: osqp/osqp
   description: The Operator Splitting QP Solver.
   _meta:
-    stars: 2146
+    stars: 2151
     last_commit: '2025-11-10'
     license: Apache-2.0
     language: C
@@ -126,7 +127,7 @@
   github: Simple-Robotics/ProxSuite
   description: The Advanced Proximal Optimization Toolbox.
   _meta:
-    stars: 572
+    stars: 574
     last_commit: '2026-06-10'
     license: BSD-2-Clause
     language: C++
@@ -142,7 +143,7 @@
   github: qpsolvers/qpsolvers
   description: Quadratic Programming solvers in Python with a unified API.
   _meta:
-    stars: 752
+    stars: 753
     last_commit: '2026-05-08'
     license: LGPL-3.0
     language: Python
@@ -160,8 +161,8 @@
   github: cvxgrp/scs
   description: Numerical optimization for solving large-scale convex cone problems.
   _meta:
-    stars: 624
-    last_commit: '2026-06-15'
+    stars: 626
+    last_commit: '2026-06-28'
     license: MIT
     language: C
 - name: SHOT

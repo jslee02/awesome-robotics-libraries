@@ -3,7 +3,7 @@
   github: graspnet/anygrasp_sdk
   description: SDK for AnyGrasp, a 6-DoF grasp pose detection method.
   _meta:
-    stars: 896
+    stars: 905
     last_commit: '2026-06-10'
     language: Python
 - name: Contact-GraspNet
@@ -11,7 +11,7 @@
   github: NVlabs/contact_graspnet
   description: 6-DoF grasp generation for parallel-jaw grippers using contact maps.
   _meta:
-    stars: 505
+    stars: 507
     last_commit: '2024-11-21'
     language: Python
 - name: GraspNet API
