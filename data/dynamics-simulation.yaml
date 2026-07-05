@@ -22,7 +22,7 @@
   - urdf
   - sdf
   _meta:
-    stars: 14562
+    stars: 14573
     last_commit: '2025-10-22'
     language: C++
 - name: Brax
@@ -37,8 +37,8 @@
   features:
   - id
   _meta:
-    stars: 3196
-    last_commit: '2026-05-18'
+    stars: 3200
+    last_commit: '2026-06-25'
     license: Apache-2.0
     language: Jupyter Notebook
 - name: CHRONO::ENGINE
@@ -58,7 +58,7 @@
   - ik
   - urdf
   _meta:
-    stars: 2895
+    stars: 2904
     last_commit: '2026-06-19'
     license: BSD-3-Clause
     language: C++
@@ -80,8 +80,8 @@
   - urdf
   - sdf
   _meta:
-    stars: 1116
-    last_commit: '2026-06-21'
+    stars: 1146
+    last_commit: '2026-06-29'
     license: BSD-2-Clause
     language: C++
 - name: Drake
@@ -101,8 +101,8 @@
   - trj-opt
   - plan
   _meta:
-    stars: 4082
-    last_commit: '2026-06-20'
+    stars: 4089
+    last_commit: '2026-06-26'
     language: C++
 - name: Flex
   url: https://developer.nvidia.com/flex
@@ -146,8 +146,8 @@
   - fluid
   - particle
   _meta:
-    stars: 29398
-    last_commit: '2026-06-21'
+    stars: 29448
+    last_commit: '2026-06-28'
     license: Apache-2.0
     language: Python
 - name: IBDS
@@ -173,8 +173,8 @@
   features:
   - id
   _meta:
-    stars: 230
-    last_commit: '2026-03-27'
+    stars: 231
+    last_commit: '2026-06-27'
     license: BSD-3-Clause
     language: C++
 - name: KDL
@@ -190,7 +190,7 @@
   - ik
   _meta:
     stars: 884
-    last_commit: '2026-05-07'
+    last_commit: '2026-06-23'
     language: C++
 - name: kindr
   description: Kinematics and dynamics library for rigid body transformations.
@@ -215,7 +215,7 @@
   - C++
   - Python
   _meta:
-    stars: 434
+    stars: 433
     last_commit: '2026-01-10'
     license: BSD-3-Clause
     language: C++
@@ -319,8 +319,8 @@
   - slam
   - cv
   _meta:
-    stars: 2138
-    last_commit: '2026-06-21'
+    stars: 2139
+    last_commit: '2026-06-24'
     license: BSD-3-Clause
     language: C++
 - name: MuJoCo
@@ -334,8 +334,8 @@
   features:
   - id
   _meta:
-    stars: 13944
-    last_commit: '2026-06-22'
+    stars: 14016
+    last_commit: '2026-06-29'
     license: Apache-2.0
     language: C++
 - name: mvsim
@@ -349,7 +349,7 @@
   - vehicle
   _meta:
     stars: 404
-    last_commit: '2026-06-11'
+    last_commit: '2026-06-25'
     license: BSD-3-Clause
     language: C++
 - name: Newton
@@ -369,8 +369,8 @@
   - urdf
   - mjcf
   _meta:
-    stars: 5102
-    last_commit: '2026-06-22'
+    stars: 5129
+    last_commit: '2026-06-29'
     license: Apache-2.0
     language: Python
 - name: Newton Dynamics
@@ -392,7 +392,7 @@
   languages:
   - Rust
   _meta:
-    stars: 1650
+    stars: 1648
     last_commit: '2021-07-27'
     license: Apache-2.0
     language: Rust
@@ -414,7 +414,7 @@
   - C++
   - Python
   _meta:
-    stars: 806
+    stars: 807
     last_commit: '2024-08-16'
     language: C++
 - name: pinocchio
@@ -434,8 +434,8 @@
   - analytical derivatives
   - code generation
   _meta:
-    stars: 3477
-    last_commit: '2026-06-12'
+    stars: 3518
+    last_commit: '2026-06-23'
     license: BSD-2-Clause
     language: C++
 - name: PositionBasedDynamics
@@ -445,7 +445,7 @@
   languages:
   - C++
   _meta:
-    stars: 2234
+    stars: 2235
     last_commit: '2025-09-04'
     license: MIT
     language: C++
@@ -457,8 +457,8 @@
   languages:
   - C++
   _meta:
-    stars: 4612
-    last_commit: '2026-06-03'
+    stars: 4627
+    last_commit: '2026-06-24'
     license: BSD-3-Clause
     language: C++
 - name: PyDy
@@ -469,7 +469,7 @@
   languages:
   - Python
   _meta:
-    stars: 412
+    stars: 413
     last_commit: '2026-06-15'
     license: BSD-3-Clause
     language: Python
@@ -488,7 +488,7 @@
   - id
   - urdf
   _meta:
-    stars: 698
+    stars: 700
     last_commit: '2025-06-09'
     language: C++
 - name: RBDyn
@@ -501,8 +501,8 @@
   models:
   - rigid
   _meta:
-    stars: 221
-    last_commit: '2026-06-13'
+    stars: 222
+    last_commit: '2026-06-22'
     license: BSD-2-Clause
     language: C++
 - name: RaiSim
@@ -524,7 +524,7 @@
   languages:
   - C++
   _meta:
-    stars: 1756
+    stars: 1758
     last_commit: '2025-01-09'
     license: Zlib
     language: C++
@@ -537,7 +537,7 @@
   models:
   - rigid
   _meta:
-    stars: 310
+    stars: 309
     last_commit: '2024-11-08'
     language: Julia
 - name: Rigs of Rods
@@ -553,7 +553,7 @@
   - vehicle
   _meta:
     stars: 1207
-    last_commit: '2026-06-12'
+    last_commit: '2026-06-28'
     license: GPL-3.0
     language: C++
 - name: Robopy
@@ -576,7 +576,7 @@
   languages:
   - C++
   _meta:
-    stars: 1184
+    stars: 1187
     last_commit: '2025-04-15'
     license: BSD-2-Clause
     language: C++
@@ -596,7 +596,7 @@
   - C++
   - Python
   _meta:
-    stars: 186
+    stars: 187
     last_commit: '2026-03-11'
     license: Apache-2.0
     language: C
@@ -614,7 +614,7 @@
   - id
   - urdf
   _meta:
-    stars: 2525
+    stars: 2527
     last_commit: '2026-06-01'
     license: Apache-2.0
     language: C++
@@ -630,8 +630,8 @@
   - soft
   - medical
   _meta:
-    stars: 1219
-    last_commit: '2026-06-22'
+    stars: 1224
+    last_commit: '2026-06-29'
     license: LGPL-2.1
     language: C++
 - name: Tiny Differentiable Simulator
@@ -644,7 +644,7 @@
   models:
   - rigid
   _meta:
-    stars: 1364
+    stars: 1366
     last_commit: '2023-04-26'
     license: Apache-2.0
     language: C++
@@ -675,7 +675,7 @@
   models:
   - rigid
   _meta:
-    stars: 996
+    stars: 997
     last_commit: '2021-05-09'
     archived: true
     license: Zlib

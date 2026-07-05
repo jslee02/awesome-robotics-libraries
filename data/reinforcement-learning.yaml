@@ -3,8 +3,8 @@
   github: google/brax
   description: Massively parallel differentiable rigid body physics engine in JAX for robotics and RL.
   _meta:
-    stars: 3196
-    last_commit: '2026-05-18'
+    stars: 3200
+    last_commit: '2026-06-25'
     license: Apache-2.0
     language: Jupyter Notebook
 - name: CleanRL
@@ -12,7 +12,7 @@
   github: vwxyzjn/cleanrl
   description: Single-file implementations of deep reinforcement learning algorithms.
   _meta:
-    stars: 9999
+    stars: 10036
     last_commit: '2026-04-20'
     language: Python
 - name: Isaac Lab
@@ -21,7 +21,7 @@
   description: GPU-accelerated open-source framework for robot learning built on NVIDIA Isaac Sim.
   license: BSD-3-Clause
   _meta:
-    stars: 7499
+    stars: 7550
     last_commit: '2026-06-12'
     license: BSD-3-Clause
     language: Python
@@ -30,7 +30,7 @@
   github: Denys88/rl_games
   description: High-performance RL library used in Isaac Gym environments.
   _meta:
-    stars: 1359
+    stars: 1362
     last_commit: '2026-06-12'
     license: MIT
     language: Jupyter Notebook
@@ -39,7 +39,7 @@
   github: Toni-SM/skrl
   description: Modular reinforcement learning library with support for multiple ML frameworks.
   _meta:
-    stars: 1072
+    stars: 1075
     last_commit: '2026-05-10'
     license: MIT
     language: Python
@@ -48,7 +48,7 @@
   github: DLR-RM/stable-baselines3
   description: Reliable implementations of reinforcement learning algorithms in PyTorch.
   _meta:
-    stars: 13471
+    stars: 13494
     last_commit: '2026-06-15'
     license: MIT
     language: Python

@@ -3,7 +3,7 @@
   github: personalrobotics/aikido
   description: Solving robotic motion planning and decision making problems.
   _meta:
-    stars: 232
+    stars: 233
     last_commit: '2023-03-10'
     license: BSD-3-Clause
     language: C++
@@ -11,7 +11,7 @@
   github: pyomeca/bioptim
   description: Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics.
   _meta:
-    stars: 120
+    stars: 119
     last_commit: '2026-06-04'
     license: MIT
     language: Python
@@ -29,7 +29,7 @@
   github: ethz-adrl/control-toolbox
   description: Open-Source C++ Library for Robotics, Optimal and Model Predictive Control.
   _meta:
-    stars: 1687
+    stars: 1688
     last_commit: '2021-07-05'
     license: BSD-2-Clause
     language: C++
@@ -46,8 +46,8 @@
   github: loco-3d/crocoddyl
   description: Optimal control library for robot control under contact sequence.
   _meta:
-    stars: 1244
-    last_commit: '2026-06-16'
+    stars: 1249
+    last_commit: '2026-06-25'
     license: BSD-3-Clause
     language: C++
 - name: CuiKSuite
@@ -58,7 +58,7 @@
   github: nvlabs/curobo
   description: A CUDA accelerated library containing a suite of robotics algorithms that run significantly faster.
   _meta:
-    stars: 1643
+    stars: 1659
     last_commit: '2026-06-15'
     license: Apache-2.0
     language: Python
@@ -70,7 +70,7 @@
   github: fields2cover/fields2cover
   description: Robust and efficient coverage paths for autonomous agricultural vehicles.
   _meta:
-    stars: 826
+    stars: 829
     last_commit: '2026-05-21'
     license: BSD-3-Clause
     language: C++
@@ -80,7 +80,7 @@
   description: Fast Library for Approximate Nearest Neighbors.
   _subsection: Nearest Neighbor
   _meta:
-    stars: 2368
+    stars: 2369
     last_commit: '2022-10-27'
     language: C++
 - name: Goxel
@@ -89,7 +89,7 @@
   description: Free and open source 3D voxel editor.
   _subsection: 3D Mapping
   _meta:
-    stars: 3148
+    stars: 3152
     last_commit: '2026-04-30'
     license: GPL-3.0
     language: C++
@@ -109,7 +109,7 @@
   description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
   _subsection: 3D Mapping
   _meta:
-    stars: 1818
+    stars: 1819
     last_commit: '2025-07-16'
     license: BSD-3-Clause
     language: C++
@@ -118,7 +118,7 @@
   github: moveit/moveit
   description: Motion planning framework.
   _meta:
-    stars: 2054
+    stars: 2058
     last_commit: '2026-05-27'
     license: BSD-3-Clause
     language: C++
@@ -128,14 +128,14 @@
   description: Nearest Neighbor search with KD-trees.
   _subsection: Nearest Neighbor
   _meta:
-    stars: 2655
-    last_commit: '2026-06-09'
+    stars: 2657
+    last_commit: '2026-06-27'
     language: C++
 - name: OCS2
   github: leggedrobotics/ocs2
   description: Efficient continuous and discrete time optimal control implementation.
   _meta:
-    stars: 1441
+    stars: 1452
     last_commit: '2025-12-16'
     license: BSD-3-Clause
     language: C++
@@ -145,7 +145,7 @@
   description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
   _subsection: 3D Mapping
   _meta:
-    stars: 2316
+    stars: 2319
     last_commit: '2026-02-08'
     language: C++
 - name: Octree
@@ -162,8 +162,8 @@
   github: ompl/ompl
   description: Open motion planning library.
   _meta:
-    stars: 2083
-    last_commit: '2026-06-19'
+    stars: 2086
+    last_commit: '2026-06-22'
     language: C++
 - name: Optimization Engine (OpEn)
   url: https://alphaville.github.io/optimization-engine/
@@ -178,7 +178,7 @@
     \ is becoming popular: it currently counts 616 stars on GitHub and more than 300k downloads from [crates.io](https://crates.io/crates/optimization_engine).\
     \ The Python package, `opengen` counted 804 downloads in the last month ([link](https://pypistats.org/packages/opengen))."
   _meta:
-    stars: 637
+    stars: 638
     last_commit: '2026-03-31'
     language: Rust
 - name: PCL
@@ -187,7 +187,7 @@
   description: 2D/3D image and point cloud processing.
   _subsection: 3D Mapping
   _meta:
-    stars: 11031
+    stars: 11036
     last_commit: '2026-06-03'
     language: C++
 - name: pymanoid
@@ -205,7 +205,7 @@
   description: Provides the implementations of common `Motion planning` algorithms, including path planners on N-D grid, controllers
     for path-tracking, curve generators, a visualizer based on matplotlib and a toy physical simulator to test controllers.
   _meta:
-    stars: 1051
+    stars: 1055
     last_commit: '2026-06-02'
     license: GPL-3.0
     language: Python
@@ -223,7 +223,7 @@
   description: A computational problem that involves finding a sequence of valid configurations to move the robot from the
     source to the destination. Generally, it includes Path Searching and Trajectory Optimization.
   _meta:
-    stars: 3527
+    stars: 3530
     last_commit: '2026-03-28'
     license: GPL-3.0
     language: C++
@@ -232,7 +232,7 @@
   github: pantor/ruckig
   description: Real-time, time-optimal and jerk-constrained online trajectory generation.
   _meta:
-    stars: 1263
+    stars: 1276
     last_commit: '2026-06-11'
     license: MIT
     language: C++
@@ -268,7 +268,7 @@
   description: A light-weight, Eigen-based C++ library for trajectory optimization for legged robots.
   _subsection: Motion Optimizer
   _meta:
-    stars: 1063
+    stars: 1062
     last_commit: '2021-03-29'
     license: BSD-3-Clause
     language: C++
@@ -277,7 +277,7 @@
   description: A fast trajectory optimization library written in Julia.
   _subsection: Motion Optimizer
   _meta:
-    stars: 395
+    stars: 394
     last_commit: '2025-03-04'
     license: MIT
     language: Julia
@@ -306,7 +306,7 @@
   description: Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields.
   _subsection: 3D Mapping
   _meta:
-    stars: 1641
+    stars: 1644
     last_commit: '2021-11-22'
     license: BSD-3-Clause
     language: C++

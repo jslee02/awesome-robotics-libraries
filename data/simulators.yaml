@@ -4,7 +4,7 @@
   description: Interactive household environment for embodied AI with Unity backend.
   _subsection: Free or Open Source
   _meta:
-    stars: 1742
+    stars: 1751
     last_commit: '2025-05-29'
     license: Apache-2.0
     language: C#
@@ -13,8 +13,8 @@
   description: Simulator based on Unreal Engine for autonomous vehicles.
   _subsection: Free or Open Source
   _meta:
-    stars: 18257
-    last_commit: '2026-03-15'
+    stars: 18273
+    last_commit: '2026-06-28'
     language: C++
 - name: ARGoS
   url: https://www.argos-sim.info/
@@ -22,7 +22,7 @@
   description: Physics-based simulator designed to simulate large-scale robot swarms.
   _subsection: Free or Open Source
   _meta:
-    stars: 311
+    stars: 312
     last_commit: '2026-02-12'
     language: C++
 - name: ARTE
@@ -49,8 +49,8 @@
   description: Open-source simulator for autonomous driving research.
   _subsection: Free or Open Source
   _meta:
-    stars: 14094
-    last_commit: '2026-06-18'
+    stars: 14111
+    last_commit: '2026-06-24'
     license: MIT
     language: C++
 - name: CoppeliaSim
@@ -60,7 +60,7 @@
   _subsection: Free or Open Source
   _meta:
     stars: 148
-    last_commit: '2026-06-17'
+    last_commit: '2026-06-26'
     language: C++
 - name: Gazebo
   url: https://gazebosim.org/
@@ -87,7 +87,7 @@
   description: Simulation platform for research in embodied artificial intelligence.
   _subsection: Free or Open Source
   _meta:
-    stars: 3718
+    stars: 3727
     last_commit: '2026-05-07'
     license: MIT
     language: C++
@@ -107,8 +107,8 @@
   description: Open source robotics simulator (formerly Ignition Gazebo).
   _subsection: Free or Open Source
   _meta:
-    stars: 1387
-    last_commit: '2026-06-19'
+    stars: 1396
+    last_commit: '2026-06-26'
     license: Apache-2.0
     language: C++
 - name: Isaac Sim
@@ -118,8 +118,8 @@
   license: Apache-2.0
   _subsection: Free or Open Source
   _meta:
-    stars: 3526
-    last_commit: '2026-06-04'
+    stars: 3569
+    last_commit: '2026-06-22'
     language: Python
 - name: ManiSkill
   url: https://github.com/haosulab/ManiSkill
@@ -127,8 +127,8 @@
   description: Robot simulation and manipulation learning package powered by SAPIEN.
   _subsection: Free or Open Source
   _meta:
-    stars: 3025
-    last_commit: '2026-06-10'
+    stars: 3051
+    last_commit: '2026-06-23'
     license: Apache-2.0
     language: Python
 - name: MORSE
@@ -151,7 +151,7 @@
   description: An easy to use simulator for robotics and deep reinforcement learning.
   _subsection: Free or Open Source
   _meta:
-    stars: 14562
+    stars: 14573
     last_commit: '2025-10-22'
     language: C++
 - name: PyBullet_Industrial
@@ -180,7 +180,7 @@
   description: Physics-rich simulation environment for articulated objects and manipulation.
   _subsection: Free or Open Source
   _meta:
-    stars: 784
+    stars: 788
     last_commit: '2026-06-01'
     language: C++
 - name: Simbad
@@ -193,7 +193,7 @@
   description: Game engine with open-source robotics simulation tools and tutorials.
   _subsection: Free or Open Source
   _meta:
-    stars: 2533
+    stars: 2536
     last_commit: '2024-11-26'
     language: C#
 - name: Webots
@@ -202,8 +202,8 @@
   description: Development environment to model, program, and simulate robots and mechanical systems.
   _subsection: Free or Open Source
   _meta:
-    stars: 4420
-    last_commit: '2026-06-17'
+    stars: 4438
+    last_commit: '2026-06-29'
     license: Apache-2.0
     language: C++
 - name: Actin Simulation
