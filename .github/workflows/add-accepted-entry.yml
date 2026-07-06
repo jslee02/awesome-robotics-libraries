@@ -9,6 +9,10 @@ on:
         description: Issue number to process
         required: true
         type: number
+      github_repo:
+        description: GitHub repository evaluated by the submission workflow
+        required: false
+        type: string
 
 jobs:
   add-entry:
@@ -76,8 +80,13 @@ jobs:
             const category = extractField(body, 'Category');
             const description = extractField(body, 'Description');
 
-            // GitHub repo: from structured field or from URL
-            let ghRepo = normalizeGitHubRepo(extractField(body, 'GitHub Repository'));
+            // GitHub repo: from dispatch input, structured field, or URL
+            let ghRepo = context.eventName === 'workflow_dispatch'
+              ? normalizeGitHubRepo('${{ inputs.github_repo }}')
+              : '';
+            if (!ghRepo) {
+              ghRepo = normalizeGitHubRepo(extractField(body, 'GitHub Repository'));
+            }
             if (!ghRepo) {
               const urlMatch = body.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
               if (urlMatch) ghRepo = urlMatch[1];
