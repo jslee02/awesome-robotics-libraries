@@ -419,9 +419,16 @@ def generate(data_dir: Path, sort_key: str = "name") -> str:
     out.append("## [Star History](#contents)")
     out.append("")
     out.append(
-        "[![Star History Chart]"
-        "(https://api.star-history.com/svg?repos=jslee02/awesome-robotics-libraries&type=Date)]"
-        "(https://star-history.com/#jslee02/awesome-robotics-libraries)"
+        '<a href="https://www.star-history.com/?repos=jslee02%2Fawesome-robotics-libraries">\n'
+        "  <picture>\n"
+        '    <source media="(prefers-color-scheme: dark)" '
+        'srcset="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&theme=dark&legend=top-left" />\n'
+        '    <source media="(prefers-color-scheme: light)" '
+        'srcset="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />\n'
+        '    <img alt="Star History Chart" '
+        'src="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />\n'
+        "  </picture>\n"
+        "</a>"
     )
     out.append("")
 
