@@ -26,14 +26,14 @@ data/*.yaml  →  scripts/generate_readme.py  →  README.md
 
 | What you want to do | How |
 |---------------------|-----|
-| **Suggest a new resource** | [Open a suggestion issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml) *(recommended)* |
+| **Suggest a new resource** | [Open a suggestion issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml) |
 | **Fix a URL or description** | Edit the relevant `data/*.yaml` file and [open a PR](#editing-existing-entries) |
 | **Report broken links or errors** | [Open a report issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=report-issue.yml) |
 | **Change section headings or layout** | Edit `scripts/generate_readme.py` and open a PR |
 
-## Adding a Resource
+## Suggesting a New Resource
 
-### Via Issue (Recommended)
+New resources are accepted through the issue-based suggestion workflow. Direct pull requests that add a new resource entry are closed automatically and redirected here so every suggestion goes through the same evaluation and auto-PR path.
 
 1. Go to **[Suggest a Resource](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml)**
 2. Fill in the name, URL, category, and description
@@ -44,37 +44,6 @@ data/*.yaml  →  scripts/generate_readme.py  →  README.md
    - A maintainer reviews and merges
 
 No local setup or code changes needed.
-
-### Via Pull Request
-
-If you prefer to submit a PR directly:
-
-1. Find the right YAML file in `data/` (see [Which YAML File?](#which-yaml-file) below)
-2. Add your entry in alphabetical order:
-
-   ```yaml
-   - name: MyLibrary
-     url: https://mylibrary.org
-     github: owner/repo
-     description: One-line description of what it does
-   ```
-
-3. Regenerate README.md:
-
-   ```bash
-   pip install pyyaml
-   python3 scripts/generate_readme.py
-   ```
-
-4. Commit both the YAML file and README.md:
-
-   ```bash
-   git add data/section-name.yaml README.md
-   git commit --signoff -m "content: add MyLibrary to section-name"
-   ```
-
-> [!TIP]
-> If you cannot run the generator locally, submit your PR with just the YAML change and note it in the PR description. A maintainer will regenerate README.md for you.
 
 ### Entry Fields
 
@@ -167,13 +136,14 @@ Every pull request runs applicable checks automatically:
 |-------|-------------|-------------|
 | **Validate Data** | `data/**`, `schema/**`, `scripts/**` | YAML entries pass JSON schema validation |
 | **README Freshness** | `data/**`, `schema/**`, `scripts/**` | README.md matches the generated output from YAML |
+| **Audit Direct Resource PRs** | `data/**` | Closes direct human PRs that add new resources and redirects them to the suggestion issue form |
 | **Protect README** | `README.md` | Rejects PRs that edit README.md without corresponding data/script changes |
 | **Check Links** | `**.md` | All URLs in markdown files are reachable |
 | **DCO** | All PRs | Commits are signed off (`git commit --signoff`) |
 
 ## Guidelines
 
-- One resource per pull request (when possible)
+- One resource per suggestion issue (when possible)
 - Alphabetical order within each section
 - Keep descriptions short and descriptive
 - Sign your commits: `git commit --signoff` (required by DCO check)
@@ -239,5 +209,12 @@ git push
 | Workflow | Schedule | Description |
 |----------|----------|-------------|
 | Check Links | Weekly (Mon 8am UTC) | Checks for broken links; auto-creates fix PRs |
+| Refresh Metadata | Weekly (Mon 8am UTC) | Updates GitHub metadata, regenerates README, validates, and creates a maintenance PR |
 | Validate Data | On PR | Validates YAML schema and README freshness |
+| Audit Direct Resource PRs | On PR | Closes direct human PRs that add new resources and redirects them to the suggestion issue form |
 | Protect README | On PR | Blocks direct README.md edits without data changes |
+
+For metadata PRs to trigger normal pull-request CI without manual approval,
+configure a repository secret named `CREATE_PR_TOKEN` with a fine-grained bot
+token or GitHub App token that has `contents: write` and `pull-requests: write`.
+The workflow falls back to `GITHUB_TOKEN` when that secret is not present.
