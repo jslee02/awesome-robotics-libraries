@@ -12,5 +12,178 @@ permissions:
   pull-requests: read
 
 jobs:
+  prepare-author-action-labels:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Backfill legacy author-action labels
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const questionLabel = 'question';
+            const reviewLabel = 'needs-review';
+            const staleLabel = 'stale';
+            const outcomeLabels = new Set(['accepted', 'incubator', 'rejected', 'duplicate']);
+            const staleAfterDays = 14;
+            const maxOperations = 30;
+            const staleMarker = '<!-- author-action-stale -->';
+            const staleMessage = [
+              staleMarker,
+              'This suggestion has been marked stale because we asked for more information and have not seen an author update for about two weeks.',
+              '',
+              'Please update the issue with the requested details, or reply confirming that it should be reviewed as a non-GitHub resource. The stale label will be removed automatically after new activity. If there is no update in another two weeks, this issue will be closed.',
+            ].join('\n');
+
+            async function removeLabel(issue_number, name) {
+              try {
+                await github.rest.issues.removeLabel({ owner, repo, issue_number, name });
+              } catch (error) {
+                if (error.status !== 404) {
+                  throw error;
+                }
+              }
+            }
+
+            async function ensureStaleLabel() {
+              try {
+                await github.rest.issues.getLabel({ owner, repo, name: staleLabel });
+              } catch (error) {
+                if (error.status !== 404) {
+                  throw error;
+                }
+                await github.rest.issues.createLabel({
+                  owner,
+                  repo,
+                  name: staleLabel,
+                  color: 'ededed',
+                  description: 'No author response after requested updates',
+                });
+              }
+            }
+
+            function normalizeGitHubRepo(value) {
+              if (!value) return '';
+              const trimmed = value.trim();
+              const slugMatch = trimmed.match(/^(?:https?:\/\/github\.com\/)?([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+?)(?:\.git|\/)?$/);
+              return slugMatch ? slugMatch[1] : '';
+            }
+
+            function extractGitHubRepo(text) {
+              const fieldMatch = text.match(/### GitHub Repository\s*\n\s*\n?\s*([\s\S]*?)(?=\n###|$)/);
+              const fieldRepo = normalizeGitHubRepo(fieldMatch ? fieldMatch[1] : '');
+              if (fieldRepo) {
+                return fieldRepo;
+              }
+
+              const urlMatch = text.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+              return urlMatch ? normalizeGitHubRepo(urlMatch[1]) : '';
+            }
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner,
+              repo,
+              state: 'open',
+              labels: `suggestion,${reviewLabel}`,
+              per_page: 100,
+            });
+            const cutoff = new Date(Date.now() - staleAfterDays * 24 * 60 * 60 * 1000);
+            let operations = 0;
+
+            for (const issue of issues) {
+              if (operations >= maxOperations) {
+                break;
+              }
+
+              const labels = new Set(issue.labels.map(label => typeof label === 'string' ? label : label.name));
+              if ([...outcomeLabels].some(label => labels.has(label))) {
+                continue;
+              }
+
+              const comments = await github.paginate(github.rest.issues.listComments, {
+                owner,
+                repo,
+                issue_number: issue.number,
+                per_page: 100,
+              });
+              const requestComment = [...comments].reverse().find(comment =>
+                comment.user.login === 'github-actions[bot]' &&
+                comment.body.includes("couldn't find a GitHub repository") &&
+                comment.body.includes('GitHub Repository')
+              );
+              if (!requestComment) {
+                continue;
+              }
+
+              const timeline = await github.paginate(github.rest.issues.listEventsForTimeline, {
+                owner,
+                repo,
+                issue_number: issue.number,
+                per_page: 100,
+              });
+              const requestDate = new Date(requestComment.created_at);
+              const authorUpdatedAfterRequest = timeline.some(event =>
+                ['commented', 'edited'].includes(event.event) &&
+                (event.actor?.login || event.user?.login) === issue.user.login &&
+                new Date(event.created_at) > requestDate
+              );
+              const editResponse = await github.graphql(`
+                query($owner: String!, $repo: String!, $number: Int!) {
+                  repository(owner: $owner, name: $repo) {
+                    issue(number: $number) {
+                      lastEditedAt
+                    }
+                  }
+                }
+              `, {
+                owner,
+                repo,
+                number: issue.number,
+              });
+              const lastEditedAt = editResponse.repository.issue.lastEditedAt;
+              const bodyEditedAfterRequest =
+                lastEditedAt && new Date(lastEditedAt) > requestDate;
+
+              if (authorUpdatedAfterRequest || bodyEditedAfterRequest || extractGitHubRepo(issue.body || '')) {
+                continue;
+              }
+
+              await removeLabel(issue.number, reviewLabel);
+              if (!labels.has(questionLabel)) {
+                await github.rest.issues.addLabels({
+                  owner,
+                  repo,
+                  issue_number: issue.number,
+                  labels: [questionLabel],
+                });
+              }
+              operations += 1;
+
+              const requestAgeExceeded = new Date(requestComment.created_at) <= cutoff;
+              if (requestAgeExceeded && !labels.has(staleLabel)) {
+                await ensureStaleLabel();
+                await github.rest.issues.addLabels({
+                  owner,
+                  repo,
+                  issue_number: issue.number,
+                  labels: [staleLabel],
+                });
+
+                const alreadyCommented = comments.some(comment => comment.body.includes(staleMarker));
+                if (!alreadyCommented) {
+                  await github.rest.issues.createComment({
+                    owner,
+                    repo,
+                    issue_number: issue.number,
+                    body: staleMessage,
+                  });
+                }
+                operations += 1;
+              }
+            }
+
   stale:
+    needs: prepare-author-action-labels
     uses: jslee02/awesome-list-infra/.github/workflows/stale-author-action-issues.yml@main

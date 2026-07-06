@@ -8,7 +8,10 @@ on:
 
 jobs:
   evaluate:
-    if: github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'suggestion'
+    if: |
+      (github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'suggestion') ||
+      (github.event_name == 'issues' && github.event.action == 'edited' && contains(github.event.issue.labels.*.name, 'suggestion') && contains(github.event.issue.labels.*.name, 'question') && github.event.sender.login == github.event.issue.user.login) ||
+      (github.event_name == 'issue_comment' && !github.event.issue.pull_request && contains(github.event.issue.labels.*.name, 'suggestion') && contains(github.event.issue.labels.*.name, 'question') && github.event.sender.login == github.event.issue.user.login)
     runs-on: ubuntu-latest
     permissions:
       actions: write
@@ -29,6 +32,11 @@ jobs:
         with:
           script: |
             const body = context.payload.issue.body || '';
+            const commentBody = context.payload.comment ? context.payload.comment.body || '' : '';
+            const authorUpdate =
+              context.eventName === 'issue_comment' ||
+              (context.eventName === 'issues' && context.payload.action === 'edited');
+            core.setOutput('author_update', authorUpdate ? 'true' : 'false');
 
             function normalizeGitHubRepo(value) {
               if (!value) return '';
@@ -37,7 +45,20 @@ jobs:
               return slugMatch ? slugMatch[1] : '';
             }
 
-            // Try the structured "github" field first (from issue template)
+            function extractGitHubRepo(text, { allowBareSlug = false } = {}) {
+              const urlMatch = text.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+              if (urlMatch) {
+                return normalizeGitHubRepo(urlMatch[1]);
+              }
+
+              if (!allowBareSlug) {
+                return '';
+              }
+              const slugMatch = text.match(/(?:^|[\s`])([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)(?:[\s`.,;:]|$)/);
+              return slugMatch ? normalizeGitHubRepo(slugMatch[1]) : '';
+            }
+
+            // Try the structured "github" field first (from issue template).
             const ghFieldMatch = body.match(/### GitHub Repository\s*\n\s*\n?\s*([\s\S]*?)(?=\n###|$)/);
             const ghRepo = normalizeGitHubRepo(ghFieldMatch ? ghFieldMatch[1] : '');
             if (ghRepo) {
@@ -45,14 +66,66 @@ jobs:
               return;
             }
 
-            // Fallback: extract from any GitHub URL in the body
-            const urlMatch = body.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
-            if (urlMatch) {
-              core.setOutput('repo', urlMatch[1]);
+            const commentRepo = authorUpdate
+              ? extractGitHubRepo(commentBody, { allowBareSlug: true })
+              : '';
+            if (commentRepo) {
+              core.setOutput('repo', commentRepo);
+              return;
+            }
+
+            const fallbackRepo = extractGitHubRepo(body);
+            if (fallbackRepo) {
+              core.setOutput('repo', fallbackRepo);
               return;
             }
 
             core.setOutput('repo', '');
+
+      - name: Persist resolved GitHub repo in issue body
+        if: steps.extract.outputs.repo != ''
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issue_number = context.issue.number;
+            const resolvedRepo = '${{ steps.extract.outputs.repo }}';
+            const body = context.payload.issue.body || '';
+
+            function normalizeGitHubRepo(value) {
+              if (!value) return '';
+              const trimmed = value.trim();
+              const slugMatch = trimmed.match(/^(?:https?:\/\/github\.com\/)?([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+?)(?:\.git|\/)?$/);
+              return slugMatch ? slugMatch[1] : '';
+            }
+
+            function bodyGitHubRepo(text) {
+              const fieldMatch = text.match(/### GitHub Repository\s*\n\s*\n?\s*([\s\S]*?)(?=\n###|$)/);
+              const fieldRepo = normalizeGitHubRepo(fieldMatch ? fieldMatch[1] : '');
+              if (fieldRepo) {
+                return fieldRepo;
+              }
+
+              const urlMatch = text.match(/github\.com\/([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)/);
+              return urlMatch ? normalizeGitHubRepo(urlMatch[1]) : '';
+            }
+
+            if (bodyGitHubRepo(body)) {
+              return;
+            }
+
+            const fieldRe = /(### GitHub Repository\s*\n\s*\n?)([\s\S]*?)(?=\n###|$)/;
+            const newBody = fieldRe.test(body)
+              ? body.replace(fieldRe, `$1${resolvedRepo}\n\n`)
+              : `${body.trimEnd()}\n\n### GitHub Repository\n\n${resolvedRepo}\n`;
+
+            await github.rest.issues.update({
+              owner,
+              repo,
+              issue_number,
+              body: newBody,
+            });
 
       - name: Run evaluation
         if: steps.extract.outputs.repo != ''
@@ -94,6 +167,16 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
+            async function removeLabel(name) {
+              try {
+                await github.rest.issues.removeLabel({ owner, repo, issue_number: issue, name });
+              } catch (error) {
+                if (error.status !== 404) {
+                  throw error;
+                }
+              }
+            }
+
             // Archived rejects close immediately; 0-score rejects stay in incubator queue
             let label;
             if (rec === 'reject' && archived) {
@@ -109,6 +192,10 @@ jobs:
               };
               label = labelMap[rec] || 'needs-review';
             }
+
+            for (const name of ['question', 'stale', 'needs-review', 'accepted', 'incubator', 'rejected', 'duplicate']) {
+              await removeLabel(name);
+            }
             await github.rest.issues.addLabels({ owner, repo, issue_number: issue, labels: [label] });
 
             if (label === 'accepted') {
@@ -119,6 +206,7 @@ jobs:
                 ref: context.payload.repository.default_branch,
                 inputs: {
                   issue_number: String(issue),
+                  github_repo: '${{ steps.extract.outputs.repo }}',
                 },
               });
             }
@@ -133,14 +221,28 @@ jobs:
             }
 
       - name: Post fallback comment (no repo found)
-        if: steps.extract.outputs.repo == ''
+        if: steps.extract.outputs.repo == '' && steps.extract.outputs.author_update != 'true'
         uses: actions/github-script@v9
         with:
           script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issue_number = context.issue.number;
+
+            async function removeLabel(name) {
+              try {
+                await github.rest.issues.removeLabel({ owner, repo, issue_number, name });
+              } catch (error) {
+                if (error.status !== 404) {
+                  throw error;
+                }
+              }
+            }
+
             await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
+              owner,
+              repo,
+              issue_number,
               body: [
                 '👋 Thanks for the suggestion!',
                 '',
@@ -152,40 +254,23 @@ jobs:
                 'This issue is labeled `question` while waiting for author input. If there is no update for about two weeks, automation will mark it stale; after another two weeks without activity, it may close automatically.',
               ].join('\n')
             });
+            await removeLabel('needs-review');
+            await removeLabel('stale');
             await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              labels: ['needs-review', 'question']
+              owner,
+              repo,
+              issue_number,
+              labels: ['question']
             });
 
-  clear-author-question:
-    if: |
-      (github.event_name == 'issues' && github.event.action == 'edited') ||
-      (github.event_name == 'issue_comment' && !github.event.issue.pull_request)
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - name: Clear author-action labels after author update
+      - name: Queue manual review after author update without repo
+        if: steps.extract.outputs.repo == '' && steps.extract.outputs.author_update == 'true'
         uses: actions/github-script@v9
         with:
           script: |
-            const issue = context.payload.issue;
-            const labels = (issue.labels || []).map(label => typeof label === 'string' ? label : label.name);
-            if (!labels.includes('suggestion') || !labels.includes('question')) {
-              return;
-            }
-
-            const author = issue.user.login;
-            const sender = context.payload.sender.login;
-            if (sender !== author) {
-              return;
-            }
-
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const issue_number = issue.number;
+            const issue_number = context.issue.number;
 
             async function removeLabel(label) {
               try {
@@ -199,3 +284,19 @@ jobs:
 
             await removeLabel('question');
             await removeLabel('stale');
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number,
+              labels: ['needs-review'],
+            });
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: [
+                'Thanks for the update.',
+                '',
+                'I still could not find a GitHub repository to evaluate automatically, so I moved this suggestion to manual maintainer review.',
+              ].join('\n'),
+            });
