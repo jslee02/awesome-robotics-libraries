@@ -1,0 +1,16 @@
+name: Stale Author-Action Issues
+
+on:
+  schedule:
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+  issues: write
+  pull-requests: read
+
+jobs:
+  stale:
+    uses: jslee02/awesome-list-infra/.github/workflows/stale-author-action-issues.yml@main

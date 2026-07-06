@@ -2,11 +2,13 @@ name: Evaluate Submission
 
 on:
   issues:
-    types: [labeled]
+    types: [edited, labeled]
+  issue_comment:
+    types: [created]
 
 jobs:
   evaluate:
-    if: github.event.label.name == 'suggestion'
+    if: github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'suggestion'
     runs-on: ubuntu-latest
     permissions:
       actions: write
@@ -145,12 +147,55 @@ jobs:
                 'I couldn\'t find a GitHub repository in this issue. Could you add the **GitHub Repository** field ',
                 '(e.g., `owner/repo`) so I can run an automated evaluation?',
                 '',
-                'If the project isn\'t on GitHub, no worries — a maintainer will review it manually.',
+                'If the project isn\'t on GitHub, please reply confirming that this should be reviewed as a non-GitHub resource and include any public repository or documentation link maintainers should use.',
+                '',
+                'This issue is labeled `question` while waiting for author input. If there is no update for about two weeks, automation will mark it stale; after another two weeks without activity, it may close automatically.',
               ].join('\n')
             });
             await github.rest.issues.addLabels({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              labels: ['needs-review']
+              labels: ['needs-review', 'question']
             });
+
+  clear-author-question:
+    if: |
+      (github.event_name == 'issues' && github.event.action == 'edited') ||
+      (github.event_name == 'issue_comment' && !github.event.issue.pull_request)
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Clear author-action labels after author update
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const labels = (issue.labels || []).map(label => typeof label === 'string' ? label : label.name);
+            if (!labels.includes('suggestion') || !labels.includes('question')) {
+              return;
+            }
+
+            const author = issue.user.login;
+            const sender = context.payload.sender.login;
+            if (sender !== author) {
+              return;
+            }
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issue_number = issue.number;
+
+            async function removeLabel(label) {
+              try {
+                await github.rest.issues.removeLabel({ owner, repo, issue_number, name: label });
+              } catch (error) {
+                if (error.status !== 404) {
+                  throw error;
+                }
+              }
+            }
+
+            await removeLabel('question');
+            await removeLabel('stale');
