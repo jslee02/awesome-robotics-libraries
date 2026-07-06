@@ -217,4 +217,5 @@ git push
 For metadata PRs to trigger normal pull-request CI without manual approval,
 configure a repository secret named `CREATE_PR_TOKEN` with a fine-grained bot
 token or GitHub App token that has `contents: write` and `pull-requests: write`.
-The workflow falls back to `GITHUB_TOKEN` when that secret is not present.
+The workflow falls back to `GITHUB_TOKEN` when that secret is not present. The
+caller forwards only `CREATE_PR_TOKEN` to the reusable workflow.

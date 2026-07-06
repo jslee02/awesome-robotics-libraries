@@ -12,4 +12,5 @@ permissions:
 jobs:
   refresh:
     uses: jslee02/awesome-list-infra/.github/workflows/refresh-metadata.yml@main
-    secrets: inherit
+    secrets:
+      CREATE_PR_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}
