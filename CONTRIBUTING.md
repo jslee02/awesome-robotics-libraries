@@ -210,6 +210,7 @@ git push
 |----------|----------|-------------|
 | Check Links | Weekly (Mon 8am UTC) | Checks for broken links; auto-creates fix PRs |
 | Refresh Metadata | Weekly (Mon 8am UTC) | Updates GitHub metadata, regenerates README, validates, and creates a maintenance PR |
+| Stale Author-Action Issues | Daily | Marks suggestion issues stale after 14 days waiting for author input, then closes after another 14 days |
 | Validate Data | On PR | Validates YAML schema and README freshness |
 | Audit Direct Resource PRs | On PR | Closes direct human PRs that add new resources and redirects them to the suggestion issue form |
 | Protect README | On PR | Blocks direct README.md edits without data changes |
