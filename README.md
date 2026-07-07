@@ -121,6 +121,7 @@ _Libraries for robot motion planning, trajectory optimization, and control._
 
 * 🔴 [AIKIDO](https://github.com/personalrobotics/aikido) - Solving robotic motion planning and decision making problems. [⭐ 233](https://github.com/personalrobotics/aikido)
 * 🟢 Bioptim - Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics. [⭐ 119](https://github.com/pyomeca/bioptim)
+* 🟢 [CERT-FLOW](https://github.com/Archerkattri/CERT-FLOW) - Certified route planning under drifting edge costs. Each replanning round emits a high-probability conformal certificate LB ≤ OPT ≤ UB on the optimal route cost (non-exchangeable weighted conformal prediction + ACI), directs paid sensing at the edges that shrink the certified gap fastest, and proof-gates preprocessing via certified Contraction Hierarchies. MIT-licensed, pip-installable (pip install certflow), 250 tests, validated on replayed METR-LA / PEMS-BAY traffic. [⭐ 2](https://github.com/Archerkattri/CERT-FLOW)
 * 🔴 [Control Toolbox](https://ethz-adrl.github.io/ct/) - Open-Source C++ Library for Robotics, Optimal and Model Predictive Control. [⭐ 1.7k](https://github.com/ethz-adrl/control-toolbox)
 * 🟢 Crocoddyl - Optimal control library for robot control under contact sequence. [⭐ 1.2k](https://github.com/loco-3d/crocoddyl)
 * [CuiKSuite](http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html) - Applications to solve position analysis and path planning problems.

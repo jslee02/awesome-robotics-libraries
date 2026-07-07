@@ -24,6 +24,18 @@
     last_commit: '2026-03-11'
     license: MPL-2.0
     language: C++
+- name: CERT-FLOW
+  url: https://github.com/Archerkattri/CERT-FLOW
+  github: Archerkattri/CERT-FLOW
+  description: Certified route planning under drifting edge costs. Each replanning round emits a high-probability conformal
+    certificate LB ≤ OPT ≤ UB on the optimal route cost (non-exchangeable weighted conformal prediction + ACI), directs paid
+    sensing at the edges that shrink the certified gap fastest, and proof-gates preprocessing via certified Contraction Hierarchies.
+    MIT-licensed, pip-installable (pip install certflow), 250 tests, validated on replayed METR-LA / PEMS-BAY traffic.
+  _meta:
+    stars: 2
+    last_commit: '2026-07-03'
+    license: MIT
+    language: Python
 - name: Control Toolbox
   url: https://ethz-adrl.github.io/ct/
   github: ethz-adrl/control-toolbox
