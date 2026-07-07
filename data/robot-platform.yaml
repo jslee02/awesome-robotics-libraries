@@ -6,6 +6,19 @@
     stars: 786
     last_commit: '2021-08-16'
     language: C++
+- name: EVA-Client
+  url: https://github.com/Noietch/EVA-CLIENT
+  github: Noietch/EVA-CLIENT
+  description: Unified framework for deploying, evaluating, and collecting data with embodied policies on real robots. Supports
+    6+ robot embodiments (dual-arm, humanoid, single-arm), multiple transports (ROS1/ROS2/ZeroMQ/offline replay), pluggable
+    policy backends (OpenPI, StarVLA, GR00T, mock, replay), and flexible inference strategies (sync/async/ACT-ensemble/RTC)
+    with live latency compensation. Includes browser-based teleoperation, LeRobot v2.1 data capture with QC flags, multi-checkpoint
+    evaluation sweeps, and synchronized 3D URDF scene replay.
+  _meta:
+    stars: 39
+    last_commit: '2026-07-07'
+    license: Apache-2.0
+    language: Python
 - name: Linorobot
   url: https://linorobot.org/
   github: linorobot/linorobot
@@ -14,13 +27,6 @@
     stars: 1105
     last_commit: '2022-07-11'
     license: BSD-2-Clause
-    language: C++
-- name: onine
-  github: grassjelly/onine
-  description: Service Robot based on Linorobot and Braccio Arm.
-  _meta:
-    stars: 49
-    last_commit: '2018-09-19'
     language: C++
 - name: Micro-ROS for Arduino
   url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
@@ -31,6 +37,13 @@
     last_commit: '2024-10-28'
     license: Apache-2.0
     language: C
+- name: onine
+  github: grassjelly/onine
+  description: Service Robot based on Linorobot and Braccio Arm.
+  _meta:
+    stars: 49
+    last_commit: '2018-09-19'
+    language: C++
 - name: Rock
   url: https://www.rock-robotics.org/
   description: Software framework for robotic systems.
