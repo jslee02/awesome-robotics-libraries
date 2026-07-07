@@ -316,6 +316,7 @@ _Other robotics-related tools and utilities._
 
 * [Foxglove Studio](https://foxglove.dev) - A fully integrated visualization and debugging desktop app for your robotics data.
 * 🟢 fuse - General architecture for performing sensor fusion live on a robot. [⭐ 868](https://github.com/locusrobotics/fuse)
+* 🟢 FusionCore - ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection for robust outdoor localization. [⭐ 272](https://github.com/manankharwar/fusioncore)
 
 ## [Simulators](#contents)
 
