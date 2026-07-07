@@ -314,6 +314,9 @@ _Mathematics libraries for spatial algebra, Lie groups, and linear algebra._
 
 _Other robotics-related tools and utilities._
 
+* 🟢 [BAGEL (BAG ExpLoration)](https://bagel-ros2.vercel.app) - ### Resource Name
+
+BAGEL [⭐ 34](https://github.com/Hussain004/bagel)
 * [Foxglove Studio](https://foxglove.dev) - A fully integrated visualization and debugging desktop app for your robotics data.
 * 🟢 fuse - General architecture for performing sensor fusion live on a robot. [⭐ 868](https://github.com/locusrobotics/fuse)
 
