@@ -219,6 +219,7 @@ _Tools and formats for describing robot models._
 _Middleware and frameworks for building robot software systems._
 
 * 🔴 [AutoRally](http://autorally.github.io/) - High-performance testbed for advanced perception and control research. [⭐ 786](https://github.com/autorally/autorally)
+* 🟢 [EVA-Client](https://github.com/Noietch/EVA-CLIENT) - Unified framework for deploying, evaluating, and collecting data with embodied policies on real robots. Supports 6+ robot embodiments (dual-arm, humanoid, single-arm), multiple transports (ROS1/ROS2/ZeroMQ/offline replay), pluggable policy backends (OpenPI, StarVLA, GR00T, mock, replay), and flexible inference strategies (sync/async/ACT-ensemble/RTC) with live latency compensation. Includes browser-based teleoperation, LeRobot v2.1 data capture with QC flags, multi-checkpoint evaluation sweeps, and synchronized 3D URDF scene replay. [⭐ 39](https://github.com/Noietch/EVA-CLIENT)
 * 🔴 [Linorobot](https://linorobot.org/) - ROS compatible ground robots. [⭐ 1.1k](https://github.com/linorobot/linorobot)
   * 🔴 onine - Service Robot based on Linorobot and Braccio Arm. [⭐ 49](https://github.com/grassjelly/onine)
 * 🟡 [Micro-ROS for Arduino](https://github.com/kaiaai/micro_ros_arduino_kaiaai) - a Micro-ROS fork available in the Arduino Library Manager. [⭐ 12](https://github.com/kaiaai/micro_ros_arduino_kaiaai)
