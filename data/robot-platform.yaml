@@ -15,13 +15,6 @@
     last_commit: '2022-07-11'
     license: BSD-2-Clause
     language: C++
-- name: onine
-  github: grassjelly/onine
-  description: Service Robot based on Linorobot and Braccio Arm.
-  _meta:
-    stars: 49
-    last_commit: '2018-09-19'
-    language: C++
 - name: Micro-ROS for Arduino
   url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
   github: kaiaai/micro_ros_arduino_kaiaai
@@ -31,6 +24,22 @@
     last_commit: '2024-10-28'
     license: Apache-2.0
     language: C
+- name: onine
+  github: grassjelly/onine
+  description: Service Robot based on Linorobot and Braccio Arm.
+  _meta:
+    stars: 49
+    last_commit: '2018-09-19'
+    language: C++
+- name: ReductSotre
+  url: https://www.reduct.store
+  github: reductstore/reductstore
+  description: High performance data storage and streaming for Robotics and Industrial IoT with ROS2 and Zenoh integration
+  _meta:
+    stars: 362
+    last_commit: '2026-07-15'
+    license: Apache-2.0
+    language: Rust
 - name: Rock
   url: https://www.rock-robotics.org/
   description: Software framework for robotic systems.
