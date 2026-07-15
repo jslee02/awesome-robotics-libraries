@@ -222,6 +222,7 @@ _Middleware and frameworks for building robot software systems._
 * 🔴 [Linorobot](https://linorobot.org/) - ROS compatible ground robots. [⭐ 1.1k](https://github.com/linorobot/linorobot)
   * 🔴 onine - Service Robot based on Linorobot and Braccio Arm. [⭐ 49](https://github.com/grassjelly/onine)
 * 🟡 [Micro-ROS for Arduino](https://github.com/kaiaai/micro_ros_arduino_kaiaai) - a Micro-ROS fork available in the Arduino Library Manager. [⭐ 12](https://github.com/kaiaai/micro_ros_arduino_kaiaai)
+* 🟢 [ReductSotre](https://www.reduct.store) - High performance data storage and streaming for Robotics and Industrial IoT with ROS2 and Zenoh integration [⭐ 362](https://github.com/reductstore/reductstore)
 * [Rock](https://www.rock-robotics.org/) - Software framework for robotic systems.
 * [ROS](https://www.ros.org/) - Flexible framework for writing robot software.
 * 🟢 [ROS 2](https://github.com/ros2/ros2/wiki) - Version 2.0 of the Robot Operating System (ROS) software stack. [⭐ 5.7k](https://github.com/ros2/ros2)
@@ -303,7 +304,7 @@ _Frameworks for coupled multi-physics simulations._
 
 _Mathematics libraries for spatial algebra, Lie groups, and linear algebra._
 
-* 🟢 Fastor - Light-weight high performance tensor algebra framework in C++11/14/17. [⭐ 839](https://github.com/romeric/Fastor)
+* 🟡 Fastor - Light-weight high performance tensor algebra framework in C++11/14/17. [⭐ 839](https://github.com/romeric/Fastor)
 * 🔴 linalg.h - Single header public domain linear algebra library for C++11. [⭐ 957](https://github.com/sgorsten/linalg)
 * 🟢 manif - Small c++11 header-only library for Lie theory. [⭐ 1.8k](https://github.com/artivis/manif)
 * 🔴 Sophus - Lie groups using Eigen. [⭐ 2.4k](https://github.com/strasdat/Sophus)
