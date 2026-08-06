@@ -97,7 +97,7 @@ _Libraries for computing joint configurations from end-effector poses._
 
 _Machine learning frameworks and tools applied to robotics._
 
-* 🟡 [AllenAct](https://allenact.org/) - Python/PyTorch-based Research Framework for Embodied AI. [⭐ 383](https://github.com/allenai/allenact)
+* 🔴 [AllenAct](https://allenact.org/) - Python/PyTorch-based Research Framework for Embodied AI. [⭐ 383](https://github.com/allenai/allenact)
 * 🟢 Any4LeRobot - A collection of utilities and tools for LeRobot. [⭐ 1.1k](https://github.com/Tavish9/any4lerobot)
 * 🟡 DLL - Deep Learning Library (DLL) for C++. [⭐ 687](https://github.com/wichtounet/dll)
 * 🔴 [DyNet](https://dynet.readthedocs.io/en/latest/) - The Dynamic Neural Network Toolkit. [⭐ 3.4k](https://github.com/clab/dynet)
@@ -145,7 +145,7 @@ Lastly, OpEn is becoming popular: it currently counts 616 stars on GitHub and mo
 * 🟢 [Ruckig](https://github.com/pantor/ruckig) - Real-time, time-optimal and jerk-constrained online trajectory generation. [⭐ 1.3k](https://github.com/pantor/ruckig)
 * 🟢 [The Kautham Project](https://sir.upc.es/projects/kautham/) - A robot simulation toolkit for motion planning. [⭐ 24](https://github.com/iocroblab/kautham)
 * 🟢 [TOPP-RA](https://hungpham2511.github.io/toppra/) - Time-parameterizing robot trajectories subject to kinematic and dynamic constraints. [⭐ 896](https://github.com/hungpham2511/toppra)
-* 🟡 [Ungar](https://github.com/fdevinc/ungar) - Expressive and efficient implementation of optimal control problems using template metaprogramming. [⭐ 108](https://github.com/fdevinc/ungar)
+* 🔴 [Ungar](https://github.com/fdevinc/ungar) - Expressive and efficient implementation of optimal control problems using template metaprogramming. [⭐ 108](https://github.com/fdevinc/ungar)
 
 ###### Motion Optimizer
 
@@ -165,7 +165,7 @@ Lastly, OpEn is becoming popular: it currently counts 616 stars on GitHub and mo
 
 * 🟢 Bonxai - Brutally fast, sparse, 3D Voxel Grid (formerly Treexy). [⭐ 861](https://github.com/facontidavide/Bonxai)
 * 🟢 [Goxel](https://guillaumechereau.github.io/goxel/) - Free and open source 3D voxel editor. [⭐ 3.2k](https://github.com/guillaumechereau/goxel)
-* 🟢 [libpointmatcher](http://libpointmatcher.readthedocs.io/en/latest/) - Iterative Closest Point library for 2-D/3-D mapping in Robotics. [⭐ 1.8k](https://github.com/norlab-ulaval/libpointmatcher)
+* 🟡 [libpointmatcher](http://libpointmatcher.readthedocs.io/en/latest/) - Iterative Closest Point library for 2-D/3-D mapping in Robotics. [⭐ 1.8k](https://github.com/norlab-ulaval/libpointmatcher)
 * 🟢 [OctoMap](http://octomap.github.io/) - Efficient Probabilistic 3D Mapping Framework Based on Octrees. [⭐ 2.3k](https://github.com/OctoMap/octomap)
 * 🔴 Octree - Fast radius neighbor search with an Octree. [⭐ 377](https://github.com/jbehley/octree)
 * 🟢 [PCL](https://pointclouds.org/) - 2D/3D image and point cloud processing. [⭐ 11k](https://github.com/PointCloudLibrary/pcl)
@@ -247,7 +247,7 @@ _Simultaneous Localization and Mapping libraries._
 * 🔴 AprilSAM - Real-time smoothing and mapping. [⭐ 238](https://github.com/xipengwang/AprilSAM)
 * 🔴 Cartographer - Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations. [⭐ 7.9k](https://github.com/cartographer-project/cartographer)
 * 🔴 [DSO](https://vision.in.tum.de/research/vslam/dso) - Novel direct and sparse formulation for Visual Odometry. [⭐ 2.4k](https://github.com/JakobEngel/dso)
-* 🟢 ElasticFusion - Real-time dense visual SLAM system. [⭐ 1.9k](https://github.com/mp3guy/ElasticFusion)
+* 🟡 ElasticFusion - Real-time dense visual SLAM system. [⭐ 1.9k](https://github.com/mp3guy/ElasticFusion)
 * 🟢 [fiducials](http://wiki.ros.org/fiducials) - Simultaneous localization and mapping using fiducial markers. [⭐ 281](https://github.com/UbiquityRobotics/fiducials)
 * 🟢 GTSAM - Smoothing and mapping (SAM) in robotics and vision. [⭐ 3.6k](https://github.com/borglab/gtsam)
 * 🔴 Kintinuous - Real-time large scale dense visual SLAM system. [⭐ 954](https://github.com/mp3guy/Kintinuous)
@@ -303,7 +303,7 @@ _Frameworks for coupled multi-physics simulations._
 
 _Mathematics libraries for spatial algebra, Lie groups, and linear algebra._
 
-* 🟢 Fastor - Light-weight high performance tensor algebra framework in C++11/14/17. [⭐ 839](https://github.com/romeric/Fastor)
+* 🟡 Fastor - Light-weight high performance tensor algebra framework in C++11/14/17. [⭐ 839](https://github.com/romeric/Fastor)
 * 🔴 linalg.h - Single header public domain linear algebra library for C++11. [⭐ 957](https://github.com/sgorsten/linalg)
 * 🟢 manif - Small c++11 header-only library for Lie theory. [⭐ 1.8k](https://github.com/artivis/manif)
 * 🔴 Sophus - Lie groups using Eigen. [⭐ 2.4k](https://github.com/strasdat/Sophus)
@@ -379,6 +379,7 @@ _Related curated lists of robotics and AI resources._
 * [Awesome Robotics](https://github.com/Kiloreux/awesome-robotics) - Curated list of robotics resources (Kiloreux).
 * [Awesome Robotics](https://github.com/ahundt/awesome-robotics) - Curated list of robotics links and software libraries (ahundt).
 * [Awesome VLA Study](https://github.com/MilkClouds/awesome-vla-study) - A curated VLA (Vision-Language-Action) study guide that organizes ~30 key papers into a 6-phase, 14-week reading curriculum — covering diffusion/flow matching foundations, robot foundation model architectures, data scaling, efficient inference, RL fine-tuning, and world models.
+* [Physical AI Atlas](https://www.d-fairy.fr/atlas/) - Curated open dataset (CC BY 4.0) of the physical AI ecosystem: humanoid robots, industrial platforms, VLA models, embedded AI chips, simulators, labs and companies. Bilingual FR/EN, with a per-entity verification date and explicit sources. Published as machine-readable JSON with a schema, and rendered as a browsable site.
 * [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) - Python sample codes for robotics algorithms.
 * [Robotics Coursework](https://github.com/mithi/robotics-coursework) - A list of robotics courses you can take online.
 

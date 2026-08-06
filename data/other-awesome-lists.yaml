@@ -100,6 +100,16 @@
   _meta:
     stars: 303
     last_commit: '2026-03-21'
+- name: Physical AI Atlas
+  url: https://www.d-fairy.fr/atlas/
+  github: PlbKin190/physical-ai-atlas-data
+  description: 'Curated open dataset (CC BY 4.0) of the physical AI ecosystem: humanoid robots, industrial platforms, VLA
+    models, embedded AI chips, simulators, labs and companies. Bilingual FR/EN, with a per-entity verification date and explicit
+    sources. Published as machine-readable JSON with a schema, and rendered as a browsable site.'
+  _meta:
+    stars: 0
+    last_commit: '2026-07-28'
+    license: CC-BY-4.0
 - name: PythonRobotics
   url: https://github.com/AtsushiSakai/PythonRobotics
   github: AtsushiSakai/PythonRobotics
