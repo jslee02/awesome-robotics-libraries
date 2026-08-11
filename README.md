@@ -388,11 +388,11 @@ Contributions are very welcome! Please read the [contribution guidelines](https:
 
 ## [Star History](#contents)
 
-<a href="https://www.star-history.com/?repos=jslee02%2Fawesome-robotics-libraries">
+<a href="https://star-history.dera.page/#jslee02/awesome-robotics-libraries&type=date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />
-    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=jslee02/awesome-robotics-libraries&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />
+    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />
   </picture>
 </a>
 
