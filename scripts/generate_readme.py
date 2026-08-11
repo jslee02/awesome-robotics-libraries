@@ -419,14 +419,14 @@ def generate(data_dir: Path, sort_key: str = "name") -> str:
     out.append("## [Star History](#contents)")
     out.append("")
     out.append(
-        '<a href="https://www.star-history.com/?repos=jslee02%2Fawesome-robotics-libraries">\n'
+        '<a href="https://star-history.dera.page/#jslee02/awesome-robotics-libraries&type=date">\n'
         "  <picture>\n"
         '    <source media="(prefers-color-scheme: dark)" '
-        'srcset="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&theme=dark&legend=top-left" />\n'
+        'srcset="https://star-history.dera.page/svg?repos=jslee02/awesome-robotics-libraries&type=date&theme=dark&legend=top-left" />\n'
         '    <source media="(prefers-color-scheme: light)" '
-        'srcset="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />\n'
+        'srcset="https://star-history.dera.page/svg?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />\n'
         '    <img alt="Star History Chart" '
-        'src="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />\n'
+        'src="https://star-history.dera.page/svg?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />\n'
         "  </picture>\n"
         "</a>"
     )
