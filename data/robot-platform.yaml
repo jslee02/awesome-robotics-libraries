@@ -6,6 +6,15 @@
     stars: 786
     last_commit: '2021-08-16'
     language: C++
+- name: Dimensional
+  url: https://dimensional.org/
+  github: dimensionalOS/dimos
+  description: An agentic operating system to build applications for humanoids, drones, quadrupeds and other hardwares in
+    natural language. No ROS required.
+  _meta:
+    stars: 4425
+    last_commit: '2026-08-25'
+    language: Python
 - name: Linorobot
   url: https://linorobot.org/
   github: linorobot/linorobot
@@ -14,13 +23,6 @@
     stars: 1105
     last_commit: '2022-07-11'
     license: BSD-2-Clause
-    language: C++
-- name: onine
-  github: grassjelly/onine
-  description: Service Robot based on Linorobot and Braccio Arm.
-  _meta:
-    stars: 49
-    last_commit: '2018-09-19'
     language: C++
 - name: Micro-ROS for Arduino
   url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
@@ -31,6 +33,13 @@
     last_commit: '2024-10-28'
     license: Apache-2.0
     language: C
+- name: onine
+  github: grassjelly/onine
+  description: Service Robot based on Linorobot and Braccio Arm.
+  _meta:
+    stars: 49
+    last_commit: '2018-09-19'
+    language: C++
 - name: Rock
   url: https://www.rock-robotics.org/
   description: Software framework for robotic systems.
