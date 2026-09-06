@@ -5,6 +5,22 @@
   - C++
   models:
   - soft
+- name: Brax
+  url: https://github.com/google/brax
+  description: Massively parallel differentiable rigid body physics engine in JAX for robotics and RL.
+  github: google/brax
+  license: Apache-2.0
+  languages:
+  - Python
+  models:
+  - rigid
+  features:
+  - id
+  _meta:
+    stars: 3200
+    last_commit: '2026-06-25'
+    license: Apache-2.0
+    language: Jupyter Notebook
 - name: Bullet
   url: https://pybullet.org/
   description: Real-time physics simulation for games, visual effects, and robotics.
@@ -25,22 +41,6 @@
     stars: 14573
     last_commit: '2025-10-22'
     language: C++
-- name: Brax
-  url: https://github.com/google/brax
-  description: Massively parallel differentiable rigid body physics engine in JAX for robotics and RL.
-  github: google/brax
-  license: Apache-2.0
-  languages:
-  - Python
-  models:
-  - rigid
-  features:
-  - id
-  _meta:
-    stars: 3200
-    last_commit: '2026-06-25'
-    license: Apache-2.0
-    language: Jupyter Notebook
 - name: CHRONO::ENGINE
   url: https://projectchrono.org/
   description: Multi-physics simulation of rigid and flexible bodies, granular, and fluid systems.
@@ -417,6 +417,18 @@
     stars: 807
     last_commit: '2024-08-16'
     language: C++
+- name: PhysX
+  url: https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html
+  description: NVIDIA physics engine for real-time rigid body and vehicle simulation.
+  github: NVIDIA-Omniverse/PhysX
+  license: unknown
+  languages:
+  - C++
+  _meta:
+    stars: 4627
+    last_commit: '2026-06-24'
+    license: BSD-3-Clause
+    language: C++
 - name: pinocchio
   url: https://stack-of-tasks.github.io/pinocchio/
   description: Fast and flexible algorithms for rigid-body dynamics with analytical derivatives.
@@ -449,18 +461,18 @@
     last_commit: '2025-09-04'
     license: MIT
     language: C++
-- name: PhysX
-  url: https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html
-  description: NVIDIA physics engine for real-time rigid body and vehicle simulation.
-  github: NVIDIA-Omniverse/PhysX
-  license: unknown
-  languages:
-  - C++
+- name: Provael
+  url: https://www.provael.com
+  github: provael/provael
+  description: Model-agnostic red-teaming for open Vision-Language-Action robot policies in simulation. Runs attack families
+    against a policy and reports the Attack Success Rate alongside a matched benign control arm on the identical task suite.
+    Includes the Embodied AI Security Top 10 taxonomy and a signed leaderboard. Apache-2.0, pip install, Docker image, runs
+    on CPU.
   _meta:
-    stars: 4627
-    last_commit: '2026-06-24'
-    license: BSD-3-Clause
-    language: C++
+    stars: 6
+    last_commit: '2026-09-05'
+    license: Apache-2.0
+    language: Python
 - name: PyDy
   url: https://www.pydy.org/
   description: Multibody dynamics analysis with symbolic Python using SymPy.
@@ -473,6 +485,31 @@
     last_commit: '2026-06-15'
     license: BSD-3-Clause
     language: Python
+- name: qu3e
+  description: Lightweight 3D physics engine for rigid body dynamics.
+  github: RandyGaul/qu3e
+  license: Zlib
+  languages:
+  - C++
+  models:
+  - rigid
+  _meta:
+    stars: 997
+    last_commit: '2021-05-09'
+    archived: true
+    license: Zlib
+    language: C
+- name: RaiSim
+  url: https://slides.com/jeminhwangbo/raisim-manual
+  description: Cross-platform physics engine for robotics and reinforcement learning.
+  github: leggedrobotics/raisimLib
+  license: custom
+  languages:
+  - C++
+  _meta:
+    stars: 328
+    last_commit: '2020-11-26'
+    archived: true
 - name: RBDL
   url: https://rbdl.github.io/
   description: Rigid Body Dynamics Library based on Featherstone algorithms.
@@ -505,17 +542,6 @@
     last_commit: '2026-06-22'
     license: BSD-2-Clause
     language: C++
-- name: RaiSim
-  url: https://slides.com/jeminhwangbo/raisim-manual
-  description: Cross-platform physics engine for robotics and reinforcement learning.
-  github: leggedrobotics/raisimLib
-  license: custom
-  languages:
-  - C++
-  _meta:
-    stars: 328
-    last_commit: '2020-11-26'
-    archived: true
 - name: ReactPhysics3d
   url: https://www.reactphysics3d.com/
   description: Open-source 3D physics engine for rigid body simulation and collision detection.
@@ -665,18 +691,4 @@
     stars: 20
     last_commit: '2023-09-03'
     license: GPL-3.0
-    language: C
-- name: qu3e
-  description: Lightweight 3D physics engine for rigid body dynamics.
-  github: RandyGaul/qu3e
-  license: Zlib
-  languages:
-  - C++
-  models:
-  - rigid
-  _meta:
-    stars: 997
-    last_commit: '2021-05-09'
-    archived: true
-    license: Zlib
     language: C
