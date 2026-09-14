@@ -1,3 +1,6 @@
+- name: Foxglove Studio
+  url: https://foxglove.dev
+  description: A fully integrated visualization and debugging desktop app for your robotics data.
 - name: fuse
   github: locusrobotics/fuse
   description: General architecture for performing sensor fusion live on a robot.
@@ -5,6 +8,13 @@
     stars: 868
     last_commit: '2026-06-18'
     language: C++
-- name: Foxglove Studio
-  url: https://foxglove.dev
-  description: A fully integrated visualization and debugging desktop app for your robotics data.
+- name: Gearotons M17 servomotor
+  url: https://github.com/tomrodinger/servomotor
+  github: tomrodinger/servomotor
+  description: Open-source NEMA 17 integrated servomotor (motor, driver, motion controller and encoder in one body) with Python
+    and Arduino libraries; many motors share one RS-485 bus.
+  _meta:
+    stars: 2
+    last_commit: '2026-09-10'
+    license: MIT
+    language: HTML
