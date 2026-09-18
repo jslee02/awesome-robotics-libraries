@@ -48,7 +48,7 @@ _Physics engines and rigid/soft body dynamics libraries. See also [Comparisons](
 * 🟡 kindr - Kinematics and dynamics library for rigid body transformations. [⭐ 613](https://github.com/ANYbotics/kindr)
 * 🟢 [Klampt](https://klampt.org/) - Robot planning, control, and simulation with visualization support. [⭐ 433](https://github.com/krishauser/Klampt)
 * 🔴 [LibrePilot](http://www.librepilot.org/site/index.html) - Open-source autopilot for UAVs and other autonomous vehicles. [⭐ 356](https://github.com/librepilot/LibrePilot)
-* 🟢 [MARS](http://rock-simulation.github.io/mars/) - Machina Arte Robotum Simulans — a cross-platform simulation environment. [⭐ 68](https://github.com/rock-simulation/mars)
+* 🟡 [MARS](http://rock-simulation.github.io/mars/) - Machina Arte Robotum Simulans — a cross-platform simulation environment. [⭐ 68](https://github.com/rock-simulation/mars)
 * [MBDyn](https://www.mbdyn.org/) - General-purpose multibody dynamics analysis software. [[code](https://www.mbdyn.org/?Software_Download)]
 * 🟢 [MBSim](https://www.mbsim-env.de/) - Multi-body simulation environment for flexible and rigid systems. [⭐ 53](https://github.com/mbsim-env/mbsim)
 * 🔴 [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) - Lightweight multibody system dynamics library. [⭐ 11](https://github.com/SIM-TU-Darmstadt/mbslib)
@@ -61,10 +61,10 @@ _Physics engines and rigid/soft body dynamics libraries. See also [Comparisons](
 * 🟢 [Newton Dynamics](https://newtondynamics.com/) - Real-time physics engine for rigid body simulation. [⭐ 1k](https://github.com/MADEAPPS/newton-dynamics)
 * 🔴 [nphysics](https://nphysics.org/) - 2D and 3D rigid body physics engine written in Rust. [⭐ 1.6k](https://github.com/dimforge/nphysics)
 * [ODE](https://ode.org/) - Open Dynamics Engine for simulating rigid body dynamics. [[bitbucket](https://bitbucket.org/odedevs/ode)]
-* 🟡 [OpenRAVE](https://www.openrave.org/) - Open Robotics Automation Virtual Environment for planning and simulation. [⭐ 807](https://github.com/rdiankov/openrave)
+* 🔴 [OpenRAVE](https://www.openrave.org/) - Open Robotics Automation Virtual Environment for planning and simulation. [⭐ 807](https://github.com/rdiankov/openrave)
 * 🟢 [PhysX](https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html) - NVIDIA physics engine for real-time rigid body and vehicle simulation. [⭐ 4.6k](https://github.com/NVIDIA-Omniverse/PhysX)
 * 🟢 [pinocchio](https://stack-of-tasks.github.io/pinocchio/) - Fast and flexible algorithms for rigid-body dynamics with analytical derivatives. [⭐ 3.5k](https://github.com/stack-of-tasks/pinocchio)
-* 🟢 PositionBasedDynamics - Position-based methods for simulating deformable objects and fluids. [⭐ 2.2k](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics)
+* 🟡 PositionBasedDynamics - Position-based methods for simulating deformable objects and fluids. [⭐ 2.2k](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics)
 * 🟢 [PyDy](https://www.pydy.org/) - Multibody dynamics analysis with symbolic Python using SymPy. [⭐ 413](https://github.com/pydy/pydy)
 * 💀 qu3e - Lightweight 3D physics engine for rigid body dynamics. [⭐ 997](https://github.com/RandyGaul/qu3e)
 * 💀 [RaiSim](https://slides.com/jeminhwangbo/raisim-manual) - Cross-platform physics engine for robotics and reinforcement learning. [⭐ 328](https://github.com/leggedrobotics/raisimLib)
@@ -90,6 +90,7 @@ _Libraries for computing joint configurations from end-effector poses._
   * 🟢 Kinpy - A simple pure python package to solve inverse kinematics. [⭐ 181](https://github.com/neka-nat/kinpy)
   * 🔴 Lively - A highly configurable toolkit for commanding robots in mixed modalities. [⭐ 8](https://github.com/Wisc-HCI/lively)
   * 🔴 RelaxedIK - Real-time Synthesis of Accurate and Feasible Robot Arm Motion. [⭐ 249](https://github.com/uwgraphics/relaxed_ik)
+  * 🟢 [Spherical wrist](https://pypi.org/project/spherical-wrist/) - Singularity - free IK engine for 6DOF robotic arms having spherical wrist (axes of 3 first joints near TCP overlap). Supports stroke planning with constraints and collision avoidance. Python bindings, Rust kernel. [⭐ 0](https://github.com/bourumir-wyngs/spherical-wrist)
   * 🟢 ssik - Analytical inverse kinematics for 6R and 7R revolute robot arms, returning every IK branch. [⭐ 113](https://github.com/personalrobotics/ssik)
   * 🔴 [Trip](https://trip-kinematics.readthedocs.io/en/main/index.html) - A python package that solves inverse kinematics of parallel-, serial- or hybrid-robots. [⭐ 43](https://github.com/TriPed-Robot/trip_kinematics)
 
@@ -97,7 +98,7 @@ _Libraries for computing joint configurations from end-effector poses._
 
 _Machine learning frameworks and tools applied to robotics._
 
-* 🟡 [AllenAct](https://allenact.org/) - Python/PyTorch-based Research Framework for Embodied AI. [⭐ 383](https://github.com/allenai/allenact)
+* 🔴 [AllenAct](https://allenact.org/) - Python/PyTorch-based Research Framework for Embodied AI. [⭐ 383](https://github.com/allenai/allenact)
 * 🟢 Any4LeRobot - A collection of utilities and tools for LeRobot. [⭐ 1.1k](https://github.com/Tavish9/any4lerobot)
 * 🟡 DLL - Deep Learning Library (DLL) for C++. [⭐ 687](https://github.com/wichtounet/dll)
 * 🔴 [DyNet](https://dynet.readthedocs.io/en/latest/) - The Dynamic Neural Network Toolkit. [⭐ 3.4k](https://github.com/clab/dynet)
@@ -145,7 +146,7 @@ Lastly, OpEn is becoming popular: it currently counts 616 stars on GitHub and mo
 * 🟢 [Ruckig](https://github.com/pantor/ruckig) - Real-time, time-optimal and jerk-constrained online trajectory generation. [⭐ 1.3k](https://github.com/pantor/ruckig)
 * 🟢 [The Kautham Project](https://sir.upc.es/projects/kautham/) - A robot simulation toolkit for motion planning. [⭐ 24](https://github.com/iocroblab/kautham)
 * 🟢 [TOPP-RA](https://hungpham2511.github.io/toppra/) - Time-parameterizing robot trajectories subject to kinematic and dynamic constraints. [⭐ 896](https://github.com/hungpham2511/toppra)
-* 🟡 [Ungar](https://github.com/fdevinc/ungar) - Expressive and efficient implementation of optimal control problems using template metaprogramming. [⭐ 108](https://github.com/fdevinc/ungar)
+* 🔴 [Ungar](https://github.com/fdevinc/ungar) - Expressive and efficient implementation of optimal control problems using template metaprogramming. [⭐ 108](https://github.com/fdevinc/ungar)
 
 ###### Motion Optimizer
 
@@ -165,7 +166,7 @@ Lastly, OpEn is becoming popular: it currently counts 616 stars on GitHub and mo
 
 * 🟢 Bonxai - Brutally fast, sparse, 3D Voxel Grid (formerly Treexy). [⭐ 861](https://github.com/facontidavide/Bonxai)
 * 🟢 [Goxel](https://guillaumechereau.github.io/goxel/) - Free and open source 3D voxel editor. [⭐ 3.2k](https://github.com/guillaumechereau/goxel)
-* 🟢 [libpointmatcher](http://libpointmatcher.readthedocs.io/en/latest/) - Iterative Closest Point library for 2-D/3-D mapping in Robotics. [⭐ 1.8k](https://github.com/norlab-ulaval/libpointmatcher)
+* 🟡 [libpointmatcher](http://libpointmatcher.readthedocs.io/en/latest/) - Iterative Closest Point library for 2-D/3-D mapping in Robotics. [⭐ 1.8k](https://github.com/norlab-ulaval/libpointmatcher)
 * 🟢 [OctoMap](http://octomap.github.io/) - Efficient Probabilistic 3D Mapping Framework Based on Octrees. [⭐ 2.3k](https://github.com/OctoMap/octomap)
 * 🔴 Octree - Fast radius neighbor search with an Octree. [⭐ 377](https://github.com/jbehley/octree)
 * 🟢 [PCL](https://pointclouds.org/) - 2D/3D image and point cloud processing. [⭐ 11k](https://github.com/PointCloudLibrary/pcl)
@@ -247,7 +248,7 @@ _Simultaneous Localization and Mapping libraries._
 * 🔴 AprilSAM - Real-time smoothing and mapping. [⭐ 238](https://github.com/xipengwang/AprilSAM)
 * 🔴 Cartographer - Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations. [⭐ 7.9k](https://github.com/cartographer-project/cartographer)
 * 🔴 [DSO](https://vision.in.tum.de/research/vslam/dso) - Novel direct and sparse formulation for Visual Odometry. [⭐ 2.4k](https://github.com/JakobEngel/dso)
-* 🟢 ElasticFusion - Real-time dense visual SLAM system. [⭐ 1.9k](https://github.com/mp3guy/ElasticFusion)
+* 🟡 ElasticFusion - Real-time dense visual SLAM system. [⭐ 1.9k](https://github.com/mp3guy/ElasticFusion)
 * 🟢 [fiducials](http://wiki.ros.org/fiducials) - Simultaneous localization and mapping using fiducial markers. [⭐ 281](https://github.com/UbiquityRobotics/fiducials)
 * 🟢 GTSAM - Smoothing and mapping (SAM) in robotics and vision. [⭐ 3.6k](https://github.com/borglab/gtsam)
 * 🔴 Kintinuous - Real-time large scale dense visual SLAM system. [⭐ 954](https://github.com/mp3guy/Kintinuous)
@@ -303,7 +304,7 @@ _Frameworks for coupled multi-physics simulations._
 
 _Mathematics libraries for spatial algebra, Lie groups, and linear algebra._
 
-* 🟢 Fastor - Light-weight high performance tensor algebra framework in C++11/14/17. [⭐ 839](https://github.com/romeric/Fastor)
+* 🟡 Fastor - Light-weight high performance tensor algebra framework in C++11/14/17. [⭐ 839](https://github.com/romeric/Fastor)
 * 🔴 linalg.h - Single header public domain linear algebra library for C++11. [⭐ 957](https://github.com/sgorsten/linalg)
 * 🟢 manif - Small c++11 header-only library for Lie theory. [⭐ 1.8k](https://github.com/artivis/manif)
 * 🔴 Sophus - Lie groups using Eigen. [⭐ 2.4k](https://github.com/strasdat/Sophus)

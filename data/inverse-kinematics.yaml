@@ -29,6 +29,15 @@
     last_commit: '2023-04-13'
     license: MIT
     language: Python
+- name: Spherical wrist
+  url: https://pypi.org/project/spherical-wrist/
+  github: bourumir-wyngs/spherical-wrist
+  description: Singularity - free IK engine for 6DOF robotic arms having spherical wrist (axes of 3 first joints near TCP
+    overlap). Supports stroke planning with constraints and collision avoidance. Python bindings, Rust kernel.
+  _meta:
+    stars: 0
+    last_commit: '2026-09-16'
+    language: Python
 - name: ssik
   github: personalrobotics/ssik
   description: Analytical inverse kinematics for 6R and 7R revolute robot arms, returning every IK branch.
