@@ -50,10 +50,11 @@ outside users are hard to fake, so the bar rests on them.
 | Outcome | What the bot does | Label |
 |---------|-------------------|-------|
 | Passes the bar | Opens a PR with the entry. Merging it accepts the suggestion; closing it (with a reason) declines it. | `needs-review` |
-| Below the bar, but at least 20 stars and 1 outside person (and the basics) | Keeps the issue open, re-checks it monthly for up to 12 months, updates one status comment, and opens the PR when it passes | `monitoring` |
+| Below the bar, but at least 20 stars and 1 outside person, with a license and a commit within 12 months | Keeps the issue open, re-checks it monthly for up to 12 months, updates one status comment, and opens the PR when it passes | `monitoring` |
 | Below that floor | Closes the issue, listing what is missing. Resubmit any time later. | |
-| Missing information, no human confirmation, or agent-tagged | Asks you for an update. Marked stale after 14 days without one, closed after 14 more. | `question` |
-| Already listed, archived, or repository not found | Closes with the reason | `duplicate` |
+| Missing information, repository not found, no human confirmation or affiliation, or agent-tagged | Asks you for an update. Marked stale after 14 days without one, closed after 14 more. | `question` |
+| Already listed | Closes with a pointer to the entry | `duplicate` |
+| Archived repository, or a second open suggestion from the same person | Closes with the reason | |
 
 ## Categories
 
