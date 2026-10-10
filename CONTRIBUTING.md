@@ -1,49 +1,99 @@
 # Contributing
 
-Thank you for improving this list! This guide explains how to suggest resources, fix entries, and work with the project.
+Thank you for improving this list! This guide explains how resources get in,
+how to fix existing entries, and how the automation works.
 
 > [!TIP]
-> **Want to add something to the list?** The easiest way is to [open a suggestion issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml). Our automation evaluates GitHub-hosted projects automatically, and once accepted, a PR is created for you — no local setup needed.
+> **Want to add something?** [Open a suggestion](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml).
+> Automation checks it against the bar below and, if it passes, opens the PR for you. No local setup needed.
 
 > [!CAUTION]
-> **Do not edit `README.md` directly.** It is auto-generated from YAML data files. Manual edits will be overwritten, and PRs that only modify `README.md` will be rejected by CI.
+> **Do not edit `README.md` directly.** It is generated from `data/*.yaml`.
+> Direct README edits are closed automatically.
 
-## How It Works
+## Suggesting a Resource
 
-This repository uses a **YAML-first** workflow:
+- Use the [suggestion form](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml), one resource per issue.
+- Keep **one open suggestion at a time**. A second one is closed until the first is resolved.
+- Suggestions must be **written or reviewed by a person**. Use of AI tools is fine; unreviewed agent output is not.
+- **Disclose your affiliation.** Suggesting your own project is welcome; the form just asks.
+- Direct pull requests that add a resource are closed and redirected to the form, so every suggestion goes through the same checks.
 
-```
-data/*.yaml  →  scripts/generate_readme.py  →  README.md
-```
+## Acceptance Bar
 
-| Component | Role |
-|-----------|------|
-| `data/*.yaml` | **Source of truth** — one file per section |
-| `schema/entry.schema.json` | Defines valid entry fields |
-| `scripts/generate_readme.py` | Generates `README.md` from YAML |
+A resource must be **in scope**: robotics software (a library, simulator, framework, or
+tool) that fits one of the [categories](#categories), or a curated list of such resources.
 
-## Ways to Contribute
+GitHub-hosted projects must then pass these gates, all checked automatically from GitHub data:
 
-| What you want to do | How |
-|---------------------|-----|
-| **Suggest a new resource** | [Open a suggestion issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml) |
-| **Fix a URL or description** | Edit the relevant `data/*.yaml` file and [open a PR](#editing-existing-entries) |
-| **Report broken links or errors** | [Open a report issue](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=report-issue.yml) |
-| **Change section headings or layout** | Edit `scripts/generate_readme.py` and open a PR |
+| Gate | Regular | Fast lane |
+|------|---------|-----------|
+| Repository age | 6 months or older | none |
+| Stars | 100 or more | 1,000 or more |
+| Outside people | 3 or more distinct people who opened issues or PRs and are not owners, members, collaborators, or bots | same |
+| Activity | a default-branch commit within 12 months | same |
+| Basics | not archived, has a license, not already listed | same |
 
-## Suggesting a New Resource
+When a suggestion passes, a maintainer reviews the generated PR for scope and category.
 
-New resources are accepted through the issue-based suggestion workflow. Direct pull requests that add a new resource entry are closed automatically and redirected here so every suggestion goes through the same evaluation and auto-PR path.
+- **Not on GitHub** (GitLab, commercial tools): reviewed by a maintainer, who looks for
+  wide use in the robotics community.
+- **Maintainer picks**: a maintainer may add a resource outside these gates and says why in the PR. This is rare.
 
-1. Go to **[Suggest a Resource](https://github.com/jslee02/awesome-robotics-libraries/issues/new?template=suggest-resource.yml)**
-2. Fill in the name, URL, category, and description
-3. Submit — automation handles the rest:
-   - GitHub-hosted projects are evaluated against [inclusion criteria](#inclusion--exclusion-criteria) automatically
-   - Non-GitHub resources are flagged for manual maintainer review
-   - Once accepted, a PR with the YAML entry, metadata, and regenerated README is created automatically
-   - A maintainer reviews and merges
+**Why these signals:** AI tools make a polished README, docs, tests, and steady commits
+cheap to produce, so they no longer show that a project is used. Stars can be bought, and
+since 2026-06-30 GitHub no longer shows outsiders who starred a repository. Time and real
+outside users are hard to fake, so the bar rests on them.
 
-No local setup or code changes needed.
+## What Happens to a Suggestion
+
+| Outcome | What the bot does | Label |
+|---------|-------------------|-------|
+| Passes the bar | Opens a PR with the entry. Merging it accepts the suggestion; closing it (with a reason) declines it. | `needs-review` |
+| Below the bar, but at least 20 stars and 1 outside person (and the basics) | Keeps the issue open, re-checks it monthly for up to 12 months, updates one status comment, and opens the PR when it passes | `monitoring` |
+| Below that floor | Closes the issue, listing what is missing. Resubmit any time later. | |
+| Missing information, no human confirmation, or agent-tagged | Asks you for an update. Marked stale after 14 days without one, closed after 14 more. | `question` |
+| Already listed, archived, or repository not found | Closes with the reason | `duplicate` |
+
+## Categories
+
+Each entry goes in one category, chosen by **what the software mainly does**, never by robot
+type (humanoid, drone, car). Tie-breaks:
+
+- You import it and step it in your own loop: **Physics Engines**. You launch a world: **Simulators**.
+- It solves a model-based control problem (MPC, trajectory optimization): **Control**. It plans collision-free paths: **Motion Planning & Navigation**.
+- It ships tasks, benchmarks, or policies for learning: **Robot Learning**. It records, stores, or visualizes data: **Robot Data & Visualization**.
+
+| Category | Scope | File |
+|----------|-------|------|
+| Middleware & Frameworks | Communication middleware, robot software frameworks, runtime services such as launch and diagnostics, and agent orchestration for robots | `data/middleware.yaml` |
+| Robot Hardware & Drivers | Open robot platforms and hardware designs, and drivers or firmware for sensors and actuators | `data/hardware.yaml` |
+| Robot Description & Models | Robot description formats (URDF, SDF, MJCF, USD), their parsers and exporters, and robot model collections | `data/robot-models.yaml` |
+| Kinematics & Dynamics | Forward and inverse kinematics and rigid-body dynamics algorithms, without contact time-stepping | `data/kinematics-dynamics.yaml` |
+| Physics Engines | Embeddable engines that time-step rigid, soft, fluid, or particle dynamics with contact | `data/physics-engines.yaml` |
+| Simulators | Simulation applications with worlds, sensors, rendering, and robot middleware bridges | `data/simulators.yaml` |
+| Motion Planning & Navigation | Path planning, trajectory generation and time-parameterization, task and behavior planning, and navigation stacks | `data/motion-planning.yaml` |
+| Control | Model-based control: MPC, trajectory optimization, whole-body and task-space control | `data/control.yaml` |
+| Optimization | General-purpose numerical solvers (LP, QP, NLP, least squares, black-box) and modeling layers | `data/optimization.yaml` |
+| Math & Geometry | Linear algebra, Lie groups, spatial transforms, and spatial data structures such as nearest-neighbor search | `data/math.yaml` |
+| SLAM & State Estimation | SLAM, odometry, factor graphs, filtering and sensor fusion, calibration, and mapping | `data/slam.yaml` |
+| Perception | Image and point-cloud processing, detection, pose estimation and tracking, and visual servoing | `data/perception.yaml` |
+| Grasping & Manipulation | Grasp synthesis, detection, and planning, and dexterous manipulation | `data/grasping.yaml` |
+| Robot Learning | Robot foundation models (VLA), imitation and reinforcement learning libraries, learning environments, and benchmarks | `data/robot-learning.yaml` |
+| Robot Data & Visualization | Logging, storing, converting, and visualizing robot data, dataset tools, and teleoperation for data collection | `data/robot-data.yaml` |
+| Other Awesome Lists | Related curated lists and collections | `data/other-awesome-lists.yaml` |
+
+## Entry Conventions
+
+- **Name**: the project's own name, spelled as the project spells it.
+- **Description**: one neutral sentence, 100 characters or fewer, ending with a period. Say
+  what it is, not why it is great; don't repeat the name.
+- **Order**: the README orders each category by stars; projects not on GitHub come last.
+  Keep `data/*.yaml` files alphabetical by name.
+- **Inactive entries**: archived projects and projects without a default-branch commit for
+  3+ years are folded into a collapsed block at the end of their category, automatically.
+  They are kept as references and return when activity resumes. Entries whose links stay
+  broken are removed.
 
 ### Entry Fields
 
@@ -54,169 +104,56 @@ No local setup or code changes needed.
 | `github` | | GitHub `owner/repo` (e.g., `dartsim/dart`) |
 | `gitlab` | | GitLab path |
 | `bitbucket` | | Bitbucket path |
-| `description` | | Brief description |
-| `license` | | SPDX license identifier (dynamics table only) |
-| `languages` | | List of programming languages (dynamics table only) |
-| `models` | | Supported models like `rigid`, `soft`, `fluid` (dynamics table only) |
-| `features` | | Features like `ik`, `id`, `urdf` (dynamics table only) |
-| `archived` | | Set `true` if the project is archived |
 | `code_url` | | Direct download link (if no repo hosting) |
-| `_subsection` | | Subsection grouping within a section |
+| `description` | | One-line description |
+| `archived` | | Set `true` if a project not on GitHub is discontinued |
+| `license`, `languages`, `models`, `features` | | Physics-engine comparison details |
+| `_subsection` | | Subsection within a category |
+| `_meta` | | Filled in by automation (stars, last commit, archived, license, language) |
 
-### Which YAML File?
+## Fixing Existing Entries
 
-| Section | File |
-|---------|------|
-| Simulators | `data/simulators.yaml` |
-| Dynamics Simulation | `data/dynamics-simulation.yaml` |
-| Inverse Kinematics | `data/inverse-kinematics.yaml` |
-| Machine Learning | `data/machine-learning.yaml` |
-| Motion Planning and Control | `data/motion-planning.yaml` |
-| Optimization | `data/optimization.yaml` |
-| Robot Modeling | `data/robot-modeling.yaml` |
-| Robot Platform | `data/robot-platform.yaml` |
-| Reinforcement Learning for Robotics | `data/reinforcement-learning.yaml` |
-| SLAM | `data/slam.yaml` |
-| Vision | `data/vision.yaml` |
-| Fluid | `data/fluid.yaml` |
-| Grasping | `data/grasping.yaml` |
-| Humanoid Robotics | `data/humanoid-robotics.yaml` |
-| Multiphysics | `data/multiphysics.yaml` |
-| Math | `data/math.yaml` |
-| ETC | `data/etc.yaml` |
-| Other Awesome Lists | `data/other-awesome-lists.yaml` |
-
-## Editing Existing Entries
-
-Edit the corresponding field in the relevant `data/*.yaml` file, then regenerate README.md.
-
-Common edits:
-- **Fix a URL**: update `url` or `github`
-- **Update description**: update `description`
-- **Mark as archived**: add `archived: true`
-- **Remove an entry**: delete the entire entry block
-
-## Editing Non-Data Content
-
-Content that is not per-entry data (section headings, table of contents, dynamics table legend, contributing/license text) is defined in `scripts/generate_readme.py`. Edit the script directly for these changes.
+Edit the entry in its `data/*.yaml` file and open a PR. Common fixes:
+a URL (`url`, `github`), the `description`, or the category (move the entry to another file).
+CI regenerates and checks the README; if you can't run the generator locally, say so in the
+PR and a maintainer will regenerate it.
 
 ## Local Development
 
-### Prerequisites
-
-- Python 3.10+
-
-### Validate entries
+Requires Python 3.10+.
 
 ```bash
 pip install pyyaml jsonschema
-python3 scripts/validate_entries.py
+python3 scripts/validate_entries.py   # schema check
+python3 scripts/generate_readme.py    # regenerate README.md
 ```
 
-### Regenerate README.md
-
-```bash
-pip install pyyaml
-python3 scripts/generate_readme.py
-```
-
-### Check links (optional)
-
-Install [lychee](https://lychee.cli.rs/) and run:
-
-```bash
-lychee --config .lychee.toml '**/*.md'
-```
+Optional link check with [lychee](https://lychee.cli.rs/): `lychee --config .lychee.toml '**/*.md'`
 
 ## What CI Checks
 
-Every pull request runs applicable checks automatically:
-
-| Check | Triggers On | Description |
-|-------|-------------|-------------|
-| **Validate Data** | `data/**`, `schema/**`, `scripts/**` | YAML entries pass JSON schema validation |
-| **README Freshness** | `data/**`, `schema/**`, `scripts/**` | README.md matches the generated output from YAML |
-| **Audit Direct Resource PRs** | `data/**` | Closes direct human PRs that add new resources and redirects them to the suggestion issue form |
-| **Protect README** | `README.md` | Rejects PRs that edit README.md without corresponding data/script changes |
-| **Check Links** | `**.md` | All URLs in markdown files are reachable |
-| **DCO** | All PRs | Commits are signed off (`git commit --signoff`) |
-
-## Guidelines
-
-- One resource per suggestion issue (when possible)
-- Alphabetical order within each section
-- Keep descriptions short and descriptive
-- Sign your commits: `git commit --signoff` (required by DCO check)
-- Check your spelling and grammar
-
-## Inclusion & Exclusion Criteria
-
-This is a **curated** list — not every robotics project belongs here. We use objective criteria to keep the list high-quality and fair.
-
-### Acceptance
-
-**Must-have** (all required):
-
-- [ ] Relevant to robotics (simulation, planning, perception, control, dynamics, etc.)
-- [ ] Publicly accessible (open source, or well-documented commercial tool)
-- [ ] Not a duplicate of an existing entry
-- [ ] Has a meaningful description
-
-**Scoring** (need ≥ 3 of 5):
-
-- [ ] **Popularity**: ≥ 50 GitHub stars (or equivalent community adoption for non-GitHub projects)
-- [ ] **Activity**: At least one commit within the last 2 years
-- [ ] **Documentation**: Has a README with usage examples or API docs
-- [ ] **Maturity**: Project is ≥ 6 months old (not premature/experimental)
-- [ ] **Uniqueness**: Fills a niche not already covered by existing entries
-
-| Result | Criteria | Action |
-|--------|----------|--------|
-| ✅ Accept | Meets all must-haves + ≥ 3 scoring points | Add to the main list |
-| 🟡 Incubator | Meets all must-haves + 1–2 scoring points | Issue stays open with `incubator` label; re-evaluated when project matures |
-| ❌ Reject | Fails any must-have | Issue closed with explanation |
-
-### Removal
-
-An existing entry may be removed if **any** of the following apply:
-
-- Archived **and** superseded by another listed entry (e.g., nphysics → Rapier)
-- No commits in 5+ years **and** < 100 stars **and** no historical significance
-- URL permanently broken (after link-check CI has flagged it for 3+ months)
-
-### Exceptions
-
-- **Historical significance**: Foundational libraries (e.g., ODE, Simbody) are kept even if inactive — they remain important references.
-- **Commercial tools**: Accepted if widely used in the robotics community, even without a public repo.
+| Check | Runs on | Description |
+|-------|---------|-------------|
+| Validate Data | PRs touching `data/`, `schema/`, `scripts/` | Schema validation and README freshness |
+| Audit Direct Resource PRs | PRs touching `data/` | Closes human PRs that add a resource and points to the form |
+| Protect README | PRs touching `README.md` | Closes README-only PRs from outside contributors |
+| Check Links | `**.md` | Fails on definitively broken links |
+| DCO | All PRs | Commits must be signed off (`git commit --signoff`) |
 
 ## For Maintainers
 
-### Regenerating README for a contributor
-
-If a contributor submits a YAML-only PR without regenerating README.md:
-
-```bash
-gh pr checkout <PR-NUMBER>
-pip install pyyaml
-python3 scripts/generate_readme.py
-git add README.md
-git commit --signoff -m "docs: regenerate README.md"
-git push
-```
-
-### Automated workflows
-
 | Workflow | Schedule | Description |
 |----------|----------|-------------|
-| Check Links | Weekly (Mon 8am UTC) | Checks for broken links; auto-creates fix PRs |
-| Refresh Metadata | Weekly (Mon 8am UTC) | Updates GitHub metadata, regenerates README, validates, and creates a maintenance PR |
-| Stale Author-Action Issues | Daily | Marks suggestion issues stale after 14 days waiting for author input, then closes after another 14 days |
-| Validate Data | On PR | Validates YAML schema and README freshness |
-| Audit Direct Resource PRs | On PR | Closes direct human PRs that add new resources and redirects them to the suggestion issue form |
-| Protect README | On PR | Blocks direct README.md edits without data changes |
+| Refresh Metadata | Weekly (Mon) | Updates stars, activity, and renamed repositories, regenerates the README, and opens a PR |
+| Check Links | Weekly (Mon) | Opens a PR fixing redirects and dead links, or an issue for links it cannot fix |
+| Stale Author-Action Issues | Daily | Marks `question` suggestions stale after 14 days and closes them 14 days later |
 
-For metadata PRs to trigger normal pull-request CI without manual approval,
-configure a repository secret named `CREATE_PR_TOKEN` with a fine-grained bot
-token or GitHub App token that has `contents: write` and `pull-requests: write`.
-The workflow falls back to `GITHUB_TOKEN` when that secret is not present. The
-caller forwards only `CREATE_PR_TOKEN` to the reusable workflow.
+For bot PRs to run normal pull-request CI without manual approval, add a repository secret
+`CREATE_PR_TOKEN` with a fine-grained or GitHub App token that has `contents: write` and
+`pull-requests: write`. Without it, workflows fall back to `GITHUB_TOKEN`.
+
+## Note for AI Agents
+
+If you are an automated agent acting for someone, add 🤖🤖🤖 to the end of the issue title.
+Suggestions still need a person to confirm them, and the automation will ask that person to
+do so.

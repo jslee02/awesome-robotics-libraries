@@ -24,7 +24,7 @@
 
 - [ ] This PR does **not** add a new resource; new resources use the Suggest a Resource issue form
 - [ ] I edited `data/*.yaml` or scripts — **not** `README.md` directly
-- [ ] Existing entries remain in alphabetical order in the correct `data/*.yaml` file
+- [ ] Entries stay alphabetical by name in the right `data/*.yaml` file (see the categories in CONTRIBUTING.md)
 - [ ] `python3 scripts/validate_entries.py` passes
 - [ ] `python3 scripts/generate_readme.py` run and README.md committed
 - [ ] Commits are signed off (`git commit --signoff`)
