@@ -7,6 +7,7 @@ import os
 import sys
 import time
 import urllib.error
+from datetime import date
 from pathlib import Path
 
 import yaml
@@ -20,7 +21,8 @@ RATE_LIMIT_PAUSE = 2  # seconds between requests to avoid abuse detection
 USER_AGENT = "awesome-robotics-libraries-metadata-bot"
 
 
-def fetch_repo_metadata(owner_repo: str) -> dict | None:
+def fetch_repo_metadata(owner_repo: str) -> tuple[dict, str] | None:
+    """Return (_meta, current owner/repo); the API follows repo renames."""
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     try:
         data = fetch_json(
@@ -72,7 +74,7 @@ def fetch_repo_metadata(owner_repo: str) -> dict | None:
             meta["license"] = spdx
     if data.get("language"):
         meta["language"] = data["language"]
-    return meta
+    return meta, data.get("full_name") or owner_repo
 
 
 def process_yaml_file(yaml_path: Path, dry_run: bool = False) -> tuple[int, int]:
@@ -90,9 +92,13 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False) -> tuple[int, int]
         total += 1
         print(f"  {github}...", end=" ", flush=True)
 
-        meta = fetch_repo_metadata(github)
-        if meta:
+        fetched = fetch_repo_metadata(github)
+        if fetched:
+            meta, full_name = fetched
             entry["_meta"] = meta
+            if full_name.lower() != github.lower():
+                print(f"(renamed to {full_name})", end=" ")
+                entry["github"] = full_name
             updated += 1
             stars = meta.get("stars", "?")
             print(f"★ {stars}")
@@ -150,6 +156,9 @@ def main():
     print(f"\nDone: {grand_updated}/{grand_total} entries updated")
     if args.dry_run:
         print("(dry run — no files written)")
+    elif grand_updated:
+        # Reference date for README activity badges (see generate_readme.py).
+        (data_dir / "as-of.txt").write_text(f"{date.today().isoformat()}\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
