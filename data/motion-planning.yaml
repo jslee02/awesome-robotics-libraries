@@ -3,7 +3,7 @@
   github: personalrobotics/aikido
   description: Solving robotic motion planning and decision making problems.
   _meta:
-    stars: 233
+    stars: 235
     last_commit: '2023-03-10'
     license: BSD-3-Clause
     language: C++
@@ -15,23 +15,23 @@
   github: nvlabs/curobo
   description: A CUDA accelerated library containing a suite of robotics algorithms that run significantly faster.
   _meta:
-    stars: 1659
-    last_commit: '2026-06-15'
+    stars: 1902
+    last_commit: '2026-09-10'
     license: Apache-2.0
     language: Python
 - name: Fields2Cover
   github: fields2cover/fields2cover
   description: Robust and efficient coverage paths for autonomous agricultural vehicles.
   _meta:
-    stars: 829
-    last_commit: '2026-05-21'
+    stars: 909
+    last_commit: '2026-09-21'
     license: BSD-3-Clause
     language: C++
 - name: GPMP2
   github: gtrll/gpmp2
   description: Gaussian Process Motion Planner 2.
   _meta:
-    stars: 357
+    stars: 358
     last_commit: '2022-08-28'
     language: C++
 - name: HPP
@@ -46,7 +46,7 @@
   - C++
   - Python
   _meta:
-    stars: 433
+    stars: 437
     last_commit: '2026-01-10'
     license: BSD-3-Clause
     language: C++
@@ -62,7 +62,7 @@
   - uav
   - vehicles
   _meta:
-    stars: 356
+    stars: 358
     last_commit: '2019-02-21'
     language: C
 - name: MoveIt!
@@ -70,8 +70,8 @@
   github: moveit/moveit
   description: Motion planning framework.
   _meta:
-    stars: 2058
-    last_commit: '2026-05-27'
+    stars: 2095
+    last_commit: '2026-07-20'
     license: BSD-3-Clause
     language: C++
 - name: OMPL
@@ -79,8 +79,8 @@
   github: ompl/ompl
   description: Open motion planning library.
   _meta:
-    stars: 2086
-    last_commit: '2026-06-22'
+    stars: 2170
+    last_commit: '2026-09-25'
     language: C++
 - name: OpenRAVE
   url: https://www.openrave.org/
@@ -91,14 +91,14 @@
   - C++
   - Python
   _meta:
-    stars: 807
-    last_commit: '2024-08-16'
+    stars: 821
+    last_commit: '2026-10-02'
     language: C++
 - name: pymanoid
   github: stephane-caron/pymanoid
   description: Humanoid robotics prototyping environment based on OpenRAVE.
   _meta:
-    stars: 232
+    stars: 234
     last_commit: '2024-02-19'
     archived: true
     license: GPL-3.0
@@ -108,15 +108,15 @@
   github: ai-winter/python_motion_planning
   description: Python implementations of path planners, trajectory trackers, and curve generators.
   _meta:
-    stars: 1055
-    last_commit: '2026-06-02'
+    stars: 1097
+    last_commit: '2026-09-15'
     license: GPL-3.0
     language: Python
 - name: ROS Behavior Tree
   github: miccol/ROS-Behavior-Tree
   description: Behavior tree implementation for ROS-based robot task planning.
   _meta:
-    stars: 364
+    stars: 365
     last_commit: '2018-10-22'
     license: MIT
     language: C++
@@ -125,7 +125,7 @@
   github: ai-winter/ros_motion_planning
   description: ROS planner and controller plugins for mobile robot navigation.
   _meta:
-    stars: 3530
+    stars: 3593
     last_commit: '2026-03-28'
     license: GPL-3.0
     language: C++
@@ -134,8 +134,8 @@
   github: pantor/ruckig
   description: Real-time, time-optimal and jerk-constrained online trajectory generation.
   _meta:
-    stars: 1276
-    last_commit: '2026-06-11'
+    stars: 1402
+    last_commit: '2026-09-29'
     license: MIT
     language: C++
 - name: The Kautham Project
@@ -144,13 +144,13 @@
   description: A robot simulation toolkit for motion planning.
   _meta:
     stars: 24
-    last_commit: '2026-02-09'
+    last_commit: '2026-07-24'
     language: C++
 - name: TopiCo
   github: AIS-Bonn/TopiCo
   description: Time-optimal Trajectory Generation and Control.
   _meta:
-    stars: 147
+    stars: 146
     last_commit: '2021-06-07'
     license: BSD-3-Clause
     language: C++
@@ -159,8 +159,8 @@
   github: hungpham2511/toppra
   description: Time-parameterizing robot trajectories subject to kinematic and dynamic constraints.
   _meta:
-    stars: 896
-    last_commit: '2026-05-03'
+    stars: 933
+    last_commit: '2026-08-28'
     license: MIT
     language: Python
 - name: trajopt
@@ -168,6 +168,6 @@
   github: joschu/trajopt
   description: Framework for generating robot trajectories by local optimization.
   _meta:
-    stars: 462
+    stars: 466
     last_commit: '2017-05-23'
     language: C++

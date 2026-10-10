@@ -10,7 +10,7 @@
   github: romeric/Fastor
   description: Light-weight high performance tensor algebra framework in C++11/14/17.
   _meta:
-    stars: 839
+    stars: 844
     last_commit: '2025-07-08'
     license: MIT
     language: C++
@@ -19,7 +19,7 @@
   github: flann-lib/flann
   description: Fast Library for Approximate Nearest Neighbors.
   _meta:
-    stars: 2369
+    stars: 2378
     last_commit: '2022-10-27'
     language: C++
 - name: HYPRE
@@ -27,8 +27,8 @@
   github: hypre-space/hypre
   description: Parallel solvers for sparse linear systems featuring multigrid methods.
   _meta:
-    stars: 843
-    last_commit: '2026-06-26'
+    stars: 864
+    last_commit: '2026-09-30'
     language: C
 - name: kindr
   description: Kinematics and dynamics library for rigid body transformations.
@@ -40,7 +40,7 @@
   models:
   - rigid
   _meta:
-    stars: 613
+    stars: 618
     last_commit: '2025-02-15'
     license: BSD-3-Clause
     language: C++
@@ -48,7 +48,7 @@
   github: sgorsten/linalg
   description: Single header public domain linear algebra library for C++11.
   _meta:
-    stars: 957
+    stars: 968
     last_commit: '2023-07-02'
     license: Unlicense
     language: C++
@@ -56,7 +56,7 @@
   github: artivis/manif
   description: Small c++11 header-only library for Lie theory.
   _meta:
-    stars: 1784
+    stars: 1823
     last_commit: '2025-11-01'
     license: MIT
     language: C++
@@ -65,14 +65,14 @@
   github: jlblancoc/nanoflann
   description: Nearest Neighbor search with KD-trees.
   _meta:
-    stars: 2657
-    last_commit: '2026-06-27'
+    stars: 2694
+    last_commit: '2026-10-10'
     language: C++
 - name: Octree
   github: jbehley/octree
   description: Fast radius neighbor search with an Octree.
   _meta:
-    stars: 377
+    stars: 378
     last_commit: '2019-12-17'
     license: MIT
     language: C++
@@ -80,22 +80,22 @@
   github: strasdat/Sophus
   description: Lie groups using Eigen.
   _meta:
-    stars: 2433
+    stars: 2462
     last_commit: '2024-06-12'
     language: C++
 - name: SpaceVelAlg
   github: jrl-umi3218/SpaceVecAlg
   description: Spatial vector algebra with the Eigen3.
   _meta:
-    stars: 82
-    last_commit: '2026-06-02'
+    stars: 81
+    last_commit: '2026-09-29'
     license: BSD-2-Clause
     language: C++
 - name: spatialmath-python
   github: rai-opensource/spatialmath-python
   description: Python classes for pose and orientation in 2D/3D with spatial operations toolbox.
   _meta:
-    stars: 633
-    last_commit: '2026-05-12'
+    stars: 646
+    last_commit: '2026-09-16'
     license: MIT
     language: Python

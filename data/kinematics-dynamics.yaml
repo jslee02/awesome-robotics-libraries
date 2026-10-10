@@ -3,7 +3,7 @@
   github: 4rtur1t0/ARTE
   description: Matlab toolbox focussed on robotic manipulators.
   _meta:
-    stars: 103
+    stars: 106
     last_commit: '2026-04-29'
     language: MATLAB
 - name: idyntree
@@ -20,16 +20,16 @@
   features:
   - id
   _meta:
-    stars: 231
-    last_commit: '2026-06-27'
+    stars: 234
+    last_commit: '2026-07-27'
     license: BSD-3-Clause
     language: C++
 - name: IKBT
   github: uw-biorobotics/IKBT
   description: A python package to solve robot arm inverse kinematics in symbolic form.
   _meta:
-    stars: 217
-    last_commit: '2026-01-30'
+    stars: 220
+    last_commit: '2026-09-18'
     language: Python
   _subsection: Inverse Kinematics
 - name: KDL
@@ -44,15 +44,15 @@
   features:
   - ik
   _meta:
-    stars: 884
-    last_commit: '2026-06-23'
+    stars: 904
+    last_commit: '2026-09-23'
     language: C++
 - name: Kinpy
   github: neka-nat/kinpy
   description: A simple pure python package to solve inverse kinematics.
   _meta:
     stars: 181
-    last_commit: '2026-05-21'
+    last_commit: '2026-10-08'
     license: MIT
     language: Python
   _subsection: Inverse Kinematics
@@ -94,8 +94,8 @@
   - analytical derivatives
   - code generation
   _meta:
-    stars: 3518
-    last_commit: '2026-06-23'
+    stars: 3787
+    last_commit: '2026-10-07'
     license: BSD-2-Clause
     language: C++
 - name: PyDy
@@ -106,8 +106,8 @@
   languages:
   - Python
   _meta:
-    stars: 413
-    last_commit: '2026-06-15'
+    stars: 416
+    last_commit: '2026-07-28'
     license: BSD-3-Clause
     language: Python
 - name: RBDL
@@ -125,7 +125,7 @@
   - id
   - urdf
   _meta:
-    stars: 700
+    stars: 708
     last_commit: '2025-06-09'
     language: C++
 - name: RBDyn
@@ -138,15 +138,15 @@
   models:
   - rigid
   _meta:
-    stars: 222
-    last_commit: '2026-06-22'
+    stars: 224
+    last_commit: '2026-10-05'
     license: BSD-2-Clause
     language: C++
 - name: RelaxedIK
   github: uwgraphics/relaxed_ik
   description: Real-time Synthesis of Accurate and Feasible Robot Arm Motion.
   _meta:
-    stars: 249
+    stars: 254
     last_commit: '2023-04-13'
     license: MIT
     language: Python
@@ -160,7 +160,7 @@
   models:
   - rigid
   _meta:
-    stars: 309
+    stars: 312
     last_commit: '2024-11-08'
     language: Julia
 - name: Robopy
@@ -183,7 +183,7 @@
   languages:
   - C++
   _meta:
-    stars: 1187
+    stars: 1206
     last_commit: '2025-04-15'
     license: BSD-2-Clause
     language: C++
@@ -198,8 +198,8 @@
   github: personalrobotics/ssik
   description: Analytical inverse kinematics for 6R and 7R revolute robot arms, returning every IK branch.
   _meta:
-    stars: 113
-    last_commit: '2026-06-24'
+    stars: 188
+    last_commit: '2026-10-04'
     license: BSD-3-Clause
     language: Python
   _subsection: Inverse Kinematics

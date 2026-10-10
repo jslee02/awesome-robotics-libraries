@@ -3,7 +3,7 @@
   github: kaiaai/micro_ros_arduino_kaiaai
   description: a Micro-ROS fork available in the Arduino Library Manager.
   _meta:
-    stars: 12
+    stars: 14
     last_commit: '2024-10-28'
     license: Apache-2.0
     language: C
@@ -18,15 +18,15 @@
   github: ros2/ros2
   description: Version 2.0 of the Robot Operating System (ROS) software stack.
   _meta:
-    stars: 5691
-    last_commit: '2026-05-15'
+    stars: 6145
+    last_commit: '2026-10-07'
 - name: ros2_medkit
   url: https://selfpatch.github.io/ros2_medkit/
   github: selfpatch/ros2_medkit
   description: Fault management and diagnostics gateway for ROS 2 with a REST API.
   _meta:
-    stars: 233
-    last_commit: '2026-06-23'
+    stars: 276
+    last_commit: '2026-10-06'
     license: Apache-2.0
     language: C++
 - name: YARP
@@ -34,6 +34,6 @@
   github: robotology/yarp
   description: Communication and device interfaces applicable from humanoids to embedded devices.
   _meta:
-    stars: 596
-    last_commit: '2026-06-20'
+    stars: 603
+    last_commit: '2026-10-07'
     language: C++

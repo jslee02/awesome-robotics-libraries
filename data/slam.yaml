@@ -2,7 +2,7 @@
   github: xipengwang/AprilSAM
   description: Real-time smoothing and mapping.
   _meta:
-    stars: 238
+    stars: 239
     last_commit: '2021-07-17'
     license: LGPL-2.1
     language: C
@@ -10,8 +10,8 @@
   github: facontidavide/Bonxai
   description: Brutally fast, sparse, 3D Voxel Grid (formerly Treexy).
   _meta:
-    stars: 861
-    last_commit: '2026-03-11'
+    stars: 884
+    last_commit: '2026-09-28'
     license: MPL-2.0
     language: C++
   _subsection: Mapping
@@ -19,7 +19,7 @@
   github: cartographer-project/cartographer
   description: Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations.
   _meta:
-    stars: 7891
+    stars: 7987
     last_commit: '2024-01-05'
     license: Apache-2.0
     language: C++
@@ -28,7 +28,7 @@
   github: JakobEngel/dso
   description: Novel direct and sparse formulation for Visual Odometry.
   _meta:
-    stars: 2447
+    stars: 2459
     last_commit: '2021-03-08'
     license: GPL-3.0
     language: C++
@@ -36,7 +36,7 @@
   github: mp3guy/ElasticFusion
   description: Real-time dense visual SLAM system.
   _meta:
-    stars: 1921
+    stars: 1930
     last_commit: '2025-08-03'
     language: C++
 - name: fiducials
@@ -44,7 +44,7 @@
   github: UbiquityRobotics/fiducials
   description: Simultaneous localization and mapping using fiducial markers.
   _meta:
-    stars: 281
+    stars: 285
     last_commit: '2025-11-26'
     license: BSD-3-Clause
     language: C
@@ -52,21 +52,21 @@
   github: locusrobotics/fuse
   description: General architecture for performing sensor fusion live on a robot.
   _meta:
-    stars: 868
+    stars: 881
     last_commit: '2026-06-18'
     language: C++
 - name: GTSAM
   github: borglab/gtsam
   description: Smoothing and mapping (SAM) in robotics and vision.
   _meta:
-    stars: 3555
-    last_commit: '2026-06-28'
+    stars: 3739
+    last_commit: '2026-10-09'
     language: Jupyter Notebook
 - name: Kintinuous
   github: mp3guy/Kintinuous
   description: Real-time large scale dense visual SLAM system.
   _meta:
-    stars: 954
+    stars: 953
     last_commit: '2022-08-26'
     language: C++
 - name: libpointmatcher
@@ -74,8 +74,8 @@
   github: norlab-ulaval/libpointmatcher
   description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
   _meta:
-    stars: 1819
-    last_commit: '2025-07-16'
+    stars: 1840
+    last_commit: '2026-08-27'
     license: BSD-3-Clause
     language: C++
   _subsection: Mapping
@@ -84,7 +84,7 @@
   github: tum-vision/lsd_slam
   description: Real-time monocular SLAM.
   _meta:
-    stars: 2718
+    stars: 2731
     last_commit: '2014-12-11'
     license: GPL-3.0
     language: C++
@@ -103,8 +103,8 @@
   - slam
   - cv
   _meta:
-    stars: 2139
-    last_commit: '2026-06-24'
+    stars: 2169
+    last_commit: '2026-10-10'
     license: BSD-3-Clause
     language: C++
 - name: OctoMap
@@ -112,15 +112,15 @@
   github: OctoMap/octomap
   description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
   _meta:
-    stars: 2319
-    last_commit: '2026-02-08'
+    stars: 2391
+    last_commit: '2026-09-26'
     language: C++
   _subsection: Mapping
 - name: ORB-SLAM2
   github: raulmur/ORB_SLAM2
   description: Real-time SLAM library for Monocular, Stereo and RGB-D cameras.
   _meta:
-    stars: 10185
+    stars: 10250
     last_commit: '2017-10-11'
     language: C++
 - name: RTAP-Map
@@ -128,8 +128,8 @@
   github: introlab/rtabmap
   description: RGB-D Graph SLAM approach based on a global Bayesian loop closure detector.
   _meta:
-    stars: 3854
-    last_commit: '2026-06-26'
+    stars: 4027
+    last_commit: '2026-10-10'
     language: C++
 - name: SRBA
   url: http://mrpt.github.io/srba/
@@ -143,7 +143,7 @@
   github: ethz-asl/voxblox
   description: Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields.
   _meta:
-    stars: 1644
+    stars: 1673
     last_commit: '2021-11-22'
     license: BSD-3-Clause
     language: C++
@@ -153,7 +153,7 @@
   github: ethz-asl/wavemap
   description: Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping.
   _meta:
-    stars: 562
+    stars: 573
     last_commit: '2024-12-10'
     license: BSD-3-Clause
     language: C++

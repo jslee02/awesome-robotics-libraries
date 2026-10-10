@@ -18,8 +18,8 @@
   features:
   - id
   _meta:
-    stars: 3200
-    last_commit: '2026-06-25'
+    stars: 3248
+    last_commit: '2026-10-07'
     license: Apache-2.0
     language: Jupyter Notebook
 - name: Bullet
@@ -39,8 +39,8 @@
   - urdf
   - sdf
   _meta:
-    stars: 14573
-    last_commit: '2025-10-22'
+    stars: 14771
+    last_commit: '2026-10-09'
     language: C++
 - name: CHRONO::ENGINE
   url: https://projectchrono.org/
@@ -59,8 +59,8 @@
   - ik
   - urdf
   _meta:
-    stars: 2904
-    last_commit: '2026-06-19'
+    stars: 3075
+    last_commit: '2026-10-09'
     license: BSD-3-Clause
     language: C++
 - name: DART
@@ -81,8 +81,8 @@
   - urdf
   - sdf
   _meta:
-    stars: 1146
-    last_commit: '2026-06-29'
+    stars: 1212
+    last_commit: '2026-10-10'
     license: BSD-2-Clause
     language: C++
 - name: Drake
@@ -102,8 +102,8 @@
   - trj-opt
   - plan
   _meta:
-    stars: 4089
-    last_commit: '2026-06-26'
+    stars: 4221
+    last_commit: '2026-10-09'
     language: C++
 - name: Flex
   url: https://developer.nvidia.com/flex
@@ -118,7 +118,7 @@
   - particle
   - fluid
   _meta:
-    stars: 797
+    stars: 814
     last_commit: '2021-04-15'
     language: C++
   _subsection: Soft, Fluid & Multiphysics
@@ -127,7 +127,7 @@
   github: doyubkim/fluid-engine-dev
   description: Fluid simulation engine for computer graphics applications.
   _meta:
-    stars: 2089
+    stars: 2101
     last_commit: '2022-07-09'
     license: MIT
     language: C++
@@ -145,8 +145,8 @@
   - fluid
   - particle
   _meta:
-    stars: 29448
-    last_commit: '2026-06-28'
+    stars: 30038
+    last_commit: '2026-10-10'
     license: Apache-2.0
     language: Python
 - name: IBDS
@@ -163,8 +163,8 @@
   github: KratosMultiphysics/Kratos
   description: Framework for building parallel multi-disciplinary simulation software.
   _meta:
-    stars: 1296
-    last_commit: '2026-06-26'
+    stars: 1373
+    last_commit: '2026-10-10'
     language: C++
   _subsection: Soft, Fluid & Multiphysics
 - name: MBDyn
@@ -183,7 +183,7 @@
   - C++
   _meta:
     stars: 53
-    last_commit: '2026-06-20'
+    last_commit: '2026-10-10'
     license: LGPL-2.1
     language: C++
 - name: MBSlib
@@ -224,8 +224,8 @@
   features:
   - id
   _meta:
-    stars: 14016
-    last_commit: '2026-06-29'
+    stars: 15587
+    last_commit: '2026-10-10'
     license: Apache-2.0
     language: C++
 - name: Newton
@@ -245,8 +245,8 @@
   - urdf
   - mjcf
   _meta:
-    stars: 5129
-    last_commit: '2026-06-29'
+    stars: 5743
+    last_commit: '2026-10-09'
     license: Apache-2.0
     language: Python
 - name: Newton Dynamics
@@ -257,7 +257,7 @@
   languages:
   - C++
   _meta:
-    stars: 1021
+    stars: 1024
     last_commit: '2026-01-17'
     language: HTML
 - name: nphysics
@@ -268,7 +268,7 @@
   languages:
   - Rust
   _meta:
-    stars: 1648
+    stars: 1649
     last_commit: '2021-07-27'
     license: Apache-2.0
     language: Rust
@@ -289,8 +289,8 @@
   languages:
   - C++
   _meta:
-    stars: 4627
-    last_commit: '2026-06-24'
+    stars: 4784
+    last_commit: '2026-10-09'
     license: BSD-3-Clause
     language: C++
 - name: PositionBasedDynamics
@@ -300,8 +300,8 @@
   languages:
   - C++
   _meta:
-    stars: 2235
-    last_commit: '2025-09-04'
+    stars: 2287
+    last_commit: '2026-09-01'
     license: MIT
     language: C++
   _subsection: Soft, Fluid & Multiphysics
@@ -310,8 +310,8 @@
   github: camUrban/PteraSoftware
   description: Ptera Software is a fast, easy-to-use, and open-source software package for analyzing flapping-wing flight.
   _meta:
-    stars: 250
-    last_commit: '2026-06-25'
+    stars: 269
+    last_commit: '2026-10-10'
     license: MIT
     language: Python
   _subsection: Soft, Fluid & Multiphysics
@@ -324,7 +324,7 @@
   models:
   - rigid
   _meta:
-    stars: 997
+    stars: 994
     last_commit: '2021-05-09'
     archived: true
     license: Zlib
@@ -348,7 +348,7 @@
   languages:
   - C++
   _meta:
-    stars: 1758
+    stars: 1775
     last_commit: '2025-01-09'
     license: Zlib
     language: C++
@@ -361,8 +361,8 @@
   - C++
   - Python
   _meta:
-    stars: 187
-    last_commit: '2026-03-11'
+    stars: 186
+    last_commit: '2026-10-07'
     license: Apache-2.0
     language: C
 - name: Simbody
@@ -379,8 +379,8 @@
   - id
   - urdf
   _meta:
-    stars: 2527
-    last_commit: '2026-06-01'
+    stars: 2556
+    last_commit: '2026-09-28'
     license: Apache-2.0
     language: C++
 - name: SOFA
@@ -395,8 +395,8 @@
   - soft
   - medical
   _meta:
-    stars: 1224
-    last_commit: '2026-06-29'
+    stars: 1272
+    last_commit: '2026-10-09'
     license: LGPL-2.1
     language: C++
   _subsection: Soft, Fluid & Multiphysics
@@ -410,7 +410,7 @@
   models:
   - rigid
   _meta:
-    stars: 1366
+    stars: 1375
     last_commit: '2023-04-26'
     license: Apache-2.0
     language: C++
