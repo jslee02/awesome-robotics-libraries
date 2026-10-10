@@ -234,7 +234,7 @@ jobs:
           ENTRY_NAME: ${{ steps.parse.outputs.name }}
           YAML_FILE: ${{ steps.parse.outputs.yaml_file }}
         run: |
-          BRANCH="add-entry/${{ steps.parse.outputs.yaml_file }}-$(echo '${{ steps.parse.outputs.name }}' | tr '[:upper:] ' '[:lower:]-' | tr -cd 'a-z0-9-')"
+          BRANCH="add-entry/${YAML_FILE}-$(printf '%s' "$ENTRY_NAME" | tr '[:upper:] ' '[:lower:]-' | tr -cd 'a-z0-9-')"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
