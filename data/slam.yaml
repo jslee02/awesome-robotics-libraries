@@ -6,6 +6,15 @@
     last_commit: '2021-07-17'
     license: LGPL-2.1
     language: C
+- name: Bonxai
+  github: facontidavide/Bonxai
+  description: Brutally fast, sparse, 3D Voxel Grid (formerly Treexy).
+  _meta:
+    stars: 861
+    last_commit: '2026-03-11'
+    license: MPL-2.0
+    language: C++
+  _subsection: Mapping
 - name: Cartographer
   github: cartographer-project/cartographer
   description: Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations.
@@ -39,6 +48,13 @@
     last_commit: '2025-11-26'
     license: BSD-3-Clause
     language: C
+- name: fuse
+  github: locusrobotics/fuse
+  description: General architecture for performing sensor fusion live on a robot.
+  _meta:
+    stars: 868
+    last_commit: '2026-06-18'
+    language: C++
 - name: GTSAM
   github: borglab/gtsam
   description: Smoothing and mapping (SAM) in robotics and vision.
@@ -53,6 +69,16 @@
     stars: 954
     last_commit: '2022-08-26'
     language: C++
+- name: libpointmatcher
+  url: http://libpointmatcher.readthedocs.io/en/latest/
+  github: norlab-ulaval/libpointmatcher
+  description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
+  _meta:
+    stars: 1819
+    last_commit: '2025-07-16'
+    license: BSD-3-Clause
+    language: C++
+  _subsection: Mapping
 - name: LSD-SLAM
   url: https://vision.in.tum.de/research/vslam/lsdslam
   github: tum-vision/lsd_slam
@@ -62,6 +88,34 @@
     last_commit: '2014-12-11'
     license: GPL-3.0
     language: C++
+- name: mrpt
+  url: https://www.mrpt.org/
+  description: Mobile Robot Programming Toolkit for SLAM, navigation, and computer vision.
+  github: MRPT/mrpt
+  license: BSD-3-Clause
+  languages:
+  - C++
+  - Python
+  - Matlab
+  models:
+  - vehicle
+  features:
+  - slam
+  - cv
+  _meta:
+    stars: 2139
+    last_commit: '2026-06-24'
+    license: BSD-3-Clause
+    language: C++
+- name: OctoMap
+  url: http://octomap.github.io/
+  github: OctoMap/octomap
+  description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
+  _meta:
+    stars: 2319
+    last_commit: '2026-02-08'
+    language: C++
+  _subsection: Mapping
 - name: ORB-SLAM2
   github: raulmur/ORB_SLAM2
   description: Real-time SLAM library for Monocular, Stereo and RGB-D cameras.
@@ -85,11 +139,22 @@
     stars: 75
     last_commit: '2016-02-13'
     language: C++
-- name: Awesome SLAM Datasets
-  url: https://github.com/youngguncho/awesome-slam-datasets
-  github: youngguncho/awesome-slam-datasets
-  description: Curated list of SLAM-related datasets.
-  _subsection: SLAM Dataset
+- name: voxblox
+  github: ethz-asl/voxblox
+  description: Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields.
   _meta:
-    stars: 1933
-    last_commit: '2024-12-13'
+    stars: 1644
+    last_commit: '2021-11-22'
+    license: BSD-3-Clause
+    language: C++
+  _subsection: Mapping
+- name: wavemap
+  url: https://projects.asl.ethz.ch/wavemap/
+  github: ethz-asl/wavemap
+  description: Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping.
+  _meta:
+    stars: 562
+    last_commit: '2024-12-10'
+    license: BSD-3-Clause
+    language: C++
+  _subsection: Mapping

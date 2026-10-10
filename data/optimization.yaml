@@ -38,14 +38,6 @@
     stars: 689
     last_commit: '2026-06-04'
     language: C
-- name: HYPRE
-  url: https://hypre.readthedocs.io/
-  github: hypre-space/hypre
-  description: Parallel solvers for sparse linear systems featuring multigrid methods.
-  _meta:
-    stars: 843
-    last_commit: '2026-06-26'
-    language: C
 - name: ifopt
   github: ethz-adrl/ifopt
   description: An Eigen-based, light-weight C++ Interface to Nonlinear Programming Solvers (Ipopt, Snopt).
@@ -95,6 +87,14 @@
     stars: 2231
     last_commit: '2026-06-06'
     language: C
+- name: Optimization Engine (OpEn)
+  url: https://alphaville.github.io/optimization-engine/
+  github: alphaville/optimization-engine
+  description: Embedded nonconvex optimization with code generation for real-time control, with ROS support.
+  _meta:
+    stars: 638
+    last_commit: '2026-03-31'
+    language: Rust
 - name: OptimLib
   url: https://github.com/kthohr/optim
   github: kthohr/optim
@@ -133,7 +133,7 @@
     language: C++
 - name: pymoo
   url: https://www.pymoo.org/
-  github: msu-coinlab/pymoo
+  github: anyoptimization/pymoo
   description: Multi-objective Optimization in Python.
   _meta:
     stars: 26
@@ -165,6 +165,13 @@
     last_commit: '2026-06-28'
     license: MIT
     language: C
+- name: sferes2
+  github: sferes2/sferes2
+  description: Evolutionary computation.
+  _meta:
+    stars: 169
+    last_commit: '2021-03-26'
+    language: C++
 - name: SHOT
   github: coin-or/SHOT
   description: A solver for mixed-integer nonlinear optimization problems.
@@ -172,11 +179,4 @@
     stars: 131
     last_commit: '2026-06-12'
     license: EPL-2.0
-    language: C++
-- name: sferes2
-  github: sferes2/sferes2
-  description: Evolutionary computation.
-  _meta:
-    stars: 169
-    last_commit: '2021-03-26'
     language: C++

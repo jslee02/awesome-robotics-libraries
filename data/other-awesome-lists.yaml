@@ -77,26 +77,31 @@
     stars: 3847
     last_commit: '2023-04-30'
     license: CC0-1.0
-- name: Awesome Robotics
-  url: https://github.com/Kiloreux/awesome-robotics
-  github: Kiloreux/awesome-robotics
-  description: Curated list of robotics resources (Kiloreux).
-  _meta:
-    stars: 6706
-    last_commit: '2024-09-22'
-- name: Awesome Robotics
+- name: Awesome Robotics (ahundt)
   url: https://github.com/ahundt/awesome-robotics
   github: ahundt/awesome-robotics
   description: Curated list of robotics links and software libraries (ahundt).
   _meta:
     stars: 1441
     last_commit: '2023-03-19'
+- name: Awesome Robotics (Kiloreux)
+  url: https://github.com/Kiloreux/awesome-robotics
+  github: Kiloreux/awesome-robotics
+  description: Curated list of robotics resources (Kiloreux).
+  _meta:
+    stars: 6706
+    last_commit: '2024-09-22'
+- name: Awesome SLAM Datasets
+  url: https://github.com/youngguncho/awesome-slam-datasets
+  github: youngguncho/awesome-slam-datasets
+  description: Curated list of SLAM-related datasets.
+  _meta:
+    stars: 1933
+    last_commit: '2024-12-13'
 - name: Awesome VLA Study
   url: https://github.com/MilkClouds/awesome-vla-study
   github: MilkClouds/awesome-vla-study
-  description: A curated VLA (Vision-Language-Action) study guide that organizes ~30 key papers into a 6-phase, 14-week reading
-    curriculum — covering diffusion/flow matching foundations, robot foundation model architectures, data scaling, efficient
-    inference, RL fine-tuning, and world models.
+  description: Study guide to vision-language-action (VLA) papers for robot learning.
   _meta:
     stars: 303
     last_commit: '2026-03-21'

@@ -1,3 +1,11 @@
+- name: Cover-Tree
+  url: http://hunch.net/~jl/projects/cover_tree/cover_tree.html
+  github: DNCrane/Cover-Tree
+  description: Cover tree data structure for quick k-nearest-neighbor search.
+  _meta:
+    stars: 64
+    last_commit: '2017-12-14'
+    language: C++
 - name: Fastor
   github: romeric/Fastor
   description: Light-weight high performance tensor algebra framework in C++11/14/17.
@@ -5,6 +13,36 @@
     stars: 839
     last_commit: '2025-07-08'
     license: MIT
+    language: C++
+- name: FLANN
+  url: http://www.cs.ubc.ca/research/flann/
+  github: flann-lib/flann
+  description: Fast Library for Approximate Nearest Neighbors.
+  _meta:
+    stars: 2369
+    last_commit: '2022-10-27'
+    language: C++
+- name: HYPRE
+  url: https://hypre.readthedocs.io/
+  github: hypre-space/hypre
+  description: Parallel solvers for sparse linear systems featuring multigrid methods.
+  _meta:
+    stars: 843
+    last_commit: '2026-06-26'
+    language: C
+- name: kindr
+  description: Kinematics and dynamics library for rigid body transformations.
+  github: ANYbotics/kindr
+  license: BSD-3-Clause
+  languages:
+  - C++
+  - Matlab
+  models:
+  - rigid
+  _meta:
+    stars: 613
+    last_commit: '2025-02-15'
+    license: BSD-3-Clause
     language: C++
 - name: linalg.h
   github: sgorsten/linalg
@@ -20,6 +58,22 @@
   _meta:
     stars: 1784
     last_commit: '2025-11-01'
+    license: MIT
+    language: C++
+- name: nanoflann
+  url: http://www.cs.ubc.ca/research/flann/
+  github: jlblancoc/nanoflann
+  description: Nearest Neighbor search with KD-trees.
+  _meta:
+    stars: 2657
+    last_commit: '2026-06-27'
+    language: C++
+- name: Octree
+  github: jbehley/octree
+  description: Fast radius neighbor search with an Octree.
+  _meta:
+    stars: 377
+    last_commit: '2019-12-17'
     license: MIT
     language: C++
 - name: Sophus
@@ -38,7 +92,7 @@
     license: BSD-2-Clause
     language: C++
 - name: spatialmath-python
-  github: bdaiinstitute/spatialmath-python
+  github: rai-opensource/spatialmath-python
   description: Python classes for pose and orientation in 2D/3D with spatial operations toolbox.
   _meta:
     stars: 633

@@ -1,0 +1,233 @@
+- name: ARTE
+  url: http://arvc.umh.es/arte/index_en.html
+  github: 4rtur1t0/ARTE
+  description: Matlab toolbox focussed on robotic manipulators.
+  _meta:
+    stars: 103
+    last_commit: '2026-04-29'
+    language: MATLAB
+- name: idyntree
+  description: Library for estimation and whole-body dynamics of floating-base robots.
+  github: gbionics/idyntree
+  license: LGPL-2.1
+  languages:
+  - C++
+  - Python
+  - Matlab
+  - Lua
+  models:
+  - rigid
+  features:
+  - id
+  _meta:
+    stars: 231
+    last_commit: '2026-06-27'
+    license: BSD-3-Clause
+    language: C++
+- name: IKBT
+  github: uw-biorobotics/IKBT
+  description: A python package to solve robot arm inverse kinematics in symbolic form.
+  _meta:
+    stars: 217
+    last_commit: '2026-01-30'
+    language: Python
+  _subsection: Inverse Kinematics
+- name: KDL
+  url: https://www.orocos.org/kdl.html
+  description: Orocos Kinematics and Dynamics Library for kinematic chains.
+  github: orocos/orocos_kinematics_dynamics
+  license: LGPL-2.1
+  languages:
+  - C++
+  models:
+  - rigid
+  features:
+  - ik
+  _meta:
+    stars: 884
+    last_commit: '2026-06-23'
+    language: C++
+- name: Kinpy
+  github: neka-nat/kinpy
+  description: A simple pure python package to solve inverse kinematics.
+  _meta:
+    stars: 181
+    last_commit: '2026-05-21'
+    license: MIT
+    language: Python
+  _subsection: Inverse Kinematics
+- name: Lively
+  github: Wisc-HCI/lively
+  description: A highly configurable toolkit for commanding robots in mixed modalities.
+  _meta:
+    stars: 8
+    last_commit: '2023-06-06'
+    license: MIT
+    language: Rust
+  _subsection: Inverse Kinematics
+- name: metapod
+  description: Template-based robot dynamics library using spatial algebra.
+  github: laas/metapod
+  license: LGPL-3.0
+  languages:
+  - C++
+  _meta:
+    stars: 14
+    last_commit: '2018-09-10'
+    archived: true
+    license: LGPL-3.0
+    language: C++
+- name: pinocchio
+  url: https://stack-of-tasks.github.io/pinocchio/
+  description: Fast and flexible algorithms for rigid-body dynamics with analytical derivatives.
+  github: stack-of-tasks/pinocchio
+  license: BSD-2-Clause
+  languages:
+  - C++
+  - Python
+  models:
+  - rigid
+  features:
+  - ik
+  - id
+  - urdf
+  - analytical derivatives
+  - code generation
+  _meta:
+    stars: 3518
+    last_commit: '2026-06-23'
+    license: BSD-2-Clause
+    language: C++
+- name: PyDy
+  url: https://www.pydy.org/
+  description: Multibody dynamics analysis with symbolic Python using SymPy.
+  github: pydy/pydy
+  license: BSD-3-Clause
+  languages:
+  - Python
+  _meta:
+    stars: 413
+    last_commit: '2026-06-15'
+    license: BSD-3-Clause
+    language: Python
+- name: RBDL
+  url: https://rbdl.github.io/
+  description: Rigid Body Dynamics Library based on Featherstone algorithms.
+  github: rbdl/rbdl
+  license: Zlib
+  languages:
+  - C++
+  - Python
+  models:
+  - rigid
+  features:
+  - ik
+  - id
+  - urdf
+  _meta:
+    stars: 700
+    last_commit: '2025-06-09'
+    language: C++
+- name: RBDyn
+  description: Rigid body dynamics algorithms using spatial algebra with Eigen.
+  github: jrl-umi3218/RBDyn
+  license: LGPL-3.0
+  languages:
+  - C++
+  - Python
+  models:
+  - rigid
+  _meta:
+    stars: 222
+    last_commit: '2026-06-22'
+    license: BSD-2-Clause
+    language: C++
+- name: RelaxedIK
+  github: uwgraphics/relaxed_ik
+  description: Real-time Synthesis of Accurate and Feasible Robot Arm Motion.
+  _meta:
+    stars: 249
+    last_commit: '2023-04-13'
+    license: MIT
+    language: Python
+  _subsection: Inverse Kinematics
+- name: RigidBodyDynamics.jl
+  description: Julia library for rigid body dynamics algorithms.
+  github: JuliaRobotics/RigidBodyDynamics.jl
+  license: MIT "Expat"
+  languages:
+  - Julia
+  models:
+  - rigid
+  _meta:
+    stars: 309
+    last_commit: '2024-11-08'
+    language: Julia
+- name: Robopy
+  url: https://adityadua24.github.io/robopy/
+  description: Python robotics toolbox inspired by Peter Corke's Robotics Toolbox.
+  github: adityadua24/robopy
+  license: MIT
+  languages:
+  - Python 3
+  _meta:
+    stars: 229
+    last_commit: '2021-02-10'
+    license: MIT
+    language: Python
+- name: Robotics Library
+  url: https://www.roboticslibrary.org/
+  description: Self-contained C++ library for robot kinematics, planning, and control.
+  github: roboticslibrary/rl
+  license: GPL-3.0 or BSD-2-Clause
+  languages:
+  - C++
+  _meta:
+    stars: 1187
+    last_commit: '2025-04-15'
+    license: BSD-2-Clause
+    language: C++
+- name: RobWork
+  url: https://robwork.dk/
+  description: Framework for simulation and control of robot systems.
+  gitlab: sdurobotics/RobWork
+  license: Apache-2.0
+  languages:
+  - C++
+- name: ssik
+  github: personalrobotics/ssik
+  description: Analytical inverse kinematics for 6R and 7R revolute robot arms, returning every IK branch.
+  _meta:
+    stars: 113
+    last_commit: '2026-06-24'
+    license: BSD-3-Clause
+    language: Python
+  _subsection: Inverse Kinematics
+- name: trep
+  url: http://murpheylab.github.io/trep/
+  description: Simulation and optimal control using variational integrators.
+  github: MurpheyLab/trep
+  license: GPL-3.0
+  languages:
+  - C
+  - Python
+  models:
+  - rigid
+  features:
+  - dm
+  - trj-opt
+  _meta:
+    stars: 20
+    last_commit: '2023-09-03'
+    license: GPL-3.0
+    language: C
+- name: Trip
+  url: https://trip-kinematics.readthedocs.io/en/main/index.html
+  github: TriPed-Robot/trip_kinematics
+  description: A python package that solves inverse kinematics of parallel-, serial- or hybrid-robots.
+  _meta:
+    stars: 43
+    last_commit: '2022-05-06'
+    license: MIT
+    language: Python
+  _subsection: Inverse Kinematics

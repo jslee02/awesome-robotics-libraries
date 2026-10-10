@@ -1,12 +1,3 @@
-- name: ViSP
-  url: http://visp.inria.fr/
-  github: lagadic/visp
-  description: Visual Servoing Platform.
-  _meta:
-    stars: 893
-    last_commit: '2026-06-29'
-    license: GPL-2.0
-    language: C++
 - name: BundleTrack
   url: https://github.com/wenbowen123/BundleTrack
   github: wenbowen123/BundleTrack
@@ -16,6 +7,14 @@
     last_commit: '2026-04-13'
     license: Apache-2.0
     language: C++
+- name: PCL
+  url: https://pointclouds.org/
+  github: PointCloudLibrary/pcl
+  description: 2D/3D image and point cloud processing.
+  _meta:
+    stars: 11036
+    last_commit: '2026-06-03'
+    language: C++
 - name: se(3)-TrackNet
   url: https://github.com/wenbowen123/iros20-6d-pose-tracking
   github: wenbowen123/iros20-6d-pose-tracking
@@ -24,3 +23,12 @@
     stars: 421
     last_commit: '2023-08-30'
     language: Python
+- name: ViSP
+  url: http://visp.inria.fr/
+  github: lagadic/visp
+  description: Visual Servoing Platform.
+  _meta:
+    stars: 893
+    last_commit: '2026-06-29'
+    license: GPL-2.0
+    language: C++

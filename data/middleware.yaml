@@ -1,27 +1,3 @@
-- name: AutoRally
-  url: http://autorally.github.io/
-  github: autorally/autorally
-  description: High-performance testbed for advanced perception and control research.
-  _meta:
-    stars: 786
-    last_commit: '2021-08-16'
-    language: C++
-- name: Linorobot
-  url: https://linorobot.org/
-  github: linorobot/linorobot
-  description: ROS compatible ground robots.
-  _meta:
-    stars: 1105
-    last_commit: '2022-07-11'
-    license: BSD-2-Clause
-    language: C++
-- name: onine
-  github: grassjelly/onine
-  description: Service Robot based on Linorobot and Braccio Arm.
-  _meta:
-    stars: 49
-    last_commit: '2018-09-19'
-    language: C++
 - name: Micro-ROS for Arduino
   url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
   github: kaiaai/micro_ros_arduino_kaiaai
@@ -47,9 +23,7 @@
 - name: ros2_medkit
   url: https://selfpatch.github.io/ros2_medkit/
   github: selfpatch/ros2_medkit
-  description: Structured fault management for ROS 2 — persistent fault lifecycle, REST/SSE API, root cause correlation, and
-    automatic rosbag capture on fault. Inspired by SOVD (Service-Oriented Vehicle Diagnostics), the ASAM standard that brings
-    HTTP/REST diagnostics to automotive and robotics.
+  description: Fault management and diagnostics gateway for ROS 2 with a REST API.
   _meta:
     stars: 233
     last_commit: '2026-06-23'

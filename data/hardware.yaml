@@ -1,0 +1,32 @@
+- name: AutoRally
+  url: http://autorally.github.io/
+  github: autorally/autorally
+  description: High-performance testbed for advanced perception and control research.
+  _meta:
+    stars: 786
+    last_commit: '2021-08-16'
+    language: C++
+- name: iCub
+  url: http://www.icub.org/
+  github: robotology/icub-main
+  description: Open-source cognitive humanoid robotic platform for embodied cognition research.
+  _meta:
+    stars: 119
+    last_commit: '2026-06-06'
+    language: C++
+- name: Linorobot
+  url: https://linorobot.org/
+  github: linorobot/linorobot
+  description: ROS compatible ground robots.
+  _meta:
+    stars: 1105
+    last_commit: '2022-07-11'
+    license: BSD-2-Clause
+    language: C++
+- name: onine
+  github: grassjelly/onine
+  description: Service Robot based on Linorobot and Braccio Arm.
+  _meta:
+    stars: 49
+    last_commit: '2018-09-19'
+    language: C++
