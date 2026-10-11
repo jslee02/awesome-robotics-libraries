@@ -1,0 +1,191 @@
+- name: AllenAct
+  url: https://allenact.org/
+  github: allenai/allenact
+  description: Python/PyTorch-based Research Framework for Embodied AI.
+  _meta:
+    stars: 384
+    last_commit: '2024-07-23'
+    language: Python
+- name: CleanRL
+  url: https://github.com/vwxyzjn/cleanrl
+  github: vwxyzjn/cleanrl
+  description: Single-file implementations of deep reinforcement learning algorithms.
+  _meta:
+    stars: 10530
+    last_commit: '2026-04-20'
+    language: Python
+- name: DLL
+  github: wichtounet/dll
+  description: Deep Learning Library (DLL) for C++.
+  _meta:
+    stars: 688
+    last_commit: '2025-05-27'
+    license: MIT
+    language: C++
+  _subsection: General Machine Learning
+- name: DyNet
+  url: https://dynet.readthedocs.io/en/latest/
+  github: clab/dynet
+  description: The Dynamic Neural Network Toolkit.
+  _meta:
+    stars: 3429
+    last_commit: '2023-11-08'
+    license: Apache-2.0
+    language: C++
+  _subsection: General Machine Learning
+- name: Fido
+  url: http://fidoproject.github.io/
+  github: FidoProject/Fido
+  description: Lightweight C++ machine learning library for embedded electronics and robotics.
+  _meta:
+    stars: 464
+    last_commit: '2017-11-19'
+    license: MIT
+    language: C++
+  _subsection: General Machine Learning
+- name: gym-dart
+  github: DartEnv/dart-env
+  description: OpenAI Gym environments using the DART physics engine.
+  _meta:
+    stars: 140
+    last_commit: '2020-02-25'
+    language: Python
+- name: gym-gazebo
+  github: erlerobot/gym-gazebo
+  description: OpenAI Gym environments for the Gazebo simulator.
+  _meta:
+    stars: 845
+    last_commit: '2019-03-16'
+    archived: true
+    license: GPL-3.0
+    language: Python
+- name: Gymnasium
+  url: https://gymnasium.farama.org/
+  github: Farama-Foundation/Gymnasium
+  description: Developing and comparing reinforcement learning algorithms.
+  _meta:
+    stars: 12650
+    last_commit: '2026-10-10'
+    license: MIT
+    language: Python
+- name: Humanoid-Gym
+  url: https://github.com/roboterax/humanoid-gym
+  github: roboterax/humanoid-gym
+  description: Reinforcement learning environment for humanoid robot locomotion.
+  _meta:
+    stars: 2102
+    last_commit: '2024-11-01'
+    language: Python
+- name: Isaac Lab
+  url: https://isaac-sim.github.io/IsaacLab
+  github: isaac-sim/IsaacLab
+  description: GPU-accelerated open-source framework for robot learning built on NVIDIA Isaac Sim.
+  license: BSD-3-Clause
+  _meta:
+    stars: 8312
+    last_commit: '2026-10-10'
+    license: BSD-3-Clause
+    language: Python
+- name: Ivy
+  url: https://lets-unify.ai/
+  github: unifyai/ivy
+  description: Unified Machine Learning Framework.
+  _meta:
+    stars: 14168
+    last_commit: '2026-10-07'
+    archived: true
+    language: Python
+  _subsection: General Machine Learning
+- name: Legged Gym
+  url: https://github.com/leggedrobotics/legged_gym
+  github: leggedrobotics/legged_gym
+  description: Isaac Gym environments for legged robot locomotion training.
+  _meta:
+    stars: 3141
+    last_commit: '2025-05-29'
+    language: Python
+- name: LeRobot
+  github: huggingface/lerobot
+  description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
+  _meta:
+    stars: 28064
+    last_commit: '2026-10-08'
+    license: Apache-2.0
+    language: Python
+- name: ManiSkill
+  url: https://github.com/haosulab/ManiSkill
+  github: mani-skill/ManiSkill
+  description: Robot simulation and manipulation learning package powered by SAPIEN.
+  _meta:
+    stars: 3388
+    last_commit: '2026-08-02'
+    license: Apache-2.0
+    language: Python
+- name: MiniDNN
+  github: yixuan/MiniDNN
+  description: A header-only C++ library for deep neural networks.
+  _meta:
+    stars: 434
+    last_commit: '2021-01-17'
+    language: C++
+  _subsection: General Machine Learning
+- name: mlpack
+  url: https://www.mlpack.org/
+  github: mlpack/mlpack
+  description: Scalable C++ machine learning library.
+  _meta:
+    stars: 5714
+    last_commit: '2026-10-06'
+    language: C++
+  _subsection: General Machine Learning
+- name: rl_games
+  url: https://github.com/Denys88/rl_games
+  github: Denys88/rl_games
+  description: High-performance RL library used in Isaac Gym environments.
+  _meta:
+    stars: 1395
+    last_commit: '2026-09-29'
+    license: MIT
+    language: Jupyter Notebook
+- name: RLLib
+  github: samindaa/RLLib
+  description: Temporal-difference learning algorithms in reinforcement learning.
+  _meta:
+    stars: 211
+    last_commit: '2016-08-15'
+    language: C++
+- name: robosuite
+  url: https://robosuite.ai/docs/
+  github: ARISE-Initiative/robosuite
+  description: A modular simulation framework and benchmark for robot learning.
+  _meta:
+    stars: 2650
+    last_commit: '2026-07-11'
+    language: Python
+- name: SKRL
+  url: https://github.com/Toni-SM/skrl
+  github: Toni-SM/skrl
+  description: Modular reinforcement learning library with support for multiple ML frameworks.
+  _meta:
+    stars: 1098
+    last_commit: '2026-10-01'
+    license: MIT
+    language: Python
+- name: Stable-Baselines3
+  url: https://github.com/DLR-RM/stable-baselines3
+  github: DLR-RM/stable-baselines3
+  description: Reliable implementations of reinforcement learning algorithms in PyTorch.
+  _meta:
+    stars: 13881
+    last_commit: '2026-09-09'
+    license: MIT
+    language: Python
+- name: tiny-dnn
+  url: http://tiny-dnn.readthedocs.io/en/latest/
+  github: tiny-dnn/tiny-dnn
+  description: Header only, dependency-free deep learning framework in C++14.
+  _meta:
+    stars: 6027
+    last_commit: '2018-10-23'
+    language: C++
+  _subsection: General Machine Learning

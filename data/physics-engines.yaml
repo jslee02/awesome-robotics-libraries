@@ -1,0 +1,416 @@
+- name: ARCSim
+  url: http://graphics.berkeley.edu/resources/ARCSim/index.html
+  description: Adaptive remeshing cloth and shell simulator for thin deformable objects.
+  languages:
+  - C++
+  models:
+  - soft
+  _subsection: Soft, Fluid & Multiphysics
+- name: Brax
+  url: https://github.com/google/brax
+  description: Massively parallel differentiable rigid body physics engine in JAX for robotics and RL.
+  github: google/brax
+  license: Apache-2.0
+  languages:
+  - Python
+  models:
+  - rigid
+  features:
+  - id
+  _meta:
+    stars: 3248
+    last_commit: '2026-10-07'
+    license: Apache-2.0
+    language: Jupyter Notebook
+- name: Bullet
+  url: https://pybullet.org/
+  description: Real-time physics simulation for games, visual effects, and robotics.
+  github: bulletphysics/bullet3
+  license: Zlib
+  languages:
+  - C++
+  - Python
+  models:
+  - rigid
+  - soft
+  features:
+  - ik
+  - id
+  - urdf
+  - sdf
+  _meta:
+    stars: 14771
+    last_commit: '2026-10-09'
+    language: C++
+- name: CHRONO::ENGINE
+  url: https://projectchrono.org/
+  description: Multi-physics simulation of rigid and flexible bodies, granular, and fluid systems.
+  github: projectchrono/chrono
+  license: BSD-3-Clause
+  languages:
+  - C++
+  - Python
+  models:
+  - rigid
+  - soft
+  - granular
+  - fluid
+  features:
+  - ik
+  - urdf
+  _meta:
+    stars: 3075
+    last_commit: '2026-10-09'
+    license: BSD-3-Clause
+    language: C++
+- name: DART
+  url: http://dartsim.github.io/
+  description: Dynamic Animation and Robotics Toolkit for multibody simulation and planning.
+  github: dartsim/dart
+  license: BSD-2-Clause
+  languages:
+  - C++
+  - Python
+  models:
+  - rigid
+  - soft
+  features:
+  - ik
+  - id
+  - plan
+  - urdf
+  - sdf
+  _meta:
+    stars: 1212
+    last_commit: '2026-10-10'
+    license: BSD-2-Clause
+    language: C++
+- name: Drake
+  url: https://drake.mit.edu/
+  description: Planning, control, and analysis toolbox for nonlinear dynamical systems.
+  github: RobotLocomotion/drake
+  license: BSD-3-Clause
+  languages:
+  - C++
+  - Matlab
+  models:
+  - rigid
+  - aero
+  - fluid
+  features:
+  - ik
+  - trj-opt
+  - plan
+  _meta:
+    stars: 4221
+    last_commit: '2026-10-09'
+    language: C++
+- name: Flex
+  url: https://developer.nvidia.com/flex
+  description: GPU-based particle simulation for rigid bodies, fluids, and deformables.
+  github: NVIDIAGameWorks/FleX
+  archived: true
+  languages:
+  - C++
+  models:
+  - rigid
+  - soft
+  - particle
+  - fluid
+  _meta:
+    stars: 814
+    last_commit: '2021-04-15'
+    language: C++
+  _subsection: Soft, Fluid & Multiphysics
+- name: Fluid Engine Dev - Jet
+  url: https://fluidenginedevelopment.org/
+  github: doyubkim/fluid-engine-dev
+  description: Fluid simulation engine for computer graphics applications.
+  _meta:
+    stars: 2101
+    last_commit: '2022-07-09'
+    license: MIT
+    language: C++
+  _subsection: Soft, Fluid & Multiphysics
+- name: Genesis
+  url: https://genesis-world.readthedocs.io
+  description: Generative and universal physics platform for robotics with GPU-accelerated parallel simulation.
+  github: Genesis-Embodied-AI/genesis-world
+  license: Apache-2.0
+  languages:
+  - Python
+  models:
+  - rigid
+  - soft
+  - fluid
+  - particle
+  _meta:
+    stars: 30038
+    last_commit: '2026-10-10'
+    license: Apache-2.0
+    language: Python
+- name: IBDS
+  url: http://www.interactive-graphics.de/index.php/downloads/12-ibds
+  description: Impulse-based dynamics simulation for rigid bodies and particle systems.
+  license: Zlib
+  languages:
+  - C++
+  models:
+  - rigid
+  - particle
+- name: Kratos
+  url: http://www.cimne.com/kratos/
+  github: KratosMultiphysics/Kratos
+  description: Framework for building parallel multi-disciplinary simulation software.
+  _meta:
+    stars: 1373
+    last_commit: '2026-10-10'
+    language: C++
+  _subsection: Soft, Fluid & Multiphysics
+- name: MBDyn
+  url: https://www.mbdyn.org/
+  description: General-purpose multibody dynamics analysis software.
+  code_url: https://www.mbdyn.org/?Software_Download
+  license: GPL-2.1
+  languages:
+  - C++
+- name: MBSim
+  url: https://www.mbsim-env.de/
+  description: Multi-body simulation environment for flexible and rigid systems.
+  github: mbsim-env/mbsim
+  license: (not specified)
+  languages:
+  - C++
+  _meta:
+    stars: 53
+    last_commit: '2026-10-10'
+    license: LGPL-2.1
+    language: C++
+- name: MBSlib
+  url: http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib
+  description: Lightweight multibody system dynamics library.
+  github: SIM-TU-Darmstadt/mbslib
+  license: LGPL-3.0
+  languages:
+  - C++
+  _meta:
+    stars: 11
+    last_commit: '2016-08-17'
+    license: LGPL-3.0
+    language: C++
+- name: Moby
+  url: http://physsim.sourceforge.net/index.html
+  description: Multi-body dynamics simulation for rigid bodies with contact.
+  github: PositronicsLab/Moby
+  license: GPL-2.0
+  languages:
+  - C++
+  models:
+  - rigid
+  features:
+  - id
+  _meta:
+    stars: 37
+    last_commit: '2021-11-26'
+    language: C++
+- name: MuJoCo
+  url: https://mujoco.org/
+  description: Multi-joint dynamics with contact for physics-based simulation and control.
+  github: google-deepmind/mujoco
+  license: Apache-2.0
+  languages:
+  - C++
+  - Python
+  features:
+  - id
+  _meta:
+    stars: 15587
+    last_commit: '2026-10-10'
+    license: Apache-2.0
+    language: C++
+- name: Newton
+  url: https://newton-physics.github.io/newton/
+  description: GPU-accelerated differentiable physics engine built on NVIDIA Warp for robotics simulation.
+  github: newton-physics/newton
+  license: Apache-2.0
+  languages:
+  - Python
+  models:
+  - rigid
+  - soft
+  - fluid
+  features:
+  - ik
+  - id
+  - urdf
+  - mjcf
+  _meta:
+    stars: 5743
+    last_commit: '2026-10-09'
+    license: Apache-2.0
+    language: Python
+- name: Newton Dynamics
+  url: https://newtondynamics.com/
+  description: Real-time physics engine for rigid body simulation.
+  github: MADEAPPS/newton-dynamics
+  license: Zlib
+  languages:
+  - C++
+  _meta:
+    stars: 1024
+    last_commit: '2026-01-17'
+    language: HTML
+- name: nphysics
+  url: https://nphysics.org/
+  description: 2D and 3D rigid body physics engine written in Rust.
+  github: dimforge/nphysics
+  license: BSD-3-Clause
+  languages:
+  - Rust
+  _meta:
+    stars: 1649
+    last_commit: '2021-07-27'
+    license: Apache-2.0
+    language: Rust
+- name: ODE
+  url: https://ode.org/
+  description: Open Dynamics Engine for simulating rigid body dynamics.
+  bitbucket: odedevs/ode
+  license: LGPL-2.1 or BSD-3-Clause
+  languages:
+  - C++
+  models:
+  - rigid
+- name: PhysX
+  url: https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html
+  description: NVIDIA physics engine for real-time rigid body and vehicle simulation.
+  github: NVIDIA-Omniverse/PhysX
+  license: unknown
+  languages:
+  - C++
+  _meta:
+    stars: 4784
+    last_commit: '2026-10-09'
+    license: BSD-3-Clause
+    language: C++
+- name: PositionBasedDynamics
+  description: Position-based methods for simulating deformable objects and fluids.
+  github: InteractiveComputerGraphics/PositionBasedDynamics
+  license: MIT
+  languages:
+  - C++
+  _meta:
+    stars: 2287
+    last_commit: '2026-09-01'
+    license: MIT
+    language: C++
+  _subsection: Soft, Fluid & Multiphysics
+- name: Ptera Software
+  url: https://docs.pterasoftware.com/
+  github: camUrban/PteraSoftware
+  description: Ptera Software is a fast, easy-to-use, and open-source software package for analyzing flapping-wing flight.
+  _meta:
+    stars: 269
+    last_commit: '2026-10-10'
+    license: MIT
+    language: Python
+  _subsection: Soft, Fluid & Multiphysics
+- name: qu3e
+  description: Lightweight 3D physics engine for rigid body dynamics.
+  github: RandyGaul/qu3e
+  license: Zlib
+  languages:
+  - C++
+  models:
+  - rigid
+  _meta:
+    stars: 994
+    last_commit: '2021-05-09'
+    archived: true
+    license: Zlib
+    language: C
+- name: RaiSim
+  url: https://slides.com/jeminhwangbo/raisim-manual
+  description: Cross-platform physics engine for robotics and reinforcement learning.
+  github: leggedrobotics/raisimLib
+  license: custom
+  languages:
+  - C++
+  _meta:
+    stars: 328
+    last_commit: '2020-11-26'
+    archived: true
+- name: ReactPhysics3d
+  url: https://www.reactphysics3d.com/
+  description: Open-source 3D physics engine for rigid body simulation and collision detection.
+  github: DanielChappuis/reactphysics3d
+  license: Zlib
+  languages:
+  - C++
+  _meta:
+    stars: 1775
+    last_commit: '2025-01-09'
+    license: Zlib
+    language: C++
+- name: siconos
+  url: https://nonsmooth.gricad-pages.univ-grenoble-alpes.fr/siconos/
+  description: Nonsmooth dynamical systems modeling and simulation platform.
+  github: siconos/siconos
+  license: Apache-2.0
+  languages:
+  - C++
+  - Python
+  _meta:
+    stars: 186
+    last_commit: '2026-10-07'
+    license: Apache-2.0
+    language: C
+- name: Simbody
+  url: https://simtk.org/home/simbody/
+  description: Multibody dynamics library for biomechanical and mechanical systems.
+  github: simbody/simbody
+  license: Apache-2.0
+  languages:
+  - C++
+  models:
+  - rigid
+  - molecules
+  features:
+  - id
+  - urdf
+  _meta:
+    stars: 2556
+    last_commit: '2026-09-28'
+    license: Apache-2.0
+    language: C++
+- name: SOFA
+  url: https://www.sofa-framework.org/
+  description: Simulation Open Framework Architecture for medical and physics simulation.
+  github: sofa-framework/sofa
+  license: LGPL-2.1
+  languages:
+  - C++
+  models:
+  - rigid
+  - soft
+  - medical
+  _meta:
+    stars: 1272
+    last_commit: '2026-10-09'
+    license: LGPL-2.1
+    language: C++
+  _subsection: Soft, Fluid & Multiphysics
+- name: Tiny Differentiable Simulator
+  description: Header-only differentiable physics engine for robotics.
+  github: erwincoumans/tiny-differentiable-simulator
+  license: Apache-2.0
+  languages:
+  - C++
+  - Python
+  models:
+  - rigid
+  _meta:
+    stars: 1375
+    last_commit: '2023-04-26'
+    license: Apache-2.0
+    language: C++

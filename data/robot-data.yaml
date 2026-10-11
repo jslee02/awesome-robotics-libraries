@@ -1,0 +1,29 @@
+- name: Any4LeRobot
+  github: Tavish9/any4lerobot
+  description: A collection of utilities and tools for LeRobot.
+  _meta:
+    stars: 1169
+    last_commit: '2026-10-01'
+    license: MIT
+    language: Python
+- name: Foxglove Studio
+  url: https://foxglove.dev
+  description: A fully integrated visualization and debugging desktop app for your robotics data.
+- name: LeRobot Episode Scoring Toolkit
+  url: https://github.com/RoboticsData/score_lerobot_episodes
+  github: RoboticsData/score_lerobot_episodes
+  description: One-click tool to score, filter, and export higher-quality LeRobot datasets.
+  _meta:
+    stars: 77
+    last_commit: '2026-03-13'
+    license: Apache-2.0
+    language: Python
+- name: Robot Gui
+  url: http://robot.glumb.de/
+  github: glumb/robot-gui
+  description: A three.js based 3D robot interface.
+  _meta:
+    stars: 391
+    last_commit: '2020-01-13'
+    license: MIT
+    language: JavaScript

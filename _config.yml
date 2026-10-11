@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
 title: Awesome Robotics Libraries
 description: A curated list of robotics simulators and libraries.
+kramdown:
+  parse_block_html: true

@@ -1,0 +1,72 @@
+- name: Bioptim
+  github: pyomeca/bioptim
+  description: Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics.
+  _meta:
+    stars: 120
+    last_commit: '2026-09-23'
+    license: MIT
+    language: Python
+- name: Control Toolbox
+  url: https://ethz-adrl.github.io/ct/
+  github: ethz-adrl/control-toolbox
+  description: Open-Source C++ Library for Robotics, Optimal and Model Predictive Control.
+  _meta:
+    stars: 1713
+    last_commit: '2021-07-05'
+    license: BSD-2-Clause
+    language: C++
+- name: Crocoddyl
+  github: loco-3d/crocoddyl
+  description: Optimal control library for robot control under contact sequence.
+  _meta:
+    stars: 1319
+    last_commit: '2026-10-06'
+    license: BSD-3-Clause
+    language: C++
+- name: FROST
+  url: https://ayonga.github.io/frost-dev/index.html
+  description: Fast Robot Optimization and Simulation Toolkit for hybrid dynamical systems in MATLAB.
+  github: ayonga/frost-dev
+  license: BSD-3-Clause
+  languages:
+  - MATLAB
+  models:
+  - rigid
+  _meta:
+    stars: 170
+    last_commit: '2021-12-30'
+    language: MATLAB
+- name: OCS2
+  github: leggedrobotics/ocs2
+  description: Efficient continuous and discrete time optimal control implementation.
+  _meta:
+    stars: 1526
+    last_commit: '2025-12-16'
+    license: BSD-3-Clause
+    language: C++
+- name: towr
+  url: http://wiki.ros.org/towr
+  github: ethz-adrl/towr
+  description: A light-weight, Eigen-based C++ library for trajectory optimization for legged robots.
+  _meta:
+    stars: 1085
+    last_commit: '2021-03-29'
+    license: BSD-3-Clause
+    language: C++
+- name: TrajectoryOptimization
+  github: RoboticExplorationLab/TrajectoryOptimization.jl
+  description: A fast trajectory optimization library written in Julia.
+  _meta:
+    stars: 400
+    last_commit: '2025-03-04'
+    license: MIT
+    language: Julia
+- name: Ungar
+  url: https://github.com/fdevinc/ungar
+  github: fdevinc/ungar
+  description: Expressive and efficient implementation of optimal control problems using template metaprogramming.
+  _meta:
+    stars: 108
+    last_commit: '2024-07-16'
+    license: Apache-2.0
+    language: C++

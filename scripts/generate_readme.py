@@ -10,415 +10,311 @@ from pathlib import Path
 
 import yaml
 
-# ── Section registry ────────────────────────────────────────────────────────
-# (yaml_key, display_name, heading_level, render_mode, subsection_heading_level)
-# render_mode: "bullet", "other_awesome"
-# subsection_heading_level: 6 means ######, 4 means ####, None means no subsections
+# ── Category registry ───────────────────────────────────────────────────────
+# (yaml_key, title, scope). The scope line is the category definition shown in
+# the README and used by submitters and triage; keep it to one sentence.
+# Classify by an entry's main function, never by robot domain.
 
 SECTIONS = [
-    # -- "Libraries" divider inserted before the first level-3 section --
-    ("dynamics-simulation", "Dynamics Simulation", 3, "bullet", None),
-    ("inverse-kinematics", "Inverse Kinematics", 3, "bullet", None),
-    ("machine-learning", "Machine Learning", 3, "bullet", None),
-    ("motion-planning", "Motion Planning and Control", 3, "bullet", 6),
-    ("optimization", "Optimization", 3, "bullet", None),
-    ("robot-modeling", "Robot Modeling", 3, "bullet", 6),
-    ("robot-platform", "Robot Platform", 3, "bullet", None),
     (
-        "reinforcement-learning",
-        "Reinforcement Learning for Robotics",
-        3,
-        "bullet",
-        None,
+        "middleware",
+        "Middleware & Frameworks",
+        "Communication middleware, robot software frameworks, runtime services such as "
+        "launch and diagnostics, and agent orchestration for robots.",
     ),
-    ("slam", "SLAM", 3, "bullet", 4),
-    ("vision", "Vision", 3, "bullet", None),
-    ("fluid", "Fluid", 3, "bullet", None),
-    ("grasping", "Grasping", 3, "bullet", None),
-    ("humanoid-robotics", "Humanoid Robotics", 3, "bullet", None),
-    ("multiphysics", "Multiphysics", 3, "bullet", None),
-    ("math", "Math", 3, "bullet", None),
-    ("etc", "ETC", 3, "bullet", None),
-    ("simulators", "Simulators", 2, "bullet", 6),
-    ("other-awesome-lists", "Other Awesome Lists", 2, "other_awesome", None),
+    (
+        "hardware",
+        "Robot Hardware & Drivers",
+        "Open robot platforms and hardware designs, and drivers or firmware for sensors and actuators.",
+    ),
+    (
+        "robot-models",
+        "Robot Description & Models",
+        "Robot description formats (URDF, SDF, MJCF, USD), their parsers and exporters, "
+        "and robot model collections.",
+    ),
+    (
+        "kinematics-dynamics",
+        "Kinematics & Dynamics",
+        "Forward and inverse kinematics and rigid-body dynamics algorithms, without contact "
+        "time-stepping.",
+    ),
+    (
+        "physics-engines",
+        "Physics Engines",
+        "Embeddable engines that time-step rigid, soft, fluid, or particle dynamics with "
+        "contact. See also [Comparisons](COMPARISONS.md).",
+    ),
+    (
+        "simulators",
+        "Simulators",
+        "Simulation applications with worlds, sensors, rendering, and robot middleware bridges.",
+    ),
+    (
+        "motion-planning",
+        "Motion Planning & Navigation",
+        "Path planning, trajectory generation and time-parameterization, task and behavior "
+        "planning, and navigation stacks.",
+    ),
+    (
+        "control",
+        "Control",
+        "Model-based control: MPC, trajectory optimization, whole-body and task-space control.",
+    ),
+    (
+        "optimization",
+        "Optimization",
+        "General-purpose numerical solvers (LP, QP, NLP, least squares, black-box) and "
+        "modeling layers.",
+    ),
+    (
+        "math",
+        "Math & Geometry",
+        "Linear algebra, Lie groups, spatial transforms, and spatial data structures such as "
+        "nearest-neighbor search.",
+    ),
+    (
+        "slam",
+        "SLAM & State Estimation",
+        "SLAM, odometry, factor graphs, filtering and sensor fusion, calibration, and mapping.",
+    ),
+    (
+        "perception",
+        "Perception",
+        "Image and point-cloud processing, detection, pose estimation and tracking, and visual "
+        "servoing.",
+    ),
+    (
+        "grasping",
+        "Grasping & Manipulation",
+        "Grasp synthesis, detection, and planning, and dexterous manipulation.",
+    ),
+    (
+        "robot-learning",
+        "Robot Learning",
+        "Robot foundation models (VLA), imitation and reinforcement learning libraries, "
+        "learning environments, and benchmarks.",
+    ),
+    (
+        "robot-data",
+        "Robot Data & Visualization",
+        "Logging, storing, converting, and visualizing robot data, dataset tools, and "
+        "teleoperation for data collection.",
+    ),
+    (
+        "other-awesome-lists",
+        "Other Awesome Lists",
+        "Related curated lists and collections.",
+    ),
 ]
 
-SECTION_DESCRIPTIONS: dict[str, str] = {
-    "simulators": "Simulation environments for testing and developing robotic systems.",
-    "dynamics-simulation": "Physics engines and rigid/soft body dynamics libraries. See also [Comparisons](COMPARISONS.md).",
-    "inverse-kinematics": "Libraries for computing joint configurations from end-effector poses.",
-    "machine-learning": "Machine learning frameworks and tools applied to robotics.",
-    "motion-planning": "Libraries for robot motion planning, trajectory optimization, and control.",
-    "optimization": "Numerical optimization solvers and frameworks used in robotics.",
-    "robot-modeling": "Tools and formats for describing robot models.",
-    "robot-platform": "Middleware and frameworks for building robot software systems.",
-    "reinforcement-learning": "Reinforcement learning libraries commonly used in robotic control.",
-    "slam": "Simultaneous Localization and Mapping libraries.",
-    "vision": "Computer vision libraries for robotic perception.",
-    "fluid": "Fluid dynamics simulation libraries.",
-    "grasping": "Libraries and tools for robotic grasping and manipulation.",
-    "humanoid-robotics": "Environments and models for humanoid robot research.",
-    "multiphysics": "Frameworks for coupled multi-physics simulations.",
-    "math": "Mathematics libraries for spatial algebra, Lie groups, and linear algebra.",
-    "etc": "Other robotics-related tools and utilities.",
-    "other-awesome-lists": "Related curated lists of robotics and AI resources.",
+# Subsections rendered after a category's main entries, in this order.
+SUBSECTIONS = {
+    "physics-engines": ["Soft, Fluid & Multiphysics"],
+    "simulators": ["Commercial"],
+    "kinematics-dynamics": ["Inverse Kinematics"],
+    "slam": ["Mapping"],
+    "robot-learning": ["General Machine Learning"],
 }
 
-# Subsection ordering per section
-SUBSECTION_ORDER = {
-    "simulators": ["Free or Open Source", "Commercial", "Cloud"],
-    "motion-planning": [None, "Motion Optimizer", "Nearest Neighbor", "3D Mapping"],
-    "robot-modeling": [
-        "Robot Model Description Format",
-        "Utility to Build Robot Models",
-    ],
-    "slam": [None, "SLAM Dataset"],
-}
-
-# Parent→children for indented sub-entries
+# Parent → children rendered as indented bullets right after the parent.
 CHILDREN = {
-    "machine-learning": {"Gymnasium": ["gym-dart", "gym-gazebo"]},
-    "robot-platform": {"Linorobot": ["onine"]},
-    "motion-planning": {"Cover-Tree": ["Faster cover trees"]},
+    "robot-learning": {"Gymnasium": ["gym-dart", "gym-gazebo"]},
+    "hardware": {"Linorobot": ["onine"]},
 }
 
-# Entries rendered as a plain header line (not a library entry)
-HEADER_ENTRIES = {"Utility Software"}
-
-# Section using 2-space indented bullets (all entries)
-INDENT_ALL = {"inverse-kinematics"}
+ACTIVE_DAYS = 365
+INACTIVE_DAYS = 3 * 365
+AS_OF_FILE = "as-of.txt"
 
 
-def _load_yaml(path: Path) -> list[dict]:
+def load_entries(path: Path) -> list[dict]:
     with open(path, encoding="utf-8") as f:
         data = yaml.safe_load(f)
-        return data if isinstance(data, list) else []
+    return data if isinstance(data, list) else []
 
 
-def _sort_entries(
-    entries: list[dict],
-    sort_key: str,
-    children_map: dict[str, list[str]],
-) -> list[dict]:
-    """Sort entries while preserving parent→child adjacency.
+def as_of_date(data_dir: Path) -> date:
+    """Reference date for activity badges.
 
-    Parents are sorted; each parent's children stay immediately after it
-    in their original order. HEADER_ENTRIES keep their position relative
-    to their children. Entries without _meta sort to the end for
-    stars/last_commit modes.
+    Read from data/as-of.txt (written by the metadata refresh) so that the
+    generated README depends only on the repository contents, not on the day
+    the generator runs.
     """
-    if sort_key == "none":
-        return entries
+    path = data_dir / AS_OF_FILE
+    if path.exists():
+        return date.fromisoformat(path.read_text(encoding="utf-8").strip())
+    return date.today()
 
-    # Build child set for quick lookup
-    child_names: set[str] = set()
-    for kids in children_map.values():
-        child_names.update(kids)
 
-    # Separate parents from children
-    parents = [e for e in entries if e["name"] not in child_names]
+def stars(entry: dict) -> int | None:
+    return (entry.get("_meta") or {}).get("stars")
 
-    # Sort parents
-    if sort_key == "name":
-        parents.sort(key=lambda e: e["name"].lower())
-    elif sort_key == "stars":
-        parents.sort(
-            key=lambda e: (e.get("_meta") or {}).get("stars") or 0,
-            reverse=True,
-        )
-    elif sort_key == "last_commit":
-        parents.sort(
-            key=lambda e: (e.get("_meta") or {}).get("last_commit") or "",
-            reverse=True,
-        )
 
-    # Rebuild with children after their parents
-    result: list[dict] = []
+def is_archived(entry: dict) -> bool:
+    return bool(entry.get("archived") or (entry.get("_meta") or {}).get("archived"))
+
+
+def idle_days(entry: dict, as_of: date) -> int | None:
+    last_commit = (entry.get("_meta") or {}).get("last_commit")
+    if not last_commit:
+        return None
+    try:
+        return (as_of - date.fromisoformat(str(last_commit))).days
+    except ValueError:
+        return None
+
+
+def is_inactive(entry: dict, as_of: date) -> bool:
+    days = idle_days(entry, as_of)
+    return is_archived(entry) or (days is not None and days > INACTIVE_DAYS)
+
+
+def sort_entries(entries: list[dict], children: dict[str, list[str]]) -> list[tuple[dict, bool]]:
+    """Return (entry, is_child) pairs: most stars first, entries without stars
+    (not on GitHub) last by name.
+
+    A child follows its parent in CHILDREN order when both are in `entries`;
+    otherwise it sorts like any other entry.
+    """
+    by_name = {e["name"]: e for e in entries}
+    nested = {c for parent, kids in children.items() if parent in by_name for c in kids}
+    parents = sorted(
+        (e for e in entries if e["name"] not in nested),
+        key=lambda e: (stars(e) is None, -(stars(e) or 0), e["name"].lower()),
+    )
+    result = []
     for parent in parents:
-        result.append(parent)
-        kid_names = children_map.get(parent["name"], [])
-        if kid_names:
-            for entry in entries:
-                if entry["name"] in kid_names:
-                    result.append(entry)
-
+        result.append((parent, False))
+        result += [(by_name[c], True) for c in children.get(parent["name"], []) if c in by_name]
     return result
 
 
-def _format_stars(count: int) -> str:
+def format_stars(count: int) -> str:
     if count >= 1000:
         return f"{count / 1000:.1f}k".replace(".0k", "k")
     return str(count)
 
 
-def _activity_emoji(entry: dict) -> str:
-    """Return activity indicator emoji based on last commit and archived status."""
-    if entry.get("archived") or (entry.get("_meta") or {}).get("archived"):
-        return "💀"
-    meta = entry.get("_meta") or {}
-    last_commit = meta.get("last_commit")
-    if not last_commit:
-        return ""
-    try:
-        commit_date = date.fromisoformat(str(last_commit))
-    except (ValueError, TypeError):
-        return ""
-    days_ago = (date.today() - commit_date).days
-    if days_ago <= 365:
-        return "🟢"
-    elif days_ago <= 730:
-        return "🟡"
-    else:
-        return "🔴"
-
-
-def _repo_url(entry: dict) -> str | None:
-    """Return the repository URL if available."""
-    if entry.get("github"):
-        return f"https://github.com/{entry['github']}"
-    if entry.get("gitlab"):
-        return f"https://gitlab.com/{entry['gitlab']}"
-    if entry.get("bitbucket"):
-        return f"https://bitbucket.org/{entry['bitbucket']}"
+def repo_link(entry: dict) -> tuple[str, str] | None:
+    """Return (label, url) for the source repository, if any."""
+    for key, base in (
+        ("github", "https://github.com/"),
+        ("gitlab", "https://gitlab.com/"),
+        ("bitbucket", "https://bitbucket.org/"),
+    ):
+        if entry.get(key):
+            return key, base + entry[key]
     if entry.get("code_url"):
-        return entry["code_url"]
+        return "code", entry["code_url"]
     return None
 
 
-# ── Bullet rendering ───────────────────────────────────────────────────────
-
-
-def _render_bullet(entry: dict, indent: str = "") -> str:
-    name = entry["name"]
-    url = entry.get("url")
-    desc = entry.get("description", "")
-    meta = entry.get("_meta") or {}
-
-    emoji = _activity_emoji(entry)
+def render_bullet(entry: dict, as_of: date, indent: str = "", folded: bool = False) -> str:
     parts = [f"{indent}*"]
-    if emoji:
-        parts.append(emoji)
+    days = idle_days(entry, as_of)
+    if is_archived(entry):
+        parts.append("💀")
+    elif not folded and days is not None:
+        parts.append("🟢" if days <= ACTIVE_DAYS else "🟡")
 
-    if url:
-        parts.append(f"[{name}]({url})")
-    else:
-        parts.append(name)
+    url = entry.get("url")
+    parts.append(f"[{entry['name']}]({url})" if url else entry["name"])
+    if entry.get("description"):
+        parts.append(f"- {entry['description']}")
 
-    if desc:
-        parts.append(f"- {desc}")
-
-    repo = _repo_url(entry)
+    repo = repo_link(entry)
     if repo:
-        stars = meta.get("stars")
-        if stars is not None:
-            parts.append(f"[⭐ {_format_stars(stars)}]({repo})")
-        else:
-            if entry.get("github"):
-                label = "github"
-            elif entry.get("gitlab"):
-                label = "gitlab"
-            elif entry.get("bitbucket"):
-                label = "bitbucket"
-            else:
-                label = "code"
-            parts.append(f"[[{label}]({repo})]")
+        label, repo_url = repo
+        count = stars(entry)
+        parts.append(f"[⭐ {format_stars(count)}]({repo_url})" if count is not None else f"[[{label}]({repo_url})]")
 
+    last_commit = (entry.get("_meta") or {}).get("last_commit")
+    if folded and last_commit:
+        parts.append(f"· last commit {str(last_commit)[:4]}")
     return " ".join(parts)
 
 
-# ── Other awesome lists rendering ───────────────────────────────────────────
+def render_list(entries: list[dict], children: dict[str, list[str]], as_of: date, folded: bool) -> list[str]:
+    return [
+        render_bullet(e, as_of, indent="  " if is_child else "", folded=folded)
+        for e, is_child in sort_entries(entries, children)
+    ]
 
 
-def _render_other_awesome(entries: list[dict]) -> str:
-    lines = []
-    for entry in entries:
-        name = entry["name"]
-        url = entry.get("url", "")
-        desc = entry.get("description", "")
-        if url:
-            line = f"* [{name}]({url})"
-        else:
-            line = f"* {name}"
-        if desc:
-            line += f" - {desc}"
-        lines.append(line)
-    return "\n".join(lines)
+def render_section(key: str, entries: list[dict], as_of: date) -> list[str]:
+    children = CHILDREN.get(key, {})
+    active = [e for e in entries if not is_inactive(e, as_of)]
+    inactive = [e for e in entries if is_inactive(e, as_of)]
+    subsections = SUBSECTIONS.get(key, [])
 
-
-# ── Section rendering ───────────────────────────────────────────────────────
-
-
-def _render_section(
-    key: str,
-    entries: list[dict],
-    mode: str,
-    sub_heading_level: int | None,
-    sort_key: str = "name",
-) -> str:
     lines: list[str] = []
-
-    if mode == "other_awesome":
-        return _render_other_awesome(entries)
-
-    indent_all = key in INDENT_ALL
-    base_indent = "  " if indent_all else ""
-    children_map = CHILDREN.get(key, {})
-
-    child_names = set()
-    for kids in children_map.values():
-        child_names.update(kids)
-
-    subsection_order = SUBSECTION_ORDER.get(key)
-    if subsection_order:
-        grouped: dict[str | None, list[dict]] = {s: [] for s in subsection_order}
-        for entry in entries:
-            sub = entry.get("_subsection")
-            if sub in grouped:
-                grouped[sub].append(entry)
-            elif None in grouped:
-                grouped[None].append(entry)
-
-        first_sub = True
-        for sub in subsection_order:
-            sub_entries = grouped.get(sub, [])
-            if not sub_entries and sub is not None:
-                continue
-
-            sub_entries = _sort_entries(sub_entries, sort_key, children_map)
-
-            if sub is not None:
-                if not first_sub or (first_sub and lines):
-                    lines.append("")
-                hashes = "#" * (sub_heading_level or 6)
-                lines.append(f"{hashes} {sub}")
-
-            lines.append("")
-            for entry in sub_entries:
-                if entry["name"] in child_names:
-                    continue
-                if entry["name"] in HEADER_ENTRIES:
-                    lines.append(f"* {entry['name']}")
-                    kids = children_map.get(entry["name"], [])
-                    for sub_entry in sub_entries:
-                        if sub_entry["name"] in kids:
-                            lines.append(_render_bullet(sub_entry, indent="  "))
-                    continue
-
-                lines.append(_render_bullet(entry, indent=base_indent))
-                kids = children_map.get(entry["name"], [])
-                for kid_name in kids:
-                    for sub_entry in sub_entries:
-                        if sub_entry["name"] == kid_name:
-                            lines.append(_render_bullet(sub_entry, indent="  "))
-
-            first_sub = False
-    else:
-        sorted_entries = _sort_entries(entries, sort_key, children_map)
-        for entry in sorted_entries:
-            if entry["name"] in child_names:
-                continue
-            lines.append(_render_bullet(entry, indent=base_indent))
-            kids = children_map.get(entry["name"], [])
-            for kid_name in kids:
-                for sub_entry in sorted_entries:
-                    if sub_entry["name"] == kid_name:
-                        lines.append(_render_bullet(sub_entry, indent="  "))
-
-    return "\n".join(lines)
+    main = [e for e in active if e.get("_subsection") not in subsections]
+    if main:
+        lines += render_list(main, children, as_of, folded=False) + [""]
+    for sub in subsections:
+        sub_entries = [e for e in active if e.get("_subsection") == sub]
+        if sub_entries:
+            lines += [f"### {sub}", ""] + render_list(sub_entries, children, as_of, folded=False) + [""]
+    if inactive:
+        lines += [
+            "<details>",
+            f"<summary>Inactive ({len(inactive)}): archived or no commits for 3+ years</summary>",
+            "",
+        ]
+        lines += render_list(inactive, children, as_of, folded=True)
+        lines += ["", "</details>", ""]
+    return lines
 
 
-# ── Table of Contents ───────────────────────────────────────────────────────
-
-TOC = """\
-## Contents
-* [Libraries](#libraries)
-  * [Dynamics Simulation](#dynamics-simulation)
-  * [Inverse Kinematics](#inverse-kinematics)
-  * [Machine Learning](#machine-learning)
-  * [Motion Planning and Control](#motion-planning-and-control)
-  * [Optimization](#optimization)
-  * [Robot Modeling](#robot-modeling)
-  * [Robot Platform](#robot-platform)
-  * [Reinforcement Learning for Robotics](#reinforcement-learning-for-robotics)
-  * [SLAM](#slam)
-  * [Vision](#vision)
-  * [Fluid](#fluid)
-  * [Grasping](#grasping)
-  * [Humanoid Robotics](#humanoid-robotics)
-  * [Multiphysics](#multiphysics)
-  * [Math](#math)
-  * [ETC](#etc)
-* [Simulators](#simulators)
-* [Other Awesome Lists](#other-awesome-lists)"""
+def anchor(title: str) -> str:
+    """GitHub heading anchor: lowercase, drop punctuation, spaces to hyphens."""
+    kept = "".join(ch for ch in title.lower() if ch.isalnum() or ch in " -")
+    return kept.replace(" ", "-")
 
 
-# ── Main ────────────────────────────────────────────────────────────────────
+def generate(data_dir: Path) -> str:
+    as_of = as_of_date(data_dir)
+    sections = [
+        (key, title, scope, load_entries(data_dir / f"{key}.yaml"))
+        for key, title, scope in SECTIONS
+        if (data_dir / f"{key}.yaml").exists()
+    ]
 
+    out = [
+        "# Awesome Robotics Libraries",
+        "",
+        "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+        "",
+        "A curated list of robotics libraries and simulators.",
+        "",
+        "## Contents",
+    ]
+    out += [f"* [{title}](#{anchor(title)})" for _, title, _, entries in sections if entries]
+    out += [
+        "* [Contributing](#contributing)",
+        "",
+        "> **Legend**: 🟢 commit within 1 yr · 🟡 commit within 3 yr · 💀 archived · "
+        f"⭐ GitHub stars as of {as_of.isoformat()}. Entries are ordered by stars; inactive "
+        "entries (archived, or no commits for 3+ years) are folded at the end of each category.",
+        "",
+    ]
 
-def generate(data_dir: Path, sort_key: str = "name") -> str:
-    out: list[str] = []
-
-    out.append("# Awesome Robotics Libraries")
-    out.append("")
-    out.append("[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)")
-    out.append("")
-    out.append("A curated list of robotics libraries and simulators.")
-    out.append("")
-    out.append(TOC)
-    out.append("")
-    out.append(
-        "> **Legend**: "
-        "🟢 Active (<1yr) · "
-        "🟡 Slow (1-2yr) · "
-        "🔴 Stale (>2yr) · "
-        "💀 Archived"
-    )
-    out.append("")
-
-    libraries_emitted = False
-
-    for key, display, level, mode, sub_hl in SECTIONS:
-        yaml_path = data_dir / f"{key}.yaml"
-        if not yaml_path.exists():
-            continue
-        entries = _load_yaml(yaml_path)
+    for key, title, scope, entries in sections:
         if not entries:
             continue
+        out += [f"## [{title}](#contents)", "", f"_{scope}_", ""]
+        out += render_section(key, entries, as_of)
 
-        # Insert "Libraries" divider before first level-3 section
-        if level == 3 and not libraries_emitted:
-            out.append("## [Libraries](#contents)")
-            out.append("")
-            libraries_emitted = True
-
-        hashes = "#" * level
-        out.append(f"{hashes} [{display}](#contents)")
-        out.append("")
-
-        section_desc = SECTION_DESCRIPTIONS.get(key)
-        if section_desc:
-            out.append(f"_{section_desc}_")
-            out.append("")
-
-        body = _render_section(key, entries, mode, sub_hl, sort_key)
-        out.append(body)
-        out.append("")
-
-    # Contributing
-    out.append("## [Contributing](#contents)")
-    out.append("")
-    out.append(
+    out += [
+        "## [Contributing](#contents)",
+        "",
         "Contributions are very welcome! Please read the "
-        "[contribution guidelines]"
-        "(https://github.com/jslee02/awesome-robotics-libraries/blob/main/CONTRIBUTING.md)"
-        " first. Also, please feel free to report any error."
-    )
-    out.append("")
-
-    # Star History
-    out.append("## [Star History](#contents)")
-    out.append("")
-    out.append(
+        "[contribution guidelines](https://github.com/jslee02/awesome-robotics-libraries/blob/main/CONTRIBUTING.md)"
+        " first. Also, please feel free to report any error.",
+        "",
+        "## [Star History](#contents)",
+        "",
         '<a href="https://www.star-history.com/?repos=jslee02%2Fawesome-robotics-libraries">\n'
         "  <picture>\n"
         '    <source media="(prefers-color-scheme: dark)" '
@@ -428,19 +324,13 @@ def generate(data_dir: Path, sort_key: str = "name") -> str:
         '    <img alt="Star History Chart" '
         'src="https://api.star-history.com/chart?repos=jslee02/awesome-robotics-libraries&type=date&legend=top-left" />\n'
         "  </picture>\n"
-        "</a>"
-    )
-    out.append("")
-
-    # License
-    out.append("## [License](#contents)")
-    out.append("")
-    out.append(
-        "[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)]"
-        "(http://creativecommons.org/publicdomain/zero/1.0/)"
-    )
-    out.append("")
-
+        "</a>",
+        "",
+        "## [License](#contents)",
+        "",
+        "[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)",
+        "",
+    ]
     return "\n".join(out)
 
 
@@ -452,25 +342,16 @@ def main():
         default=None,
         help="Output file path (default: README.md in repo root)",
     )
-    parser.add_argument(
-        "--sort",
-        choices=["name", "stars", "last_commit", "none"],
-        default="name",
-        help="Sort entries within each section (default: name)",
-    )
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parent.parent
     data_dir = repo_root / "data"
-
     if not data_dir.exists():
         print(f"ERROR: {data_dir} not found", file=sys.stderr)
         sys.exit(1)
 
-    readme = generate(data_dir, sort_key=args.sort)
-
     output_path = Path(args.output) if args.output else repo_root / "README.md"
-    output_path.write_text(readme, encoding="utf-8")
+    output_path.write_text(generate(data_dir), encoding="utf-8")
     print(f"Wrote {output_path}")
 
 

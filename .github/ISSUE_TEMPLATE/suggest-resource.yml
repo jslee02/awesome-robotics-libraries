@@ -1,8 +1,13 @@
 name: Suggest a Resource
-description: Suggest a robotics library, simulator, tool, or other resource to add to the list
+description: Suggest a robotics library, simulator, tool, or curated list for the list
 title: "[Suggestion] "
 labels: ["suggestion"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Automation checks every suggestion against the [acceptance bar](https://github.com/jslee02/awesome-robotics-libraries/blob/main/CONTRIBUTING.md#acceptance-bar): for GitHub projects, at least 6 months old (or 1,000+ stars), 100+ stars, 3+ outside people who opened issues or PRs, a commit within 12 months, and a license. Please keep one open suggestion at a time.
+
   - type: input
     id: name
     attributes:
@@ -14,7 +19,7 @@ body:
     id: url
     attributes:
       label: URL
-      description: Project website or repository URL
+      description: Project website, or the repository URL if there is no website
     validations:
       required: true
 
@@ -22,48 +27,53 @@ body:
     id: github
     attributes:
       label: GitHub Repository
-      description: "GitHub `owner/repo` slug (e.g., `google-deepmind/mujoco`). Leave blank if the project is not on GitHub — a maintainer will review it manually."
+      description: "GitHub `owner/repo` (e.g., `google-deepmind/mujoco`). Leave blank if the project is not on GitHub; a maintainer will review it."
       placeholder: owner/repo
 
   - type: input
     id: alt_repo
     attributes:
       label: Alternative Repository
-      description: "GitLab, Bitbucket, or other repository URL (if not on GitHub)."
+      description: GitLab, Bitbucket, or other source URL, if not on GitHub
       placeholder: https://gitlab.com/org/project
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence of use
+      description: "Required for projects not on GitHub, including commercial tools: show wide use in robotics, for example independent users or customers, citations, or third-party tutorials."
 
   - type: dropdown
     id: category
     attributes:
       label: Category
+      description: "Pick by what the software mainly does, not by robot type. See the [category definitions](https://github.com/jslee02/awesome-robotics-libraries/blob/main/CONTRIBUTING.md#categories)."
       options:
-        - Dynamics Simulation
-        - Inverse Kinematics
-        - Machine Learning
-        - Motion Planning and Control
-        - Optimization
-        - Robot Modeling
-        - Robot Platform
-        - Reinforcement Learning for Robotics
-        - SLAM
-        - Vision
-        - Fluid
-        - Grasping
-        - Humanoid Robotics
-        - Multiphysics
-        - Math
-        - ETC
+        - Middleware & Frameworks
+        - Robot Hardware & Drivers
+        - Robot Description & Models
+        - Kinematics & Dynamics
+        - Physics Engines
         - Simulators
+        - Motion Planning & Navigation
+        - Control
+        - Optimization
+        - Math & Geometry
+        - SLAM & State Estimation
+        - Perception
+        - Grasping & Manipulation
+        - Robot Learning
+        - Robot Data & Visualization
         - Other Awesome Lists
-        - New Category
+        - Not sure
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: description
     attributes:
       label: Description
-      description: Brief description of what this resource does
+      description: "One neutral sentence, 100 characters or fewer, e.g. `Fast C++ library for rigid-body dynamics and their derivatives.`"
     validations:
       required: true
 
@@ -71,27 +81,25 @@ body:
     id: why
     attributes:
       label: Why should it be included?
-      description: Explain what makes this resource a good fit for the list (e.g., fills a gap, widely used, novel approach).
+      description: Optional. What gap does it fill, and who uses it?
+
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Suggesting your own project is welcome; we just ask you to say so.
+      options:
+        - I am an author or maintainer
+        - I contribute to it
+        - I use it
+        - No affiliation
+    validations:
+      required: true
 
   - type: checkboxes
-    id: must_have
+    id: attestation
     attributes:
-      label: "Must-have checklist (all required)"
-      description: "All four must be checked for acceptance."
+      label: Confirmation
       options:
-        - label: Relevant to robotics (simulation, planning, perception, control, dynamics, etc.)
-        - label: Publicly accessible (open source, or well-documented commercial tool)
-        - label: Not a duplicate of an existing entry
-        - label: Has a meaningful description
-
-  - type: checkboxes
-    id: scoring
-    attributes:
-      label: "Scoring checklist (need ≥ 3 of 5)"
-      description: "Check all that apply. We will verify these during review. For non-GitHub projects, equivalent metrics are accepted."
-      options:
-        - label: "**Popularity**: ≥ 50 GitHub stars (or equivalent community adoption for non-GitHub projects)"
-        - label: "**Activity**: At least one commit within the last 2 years"
-        - label: "**Documentation**: Has a README with usage examples or API docs"
-        - label: "**Maturity**: Project is ≥ 6 months old"
-        - label: "**Uniqueness**: Fills a niche not already covered by existing entries"
+        - label: I am a person, and I wrote or reviewed this suggestion myself.
+          required: true
