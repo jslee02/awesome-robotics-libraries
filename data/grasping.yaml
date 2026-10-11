@@ -3,6 +3,7 @@
   github: graspnet/anygrasp_sdk
   description: SDK for AnyGrasp, a 6-DoF grasp pose detection method.
   _meta:
+    id: 571926051
     stars: 1020
     last_commit: '2026-07-13'
     language: Python
@@ -11,6 +12,7 @@
   github: NVlabs/contact_graspnet
   description: 6-DoF grasp generation for parallel-jaw grippers using contact maps.
   _meta:
+    id: 351175332
     stars: 538
     last_commit: '2024-11-21'
     language: Python
@@ -19,6 +21,7 @@
   github: graspit-simulator/graspit
   description: Simulator for grasping research that can accommodate arbitrary hand and robot designs.
   _meta:
+    id: 44710103
     stars: 221
     last_commit: '2020-07-10'
     language: C++
@@ -27,6 +30,7 @@
   github: graspnet/graspnetAPI
   description: Python API and evaluation tools for the GraspNet benchmark.
   _meta:
+    id: 301330317
     stars: 368
     last_commit: '2026-06-29'
     license: MIT

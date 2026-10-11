@@ -63,6 +63,7 @@
       "type": "object",
       "description": "Auto-populated metadata from GitHub API",
       "properties": {
+        "id": { "type": "integer", "description": "GitHub repository ID; stable across renames" },
         "stars": { "type": "integer" },
         "last_commit": { "type": "string", "format": "date" },
         "archived": { "type": "boolean" },

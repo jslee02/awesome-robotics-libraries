@@ -2,6 +2,7 @@
   github: pyomeca/bioptim
   description: Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics.
   _meta:
+    id: 251615517
     stars: 120
     last_commit: '2026-09-23'
     license: MIT
@@ -11,6 +12,7 @@
   github: ethz-adrl/control-toolbox
   description: Open-Source C++ Library for Robotics, Optimal and Model Predictive Control.
   _meta:
+    id: 183515197
     stars: 1713
     last_commit: '2021-07-05'
     license: BSD-2-Clause
@@ -19,6 +21,7 @@
   github: loco-3d/crocoddyl
   description: Optimal control library for robot control under contact sequence.
   _meta:
+    id: 190190517
     stars: 1319
     last_commit: '2026-10-06'
     license: BSD-3-Clause
@@ -33,6 +36,7 @@
   models:
   - rigid
   _meta:
+    id: 59134745
     stars: 170
     last_commit: '2021-12-30'
     language: MATLAB
@@ -40,6 +44,7 @@
   github: leggedrobotics/ocs2
   description: Efficient continuous and discrete time optimal control implementation.
   _meta:
+    id: 384033964
     stars: 1526
     last_commit: '2025-12-16'
     license: BSD-3-Clause
@@ -49,6 +54,7 @@
   github: ethz-adrl/towr
   description: A light-weight, Eigen-based C++ library for trajectory optimization for legged robots.
   _meta:
+    id: 117434408
     stars: 1085
     last_commit: '2021-03-29'
     license: BSD-3-Clause
@@ -57,6 +63,7 @@
   github: RoboticExplorationLab/TrajectoryOptimization.jl
   description: A fast trajectory optimization library written in Julia.
   _meta:
+    id: 137978383
     stars: 400
     last_commit: '2025-03-04'
     license: MIT
@@ -66,6 +73,7 @@
   github: fdevinc/ungar
   description: Expressive and efficient implementation of optimal control problems using template metaprogramming.
   _meta:
+    id: 613637250
     stars: 108
     last_commit: '2024-07-16'
     license: Apache-2.0

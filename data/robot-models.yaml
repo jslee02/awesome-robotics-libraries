@@ -3,7 +3,8 @@
   github: google-deepmind/mujoco_menagerie
   description: Collection of well-tuned MuJoCo models for research and development.
   _meta:
-    stars: 4169
+    id: 532854029
+    stars: 4172
     last_commit: '2026-10-07'
     language: Python
 - name: onshape-to-robot
@@ -11,6 +12,7 @@
   github: Rhoban/onshape-to-robot
   description: Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API.
   _meta:
+    id: 176774675
     stars: 638
     last_commit: '2026-08-26'
     license: MIT
@@ -19,6 +21,7 @@
   github: dfki-ric/phobos
   description: Add-on for Blender creating URDF and SMURF robot models.
   _meta:
+    id: 22949566
     stars: 908
     last_commit: '2026-07-14'
     license: BSD-3-Clause
@@ -32,6 +35,7 @@
   github: ros/urdfdom
   description: XML format for representing a robot model.
   _meta:
+    id: 12067406
     stars: 137
     last_commit: '2026-10-06'
     language: C++

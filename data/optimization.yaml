@@ -3,7 +3,8 @@
   github: casadi/casadi
   description: Symbolic framework for algorithmic differentiation and numeric optimization.
   _meta:
-    stars: 2308
+    id: 6474647
+    stars: 2309
     last_commit: '2026-10-08'
     license: LGPL-3.0
     language: C++
@@ -12,6 +13,7 @@
   github: ceres-solver/ceres-solver
   description: Large scale nonlinear optimization library.
   _meta:
+    id: 15667250
     stars: 4580
     last_commit: '2026-10-10'
     language: C++
@@ -19,6 +21,7 @@
   github: jrl-umi3218/eigen-qld
   description: Interface to use the QLD QP solver with the Eigen3 library.
   _meta:
+    id: 40561722
     stars: 17
     last_commit: '2026-09-29'
     license: BSD-2-Clause
@@ -27,6 +30,7 @@
   github: ipab-slmc/exotica
   description: Generic optimisation toolset for robotics platforms.
   _meta:
+    id: 44607894
     stars: 164
     last_commit: '2024-05-27'
     license: BSD-3-Clause
@@ -35,6 +39,7 @@
   github: giaf/hpipm
   description: High-performance interior-point-method QP solvers (Ipopt, Snopt).
   _meta:
+    id: 91068419
     stars: 710
     last_commit: '2026-10-03'
     language: C
@@ -42,6 +47,7 @@
   github: ethz-adrl/ifopt
   description: An Eigen-based, light-weight C++ Interface to Nonlinear Programming Solvers (Ipopt, Snopt).
   _meta:
+    id: 114131004
     stars: 867
     last_commit: '2025-11-03'
     license: BSD-3-Clause
@@ -51,7 +57,8 @@
   github: coin-or/Ipopt
   description: Large scale nonlinear optimization library.
   _meta:
-    stars: 1790
+    id: 167958206
+    stars: 1791
     last_commit: '2026-10-10'
     license: EPL-2.0
     language: C++
@@ -59,6 +66,7 @@
   github: CMA-ES/libcmaes
   description: Blackbox stochastic optimization using the CMA-ES algorithm.
   _meta:
+    id: 18436945
     stars: 372
     last_commit: '2026-07-02'
     language: C++
@@ -67,6 +75,7 @@
   github: resibots/limbo
   description: Gaussian processes and Bayesian optimization of black-box functions.
   _meta:
+    id: 22070431
     stars: 270
     last_commit: '2023-10-18'
     language: C++
@@ -74,6 +83,7 @@
   github: stephane-caron/lpsolvers
   description: Linear Programming solvers in Python with a unified API.
   _meta:
+    id: 139556246
     stars: 26
     last_commit: '2026-04-09'
     license: LGPL-3.0
@@ -83,6 +93,7 @@
   github: stevengj/nlopt
   description: Nonlinear optimization.
   _meta:
+    id: 12412122
     stars: 2280
     last_commit: '2026-06-06'
     language: C
@@ -91,6 +102,7 @@
   github: alphaville/optimization-engine
   description: Embedded nonconvex optimization with code generation for real-time control, with ROS support.
   _meta:
+    id: 159477900
     stars: 651
     last_commit: '2026-03-31'
     language: Rust
@@ -99,6 +111,7 @@
   github: kthohr/optim
   description: Lightweight C++ library of numerical optimization methods for nonlinear functions.
   _meta:
+    id: 94275048
     stars: 898
     last_commit: '2024-04-28'
     license: Apache-2.0
@@ -108,6 +121,7 @@
   github: osqp/osqp
   description: The Operator Splitting QP Solver.
   _meta:
+    id: 69313892
     stars: 2208
     last_commit: '2025-11-10'
     license: Apache-2.0
@@ -117,6 +131,7 @@
   github: esa/pagmo2
   description: Scientific library for massively parallel optimization.
   _meta:
+    id: 78372913
     stars: 937
     last_commit: '2026-09-29'
     license: GPL-3.0
@@ -126,6 +141,7 @@
   github: Simple-Robotics/ProxSuite
   description: The Advanced Proximal Optimization Toolbox.
   _meta:
+    id: 489039140
     stars: 596
     last_commit: '2026-10-09'
     license: BSD-2-Clause
@@ -135,7 +151,8 @@
   github: anyoptimization/pymoo
   description: Multi-objective Optimization in Python.
   _meta:
-    stars: 2972
+    id: 104132965
+    stars: 2974
     last_commit: '2026-07-07'
     license: Apache-2.0
     language: Python
@@ -143,6 +160,7 @@
   github: qpsolvers/qpsolvers
   description: Quadratic Programming solvers in Python with a unified API.
   _meta:
+    id: 63537396
     stars: 760
     last_commit: '2026-10-09'
     license: LGPL-3.0
@@ -152,6 +170,7 @@
   github: roboptim/roboptim-core
   description: Numerical Optimization for Robotics.
   _meta:
+    id: 890115
     stars: 66
     last_commit: '2025-03-21'
     license: LGPL-3.0
@@ -161,6 +180,7 @@
   github: cvxgrp/scs
   description: Numerical optimization for solving large-scale convex cone problems.
   _meta:
+    id: 14811835
     stars: 638
     last_commit: '2026-10-06'
     license: MIT
@@ -169,6 +189,7 @@
   github: sferes2/sferes2
   description: Evolutionary computation.
   _meta:
+    id: 18767395
     stars: 170
     last_commit: '2021-03-26'
     language: C++
@@ -176,7 +197,8 @@
   github: coin-or/SHOT
   description: A solver for mixed-integer nonlinear optimization problems.
   _meta:
+    id: 135558985
     stars: 135
-    last_commit: '2026-10-10'
+    last_commit: '2026-10-11'
     license: EPL-2.0
     language: C++

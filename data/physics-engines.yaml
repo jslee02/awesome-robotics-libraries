@@ -18,6 +18,7 @@
   features:
   - id
   _meta:
+    id: 373310764
     stars: 3248
     last_commit: '2026-10-07'
     license: Apache-2.0
@@ -39,6 +40,7 @@
   - urdf
   - sdf
   _meta:
+    id: 1605598
     stars: 14771
     last_commit: '2026-10-09'
     language: C++
@@ -59,8 +61,9 @@
   - ik
   - urdf
   _meta:
-    stars: 3075
-    last_commit: '2026-10-09'
+    id: 12567717
+    stars: 3078
+    last_commit: '2026-10-11'
     license: BSD-3-Clause
     language: C++
 - name: DART
@@ -81,8 +84,9 @@
   - urdf
   - sdf
   _meta:
-    stars: 1212
-    last_commit: '2026-10-10'
+    id: 2418592
+    stars: 1213
+    last_commit: '2026-10-11'
     license: BSD-2-Clause
     language: C++
 - name: Drake
@@ -102,6 +106,7 @@
   - trj-opt
   - plan
   _meta:
+    id: 16256144
     stars: 4221
     last_commit: '2026-10-09'
     language: C++
@@ -118,6 +123,7 @@
   - particle
   - fluid
   _meta:
+    id: 79958106
     stars: 814
     last_commit: '2021-04-15'
     language: C++
@@ -127,6 +133,7 @@
   github: doyubkim/fluid-engine-dev
   description: Fluid simulation engine for computer graphics applications.
   _meta:
+    id: 58299041
     stars: 2101
     last_commit: '2022-07-09'
     license: MIT
@@ -145,8 +152,9 @@
   - fluid
   - particle
   _meta:
-    stars: 30038
-    last_commit: '2026-10-10'
+    id: 712225112
+    stars: 30042
+    last_commit: '2026-10-11'
     license: Apache-2.0
     language: Python
 - name: IBDS
@@ -163,7 +171,8 @@
   github: KratosMultiphysics/Kratos
   description: Framework for building parallel multi-disciplinary simulation software.
   _meta:
-    stars: 1373
+    id: 81815495
+    stars: 1374
     last_commit: '2026-10-10'
     language: C++
   _subsection: Soft, Fluid & Multiphysics
@@ -182,8 +191,9 @@
   languages:
   - C++
   _meta:
+    id: 34510467
     stars: 53
-    last_commit: '2026-10-10'
+    last_commit: '2026-10-11'
     license: LGPL-2.1
     language: C++
 - name: MBSlib
@@ -194,6 +204,7 @@
   languages:
   - C++
   _meta:
+    id: 42651023
     stars: 11
     last_commit: '2016-08-17'
     license: LGPL-3.0
@@ -210,6 +221,7 @@
   features:
   - id
   _meta:
+    id: 5565237
     stars: 37
     last_commit: '2021-11-26'
     language: C++
@@ -224,8 +236,9 @@
   features:
   - id
   _meta:
-    stars: 15587
-    last_commit: '2026-10-10'
+    id: 400501136
+    stars: 15606
+    last_commit: '2026-10-11'
     license: Apache-2.0
     language: C++
 - name: Newton
@@ -245,7 +258,8 @@
   - urdf
   - mjcf
   _meta:
-    stars: 5743
+    id: 970467647
+    stars: 5749
     last_commit: '2026-10-09'
     license: Apache-2.0
     language: Python
@@ -257,6 +271,7 @@
   languages:
   - C++
   _meta:
+    id: 21649756
     stars: 1024
     last_commit: '2026-01-17'
     language: HTML
@@ -268,6 +283,7 @@
   languages:
   - Rust
   _meta:
+    id: 10066380
     stars: 1649
     last_commit: '2021-07-27'
     license: Apache-2.0
@@ -289,6 +305,7 @@
   languages:
   - C++
   _meta:
+    id: 545381143
     stars: 4784
     last_commit: '2026-10-09'
     license: BSD-3-Clause
@@ -300,6 +317,7 @@
   languages:
   - C++
   _meta:
+    id: 35102707
     stars: 2287
     last_commit: '2026-09-01'
     license: MIT
@@ -310,7 +328,8 @@
   github: camUrban/PteraSoftware
   description: Ptera Software is a fast, easy-to-use, and open-source software package for analyzing flapping-wing flight.
   _meta:
-    stars: 269
+    id: 249337717
+    stars: 270
     last_commit: '2026-10-10'
     license: MIT
     language: Python
@@ -324,6 +343,7 @@
   models:
   - rigid
   _meta:
+    id: 25142949
     stars: 994
     last_commit: '2021-05-09'
     archived: true
@@ -337,6 +357,7 @@
   languages:
   - C++
   _meta:
+    id: 197611743
     stars: 328
     last_commit: '2020-11-26'
     archived: true
@@ -348,6 +369,7 @@
   languages:
   - C++
   _meta:
+    id: 10272113
     stars: 1775
     last_commit: '2025-01-09'
     license: Zlib
@@ -361,6 +383,7 @@
   - C++
   - Python
   _meta:
+    id: 37709357
     stars: 186
     last_commit: '2026-10-07'
     license: Apache-2.0
@@ -379,6 +402,7 @@
   - id
   - urdf
   _meta:
+    id: 12146969
     stars: 2556
     last_commit: '2026-09-28'
     license: Apache-2.0
@@ -395,7 +419,8 @@
   - soft
   - medical
   _meta:
-    stars: 1272
+    id: 60089478
+    stars: 1274
     last_commit: '2026-10-09'
     license: LGPL-2.1
     language: C++
@@ -410,7 +435,8 @@
   models:
   - rigid
   _meta:
-    stars: 1375
+    id: 263988855
+    stars: 1376
     last_commit: '2023-04-26'
     license: Apache-2.0
     language: C++

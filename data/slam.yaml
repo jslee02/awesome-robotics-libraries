@@ -2,6 +2,7 @@
   github: xipengwang/AprilSAM
   description: Real-time smoothing and mapping.
   _meta:
+    id: 133405208
     stars: 239
     last_commit: '2021-07-17'
     license: LGPL-2.1
@@ -10,6 +11,7 @@
   github: facontidavide/Bonxai
   description: Brutally fast, sparse, 3D Voxel Grid (formerly Treexy).
   _meta:
+    id: 416333335
     stars: 884
     last_commit: '2026-09-28'
     license: MPL-2.0
@@ -19,7 +21,8 @@
   github: cartographer-project/cartographer
   description: Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations.
   _meta:
-    stars: 7987
+    id: 64732358
+    stars: 7988
     last_commit: '2024-01-05'
     license: Apache-2.0
     language: C++
@@ -28,6 +31,7 @@
   github: JakobEngel/dso
   description: Novel direct and sparse formulation for Visual Odometry.
   _meta:
+    id: 73256421
     stars: 2459
     last_commit: '2021-03-08'
     license: GPL-3.0
@@ -36,6 +40,7 @@
   github: mp3guy/ElasticFusion
   description: Real-time dense visual SLAM system.
   _meta:
+    id: 44748564
     stars: 1930
     last_commit: '2025-08-03'
     language: C++
@@ -44,6 +49,7 @@
   github: UbiquityRobotics/fiducials
   description: Simultaneous localization and mapping using fiducial markers.
   _meta:
+    id: 30819640
     stars: 285
     last_commit: '2025-11-26'
     license: BSD-3-Clause
@@ -52,20 +58,23 @@
   github: locusrobotics/fuse
   description: General architecture for performing sensor fusion live on a robot.
   _meta:
-    stars: 881
+    id: 139344157
+    stars: 882
     last_commit: '2026-06-18'
     language: C++
 - name: GTSAM
   github: borglab/gtsam
   description: Smoothing and mapping (SAM) in robotics and vision.
   _meta:
-    stars: 3739
+    id: 86362856
+    stars: 3740
     last_commit: '2026-10-09'
     language: Jupyter Notebook
 - name: Kintinuous
   github: mp3guy/Kintinuous
   description: Real-time large scale dense visual SLAM system.
   _meta:
+    id: 44748381
     stars: 953
     last_commit: '2022-08-26'
     language: C++
@@ -74,6 +83,7 @@
   github: norlab-ulaval/libpointmatcher
   description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
   _meta:
+    id: 1266625
     stars: 1840
     last_commit: '2026-08-27'
     license: BSD-3-Clause
@@ -84,6 +94,7 @@
   github: tum-vision/lsd_slam
   description: Real-time monocular SLAM.
   _meta:
+    id: 23995982
     stars: 2731
     last_commit: '2014-12-11'
     license: GPL-3.0
@@ -103,8 +114,9 @@
   - slam
   - cv
   _meta:
+    id: 13708826
     stars: 2169
-    last_commit: '2026-10-10'
+    last_commit: '2026-10-11'
     license: BSD-3-Clause
     language: C++
 - name: OctoMap
@@ -112,7 +124,8 @@
   github: OctoMap/octomap
   description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
   _meta:
-    stars: 2391
+    id: 7222017
+    stars: 2392
     last_commit: '2026-09-26'
     language: C++
   _subsection: Mapping
@@ -120,6 +133,7 @@
   github: raulmur/ORB_SLAM2
   description: Real-time SLAM library for Monocular, Stereo and RGB-D cameras.
   _meta:
+    id: 50255244
     stars: 10250
     last_commit: '2017-10-11'
     language: C++
@@ -128,7 +142,8 @@
   github: introlab/rtabmap
   description: RGB-D Graph SLAM approach based on a global Bayesian loop closure detector.
   _meta:
-    stars: 4027
+    id: 22850110
+    stars: 4030
     last_commit: '2026-10-10'
     language: C++
 - name: SRBA
@@ -136,6 +151,7 @@
   github: MRPT/srba
   description: Solving SLAM/BA in relative coordinates with flexibility for different submapping strategies.
   _meta:
+    id: 43430805
     stars: 75
     last_commit: '2016-02-13'
     language: C++
@@ -143,6 +159,7 @@
   github: ethz-asl/voxblox
   description: Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields.
   _meta:
+    id: 56137228
     stars: 1673
     last_commit: '2021-11-22'
     license: BSD-3-Clause
@@ -153,6 +170,7 @@
   github: ethz-asl/wavemap
   description: Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping.
   _meta:
+    id: 421905759
     stars: 573
     last_commit: '2024-12-10'
     license: BSD-3-Clause

@@ -3,6 +3,7 @@
   github: personalrobotics/aikido
   description: Solving robotic motion planning and decision making problems.
   _meta:
+    id: 34424077
     stars: 235
     last_commit: '2023-03-10'
     license: BSD-3-Clause
@@ -15,7 +16,8 @@
   github: nvlabs/curobo
   description: A CUDA accelerated library containing a suite of robotics algorithms that run significantly faster.
   _meta:
-    stars: 1902
+    id: 704667494
+    stars: 1904
     last_commit: '2026-09-10'
     license: Apache-2.0
     language: Python
@@ -23,6 +25,7 @@
   github: fields2cover/fields2cover
   description: Robust and efficient coverage paths for autonomous agricultural vehicles.
   _meta:
+    id: 501080115
     stars: 909
     last_commit: '2026-09-21'
     license: BSD-3-Clause
@@ -31,6 +34,7 @@
   github: gtrll/gpmp2
   description: Gaussian Process Motion Planner 2.
   _meta:
+    id: 61163018
     stars: 358
     last_commit: '2022-08-28'
     language: C++
@@ -46,6 +50,7 @@
   - C++
   - Python
   _meta:
+    id: 13944923
     stars: 437
     last_commit: '2026-01-10'
     license: BSD-3-Clause
@@ -62,6 +67,7 @@
   - uav
   - vehicles
   _meta:
+    id: 38709395
     stars: 358
     last_commit: '2019-02-21'
     language: C
@@ -70,6 +76,7 @@
   github: moveit/moveit
   description: Motion planning framework.
   _meta:
+    id: 64340188
     stars: 2095
     last_commit: '2026-07-20'
     license: BSD-3-Clause
@@ -79,6 +86,7 @@
   github: ompl/ompl
   description: Open motion planning library.
   _meta:
+    id: 19983886
     stars: 2170
     last_commit: '2026-09-25'
     language: C++
@@ -91,6 +99,7 @@
   - C++
   - Python
   _meta:
+    id: 5805151
     stars: 821
     last_commit: '2026-10-02'
     language: C++
@@ -98,6 +107,7 @@
   github: stephane-caron/pymanoid
   description: Humanoid robotics prototyping environment based on OpenRAVE.
   _meta:
+    id: 38289034
     stars: 234
     last_commit: '2024-02-19'
     archived: true
@@ -108,7 +118,8 @@
   github: ai-winter/python_motion_planning
   description: Python implementations of path planners, trajectory trackers, and curve generators.
   _meta:
-    stars: 1097
+    id: 598409114
+    stars: 1098
     last_commit: '2026-09-15'
     license: GPL-3.0
     language: Python
@@ -116,6 +127,7 @@
   github: miccol/ROS-Behavior-Tree
   description: Behavior tree implementation for ROS-based robot task planning.
   _meta:
+    id: 34942316
     stars: 365
     last_commit: '2018-10-22'
     license: MIT
@@ -125,7 +137,8 @@
   github: ai-winter/ros_motion_planning
   description: ROS planner and controller plugins for mobile robot navigation.
   _meta:
-    stars: 3593
+    id: 588141227
+    stars: 3594
     last_commit: '2026-03-28'
     license: GPL-3.0
     language: C++
@@ -134,6 +147,7 @@
   github: pantor/ruckig
   description: Real-time, time-optimal and jerk-constrained online trajectory generation.
   _meta:
+    id: 323057911
     stars: 1402
     last_commit: '2026-09-29'
     license: MIT
@@ -143,6 +157,7 @@
   github: iocroblab/kautham
   description: A robot simulation toolkit for motion planning.
   _meta:
+    id: 19373492
     stars: 24
     last_commit: '2026-07-24'
     language: C++
@@ -150,6 +165,7 @@
   github: AIS-Bonn/TopiCo
   description: Time-optimal Trajectory Generation and Control.
   _meta:
+    id: 154108408
     stars: 146
     last_commit: '2021-06-07'
     license: BSD-3-Clause
@@ -159,6 +175,7 @@
   github: hungpham2511/toppra
   description: Time-parameterizing robot trajectories subject to kinematic and dynamic constraints.
   _meta:
+    id: 97661949
     stars: 933
     last_commit: '2026-08-28'
     license: MIT
@@ -168,6 +185,7 @@
   github: joschu/trajopt
   description: Framework for generating robot trajectories by local optimization.
   _meta:
+    id: 7291235
     stars: 466
     last_commit: '2017-05-23'
     language: C++

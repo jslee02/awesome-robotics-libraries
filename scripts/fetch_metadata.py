@@ -48,7 +48,8 @@ def fetch_repo_metadata(owner_repo: str) -> tuple[dict, str] | str | None:
         print(f"  WARN: {owner_repo} — {e}", file=sys.stderr)
         return None
 
-    meta: dict = {}
+    # The repository ID survives renames and transfers, so suggestion triage matches it exactly.
+    meta: dict = {"id": data["id"]} if "id" in data else {}
     last_commit = None
     if "stargazers_count" in data:
         meta["stars"] = data["stargazers_count"]
