@@ -7,6 +7,7 @@
   github: allenai/ai2thor
   description: Interactive household environment for embodied AI with Unity backend.
   _meta:
+    id: 107305157
     stars: 1810
     last_commit: '2025-05-29'
     license: Apache-2.0
@@ -15,7 +16,8 @@
   github: Microsoft/AirSim
   description: Simulator based on Unreal Engine for autonomous vehicles.
   _meta:
-    stars: 18541
+    id: 81887991
+    stars: 18547
     last_commit: '2026-09-15'
     language: C++
 - name: ARGoS
@@ -23,6 +25,7 @@
   github: ilpincy/argos3
   description: Physics-based simulator designed to simulate large-scale robot swarms.
   _meta:
+    id: 6549941
     stars: 321
     last_commit: '2026-10-05'
     language: C++
@@ -35,6 +38,7 @@
   github: AvisEngine/AVIS-Engine-Python-API
   description: Fast simulation software for autonomous vehicle development.
   _meta:
+    id: 332560144
     stars: 22
     last_commit: '2025-05-20'
     language: Python
@@ -43,7 +47,8 @@
   github: carla-simulator/carla
   description: Open-source simulator for autonomous driving research.
   _meta:
-    stars: 14472
+    id: 108102826
+    stars: 14476
     last_commit: '2026-10-09'
     license: MIT
     language: C++
@@ -52,6 +57,7 @@
   github: CoppeliaRobotics/CoppeliaSimLib
   description: Formaly V-REP. Virtual robot experimentation platform.
   _meta:
+    id: 211282918
     stars: 152
     last_commit: '2026-10-02'
     language: C++
@@ -60,6 +66,7 @@
   github: gazebosim/gazebo-classic
   description: Dynamic multi-robot simulator.
   _meta:
+    id: 256913495
     stars: 1351
     last_commit: '2024-12-03'
     archived: true
@@ -69,7 +76,8 @@
   github: gazebosim/gz-sim
   description: Open source robotics simulator (formerly Ignition Gazebo).
   _meta:
-    stars: 1539
+    id: 255865265
+    stars: 1540
     last_commit: '2026-10-09'
     license: Apache-2.0
     language: C++
@@ -78,6 +86,7 @@
   github: facebookresearch/habitat-sim
   description: Simulation platform for research in embodied artificial intelligence.
   _meta:
+    id: 169164539
     stars: 3834
     last_commit: '2026-05-07'
     license: MIT
@@ -87,6 +96,7 @@
   github: mithi/hexapod
   description: Open-source hexapod robot inverse kinematics and gaits visualizer.
   _meta:
+    id: 265562564
     stars: 796
     last_commit: '2026-01-01'
     license: Apache-2.0
@@ -97,7 +107,8 @@
   github: isaac-sim/IsaacSim
   license: Apache-2.0
   _meta:
-    stars: 4242
+    id: 992179916
+    stars: 4243
     last_commit: '2026-09-18'
     language: Python
 - name: Kineo
@@ -113,6 +124,7 @@
   - C++
   - Python
   _meta:
+    id: 20796728
     stars: 69
     last_commit: '2025-09-01'
     language: C++
@@ -121,6 +133,7 @@
   github: morse-simulator/morse
   description: Modular open robots simulation engine.
   _meta:
+    id: 856780
     stars: 370
     last_commit: '2022-03-22'
     language: C
@@ -134,8 +147,9 @@
   models:
   - vehicle
   _meta:
+    id: 22798093
     stars: 416
-    last_commit: '2026-10-10'
+    last_commit: '2026-10-11'
     license: BSD-3-Clause
     language: C++
 - name: Neurorobotics Platform
@@ -147,6 +161,7 @@
   github: bulletphysics/bullet3
   description: An easy to use simulator for robotics and deep reinforcement learning.
   _meta:
+    id: 1605598
     stars: 14771
     last_commit: '2026-10-09'
     language: C++
@@ -155,6 +170,7 @@
   github: WBK-Robotics/pybullet_industrial
   description: PyBullet extension for simulating robotic manufacturing processes like milling and 3D printing.
   _meta:
+    id: 491020827
     stars: 56
     last_commit: '2025-06-17'
     license: MIT
@@ -171,6 +187,7 @@
   - soft
   - vehicle
   _meta:
+    id: 28123883
     stars: 1256
     last_commit: '2026-10-10'
     license: GPL-3.0
@@ -192,6 +209,7 @@
   github: haosulab/SAPIEN
   description: Physics-rich simulation environment for articulated objects and manipulation.
   _meta:
+    id: 247581239
     stars: 851
     last_commit: '2026-10-08'
     language: C++
@@ -203,6 +221,7 @@
   github: Unity-Technologies/Unity-Robotics-Hub
   description: Game engine with open-source robotics simulation tools and tutorials.
   _meta:
+    id: 298347380
     stars: 2591
     last_commit: '2026-09-22'
     language: C#
@@ -219,6 +238,7 @@
   github: cyberbotics/webots
   description: Development environment to model, program, and simulate robots and mechanical systems.
   _meta:
+    id: 156228018
     stars: 4698
     last_commit: '2026-10-05'
     license: Apache-2.0

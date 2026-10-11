@@ -23,7 +23,7 @@ A curated list of robotics libraries and simulators.
 * [Other Awesome Lists](#other-awesome-lists)
 * [Contributing](#contributing)
 
-> **Legend**: 🟢 commit within 1 yr · 🟡 commit within 3 yr · 💀 archived · ⭐ GitHub stars as of 2026-10-10. Entries are ordered by stars; inactive entries (archived, or no commits for 3+ years) are folded at the end of each category.
+> **Legend**: 🟢 commit within 1 yr · 🟡 commit within 3 yr · 💀 archived · ⭐ GitHub stars as of 2026-10-11. Entries are ordered by stars; inactive entries (archived, or no commits for 3+ years) are folded at the end of each category.
 
 ## [Middleware & Frameworks](#contents)
 
@@ -121,7 +121,7 @@ _Embeddable engines that time-step rigid, soft, fluid, or particle dynamics with
 * 🟢 PositionBasedDynamics - Position-based methods for simulating deformable objects and fluids. [⭐ 2.3k](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics)
 * 🟢 [Kratos](http://www.cimne.com/kratos/) - Framework for building parallel multi-disciplinary simulation software. [⭐ 1.4k](https://github.com/KratosMultiphysics/Kratos)
 * 🟢 [SOFA](https://www.sofa-framework.org/) - Simulation Open Framework Architecture for medical and physics simulation. [⭐ 1.3k](https://github.com/sofa-framework/sofa)
-* 🟢 [Ptera Software](https://docs.pterasoftware.com/) - Ptera Software is a fast, easy-to-use, and open-source software package for analyzing flapping-wing flight. [⭐ 269](https://github.com/camUrban/PteraSoftware)
+* 🟢 [Ptera Software](https://docs.pterasoftware.com/) - Ptera Software is a fast, easy-to-use, and open-source software package for analyzing flapping-wing flight. [⭐ 270](https://github.com/camUrban/PteraSoftware)
 * [ARCSim](http://graphics.berkeley.edu/resources/ARCSim/index.html) - Adaptive remeshing cloth and shell simulator for thin deformable objects.
 
 <details>
@@ -272,7 +272,7 @@ _Linear algebra, Lie groups, spatial transforms, and spatial data structures suc
 * 🟢 [nanoflann](http://www.cs.ubc.ca/research/flann/) - Nearest Neighbor search with KD-trees. [⭐ 2.7k](https://github.com/jlblancoc/nanoflann)
 * 🟡 Sophus - Lie groups using Eigen. [⭐ 2.5k](https://github.com/strasdat/Sophus)
 * 🟢 manif - Small c++11 header-only library for Lie theory. [⭐ 1.8k](https://github.com/artivis/manif)
-* 🟢 [HYPRE](https://hypre.readthedocs.io/) - Parallel solvers for sparse linear systems featuring multigrid methods. [⭐ 864](https://github.com/hypre-space/hypre)
+* 🟢 [HYPRE](https://hypre.readthedocs.io/) - Parallel solvers for sparse linear systems featuring multigrid methods. [⭐ 865](https://github.com/hypre-space/hypre)
 * 🟡 Fastor - Light-weight high performance tensor algebra framework in C++11/14/17. [⭐ 844](https://github.com/romeric/Fastor)
 * 🟢 spatialmath-python - Python classes for pose and orientation in 2D/3D with spatial operations toolbox. [⭐ 646](https://github.com/rai-opensource/spatialmath-python)
 * 🟡 kindr - Kinematics and dynamics library for rigid body transformations. [⭐ 618](https://github.com/ANYbotics/kindr)
@@ -297,7 +297,7 @@ _SLAM, odometry, factor graphs, filtering and sensor fusion, calibration, and ma
 * 🟢 GTSAM - Smoothing and mapping (SAM) in robotics and vision. [⭐ 3.7k](https://github.com/borglab/gtsam)
 * 🟢 [mrpt](https://www.mrpt.org/) - Mobile Robot Programming Toolkit for SLAM, navigation, and computer vision. [⭐ 2.2k](https://github.com/MRPT/mrpt)
 * 🟡 ElasticFusion - Real-time dense visual SLAM system. [⭐ 1.9k](https://github.com/mp3guy/ElasticFusion)
-* 🟢 fuse - General architecture for performing sensor fusion live on a robot. [⭐ 881](https://github.com/locusrobotics/fuse)
+* 🟢 fuse - General architecture for performing sensor fusion live on a robot. [⭐ 882](https://github.com/locusrobotics/fuse)
 * 🟢 [fiducials](http://wiki.ros.org/fiducials) - Simultaneous localization and mapping using fiducial markers. [⭐ 285](https://github.com/UbiquityRobotics/fiducials)
 
 ### Mapping
@@ -325,7 +325,7 @@ _SLAM, odometry, factor graphs, filtering and sensor fusion, calibration, and ma
 _Image and point-cloud processing, detection, pose estimation and tracking, and visual servoing._
 
 * 🟢 [PCL](https://pointclouds.org/) - 2D/3D image and point cloud processing. [⭐ 11.2k](https://github.com/PointCloudLibrary/pcl)
-* 🟢 [ViSP](http://visp.inria.fr/) - Visual Servoing Platform. [⭐ 927](https://github.com/lagadic/visp)
+* 🟢 [ViSP](http://visp.inria.fr/) - Visual Servoing Platform. [⭐ 928](https://github.com/lagadic/visp)
 * 🟢 [BundleTrack](https://github.com/wenbowen123/BundleTrack) - 6D Pose Tracking for Novel Objects without 3D Models. [⭐ 687](https://github.com/wenbowen123/BundleTrack)
 
 <details>
@@ -414,7 +414,7 @@ _Related curated lists and collections._
 * 🟡 [Awesome SLAM Datasets](https://github.com/youngguncho/awesome-slam-datasets) - Curated list of SLAM-related datasets. [⭐ 1.9k](https://github.com/youngguncho/awesome-slam-datasets)
 * 🟢 [Awesome Collision Detection](https://github.com/jslee02/awesome-collision-detection) - Curated list of collision detection libraries and resources. [⭐ 1k](https://github.com/jslee02/awesome-collision-detection)
 * 🟢 [Awesome Physical AI](https://github.com/keon/awesome-physical-ai) - Curated list of academic papers and resources on Physical AI. [⭐ 439](https://github.com/keon/awesome-physical-ai)
-* 🟢 [Awesome VLA Study](https://github.com/MilkClouds/awesome-vla-study) - Study guide to vision-language-action (VLA) papers for robot learning. [⭐ 401](https://github.com/MilkClouds/awesome-vla-study)
+* 🟢 [Awesome VLA Study](https://github.com/MilkClouds/awesome-vla-study) - Study guide to vision-language-action (VLA) papers for robot learning. [⭐ 402](https://github.com/MilkClouds/awesome-vla-study)
 
 <details>
 <summary>Inactive (6): archived or no commits for 3+ years</summary>

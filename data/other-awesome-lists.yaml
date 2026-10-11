@@ -3,7 +3,8 @@
   github: owainlewis/awesome-artificial-intelligence
   description: Curated list of AI courses, books, video lectures, and papers.
   _meta:
-    stars: 16640
+    id: 29906842
+    stars: 16649
     last_commit: '2026-08-15'
     license: MIT
     language: Python
@@ -12,6 +13,7 @@
   github: jslee02/awesome-collision-detection
   description: Curated list of collision detection libraries and resources.
   _meta:
+    id: 59176406
     stars: 1045
     last_commit: '2026-10-10'
     license: CC0-1.0
@@ -21,20 +23,23 @@
   github: jbhuang0604/awesome-computer-vision
   description: Curated list of computer vision resources.
   _meta:
-    stars: 23586
+    id: 29357796
+    stars: 23591
     last_commit: '2021-09-28'
 - name: Awesome Deep Learning
   url: https://github.com/ChristosChristofidis/awesome-deep-learning
   github: ChristosChristofidis/awesome-deep-learning
   description: Curated list of deep learning tutorials, projects, and communities.
   _meta:
-    stars: 29029
+    id: 28723659
+    stars: 29033
     last_commit: '2025-05-26'
 - name: Awesome Gazebo
   url: https://github.com/fkromer/awesome-gazebo
   github: fkromer/awesome-gazebo
   description: Curated list of Gazebo simulation framework resources.
   _meta:
+    id: 112123542
     stars: 155
     last_commit: '2021-01-04'
     archived: true
@@ -43,6 +48,7 @@
   github: Po-Jen/awesome-grasping
   description: Curated list of grasping libraries and resources.
   _meta:
+    id: 97423435
     stars: 99
     last_commit: '2019-07-13'
     license: Unlicense
@@ -51,6 +57,7 @@
   github: Po-Jen/awesome-human-robot-interaction
   description: Curated list of human-robot interaction libraries and resources.
   _meta:
+    id: 152947551
     stars: 153
     last_commit: '2019-02-12'
     license: MIT
@@ -59,7 +66,8 @@
   github: josephmisiti/awesome-machine-learning
   description: Curated list of machine learning frameworks, libraries, and software.
   _meta:
-    stars: 74566
+    id: 21872392
+    stars: 74570
     last_commit: '2026-10-09'
     language: Python
 - name: Awesome Physical AI
@@ -67,6 +75,7 @@
   github: keon/awesome-physical-ai
   description: Curated list of academic papers and resources on Physical AI.
   _meta:
+    id: 1132505553
     stars: 439
     last_commit: '2026-06-24'
     license: CC0-1.0
@@ -75,6 +84,7 @@
   github: Ly0n/awesome-robotic-tooling
   description: Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
   _meta:
+    id: 217333025
     stars: 3901
     last_commit: '2023-04-30'
     license: CC0-1.0
@@ -83,6 +93,7 @@
   github: ahundt/awesome-robotics
   description: Curated list of robotics links and software libraries (ahundt).
   _meta:
+    id: 91040492
     stars: 1510
     last_commit: '2023-03-19'
 - name: Awesome Robotics (Kiloreux)
@@ -90,28 +101,32 @@
   github: Kiloreux/awesome-robotics
   description: Curated list of robotics resources (Kiloreux).
   _meta:
-    stars: 7229
+    id: 46938122
+    stars: 7230
     last_commit: '2024-09-22'
 - name: Awesome SLAM Datasets
   url: https://github.com/youngguncho/awesome-slam-datasets
   github: youngguncho/awesome-slam-datasets
   description: Curated list of SLAM-related datasets.
   _meta:
-    stars: 1948
+    id: 133256832
+    stars: 1949
     last_commit: '2024-12-13'
 - name: Awesome VLA Study
   url: https://github.com/MilkClouds/awesome-vla-study
   github: MilkClouds/awesome-vla-study
   description: Study guide to vision-language-action (VLA) papers for robot learning.
   _meta:
-    stars: 401
+    id: 1157468068
+    stars: 402
     last_commit: '2026-03-21'
 - name: PythonRobotics
   url: https://github.com/AtsushiSakai/PythonRobotics
   github: AtsushiSakai/PythonRobotics
   description: Python sample codes for robotics algorithms.
   _meta:
-    stars: 30662
+    id: 54376220
+    stars: 30666
     last_commit: '2026-10-04'
     language: Python
 - name: Robotics Coursework
@@ -119,6 +134,7 @@
   github: mithi/robotics-coursework
   description: A list of robotics courses you can take online.
   _meta:
-    stars: 5310
+    id: 95303580
+    stars: 5311
     last_commit: '2026-08-31'
     license: Unlicense

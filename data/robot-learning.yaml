@@ -3,6 +3,7 @@
   github: allenai/allenact
   description: Python/PyTorch-based Research Framework for Embodied AI.
   _meta:
+    id: 233944205
     stars: 384
     last_commit: '2024-07-23'
     language: Python
@@ -11,13 +12,15 @@
   github: vwxyzjn/cleanrl
   description: Single-file implementations of deep reinforcement learning algorithms.
   _meta:
-    stars: 10530
+    id: 190776339
+    stars: 10534
     last_commit: '2026-04-20'
     language: Python
 - name: DLL
   github: wichtounet/dll
   description: Deep Learning Library (DLL) for C++.
   _meta:
+    id: 15707742
     stars: 688
     last_commit: '2025-05-27'
     license: MIT
@@ -28,6 +31,7 @@
   github: clab/dynet
   description: The Dynamic Neural Network Toolkit.
   _meta:
+    id: 30509483
     stars: 3429
     last_commit: '2023-11-08'
     license: Apache-2.0
@@ -38,6 +42,7 @@
   github: FidoProject/Fido
   description: Lightweight C++ machine learning library for embedded electronics and robotics.
   _meta:
+    id: 40337884
     stars: 464
     last_commit: '2017-11-19'
     license: MIT
@@ -47,6 +52,7 @@
   github: DartEnv/dart-env
   description: OpenAI Gym environments using the DART physics engine.
   _meta:
+    id: 85471730
     stars: 140
     last_commit: '2020-02-25'
     language: Python
@@ -54,6 +60,7 @@
   github: erlerobot/gym-gazebo
   description: OpenAI Gym environments for the Gazebo simulator.
   _meta:
+    id: 66111670
     stars: 845
     last_commit: '2019-03-16'
     archived: true
@@ -64,7 +71,8 @@
   github: Farama-Foundation/Gymnasium
   description: Developing and comparing reinforcement learning algorithms.
   _meta:
-    stars: 12650
+    id: 534011733
+    stars: 12653
     last_commit: '2026-10-10'
     license: MIT
     language: Python
@@ -73,6 +81,7 @@
   github: roboterax/humanoid-gym
   description: Reinforcement learning environment for humanoid robot locomotion.
   _meta:
+    id: 766789360
     stars: 2102
     last_commit: '2024-11-01'
     language: Python
@@ -82,8 +91,9 @@
   description: GPU-accelerated open-source framework for robot learning built on NVIDIA Isaac Sim.
   license: BSD-3-Clause
   _meta:
-    stars: 8312
-    last_commit: '2026-10-10'
+    id: 567038244
+    stars: 8316
+    last_commit: '2026-10-11'
     license: BSD-3-Clause
     language: Python
 - name: Ivy
@@ -91,6 +101,7 @@
   github: unifyai/ivy
   description: Unified Machine Learning Framework.
   _meta:
+    id: 330914717
     stars: 14168
     last_commit: '2026-10-07'
     archived: true
@@ -101,14 +112,16 @@
   github: leggedrobotics/legged_gym
   description: Isaac Gym environments for legged robot locomotion training.
   _meta:
-    stars: 3141
+    id: 418499474
+    stars: 3142
     last_commit: '2025-05-29'
     language: Python
 - name: LeRobot
   github: huggingface/lerobot
   description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
-    stars: 28064
+    id: 748713144
+    stars: 28076
     last_commit: '2026-10-08'
     license: Apache-2.0
     language: Python
@@ -117,7 +130,8 @@
   github: mani-skill/ManiSkill
   description: Robot simulation and manipulation learning package powered by SAPIEN.
   _meta:
-    stars: 3388
+    id: 520357130
+    stars: 3393
     last_commit: '2026-08-02'
     license: Apache-2.0
     language: Python
@@ -125,6 +139,7 @@
   github: yixuan/MiniDNN
   description: A header-only C++ library for deep neural networks.
   _meta:
+    id: 118344819
     stars: 434
     last_commit: '2021-01-17'
     language: C++
@@ -134,6 +149,7 @@
   github: mlpack/mlpack
   description: Scalable C++ machine learning library.
   _meta:
+    id: 28149409
     stars: 5714
     last_commit: '2026-10-06'
     language: C++
@@ -143,7 +159,8 @@
   github: Denys88/rl_games
   description: High-performance RL library used in Isaac Gym environments.
   _meta:
-    stars: 1395
+    id: 165469880
+    stars: 1397
     last_commit: '2026-09-29'
     license: MIT
     language: Jupyter Notebook
@@ -151,6 +168,7 @@
   github: samindaa/RLLib
   description: Temporal-difference learning algorithms in reinforcement learning.
   _meta:
+    id: 5505772
     stars: 211
     last_commit: '2016-08-15'
     language: C++
@@ -159,6 +177,7 @@
   github: ARISE-Initiative/robosuite
   description: A modular simulation framework and benchmark for robot learning.
   _meta:
+    id: 154626012
     stars: 2650
     last_commit: '2026-07-11'
     language: Python
@@ -167,7 +186,8 @@
   github: Toni-SM/skrl
   description: Modular reinforcement learning library with support for multiple ML frameworks.
   _meta:
-    stars: 1098
+    id: 418399149
+    stars: 1099
     last_commit: '2026-10-01'
     license: MIT
     language: Python
@@ -176,7 +196,8 @@
   github: DLR-RM/stable-baselines3
   description: Reliable implementations of reinforcement learning algorithms in PyTorch.
   _meta:
-    stars: 13881
+    id: 261372860
+    stars: 13883
     last_commit: '2026-09-09'
     license: MIT
     language: Python
@@ -185,6 +206,7 @@
   github: tiny-dnn/tiny-dnn
   description: Header only, dependency-free deep learning framework in C++14.
   _meta:
+    id: 7205740
     stars: 6027
     last_commit: '2018-10-23'
     language: C++

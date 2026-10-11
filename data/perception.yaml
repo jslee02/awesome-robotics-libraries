@@ -3,6 +3,7 @@
   github: wenbowen123/BundleTrack
   description: 6D Pose Tracking for Novel Objects without 3D Models.
   _meta:
+    id: 303253214
     stars: 687
     last_commit: '2026-04-13'
     license: Apache-2.0
@@ -12,7 +13,8 @@
   github: PointCloudLibrary/pcl
   description: 2D/3D image and point cloud processing.
   _meta:
-    stars: 11152
+    id: 8162615
+    stars: 11153
     last_commit: '2026-10-10'
     language: C++
 - name: se(3)-TrackNet
@@ -20,6 +22,7 @@
   github: wenbowen123/iros20-6d-pose-tracking
   description: 6D Pose Tracking for Novel Objects without 3D Models.
   _meta:
+    id: 242568644
     stars: 424
     last_commit: '2023-08-30'
     language: Python
@@ -28,7 +31,8 @@
   github: lagadic/visp
   description: Visual Servoing Platform.
   _meta:
-    stars: 927
-    last_commit: '2026-10-08'
+    id: 42498174
+    stars: 928
+    last_commit: '2026-10-11'
     license: GPL-2.0
     language: C++
