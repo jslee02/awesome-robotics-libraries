@@ -37,6 +37,12 @@ body:
       description: GitLab, Bitbucket, or other source URL, if not on GitHub
       placeholder: https://gitlab.com/org/project
 
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence of use
+      description: "Required for projects not on GitHub, including commercial tools: show wide use in robotics, for example independent users or customers, citations, or third-party tutorials."
+
   - type: dropdown
     id: category
     attributes:

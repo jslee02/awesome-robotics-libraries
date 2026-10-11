@@ -37,7 +37,8 @@ GitHub-hosted projects must then pass these gates, all checked automatically fro
 When a suggestion passes, a maintainer reviews the generated PR for scope and category.
 
 - **Not on GitHub** (GitLab, commercial tools): reviewed by a maintainer, who looks for
-  wide use in the robotics community.
+  wide use in the robotics community. Fill in **Evidence of use** (independent users or
+  customers, citations, third-party tutorials); without it, the bot asks for it first.
 - **Maintainer picks**: a maintainer may add a resource outside these gates and says why in the PR. This is rare.
 
 **Why these signals:** AI tools make a polished README, docs, tests, and steady commits
