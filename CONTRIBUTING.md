@@ -94,8 +94,9 @@ type (humanoid, drone, car). Tie-breaks:
   Keep `data/*.yaml` files alphabetical by name.
 - **Inactive entries**: archived projects and projects without a default-branch commit for
   3+ years are folded into a collapsed block at the end of their category, automatically.
-  They are kept as references and return when activity resumes. Entries whose links stay
-  broken are removed.
+  They are kept as references and return when activity resumes.
+- **Dead entries**: a GitHub repository that is gone on two weekly metadata refreshes is
+  removed in the refresh PR. Broken links elsewhere are reported in a Link Checker issue.
 
 ### Entry Fields
 
@@ -146,7 +147,7 @@ Optional link check with [lychee](https://lychee.cli.rs/): `lychee --config .lyc
 
 | Workflow | Schedule | Description |
 |----------|----------|-------------|
-| Refresh Metadata | Weekly (Mon) | Updates stars, activity, and renamed repositories, regenerates the README, and opens a PR |
+| Refresh Metadata | Weekly (Mon) | Updates stars, activity, and renamed repositories, removes repositories gone for a week, regenerates the README, and opens a PR |
 | Check Links | Weekly (Mon) | Opens a PR fixing redirects and dead links, or an issue for links it cannot fix |
 | Stale Author-Action Issues | Daily | Marks `question` suggestions stale after 14 days and closes them 14 days later |
 

@@ -19,10 +19,15 @@ except ModuleNotFoundError:
 
 RATE_LIMIT_PAUSE = 2  # seconds between requests to avoid abuse detection
 USER_AGENT = "awesome-robotics-libraries-metadata-bot"
+GONE = "gone"
+GONE_GRACE_DAYS = 7  # removed when still gone on the next weekly refresh
 
 
-def fetch_repo_metadata(owner_repo: str) -> tuple[dict, str] | None:
-    """Return (_meta, current owner/repo); the API follows repo renames."""
+def fetch_repo_metadata(owner_repo: str) -> tuple[dict, str] | str | None:
+    """Return (_meta, current owner/repo), GONE for a deleted repository, or None on errors.
+
+    The API follows repository renames.
+    """
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     try:
         data = fetch_json(
@@ -31,9 +36,10 @@ def fetch_repo_metadata(owner_repo: str) -> tuple[dict, str] | None:
             USER_AGENT,
         )
     except urllib.error.HTTPError as e:
-        if e.code == 404:
-            print(f"  WARN: {owner_repo} - 404 Not Found", file=sys.stderr)
-        elif e.code == 403:
+        if e.code in (404, 451):
+            print(f"  WARN: {owner_repo} - HTTP {e.code}", file=sys.stderr)
+            return GONE
+        if e.code == 403:
             print(f"  WARN: {owner_repo} — 403 rate limited", file=sys.stderr)
         else:
             print(f"  WARN: {owner_repo} — HTTP {e.code}", file=sys.stderr)
@@ -77,15 +83,18 @@ def fetch_repo_metadata(owner_repo: str) -> tuple[dict, str] | None:
     return meta, data.get("full_name") or owner_repo
 
 
-def process_yaml_file(yaml_path: Path, dry_run: bool = False) -> tuple[int, int]:
+def process_yaml_file(yaml_path: Path, dry_run: bool = False, today: date | None = None) -> tuple[int, int]:
     with open(yaml_path, encoding="utf-8") as f:
         entries = yaml.safe_load(f)
     if not isinstance(entries, list):
         return 0, 0
 
+    today = today or date.today()
     updated = 0
     total = 0
+    kept = []
     for entry in entries:
+        kept.append(entry)
         github = entry.get("github")
         if not github:
             continue
@@ -93,7 +102,18 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False) -> tuple[int, int]
         print(f"  {github}...", end=" ", flush=True)
 
         fetched = fetch_repo_metadata(github)
-        if fetched:
+        if fetched == GONE:
+            # Mark on the first miss; drop on a later refresh, so the PR proposes the removal.
+            meta = entry.setdefault("_meta", {})
+            since = meta.get("gone_since")
+            if since and (today - date.fromisoformat(str(since))).days >= GONE_GRACE_DAYS:
+                kept.pop()
+                print(f"removed (gone since {since})")
+            else:
+                meta.setdefault("gone_since", today.isoformat())
+                print("gone")
+            updated += 1
+        elif fetched:
             meta, full_name = fetched
             entry["_meta"] = meta
             if full_name.lower() != github.lower():
@@ -110,7 +130,7 @@ def process_yaml_file(yaml_path: Path, dry_run: bool = False) -> tuple[int, int]
     if not dry_run and updated > 0:
         with open(yaml_path, "w", encoding="utf-8") as f:
             yaml.dump(
-                entries,
+                kept,
                 f,
                 default_flow_style=False,
                 allow_unicode=True,

@@ -67,7 +67,8 @@
         "last_commit": { "type": "string", "format": "date" },
         "archived": { "type": "boolean" },
         "license": { "type": "string" },
-        "language": { "type": "string" }
+        "language": { "type": "string" },
+        "gone_since": { "type": "string", "format": "date" }
       }
     },
     "_subsection": {
