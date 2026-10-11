@@ -1,10 +1,18 @@
 name: Protect README
 
 on:
-  pull_request:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
     paths:
       - "README.md"
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
 
 jobs:
   check-readme:
     uses: jslee02/awesome-list-infra/.github/workflows/protect-readme.yml@main
+    with:
+      close-pr: true

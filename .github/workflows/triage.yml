@@ -1,0 +1,41 @@
+name: Triage Suggestions
+
+# Applies the acceptance bar in CONTRIBUTING.md to suggestion issues, using the
+# shared pipeline in jslee02/awesome-list-infra. Categories come from
+# SECTIONS in scripts/generate_readme.py.
+
+on:
+  issues:
+    types: [opened, edited, reopened, labeled, unlabeled, closed]
+  issue_comment:
+    types: [created, edited, deleted]
+  pull_request_target:
+    types: [closed]
+  schedule:
+    - cron: "0 9 1 * *" # monthly re-check of monitoring issues
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Issue to triage (blank = every open suggestion)
+        required: false
+        type: string
+
+permissions:
+  actions: write # sweeps dispatch one run per issue
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  triage:
+    # Only the issue author's replies can change an outcome; skip other comments early.
+    if: >-
+      github.event_name != 'issue_comment' ||
+      (!github.event.issue.pull_request && github.event.comment.user.login == github.event.issue.user.login)
+    # One group per issue (sweeps fan out into per-issue runs). Job-level, so runs
+    # skipped by the condition above never replace a queued run.
+    concurrency:
+      group: triage-${{ github.event.issue.number || inputs.issue_number || github.event.pull_request.number || github.run_id }}
+    uses: jslee02/awesome-list-infra/.github/workflows/triage-suggestions.yml@main
+    secrets:
+      CREATE_PR_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}

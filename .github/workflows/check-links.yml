@@ -18,3 +18,5 @@ permissions:
 jobs:
   check-links:
     uses: jslee02/awesome-list-infra/.github/workflows/check-links.yml@main
+    with:
+      generate-command: python3 scripts/generate_readme.py

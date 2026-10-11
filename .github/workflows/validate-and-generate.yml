@@ -6,7 +6,19 @@ on:
       - "data/**"
       - "schema/**"
       - "scripts/**"
+      - "tests/**"
+      - ".github/ISSUE_TEMPLATE/**"
 
 jobs:
   validate:
     uses: jslee02/awesome-list-infra/.github/workflows/validate-data.yml@main
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml jsonschema
+      - run: python3 -m unittest discover tests
