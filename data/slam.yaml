@@ -62,6 +62,16 @@
     stars: 882
     last_commit: '2026-06-18'
     language: C++
+- name: FusionCore
+  url: https://manankharwar.github.io/fusioncore/
+  github: manankharwar/fusioncore
+  description: ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection for.
+  _meta:
+    id: 1184507826
+    stars: 377
+    last_commit: '2026-10-10'
+    license: Apache-2.0
+    language: C++
 - name: GTSAM
   github: borglab/gtsam
   description: Smoothing and mapping (SAM) in robotics and vision.
