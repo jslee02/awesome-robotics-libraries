@@ -17,6 +17,16 @@
     last_commit: '2024-10-28'
     license: Apache-2.0
     language: C
+- name: Robot Control Stack (RCS)
+  url: https://robotcontrolstack.org
+  github: RobotControlStack/robot-control-stack
+  description: ROS-free Gymnasium framework unifying MuJoCo sim and real robots for robot learning.
+  _meta:
+    id: 765181298
+    stars: 164
+    last_commit: '2026-10-11'
+    license: AGPL-3.0
+    language: Python
 - name: Rock
   url: https://www.rock-robotics.org/
   description: Software framework for robotic systems.
