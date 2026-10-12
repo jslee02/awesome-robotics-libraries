@@ -147,7 +147,7 @@
     stars: 10250
     last_commit: '2017-10-11'
     language: C++
-- name: RTAP-Map
+- name: RTAB-Map
   url: http://introlab.github.io/rtabmap/
   github: introlab/rtabmap
   description: RGB-D Graph SLAM approach based on a global Bayesian loop closure detector.

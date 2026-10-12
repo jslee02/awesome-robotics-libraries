@@ -68,7 +68,6 @@
     license: MIT
     language: C++
 - name: nanoflann
-  url: http://www.cs.ubc.ca/research/flann/
   github: jlblancoc/nanoflann
   description: Nearest Neighbor search with KD-trees.
   _meta:
