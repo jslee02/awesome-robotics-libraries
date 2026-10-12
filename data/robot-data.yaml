@@ -20,7 +20,7 @@
     last_commit: '2026-03-13'
     license: Apache-2.0
     language: Python
-- name: ReductSotre
+- name: ReductStore
   url: https://www.reduct.store
   github: reductstore/reductstore
   description: High-performance, time-indexed object storage for robotics and industrial IoT.

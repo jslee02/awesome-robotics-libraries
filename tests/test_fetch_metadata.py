@@ -38,5 +38,29 @@ class GoneRepoTest(unittest.TestCase):
         self.assertEqual(back[0]["_meta"], {"stars": 1})
 
 
+    def test_failed_commit_lookup_keeps_the_previous_date(self):
+        entries = [{"name": "X", "github": "a/x", "_meta": {"id": 1, "stars": 1, "last_commit": "2026-01-02"}}]
+        kept = self.refresh(entries, date(2026, 10, 19), {"a/x": ({"id": 1, "stars": 2}, "a/x")})
+        self.assertEqual(kept[0]["_meta"], {"id": 1, "stars": 2, "last_commit": "2026-01-02"})
+        # A link corrected to another repository doesn't inherit the old repository's date.
+        moved = self.refresh(entries, date(2026, 10, 19), {"a/x": ({"id": 2, "stars": 2}, "a/x")})
+        self.assertEqual(moved[0]["_meta"], {"id": 2, "stars": 2})
+
+
+class LookupTest(unittest.TestCase):
+    def test_lookup_follows_the_link_and_never_pushed_at(self):
+        urls = []
+        repo = {"id": 99, "full_name": "new/correct", "stargazers_count": 3, "default_branch": "main",
+                "pushed_at": "2026-10-01T00:00:00Z"}
+        with mock.patch.object(fetch_metadata, "fetch_json", side_effect=lambda url, *a: urls.append(url) or repo), \
+                mock.patch.object(fetch_metadata, "fetch_default_branch_commit_date", return_value=None) as commits:
+            meta, full_name = fetch_metadata.fetch_repo_metadata("new/correct")
+        # A corrected link wins over a stale stored ID, and its repository's ID is recorded.
+        self.assertEqual(urls, ["https://api.github.com/repos/new/correct"])
+        self.assertEqual((meta["id"], full_name), (99, "new/correct"))
+        self.assertEqual(commits.call_args[0][0], "new/correct")
+        self.assertNotIn("last_commit", meta)  # never pushed_at, which counts other branches
+
+
 if __name__ == "__main__":
     unittest.main()

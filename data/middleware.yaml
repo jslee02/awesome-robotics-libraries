@@ -1,7 +1,7 @@
 - name: Dimensional
   url: https://dimensional.org/
   github: dimensionalOS/dimos
-  description: Dimensional is the agentic operating system for physical space.
+  description: Agentic operating system for physical space.
   _meta:
     id: 875378461
     stars: 4634

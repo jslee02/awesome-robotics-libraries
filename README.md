@@ -30,7 +30,7 @@ A curated list of robotics libraries and simulators.
 _Communication middleware, robot software frameworks, runtime services such as launch and diagnostics, and agent orchestration for robots._
 
 * 🟢 [ROS 2](https://github.com/ros2/ros2/wiki) - Version 2.0 of the Robot Operating System (ROS) software stack. [⭐ 6.1k](https://github.com/ros2/ros2)
-* 🟢 [Dimensional](https://dimensional.org/) - Dimensional is the agentic operating system for physical space. [⭐ 4.6k](https://github.com/dimensionalOS/dimos)
+* 🟢 [Dimensional](https://dimensional.org/) - Agentic operating system for physical space. [⭐ 4.6k](https://github.com/dimensionalOS/dimos)
 * 🟢 [YARP](https://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices. [⭐ 603](https://github.com/robotology/yarp)
 * 🟢 [ros2_medkit](https://selfpatch.github.io/ros2_medkit/) - Fault management and diagnostics gateway for ROS 2 with a REST API. [⭐ 276](https://github.com/selfpatch/ros2_medkit)
 * 🟡 [Micro-ROS for Arduino](https://github.com/kaiaai/micro_ros_arduino_kaiaai) - a Micro-ROS fork available in the Arduino Library Manager. [⭐ 14](https://github.com/kaiaai/micro_ros_arduino_kaiaai)
@@ -122,7 +122,7 @@ _Embeddable engines that time-step rigid, soft, fluid, or particle dynamics with
 * 🟢 PositionBasedDynamics - Position-based methods for simulating deformable objects and fluids. [⭐ 2.3k](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics)
 * 🟢 [Kratos](http://www.cimne.com/kratos/) - Framework for building parallel multi-disciplinary simulation software. [⭐ 1.4k](https://github.com/KratosMultiphysics/Kratos)
 * 🟢 [SOFA](https://www.sofa-framework.org/) - Simulation Open Framework Architecture for medical and physics simulation. [⭐ 1.3k](https://github.com/sofa-framework/sofa)
-* 🟢 [Ptera Software](https://docs.pterasoftware.com/) - Ptera Software is a fast, easy-to-use, and open-source software package for analyzing flapping-wing flight. [⭐ 270](https://github.com/camUrban/PteraSoftware)
+* 🟢 [Ptera Software](https://docs.pterasoftware.com/) - Open-source package for analyzing flapping-wing flight. [⭐ 270](https://github.com/camUrban/PteraSoftware)
 * [ARCSim](http://graphics.berkeley.edu/resources/ARCSim/index.html) - Adaptive remeshing cloth and shell simulator for thin deformable objects.
 
 <details>
@@ -221,7 +221,7 @@ _Model-based control: MPC, trajectory optimization, whole-body and task-space co
 * 🟢 OCS2 - Efficient continuous and discrete time optimal control implementation. [⭐ 1.5k](https://github.com/leggedrobotics/ocs2)
 * 🟢 Crocoddyl - Optimal control library for robot control under contact sequence. [⭐ 1.3k](https://github.com/loco-3d/crocoddyl)
 * 🟡 TrajectoryOptimization - A fast trajectory optimization library written in Julia. [⭐ 400](https://github.com/RoboticExplorationLab/TrajectoryOptimization.jl)
-* 🟢 Bioptim - Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics. [⭐ 120](https://github.com/pyomeca/bioptim)
+* 🟢 Bioptim - Python framework for musculoskeletal optimal control in biomechanics. [⭐ 120](https://github.com/pyomeca/bioptim)
 * 🟡 [Ungar](https://github.com/fdevinc/ungar) - Expressive and efficient implementation of optimal control problems using template metaprogramming. [⭐ 108](https://github.com/fdevinc/ungar)
 
 <details>
@@ -299,7 +299,7 @@ _SLAM, odometry, factor graphs, filtering and sensor fusion, calibration, and ma
 * 🟢 [mrpt](https://www.mrpt.org/) - Mobile Robot Programming Toolkit for SLAM, navigation, and computer vision. [⭐ 2.2k](https://github.com/MRPT/mrpt)
 * 🟡 ElasticFusion - Real-time dense visual SLAM system. [⭐ 1.9k](https://github.com/mp3guy/ElasticFusion)
 * 🟢 fuse - General architecture for performing sensor fusion live on a robot. [⭐ 882](https://github.com/locusrobotics/fuse)
-* 🟢 [FusionCore](https://manankharwar.github.io/fusioncore/) - ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection for. [⭐ 377](https://github.com/manankharwar/fusioncore)
+* 🟢 [FusionCore](https://manankharwar.github.io/fusioncore/) - ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection. [⭐ 377](https://github.com/manankharwar/fusioncore)
 * 🟢 [fiducials](http://wiki.ros.org/fiducials) - Simultaneous localization and mapping using fiducial markers. [⭐ 285](https://github.com/UbiquityRobotics/fiducials)
 
 ### Mapping
@@ -393,7 +393,7 @@ _Robot foundation models (VLA), imitation and reinforcement learning libraries, 
 _Logging, storing, converting, and visualizing robot data, dataset tools, and teleoperation for data collection._
 
 * 🟢 Any4LeRobot - A collection of utilities and tools for LeRobot. [⭐ 1.2k](https://github.com/Tavish9/any4lerobot)
-* 🟢 [ReductSotre](https://www.reduct.store) - High-performance, time-indexed object storage for robotics and industrial IoT. [⭐ 373](https://github.com/reductstore/reductstore)
+* 🟢 [ReductStore](https://www.reduct.store) - High-performance, time-indexed object storage for robotics and industrial IoT. [⭐ 373](https://github.com/reductstore/reductstore)
 * 🟢 [LeRobot Episode Scoring Toolkit](https://github.com/RoboticsData/score_lerobot_episodes) - One-click tool to score, filter, and export higher-quality LeRobot datasets. [⭐ 77](https://github.com/RoboticsData/score_lerobot_episodes)
 * [Foxglove Studio](https://foxglove.dev) - A fully integrated visualization and debugging desktop app for your robotics data.
 

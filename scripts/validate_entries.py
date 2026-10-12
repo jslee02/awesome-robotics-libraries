@@ -10,6 +10,9 @@ from pathlib import Path
 import jsonschema
 import yaml
 
+sys.path.insert(0, str(Path(__file__).parent))
+from generate_readme import SECTIONS  # noqa: E402
+
 
 def load_schema(schema_path):
     """Load JSON schema from file."""
@@ -18,17 +21,21 @@ def load_schema(schema_path):
 
 
 def load_yaml_entries(yaml_path):
-    """Load YAML file and return list of entries."""
+    """Load a data file, which must be a YAML list of entries."""
     with open(yaml_path, "r") as f:
         data = yaml.safe_load(f)
-        return data if isinstance(data, list) else []
+    if not isinstance(data, list):
+        # The generator would read it as empty and silently drop the category.
+        raise ValueError("expected a YAML list of entries (does each entry start with '- '?)")
+    return data
 
 
-def validate_entries():
+def validate_entries(data_dir=None):
     """Validate all data/*.yaml files against schema."""
     repo_root = Path(__file__).parent.parent
     schema_path = repo_root / "schema" / "entry.schema.json"
-    data_dir = repo_root / "data"
+    data_dir = Path(data_dir) if data_dir else repo_root / "data"
+    categories = {f"{key}.yaml" for key, *_ in SECTIONS}
 
     # Load schema
     try:
@@ -48,6 +55,12 @@ def validate_entries():
     total_errors = 0
 
     for yaml_file in yaml_files:
+        if yaml_file.name not in categories:
+            # The generator reads only registered categories, so these entries would vanish.
+            print(f"ERROR: {yaml_file.name} is not a category in scripts/generate_readme.py SECTIONS",
+                  file=sys.stderr)
+            all_valid = False
+            continue
         try:
             entries = load_yaml_entries(yaml_file)
         except Exception as e:

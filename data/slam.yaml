@@ -65,7 +65,7 @@
 - name: FusionCore
   url: https://manankharwar.github.io/fusioncore/
   github: manankharwar/fusioncore
-  description: ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection for.
+  description: ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection.
   _meta:
     id: 1184507826
     stars: 377
