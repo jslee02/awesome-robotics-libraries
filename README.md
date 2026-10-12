@@ -299,6 +299,7 @@ _SLAM, odometry, factor graphs, filtering and sensor fusion, calibration, and ma
 * 🟢 [mrpt](https://www.mrpt.org/) - Mobile Robot Programming Toolkit for SLAM, navigation, and computer vision. [⭐ 2.2k](https://github.com/MRPT/mrpt)
 * 🟡 ElasticFusion - Real-time dense visual SLAM system. [⭐ 1.9k](https://github.com/mp3guy/ElasticFusion)
 * 🟢 fuse - General architecture for performing sensor fusion live on a robot. [⭐ 882](https://github.com/locusrobotics/fuse)
+* 🟢 [FusionCore](https://manankharwar.github.io/fusioncore/) - ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection for. [⭐ 377](https://github.com/manankharwar/fusioncore)
 * 🟢 [fiducials](http://wiki.ros.org/fiducials) - Simultaneous localization and mapping using fiducial markers. [⭐ 285](https://github.com/UbiquityRobotics/fiducials)
 
 ### Mapping
