@@ -17,7 +17,7 @@
   description: Simulator based on Unreal Engine for autonomous vehicles.
   _meta:
     id: 81887991
-    stars: 18547
+    stars: 18548
     last_commit: '2026-09-15'
     language: C++
 - name: ARGoS
@@ -48,7 +48,7 @@
   description: Open-source simulator for autonomous driving research.
   _meta:
     id: 108102826
-    stars: 14476
+    stars: 14482
     last_commit: '2026-10-09'
     license: MIT
     language: C++
@@ -108,7 +108,7 @@
   license: Apache-2.0
   _meta:
     id: 992179916
-    stars: 4243
+    stars: 4247
     last_commit: '2026-09-18'
     language: Python
 - name: Kineo
@@ -148,7 +148,7 @@
   - vehicle
   _meta:
     id: 22798093
-    stars: 416
+    stars: 417
     last_commit: '2026-10-11'
     license: BSD-3-Clause
     language: C++
@@ -162,7 +162,7 @@
   description: An easy to use simulator for robotics and deep reinforcement learning.
   _meta:
     id: 1605598
-    stars: 14771
+    stars: 14772
     last_commit: '2026-10-09'
     language: C++
 - name: PyBullet_Industrial
@@ -188,7 +188,7 @@
   - vehicle
   _meta:
     id: 28123883
-    stars: 1256
+    stars: 1255
     last_commit: '2026-10-10'
     license: GPL-3.0
     language: C++
@@ -210,7 +210,7 @@
   description: Physics-rich simulation environment for articulated objects and manipulation.
   _meta:
     id: 247581239
-    stars: 851
+    stars: 853
     last_commit: '2026-10-08'
     language: C++
 - name: Simbad
@@ -222,7 +222,7 @@
   description: Game engine with open-source robotics simulation tools and tutorials.
   _meta:
     id: 298347380
-    stars: 2591
+    stars: 2592
     last_commit: '2026-09-22'
     language: C#
 - name: Virtual Robotics Toolkit

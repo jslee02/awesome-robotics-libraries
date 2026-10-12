@@ -4,8 +4,8 @@
   description: Agentic operating system for physical space.
   _meta:
     id: 875378461
-    stars: 4634
-    last_commit: '2026-10-11'
+    stars: 4639
+    last_commit: '2026-10-12'
     language: Python
 - name: Micro-ROS for Arduino
   url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
@@ -39,7 +39,7 @@
   description: Version 2.0 of the Robot Operating System (ROS) software stack.
   _meta:
     id: 31285942
-    stars: 6148
+    stars: 6156
     last_commit: '2026-10-07'
 - name: ros2_medkit
   url: https://selfpatch.github.io/ros2_medkit/

@@ -13,7 +13,7 @@
   description: Open-Source C++ Library for Robotics, Optimal and Model Predictive Control.
   _meta:
     id: 183515197
-    stars: 1713
+    stars: 1714
     last_commit: '2021-07-05'
     license: BSD-2-Clause
     language: C++
@@ -22,7 +22,7 @@
   description: Optimal control library for robot control under contact sequence.
   _meta:
     id: 190190517
-    stars: 1319
+    stars: 1321
     last_commit: '2026-10-06'
     license: BSD-3-Clause
     language: C++
@@ -45,7 +45,7 @@
   description: Efficient continuous and discrete time optimal control implementation.
   _meta:
     id: 384033964
-    stars: 1526
+    stars: 1527
     last_commit: '2025-12-16'
     license: BSD-3-Clause
     language: C++

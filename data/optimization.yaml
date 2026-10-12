@@ -14,7 +14,7 @@
   description: Large scale nonlinear optimization library.
   _meta:
     id: 15667250
-    stars: 4580
+    stars: 4581
     last_commit: '2026-10-10'
     language: C++
 - name: eigen-qld
@@ -48,7 +48,7 @@
   description: An Eigen-based, light-weight C++ Interface to Nonlinear Programming Solvers (Ipopt, Snopt).
   _meta:
     id: 114131004
-    stars: 867
+    stars: 866
     last_commit: '2025-11-03'
     license: BSD-3-Clause
     language: C++
@@ -58,7 +58,7 @@
   description: Large scale nonlinear optimization library.
   _meta:
     id: 167958206
-    stars: 1791
+    stars: 1792
     last_commit: '2026-10-10'
     license: EPL-2.0
     language: C++
@@ -94,7 +94,7 @@
   description: Nonlinear optimization.
   _meta:
     id: 12412122
-    stars: 2280
+    stars: 2279
     last_commit: '2026-06-06'
     language: C
 - name: Optimization Engine (OpEn)

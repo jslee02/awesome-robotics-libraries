@@ -31,8 +31,8 @@
   description: Parallel solvers for sparse linear systems featuring multigrid methods.
   _meta:
     id: 158287397
-    stars: 865
-    last_commit: '2026-09-30'
+    stars: 867
+    last_commit: '2026-10-11'
     language: C
 - name: kindr
   description: Kinematics and dynamics library for rigid body transformations.
@@ -54,7 +54,7 @@
   description: Single header public domain linear algebra library for C++11.
   _meta:
     id: 52693693
-    stars: 968
+    stars: 969
     last_commit: '2023-07-02'
     license: Unlicense
     language: C++
@@ -63,7 +63,7 @@
   description: Small c++11 header-only library for Lie theory.
   _meta:
     id: 129808016
-    stars: 1823
+    stars: 1822
     last_commit: '2025-11-01'
     license: MIT
     language: C++
@@ -72,7 +72,7 @@
   description: Nearest Neighbor search with KD-trees.
   _meta:
     id: 19349382
-    stars: 2694
+    stars: 2695
     last_commit: '2026-10-11'
     language: C++
 - name: Octree

@@ -19,7 +19,7 @@
   - id
   _meta:
     id: 373310764
-    stars: 3248
+    stars: 3247
     last_commit: '2026-10-07'
     license: Apache-2.0
     language: Jupyter Notebook
@@ -41,7 +41,7 @@
   - sdf
   _meta:
     id: 1605598
-    stars: 14771
+    stars: 14772
     last_commit: '2026-10-09'
     language: C++
 - name: CHRONO::ENGINE
@@ -62,8 +62,8 @@
   - urdf
   _meta:
     id: 12567717
-    stars: 3078
-    last_commit: '2026-10-11'
+    stars: 3080
+    last_commit: '2026-10-12'
     license: BSD-3-Clause
     language: C++
 - name: DART
@@ -86,7 +86,7 @@
   _meta:
     id: 2418592
     stars: 1213
-    last_commit: '2026-10-11'
+    last_commit: '2026-10-12'
     license: BSD-2-Clause
     language: C++
 - name: Drake
@@ -124,7 +124,7 @@
   - fluid
   _meta:
     id: 79958106
-    stars: 814
+    stars: 815
     last_commit: '2021-04-15'
     language: C++
   _subsection: Soft, Fluid & Multiphysics
@@ -134,7 +134,7 @@
   description: Fluid simulation engine for computer graphics applications.
   _meta:
     id: 58299041
-    stars: 2101
+    stars: 2102
     last_commit: '2022-07-09'
     license: MIT
     language: C++
@@ -153,7 +153,7 @@
   - particle
   _meta:
     id: 712225112
-    stars: 30042
+    stars: 30047
     last_commit: '2026-10-11'
     license: Apache-2.0
     language: Python
@@ -172,8 +172,8 @@
   description: Framework for building parallel multi-disciplinary simulation software.
   _meta:
     id: 81815495
-    stars: 1374
-    last_commit: '2026-10-10'
+    stars: 1376
+    last_commit: '2026-10-12'
     language: C++
   _subsection: Soft, Fluid & Multiphysics
 - name: MBDyn
@@ -237,8 +237,8 @@
   - id
   _meta:
     id: 400501136
-    stars: 15606
-    last_commit: '2026-10-11'
+    stars: 15630
+    last_commit: '2026-10-12'
     license: Apache-2.0
     language: C++
 - name: Newton
@@ -259,8 +259,8 @@
   - mjcf
   _meta:
     id: 970467647
-    stars: 5749
-    last_commit: '2026-10-09'
+    stars: 5750
+    last_commit: '2026-10-12'
     license: Apache-2.0
     language: Python
 - name: Newton Dynamics
@@ -284,7 +284,7 @@
   - Rust
   _meta:
     id: 10066380
-    stars: 1649
+    stars: 1648
     last_commit: '2021-07-27'
     license: Apache-2.0
     language: Rust
@@ -306,7 +306,7 @@
   - C++
   _meta:
     id: 545381143
-    stars: 4784
+    stars: 4787
     last_commit: '2026-10-09'
     license: BSD-3-Clause
     language: C++
@@ -330,7 +330,7 @@
   _meta:
     id: 249337717
     stars: 270
-    last_commit: '2026-10-10'
+    last_commit: '2026-10-12'
     license: MIT
     language: Python
   _subsection: Soft, Fluid & Multiphysics
@@ -344,7 +344,7 @@
   - rigid
   _meta:
     id: 25142949
-    stars: 994
+    stars: 993
     last_commit: '2021-05-09'
     archived: true
     license: Zlib
@@ -370,7 +370,7 @@
   - C++
   _meta:
     id: 10272113
-    stars: 1775
+    stars: 1774
     last_commit: '2025-01-09'
     license: Zlib
     language: C++
@@ -421,7 +421,7 @@
   _meta:
     id: 60089478
     stars: 1274
-    last_commit: '2026-10-09'
+    last_commit: '2026-10-12'
     license: LGPL-2.1
     language: C++
   _subsection: Soft, Fluid & Multiphysics

@@ -4,7 +4,7 @@
   description: Curated list of AI courses, books, video lectures, and papers.
   _meta:
     id: 29906842
-    stars: 16649
+    stars: 16654
     last_commit: '2026-08-15'
     license: MIT
     language: Python
@@ -24,7 +24,7 @@
   description: Curated list of computer vision resources.
   _meta:
     id: 29357796
-    stars: 23591
+    stars: 23588
     last_commit: '2021-09-28'
 - name: Awesome Deep Learning
   url: https://github.com/ChristosChristofidis/awesome-deep-learning
@@ -32,7 +32,7 @@
   description: Curated list of deep learning tutorials, projects, and communities.
   _meta:
     id: 28723659
-    stars: 29033
+    stars: 29037
     last_commit: '2025-05-26'
 - name: Awesome Gazebo
   url: https://github.com/fkromer/awesome-gazebo
@@ -67,7 +67,7 @@
   description: Curated list of machine learning frameworks, libraries, and software.
   _meta:
     id: 21872392
-    stars: 74570
+    stars: 74573
     last_commit: '2026-10-09'
     language: Python
 - name: Awesome Physical AI
@@ -85,7 +85,7 @@
   description: Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
   _meta:
     id: 217333025
-    stars: 3901
+    stars: 3902
     last_commit: '2023-04-30'
     license: CC0-1.0
 - name: Awesome Robotics (ahundt)
@@ -94,7 +94,7 @@
   description: Curated list of robotics links and software libraries (ahundt).
   _meta:
     id: 91040492
-    stars: 1510
+    stars: 1511
     last_commit: '2023-03-19'
 - name: Awesome Robotics (Kiloreux)
   url: https://github.com/Kiloreux/awesome-robotics
@@ -110,7 +110,7 @@
   description: Curated list of SLAM-related datasets.
   _meta:
     id: 133256832
-    stars: 1949
+    stars: 1948
     last_commit: '2024-12-13'
 - name: Awesome VLA Study
   url: https://github.com/MilkClouds/awesome-vla-study
@@ -126,7 +126,7 @@
   description: Python sample codes for robotics algorithms.
   _meta:
     id: 54376220
-    stars: 30666
+    stars: 30674
     last_commit: '2026-10-04'
     language: Python
 - name: Robotics Coursework
@@ -135,6 +135,6 @@
   description: A list of robotics courses you can take online.
   _meta:
     id: 95303580
-    stars: 5311
+    stars: 5315
     last_commit: '2026-08-31'
     license: Unlicense

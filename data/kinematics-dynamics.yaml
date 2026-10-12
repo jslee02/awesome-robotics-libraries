@@ -102,7 +102,7 @@
   - code generation
   _meta:
     id: 24897645
-    stars: 3788
+    stars: 3787
     last_commit: '2026-10-07'
     license: BSD-2-Clause
     language: C++
@@ -198,7 +198,7 @@
   - C++
   _meta:
     id: 20737145
-    stars: 1206
+    stars: 1207
     last_commit: '2025-04-15'
     license: BSD-2-Clause
     language: C++
