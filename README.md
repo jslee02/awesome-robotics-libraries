@@ -30,6 +30,7 @@ A curated list of robotics libraries and simulators.
 _Communication middleware, robot software frameworks, runtime services such as launch and diagnostics, and agent orchestration for robots._
 
 * 🟢 [ROS 2](https://github.com/ros2/ros2/wiki) - Version 2.0 of the Robot Operating System (ROS) software stack. [⭐ 6.1k](https://github.com/ros2/ros2)
+* 🟢 [Dimensional](https://dimensional.org/) - Dimensional is the agentic operating system for physical space. [⭐ 4.6k](https://github.com/dimensionalOS/dimos)
 * 🟢 [YARP](https://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices. [⭐ 603](https://github.com/robotology/yarp)
 * 🟢 [ros2_medkit](https://selfpatch.github.io/ros2_medkit/) - Fault management and diagnostics gateway for ROS 2 with a REST API. [⭐ 276](https://github.com/selfpatch/ros2_medkit)
 * 🟡 [Micro-ROS for Arduino](https://github.com/kaiaai/micro_ros_arduino_kaiaai) - a Micro-ROS fork available in the Arduino Library Manager. [⭐ 14](https://github.com/kaiaai/micro_ros_arduino_kaiaai)

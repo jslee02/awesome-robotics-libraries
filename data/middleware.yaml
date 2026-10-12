@@ -1,3 +1,12 @@
+- name: Dimensional
+  url: https://dimensional.org/
+  github: dimensionalOS/dimos
+  description: Dimensional is the agentic operating system for physical space.
+  _meta:
+    id: 875378461
+    stars: 4634
+    last_commit: '2026-10-11'
+    language: Python
 - name: Micro-ROS for Arduino
   url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
   github: kaiaai/micro_ros_arduino_kaiaai
