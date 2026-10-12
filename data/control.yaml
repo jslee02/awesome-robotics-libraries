@@ -1,6 +1,6 @@
 - name: Bioptim
   github: pyomeca/bioptim
-  description: Bioptim, a Python Framework for Musculoskeletal Optimal Control in Biomechanics.
+  description: Python framework for musculoskeletal optimal control in biomechanics.
   _meta:
     id: 251615517
     stars: 120

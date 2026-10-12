@@ -18,6 +18,7 @@ how to fix existing entries, and how the automation works.
 - Suggestions must be **written or reviewed by a person**. Use of AI tools is fine; unreviewed agent output is not.
 - **Disclose your affiliation.** Suggesting your own project is welcome; the form just asks.
 - Direct pull requests that add a resource are closed and redirected to the form, so every suggestion goes through the same checks.
+- Maintainers' own suggestions and maintainer picks skip the confirmation, affiliation, and one-at-a-time rules.
 
 ## Acceptance Bar
 
@@ -51,10 +52,11 @@ outside users are hard to fake, so the bar rests on them.
 | Outcome | What the bot does | Label |
 |---------|-------------------|-------|
 | Passes the bar | Opens a PR with the entry. Merging it accepts the suggestion; closing it (with a reason) declines it. | `needs-review` |
+| Passes, but the category is unclear (or "Not sure"), or the outside-people count is inconclusive | Waits for a maintainer, who sets the category or checks the count | `needs-review` |
 | Below the bar, but at least 20 stars and 1 outside person, with a license and a commit within 12 months | Keeps the issue open, re-checks it monthly for up to 12 months, updates one status comment, and opens the PR when it passes | `monitoring` |
 | Below that floor | Closes the issue, listing what is missing. Resubmit any time later. | |
 | Missing information, repository not found, no human confirmation or affiliation, or agent-tagged | Asks you for an update. Marked stale after 14 days without one, closed after 14 more. | `question` |
-| Already listed | Closes with a pointer to the entry | `duplicate` |
+| Already listed, or already suggested in an open issue | Closes with a pointer to the entry or the issue | `duplicate` |
 | Archived repository, or a second open suggestion from the same person | Closes with the reason | |
 
 ## Categories
@@ -95,8 +97,8 @@ type (humanoid, drone, car). Tie-breaks:
 - **Inactive entries**: archived projects and projects without a default-branch commit for
   3+ years are folded into a collapsed block at the end of their category, automatically.
   They are kept as references and return when activity resumes.
-- **Dead entries**: a GitHub repository that is gone on two weekly metadata refreshes is
-  removed in the refresh PR. Broken links elsewhere are reported in a Link Checker issue.
+- **Dead entries**: a GitHub repository that is gone on two weekly metadata refreshes, a
+  week apart, is removed in the second refresh PR (the first one, which marks it, must be merged). Broken links elsewhere are reported in a Link Checker issue.
 
 ### Entry Fields
 
@@ -112,7 +114,7 @@ type (humanoid, drone, car). Tie-breaks:
 | `archived` | | Set `true` if a project not on GitHub is discontinued |
 | `license`, `languages`, `models`, `features` | | Physics-engine comparison details |
 | `_subsection` | | Subsection within a category |
-| `_meta` | | Filled in by automation (stars, last commit, archived, license, language) |
+| `_meta` | | Filled in by automation (GitHub repository ID, stars, last commit, archived, license, language) |
 
 ## Fixing Existing Entries
 
@@ -150,13 +152,26 @@ Optional link check with [lychee](https://lychee.cli.rs/): `lychee --config .lyc
 | Refresh Metadata | Weekly (Mon) | Updates stars, activity, and renamed repositories, removes repositories gone for a week, regenerates the README, and opens a PR |
 | Check Links | Weekly (Mon) | Opens a PR fixing redirects and dead links, or an issue for links it cannot fix |
 | Stale Author-Action Issues | Daily | Marks `question` suggestions stale after 14 days and closes them 14 days later |
+| Triage Suggestions | On suggestion events; monthly (1st) | Applies the acceptance bar, opens entry PRs, and re-checks `monitoring` issues |
 
-For bot PRs to run normal pull-request CI without manual approval, add a repository secret
+Maintainer actions on suggestions:
+
+- **Polish before merging**: entry PRs flag a name that differs from the repository and a
+  description that was cut (it ends with "…"); fix those in the PR.
+- **Category**: if the bot can't place a passing suggestion, set the issue's **Category**
+  field; the bot then opens the PR.
+- **Accept outside the gates**: add `maintainer-pick` to the issue.
+- **Reverse a decline** (an entry PR closed without merging): reopen the issue and add
+  `maintainer-pick`, or reopen the entry PR and then the issue.
+
+Bot PRs opened with the default `GITHUB_TOKEN` run no pull-request CI at all (the triage
+bot validates entries before committing). To have them run CI, add a repository secret
 `CREATE_PR_TOKEN` with a fine-grained or GitHub App token that has `contents: write` and
-`pull-requests: write`. Without it, workflows fall back to `GITHUB_TOKEN`.
+`pull-requests: write`.
 
 ## Note for AI Agents
 
 If you are an automated agent acting for someone, add 🤖🤖🤖 to the end of the issue title.
 Suggestions still need a person to confirm them, and the automation will ask that person to
-do so.
+do so. Issues opened by bot accounts (GitHub Apps) are not processed; submit through the
+person's account.
