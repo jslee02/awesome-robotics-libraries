@@ -20,6 +20,16 @@
     last_commit: '2026-03-13'
     license: Apache-2.0
     language: Python
+- name: ReductSotre
+  url: https://www.reduct.store
+  github: reductstore/reductstore
+  description: High-performance, time-indexed object storage for robotics and industrial IoT.
+  _meta:
+    id: 441299511
+    stars: 373
+    last_commit: '2026-10-11'
+    license: Apache-2.0
+    language: Rust
 - name: Robot Gui
   url: http://robot.glumb.de/
   github: glumb/robot-gui
