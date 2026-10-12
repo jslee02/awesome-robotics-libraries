@@ -19,7 +19,7 @@ class GoneRepoTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "x.yaml"
             path.write_text(yaml.dump(entries), encoding="utf-8")
-            with mock.patch.object(fetch_metadata, "fetch_repo_metadata", side_effect=lambda r: results[r]), \
+            with mock.patch.object(fetch_metadata, "fetch_repo_metadata", side_effect=lambda r, previous=None: results[r]), \
                     mock.patch.object(fetch_metadata.time, "sleep"):
                 fetch_metadata.process_yaml_file(path, today=today)
             return yaml.safe_load(path.read_text(encoding="utf-8"))
@@ -38,15 +38,6 @@ class GoneRepoTest(unittest.TestCase):
         self.assertEqual(back[0]["_meta"], {"stars": 1})
 
 
-    def test_failed_commit_lookup_keeps_the_previous_date(self):
-        entries = [{"name": "X", "github": "a/x", "_meta": {"id": 1, "stars": 1, "last_commit": "2026-01-02"}}]
-        kept = self.refresh(entries, date(2026, 10, 19), {"a/x": ({"id": 1, "stars": 2}, "a/x")})
-        self.assertEqual(kept[0]["_meta"], {"id": 1, "stars": 2, "last_commit": "2026-01-02"})
-        # A link corrected to another repository doesn't inherit the old repository's date.
-        moved = self.refresh(entries, date(2026, 10, 19), {"a/x": ({"id": 2, "stars": 2}, "a/x")})
-        self.assertEqual(moved[0]["_meta"], {"id": 2, "stars": 2})
-
-
 class LookupTest(unittest.TestCase):
     def test_lookup_follows_the_link_and_never_pushed_at(self):
         urls = []
@@ -60,6 +51,26 @@ class LookupTest(unittest.TestCase):
         self.assertEqual((meta["id"], full_name), (99, "new/correct"))
         self.assertEqual(commits.call_args[0][0], "new/correct")
         self.assertNotIn("last_commit", meta)  # never pushed_at, which counts other branches
+
+
+class CommitDateTest(unittest.TestCase):
+    def meta(self, lookup, previous):
+        repo = {"id": 1, "full_name": "a/x", "stargazers_count": 2, "default_branch": "main",
+                "pushed_at": "2026-10-01T00:00:00Z"}
+        with mock.patch.object(fetch_metadata, "fetch_json", return_value=repo), \
+                mock.patch.object(fetch_metadata, "fetch_default_branch_commit_date", side_effect=lookup):
+            return fetch_metadata.fetch_repo_metadata("a/x", previous)[0]
+
+    def test_transient_failure_keeps_the_known_date_for_the_same_repository(self):
+        known = {"id": 1, "last_commit": "2026-01-02"}
+        self.assertEqual(self.meta(TimeoutError, known)["last_commit"], "2026-01-02")
+        self.assertNotIn("last_commit", self.meta(TimeoutError, {**known, "id": 2}))  # a corrected link
+
+    def test_empty_repository_has_no_date(self):
+        import urllib.error
+        known = {"id": 1, "last_commit": "2026-01-02"}
+        self.assertNotIn("last_commit", self.meta(urllib.error.HTTPError("u", 409, "empty", {}, None), known))
+        self.assertNotIn("last_commit", self.meta([None], known))  # no commits on the branch
 
 
 if __name__ == "__main__":

@@ -279,7 +279,7 @@
   url: https://nphysics.org/
   description: 2D and 3D rigid body physics engine written in Rust.
   github: dimforge/nphysics
-  license: BSD-3-Clause
+  license: Apache-2.0
   languages:
   - Rust
   _meta:
@@ -301,7 +301,7 @@
   url: https://nvidia-omniverse.github.io/PhysX/physx/5.5.0/index.html
   description: NVIDIA physics engine for real-time rigid body and vehicle simulation.
   github: NVIDIA-Omniverse/PhysX
-  license: unknown
+  license: BSD-3-Clause
   languages:
   - C++
   _meta:

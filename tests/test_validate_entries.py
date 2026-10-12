@@ -23,6 +23,9 @@ class DroppedDataTest(unittest.TestCase):
     def test_entries_without_a_list(self):
         self.assertFalse(self.check({"control.yaml": "name: Tool\ngithub: o/r\n"}))  # missing "- "
 
+    def test_github_slug_with_a_space(self):  # would break the metadata refresh's API request
+        self.assertFalse(self.check({"control.yaml": "- name: Tool\n  github: o/repo name\n"}))
+
     def test_file_that_is_not_a_category(self):
         self.assertFalse(self.check({"physic-engines.yaml": "- name: Tool\n  github: o/r\n"}))
 

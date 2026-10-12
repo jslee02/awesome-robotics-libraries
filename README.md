@@ -271,7 +271,7 @@ _General-purpose numerical solvers (LP, QP, NLP, least squares, black-box) and m
 
 _Linear algebra, Lie groups, spatial transforms, and spatial data structures such as nearest-neighbor search._
 
-* 🟢 [nanoflann](http://www.cs.ubc.ca/research/flann/) - Nearest Neighbor search with KD-trees. [⭐ 2.7k](https://github.com/jlblancoc/nanoflann)
+* 🟢 nanoflann - Nearest Neighbor search with KD-trees. [⭐ 2.7k](https://github.com/jlblancoc/nanoflann)
 * 🟡 Sophus - Lie groups using Eigen. [⭐ 2.5k](https://github.com/strasdat/Sophus)
 * 🟢 manif - Small c++11 header-only library for Lie theory. [⭐ 1.8k](https://github.com/artivis/manif)
 * 🟢 [HYPRE](https://hypre.readthedocs.io/) - Parallel solvers for sparse linear systems featuring multigrid methods. [⭐ 865](https://github.com/hypre-space/hypre)
@@ -295,7 +295,7 @@ _Linear algebra, Lie groups, spatial transforms, and spatial data structures suc
 _SLAM, odometry, factor graphs, filtering and sensor fusion, calibration, and mapping._
 
 * 🟡 Cartographer - Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations. [⭐ 8k](https://github.com/cartographer-project/cartographer)
-* 🟢 [RTAP-Map](http://introlab.github.io/rtabmap/) - RGB-D Graph SLAM approach based on a global Bayesian loop closure detector. [⭐ 4k](https://github.com/introlab/rtabmap)
+* 🟢 [RTAB-Map](http://introlab.github.io/rtabmap/) - RGB-D Graph SLAM approach based on a global Bayesian loop closure detector. [⭐ 4k](https://github.com/introlab/rtabmap)
 * 🟢 GTSAM - Smoothing and mapping (SAM) in robotics and vision. [⭐ 3.7k](https://github.com/borglab/gtsam)
 * 🟢 [mrpt](https://www.mrpt.org/) - Mobile Robot Programming Toolkit for SLAM, navigation, and computer vision. [⭐ 2.2k](https://github.com/MRPT/mrpt)
 * 🟡 ElasticFusion - Real-time dense visual SLAM system. [⭐ 1.9k](https://github.com/mp3guy/ElasticFusion)

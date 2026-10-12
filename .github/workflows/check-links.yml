@@ -20,3 +20,5 @@ jobs:
     uses: jslee02/awesome-list-infra/.github/workflows/check-links.yml@main
     with:
       generate-command: python3 scripts/generate_readme.py
+    secrets:
+      CREATE_PR_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}
