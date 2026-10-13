@@ -4,7 +4,7 @@
   description: Collection of well-tuned MuJoCo models for research and development.
   _meta:
     id: 532854029
-    stars: 4172
+    stars: 4174
     last_commit: '2026-10-07'
     language: Python
 - name: onshape-to-robot
@@ -36,6 +36,6 @@
   description: XML format for representing a robot model.
   _meta:
     id: 12067406
-    stars: 137
+    stars: 138
     last_commit: '2026-10-06'
     language: C++

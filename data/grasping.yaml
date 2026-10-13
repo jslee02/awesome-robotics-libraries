@@ -4,7 +4,7 @@
   description: SDK for AnyGrasp, a 6-DoF grasp pose detection method.
   _meta:
     id: 571926051
-    stars: 1020
+    stars: 1021
     last_commit: '2026-07-13'
     language: Python
 - name: Contact-GraspNet
@@ -31,7 +31,7 @@
   description: Python API and evaluation tools for the GraspNet benchmark.
   _meta:
     id: 301330317
-    stars: 368
+    stars: 369
     last_commit: '2026-06-29'
     license: MIT
     language: Python

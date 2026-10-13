@@ -3,7 +3,7 @@
   description: Real-time smoothing and mapping.
   _meta:
     id: 133405208
-    stars: 239
+    stars: 238
     last_commit: '2021-07-17'
     license: LGPL-2.1
     language: C
@@ -22,7 +22,7 @@
   description: Real-time SLAM in 2D and 3D across multiple platforms and sensor configurations.
   _meta:
     id: 64732358
-    stars: 7988
+    stars: 7987
     last_commit: '2024-01-05'
     license: Apache-2.0
     language: C++
@@ -41,7 +41,7 @@
   description: Real-time dense visual SLAM system.
   _meta:
     id: 44748564
-    stars: 1930
+    stars: 1929
     last_commit: '2025-08-03'
     language: C++
 - name: fiducials
@@ -50,7 +50,7 @@
   description: Simultaneous localization and mapping using fiducial markers.
   _meta:
     id: 30819640
-    stars: 285
+    stars: 284
     last_commit: '2025-11-26'
     license: BSD-3-Clause
     language: C
@@ -68,8 +68,8 @@
   description: ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection.
   _meta:
     id: 1184507826
-    stars: 377
-    last_commit: '2026-10-10'
+    stars: 378
+    last_commit: '2026-10-12'
     license: Apache-2.0
     language: C++
 - name: GTSAM
@@ -77,7 +77,7 @@
   description: Smoothing and mapping (SAM) in robotics and vision.
   _meta:
     id: 86362856
-    stars: 3740
+    stars: 3743
     last_commit: '2026-10-09'
     language: Jupyter Notebook
 - name: Kintinuous
@@ -94,7 +94,7 @@
   description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
   _meta:
     id: 1266625
-    stars: 1840
+    stars: 1839
     last_commit: '2026-08-27'
     license: BSD-3-Clause
     language: C++
@@ -105,7 +105,7 @@
   description: Real-time monocular SLAM.
   _meta:
     id: 23995982
-    stars: 2731
+    stars: 2730
     last_commit: '2014-12-11'
     license: GPL-3.0
     language: C++
@@ -135,7 +135,7 @@
   description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
   _meta:
     id: 7222017
-    stars: 2392
+    stars: 2391
     last_commit: '2026-09-26'
     language: C++
   _subsection: Mapping
@@ -144,7 +144,7 @@
   description: Real-time SLAM library for Monocular, Stereo and RGB-D cameras.
   _meta:
     id: 50255244
-    stars: 10250
+    stars: 10249
     last_commit: '2017-10-11'
     language: C++
 - name: RTAB-Map
@@ -153,8 +153,8 @@
   description: RGB-D Graph SLAM approach based on a global Bayesian loop closure detector.
   _meta:
     id: 22850110
-    stars: 4030
-    last_commit: '2026-10-10'
+    stars: 4035
+    last_commit: '2026-10-12'
     language: C++
 - name: SRBA
   url: http://mrpt.github.io/srba/

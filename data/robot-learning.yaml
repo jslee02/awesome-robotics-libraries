@@ -13,7 +13,7 @@
   description: Single-file implementations of deep reinforcement learning algorithms.
   _meta:
     id: 190776339
-    stars: 10534
+    stars: 10541
     last_commit: '2026-04-20'
     language: Python
 - name: DLL
@@ -72,7 +72,7 @@
   description: Developing and comparing reinforcement learning algorithms.
   _meta:
     id: 534011733
-    stars: 12653
+    stars: 12658
     last_commit: '2026-10-10'
     license: MIT
     language: Python
@@ -92,8 +92,8 @@
   license: BSD-3-Clause
   _meta:
     id: 567038244
-    stars: 8316
-    last_commit: '2026-10-11'
+    stars: 8327
+    last_commit: '2026-10-12'
     license: BSD-3-Clause
     language: Python
 - name: Ivy
@@ -113,7 +113,7 @@
   description: Isaac Gym environments for legged robot locomotion training.
   _meta:
     id: 418499474
-    stars: 3142
+    stars: 3143
     last_commit: '2025-05-29'
     language: Python
 - name: LeRobot
@@ -121,8 +121,8 @@
   description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
     id: 748713144
-    stars: 28076
-    last_commit: '2026-10-08'
+    stars: 28109
+    last_commit: '2026-10-12'
     license: Apache-2.0
     language: Python
 - name: ManiSkill
@@ -131,7 +131,7 @@
   description: Robot simulation and manipulation learning package powered by SAPIEN.
   _meta:
     id: 520357130
-    stars: 3393
+    stars: 3400
     last_commit: '2026-08-02'
     license: Apache-2.0
     language: Python
@@ -178,7 +178,7 @@
   description: A modular simulation framework and benchmark for robot learning.
   _meta:
     id: 154626012
-    stars: 2650
+    stars: 2654
     last_commit: '2026-07-11'
     language: Python
 - name: SKRL
@@ -197,7 +197,7 @@
   description: Reliable implementations of reinforcement learning algorithms in PyTorch.
   _meta:
     id: 261372860
-    stars: 13883
+    stars: 13884
     last_commit: '2026-09-09'
     license: MIT
     language: Python
