@@ -164,10 +164,10 @@ Maintainer actions on suggestions:
 - **Reverse a decline** (an entry PR closed without merging): reopen the issue and add
   `maintainer-pick`, or reopen the entry PR and then the issue.
 
-Bot PRs opened with the default `GITHUB_TOKEN` run no pull-request CI at all (the triage
-bot validates entries before committing). To have them run CI, add a repository secret
+Bot PRs opened with the default `GITHUB_TOKEN` may wait for a maintainer to approve their
+CI runs (**Approve and run** in the Actions tab). To skip that, add a repository secret
 `CREATE_PR_TOKEN` with a fine-grained or GitHub App token that has `contents: write` and
-`pull-requests: write`.
+`pull-requests: write`; bot PRs are then opened with it.
 
 ## Note for AI Agents
 
