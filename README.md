@@ -130,7 +130,7 @@ _Embeddable engines that time-step rigid, soft, fluid, or particle dynamics with
 <summary>Inactive (8): archived or no commits for 3+ years</summary>
 
 * [Fluid Engine Dev - Jet](https://fluidenginedevelopment.org/) - Fluid simulation engine for computer graphics applications. [⭐ 2.1k](https://github.com/doyubkim/fluid-engine-dev) · last commit 2022
-* [nphysics](https://nphysics.org/) - 2D and 3D rigid body physics engine written in Rust. [⭐ 1.6k](https://github.com/dimforge/nphysics) · last commit 2021
+* [nphysics](https://github.com/dimforge/nphysics) - 2D and 3D rigid body physics engine written in Rust. [⭐ 1.6k](https://github.com/dimforge/nphysics) · last commit 2021
 * Tiny Differentiable Simulator - Header-only differentiable physics engine for robotics. [⭐ 1.4k](https://github.com/erwincoumans/tiny-differentiable-simulator) · last commit 2023
 * 💀 qu3e - Lightweight 3D physics engine for rigid body dynamics. [⭐ 993](https://github.com/RandyGaul/qu3e) · last commit 2021
 * 💀 [Flex](https://developer.nvidia.com/flex) - GPU-based particle simulation for rigid bodies, fluids, and deformables. [⭐ 815](https://github.com/NVIDIAGameWorks/FleX) · last commit 2021
@@ -167,7 +167,6 @@ _Simulation applications with worlds, sensors, rendering, and robot middleware b
 
 ### Commercial
 
-* [Actin Simulation](http://www.energid.com/) - Real-time robot simulation and control software.
 * [Artiminds](https://www.artiminds.com/) - Planning, programming, operation, analysis and optimization.
 * [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics.
 * [Robot Virtual Worlds](http://www.robotvirtualworlds.com/) - Virtual reality software for educational robotics.
