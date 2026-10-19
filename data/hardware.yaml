@@ -4,7 +4,7 @@
   description: High-performance testbed for advanced perception and control research.
   _meta:
     id: 56652382
-    stars: 791
+    stars: 793
     last_commit: '2021-08-16'
     language: C++
 - name: iCub

@@ -4,8 +4,8 @@
   description: Collection of well-tuned MuJoCo models for research and development.
   _meta:
     id: 532854029
-    stars: 4174
-    last_commit: '2026-10-07'
+    stars: 4222
+    last_commit: '2026-10-15'
     language: Python
 - name: onshape-to-robot
   url: https://github.com/Rhoban/onshape-to-robot
@@ -13,7 +13,7 @@
   description: Converting OnShape assembly to robot definition (SDF or URDF) through OnShape API.
   _meta:
     id: 176774675
-    stars: 638
+    stars: 641
     last_commit: '2026-08-26'
     license: MIT
     language: Python
@@ -22,7 +22,7 @@
   description: Add-on for Blender creating URDF and SMURF robot models.
   _meta:
     id: 22949566
-    stars: 908
+    stars: 909
     last_commit: '2026-07-14'
     license: BSD-3-Clause
     language: Python

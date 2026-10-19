@@ -23,7 +23,7 @@
   _meta:
     id: 17824536
     stars: 234
-    last_commit: '2026-07-27'
+    last_commit: '2026-10-13'
     license: BSD-3-Clause
     language: C++
 - name: IKBT
@@ -31,7 +31,7 @@
   description: A python package to solve robot arm inverse kinematics in symbolic form.
   _meta:
     id: 104386447
-    stars: 220
+    stars: 221
     last_commit: '2026-09-18'
     language: Python
   _subsection: Inverse Kinematics
@@ -56,8 +56,8 @@
   description: A simple pure python package to solve inverse kinematics.
   _meta:
     id: 206802340
-    stars: 181
-    last_commit: '2026-10-08'
+    stars: 182
+    last_commit: '2026-10-17'
     license: MIT
     language: Python
   _subsection: Inverse Kinematics
@@ -102,8 +102,8 @@
   - code generation
   _meta:
     id: 24897645
-    stars: 3787
-    last_commit: '2026-10-07'
+    stars: 3800
+    last_commit: '2026-10-19'
     license: BSD-2-Clause
     language: C++
 - name: PyDy
@@ -135,7 +135,7 @@
   - urdf
   _meta:
     id: 208891294
-    stars: 708
+    stars: 709
     last_commit: '2025-06-09'
     language: C++
 - name: RBDyn
@@ -149,8 +149,8 @@
   - rigid
   _meta:
     id: 3740096
-    stars: 224
-    last_commit: '2026-10-05'
+    stars: 225
+    last_commit: '2026-10-12'
     license: BSD-2-Clause
     language: C++
 - name: RelaxedIK
@@ -198,7 +198,7 @@
   - C++
   _meta:
     id: 20737145
-    stars: 1207
+    stars: 1208
     last_commit: '2025-04-15'
     license: BSD-2-Clause
     language: C++
@@ -214,8 +214,8 @@
   description: Analytical inverse kinematics for 6R and 7R revolute robot arms, returning every IK branch.
   _meta:
     id: 1215108786
-    stars: 188
-    last_commit: '2026-10-04'
+    stars: 189
+    last_commit: '2026-10-13'
     license: BSD-3-Clause
     language: Python
   _subsection: Inverse Kinematics

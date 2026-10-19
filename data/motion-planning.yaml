@@ -17,7 +17,7 @@
   description: A CUDA accelerated library containing a suite of robotics algorithms that run significantly faster.
   _meta:
     id: 704667494
-    stars: 1907
+    stars: 1927
     last_commit: '2026-09-10'
     license: Apache-2.0
     language: Python
@@ -26,7 +26,7 @@
   description: Robust and efficient coverage paths for autonomous agricultural vehicles.
   _meta:
     id: 501080115
-    stars: 909
+    stars: 915
     last_commit: '2026-09-21'
     license: BSD-3-Clause
     language: C++
@@ -68,7 +68,7 @@
   - vehicles
   _meta:
     id: 38709395
-    stars: 358
+    stars: 359
     last_commit: '2019-02-21'
     language: C
 - name: MoveIt!
@@ -77,7 +77,7 @@
   description: Motion planning framework.
   _meta:
     id: 64340188
-    stars: 2096
+    stars: 2097
     last_commit: '2026-07-20'
     license: BSD-3-Clause
     language: C++
@@ -87,7 +87,7 @@
   description: Open motion planning library.
   _meta:
     id: 19983886
-    stars: 2173
+    stars: 2178
     last_commit: '2026-09-25'
     language: C++
 - name: OpenRAVE
@@ -119,7 +119,7 @@
   description: Python implementations of path planners, trajectory trackers, and curve generators.
   _meta:
     id: 598409114
-    stars: 1097
+    stars: 1098
     last_commit: '2026-09-15'
     license: GPL-3.0
     language: Python
@@ -128,7 +128,7 @@
   description: Behavior tree implementation for ROS-based robot task planning.
   _meta:
     id: 34942316
-    stars: 365
+    stars: 366
     last_commit: '2018-10-22'
     license: MIT
     language: C++
@@ -138,7 +138,7 @@
   description: ROS planner and controller plugins for mobile robot navigation.
   _meta:
     id: 588141227
-    stars: 3594
+    stars: 3600
     last_commit: '2026-03-28'
     license: GPL-3.0
     language: C++
@@ -148,7 +148,7 @@
   description: Real-time, time-optimal and jerk-constrained online trajectory generation.
   _meta:
     id: 323057911
-    stars: 1405
+    stars: 1411
     last_commit: '2026-09-29'
     license: MIT
     language: C++
@@ -176,7 +176,7 @@
   description: Time-parameterizing robot trajectories subject to kinematic and dynamic constraints.
   _meta:
     id: 97661949
-    stars: 934
+    stars: 938
     last_commit: '2026-08-28'
     license: MIT
     language: Python
@@ -186,6 +186,6 @@
   description: Framework for generating robot trajectories by local optimization.
   _meta:
     id: 7291235
-    stars: 466
+    stars: 467
     last_commit: '2017-05-23'
     language: C++

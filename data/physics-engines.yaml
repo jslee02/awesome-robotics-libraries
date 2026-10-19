@@ -19,7 +19,7 @@
   - id
   _meta:
     id: 373310764
-    stars: 3247
+    stars: 3249
     last_commit: '2026-10-07'
     license: Apache-2.0
     language: Jupyter Notebook
@@ -41,7 +41,7 @@
   - sdf
   _meta:
     id: 1605598
-    stars: 14772
+    stars: 14805
     last_commit: '2026-10-09'
     language: C++
 - name: CHRONO::ENGINE
@@ -62,8 +62,8 @@
   - urdf
   _meta:
     id: 12567717
-    stars: 3080
-    last_commit: '2026-10-12'
+    stars: 3097
+    last_commit: '2026-10-19'
     license: BSD-3-Clause
     language: C++
 - name: DART
@@ -85,8 +85,8 @@
   - sdf
   _meta:
     id: 2418592
-    stars: 1213
-    last_commit: '2026-10-12'
+    stars: 1217
+    last_commit: '2026-10-19'
     license: BSD-2-Clause
     language: C++
 - name: Drake
@@ -107,8 +107,8 @@
   - plan
   _meta:
     id: 16256144
-    stars: 4221
-    last_commit: '2026-10-09'
+    stars: 4229
+    last_commit: '2026-10-19'
     language: C++
 - name: Flex
   url: https://developer.nvidia.com/flex
@@ -134,7 +134,7 @@
   description: Fluid simulation engine for computer graphics applications.
   _meta:
     id: 58299041
-    stars: 2102
+    stars: 2100
     last_commit: '2022-07-09'
     license: MIT
     language: C++
@@ -153,8 +153,8 @@
   - particle
   _meta:
     id: 712225112
-    stars: 30047
-    last_commit: '2026-10-11'
+    stars: 30088
+    last_commit: '2026-10-19'
     license: Apache-2.0
     language: Python
 - name: IBDS
@@ -172,8 +172,8 @@
   description: Framework for building parallel multi-disciplinary simulation software.
   _meta:
     id: 81815495
-    stars: 1376
-    last_commit: '2026-10-12'
+    stars: 1385
+    last_commit: '2026-10-19'
     language: C++
   _subsection: Soft, Fluid & Multiphysics
 - name: MBDyn
@@ -193,7 +193,7 @@
   _meta:
     id: 34510467
     stars: 53
-    last_commit: '2026-10-11'
+    last_commit: '2026-10-17'
     license: LGPL-2.1
     language: C++
 - name: MBSlib
@@ -237,8 +237,8 @@
   - id
   _meta:
     id: 400501136
-    stars: 15630
-    last_commit: '2026-10-12'
+    stars: 15756
+    last_commit: '2026-10-19'
     license: Apache-2.0
     language: C++
 - name: Newton
@@ -259,8 +259,8 @@
   - mjcf
   _meta:
     id: 970467647
-    stars: 5750
-    last_commit: '2026-10-12'
+    stars: 5807
+    last_commit: '2026-10-19'
     license: Apache-2.0
     language: Python
 - name: Newton Dynamics
@@ -272,7 +272,7 @@
   - C++
   _meta:
     id: 21649756
-    stars: 1024
+    stars: 1022
     last_commit: '2026-01-17'
     language: HTML
 - name: nphysics
@@ -306,8 +306,8 @@
   - C++
   _meta:
     id: 545381143
-    stars: 4787
-    last_commit: '2026-10-09'
+    stars: 4803
+    last_commit: '2026-10-15'
     license: BSD-3-Clause
     language: C++
 - name: PositionBasedDynamics
@@ -318,7 +318,7 @@
   - C++
   _meta:
     id: 35102707
-    stars: 2287
+    stars: 2291
     last_commit: '2026-09-01'
     license: MIT
     language: C++
@@ -330,7 +330,7 @@
   _meta:
     id: 249337717
     stars: 270
-    last_commit: '2026-10-12'
+    last_commit: '2026-10-14'
     license: MIT
     language: Python
   _subsection: Soft, Fluid & Multiphysics
@@ -370,7 +370,7 @@
   - C++
   _meta:
     id: 10272113
-    stars: 1774
+    stars: 1776
     last_commit: '2025-01-09'
     license: Zlib
     language: C++
@@ -384,8 +384,8 @@
   - Python
   _meta:
     id: 37709357
-    stars: 186
-    last_commit: '2026-10-07'
+    stars: 187
+    last_commit: '2026-10-19'
     license: Apache-2.0
     language: C
 - name: Simbody
@@ -403,7 +403,7 @@
   - urdf
   _meta:
     id: 12146969
-    stars: 2556
+    stars: 2561
     last_commit: '2026-09-28'
     license: Apache-2.0
     language: C++
@@ -420,8 +420,8 @@
   - medical
   _meta:
     id: 60089478
-    stars: 1274
-    last_commit: '2026-10-12'
+    stars: 1277
+    last_commit: '2026-10-19'
     license: LGPL-2.1
     language: C++
   _subsection: Soft, Fluid & Multiphysics

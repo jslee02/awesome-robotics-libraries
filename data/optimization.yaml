@@ -4,8 +4,8 @@
   description: Symbolic framework for algorithmic differentiation and numeric optimization.
   _meta:
     id: 6474647
-    stars: 2309
-    last_commit: '2026-10-08'
+    stars: 2314
+    last_commit: '2026-10-19'
     license: LGPL-3.0
     language: C++
 - name: Ceres Solver
@@ -15,7 +15,7 @@
   _meta:
     id: 15667250
     stars: 4581
-    last_commit: '2026-10-10'
+    last_commit: '2026-10-19'
     language: C++
 - name: eigen-qld
   github: jrl-umi3218/eigen-qld
@@ -40,7 +40,7 @@
   description: High-performance interior-point-method QP solvers (Ipopt, Snopt).
   _meta:
     id: 91068419
-    stars: 710
+    stars: 711
     last_commit: '2026-10-03'
     language: C
 - name: ifopt
@@ -94,8 +94,8 @@
   description: Nonlinear optimization.
   _meta:
     id: 12412122
-    stars: 2279
-    last_commit: '2026-06-06'
+    stars: 2283
+    last_commit: '2026-10-17'
     language: C
 - name: Optimization Engine (OpEn)
   url: https://alphaville.github.io/optimization-engine/
@@ -103,7 +103,7 @@
   description: Embedded nonconvex optimization with code generation for real-time control, with ROS support.
   _meta:
     id: 159477900
-    stars: 651
+    stars: 650
     last_commit: '2026-03-31'
     language: Rust
 - name: OptimLib
@@ -122,7 +122,7 @@
   description: The Operator Splitting QP Solver.
   _meta:
     id: 69313892
-    stars: 2208
+    stars: 2211
     last_commit: '2025-11-10'
     license: Apache-2.0
     language: C
@@ -132,7 +132,7 @@
   description: Scientific library for massively parallel optimization.
   _meta:
     id: 78372913
-    stars: 937
+    stars: 938
     last_commit: '2026-09-29'
     license: GPL-3.0
     language: C++
@@ -142,8 +142,8 @@
   description: The Advanced Proximal Optimization Toolbox.
   _meta:
     id: 489039140
-    stars: 596
-    last_commit: '2026-10-09'
+    stars: 597
+    last_commit: '2026-10-19'
     license: BSD-2-Clause
     language: C++
 - name: pymoo
@@ -152,7 +152,7 @@
   description: Multi-objective Optimization in Python.
   _meta:
     id: 104132965
-    stars: 2974
+    stars: 2977
     last_commit: '2026-07-07'
     license: Apache-2.0
     language: Python
@@ -161,8 +161,8 @@
   description: Quadratic Programming solvers in Python with a unified API.
   _meta:
     id: 63537396
-    stars: 760
-    last_commit: '2026-10-09'
+    stars: 762
+    last_commit: '2026-10-19'
     license: LGPL-3.0
     language: Python
 - name: RobOptim
@@ -182,7 +182,7 @@
   _meta:
     id: 14811835
     stars: 638
-    last_commit: '2026-10-06'
+    last_commit: '2026-10-16'
     license: MIT
     language: C
 - name: sferes2
@@ -199,6 +199,6 @@
   _meta:
     id: 135558985
     stars: 135
-    last_commit: '2026-10-11'
+    last_commit: '2026-10-18'
     license: EPL-2.0
     language: C++

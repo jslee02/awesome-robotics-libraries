@@ -22,7 +22,7 @@
   description: Fast Library for Approximate Nearest Neighbors.
   _meta:
     id: 1538047
-    stars: 2378
+    stars: 2379
     last_commit: '2022-10-27'
     language: C++
 - name: HYPRE
@@ -31,7 +31,7 @@
   description: Parallel solvers for sparse linear systems featuring multigrid methods.
   _meta:
     id: 158287397
-    stars: 867
+    stars: 870
     last_commit: '2026-10-11'
     language: C
 - name: kindr
@@ -45,7 +45,7 @@
   - rigid
   _meta:
     id: 17901838
-    stars: 618
+    stars: 617
     last_commit: '2025-02-15'
     license: BSD-3-Clause
     language: C++
@@ -54,7 +54,7 @@
   description: Single header public domain linear algebra library for C++11.
   _meta:
     id: 52693693
-    stars: 969
+    stars: 970
     last_commit: '2023-07-02'
     license: Unlicense
     language: C++
@@ -63,7 +63,7 @@
   description: Small c++11 header-only library for Lie theory.
   _meta:
     id: 129808016
-    stars: 1822
+    stars: 1825
     last_commit: '2025-11-01'
     license: MIT
     language: C++
@@ -72,8 +72,8 @@
   description: Nearest Neighbor search with KD-trees.
   _meta:
     id: 19349382
-    stars: 2695
-    last_commit: '2026-10-11'
+    stars: 2698
+    last_commit: '2026-10-16'
     language: C++
 - name: Octree
   github: jbehley/octree
@@ -89,7 +89,7 @@
   description: Lie groups using Eigen.
   _meta:
     id: 2926200
-    stars: 2462
+    stars: 2463
     last_commit: '2024-06-12'
     language: C++
 - name: SpaceVelAlg
@@ -106,7 +106,7 @@
   description: Python classes for pose and orientation in 2D/3D with spatial operations toolbox.
   _meta:
     id: 258342458
-    stars: 646
-    last_commit: '2026-09-16'
+    stars: 648
+    last_commit: '2026-10-16'
     license: MIT
     language: Python
