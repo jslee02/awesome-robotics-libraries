@@ -1,5 +1,5 @@
 - name: Actin Simulation
-  url: http://www.energid.com/
+  url: http://web.archive.org/web/20260211125528/https://www.energid.com/
   description: Real-time robot simulation and control software.
   _subsection: Commercial
 - name: AI2-THOR
@@ -138,7 +138,7 @@
     last_commit: '2022-03-22'
     language: C
 - name: mvsim
-  url: http://wiki.ros.org/mvsim
+  url: https://wiki.ros.org/mvsim
   description: Lightweight multi-vehicle 2D simulator with ROS integration.
   github: MRPT/mvsim
   license: GPL-3.0
@@ -193,7 +193,7 @@
     license: GPL-3.0
     language: C++
 - name: Robot Virtual Worlds
-  url: http://www.robotvirtualworlds.com/
+  url: https://www.robotvirtualworlds.com/
   description: Virtual reality software for educational robotics.
   _subsection: Commercial
 - name: RobotDK
@@ -214,7 +214,7 @@
     last_commit: '2026-10-08'
     language: C++
 - name: Simbad
-  url: http://simbad.sourceforge.net/
+  url: https://simbad.sourceforge.net/
   description: Java 3D robot simulator with custom controller and sensor support.
 - name: Unity
   url: https://unity.com/solutions/automotive-transportation-manufacturing/robotics

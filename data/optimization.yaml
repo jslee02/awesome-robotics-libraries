@@ -71,7 +71,7 @@
     last_commit: '2026-07-02'
     language: C++
 - name: limbo
-  url: http://www.resibots.eu/limbo/
+  url: http://resibots.eu/limbo/
   github: resibots/limbo
   description: Gaussian processes and Bayesian optimization of black-box functions.
   _meta:
@@ -166,7 +166,7 @@
     license: LGPL-3.0
     language: Python
 - name: RobOptim
-  url: http://roboptim.net/index.html
+  url: https://roboptim.net/index.html
   github: roboptim/roboptim-core
   description: Numerical Optimization for Robotics.
   _meta:
@@ -176,7 +176,7 @@
     license: LGPL-3.0
     language: C++
 - name: SCS
-  url: http://web.stanford.edu/~boyd/papers/scs.html
+  url: https://web.stanford.edu/~boyd/papers/scs.html
   github: cvxgrp/scs
   description: Numerical optimization for solving large-scale convex cone problems.
   _meta:

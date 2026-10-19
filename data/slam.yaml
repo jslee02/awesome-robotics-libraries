@@ -45,7 +45,7 @@
     last_commit: '2025-08-03'
     language: C++
 - name: fiducials
-  url: http://wiki.ros.org/fiducials
+  url: https://wiki.ros.org/fiducials
   github: UbiquityRobotics/fiducials
   description: Simultaneous localization and mapping using fiducial markers.
   _meta:
@@ -89,7 +89,7 @@
     last_commit: '2022-08-26'
     language: C++
 - name: libpointmatcher
-  url: http://libpointmatcher.readthedocs.io/en/latest/
+  url: https://libpointmatcher.readthedocs.io/en/latest/
   github: norlab-ulaval/libpointmatcher
   description: Iterative Closest Point library for 2-D/3-D mapping in Robotics.
   _meta:
