@@ -14,8 +14,8 @@
   description: 2D/3D image and point cloud processing.
   _meta:
     id: 8162615
-    stars: 11154
-    last_commit: '2026-10-10'
+    stars: 11165
+    last_commit: '2026-10-17'
     language: C++
 - name: se(3)-TrackNet
   url: https://github.com/wenbowen123/iros20-6d-pose-tracking
@@ -32,7 +32,7 @@
   description: Visual Servoing Platform.
   _meta:
     id: 42498174
-    stars: 928
-    last_commit: '2026-10-12'
+    stars: 931
+    last_commit: '2026-10-19'
     license: GPL-2.0
     language: C++

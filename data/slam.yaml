@@ -12,7 +12,7 @@
   description: Brutally fast, sparse, 3D Voxel Grid (formerly Treexy).
   _meta:
     id: 416333335
-    stars: 884
+    stars: 886
     last_commit: '2026-09-28'
     license: MPL-2.0
     language: C++
@@ -59,7 +59,7 @@
   description: General architecture for performing sensor fusion live on a robot.
   _meta:
     id: 139344157
-    stars: 882
+    stars: 881
     last_commit: '2026-06-18'
     language: C++
 - name: FusionCore
@@ -68,8 +68,8 @@
   description: ROS 2 UKF fusing GPS, IMU, and wheel odometry with adaptive noise and GPS outlier rejection.
   _meta:
     id: 1184507826
-    stars: 378
-    last_commit: '2026-10-12'
+    stars: 382
+    last_commit: '2026-10-18'
     license: Apache-2.0
     language: C++
 - name: GTSAM
@@ -77,8 +77,8 @@
   description: Smoothing and mapping (SAM) in robotics and vision.
   _meta:
     id: 86362856
-    stars: 3743
-    last_commit: '2026-10-09'
+    stars: 3759
+    last_commit: '2026-10-18'
     language: Jupyter Notebook
 - name: Kintinuous
   github: mp3guy/Kintinuous
@@ -105,7 +105,7 @@
   description: Real-time monocular SLAM.
   _meta:
     id: 23995982
-    stars: 2730
+    stars: 2731
     last_commit: '2014-12-11'
     license: GPL-3.0
     language: C++
@@ -126,7 +126,7 @@
   _meta:
     id: 13708826
     stars: 2169
-    last_commit: '2026-10-11'
+    last_commit: '2026-10-18'
     license: BSD-3-Clause
     language: C++
 - name: OctoMap
@@ -135,7 +135,7 @@
   description: Efficient Probabilistic 3D Mapping Framework Based on Octrees.
   _meta:
     id: 7222017
-    stars: 2391
+    stars: 2392
     last_commit: '2026-09-26'
     language: C++
   _subsection: Mapping
@@ -144,7 +144,7 @@
   description: Real-time SLAM library for Monocular, Stereo and RGB-D cameras.
   _meta:
     id: 50255244
-    stars: 10249
+    stars: 10256
     last_commit: '2017-10-11'
     language: C++
 - name: RTAB-Map
@@ -153,8 +153,8 @@
   description: RGB-D Graph SLAM approach based on a global Bayesian loop closure detector.
   _meta:
     id: 22850110
-    stars: 4035
-    last_commit: '2026-10-12'
+    stars: 4045
+    last_commit: '2026-10-19'
     language: C++
 - name: SRBA
   url: http://mrpt.github.io/srba/
@@ -170,7 +170,7 @@
   description: Flexible voxel-based mapping focusing on truncated and Euclidean signed distance fields.
   _meta:
     id: 56137228
-    stars: 1673
+    stars: 1675
     last_commit: '2021-11-22'
     license: BSD-3-Clause
     language: C++
@@ -181,7 +181,7 @@
   description: Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping.
   _meta:
     id: 421905759
-    stars: 573
+    stars: 575
     last_commit: '2024-12-10'
     license: BSD-3-Clause
     language: C++

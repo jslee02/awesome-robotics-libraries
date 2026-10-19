@@ -4,7 +4,7 @@
   description: SDK for AnyGrasp, a 6-DoF grasp pose detection method.
   _meta:
     id: 571926051
-    stars: 1021
+    stars: 1029
     last_commit: '2026-07-13'
     language: Python
 - name: Contact-GraspNet
@@ -13,7 +13,7 @@
   description: 6-DoF grasp generation for parallel-jaw grippers using contact maps.
   _meta:
     id: 351175332
-    stars: 538
+    stars: 540
     last_commit: '2024-11-21'
     language: Python
 - name: GraspIt!
@@ -22,7 +22,7 @@
   description: Simulator for grasping research that can accommodate arbitrary hand and robot designs.
   _meta:
     id: 44710103
-    stars: 221
+    stars: 222
     last_commit: '2020-07-10'
     language: C++
 - name: GraspNet API
