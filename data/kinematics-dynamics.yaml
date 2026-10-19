@@ -1,5 +1,5 @@
 - name: ARTE
-  url: http://arvc.umh.es/arte/index_en.html
+  url: https://arvc.umh.es/arte/index_en.html
   github: 4rtur1t0/ARTE
   description: Matlab toolbox focussed on robotic manipulators.
   _meta:
@@ -107,7 +107,7 @@
     license: BSD-2-Clause
     language: C++
 - name: PyDy
-  url: https://www.pydy.org/
+  url: https://pydy.org/
   description: Multibody dynamics analysis with symbolic Python using SymPy.
   github: pydy/pydy
   license: BSD-3-Clause

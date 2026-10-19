@@ -1,5 +1,5 @@
 - name: Cover-Tree
-  url: http://hunch.net/~jl/projects/cover_tree/cover_tree.html
+  url: https://hunch.net/~jl/projects/cover_tree/cover_tree.html
   github: DNCrane/Cover-Tree
   description: Cover tree data structure for quick k-nearest-neighbor search.
   _meta:
@@ -17,7 +17,7 @@
     license: MIT
     language: C++
 - name: FLANN
-  url: http://www.cs.ubc.ca/research/flann/
+  url: https://www.cs.ubc.ca/research/flann/
   github: flann-lib/flann
   description: Fast Library for Approximate Nearest Neighbors.
   _meta:

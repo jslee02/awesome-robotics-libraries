@@ -31,7 +31,7 @@
     license: Apache-2.0
     language: Rust
 - name: Robot Gui
-  url: http://robot.glumb.de/
+  url: https://robot.glumb.de/
   github: glumb/robot-gui
   description: A three.js based 3D robot interface.
   _meta:

@@ -50,7 +50,7 @@
     license: BSD-3-Clause
     language: C++
 - name: towr
-  url: http://wiki.ros.org/towr
+  url: https://wiki.ros.org/towr
   github: ethz-adrl/towr
   description: A light-weight, Eigen-based C++ library for trajectory optimization for legged robots.
   _meta:

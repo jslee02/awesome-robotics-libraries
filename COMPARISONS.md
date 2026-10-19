@@ -24,7 +24,7 @@ A companion to the main [Awesome Robotics Libraries](README.md) list, providing 
 | [Genesis](https://genesis-world.readthedocs.io) | ✅ | ✅ | ✅ | Newton, CG; GJK+EPA / MPR | ✅ | ✅ | Python | Apache-2.0 |
 | [MuJoCo](https://mujoco.org/) | ✅ | ✅ | ❌ | Newton, CG, PGS (convex) | ✅ | ✅ | C/C++ | Apache-2.0 |
 | [Newton](https://newton-physics.github.io/newton/) | ✅ | ✅ | ✅ | MuJoCo (via Warp), XPBD, AVBD, penalty | ✅ | ✅ | Python | Apache-2.0 |
-| [Newton Dynamics](https://newtondynamics.com/) | ✅ | ⚠️ | ⚠️ | Dantzig LCP | ❌ | ✅ | C++ | Zlib |
+| [Newton Dynamics](http://web.archive.org/web/20080513110013/http://www.newtondynamics.com/) | ✅ | ⚠️ | ⚠️ | Dantzig LCP | ❌ | ✅ | C++ | Zlib |
 | [nphysics](https://nphysics.org/) | ✅ | ✅ | ❌ | Moreau-Jean (SOR-prox) | ❌ | ❌ | Rust | Apache-2.0 |
 | [ODE](https://ode.org/) | ✅ | ❌ | ❌ | LCP Dantzig, PGS (QuickStep) | ❌ | ❌ | C/C++ | LGPL/BSD |
 | [PhysX](https://nvidia-omniverse.github.io/PhysX/) | ✅ | ✅ | ✅ | PGS, TGS | ❌ | ✅ | C++ | BSD-3 |
@@ -67,7 +67,7 @@ Libraries commonly used for robot dynamics computation in research and applicati
 | [Brax](https://github.com/google/brax) | ✅ | ✅ RNEA | ❌ | ❌ | ✅ | ❌ | ⚠️ |
 | [RBDL](https://github.com/rbdl/rbdl) | ✅ ABA | ✅ RNEA | ✅ | ✅ | ✅ | ⚠️ | ⚠️ |
 | [Simbody](https://github.com/simbody/simbody) | ✅ | ✅ | ✅ | ⚠️ | ❌ | ❌ | ✅ |
-| [idyntree](https://github.com/robotology/idyntree) | ✅ ABA | ✅ RNEA | ✅ | ✅ | ✅ | ⚠️ | ✅ |
+| [idyntree](https://github.com/gbionics/idyntree) | ✅ ABA | ✅ RNEA | ✅ | ✅ | ✅ | ⚠️ | ✅ |
 | [KDL](https://github.com/orocos/orocos_kinematics_dynamics) | ✅ | ✅ RNEA | ✅ | ❌ | ✅ | ❌ | ✅ |
 | [RBDyn](https://github.com/jrl-umi3218/RBDyn) | ✅ CRBA | ✅ RNEA | ✅ | ✅ | ✅ | ⚠️ | ✅ |
 
@@ -80,7 +80,7 @@ Libraries commonly used for robot dynamics computation in research and applicati
 * **Brax** FD: Generalized pipeline solves `M·q̈ = -C + τ`; also Spring (impulse) and Positional (PBD) pipelines. ID: RNEA in generalized pipeline. IK: None. URDF: No parser — MJCF only (via `mujoco.MjModel`). Derivatives: Purely JAX autodiff (`jax.grad`). Active: Only `brax/training` maintained as of v0.13.0; physics users directed to MJX.
 * **RBDL** derivatives: Via CasADi algorithmic differentiation backend (`rbdl-casadi`), not hand-coded. IK: Built-in damped least-squares with position/orientation/CoM constraints. Activity: Low — last commit June 2025.
 * **Simbody** IK: `Assembler` framework with `Markers` (point-based) and `OrientationSensors` conditions. URDF: Example-only reader (Atlas demo), not a core library feature. Simbody's native API uses `MultibodyGraphMaker`.
-* **idyntree** IK: Full NLP-based IK solver using IPOPT with quaternion/RPY parametrizations and CoM constraints. Derivatives: Experimental forward dynamics linearization (`ForwardDynamicsLinearization`, marked "HIGHLY EXPERIMENTAL"). Also parses SDF. Correct GitHub repo: [`robotology/idyntree`](https://github.com/robotology/idyntree).
+* **idyntree** IK: Full NLP-based IK solver using IPOPT with quaternion/RPY parametrizations and CoM constraints. Derivatives: Experimental forward dynamics linearization (`ForwardDynamicsLinearization`, marked "HIGHLY EXPERIMENTAL"). Also parses SDF. Correct GitHub repo: [`robotology/idyntree`](https://github.com/gbionics/idyntree).
 * **KDL** IK: 7+ solver variants — Newton-Raphson, LMA, pseudoinverse, WDLS, nullspace optimization, and tree-based variants. Also provides the Vereshchagin hybrid dynamics solver. URDF: Requires external [`kdl_parser`](https://github.com/ros/kdl_parser) from ROS. Python: PyKDL via pybind11.
 * **RBDyn** FD: CRBA-based (H·q̈ = τ − C with LDLT), not ABA. IK: Jacobian SVD solver with configurable damping. Derivatives: Inverse statics torque Jacobians (∂τ/∂q for static case) and IDIM for parameter identification. Built-in URDF read/write parser, no ROS dependency.
 
@@ -89,13 +89,13 @@ Libraries commonly used for robot dynamics computation in research and applicati
 **Which library should I use?**
 
 * **Robotics research (manipulation, locomotion):** [pinocchio](https://github.com/stack-of-tasks/pinocchio), [Drake](https://github.com/RobotLocomotion/drake), or [MuJoCo](https://github.com/google-deepmind/mujoco) — all actively maintained with strong community support and differentiable simulation.
-* **Reinforcement learning for robotics:** [MuJoCo](https://github.com/google-deepmind/mujoco) (with MJX for GPU-accelerated batched simulation), [Isaac Lab](https://github.com/isaac-sim/IsaacLab) (GPU-parallel envs on Isaac Sim), [Genesis](https://github.com/Genesis-Embodied-AI/Genesis) (43M FPS batched sim), or [Brax](https://github.com/google/brax) (JAX-native, training-focused).
+* **Reinforcement learning for robotics:** [MuJoCo](https://github.com/google-deepmind/mujoco) (with MJX for GPU-accelerated batched simulation), [Isaac Lab](https://github.com/isaac-sim/IsaacLab) (GPU-parallel envs on Isaac Sim), [Genesis](https://github.com/Genesis-Embodied-AI/genesis-world) (43M FPS batched sim), or [Brax](https://github.com/google/brax) (JAX-native, training-focused).
 * **Game-like real-time physics:** [Bullet](https://github.com/bulletphysics/bullet3), [PhysX](https://github.com/NVIDIA-Omniverse/PhysX), or [ReactPhysics3d](https://github.com/DanielChappuis/reactphysics3d).
 * **Biomechanical simulation:** [Simbody](https://github.com/simbody/simbody) (the engine behind OpenSim).
-* **Multi-physics (FEM, soft bodies, fluids):** [SOFA](https://github.com/sofa-framework/sofa), [CHRONO](https://github.com/projectchrono/chrono), [Genesis](https://github.com/Genesis-Embodied-AI/Genesis) (6 unified solvers: rigid, FEM, MPM, SPH, PBD, Stable Fluid), or [Newton](https://github.com/newton-physics/newton) (FEM, MPM, cloth, XPBD on Warp).
-* **Differentiable simulation:** [pinocchio](https://github.com/stack-of-tasks/pinocchio) (analytical derivatives), [Drake](https://github.com/RobotLocomotion/drake) (AutoDiffXd), [MuJoCo MJX](https://github.com/google-deepmind/mujoco) (JAX autodiff), [Newton](https://github.com/newton-physics/newton) (Warp autodiff), [Genesis](https://github.com/Genesis-Embodied-AI/Genesis) (Taichi autodiff), or [Brax](https://github.com/google/brax) (JAX autodiff).
+* **Multi-physics (FEM, soft bodies, fluids):** [SOFA](https://github.com/sofa-framework/sofa), [CHRONO](https://github.com/projectchrono/chrono), [Genesis](https://github.com/Genesis-Embodied-AI/genesis-world) (6 unified solvers: rigid, FEM, MPM, SPH, PBD, Stable Fluid), or [Newton](https://github.com/newton-physics/newton) (FEM, MPM, cloth, XPBD on Warp).
+* **Differentiable simulation:** [pinocchio](https://github.com/stack-of-tasks/pinocchio) (analytical derivatives), [Drake](https://github.com/RobotLocomotion/drake) (AutoDiffXd), [MuJoCo MJX](https://github.com/google-deepmind/mujoco) (JAX autodiff), [Newton](https://github.com/newton-physics/newton) (Warp autodiff), [Genesis](https://github.com/Genesis-Embodied-AI/genesis-world) (Taichi autodiff), or [Brax](https://github.com/google/brax) (JAX autodiff).
 * **Lightweight rigid-body dynamics:** [RBDL](https://github.com/rbdl/rbdl), [KDL](https://github.com/orocos/orocos_kinematics_dynamics), or [RBDyn](https://github.com/jrl-umi3218/RBDyn).
-* **Floating-base humanoid estimation/control:** [idyntree](https://github.com/robotology/idyntree) or [RBDyn](https://github.com/jrl-umi3218/RBDyn) (mc-rtc ecosystem).
+* **Floating-base humanoid estimation/control:** [idyntree](https://github.com/gbionics/idyntree) or [RBDyn](https://github.com/jrl-umi3218/RBDyn) (mc-rtc ecosystem).
 * **GPU-accelerated robotics sim (Warp-based):** [Newton](https://github.com/newton-physics/newton) — Linux Foundation project with MuJoCo Warp backend, 7 solvers, GPU-batched IK.
 * **Rust ecosystem:** [nphysics](https://github.com/dimforge/nphysics) (note: passively maintained since 2021; consider [Rapier](https://rapier.rs/) as its successor).
 
@@ -105,7 +105,7 @@ Libraries commonly used for robot dynamics computation in research and applicati
 
 * [scpeters/benchmark](https://github.com/scpeters/benchmark) — Benchmark comparisons of rigid-body dynamics simulators.
 * [leggedrobotics/SimBenchmark](https://leggedrobotics.github.io/SimBenchmark/) — Comprehensive benchmark for physics simulation in robotics. [[github](https://github.com/leggedrobotics/SimBenchmark)]
-* [IFToMM](http://iftomm-multibody.org/benchmark/) — Benchmark problems from the international multibody dynamics community.
+* [IFToMM](https://www.iftomm-multibody.org/benchmark/) — Benchmark problems from the international multibody dynamics community.
 * [BPMD](https://grasp.robotics.cs.rpi.edu/bpmd/) — Benchmark Problems for Multibody Dynamics database.
 
 ### Key Papers
@@ -118,7 +118,7 @@ Libraries commonly used for robot dynamics computation in research and applicati
 
 ### Articles
 
-* [Comparison of Rigid Body Dynamic Simulators for Robotic Simulation in Gazebo](http://www.osrfoundation.org/wordpress2/wp-content/uploads/2015/04/roscon2014_scpeters.pdf) — Steven Peters and John Hsu.
+* [Comparison of Rigid Body Dynamic Simulators for Robotic Simulation in Gazebo](https://www.osrfoundation.org/wordpress2/wp-content/uploads/2015/04/roscon2014_scpeters.pdf) — Steven Peters and John Hsu.
 * [Wikipedia: Robotics simulator](https://en.wikipedia.org/wiki/Robotics_simulator#Simulators)
 
 ## [Contributing](#comparisons)

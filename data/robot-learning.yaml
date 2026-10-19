@@ -86,7 +86,7 @@
     last_commit: '2024-11-01'
     language: Python
 - name: Isaac Lab
-  url: https://isaac-sim.github.io/IsaacLab
+  url: https://isaac-sim.github.io/IsaacLab/
   github: isaac-sim/IsaacLab
   description: GPU-accelerated open-source framework for robot learning built on NVIDIA Isaac Sim.
   license: BSD-3-Clause
@@ -126,7 +126,7 @@
     license: Apache-2.0
     language: Python
 - name: ManiSkill
-  url: https://github.com/haosulab/ManiSkill
+  url: https://github.com/mani-skill/ManiSkill
   github: mani-skill/ManiSkill
   description: Robot simulation and manipulation learning package powered by SAPIEN.
   _meta:
@@ -202,7 +202,7 @@
     license: MIT
     language: Python
 - name: tiny-dnn
-  url: http://tiny-dnn.readthedocs.io/en/latest/
+  url: https://tiny-dnn.readthedocs.io/en/latest/
   github: tiny-dnn/tiny-dnn
   description: Header only, dependency-free deep learning framework in C++14.
   _meta:

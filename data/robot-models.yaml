@@ -31,7 +31,7 @@
   bitbucket: osrf/sdformat
   description: XML format that describes objects and environments for robot simulators, visualization, and control.
 - name: urdf
-  url: http://wiki.ros.org/urdf
+  url: https://wiki.ros.org/urdf
   github: ros/urdfdom
   description: XML format for representing a robot model.
   _meta:
