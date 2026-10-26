@@ -16,7 +16,7 @@
   description: One-click tool to score, filter, and export higher-quality LeRobot datasets.
   _meta:
     id: 1003449858
-    stars: 77
+    stars: 78
     last_commit: '2026-03-13'
     license: Apache-2.0
     language: Python
@@ -26,8 +26,8 @@
   description: High-performance, time-indexed object storage for robotics and industrial IoT.
   _meta:
     id: 441299511
-    stars: 373
-    last_commit: '2026-10-12'
+    stars: 375
+    last_commit: '2026-10-26'
     license: Apache-2.0
     language: Rust
 - name: Robot Gui

@@ -3,8 +3,8 @@
   description: Python framework for musculoskeletal optimal control in biomechanics.
   _meta:
     id: 251615517
-    stars: 120
-    last_commit: '2026-09-23'
+    stars: 121
+    last_commit: '2026-10-26'
     license: MIT
     language: Python
 - name: Control Toolbox
@@ -13,7 +13,7 @@
   description: Open-Source C++ Library for Robotics, Optimal and Model Predictive Control.
   _meta:
     id: 183515197
-    stars: 1714
+    stars: 1717
     last_commit: '2021-07-05'
     license: BSD-2-Clause
     language: C++
@@ -23,7 +23,7 @@
   _meta:
     id: 190190517
     stars: 1321
-    last_commit: '2026-10-06'
+    last_commit: '2026-10-20'
     license: BSD-3-Clause
     language: C++
 - name: FROST
@@ -45,7 +45,7 @@
   description: Efficient continuous and discrete time optimal control implementation.
   _meta:
     id: 384033964
-    stars: 1527
+    stars: 1528
     last_commit: '2025-12-16'
     license: BSD-3-Clause
     language: C++
@@ -55,7 +55,7 @@
   description: A light-weight, Eigen-based C++ library for trajectory optimization for legged robots.
   _meta:
     id: 117434408
-    stars: 1085
+    stars: 1086
     last_commit: '2021-03-29'
     license: BSD-3-Clause
     language: C++
@@ -64,7 +64,7 @@
   description: A fast trajectory optimization library written in Julia.
   _meta:
     id: 137978383
-    stars: 400
+    stars: 401
     last_commit: '2025-03-04'
     license: MIT
     language: Julia
@@ -74,7 +74,7 @@
   description: Expressive and efficient implementation of optimal control problems using template metaprogramming.
   _meta:
     id: 613637250
-    stars: 108
+    stars: 109
     last_commit: '2024-07-16'
     license: Apache-2.0
     language: C++

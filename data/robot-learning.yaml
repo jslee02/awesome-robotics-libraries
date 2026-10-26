@@ -13,7 +13,7 @@
   description: Single-file implementations of deep reinforcement learning algorithms.
   _meta:
     id: 190776339
-    stars: 10541
+    stars: 10607
     last_commit: '2026-04-20'
     language: Python
 - name: DLL
@@ -21,7 +21,7 @@
   description: Deep Learning Library (DLL) for C++.
   _meta:
     id: 15707742
-    stars: 688
+    stars: 689
     last_commit: '2025-05-27'
     license: MIT
     language: C++
@@ -32,7 +32,7 @@
   description: The Dynamic Neural Network Toolkit.
   _meta:
     id: 30509483
-    stars: 3429
+    stars: 3430
     last_commit: '2023-11-08'
     license: Apache-2.0
     language: C++
@@ -43,7 +43,7 @@
   description: Lightweight C++ machine learning library for embedded electronics and robotics.
   _meta:
     id: 40337884
-    stars: 464
+    stars: 465
     last_commit: '2017-11-19'
     license: MIT
     language: C++
@@ -53,7 +53,7 @@
   description: OpenAI Gym environments using the DART physics engine.
   _meta:
     id: 85471730
-    stars: 140
+    stars: 139
     last_commit: '2020-02-25'
     language: Python
 - name: gym-gazebo
@@ -61,7 +61,7 @@
   description: OpenAI Gym environments for the Gazebo simulator.
   _meta:
     id: 66111670
-    stars: 845
+    stars: 843
     last_commit: '2019-03-16'
     archived: true
     license: GPL-3.0
@@ -72,8 +72,8 @@
   description: Developing and comparing reinforcement learning algorithms.
   _meta:
     id: 534011733
-    stars: 12658
-    last_commit: '2026-10-10'
+    stars: 12731
+    last_commit: '2026-10-26'
     license: MIT
     language: Python
 - name: Humanoid-Gym
@@ -82,7 +82,7 @@
   description: Reinforcement learning environment for humanoid robot locomotion.
   _meta:
     id: 766789360
-    stars: 2102
+    stars: 2109
     last_commit: '2024-11-01'
     language: Python
 - name: Isaac Lab
@@ -92,9 +92,8 @@
   license: BSD-3-Clause
   _meta:
     id: 567038244
-    stars: 8327
-    last_commit: '2026-10-12'
-    license: BSD-3-Clause
+    stars: 8478
+    last_commit: '2026-10-26'
     language: Python
 - name: Ivy
   url: https://lets-unify.ai/
@@ -102,9 +101,8 @@
   description: Unified Machine Learning Framework.
   _meta:
     id: 330914717
-    stars: 14168
-    last_commit: '2026-10-07'
-    archived: true
+    stars: 14170
+    last_commit: '2026-10-22'
     language: Python
   _subsection: General Machine Learning
 - name: Legged Gym
@@ -113,7 +111,7 @@
   description: Isaac Gym environments for legged robot locomotion training.
   _meta:
     id: 418499474
-    stars: 3143
+    stars: 3159
     last_commit: '2025-05-29'
     language: Python
 - name: LeRobot
@@ -121,8 +119,8 @@
   description: Pretrained models, datasets, and simulation environments for real-world robotics in PyTorch.
   _meta:
     id: 748713144
-    stars: 28109
-    last_commit: '2026-10-12'
+    stars: 28486
+    last_commit: '2026-10-26'
     license: Apache-2.0
     language: Python
 - name: ManiSkill
@@ -131,7 +129,7 @@
   description: Robot simulation and manipulation learning package powered by SAPIEN.
   _meta:
     id: 520357130
-    stars: 3400
+    stars: 3464
     last_commit: '2026-08-02'
     license: Apache-2.0
     language: Python
@@ -140,7 +138,7 @@
   description: A header-only C++ library for deep neural networks.
   _meta:
     id: 118344819
-    stars: 434
+    stars: 435
     last_commit: '2021-01-17'
     language: C++
   _subsection: General Machine Learning
@@ -150,8 +148,8 @@
   description: Scalable C++ machine learning library.
   _meta:
     id: 28149409
-    stars: 5714
-    last_commit: '2026-10-06'
+    stars: 5719
+    last_commit: '2026-10-15'
     language: C++
   _subsection: General Machine Learning
 - name: rl_games
@@ -160,8 +158,8 @@
   description: High-performance RL library used in Isaac Gym environments.
   _meta:
     id: 165469880
-    stars: 1397
-    last_commit: '2026-09-29'
+    stars: 1406
+    last_commit: '2026-10-19'
     license: MIT
     language: Jupyter Notebook
 - name: RLLib
@@ -178,7 +176,7 @@
   description: A modular simulation framework and benchmark for robot learning.
   _meta:
     id: 154626012
-    stars: 2654
+    stars: 2683
     last_commit: '2026-07-11'
     language: Python
 - name: SKRL
@@ -187,8 +185,8 @@
   description: Modular reinforcement learning library with support for multiple ML frameworks.
   _meta:
     id: 418399149
-    stars: 1099
-    last_commit: '2026-10-01'
+    stars: 1100
+    last_commit: '2026-10-23'
     license: MIT
     language: Python
 - name: Stable-Baselines3
@@ -197,8 +195,8 @@
   description: Reliable implementations of reinforcement learning algorithms in PyTorch.
   _meta:
     id: 261372860
-    stars: 13884
-    last_commit: '2026-09-09'
+    stars: 13936
+    last_commit: '2026-10-26'
     license: MIT
     language: Python
 - name: tiny-dnn
@@ -207,7 +205,7 @@
   description: Header only, dependency-free deep learning framework in C++14.
   _meta:
     id: 7205740
-    stars: 6027
+    stars: 6030
     last_commit: '2018-10-23'
     language: C++
   _subsection: General Machine Learning

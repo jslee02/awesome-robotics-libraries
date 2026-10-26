@@ -4,7 +4,7 @@
   description: Curated list of AI courses, books, video lectures, and papers.
   _meta:
     id: 29906842
-    stars: 16654
+    stars: 16733
     last_commit: '2026-08-15'
     license: MIT
     language: Python
@@ -15,7 +15,7 @@
   _meta:
     id: 59176406
     stars: 1045
-    last_commit: '2026-10-10'
+    last_commit: '2026-10-26'
     license: CC0-1.0
     language: Python
 - name: Awesome Computer Vision
@@ -24,7 +24,7 @@
   description: Curated list of computer vision resources.
   _meta:
     id: 29357796
-    stars: 23588
+    stars: 23623
     last_commit: '2021-09-28'
 - name: Awesome Deep Learning
   url: https://github.com/ChristosChristofidis/awesome-deep-learning
@@ -32,7 +32,7 @@
   description: Curated list of deep learning tutorials, projects, and communities.
   _meta:
     id: 28723659
-    stars: 29037
+    stars: 29098
     last_commit: '2025-05-26'
 - name: Awesome Gazebo
   url: https://github.com/fkromer/awesome-gazebo
@@ -67,8 +67,8 @@
   description: Curated list of machine learning frameworks, libraries, and software.
   _meta:
     id: 21872392
-    stars: 74573
-    last_commit: '2026-10-09'
+    stars: 74664
+    last_commit: '2026-10-22'
     language: Python
 - name: Awesome Physical AI
   url: https://github.com/keon/awesome-physical-ai
@@ -76,7 +76,7 @@
   description: Curated list of academic papers and resources on Physical AI.
   _meta:
     id: 1132505553
-    stars: 439
+    stars: 448
     last_commit: '2026-06-24'
     license: CC0-1.0
 - name: Awesome Robotic Tooling
@@ -85,7 +85,7 @@
   description: Tooling for professional robotic development in C++ and Python with ROS and autonomous driving.
   _meta:
     id: 217333025
-    stars: 3902
+    stars: 3912
     last_commit: '2023-04-30'
     license: CC0-1.0
 - name: Awesome Robotics (ahundt)
@@ -94,7 +94,7 @@
   description: Curated list of robotics links and software libraries (ahundt).
   _meta:
     id: 91040492
-    stars: 1511
+    stars: 1520
     last_commit: '2023-03-19'
 - name: Awesome Robotics (Kiloreux)
   url: https://github.com/Kiloreux/awesome-robotics
@@ -102,7 +102,7 @@
   description: Curated list of robotics resources (Kiloreux).
   _meta:
     id: 46938122
-    stars: 7230
+    stars: 7260
     last_commit: '2024-09-22'
 - name: Awesome SLAM Datasets
   url: https://github.com/youngguncho/awesome-slam-datasets
@@ -118,7 +118,7 @@
   description: Study guide to vision-language-action (VLA) papers for robot learning.
   _meta:
     id: 1157468068
-    stars: 402
+    stars: 411
     last_commit: '2026-03-21'
 - name: PythonRobotics
   url: https://github.com/AtsushiSakai/PythonRobotics
@@ -126,8 +126,8 @@
   description: Python sample codes for robotics algorithms.
   _meta:
     id: 54376220
-    stars: 30674
-    last_commit: '2026-10-04'
+    stars: 30809
+    last_commit: '2026-10-24'
     language: Python
 - name: Robotics Coursework
   url: https://github.com/mithi/robotics-coursework
@@ -135,6 +135,6 @@
   description: A list of robotics courses you can take online.
   _meta:
     id: 95303580
-    stars: 5315
+    stars: 5359
     last_commit: '2026-08-31'
     license: Unlicense
