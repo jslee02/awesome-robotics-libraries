@@ -197,7 +197,7 @@
     license: LGPL-2.1
     language: C++
 - name: MBSlib
-  url: http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib
+  url: http://web.archive.org/web/20211027153626/https://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib/
   description: Lightweight multibody system dynamics library.
   github: SIM-TU-Darmstadt/mbslib
   license: LGPL-3.0

@@ -53,7 +53,7 @@
     license: BSD-3-Clause
     language: C++
 - name: Ipopt
-  url: https://projects.coin-or.org/Ipopt
+  url: http://web.archive.org/web/20220401091040/https://projects.coin-or.org/Ipopt
   github: coin-or/Ipopt
   description: Large scale nonlinear optimization library.
   _meta:
