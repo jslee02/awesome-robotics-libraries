@@ -210,7 +210,7 @@
     license: LGPL-3.0
     language: C++
 - name: Moby
-  url: http://physsim.sourceforge.net/index.html
+  url: https://physsim.sourceforge.net/index.html
   description: Multi-body dynamics simulation for rigid bodies with contact.
   github: PositronicsLab/Moby
   license: GPL-2.0
@@ -264,7 +264,7 @@
     license: Apache-2.0
     language: Python
 - name: Newton Dynamics
-  url: https://newtondynamics.com/
+  url: http://web.archive.org/web/20080513110013/http://www.newtondynamics.com/
   description: Real-time physics engine for rigid body simulation.
   github: MADEAPPS/newton-dynamics
   license: Zlib

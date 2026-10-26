@@ -9,7 +9,7 @@
     license: BSD-3-Clause
     language: C++
 - name: CuiKSuite
-  url: http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html
+  url: http://www.iri.upc.edu/people/porta/Soft/CuikSuite2-Doc/html/
   description: Applications to solve position analysis and path planning problems.
 - name: cuRobo
   url: https://curobo.org
@@ -181,7 +181,7 @@
     license: MIT
     language: Python
 - name: trajopt
-  url: http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/
+  url: https://rll.berkeley.edu/trajopt/doc/sphinx_build/html/
   github: joschu/trajopt
   description: Framework for generating robot trajectories by local optimization.
   _meta:
