@@ -136,7 +136,7 @@ _Embeddable engines that time-step rigid, soft, fluid, or particle dynamics with
 * 💀 [Flex](https://developer.nvidia.com/flex) - GPU-based particle simulation for rigid bodies, fluids, and deformables. [⭐ 815](https://github.com/NVIDIAGameWorks/FleX) · last commit 2021
 * 💀 [RaiSim](https://slides.com/jeminhwangbo/raisim-manual) - Cross-platform physics engine for robotics and reinforcement learning. [⭐ 328](https://github.com/leggedrobotics/raisimLib) · last commit 2020
 * [Moby](https://physsim.sourceforge.net/index.html) - Multi-body dynamics simulation for rigid bodies with contact. [⭐ 37](https://github.com/PositronicsLab/Moby) · last commit 2021
-* [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) - Lightweight multibody system dynamics library. [⭐ 11](https://github.com/SIM-TU-Darmstadt/mbslib) · last commit 2016
+* [MBSlib](http://web.archive.org/web/20211027153626/https://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib/) - Lightweight multibody system dynamics library. [⭐ 11](https://github.com/SIM-TU-Darmstadt/mbslib) · last commit 2016
 
 </details>
 
@@ -168,12 +168,12 @@ _Simulation applications with worlds, sensors, rendering, and robot middleware b
 ### Commercial
 
 * [Actin Simulation](http://web.archive.org/web/20260211125528/https://www.energid.com/) - Real-time robot simulation and control software.
-* [Artiminds](https://www.artiminds.com/) - Planning, programming, operation, analysis and optimization.
+* [Artiminds](http://web.archive.org/web/20261009172727/http://www.artiminds.com/) - Planning, programming, operation, analysis and optimization.
 * [Kineo](https://www.plm.automation.siemens.com/global/en/products/plm-components/kineo.html) - Path planning and trajectory optimization for industrial robotics.
 * [Robot Virtual Worlds](https://www.robotvirtualworlds.com/) - Virtual reality software for educational robotics.
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots.
 * [RobotStudio](https://www.abb.com/global/en/areas/robotics/products/software/robotstudio-suite) - ABB's simulation and offline programming software for robotics.
-* [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/) - 3D virtual environment for programming and testing robots.
+* [Virtual Robotics Toolkit](http://web.archive.org/web/20260724192201/https://www.virtualroboticstoolkit.com/) - 3D virtual environment for programming and testing robots.
 * [Visual Components](https://www.visualcomponents.com/) - 3D manufacturing simulation and visualization platform.
 
 <details>
@@ -243,7 +243,7 @@ _General-purpose numerical solvers (LP, QP, NLP, least squares, black-box) and m
 * 🟢 [CasADi](https://github.com/casadi/casadi/wiki) - Symbolic framework for algorithmic differentiation and numeric optimization. [⭐ 2.3k](https://github.com/casadi/casadi)
 * 🟢 [NLopt](https://nlopt.readthedocs.io/en/latest/) - Nonlinear optimization. [⭐ 2.3k](https://github.com/stevengj/nlopt)
 * 🟢 [OSQP](https://osqp.org/) - The Operator Splitting QP Solver. [⭐ 2.2k](https://github.com/osqp/osqp)
-* 🟢 [Ipopt](https://projects.coin-or.org/Ipopt) - Large scale nonlinear optimization library. [⭐ 1.8k](https://github.com/coin-or/Ipopt)
+* 🟢 [Ipopt](http://web.archive.org/web/20220401091040/https://projects.coin-or.org/Ipopt) - Large scale nonlinear optimization library. [⭐ 1.8k](https://github.com/coin-or/Ipopt)
 * 🟢 [Pagmo](https://esa.github.io/pagmo2/index.html) - Scientific library for massively parallel optimization. [⭐ 937](https://github.com/esa/pagmo2)
 * 🟡 [OptimLib](https://github.com/kthohr/optim) - Lightweight C++ library of numerical optimization methods for nonlinear functions. [⭐ 898](https://github.com/kthohr/optim)
 * 🟢 ifopt - An Eigen-based, light-weight C++ Interface to Nonlinear Programming Solvers (Ipopt, Snopt). [⭐ 866](https://github.com/ethz-adrl/ifopt)
