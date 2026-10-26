@@ -4,8 +4,8 @@
   description: Agentic operating system for physical space.
   _meta:
     id: 875378461
-    stars: 4639
-    last_commit: '2026-10-12'
+    stars: 4688
+    last_commit: '2026-10-26'
     language: Python
 - name: Micro-ROS for Arduino
   url: https://github.com/kaiaai/micro_ros_arduino_kaiaai
@@ -13,7 +13,7 @@
   description: a Micro-ROS fork available in the Arduino Library Manager.
   _meta:
     id: 675436988
-    stars: 14
+    stars: 15
     last_commit: '2024-10-28'
     license: Apache-2.0
     language: C
@@ -23,8 +23,8 @@
   description: ROS-free Gymnasium framework unifying MuJoCo sim and real robots for robot learning.
   _meta:
     id: 765181298
-    stars: 164
-    last_commit: '2026-10-11'
+    stars: 169
+    last_commit: '2026-10-23'
     license: AGPL-3.0
     language: Python
 - name: Rock
@@ -39,16 +39,16 @@
   description: Version 2.0 of the Robot Operating System (ROS) software stack.
   _meta:
     id: 31285942
-    stars: 6156
-    last_commit: '2026-10-07'
+    stars: 6239
+    last_commit: '2026-10-20'
 - name: ros2_medkit
   url: https://selfpatch.github.io/ros2_medkit/
   github: selfpatch/ros2_medkit
   description: Fault management and diagnostics gateway for ROS 2 with a REST API.
   _meta:
     id: 1098436077
-    stars: 276
-    last_commit: '2026-10-06'
+    stars: 278
+    last_commit: '2026-10-25'
     license: Apache-2.0
     language: C++
 - name: YARP
@@ -57,6 +57,6 @@
   description: Communication and device interfaces applicable from humanoids to embedded devices.
   _meta:
     id: 9517720
-    stars: 603
-    last_commit: '2026-10-07'
+    stars: 605
+    last_commit: '2026-10-20'
     language: C++
