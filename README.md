@@ -158,6 +158,7 @@ _Simulation applications with worlds, sensors, rendering, and robot middleware b
 * 🟢 [Hexapod Robot Simulator](https://hexapod.netlify.app/) - Open-source hexapod robot inverse kinematics and gaits visualizer. [⭐ 796](https://github.com/mithi/hexapod)
 * 🟢 [mvsim](https://wiki.ros.org/mvsim) - Lightweight multi-vehicle 2D simulator with ROS integration. [⭐ 417](https://github.com/MRPT/mvsim)
 * 🟢 [ARGoS](https://www.argos-sim.info/) - Physics-based simulator designed to simulate large-scale robot swarms. [⭐ 321](https://github.com/ilpincy/argos3)
+* 🟢 [OmniSim](https://www.omnilink-agents.com/omnisim) - Apache-2.0 robotics simulator for coding agents, with an HTTP/JSON harness, an MCP server, native… [⭐ 190](https://github.com/omnilink-tech/omnisim)
 * 🟢 [CoppeliaSim](https://www.coppeliarobotics.com/) - Formaly V-REP. Virtual robot experimentation platform. [⭐ 152](https://github.com/CoppeliaRobotics/CoppeliaSimLib)
 * 🟡 [MARS](http://rock-simulation.github.io/mars/) - Machina Arte Robotum Simulans — a cross-platform simulation environment. [⭐ 69](https://github.com/rock-simulation/mars)
 * 🟡 [PyBullet_Industrial](https://pybullet-industrial.readthedocs.io/en/latest/) - PyBullet extension for simulating robotic manufacturing processes like milling and 3D printing. [⭐ 56](https://github.com/WBK-Robotics/pybullet_industrial)

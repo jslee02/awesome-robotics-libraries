@@ -156,6 +156,16 @@
   url: https://neurorobotics.net/
   bitbucket: hbpneurorobotics/neurorobotics-platform
   description: Internet-accessible simulation of robots controlled by spiking neural networks.
+- name: OmniSim
+  url: https://www.omnilink-agents.com/omnisim
+  github: omnilink-tech/omnisim
+  description: Apache-2.0 robotics simulator for coding agents, with an HTTP/JSON harness, an MCP server, native…
+  _meta:
+    id: 1226359480
+    stars: 190
+    last_commit: '2026-10-21'
+    license: Apache-2.0
+    language: Python
 - name: PyBullet
   url: https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3
   github: bulletphysics/bullet3
