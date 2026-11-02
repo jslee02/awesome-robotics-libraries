@@ -276,7 +276,7 @@
     last_commit: '2026-01-17'
     language: HTML
 - name: nphysics
-  url: https://nphysics.org/
+  url: http://web.archive.org/web/20260828015921/https://nphysics.org/
   description: 2D and 3D rigid body physics engine written in Rust.
   github: dimforge/nphysics
   license: Apache-2.0

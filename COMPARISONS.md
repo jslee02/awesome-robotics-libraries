@@ -25,7 +25,7 @@ A companion to the main [Awesome Robotics Libraries](README.md) list, providing 
 | [MuJoCo](https://mujoco.org/) | ✅ | ✅ | ❌ | Newton, CG, PGS (convex) | ✅ | ✅ | C/C++ | Apache-2.0 |
 | [Newton](https://newton-physics.github.io/newton/) | ✅ | ✅ | ✅ | MuJoCo (via Warp), XPBD, AVBD, penalty | ✅ | ✅ | Python | Apache-2.0 |
 | [Newton Dynamics](http://web.archive.org/web/20080513110013/http://www.newtondynamics.com/) | ✅ | ⚠️ | ⚠️ | Dantzig LCP | ❌ | ✅ | C++ | Zlib |
-| [nphysics](https://nphysics.org/) | ✅ | ✅ | ❌ | Moreau-Jean (SOR-prox) | ❌ | ❌ | Rust | Apache-2.0 |
+| [nphysics](http://web.archive.org/web/20260828015921/https://nphysics.org/) | ✅ | ✅ | ❌ | Moreau-Jean (SOR-prox) | ❌ | ❌ | Rust | Apache-2.0 |
 | [ODE](https://ode.org/) | ✅ | ❌ | ❌ | LCP Dantzig, PGS (QuickStep) | ❌ | ❌ | C/C++ | LGPL/BSD |
 | [PhysX](https://nvidia-omniverse.github.io/PhysX/) | ✅ | ✅ | ✅ | PGS, TGS | ❌ | ✅ | C++ | BSD-3 |
 | [pinocchio](https://stack-of-tasks.github.io/pinocchio/) | ⚠️ | ❌ | ❌ | Proximal, PGS, ADMM | ✅ | ❌ | C++ | BSD-2 |
