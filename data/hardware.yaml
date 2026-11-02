@@ -4,7 +4,7 @@
   description: High-performance testbed for advanced perception and control research.
   _meta:
     id: 56652382
-    stars: 791
+    stars: 793
     last_commit: '2021-08-16'
     language: C++
 - name: iCub
@@ -14,7 +14,7 @@
   _meta:
     id: 15800559
     stars: 121
-    last_commit: '2026-08-27'
+    last_commit: '2026-10-20'
     language: C++
 - name: Linorobot
   url: https://linorobot.org/

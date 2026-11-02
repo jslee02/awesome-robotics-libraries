@@ -4,7 +4,7 @@
   description: 6D Pose Tracking for Novel Objects without 3D Models.
   _meta:
     id: 303253214
-    stars: 687
+    stars: 688
     last_commit: '2026-04-13'
     license: Apache-2.0
     language: C++
@@ -14,8 +14,8 @@
   description: 2D/3D image and point cloud processing.
   _meta:
     id: 8162615
-    stars: 11154
-    last_commit: '2026-10-10'
+    stars: 11204
+    last_commit: '2026-11-02'
     language: C++
 - name: se(3)-TrackNet
   url: https://github.com/wenbowen123/iros20-6d-pose-tracking
@@ -23,7 +23,7 @@
   description: 6D Pose Tracking for Novel Objects without 3D Models.
   _meta:
     id: 242568644
-    stars: 424
+    stars: 425
     last_commit: '2023-08-30'
     language: Python
 - name: ViSP
@@ -32,7 +32,7 @@
   description: Visual Servoing Platform.
   _meta:
     id: 42498174
-    stars: 928
-    last_commit: '2026-10-12'
+    stars: 938
+    last_commit: '2026-11-02'
     license: GPL-2.0
     language: C++
