@@ -1,3 +1,13 @@
+- name: Cerulion
+  url: https://cerulion.com
+  github: cerulion-inc/cerulion
+  description: Rust robot runtime that records a run and re-executes supported native recordings on new code.
+  _meta:
+    id: 826169557
+    stars: 101
+    last_commit: '2026-11-05'
+    license: AGPL-3.0
+    language: Rust
 - name: Dimensional
   url: https://dimensional.org/
   github: dimensionalOS/dimos

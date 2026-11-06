@@ -34,6 +34,7 @@ _Communication middleware, robot software frameworks, runtime services such as l
 * 🟢 [YARP](https://www.yarp.it/) - Communication and device interfaces applicable from humanoids to embedded devices. [⭐ 603](https://github.com/robotology/yarp)
 * 🟢 [ros2_medkit](https://selfpatch.github.io/ros2_medkit/) - Fault management and diagnostics gateway for ROS 2 with a REST API. [⭐ 276](https://github.com/selfpatch/ros2_medkit)
 * 🟢 [Robot Control Stack (RCS)](https://robotcontrolstack.org) - ROS-free Gymnasium framework unifying MuJoCo sim and real robots for robot learning. [⭐ 164](https://github.com/RobotControlStack/robot-control-stack)
+* 🟢 [Cerulion](https://cerulion.com) - Rust robot runtime that records a run and re-executes supported native recordings on new code. [⭐ 101](https://github.com/cerulion-inc/cerulion)
 * 🟡 [Micro-ROS for Arduino](https://github.com/kaiaai/micro_ros_arduino_kaiaai) - a Micro-ROS fork available in the Arduino Library Manager. [⭐ 14](https://github.com/kaiaai/micro_ros_arduino_kaiaai)
 * [Rock](https://www.rock-robotics.org/) - Software framework for robotic systems.
 * [ROS](https://www.ros.org/) - Flexible framework for writing robot software.
