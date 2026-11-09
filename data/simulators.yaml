@@ -226,7 +226,7 @@
     last_commit: '2026-09-22'
     language: C#
 - name: Virtual Robotics Toolkit
-  url: https://www.virtualroboticstoolkit.com/
+  url: http://web.archive.org/web/20260724192201/https://www.virtualroboticstoolkit.com/
   description: 3D virtual environment for programming and testing robots.
   _subsection: Commercial
 - name: Visual Components
