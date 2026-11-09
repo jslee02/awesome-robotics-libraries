@@ -3,8 +3,8 @@
   description: A collection of utilities and tools for LeRobot.
   _meta:
     id: 935190749
-    stars: 1169
-    last_commit: '2026-10-01'
+    stars: 1170
+    last_commit: '2026-11-06'
     license: MIT
     language: Python
 - name: Foxglove Studio
@@ -16,7 +16,7 @@
   description: One-click tool to score, filter, and export higher-quality LeRobot datasets.
   _meta:
     id: 1003449858
-    stars: 77
+    stars: 79
     last_commit: '2026-03-13'
     license: Apache-2.0
     language: Python
@@ -26,8 +26,8 @@
   description: High-performance, time-indexed object storage for robotics and industrial IoT.
   _meta:
     id: 441299511
-    stars: 373
-    last_commit: '2026-10-12'
+    stars: 377
+    last_commit: '2026-11-09'
     license: Apache-2.0
     language: Rust
 - name: Robot Gui
