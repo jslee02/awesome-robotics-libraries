@@ -449,3 +449,5 @@ Contributions are very welcome! Please read the [contribution guidelines](https:
 ## [License](#contents)
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+- [NEXUS-MM](https://nexusmm.site/) - Real-time robot physics validation API (speed × terrain → safety decision) with live challenge key and SDK.
