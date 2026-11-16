@@ -35,7 +35,7 @@
     stars: 29037
     last_commit: '2025-05-26'
 - name: Awesome Gazebo
-  url: https://github.com/fkromer/awesome-gazebo
+  url: http://web.archive.org/web/20260201105811/https://github.com/fkromer/awesome-gazebo
   github: fkromer/awesome-gazebo
   description: Curated list of Gazebo simulation framework resources.
   _meta:
