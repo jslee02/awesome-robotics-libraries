@@ -153,7 +153,7 @@
     license: BSD-3-Clause
     language: C++
 - name: Neurorobotics Platform
-  url: https://neurorobotics.net/
+  url: http://web.archive.org/web/20260825025357/https://neurorobotics.net/
   bitbucket: hbpneurorobotics/neurorobotics-platform
   description: Internet-accessible simulation of robots controlled by spiking neural networks.
 - name: PyBullet
@@ -226,7 +226,7 @@
     last_commit: '2026-09-22'
     language: C#
 - name: Virtual Robotics Toolkit
-  url: https://www.virtualroboticstoolkit.com/
+  url: http://web.archive.org/web/20260724192201/https://www.virtualroboticstoolkit.com/
   description: 3D virtual environment for programming and testing robots.
   _subsection: Commercial
 - name: Visual Components

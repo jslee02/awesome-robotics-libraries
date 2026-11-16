@@ -130,13 +130,13 @@ _Embeddable engines that time-step rigid, soft, fluid, or particle dynamics with
 <summary>Inactive (8): archived or no commits for 3+ years</summary>
 
 * [Fluid Engine Dev - Jet](https://fluidenginedevelopment.org/) - Fluid simulation engine for computer graphics applications. [⭐ 2.1k](https://github.com/doyubkim/fluid-engine-dev) · last commit 2022
-* [nphysics](https://nphysics.org/) - 2D and 3D rigid body physics engine written in Rust. [⭐ 1.6k](https://github.com/dimforge/nphysics) · last commit 2021
+* [nphysics](http://web.archive.org/web/20260828015921/https://nphysics.org/) - 2D and 3D rigid body physics engine written in Rust. [⭐ 1.6k](https://github.com/dimforge/nphysics) · last commit 2021
 * Tiny Differentiable Simulator - Header-only differentiable physics engine for robotics. [⭐ 1.4k](https://github.com/erwincoumans/tiny-differentiable-simulator) · last commit 2023
 * 💀 qu3e - Lightweight 3D physics engine for rigid body dynamics. [⭐ 993](https://github.com/RandyGaul/qu3e) · last commit 2021
 * 💀 [Flex](https://developer.nvidia.com/flex) - GPU-based particle simulation for rigid bodies, fluids, and deformables. [⭐ 815](https://github.com/NVIDIAGameWorks/FleX) · last commit 2021
 * 💀 [RaiSim](https://slides.com/jeminhwangbo/raisim-manual) - Cross-platform physics engine for robotics and reinforcement learning. [⭐ 328](https://github.com/leggedrobotics/raisimLib) · last commit 2020
 * [Moby](https://physsim.sourceforge.net/index.html) - Multi-body dynamics simulation for rigid bodies with contact. [⭐ 37](https://github.com/PositronicsLab/Moby) · last commit 2021
-* [MBSlib](http://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib) - Lightweight multibody system dynamics library. [⭐ 11](https://github.com/SIM-TU-Darmstadt/mbslib) · last commit 2016
+* [MBSlib](http://web.archive.org/web/20211027153626/https://www.sim.informatik.tu-darmstadt.de/res/sw/mbslib/) - Lightweight multibody system dynamics library. [⭐ 11](https://github.com/SIM-TU-Darmstadt/mbslib) · last commit 2016
 
 </details>
 
@@ -162,7 +162,7 @@ _Simulation applications with worlds, sensors, rendering, and robot middleware b
 * 🟡 [MARS](http://rock-simulation.github.io/mars/) - Machina Arte Robotum Simulans — a cross-platform simulation environment. [⭐ 69](https://github.com/rock-simulation/mars)
 * 🟡 [PyBullet_Industrial](https://pybullet-industrial.readthedocs.io/en/latest/) - PyBullet extension for simulating robotic manufacturing processes like milling and 3D printing. [⭐ 56](https://github.com/WBK-Robotics/pybullet_industrial)
 * 🟡 [AVIS Engine](https://avisengine.com) - Fast simulation software for autonomous vehicle development. [⭐ 22](https://github.com/AvisEngine/AVIS-Engine-Python-API)
-* [Neurorobotics Platform](https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks. [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
+* [Neurorobotics Platform](http://web.archive.org/web/20260825025357/https://neurorobotics.net/) - Internet-accessible simulation of robots controlled by spiking neural networks. [[bitbucket](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform)]
 * [Simbad](https://simbad.sourceforge.net/) - Java 3D robot simulator with custom controller and sensor support.
 
 ### Commercial
@@ -173,7 +173,7 @@ _Simulation applications with worlds, sensors, rendering, and robot middleware b
 * [Robot Virtual Worlds](https://www.robotvirtualworlds.com/) - Virtual reality software for educational robotics.
 * [RobotDK](https://robodk.com/) - Simulation and OLP for robots.
 * [RobotStudio](https://www.abb.com/global/en/areas/robotics/products/software/robotstudio-suite) - ABB's simulation and offline programming software for robotics.
-* [Virtual Robotics Toolkit](https://www.virtualroboticstoolkit.com/) - 3D virtual environment for programming and testing robots.
+* [Virtual Robotics Toolkit](http://web.archive.org/web/20260724192201/https://www.virtualroboticstoolkit.com/) - 3D virtual environment for programming and testing robots.
 * [Visual Components](https://www.visualcomponents.com/) - 3D manufacturing simulation and visualization platform.
 
 <details>
@@ -238,12 +238,12 @@ _Model-based control: MPC, trajectory optimization, whole-body and task-space co
 
 _General-purpose numerical solvers (LP, QP, NLP, least squares, black-box) and modeling layers._
 
-* 🟢 [Ceres Solver](http://ceres-solver.org/) - Large scale nonlinear optimization library. [⭐ 4.6k](https://github.com/ceres-solver/ceres-solver)
+* 🟢 [Ceres Solver](http://web.archive.org/web/20260918061319/http://ceres-solver.org/) - Large scale nonlinear optimization library. [⭐ 4.6k](https://github.com/ceres-solver/ceres-solver)
 * 🟢 [pymoo](https://www.pymoo.org/) - Multi-objective Optimization in Python. [⭐ 3k](https://github.com/anyoptimization/pymoo)
 * 🟢 [CasADi](https://github.com/casadi/casadi/wiki) - Symbolic framework for algorithmic differentiation and numeric optimization. [⭐ 2.3k](https://github.com/casadi/casadi)
 * 🟢 [NLopt](https://nlopt.readthedocs.io/en/latest/) - Nonlinear optimization. [⭐ 2.3k](https://github.com/stevengj/nlopt)
 * 🟢 [OSQP](https://osqp.org/) - The Operator Splitting QP Solver. [⭐ 2.2k](https://github.com/osqp/osqp)
-* 🟢 [Ipopt](https://projects.coin-or.org/Ipopt) - Large scale nonlinear optimization library. [⭐ 1.8k](https://github.com/coin-or/Ipopt)
+* 🟢 [Ipopt](http://web.archive.org/web/20220401091040/https://projects.coin-or.org/Ipopt) - Large scale nonlinear optimization library. [⭐ 1.8k](https://github.com/coin-or/Ipopt)
 * 🟢 [Pagmo](https://esa.github.io/pagmo2/index.html) - Scientific library for massively parallel optimization. [⭐ 937](https://github.com/esa/pagmo2)
 * 🟡 [OptimLib](https://github.com/kthohr/optim) - Lightweight C++ library of numerical optimization methods for nonlinear functions. [⭐ 898](https://github.com/kthohr/optim)
 * 🟢 ifopt - An Eigen-based, light-weight C++ Interface to Nonlinear Programming Solvers (Ipopt, Snopt). [⭐ 866](https://github.com/ethz-adrl/ifopt)
@@ -426,7 +426,7 @@ _Related curated lists and collections._
 * [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision) - Curated list of computer vision resources. [⭐ 23.6k](https://github.com/jbhuang0604/awesome-computer-vision) · last commit 2021
 * [Awesome Robotic Tooling](https://github.com/Ly0n/awesome-robotic-tooling) - Tooling for professional robotic development in C++ and Python with ROS and autonomous driving. [⭐ 3.9k](https://github.com/Ly0n/awesome-robotic-tooling) · last commit 2023
 * [Awesome Robotics (ahundt)](https://github.com/ahundt/awesome-robotics) - Curated list of robotics links and software libraries (ahundt). [⭐ 1.5k](https://github.com/ahundt/awesome-robotics) · last commit 2023
-* 💀 [Awesome Gazebo](https://github.com/fkromer/awesome-gazebo) - Curated list of Gazebo simulation framework resources. [⭐ 155](https://github.com/fkromer/awesome-gazebo) · last commit 2021
+* 💀 [Awesome Gazebo](http://web.archive.org/web/20260201105811/https://github.com/fkromer/awesome-gazebo) - Curated list of Gazebo simulation framework resources. [⭐ 155](https://github.com/fkromer/awesome-gazebo) · last commit 2021
 * [Awesome Human Robot Interaction](https://github.com/Po-Jen/awesome-human-robot-interaction) - Curated list of human-robot interaction libraries and resources. [⭐ 153](https://github.com/Po-Jen/awesome-human-robot-interaction) · last commit 2019
 * [Awesome Grasping](https://github.com/Po-Jen/awesome-grasping) - Curated list of grasping libraries and resources. [⭐ 99](https://github.com/Po-Jen/awesome-grasping) · last commit 2019
 
