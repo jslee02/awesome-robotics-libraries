@@ -22,8 +22,8 @@
   - id
   _meta:
     id: 17824536
-    stars: 234
-    last_commit: '2026-07-27'
+    stars: 236
+    last_commit: '2026-10-13'
     license: BSD-3-Clause
     language: C++
 - name: IKBT
@@ -31,8 +31,8 @@
   description: A python package to solve robot arm inverse kinematics in symbolic form.
   _meta:
     id: 104386447
-    stars: 220
-    last_commit: '2026-09-18'
+    stars: 222
+    last_commit: '2026-11-15'
     language: Python
   _subsection: Inverse Kinematics
 - name: KDL
@@ -48,8 +48,8 @@
   - ik
   _meta:
     id: 13630013
-    stars: 904
-    last_commit: '2026-09-23'
+    stars: 912
+    last_commit: '2026-11-10'
     language: C++
 - name: Kinpy
   github: neka-nat/kinpy
@@ -57,7 +57,7 @@
   _meta:
     id: 206802340
     stars: 181
-    last_commit: '2026-10-08'
+    last_commit: '2026-11-03'
     license: MIT
     language: Python
   _subsection: Inverse Kinematics
@@ -102,8 +102,8 @@
   - code generation
   _meta:
     id: 24897645
-    stars: 3787
-    last_commit: '2026-10-07'
+    stars: 3867
+    last_commit: '2026-11-13'
     license: BSD-2-Clause
     language: C++
 - name: PyDy
@@ -115,8 +115,8 @@
   - Python
   _meta:
     id: 12165060
-    stars: 416
-    last_commit: '2026-07-28'
+    stars: 418
+    last_commit: '2026-11-16'
     license: BSD-3-Clause
     language: Python
 - name: RBDL
@@ -135,8 +135,8 @@
   - urdf
   _meta:
     id: 208891294
-    stars: 708
-    last_commit: '2025-06-09'
+    stars: 711
+    last_commit: '2026-10-28'
     language: C++
 - name: RBDyn
   description: Rigid body dynamics algorithms using spatial algebra with Eigen.
@@ -149,8 +149,8 @@
   - rigid
   _meta:
     id: 3740096
-    stars: 224
-    last_commit: '2026-10-05'
+    stars: 230
+    last_commit: '2026-11-09'
     license: BSD-2-Clause
     language: C++
 - name: RelaxedIK
@@ -158,7 +158,7 @@
   description: Real-time Synthesis of Accurate and Feasible Robot Arm Motion.
   _meta:
     id: 132630995
-    stars: 254
+    stars: 255
     last_commit: '2023-04-13'
     license: MIT
     language: Python
@@ -198,7 +198,7 @@
   - C++
   _meta:
     id: 20737145
-    stars: 1207
+    stars: 1212
     last_commit: '2025-04-15'
     license: BSD-2-Clause
     language: C++
@@ -214,8 +214,8 @@
   description: Analytical inverse kinematics for 6R and 7R revolute robot arms, returning every IK branch.
   _meta:
     id: 1215108786
-    stars: 188
-    last_commit: '2026-10-04'
+    stars: 198
+    last_commit: '2026-11-15'
     license: BSD-3-Clause
     language: Python
   _subsection: Inverse Kinematics
@@ -244,7 +244,7 @@
   description: A python package that solves inverse kinematics of parallel-, serial- or hybrid-robots.
   _meta:
     id: 350709377
-    stars: 43
+    stars: 44
     last_commit: '2022-05-06'
     license: MIT
     language: Python
